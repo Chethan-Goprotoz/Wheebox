@@ -14,7 +14,7 @@ h5 {font-size: 20px;}
 ​
 .main-heding {color: #dddd;}
 .subheading {color: #dddd;}
-.paragraph {color: #dddd;}
+.paragraph {color: #dddd; }
 ​
 /* Log in page style start */
 .login {position: relative;padding: 60px; }
