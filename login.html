@@ -11,10 +11,10 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
       
-      <title>Log in Page</title>
+      <title>Log in page</title>
    </head>
    <body class="login">
-      <div class="mainlogin-wrap">
+      <div class="mainlogin-wrap  ">
          <section>
             <div class="container-fluid h-custom">
                <div class="row d-flex  align-items-center ">
@@ -28,19 +28,19 @@
                         <img src="/assets/images/circle-img.png" alt="">
                      </div> -->
                                    
-                        <!-- <ul class="loginslider" >
+                        <ul class="loginslider" >
                             <li><img src="/assets/images/circle-img.png"></li>
                             <li><img src="/assets/images/circle-img.png"></li>
                             <li><img src="/assets/images/circle-img.png"></li>
-                        
-                        </ul> -->
+                            
+                        </ul>
                   </div>
                   <div class="col-md-8 col-lg-6 col-xl-6 login-form ">
                      <div class="login-form-top mb30">
                         <ul>
                            <li><img src="/assets/images/hello-hand.png" > <span>Hello!</span></li>
                            <li>
-                              <figure><img src="/assets/images/tutor-perini-logo.png" alt="Tutor Perini">
+                              <figure><img src="/assets/images/mavenir-logo.png" alt="Mavenir">
                               </figure>
                            </li>
                         </ul>
@@ -51,52 +51,32 @@
                         <div class="form-outline mb-4"> 
                            <label for="email">Email address</label>
                            <input type="email" id="email"
-                              pattern="[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+"
                               class="form-control form-control-lg"
-                              placeholder="Enter your email address" required /> 
+                              placeholder="Enter your email address" name="email" required /> 
                         </div>
                         <!-- Password input -->
                         <div class="form-outline mb-3"> 
                            <label for="password">Password</label>
-                           <input type="password"
+                           <input type="text"
                               id="password"
-                              pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$ %^&*-]).{8,}$"
                               class="form-control form-control-lg"
-                              placeholder="****************" required /> 
+                              placeholder="****************" name="password" required /> 
                         </div>
                         <div class="d-flex justify-content-between align-items-center">
-                           <div class="ragister-link"> <a href="#">Ragister</a>  <a href="#">Forgot password?</a> </div>
+                           <div class="ragister-link"> <a href="#">Register</a>  <a href="#">Forgot password?</a> </div>
                         </div>
-                        <div class="text-center text-lg-start mt-2 ">
-                           <a href="#" class="login-btn">Login</a>
+                        <div class="text-center text-lg-start mt-2 login-btn ">
+                           <input type="submit"
+                    value="Login" name="Submit"  />
                            <p class="divider"><span>or</span></p>
                            <p class= "otp-btn mt-2 pt-1 mb-0"><a href="#otp"
                               data-bs-toggle="modal">Login With OTP</a></p>
-                           <!-- Modal -->
-                           <!-- <div class="modal fade popup" id="otp" tabindex="-1"
-                              aria-labelledby="otpop" aria-hidden="true">
-                              <div class="modal-dialog modal-dialog-centered">
-                                <div class="modal-content">
-                                  <div class="modal-header">
-                                    <h5 class="modal-title" id="otpop">Modal title</h5>
-                                    <button type="button" class="btn-close"
-                                      data-bs-dismiss="modal" aria-label="Close"></button>
-                                  </div>
-                                  <div class="modal-body"> ... </div>
-                                  <div class="modal-footer"> <button type="button"
-                                      class="btn btn-secondary"
-                                      data-bs-dismiss="modal">Close</button> <button
-                                      type="button" class="btn btn-primary">Save
-                                      changes</button> </div>
-                                </div>
-                              </div>
-                              </div> -->
-                        </div>
+                           </div>
                      </form>
                      <footer>
                         <div class="footer-info">
-                           <p>Powered by © 2022</p>
-                           <p>All logos are property of respective owners.</p>
+                           <p>Powered by <img src="/assets/images/Image 8.png" alt=""> © 2022</p>
+                           <p style="padding-right: 5px;"><img src="/assets/images/ISO.png" alt="">We are now ISO 9001:2015 certified and trusted company</p>
                         </div>
                      </footer>
                   </div>
