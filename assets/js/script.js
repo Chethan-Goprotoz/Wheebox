@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 $(".toggle-password").click(function() {
 
     $(this).toggleClass("fa-eye fa-eye-slash");
@@ -9,7 +9,7 @@ $(".toggle-password").click(function() {
       input.attr("type", "password");
     }
   });
-=======
+
 
 // $('.loginslider').owlCarousel({
 //     center: true,
@@ -103,10 +103,4 @@ function GEEKFORGEEKS() {
     return true;
 }
 
-<<<<<<< HEAD
->>>>>>> bb3ccd5324fc977f37d790bff9427968e0449ae9
-=======
 
-
-
->>>>>>> 180fb418f9d7e5042c498c698247043118eb4f79
