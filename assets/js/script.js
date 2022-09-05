@@ -1,18 +1,37 @@
 
-$('.loginslider').owlCarousel({
-    center: true,
-    items:3,
-    smartspeed: 1000,
-    loop:false,
-    dots: true,
-    margin:10,
-    // responsive:{
-    //     600:{
-    //         items:4
-    //     }
-    // }
-});
+// $('.loginslider').owlCarousel({
+//     center: true,
+//     items:3,
+//     smartspeed: 1000,
+//     loop:false,
+//     dots: true,
+//     margin:10,
+//     // responsive:{
+//     //     600:{
+//     //         items:4
+//     //     }
+//     // }
+// });
 
+
+// Slick Slider
+
+
+$('.loginslider').slick({
+    slidesToShow: 3,
+    slidesToScroll: 2,
+    centerMode: true,
+    arrows: false,
+    dots: true,
+    speed: 300,
+    centerPadding: '0px',
+    infinite: true,
+    autoplaySpeed: 5000,
+    autoplay: false,
+    margin: '-20px'
+  });
+
+  
 
 
 //   Validation Script
@@ -71,4 +90,7 @@ function GEEKFORGEEKS() {
 
     return true;
 }
+
+
+
 
