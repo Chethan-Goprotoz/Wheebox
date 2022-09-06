@@ -1,0 +1,149 @@
+$font-color: #010D0A;
+$primary-color: #26887C;
+$secondary-color: #F6AB39;
+$btn-gray: #919D9B;
+
+@mixin flexC($value){
+	display: flex;
+	justify-content: $value;
+	align-items: center;
+}
+
+@mixin head{
+  h2{
+    font-size: 2.5rem;
+    font-family: Pop-medium;
+    letter-spacing: -0.05rem;
+    margin-bottom: 0.34rem;
+  }
+  p{
+    color: $font-color;
+    font-size: 14px;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@mixin btnDefault($width, $bgcolor){
+	width: $width;
+  height: 45px;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  font-size: 1.4rem;
+  color: #dedede;
+  border: 1px solid #dedede;
+  border-radius: 6px;
+  background-color: $bgcolor;
+  cursor: pointer;
+}
+
+@mixin inputText{
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 14px;
+  background: #ffffff;
+  outline: 0;
+  height: 44px;
+  border-radius: 6px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.03);
+  display: flex;
+  align-items: center;
+  line-height: 1.5;
+      transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  color: $font-color;
+  margin-bottom: 4rem;
+}
+
+@mixin box11{
+  p{
+    color: #879290;
+    font-size: 14px;
+  }
+  img{
+    position: absolute;
+    top: 19px;
+    right: 4.4%;
+    width: 13px;
+    transform: rotate(0deg);
+    transition: all 0.3s ease-in-out;
+    &.active{
+      transform: rotate(180deg);
+    }
+  }
+}
+
+@mixin opt-container{
+  position: absolute;
+  top: 49px;
+  left: 0;
+  width: 98%;
+  max-height: 0px;
+  overflow-y: auto;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  background: #ffff;
+  z-index: 55;
+  transition: max-height 0.3s ease-out;
+  .option{
+    margin: 8px 0;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 0 25px;
+    p{
+      font-size: 14px;
+      color: #879290;
+      margin-bottom: 0px;
+    }
+    &:hover{
+      background-color: #e8fffa;
+    }
+  }
+  &.active{
+    max-height: 230px;
+  }
+  &::-webkit-scrollbar{
+    width: 5px;
+    border-radius: 30px;
+  }
+  &::-webkit-scrollbar-thumb{
+    background-color: #769991;
+  }
+  &::-webkit-scrollbar-track{
+    background-color: #ABC6C0;
+  }
+}
+
+@mixin h1banner{
+  font-size: 3.5rem;
+  font-family: Pop-bold; 
+}
+
+@mixin h2Head{
+  font-size: 2.5rem;
+  font-family: Pop-medium;
+  letter-spacing: -0.05rem;
+}
+
+@mixin h3Head{
+  font-size: 1.8rem;
+  font-family: Pop-medium;
+}
+
+@mixin h4Text{
+  font-size: 1.7rem;
+  font-family: Pop-medium;
+}
+
+@mixin h5Text{
+  font-size: 1.62rem;
+  line-height: 2.9rem; 
+  margin-bottom: 1.62rem;
+}
+
+@mixin h6Text{
+  font-size: 1.5rem;
+  line-height: 2.5rem; 
+  margin-bottom: 1rem;
+}
