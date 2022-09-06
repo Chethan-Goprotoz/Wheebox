@@ -1,0 +1,194 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log In page</title>
+
+    <!-- font awesome css -->
+    <link rel="stylesheet" href="assets/font-awesome/all.min.css" />
+    <link rel="stylesheet" href="assets/font-awesome/fontawesome.css" />
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <!-- style css -->
+    <link rel="stylesheet" href="assets/css/style.css" rel="stylesheet" />
+
+    <!-- Demo styles -->
+    <style>
+        html,
+        .loginslide {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            display: flex;
+            height: auto;
+            border-radius: 50%;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            display: block;
+        }
+
+        .swiper-slide {
+            opacity: 0.5;
+        }
+
+        .swiper-slide.swiper-slide-next {
+            opacity: 1;
+        }
+
+        .swiper-slide.swiper-slide-next {
+            position: relative;
+            z-index: 1;
+        }
+
+        .swiper-slide-prev {
+            opacity: 0;
+        }
+
+        .swiper-slide.disable {
+            opacity: 0;
+        }
+
+        .swiper-pagination-bullet  {
+  height: 4px !important;
+  margin-top: 3rem;
+  margin: 12px 1px !important;
+  border-radius: 3px !important;
+  border: 0 !important;
+  background: #ffffff;
+  width: 13px !important;
+  opacity: 1 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #186F63;
+}
+
+
+
+.swiper-pagination{margin-top: 20px;}
+.swiper {
+    padding-bottom: 59px;
+}
+
+    </style>
+
+</head>
+
+<body class="login">
+    <div class="mainlogin-wrap">
+        <section>
+            <div class="container-fluid h-custom">
+                <div class="row d-flex  align-items-center ">
+                    <div class="col-md-9 col-lg-6 col-xl-6 login-info">
+                        <figure><img src="assets/images/login-logo.png" alt="Logo"> </figure>
+                        <h3>Advanced Artificial Intelligence System</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</p>
+                        <!-- <div class="login-main-image">
+                        <img src="assets/images/circle-img.png" alt="">
+                     </div> -->
+
+                        <div class="loginslide myslider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="assets/images/slider-1-img.png"></div>
+                                <div class="swiper-slide"><img src="assets/images/slider-2-img.png"></div>
+                                <div class="swiper-slide"><img src="assets/images/slider-3-img.png"></div>
+                                <div class="swiper-slide disable"><img src="assets/images/slider-2-img.png"></div>
+                                <div class="swiper-slide"><img src="assets/images/slider-1-img.png"></div>
+                            </div>
+                            <div class="loginslide-pagination"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-lg-6 col-xl-6 login-form ">
+                        <div class="login-form-top mb30">
+                            <ul>
+                                <li><img src="assets/images/hello-hand.png"> <span>Hello!</span></li>
+                                <li>
+                                    <figure><img src="assets/images/mavenir-logo.png" alt="Mavenir">
+                                    </figure>
+                                </li>
+                            </ul>
+                            <h3>Let’s get you started!</h3>
+                        </div>
+                        <form>
+                            <!-- Email input -->
+                            <div class="form-outline mb-4">
+                                <label for="email">Email address</label>
+                                <input type="email" id="email" class="form-control form-control-lg"
+                                    placeholder="Enter your email address" name="email" required />
+                            </div>
+                            <!-- Password input -->
+                            <div class="form-outline mb-3">
+                                <label for="password">Password</label>
+                                <input type="text" id="password" class="form-control form-control-lg"
+                                    placeholder="****************" name="password" required />
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="ragister-link"> <a href="#">Register</a> <a href="#">Forgot password?</a>
+                                </div>
+                            </div>
+                            <div class="text-center text-lg-start mt-2 login-btn ">
+                                <input type="submit" value="Login" name="Submit" />
+                                <p class="divider"><span>or</span></p>
+                                <p class="otp-btn mt-2 pt-1 mb-0"><a href="#otp" data-bs-toggle="modal">Login With
+                                        OTP</a></p>
+                            </div>
+                        </form>
+                        <footer>
+                            <div class="footer-info">
+                                <p>Powered by <img src="assets/images/Image 8.png" alt=""> © 2022</p>
+                                <p style="padding-right: 5px;"><img src="assets/images/ISO.png" alt="">We are now ISO
+                                    9001:2015 certified and trusted company</p>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="assets/js/jquery-2.2.0.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".myslider", {
+            slidesPerView: 3,
+            spaceBetween: -50,
+            pagination: {
+                el: ".loginslide-pagination",
+                clickable: true,
+            },
+        });
+
+        const swiperBtn = document.querySelectorAll('.loginslide-pagination span');
+
+        swiperBtn.forEach((elem,ind) => {
+            elem.addEventListener('click', (e) => {
+                let enable = e.target.closest('.loginslide').querySelector('.swiper-slide.disable');
+                enable.classList.remove('disable');
+                if(enable.nextElementSibling != undefined){
+                    enable.nextElementSibling.classList.add('disable');
+                }
+               
+            })
+        })
+    </script>
+</body>
+
+</html>

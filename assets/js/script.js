@@ -11,20 +11,6 @@ $(".toggle-password").click(function() {
   });
 
 
-// $('.loginslider').owlCarousel({
-//     center: true,
-//     items:3,
-//     smartspeed: 1000,
-//     loop:false,
-//     dots: true,
-//     margin:10,
-//     // responsive:{
-//     //     600:{
-//     //         items:4
-//     //     }
-//     // }
-// });
-
 
 // Slick Slider
 
@@ -39,7 +25,7 @@ $('.loginslider').slick({
     centerPadding: '0px',
     infinite: true,
     autoplaySpeed: 5000,
-    autoplay: false,
+    autoplay: true,
     margin: '-20px'
   });
 

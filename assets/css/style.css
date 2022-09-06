@@ -85,7 +85,7 @@ a:hover {
 /* Log in page style start */
 .login {
   position: relative;
-  padding: 0 6rem 6rem;
+  padding: 0 6rem 0 6rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -164,6 +164,8 @@ a:hover {
   padding: 0 5% !important;
   position: relative;
   z-index: 1;
+  overflow: hidden;
+  padding-bottom: 50px !important;
 }
 
 .login-info figure {
@@ -198,7 +200,7 @@ a:hover {
 }
 
 .login-form {
-  padding: 0 11% !important;
+  padding: 0 10% !important;
 }
 
 .login-form .form-field {
@@ -442,6 +444,7 @@ ul.text-center.log-in-2 li {
 
 .login-form-top h3 span {
   font-size: 14px;
+  text-transform: capitalize;
 }
 
 .otp-info {
@@ -449,6 +452,13 @@ ul.text-center.log-in-2 li {
   line-height: 2.2rem;
   color: #010D0A;
   opacity: 0.6;
+}
+.otp-info p{font-size: 15px; 
+  line-height: 27px; 
+  color: #010D0A80;}
+
+.otp-info p  strong {
+    color: #010D0A;
 }
 
 .forgot-password .ragister-link {
@@ -509,6 +519,10 @@ ul.loginslider {
   bottom: -5rem;
 }
 
+.slick-dots li:last-child {
+  opacity: 0;
+}
+
 li.slick-slide.slick-cloned.slick-active {
   opacity: 0.5 !important;
 }
@@ -558,3 +572,178 @@ li.slick-slide.slick-cloned {
 }
 
 /* Log in page style end */
+
+/* chethan */
+.main-div {
+  background: #F5F8F7;
+  height: 100vh;
+  padding: 20px;
+  overflow: hidden;
+  }
+  .main-div .row {
+  height: 100%;
+  }
+  .first-row {
+  padding: 40px 20px 20px 20px;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(45, 157, 141, 1) 50%, rgba(32, 119, 110, 1) 83%);
+  border-radius: 30px 0 0 30px;
+  }
+  .first-row .logo-main {
+  width: 90%;
+  }
+  .first-row h2 {
+  color: #fff;
+  font-size: 22px;
+  }
+  .first-row p {
+  color: #ffffffce;
+  font-size: 14px;
+  line-height: 20px;
+  }
+  .first-row .text-div {
+  position: relative;
+  top: 30%;
+  }
+  .second-row .verfication-div {
+  width: 70%;
+  position: relative;
+  top: 18%;
+  height: 90%;
+  padding-left: 10%;
+  }
+  #code {
+  width: 40%;
+  }
+  .main-div .second-row {
+  /* padding-left: 10%; */
+  }
+  .main-div .submit-div {
+  padding-top: 20px;
+  height: 10%;
+  }
+  input::placeholder {
+  font: 14px sans-serif;
+  }
+  .footer-text p {
+  font-size: 12px;
+  text-align: center;
+  line-height: 10px;
+  }
+  /* ends */
+
+  /* Login Three*/
+.login3 {
+  position: relative;
+  padding: 0 6rem 0 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*overflow-y: hidden; */
+  }
+  .login3::before {
+  content: " ";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: rgb(45, 157, 141);
+  background: linear-gradient(180deg, rgba(45, 157, 141, 1) 50%, rgba(32, 119, 110, 1) 83%);
+  z-index: -1;
+  }
+  .mainlogin3-wrap {
+  border-radius: 42px;
+  padding: 30px 0px 10px 0px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 1px 1px 50px #227d7333;
+  width: 50%;
+  }
+  .mainlogin3-wrap::before {
+  content: " ";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #FFFFFF;
+  }
+  .mainlogin3-wrap p.otp-btn {
+    margin: 27px 0px !important;
+}
+  /* Login Three*/
+
+  /* Thank You Page */
+.thank-you{background:#cdd3d2;
+  padding: 100px 100px;
+  }
+  .thank-you-wrap{
+  background: rgb(45,157,141);
+  background: linear-gradient(357deg, rgba(45,157,141,1) 29%, rgba(32,119,110,1) 67%);
+  margin: 60px;
+  padding: 30px 30px 50px 30px;
+  border-radius: 39px;
+  box-shadow: 0px 3px 15px #3030303b;
+  transform: rotate(-2deg);
+  position: relative;
+  }
+  .thank-you-wrap-sub-contailner {
+  border-radius: 39px;
+  border: solid 1.5px #ffffff;
+  padding: 30px;
+  position: relative;
+  padding: 120px 0px 160px 0px;
+  }
+  .thank-you-wrap-sub-contailner:after {
+  position: absolute;
+  border: solid 1px #ffff;
+  width: 100%;
+  content: " ";
+  left: 0;
+  height: 100%;
+  border-radius: 39px;
+  top: 7px;
+  transform: rotate(-2deg);
+  }
+  .thanks-content {
+  text-align: center;
+  color: #fff;
+  transform: rotate(1deg);
+  }
+  .thanks-content h2 {
+  font-size: 42px;
+  line-height: 62px;
+  font-weight: 700;
+  letter-spacing: 1.47px;
+  }
+  .thanks-content h3 {
+  font-size: 33px;
+  line-height: 62px;
+  font-weight: 600;
+  letter-spacing: 0.92px;
+  }
+  .thanks-content p {
+  font-size: 22px;
+  line-height: 40px;
+  letter-spacing: 0.62px;
+  }
+  .thank-img {
+  position: absolute;
+  right: -110px;
+  transform: rotate(2deg);
+  z-index: 1;
+  bottom: -220px;
+  }
+  .cont-btn {
+  margin-top: 70px
+  }
+  .close span {
+    position: relative;
+}
+.close span {
+  position: absolute;
+  top: -62px;
+  right: 71px;
+}
+  /* Thank You Page */
