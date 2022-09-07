@@ -1039,7 +1039,7 @@ h1, h2, h3, h4, h5 {
           box-shadow: none;
 }
 
-@media (max-width: 749px) {
+@media (max-width: 991px) {
   .reg_form {
     background-color: #EFF7F6;
     -webkit-box-align: start;
