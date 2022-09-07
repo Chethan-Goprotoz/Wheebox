@@ -183,6 +183,31 @@ h1,h2,h3,h4,h5{
   position: relative;
   padding: 1rem;
   @include flexC(center);
+  ::placeholder{
+    color: #879290;
+    font-size: 13px;
+  }
+  input[type='date'].chg_color {
+    color: #879290 !important;
+    font-size: 13px;
+  }
+  ::-webkit-calendar-picker-indicator{
+    opacity:0;
+  }
+  input[type='date']{
+    position: relative;
+    &::before{
+      position: absolute;
+      right: 16px;
+      top: 9px;
+      content: '\f073';
+      font-family: 'Font Awesome 5 Free';
+      font-size: 16px;
+      cursor: pointer;
+      color: #879290;
+      // width: 14px;
+    }
+  }
   .form_overlay{
     position: fixed;
     top: 0;
@@ -292,6 +317,11 @@ h1,h2,h3,h4,h5{
           background: #fff url(../images/svg/eye.svg) no-repeat scroll 113% center;
           background-size: 30% 30%;
         }
+        input[type="checkbox"]{
+          margin-right: 1.4rem;
+          opacity: 0;
+          z-index: 2;
+        }
         .radio_div{
           input[type="radio"] {
             appearance: none;
@@ -323,10 +353,6 @@ h1,h2,h3,h4,h5{
           @include opt-container;
         }
       }
-    }
-    ::placeholder{
-      color: #879290;
-      font-size: 13px;
     }
     .step_wise{
       position: fixed;

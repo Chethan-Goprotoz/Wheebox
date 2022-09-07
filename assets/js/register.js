@@ -6,6 +6,22 @@ optContain = document.querySelectorAll('.option-container'),
 bulbform = document.querySelector('.reg_form .bulb_info');
 let pindex;
 
+// change color of a date picker
+(()=>{
+const allDate = document.querySelectorAll(".reg_form input[type='date']");
+
+allDate.forEach((elem)=>{
+  elem.addEventListener('change',()=>{
+    if(elem.value === ''){
+      elem.classList.add('chg_color');
+    }
+    else{
+      elem.classList.remove('chg_color');
+    }
+  })
+})
+})();
+
 // open bulb form
 (()=>{
   const bulbformTrigger = document.querySelector('.main_div .formhead button'),
@@ -88,8 +104,10 @@ let pindex;
 (() => {
   const boxTrigger = document.querySelectorAll('.box11'),
     boxContent = document.querySelectorAll('.box11 p'),
-    options = document.querySelectorAll('.option-container .option'),
-    optionsCon = document.querySelectorAll('.option-container p');
+    options = document.querySelectorAll('.wout_checkbox .option-container .option'),
+    cboption = document.querySelectorAll('.inside_option .option'),
+    optionsCon = document.querySelectorAll('.wout_checkbox .option-container p');
+  let testArray = [];
 
   boxTrigger.forEach((box, ind) => {
     box.addEventListener('click', (e) => {
@@ -126,6 +144,44 @@ let pindex;
       form_overlay.classList.remove('active');
     })
   })
+
+  cboption.forEach((option)=>{
+    option.addEventListener('click',(e)=>{
+      e.preventDefault();
+      let mergeCon = '';
+      let selectBox = e.target.closest('.custom-select').querySelector('.box11 p');
+      let mainoption = e.target.closest('.mainoption');
+      let checkbox = mainoption.querySelector('input');
+      if(checkbox.checked==true){
+        checkbox.checked = false;
+        let optionVal = mainoption.querySelector('label').innerText;
+        let check = testArray.includes(optionVal);
+        if(check){
+          let index = testArray.indexOf(optionVal);
+          testArray.splice(index, 1);
+          if(testArray.length===0){
+            selectBox.style.color = "#879290";
+            selectBox.innerText='Select your Test';
+          }
+        }
+        loopArrayValues(testArray,selectBox,mergeCon);
+      }
+      else if(checkbox.checked==false){
+        checkbox.checked = true;
+        let optionVal = mainoption.querySelector('label').innerText;
+        testArray.push(optionVal);
+        loopArrayValues(testArray,selectBox,mergeCon);    
+      }
+    })
+  })
+
+  function loopArrayValues(Array,selectBox,mergeCon){
+    for(let i=0; i<Array.length; i++){
+      selectBox.style.color = "#010D0A";
+      mergeCon+=`${Array[i]} `;
+      selectBox.innerText=`${mergeCon}`;
+    }
+  }
 })();
 
 

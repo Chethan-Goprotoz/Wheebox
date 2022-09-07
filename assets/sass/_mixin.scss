@@ -88,6 +88,9 @@ $btn-gray: #919D9B;
   background: #ffff;
   z-index: 55;
   transition: max-height 0.3s ease-out;
+  &.checkbox-cont{
+    overflow-y: hidden;
+  }
   .option{
     margin: 8px 0;
     height: 45px;
@@ -104,8 +107,74 @@ $btn-gray: #919D9B;
       background-color: #e8fffa;
     }
   }
+  .fd-head{
+    height: 45px;
+    padding: 0 25px;
+    display: flex;
+    align-items: center;
+    background: #FAFAFA;
+    h6{
+      font-size: 14px;
+      margin-bottom: 0;
+      font-family: Pop-medium;
+    }
+  }
   &.active{
     max-height: 230px;
+    .inside_option{
+      overflow-y: scroll;
+      max-height: 230px;
+      padding-bottom: 53px;
+      .option{
+        position: relative;
+        .checkmark {
+          position: absolute;
+          top: 13px;
+          left: 22px;
+          height: 18px;
+          width: 18px;
+          border: 1px solid #dbdbdb;
+          border-radius: 4px;
+          z-index: 0;
+          border-radius: 4px;
+          &::after{
+            content: "";
+            position: absolute;
+            left: 0.715rem;
+            top: 3px;
+            width: 4px;
+            height: 10px;
+            border: solid white;
+            border-width: 0 2px 2px 0;
+            transform: rotate(35deg);
+            display: none;
+          }
+        }
+        input:checked{
+          + .checkmark{
+            background-color: #F6AB39;
+            border: none;
+          }
+          + .checkmark::after{
+            display: block;
+          }
+        }
+      }
+      label{
+        text-transform: capitalize;
+        cursor: pointer;
+      }
+      &::-webkit-scrollbar{
+        width: 5px;
+        border-radius: 30px;
+      }
+      &::-webkit-scrollbar-thumb{
+        background-color: #769991;
+      }
+      &::-webkit-scrollbar-track{
+        background-color: #ABC6C0;
+      }
+    }
   }
   &::-webkit-scrollbar{
     width: 5px;

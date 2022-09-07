@@ -33,7 +33,7 @@
           </div>
           <div class="col-12">
             <h6 class="mt-4 pt-3">Domain Name / Test Name</h6>
-            <div class="custom-select position-relative">
+            <div class="custom-select wout_checkbox position-relative">
               <div class="box11">
                   <p class="m-0">Select Test</p>
                   <img src="assets/images/svg/arrowdown.svg" alt="arrow">
@@ -88,11 +88,11 @@
           </div>
           <div class="col-12">
             <h6>Test Link Validity Start Date</h6>
-            <input type="date" placeholder="Select Start Date">
+            <input type="date" class="chg_color" placeholder="Select Start Date">
           </div>
           <div class="col-12" class="mb-2">
             <h6>Test Link Validity End Date</h6>
-            <input type="date" placeholder="Select End Date" class="mb-4">
+            <input type="date" class="chg_color" placeholder="Select End Date" class="mb-4">
           </div>
           <span class="note">Note: If you select any date after test expiry date of any test system
              will automatically assign the expiry date.</span>
@@ -189,7 +189,7 @@
                 <div class="row gx-lg-5">
                   <div class="col-12 col-lg-6">
                     <h5>Center State</h5>
-                    <div class="custom-select position-relative">
+                    <div class="custom-select wout_checkbox position-relative">
                       <div class="box11">
                           <p class="m-0">Select Center State</p>
                           <img src="assets/images/svg/arrowdown.svg" alt="arrow">
@@ -221,7 +221,7 @@
                   </div>
                   <div class="col-12 col-lg-6">
                   <h5>Center District</h5>
-                    <div class="custom-select position-relative">
+                    <div class="custom-select wout_checkbox position-relative">
                       <div class="box11">
                           <p class="m-0">Select Center District</p>
                           <img src="assets/images/svg/arrowdown.svg" alt="arrow">
@@ -253,7 +253,7 @@
                   </div>
                   <div class="col-12 col-lg-6">
                   <h5>Center City / Area</h5>
-                    <div class="custom-select position-relative">
+                    <div class="custom-select wout_checkbox position-relative">
                       <div class="box11">
                           <p class="m-0">Select Center City / Area</p>
                           <img src="assets/images/svg/arrowdown.svg" alt="arrow">
@@ -290,11 +290,11 @@
                 <div class="row gx-lg-5">
                   <div class="col-12 col-lg-6">
                     <h5>Test Link Validity Start Date</h5>
-                    <input type="date" placeholder="Select Start Date">
+                    <input type="date" class="chg_color" placeholder="Select Start Date">       
                   </div>
                   <div class="col-12 col-lg-6">
                     <h5>Test Link Validity End Date</h5>
-                    <input type="date" placeholder="Select End Date">
+                    <input type="date" class="chg_color" placeholder="Select End Date">      
                   </div>
                   <div class="col-12 col-lg-6">
                   <h5>Select The Test</h5>
@@ -303,28 +303,61 @@
                           <p class="m-0">Select your Test</p>
                           <img src="assets/images/svg/arrowdown.svg" alt="arrow">
                       </div>
-                      <div class="option-container">
-                          <div class="option">
-                              <p>Select the Test 1</p>
+                      <div class="option-container checkbox-cont">
+                        <div class="fd-head">
+                          <h6>7 Sep 2022</h6>
+                        </div>
+                        <div class="inside_option">
+                          <div class="mainoption">
+                            <div class="option">
+                              <input type="checkbox" name="test" id="test1">
+                              <span class="checkmark"></span>
+                              <label for="test1">Probability</label>
+                            </div>
                           </div>
-                          <div class="option">
-                             <p>Select the Test 2</p>
-                         </div>
-                         <div class="option">
-                             <p>Select the Test 3 </p>
-                         </div>
-                         <div class="option">
-                             <p>Select the Test 4</p>
-                         </div>
-                         <div class="option">
-                              <p>Select the Test 5</p>
+                          <div class="mainoption">
+                            <div class="option">
+                              <input type="checkbox" name="test" id="test2">
+                              <span class="checkmark"></span>
+                              <label for="test2">Cluster Collection</label>
+                            </div>
                           </div>
-                          <div class="option">
-                              <p>Select the Test 6</p>
+                          <div class="mainoption">
+                            <div class="option">
+                              <input type="checkbox" name="test" id="test3">
+                              <span class="checkmark"></span>
+                              <label for="test3">UI Developer</label>
+                            </div>
                           </div>
-                          <div class="option">
-                              <p>Select the Test 7</p>
+                          <div class="mainoption">
+                            <div class="option">
+                              <input type="checkbox" name="test" id="test4">
+                              <span class="checkmark"></span>
+                              <label for="test4">Backend Developer</label>
+                            </div>
                           </div>
+                          <div class="mainoption">
+                            <div class="option">
+                              <input type="checkbox" name="test" id="test5">
+                              <span class="checkmark"></span>
+                              <label for="test5">Java Developer</label>
+                            </div>
+                          </div>
+                          <div class="mainoption">
+                            <div class="option">
+                              <input type="checkbox" name="test" id="test6">
+                              <span class="checkmark"></span>
+                              <label for="test6">UX Designer</label>
+                            </div>
+                          </div>
+                          <div class="mainoption">
+                            <div class="option">
+                              <input type="checkbox" name="test" id="test7">
+                              <span class="checkmark"></span>
+                              <label for="test7">Python Developer</label>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
