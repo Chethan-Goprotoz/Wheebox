@@ -9,7 +9,7 @@ let pindex;
 // open bulb form
 (()=>{
   const bulbformTrigger = document.querySelector('.main_div .formhead button'),
-  closeBulbForm = document.querySelector('.reg_form .bulb_info span.close');
+  closeBulbForm = document.querySelector('.reg_form .bulb_info div.close');
   
   bulbformTrigger.addEventListener('click',()=>{
     if(!bulbform.classList.contains('active')){

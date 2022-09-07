@@ -67,14 +67,24 @@ h1,h2,h3,h4,h5{
   &::-webkit-scrollbar-track{
     background-color: #ABC6C0;
   }
-  span.close{
-    position: fixed;
-    right: 20px;
-    top: 20px;
+  div.close{
+    position: sticky;
+    left: 88%;
+    top: 29px;
     cursor: pointer;
+    background: #fff;
+    width: 33px;
+    height: 33px;
+    @include flexC(center);
+    border-radius: 50%;
+    border: 1px solid $font-color;
+    z-index: 10;
+    img{
+      width: 14px;
+    }
   }
   .bulb_con{
-    padding: 5.1rem 4.8rem 5.6rem 4.8rem;
+    padding: 3rem 4.8rem 5.2rem 4.8rem;
     .head{
       @include head;
     }
@@ -92,11 +102,50 @@ h1,h2,h3,h4,h5{
     }
     .border-div{
       width: 100%;
-      height: 120px;
+      height: 130px;
       @include flexC(center);
       border: 1px dashed #879290;
       border-radius: 6px;
       margin-bottom: 4rem;
+      flex-direction: column;
+      position: relative;
+      background-color: #FBFCFC;
+      text-align: center;
+      input{
+        position: absolute;
+        top: 16px;
+        left: 18%;
+        height: 58px;
+        width: 65%;
+        opacity: 0;
+        cursor: pointer;
+      }
+      .img{
+        width: 28px;
+        height: 28px;
+        @include flexC(center);
+        background-color: #DCEBE9;
+        border-radius: 50%;
+        margin-bottom: 12px;
+        img{
+          margin-top: -1px;
+          margin-left: 1px;
+        }
+      }
+      p{
+        font-size: 13px;
+        color: $font-color;
+        line-height: 1rem;
+        span{
+          color: $secondary-color;
+          text-decoration: underline;
+        }
+      }
+      span{
+        color: #879290;
+        font-size: 12px;
+        font-family: Pop-normal;
+      }
     }
     span.note{
       color: #676E6C;
@@ -107,13 +156,17 @@ h1,h2,h3,h4,h5{
   }
   .bulb_footer{
     border-top: 1px solid #dbdbdb;
-    padding: 4rem 0;
+    padding: 3.7rem 0;
     @include flexC(center);
     a{
       font-size: 13px;
       color: $secondary-color;
       margin-right: 3.2rem;
-      text-transform: uppercase
+      text-transform: uppercase;
+      img{
+        width: 12px;
+        margin-top: -2px;
+      }
     }
     button{
       @include btnDefault(150px,$secondary-color);
@@ -309,7 +362,7 @@ h1,h2,h3,h4,h5{
         }
       }
       button{
-        @include btnDefault(100px, #fff)
+        @include btnDefault(110px, #fff)
         &.enable{
           border: 1px solid $secondary-color;
           cursor: pointer;
@@ -332,3 +385,75 @@ h1,h2,h3,h4,h5{
 }
 
 // registration form css end
+
+// responsive css for mobile
+@media(max-width: 749px){
+  .reg_form{
+    background-color: #EFF7F6;
+    align-items: flex-start;
+    .sidebar_div{
+      display: none;
+    }
+    .main_div{
+      flex: 0 0 100%;
+      max-width: 100%;
+      padding: 2.4rem 1.5rem 2.8rem 1.5rem;
+      .formhead{
+        margin-bottom: 4.5rem;
+        button{
+          padding: 0.8rem 1.5rem;
+          height: 40px;
+          font-size: 12px;
+        }
+      }
+      form{
+        width: 100%;
+        margin-bottom: 7rem;
+        .form-detail{
+          .radio_div{
+            margin-bottom: 4rem;
+            label{
+              margin-right: 3.1rem;
+            }
+          }
+        }
+      }
+      .step_wise{
+        padding: 0 3rem;
+        background-color: #F5F8F7;
+        width: 100%;
+        .center_step{
+          align-items: center;
+          justify-content: center;
+        }
+        button.active{
+          @include btnDefault(100px, $secondary-color);
+          height: 43px;
+        }
+      }
+    }
+    .bulb_info{
+      width: 100%;
+      div.close{
+        top: 24px;
+        border: none;
+        img{
+          width: 16px;
+        }
+      }
+      .bulb_con{
+        padding: 3.6rem 3rem 4rem 3rem;
+      }
+      .bulb_footer{
+        padding: 2.7rem 0;
+        a{
+          margin-right: 2.7rem
+        }
+        button{
+          @include btnDefault(110px, $secondary-color);
+          height: 43px;
+        }
+      }
+    }
+  }
+}

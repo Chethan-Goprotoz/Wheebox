@@ -128,15 +128,35 @@ h1, h2, h3, h4, h5 {
   background-color: #ABC6C0;
 }
 
-.bulb_info span.close {
-  position: fixed;
-  right: 20px;
-  top: 20px;
+.bulb_info div.close {
+  position: -webkit-sticky;
+  position: sticky;
+  left: 88%;
+  top: 29px;
   cursor: pointer;
+  background: #fff;
+  width: 33px;
+  height: 33px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  border: 1px solid #010D0A;
+  z-index: 10;
+}
+
+.bulb_info div.close img {
+  width: 14px;
 }
 
 .bulb_info .bulb_con {
-  padding: 5.1rem 4.8rem 5.6rem 4.8rem;
+  padding: 3rem 4.8rem 5.2rem 4.8rem;
 }
 
 .bulb_info .bulb_con .head h2 {
@@ -182,6 +202,10 @@ h1, h2, h3, h4, h5 {
   transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
   color: #010D0A;
   margin-bottom: 4rem;
+}
+
+.bulb_info .bulb_con .box11 {
+  cursor: pointer;
 }
 
 .bulb_info .bulb_con .box11 p {
@@ -263,7 +287,7 @@ h1, h2, h3, h4, h5 {
 
 .bulb_info .bulb_con .border-div {
   width: 100%;
-  height: 120px;
+  height: 130px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -276,6 +300,62 @@ h1, h2, h3, h4, h5 {
   border: 1px dashed #879290;
   border-radius: 6px;
   margin-bottom: 4rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  background-color: #FBFCFC;
+  text-align: center;
+}
+
+.bulb_info .bulb_con .border-div input {
+  position: absolute;
+  top: 16px;
+  left: 18%;
+  height: 58px;
+  width: 65%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.bulb_info .bulb_con .border-div .img {
+  width: 28px;
+  height: 28px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #DCEBE9;
+  border-radius: 50%;
+  margin-bottom: 12px;
+}
+
+.bulb_info .bulb_con .border-div .img img {
+  margin-top: -1px;
+  margin-left: 1px;
+}
+
+.bulb_info .bulb_con .border-div p {
+  font-size: 13px;
+  color: #010D0A;
+  line-height: 1rem;
+}
+
+.bulb_info .bulb_con .border-div p span {
+  color: #F6AB39;
+  text-decoration: underline;
+}
+
+.bulb_info .bulb_con .border-div span {
+  color: #879290;
+  font-size: 12px;
+  font-family: Pop-normal;
 }
 
 .bulb_info .bulb_con span.note {
@@ -287,7 +367,7 @@ h1, h2, h3, h4, h5 {
 
 .bulb_info .bulb_footer {
   border-top: 1px solid #dbdbdb;
-  padding: 4rem 0;
+  padding: 3.7rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -304,6 +384,11 @@ h1, h2, h3, h4, h5 {
   color: #F6AB39;
   margin-right: 3.2rem;
   text-transform: uppercase;
+}
+
+.bulb_info .bulb_footer a img {
+  width: 12px;
+  margin-top: -2px;
 }
 
 .bulb_info .bulb_footer button {
@@ -567,6 +652,10 @@ h1, h2, h3, h4, h5 {
   color: #12846B;
 }
 
+.reg_form .main_div form .form-detail .box11 {
+  cursor: pointer;
+}
+
 .reg_form .main_div form .form-detail .box11 p {
   color: #879290;
   font-size: 14px;
@@ -713,7 +802,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .reg_form .main_div .step_wise button {
-  width: 100px;
+  width: 110px;
   height: 45px;
   text-transform: uppercase;
   letter-spacing: 0.3px;
@@ -748,5 +837,108 @@ h1, h2, h3, h4, h5 {
 .reg_form .main_div .step_wise button:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+
+@media (max-width: 749px) {
+  .reg_form {
+    background-color: #EFF7F6;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .reg_form .sidebar_div {
+    display: none;
+  }
+  .reg_form .main_div {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%;
+    padding: 2.4rem 1.5rem 2.8rem 1.5rem;
+  }
+  .reg_form .main_div .formhead {
+    margin-bottom: 4.5rem;
+  }
+  .reg_form .main_div .formhead button {
+    padding: 0.8rem 1.5rem;
+    height: 40px;
+    font-size: 12px;
+  }
+  .reg_form .main_div form {
+    width: 100%;
+    margin-bottom: 7rem;
+  }
+  .reg_form .main_div form .form-detail .radio_div {
+    margin-bottom: 4rem;
+  }
+  .reg_form .main_div form .form-detail .radio_div label {
+    margin-right: 3.1rem;
+  }
+  .reg_form .main_div .step_wise {
+    padding: 0 3rem;
+    background-color: #F5F8F7;
+    width: 100%;
+  }
+  .reg_form .main_div .step_wise .center_step {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .reg_form .main_div .step_wise button.active {
+    width: 100px;
+    height: 45px;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    font-size: 1.4rem;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    background-color: #F6AB39;
+    cursor: pointer;
+    height: 43px;
+  }
+  .reg_form .main_div .step_wise button.active:focus {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .reg_form .bulb_info {
+    width: 100%;
+  }
+  .reg_form .bulb_info div.close {
+    top: 24px;
+    border: none;
+  }
+  .reg_form .bulb_info div.close img {
+    width: 16px;
+  }
+  .reg_form .bulb_info .bulb_con {
+    padding: 3.6rem 3rem 4rem 3rem;
+  }
+  .reg_form .bulb_info .bulb_footer {
+    padding: 2.7rem 0;
+  }
+  .reg_form .bulb_info .bulb_footer a {
+    margin-right: 2.7rem;
+  }
+  .reg_form .bulb_info .bulb_footer button {
+    width: 110px;
+    height: 45px;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    font-size: 1.4rem;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    background-color: #F6AB39;
+    cursor: pointer;
+    height: 43px;
+  }
+  .reg_form .bulb_info .bulb_footer button:focus {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
 }
 /*# sourceMappingURL=app.css.map */
