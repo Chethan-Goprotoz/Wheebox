@@ -682,6 +682,7 @@ h1, h2, h3, h4, h5 {
 
 .reg_form .main_div form {
   width: 90%;
+  margin-bottom: 6rem;
 }
 
 .reg_form .main_div form .head h2 {
@@ -959,7 +960,7 @@ h1, h2, h3, h4, h5 {
   right: 0;
   width: 82.55%;
   height: 100px;
-  background-color: transparent;
+  background-color: #EFF7F6;
   z-index: 10;
   display: -webkit-box;
   display: -ms-flexbox;

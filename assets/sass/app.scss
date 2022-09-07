@@ -288,6 +288,7 @@ h1,h2,h3,h4,h5{
     }
     form{
       width: 90%;
+      margin-bottom: 6rem;
       .head{
         @include head;
       }
@@ -360,7 +361,7 @@ h1,h2,h3,h4,h5{
       right: 0;
       width: 82.55%;
       height: 100px;
-      background-color: transparent;
+      background-color: #EFF7F6;
       z-index: 10;
       display: flex;
       padding: 0 8rem 0 8rem;
