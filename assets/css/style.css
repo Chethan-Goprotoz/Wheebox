@@ -742,6 +742,9 @@ input[type=number] {
   .close img {
   width: 80%;
   }
+  .login-form-top li {
+    width: 100%;
+}
   /*===== Thank you page =====*/
   }
   @media screen and (max-width: 992px) {
