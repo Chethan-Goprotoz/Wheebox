@@ -38,7 +38,7 @@ let pindex;
 
   nextbtn.addEventListener('click', () => {
     if (ind >= 3) {
-        location.href = `thankyou.html`;
+        location.href = `thank-you.html`;
     }
     ind++;
     step_num++;
