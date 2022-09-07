@@ -8,12 +8,20 @@ let pindex;
 
 // open bulb form
 (()=>{
-  const bulbformTrigger = document.querySelector('.main_div .formhead button');
+  const bulbformTrigger = document.querySelector('.main_div .formhead button'),
+  closeBulbForm = document.querySelector('.reg_form .bulb_info span.close');
   
   bulbformTrigger.addEventListener('click',()=>{
     if(!bulbform.classList.contains('active')){
       bulbform.classList.add('active');
       bulb_overlay.classList.add('active');
+    }
+  })
+
+  closeBulbForm.addEventListener('click',()=>{
+    if(bulbform.classList.contains('active')){
+      bulbform.classList.remove('active');
+      bulb_overlay.classList.remove('active');
     }
   })
 })();

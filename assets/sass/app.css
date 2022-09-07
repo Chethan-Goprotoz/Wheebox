@@ -100,11 +100,10 @@ h1, h2, h3, h4, h5 {
   background-color: #fff;
   -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.12);
           box-shadow: 0 0 8px rgba(0, 0, 0, 0.12);
-  width: 34%;
+  width: 35%;
   max-height: 100%;
   overflow-y: auto;
   z-index: 70;
-  padding: 5rem 4.7rem;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
   -webkit-transition: all 0.5s ease-in-out;
@@ -129,26 +128,37 @@ h1, h2, h3, h4, h5 {
   background-color: #ABC6C0;
 }
 
-.bulb_info .head h2 {
+.bulb_info span.close {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+}
+
+.bulb_info .bulb_con {
+  padding: 5.1rem 4.8rem 5.6rem 4.8rem;
+}
+
+.bulb_info .bulb_con .head h2 {
   font-size: 2.5rem;
   font-family: Pop-medium;
   letter-spacing: -0.05rem;
   margin-bottom: 0.34rem;
 }
 
-.bulb_info .head p {
+.bulb_info .bulb_con .head p {
   color: #010D0A;
   font-size: 14px;
   margin-bottom: 1.5rem;
 }
 
-.bulb_info h6 {
-  font-size: 1.5rem;
+.bulb_info .bulb_con h6 {
+  font-size: 1.4rem;
   line-height: 2.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.65rem;
 }
 
-.bulb_info input[type='email'], .bulb_info input[type='text'], .bulb_info input[type='date'], .bulb_info .box11 {
+.bulb_info .bulb_con input[type='email'], .bulb_info .bulb_con input[type='text'], .bulb_info .bulb_con input[type='date'], .bulb_info .bulb_con .box11 {
   width: 100%;
   padding: 10px 15px;
   font-size: 14px;
@@ -174,12 +184,12 @@ h1, h2, h3, h4, h5 {
   margin-bottom: 4rem;
 }
 
-.bulb_info .box11 p {
+.bulb_info .bulb_con .box11 p {
   color: #879290;
   font-size: 14px;
 }
 
-.bulb_info .box11 img {
+.bulb_info .bulb_con .box11 img {
   position: absolute;
   top: 19px;
   right: 4.4%;
@@ -190,12 +200,12 @@ h1, h2, h3, h4, h5 {
   transition: all 0.3s ease-in-out;
 }
 
-.bulb_info .box11 img.active {
+.bulb_info .bulb_con .box11 img.active {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
 
-.bulb_info .option-container {
+.bulb_info .bulb_con .option-container {
   position: absolute;
   top: 49px;
   left: 0;
@@ -211,7 +221,7 @@ h1, h2, h3, h4, h5 {
   transition: max-height 0.3s ease-out;
 }
 
-.bulb_info .option-container .option {
+.bulb_info .bulb_con .option-container .option {
   margin: 8px 0;
   height: 45px;
   display: -webkit-box;
@@ -224,34 +234,34 @@ h1, h2, h3, h4, h5 {
   padding: 0 25px;
 }
 
-.bulb_info .option-container .option p {
+.bulb_info .bulb_con .option-container .option p {
   font-size: 14px;
   color: #879290;
   margin-bottom: 0px;
 }
 
-.bulb_info .option-container .option:hover {
+.bulb_info .bulb_con .option-container .option:hover {
   background-color: #e8fffa;
 }
 
-.bulb_info .option-container.active {
+.bulb_info .bulb_con .option-container.active {
   max-height: 230px;
 }
 
-.bulb_info .option-container::-webkit-scrollbar {
+.bulb_info .bulb_con .option-container::-webkit-scrollbar {
   width: 5px;
   border-radius: 30px;
 }
 
-.bulb_info .option-container::-webkit-scrollbar-thumb {
+.bulb_info .bulb_con .option-container::-webkit-scrollbar-thumb {
   background-color: #769991;
 }
 
-.bulb_info .option-container::-webkit-scrollbar-track {
+.bulb_info .bulb_con .option-container::-webkit-scrollbar-track {
   background-color: #ABC6C0;
 }
 
-.bulb_info .border-div {
+.bulb_info .bulb_con .border-div {
   width: 100%;
   height: 120px;
   display: -webkit-box;
@@ -268,11 +278,50 @@ h1, h2, h3, h4, h5 {
   margin-bottom: 4rem;
 }
 
-.bulb_info span.note {
+.bulb_info .bulb_con span.note {
   color: #676E6C;
   font-size: 13px;
   margin-top: 5px;
   line-height: 1.75;
+}
+
+.bulb_info .bulb_footer {
+  border-top: 1px solid #dbdbdb;
+  padding: 4rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bulb_info .bulb_footer a {
+  font-size: 13px;
+  color: #F6AB39;
+  margin-right: 3.2rem;
+  text-transform: uppercase;
+}
+
+.bulb_info .bulb_footer button {
+  width: 150px;
+  height: 45px;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  font-size: 1.4rem;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  background-color: #F6AB39;
+  cursor: pointer;
+}
+
+.bulb_info .bulb_footer button:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .reg_form {
@@ -655,9 +704,9 @@ h1, h2, h3, h4, h5 {
 }
 
 .reg_form .main_div .step_wise .center_step h6 {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   line-height: 2.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.65rem;
   text-transform: uppercase;
   margin-right: 6px;
   letter-spacing: 0;
@@ -669,11 +718,16 @@ h1, h2, h3, h4, h5 {
   text-transform: uppercase;
   letter-spacing: 0.3px;
   font-size: 1.4rem;
-  color: #dedede;
-  border: 1px solid #dedede;
+  color: #fff;
+  border: none;
   border-radius: 6px;
   background-color: #fff;
   cursor: pointer;
+}
+
+.reg_form .main_div .step_wise button:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .reg_form .main_div .step_wise button.enable {

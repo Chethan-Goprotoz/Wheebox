@@ -29,11 +29,14 @@ $btn-gray: #919D9B;
   text-transform: uppercase;
   letter-spacing: 0.3px;
   font-size: 1.4rem;
-  color: #dedede;
-  border: 1px solid #dedede;
+  color: #fff;
+  border: none;
   border-radius: 6px;
   background-color: $bgcolor;
   cursor: pointer;
+  &:focus{
+    box-shadow: none;
+  }
 }
 
 @mixin inputText{
@@ -143,7 +146,7 @@ $btn-gray: #919D9B;
 }
 
 @mixin h6Text{
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   line-height: 2.5rem; 
-  margin-bottom: 1rem;
+  margin-bottom: 0.65rem;
 }
