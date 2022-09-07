@@ -25,7 +25,7 @@ $('.loginslider').slick({
     centerPadding: '0px',
     infinite: true,
     autoplaySpeed: 5000,
-    autoplay: true,
+    autoplay: false,
     margin: '-20px'
   });
 
