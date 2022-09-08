@@ -452,7 +452,7 @@ h1,h2,h3,h4,h5{
 
 // verification form
 .ver_form{
-  padding: 1rem 0;
+  padding: 1rem;
   min-height: 100vh;
   background-color: #F5F8F7;
   @include flexC(center);
@@ -467,6 +467,7 @@ h1,h2,h3,h4,h5{
     padding: 0;
     .div-mid{
       padding: 2.8rem 7.5rem 3rem 13rem;
+      width: 95%;
       .head{
         @include head;
         border-bottom: 1px solid #ABC6C0;
@@ -678,6 +679,7 @@ h1,h2,h3,h4,h5{
       padding: 0rem 1.6rem 0.8rem 1.6rem;
       min-height: 88vh;
       .div-mid{
+        width: 95%;
         padding: 0;
         .head{
           border-bottom: 1px solid #dbdbdb;

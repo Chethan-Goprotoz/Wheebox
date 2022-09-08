@@ -1162,7 +1162,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .ver_form {
-  padding: 1rem 0;
+  padding: 1rem;
   min-height: 100vh;
   background-color: #F5F8F7;
   display: -webkit-box;
@@ -1255,6 +1255,7 @@ h1, h2, h3, h4, h5 {
 
 .ver_form .main_div .div-mid {
   padding: 2.8rem 7.5rem 3rem 13rem;
+  width: 95%;
 }
 
 .ver_form .main_div .div-mid .head {
@@ -1574,6 +1575,7 @@ h1, h2, h3, h4, h5 {
     min-height: 88vh;
   }
   .ver_form .main_div .div-mid {
+    width: 95%;
     padding: 0;
   }
   .ver_form .main_div .div-mid .head {
