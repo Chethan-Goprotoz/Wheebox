@@ -79,14 +79,42 @@ window.addEventListener('load',()=>{
 
 // <!-- Initialize Swiper -->
 
-      var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 3,
-        spaceBetween: 0,
-        loop: true,
+    //   var swiper = new Swiper(".mySwiper", {
+    //     slidesPerView: 3,
+    //     spaceBetween: 0,
+    //     autoplay: {
+    //         delay: 2500,
+    //         disableOnInteraction: false,
+    //       },
+    //     loop: true,
+    //     centeredSlides: true,
+    //     pagination: {
+    //       el: ".swiper-pagination",
+    //       clickable: true
+    //     },
+        
+    //   });
+    var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
         centeredSlides: true,
+        loop: true,
+        slidesPerView: "3",
+        coverflowEffect: {
+          rotate: 0,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: false,
+          watchOverflow : false,
+          slidesPerColumnFill: 'row'
+        },
         pagination: {
           el: ".swiper-pagination",
           clickable: true
         },
-        
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false
+        }
       });
