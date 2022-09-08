@@ -240,18 +240,35 @@ h1,h2,h3,h4,h5{
     min-height: 97vh;
     background-color: #248378;
     border-radius: 25px 0 0 25px;
-    @include flexC(center);
+    @include flexC(space-between);
     flex-direction: column;
     padding: 1.8rem;
     color: #fff;
-    h5{
-      @include h5Text;
-      color: #fff;
+    .logo{
+      width: 80%;
+      height: 100px;
+      margin-left: -20%;
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: center;
+      }
     }
-    p{
-      font-family: Pop-light;
-      font-size: 13px;
-      line-height: 2.4rem;
+    .content{
+      h5{
+        font-size: 1.62rem;
+        line-height: 2.9rem;
+        margin-bottom: 1.62rem;
+        color: #fff;
+        font-family: 'Pop-medium';
+        color: #fff;
+      }
+      p{
+        font-family: Pop-light;
+        font-size: 13px;
+        line-height: 2.4rem;
+      }
     }
   }
   .main_div{
@@ -298,6 +315,9 @@ h1,h2,h3,h4,h5{
           display: block;
           animation: slideRight 0.2s ease-in;
         }
+        .gx-lg-5{
+          --bs-gutter-x: 3.6rem;
+        }
         >h4{
           font-size: 1.7rem;
           font-family: Pop-medium;
@@ -311,7 +331,7 @@ h1,h2,h3,h4,h5{
           margin-bottom: 1rem;
         }
         input[type="text"],input[type="password"],input[type="email"],
-        input[type="date"],.box11{
+        input[type="number"],input[type="date"],.box11{
           @include inputText;
         }
         input[type="password"]{
@@ -383,13 +403,17 @@ h1,h2,h3,h4,h5{
         font-family: Pop-medium !important;
         h6{
           @include h6Text;
+          font-size: 16px;
           text-transform: uppercase;
           margin-right: 6px;
           letter-spacing: 0;
         }
+        span{
+          font-size: 16px;
+        }
       }
       button{
-        @include btnDefault(110px, #fff)
+        @include btnDefault(110px, transparent);
         &.enable{
           border: 1px solid $secondary-color;
           cursor: pointer;
