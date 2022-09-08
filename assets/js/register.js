@@ -25,7 +25,6 @@ allDate.forEach((elem)=>{
 // password hide/show
 (()=>{
   const togglePword = document.querySelectorAll('.form-detail input[type="password"] + img');
-  console.log(togglePword);
   togglePword.forEach((elem)=>{
     elem.addEventListener('click',(e)=>{
       let input = e.target.closest('.position-relative').querySelector('input');
@@ -198,6 +197,63 @@ allDate.forEach((elem)=>{
       mergeCon+=`${Array[i]}, `;
       selectBox.innerText=`${mergeCon}`;
     }
+  }
+})();
+
+// drag and drop files
+(()=>{
+  const dropZone = document.querySelectorAll('.bulb_info .border-div input');
+
+  dropZone.forEach((input)=>{
+    const dropZoneElement = input.closest('.border-div');
+
+    dropZoneElement.addEventListener('click', e=>{
+      input.click();
+    })
+
+    input.addEventListener('change',e=>{
+      if(input.files.length){
+        updateThumbnail(dropZoneElement,input.files[0]);
+      }
+    })
+
+    dropZoneElement.addEventListener('dragover', e=>{
+      e.preventDefault();
+    console.log(dropZoneElement);
+      dropZoneElement.classList.add('border-div-over');
+    });
+
+    ['dragleave','dragend'].forEach(type=>{
+      dropZoneElement.addEventListener(type, e=>{
+        dropZoneElement.classList.remove('border-div-over');
+      });
+    });
+
+    dropZoneElement.addEventListener('drop', e=>{
+      e.preventDefault();
+      if(e.dataTransfer.files.length){
+        input.files = e.dataTransfer.files;
+        updateThumbnail(dropZoneElement,e.dataTransfer.files[0]);
+      }
+      dropZoneElement.classList.remove('border-div-over');
+    });
+  });
+
+  function updateThumbnail(dropZoneElement, file){
+    let dropZonePrompt = dropZoneElement.querySelector('p');
+    dropZonePrompt.innerText = file.name;
+
+    // if(file.type.startsWith('image/')){
+    //   let reader = new FileReader();
+
+    //   reader.readAsDataURL(file);
+    //   reader.onload = ()=>{
+    //     thumbElem.style.backgroundImage = `url('${reader.result}')`;
+    //   }
+    // }
+    // else{
+    //   thumbElem.style.backgroundImage = null;
+    // }
   }
 })();
 

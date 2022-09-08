@@ -400,14 +400,12 @@ h1, h2, h3, h4, h5 {
   text-align: center;
 }
 
+.bulb_info .bulb_con .border-div.border-div-over {
+  border-style: solid;
+}
+
 .bulb_info .bulb_con .border-div input {
-  position: absolute;
-  top: 16px;
-  left: 18%;
-  height: 58px;
-  width: 65%;
-  opacity: 0;
-  cursor: pointer;
+  display: none;
 }
 
 .bulb_info .bulb_con .border-div .img {
@@ -832,7 +830,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .reg_form .main_div form .form-detail input[type="number"] {
-  padding: 1rem 1.5rem 1rem 10rem;
+  padding: 1rem 1.5rem 1rem 24%;
 }
 
 .reg_form .main_div form .form-detail input[type="checkbox"] {
@@ -1248,11 +1246,20 @@ h1, h2, h3, h4, h5 {
     color: #26887C;
     margin-bottom: 1rem;
   }
+  .reg_form .main_div form .form-detail input[type="number"] {
+    padding: 1rem 1.5rem 1rem 27%;
+  }
   .reg_form .main_div form .form-detail .radio_div {
     margin-bottom: 4rem;
   }
   .reg_form .main_div form .form-detail .radio_div label {
     margin-right: 3.1rem;
+  }
+  .reg_form .main_div form .form-detail .for_contact {
+    width: 19.5%;
+  }
+  .reg_form .main_div form .form-detail .for_contact .box11 img {
+    right: 14%;
   }
   .reg_form .main_div .step_wise {
     padding: 0 3rem;

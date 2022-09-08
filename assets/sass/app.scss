@@ -111,14 +111,11 @@ h1,h2,h3,h4,h5{
       position: relative;
       background-color: #FBFCFC;
       text-align: center;
+      &.border-div-over{
+        border-style: solid;
+      }
       input{
-        position: absolute;
-        top: 16px;
-        left: 18%;
-        height: 58px;
-        width: 65%;
-        opacity: 0;
-        cursor: pointer;
+        display: none;
       }
       .img{
         width: 28px;
@@ -361,7 +358,7 @@ h1,h2,h3,h4,h5{
           cursor: pointer;
         }
         input[type="number"]{
-          padding: 1rem 1.5rem 1rem 10rem;
+          padding: 1rem 1.5rem 1rem 24%;
         }
         input[type="checkbox"]{
           margin-right: 1.4rem;
@@ -562,10 +559,21 @@ h1,h2,h3,h4,h5{
           }
         }
         .form-detail{
+          input[type="number"]{
+            padding: 1rem 1.5rem 1rem 27%;
+          }
           .radio_div{
             margin-bottom: 4rem;
             label{
               margin-right: 3.1rem;
+            }
+          }
+          .for_contact{
+            width: 19.5%;
+            .box11{
+              img{
+                right: 14%;
+              }
             }
           }
         }
