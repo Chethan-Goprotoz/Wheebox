@@ -232,47 +232,10 @@ h1,h2,h3,h4,h5{
     }
   }
   .sidebar_div{
-    flex: 0 0 17%;
-    max-width: 17%;
-    min-height: 97vh;
-    background: transparent linear-gradient(358deg, #2D9D8D 0%, 
-    #20776E 100%) 0% 0% no-repeat padding-box;
-    border-radius: 25px 0 0 25px;
-    @include flexC(space-between);
-    flex-direction: column;
-    padding: 1.8rem;
-    color: #fff;
-    .logo{
-      width: 80%;
-      height: 100px;
-      margin-left: -20%;
-      img{
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-        object-position: center;
-      }
-    }
-    .content{
-      margin-top: -40%;
-      h5{
-        font-size: 1.62rem;
-        line-height: 2.9rem;
-        margin-bottom: 1.5rem;
-        color: #fff;
-        font-family: 'Pop-medium';
-        color: #fff;
-      }
-      p{
-        font-family: Pop-light;
-        font-size: 13px;
-        line-height: 2.4rem;
-      }
-    }
+    @include sideBar;
   }
   .main_div{
-    flex: 0 0 83%;
-    max-width: 83%;
+    @include mainDiv;
     padding: 2.8rem 7.5rem 3rem 13rem;
     position: relative;
     .formhead{
@@ -488,25 +451,61 @@ h1,h2,h3,h4,h5{
 // registration form css end
 
 // verification form
-.ver_form .main_div{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  .head{
-    @include head;
-    border-bottom: 1px solid #ABC6C0;
+.ver_form{
+  padding: 1rem 0;
+  min-height: 100vh;
+  background-color: #F5F8F7;
+  @include flexC(center);
+  .sidebar_div{
+    @include sideBar;
   }
-  form{
-    margin: 4rem 0 6rem;
-    h6{
-      @include h6Text;
+  .main_div{
+    @include mainDiv;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 0;
+    .div-mid{
+      padding: 2.8rem 7.5rem 3rem 13rem;
+      .head{
+        @include head;
+        border-bottom: 1px solid #ABC6C0;
+      }
+      form{
+        margin: 4rem 0 6rem;
+        h6{
+          @include h6Text;
+        }
+        input{
+          @include inputText;
+          margin-bottom: 3.2rem;
+        }
+        button{
+          @include btnDefault(100px, $secondary-color);
+        }
+      }
     }
-    input{
-      @include inputText;
-      margin-bottom: 3.2rem;
-    }
-    button{
-      @include btnDefault(100px, $secondary-color);
+    .step_wise2{
+      border-top: 2px solid #ABC6C0;
+      @include flexC(center);
+      height: 120px;
+      .footer-info{
+        text-align: center;
+        word-spacing: 0.15rem;
+        p{
+          font-size: 12px;
+          line-height: 1.5rem;
+          font-family: Pop-normal;
+          img{
+            width: 60px;
+            vertical-align: baseline;
+            object-fit: contain;
+          }
+        }
+        span{
+          font-size: 12px;
+        }
+      }
     }
   }
 }
@@ -532,6 +531,28 @@ h1,h2,h3,h4,h5{
       .step_wise{
         width: 75.4%;
       }
+      form{
+        margin-bottom: 9rem;
+      }
+    }
+    .form-detail{
+      .radio_div{
+        margin-bottom: 4rem;
+      }
+    }
+  }
+  .ver_form{
+    .sidebar_div{
+      flex: 0 0 24%;
+      max-width: 24%;
+      .logo{
+        width: 90%;
+        margin-left: -10%;
+      }
+    }
+    .main_div{
+      flex: 0 0 76%;
+      max-width: 76%;
       form{
         margin-bottom: 9rem;
       }
@@ -639,6 +660,59 @@ h1,h2,h3,h4,h5{
         button{
           @include btnDefault(110px, $secondary-color);
           height: 43px;
+        }
+      }
+    }
+  }
+  .ver_form{
+    background: transparent linear-gradient(358deg, #2D9D8D 0%, #20776E 100%) 0% 0% no-repeat padding-box;
+    padding: 0 1.5rem;
+    .sidebar_div{
+      display: none;
+    }
+    .main_div{
+      flex: 0 0 100%;
+      max-width: 100%;
+      background: #fff;
+      border-radius: 35px;
+      padding: 0rem 1.6rem 0.8rem 1.6rem;
+      min-height: 88vh;
+      .div-mid{
+        padding: 0;
+        .head{
+          border-bottom: 1px solid #dbdbdb;
+          h2{
+            font-size: 2rem;
+            margin-bottom: 1rem;
+          }
+          p.otp{
+            line-height: 2.2rem;
+            font-size: 13px;
+            color: #879290;
+            font-family: Pop-normal;
+            margin-bottom: 2rem;
+          }
+        }
+        form{
+          margin: 3rem 0 7rem;
+          h6{
+            font-family: Pop-medium;
+          }
+          input{
+            margin-bottom: 2.9rem;
+          }
+          button{
+            height: 40px;
+          }
+        }
+      }
+      .step_wise2{
+        align-items: flex-end;
+        border-top: none;
+        .footer-info{
+          p{
+            margin-bottom: 0.7rem;
+          }
         }
       }
     }
