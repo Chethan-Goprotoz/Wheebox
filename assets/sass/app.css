@@ -1161,6 +1161,91 @@ h1, h2, h3, h4, h5 {
           box-shadow: none;
 }
 
+.ver_form .main_div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.ver_form .main_div .head {
+  border-bottom: 1px solid #ABC6C0;
+}
+
+.ver_form .main_div .head h2 {
+  font-size: 2.5rem;
+  font-family: Pop-medium;
+  letter-spacing: -0.05rem;
+  margin-bottom: 0.34rem;
+}
+
+.ver_form .main_div .head p {
+  color: #010D0A;
+  font-size: 14px;
+  margin-bottom: 1.5rem;
+}
+
+.ver_form .main_div form {
+  margin: 4rem 0 6rem;
+}
+
+.ver_form .main_div form h6 {
+  font-size: 1.4rem;
+  line-height: 2.5rem;
+  margin-bottom: 0.65rem;
+}
+
+.ver_form .main_div form input {
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 14px;
+  background: #ffffff;
+  outline: 0;
+  height: 44px;
+  border-radius: 6px;
+  border: 1px solid #e0e0e0;
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.03);
+          box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.03);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 1.5;
+  -webkit-transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  color: #010D0A;
+  margin-bottom: 4rem;
+  margin-bottom: 3.2rem;
+}
+
+.ver_form .main_div form button {
+  width: 100px;
+  height: 45px;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  font-size: 1.4rem;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  background-color: #F6AB39;
+  cursor: pointer;
+}
+
+.ver_form .main_div form button:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 @media (max-width: 991px) {
   .reg_form .sidebar_div {
     -webkit-box-flex: 0;

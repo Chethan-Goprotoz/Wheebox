@@ -487,6 +487,30 @@ h1,h2,h3,h4,h5{
 
 // registration form css end
 
+// verification form
+.ver_form .main_div{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  .head{
+    @include head;
+    border-bottom: 1px solid #ABC6C0;
+  }
+  form{
+    margin: 4rem 0 6rem;
+    h6{
+      @include h6Text;
+    }
+    input{
+      @include inputText;
+      margin-bottom: 3.2rem;
+    }
+    button{
+      @include btnDefault(100px, $secondary-color);
+    }
+  }
+}
+
 // responsive css for mobile
 @media(max-width: 991px){
   .reg_form{
