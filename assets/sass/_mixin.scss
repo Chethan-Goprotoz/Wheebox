@@ -100,7 +100,7 @@ $btn-gray: #919D9B;
     padding: 0 25px;
     p{
       font-size: 14px;
-      color: #879290;
+      color: $font-color;
       margin-bottom: 0px;
     }
     &:hover{
@@ -120,13 +120,17 @@ $btn-gray: #919D9B;
     }
   }
   &.active{
-    max-height: 230px;
+    max-height: 160px;
+    &.checkbox-cont{
+      max-height: 152px;
+    }
     .inside_option{
       overflow-y: scroll;
-      max-height: 230px;
+      max-height: 151px;
       padding-bottom: 53px;
       .option{
         position: relative;
+        border-bottom: 1px solid #dbdbdb;
         .checkmark {
           position: absolute;
           top: 13px;
@@ -163,6 +167,7 @@ $btn-gray: #919D9B;
       label{
         text-transform: capitalize;
         cursor: pointer;
+        font-size: 13px;
       }
       &::-webkit-scrollbar{
         width: 5px;

@@ -178,7 +178,7 @@ allDate.forEach((elem)=>{
   function loopArrayValues(Array,selectBox,mergeCon){
     for(let i=0; i<Array.length; i++){
       selectBox.style.color = "#010D0A";
-      mergeCon+=`${Array[i]} `;
+      mergeCon+=`${Array[i]}, `;
       selectBox.innerText=`${mergeCon}`;
     }
   }

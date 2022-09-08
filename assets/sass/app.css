@@ -264,7 +264,7 @@ h1, h2, h3, h4, h5 {
 
 .bulb_info .bulb_con .option-container .option p {
   font-size: 14px;
-  color: #879290;
+  color: #010D0A;
   margin-bottom: 0px;
 }
 
@@ -291,17 +291,22 @@ h1, h2, h3, h4, h5 {
 }
 
 .bulb_info .bulb_con .option-container.active {
-  max-height: 230px;
+  max-height: 160px;
+}
+
+.bulb_info .bulb_con .option-container.active.checkbox-cont {
+  max-height: 152px;
 }
 
 .bulb_info .bulb_con .option-container.active .inside_option {
   overflow-y: scroll;
-  max-height: 230px;
+  max-height: 151px;
   padding-bottom: 53px;
 }
 
 .bulb_info .bulb_con .option-container.active .inside_option .option {
   position: relative;
+  border-bottom: 1px solid #dbdbdb;
 }
 
 .bulb_info .bulb_con .option-container.active .inside_option .option .checkmark {
@@ -342,6 +347,7 @@ h1, h2, h3, h4, h5 {
 .bulb_info .bulb_con .option-container.active .inside_option label {
   text-transform: capitalize;
   cursor: pointer;
+  font-size: 13px;
 }
 
 .bulb_info .bulb_con .option-container.active .inside_option::-webkit-scrollbar {
@@ -625,10 +631,14 @@ h1, h2, h3, h4, h5 {
      object-position: center;
 }
 
+.reg_form .sidebar_div .content {
+  margin-top: -40%;
+}
+
 .reg_form .sidebar_div .content h5 {
   font-size: 1.62rem;
   line-height: 2.9rem;
-  margin-bottom: 1.62rem;
+  margin-bottom: 1.5rem;
   color: #fff;
   font-family: 'Pop-medium';
   color: #fff;
@@ -659,7 +669,7 @@ h1, h2, h3, h4, h5 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 7.5rem;
+  margin-bottom: 6.5rem;
 }
 
 .reg_form .main_div .formhead button {
@@ -869,7 +879,7 @@ h1, h2, h3, h4, h5 {
 
 .reg_form .main_div form .form-detail .option-container .option p {
   font-size: 14px;
-  color: #879290;
+  color: #010D0A;
   margin-bottom: 0px;
 }
 
@@ -896,17 +906,22 @@ h1, h2, h3, h4, h5 {
 }
 
 .reg_form .main_div form .form-detail .option-container.active {
-  max-height: 230px;
+  max-height: 160px;
+}
+
+.reg_form .main_div form .form-detail .option-container.active.checkbox-cont {
+  max-height: 152px;
 }
 
 .reg_form .main_div form .form-detail .option-container.active .inside_option {
   overflow-y: scroll;
-  max-height: 230px;
+  max-height: 151px;
   padding-bottom: 53px;
 }
 
 .reg_form .main_div form .form-detail .option-container.active .inside_option .option {
   position: relative;
+  border-bottom: 1px solid #dbdbdb;
 }
 
 .reg_form .main_div form .form-detail .option-container.active .inside_option .option .checkmark {
@@ -947,6 +962,7 @@ h1, h2, h3, h4, h5 {
 .reg_form .main_div form .form-detail .option-container.active .inside_option label {
   text-transform: capitalize;
   cursor: pointer;
+  font-size: 13px;
 }
 
 .reg_form .main_div form .form-detail .option-container.active .inside_option::-webkit-scrollbar {
@@ -1034,14 +1050,10 @@ h1, h2, h3, h4, h5 {
   text-transform: uppercase;
   letter-spacing: 0.3px;
   font-size: 1.4rem;
-  color: rgba(255, 255, 255, 0);
+  color: #fff;
   border: none;
   border-radius: 6px;
-<<<<<<< Updated upstream
-  background-color: rgba(255, 255, 255, 0);
-=======
   background-color: transparent;
->>>>>>> Stashed changes
   cursor: pointer;
 }
 
@@ -1054,7 +1066,6 @@ h1, h2, h3, h4, h5 {
   border: 1px solid #F6AB39;
   cursor: pointer;
   color: #F6AB39;
-  background-color: #fff;
   z-index: 100;
 }
 
@@ -1099,6 +1110,9 @@ h1, h2, h3, h4, h5 {
   .reg_form .main_div form {
     width: 100%;
     margin-bottom: 7rem;
+  }
+  .reg_form .main_div form .head h2 {
+    color: #26887C;
   }
   .reg_form .main_div form .form-detail .radio_div {
     margin-bottom: 4rem;
