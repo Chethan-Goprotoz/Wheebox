@@ -663,13 +663,56 @@ h1, h2, h3, h4, h5 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 6.5rem;
+}
+
+.reg_form .main_div .formhead .login a {
+  text-decoration: none;
+}
+
+.reg_form .main_div .formhead .login button {
+  width: 110px;
+  height: 45px;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  font-size: 1.4rem;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  background-color: #F6AB39;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: Pop-normal;
+}
+
+.reg_form .main_div .formhead .login button:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.reg_form .main_div .formhead .login button i {
+  margin-right: 6px;
+  margin-top: -2px;
+}
+
+.reg_form .main_div .formhead .bulk_regis {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .reg_form .main_div .formhead button {
@@ -780,9 +823,16 @@ h1, h2, h3, h4, h5 {
   margin-bottom: 4rem;
 }
 
-.reg_form .main_div form .form-detail input[type="password"] {
-  background: #fff url(../images/svg/eye.svg) no-repeat scroll 113% center;
-  background-size: 30% 30%;
+.reg_form .main_div form .form-detail input[type="password"] + img.eye, .reg_form .main_div form .form-detail input[type="text"] + img.eye {
+  position: absolute;
+  right: 33px;
+  top: 4.25rem;
+  width: 22px;
+  cursor: pointer;
+}
+
+.reg_form .main_div form .form-detail input[type="number"] {
+  padding: 1rem 1.5rem 1rem 10rem;
 }
 
 .reg_form .main_div form .form-detail input[type="checkbox"] {
@@ -803,6 +853,7 @@ h1, h2, h3, h4, h5 {
   border: 1px solid #dbdbdb;
   border-radius: 50%;
   margin-right: 8px;
+  cursor: pointer;
 }
 
 .reg_form .main_div form .form-detail .radio_div input[type="radio"]:checked {
@@ -813,6 +864,7 @@ h1, h2, h3, h4, h5 {
 .reg_form .main_div form .form-detail .radio_div label {
   margin-right: 5rem;
   font-size: 14px;
+  cursor: pointer;
 }
 
 .reg_form .main_div form .form-detail .radio_div label.active {
@@ -991,6 +1043,35 @@ h1, h2, h3, h4, h5 {
   background-color: #ABC6C0;
 }
 
+.reg_form .main_div form .form-detail .for_contact {
+  position: absolute;
+  width: 17.5%;
+  top: 27px;
+}
+
+.reg_form .main_div form .form-detail .for_contact .box11 {
+  border: none;
+  border-right: 1px solid #e0e0e0;
+  border-left: 1px solid #e0e0e0;
+  border-radius: 6px 0 0 6px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  height: 43px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.reg_form .main_div form .form-detail .for_contact .box11 img {
+  top: 19px;
+  right: 18%;
+  width: 10px;
+}
+
+.reg_form .main_div form .form-detail .for_contact .option-container .option {
+  margin: 0;
+  height: 38px;
+  padding: 0 10px;
+}
+
 .reg_form .main_div .step_wise {
   position: fixed;
   bottom: 0;
@@ -1083,6 +1164,38 @@ h1, h2, h3, h4, h5 {
 }
 
 @media (max-width: 991px) {
+  .reg_form .sidebar_div {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 24%;
+            flex: 0 0 24%;
+    max-width: 24%;
+  }
+  .reg_form .sidebar_div .logo {
+    width: 90%;
+    margin-left: -10%;
+  }
+  .reg_form .main_div {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 76%;
+            flex: 0 0 76%;
+    max-width: 76%;
+    padding: 2.8rem 5rem 3rem 7rem;
+  }
+  .reg_form .main_div .formhead {
+    margin-bottom: 7.5rem;
+  }
+  .reg_form .main_div .step_wise {
+    width: 75.4%;
+  }
+  .reg_form .main_div form {
+    margin-bottom: 9rem;
+  }
+  .reg_form .form-detail .radio_div {
+    margin-bottom: 4rem;
+  }
+}
+
+@media (max-width: 749px) {
   .reg_form {
     background-color: #EFF7F6;
     -webkit-box-align: start;
@@ -1102,6 +1215,26 @@ h1, h2, h3, h4, h5 {
   .reg_form .main_div .formhead {
     margin-bottom: 4.5rem;
   }
+  .reg_form .main_div .formhead .login button {
+    width: 90px;
+    height: 45px;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    font-size: 1.4rem;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    background-color: #F6AB39;
+    cursor: pointer;
+    font-size: 1.3rem;
+  }
+  .reg_form .main_div .formhead .login button:focus {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .reg_form .main_div .formhead .login button i {
+    margin-top: 0;
+  }
   .reg_form .main_div .formhead button {
     padding: 0.8rem 1.5rem;
     height: 40px;
@@ -1113,6 +1246,7 @@ h1, h2, h3, h4, h5 {
   }
   .reg_form .main_div form .head h2 {
     color: #26887C;
+    margin-bottom: 1rem;
   }
   .reg_form .main_div form .form-detail .radio_div {
     margin-bottom: 4rem;
@@ -1132,6 +1266,9 @@ h1, h2, h3, h4, h5 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .reg_form .main_div .step_wise .center_step h6, .reg_form .main_div .step_wise .center_step span {
+    font-size: 15px;
   }
   .reg_form .main_div .step_wise button.active {
     width: 100px;

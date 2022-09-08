@@ -12,19 +12,31 @@ const allDate = document.querySelectorAll(".reg_form input[type='date']");
 
 allDate.forEach((elem)=>{
   elem.addEventListener('change',()=>{
-    if(elem.value === ''){
-      elem.classList.add('chg_color');
-    }
-    else{
-      elem.classList.remove('chg_color');
-    }
+      if(elem.value === ''){
+        elem.classList.add('chg_color');
+      }
+      else{
+        elem.classList.remove('chg_color');
+      }
+    })
   })
-})
+})();
+
+// password hide/show
+(()=>{
+  const togglePword = document.querySelectorAll('.form-detail input[type="password"] + img');
+  console.log(togglePword);
+  togglePword.forEach((elem)=>{
+    elem.addEventListener('click',(e)=>{
+      let input = e.target.closest('.position-relative').querySelector('input');
+      (input.type==='password')? input.type='text': input.type='password';
+    })
+  })
 })();
 
 // open bulb form
 (()=>{
-  const bulbformTrigger = document.querySelector('.main_div .formhead button'),
+  const bulbformTrigger = document.querySelector('.main_div .formhead .bulk_regis button'),
   closeBulbForm = document.querySelector('.reg_form .bulb_info div.close');
   
   bulbformTrigger.addEventListener('click',()=>{
@@ -178,6 +190,11 @@ allDate.forEach((elem)=>{
   function loopArrayValues(Array,selectBox,mergeCon){
     for(let i=0; i<Array.length; i++){
       selectBox.style.color = "#010D0A";
+      if(i>2){
+        mergeCon+=`....`;
+        selectBox.innerText=`${mergeCon}`;
+        return;
+      }
       mergeCon+=`${Array[i]}, `;
       selectBox.innerText=`${mergeCon}`;
     }
