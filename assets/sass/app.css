@@ -1460,6 +1460,9 @@ h1, h2, h3, h4, h5 {
   .reg_form .main_div .formhead .login button i {
     margin-top: 0;
   }
+  .reg_form .main_div .formhead .bulk_regis span {
+    height: 40px;
+  }
   .reg_form .main_div .formhead button {
     padding: 0.8rem 1.5rem;
     height: 40px;
