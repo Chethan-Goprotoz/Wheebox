@@ -668,6 +668,7 @@ h1,h2,h3,h4,h5{
   .ver_form{
     background: transparent linear-gradient(358deg, #2D9D8D 0%, #20776E 100%) 0% 0% no-repeat padding-box;
     padding: 0 1.5rem;
+    max-height: 100vh;
     .sidebar_div{
       display: none;
     }
@@ -676,7 +677,7 @@ h1,h2,h3,h4,h5{
       max-width: 100%;
       background: #fff;
       border-radius: 35px;
-      padding: 0rem 1.6rem 0.8rem 1.6rem;
+      padding: 5.5rem 1.6rem 0.8rem 1.6rem;
       min-height: 70vh;
       .div-mid{
         width: 95%;
