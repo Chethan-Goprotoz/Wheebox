@@ -668,7 +668,7 @@ h1,h2,h3,h4,h5{
   .ver_form{
     background: transparent linear-gradient(358deg, #2D9D8D 0%, #20776E 100%) 0% 0% no-repeat padding-box;
     padding: 0 1.5rem;
-    min-height: 100vh;
+    min-height: 100%;
     @include flexC(center);
     .sidebar_div{
       display: none;
