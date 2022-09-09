@@ -1572,7 +1572,7 @@ h1, h2, h3, h4, h5 {
     background: #fff;
     border-radius: 35px;
     padding: 0rem 1.6rem 0.8rem 1.6rem;
-    min-height: 88vh;
+    min-height: 88%;
   }
   .ver_form .main_div .div-mid {
     width: 95%;
