@@ -630,6 +630,10 @@ h1, h2, h3, h4, h5 {
      object-position: center;
 }
 
+.reg_form .sidebar_div .content {
+  margin-top: 50%;
+}
+
 .reg_form .sidebar_div .content h5 {
   font-size: 1.62rem;
   line-height: 2.9rem;
@@ -647,7 +651,7 @@ h1, h2, h3, h4, h5 {
 
 .reg_form .sidebar_div .pattern {
   width: 350px;
-  height: 250px;
+  height: 300px;
   overflow: hidden;
   top: 52px;
   position: relative;
@@ -1230,6 +1234,10 @@ h1, h2, h3, h4, h5 {
      object-position: center;
 }
 
+.ver_form .sidebar_div .content {
+  margin-top: 50%;
+}
+
 .ver_form .sidebar_div .content h5 {
   font-size: 1.62rem;
   line-height: 2.9rem;
@@ -1247,7 +1255,7 @@ h1, h2, h3, h4, h5 {
 
 .ver_form .sidebar_div .pattern {
   width: 350px;
-  height: 250px;
+  height: 300px;
   overflow: hidden;
   top: 52px;
   position: relative;
