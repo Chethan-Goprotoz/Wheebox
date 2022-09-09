@@ -248,7 +248,7 @@ input[type=number] {
   margin-bottom: 0.7rem;
   color: #000;
   }
-  .login-form .form-field input {
+  /* .login-form .form-field input {
   width: 100%;
   padding: 1rem 1.5rem;
   font-size: 15px;
@@ -262,7 +262,7 @@ input[type=number] {
   line-height: 1.5;
   transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
   color: #333;
-  }
+  } */
   .login-form-top h3 {
   color: #000000;
   font-size: 2rem;
@@ -276,19 +276,50 @@ input[type=number] {
   padding-left: 6.4rem;
   }
   .form-outline label,
-  .form-outline input {
+  /* .form-outline input {
   font-size: 14px;
   color: #010D0A;;
   line-height: 2.1rem;
   margin-bottom: 0.5rem;
   font-weight: 500;
-  }
+  }*/
 .login-form-top li{width: 50%;} 
   .form-outline input {
   padding: 0.7rem;
   opacity: 0.5;
   height: 44px;
+  } 
+
+
+  .login-form .form-field input {
+    width: 100% !important;
+    padding: 10px 15px !important;
+    font-size: 14px !important;
+    background: #ffffff !important;
+    outline: 0 !important;
+    height: 44px !important;
+    border-radius: 6px !important;
+    border: 1px solid #e0e0e0 !important;
+    -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.03) !important;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.03) !important;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+    line-height: 1.5;
+    -webkit-transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out !important;
+    transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out !important;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out !important;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out !important;
+    color: #010D0A !important;
+    margin-bottom: 4rem !important;
+    margin-bottom: 3.2rem !important;
   }
+
+
+
   .ragister-link {
   display: flex;
   width: 100%;
