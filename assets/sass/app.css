@@ -612,6 +612,7 @@ h1, h2, h3, h4, h5 {
           flex-direction: column;
   padding: 1.8rem;
   color: #fff;
+  overflow: hidden;
 }
 
 .reg_form .sidebar_div .logo {
@@ -629,10 +630,6 @@ h1, h2, h3, h4, h5 {
      object-position: center;
 }
 
-.reg_form .sidebar_div .content {
-  margin-top: -40%;
-}
-
 .reg_form .sidebar_div .content h5 {
   font-size: 1.62rem;
   line-height: 2.9rem;
@@ -646,6 +643,22 @@ h1, h2, h3, h4, h5 {
   font-family: Pop-light;
   font-size: 13px;
   line-height: 2.4rem;
+}
+
+.reg_form .sidebar_div .pattern {
+  width: 350px;
+  height: 250px;
+  overflow: hidden;
+  top: 52px;
+  position: relative;
+  background-image: url(../images/ring-pat-2.png);
+  z-index: 100000000000 !important;
+  background-position: bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+  left: 19px;
 }
 
 .reg_form .main_div {
@@ -1199,6 +1212,7 @@ h1, h2, h3, h4, h5 {
           flex-direction: column;
   padding: 1.8rem;
   color: #fff;
+  overflow: hidden;
 }
 
 .ver_form .sidebar_div .logo {
@@ -1216,10 +1230,6 @@ h1, h2, h3, h4, h5 {
      object-position: center;
 }
 
-.ver_form .sidebar_div .content {
-  margin-top: -40%;
-}
-
 .ver_form .sidebar_div .content h5 {
   font-size: 1.62rem;
   line-height: 2.9rem;
@@ -1233,6 +1243,22 @@ h1, h2, h3, h4, h5 {
   font-family: Pop-light;
   font-size: 13px;
   line-height: 2.4rem;
+}
+
+.ver_form .sidebar_div .pattern {
+  width: 350px;
+  height: 250px;
+  overflow: hidden;
+  top: 52px;
+  position: relative;
+  background-image: url(../images/ring-pat-2.png);
+  z-index: 100000000000 !important;
+  background-position: bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+  left: 19px;
 }
 
 .ver_form .main_div {

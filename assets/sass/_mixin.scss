@@ -204,6 +204,7 @@ $btn-gray: #919D9B;
   flex-direction: column;
   padding: 1.8rem;
   color: #fff;
+  overflow: hidden;
   .logo{
     width: 80%;
     height: 100px;
@@ -216,7 +217,6 @@ $btn-gray: #919D9B;
     }
   }
   .content{
-    margin-top: -40%;
     h5{
       font-size: 1.62rem;
       line-height: 2.9rem;
@@ -230,6 +230,20 @@ $btn-gray: #919D9B;
       font-size: 13px;
       line-height: 2.4rem;
     }
+  }
+  .pattern {
+    width: 350px;
+    height: 250px;
+    overflow: hidden;
+    top: 52px;
+    position: relative;
+    background-image: url(../images/ring-pat-2.png);
+    z-index: 100000000000 !important;
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: rotate(10deg);
+    left: 19px;
   }
 }
 
