@@ -79,35 +79,27 @@ function GEEKFORGEEKS() {
   })
 })();
 
-// loader
-const loaderCont = document.querySelector('.loader-container');
-
-window.addEventListener('load',()=>{
-    loaderCont.style.display="none";
-  })
-// Loader end
-
-    var swiper = new Swiper(".mySwiper", {
-        effect: "coverflow",
-        grabCursor: true,
-        centeredSlides: true,
-        loop: true,
-        slidesPerView: "3",
-        coverflowEffect: {
-          rotate: 0,
-          stretch: 0,
-          depth: 100,
-          modifier: 1,
-          slideShadows: false,
-          watchOverflow : false,
-          slidesPerColumnFill: 'row'
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true
-        },
-        autoplay: {
-          delay: 2500,
-          disableOnInteraction: false
-        }
-      });
+var swiper = new Swiper(".mySwiper", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    loop: true,
+    slidesPerView: "3",
+    coverflowEffect: {
+      rotate: 0,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: false,
+      watchOverflow : false,
+      slidesPerColumnFill: 'row'
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true
+    },
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false
+    }
+  });

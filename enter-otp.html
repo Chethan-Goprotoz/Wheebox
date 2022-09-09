@@ -8,28 +8,33 @@
       <!-- font awesome css -->
       <link rel="stylesheet" href="assets/font-awesome/all.min.css"/>
       <link rel="stylesheet" href="assets/font-awesome/fontawesome.css"/>
-  
+
       <!-- bootstrap css -->
       <link rel="stylesheet" href="assets/css/bootstrap.min.css" rel="stylesheet"/>
-  
-  
+
+      <!--swiper slider -->
+      <link rel="stylesheet" href="assets/css/swiper-bundle.min.css"/>
+
+      <!-- loader css -->
+      <link rel="stylesheet" href="assets/css/loader.css">
+
       <!-- style css -->
       <link rel="stylesheet" href="assets/css/style.css" rel="stylesheet" />
-      <!-- slider -->
-        <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
-      />
-      <!-- slider -->
     </head>
+
    <body class="login">
+      <!-- loader start-->
+      <div class="loader-container">
+         <div class="loader"></div>
+      </div>
+      <!-- loader end-->
       <div class="mainlogin-wrap  ">
          <section>
             <div class="container-fluid h-custom">
                <div class="row d-flex  align-items-center ">
                   <div class=" col-sm-12 col-md-12 col-lg-6 col-xl-6 login-info">
                      <figure><img
-                        src="/assets/images/login-logo.png"
+                        src="assets/images/login-logo.png"
                         alt="Logo"> </figure>
                      <h3>Advanced Artificial Intelligence System</h3>
                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -49,7 +54,7 @@
                   <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 login-form ">
                      <div class="login-form-top mb30">
                         <ul>
-                           <li><img src="/assets/images/hello-hand.png" > <span>Hello!</span></li>
+                           <li><img src="assets/images/hello-hand.png" > <span>Hello!</span></li>
                           
                         </ul>
                         <h3>IN +91******74 <span><a href="#">Change</a> </span></h3>
@@ -69,9 +74,10 @@
                               class=" form-control-lg"
                               placeholder="Enter 6 Digit OTP Here" required /> 
                         </div>
-                        <div class="d-flex justify-content-between align-items-center">
-                           <div class="ragister-link time"> <a >00:13 Second Left</a>  <a href="#">Resend OTP</a> </div>
-                        </div>
+                        <div class="register-link">
+                           <span>00:13 Second Left</span>
+                           <a href="forgot-password.html">Resend OTP</a>
+                         </div>
                         <div class="text-center text-lg-start mt-4 login-btn ">
                            <input type="submit"
                            value="Continue" name="Submit"  />
@@ -83,10 +89,10 @@
                      </form>
                      <footer>
                         <div class="footer-info">
-                           <p>Powered by <img src="/assets/images/Image 8.png" alt=""> © 2022</p>
-                           <p style="padding-right: 5px;"><img src="/assets/images/ISO.png" alt="">We are now ISO 9001:2015 certified and trusted company</p>
+                          <p>Powered by <img src="assets/images/Image 8.png" alt=""> © 2022</p>
+                          <span><img src="assets/images/ISO.png" alt="">We are now ISO 9001:2015 certified and trusted company</span>
                         </div>
-                     </footer>
+                      </footer>
                   </div>
                </div>
             </div>
@@ -95,7 +101,8 @@
       <script src="assets/js/jquery-2.2.0.min.js"></script>
       <script src="assets/js/popper.min.js"></script>
       <script src="assets/js/bootstrap.bundle.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+      <script src="assets/js/swiper-bundle.min.js"></script>
+      <script src="assets/js/loader.js"></script>
       <script src="assets/js/script.js"></script>
    </body>
 </html>
