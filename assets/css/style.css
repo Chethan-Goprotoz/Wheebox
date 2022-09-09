@@ -474,6 +474,13 @@ input[type=number] {
   .otp-info p  strong {
   color: #010D0A;
   }
+  input[type="password"]+img{
+    position: absolute;
+    right: 33px;
+    top: 4.25rem;
+    width: 22px;
+    cursor: pointer;
+  }
   .forgot-password .ragister-link {
   flex-direction: row-reverse;
   }

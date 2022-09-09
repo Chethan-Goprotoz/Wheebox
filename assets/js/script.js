@@ -68,6 +68,17 @@ function GEEKFORGEEKS() {
     return true;
 }
 
+// password hide/show
+(()=>{
+  const togglePword = document.querySelectorAll('form input[type="password"] + img');
+  togglePword.forEach((elem)=>{
+    elem.addEventListener('click',(e)=>{
+      let input = e.target.closest('.position-relative').querySelector('input');
+      (input.type==='password')? input.type='text': input.type='password';
+    })
+  })
+})();
+
 // loader
 const loaderCont = document.querySelector('.loader-container');
 
@@ -76,24 +87,6 @@ window.addEventListener('load',()=>{
   })
 // Loader end
 
-
-// <!-- Initialize Swiper -->
-
-    //   var swiper = new Swiper(".mySwiper", {
-    //     slidesPerView: 3,
-    //     spaceBetween: 0,
-    //     autoplay: {
-    //         delay: 2500,
-    //         disableOnInteraction: false,
-    //       },
-    //     loop: true,
-    //     centeredSlides: true,
-    //     pagination: {
-    //       el: ".swiper-pagination",
-    //       clickable: true
-    //     },
-        
-    //   });
     var swiper = new Swiper(".mySwiper", {
         effect: "coverflow",
         grabCursor: true,
