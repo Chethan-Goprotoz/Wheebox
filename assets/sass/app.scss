@@ -668,7 +668,8 @@ h1,h2,h3,h4,h5{
   .ver_form{
     background: transparent linear-gradient(358deg, #2D9D8D 0%, #20776E 100%) 0% 0% no-repeat padding-box;
     padding: 0 1.5rem;
-    max-height: 100vh;
+    min-height: 100vh;
+    @include flexC(center);
     .sidebar_div{
       display: none;
     }
@@ -677,15 +678,14 @@ h1,h2,h3,h4,h5{
       max-width: 100%;
       background: #fff;
       border-radius: 35px;
-      padding: 5.5rem 1.6rem 0.8rem 1.6rem;
-      min-height: 70vh;
+      padding: 4.7rem 1.6rem 0.8rem 1.6rem;
       .div-mid{
         width: 95%;
         padding: 0;
         .head{
           border-bottom: 1px solid #dbdbdb;
           h2{
-            font-size: 2rem;
+            font-size: 2.2rem;
             margin-bottom: 1rem;
           }
           p.otp{
@@ -697,7 +697,7 @@ h1,h2,h3,h4,h5{
           }
         }
         form{
-          margin: 3rem 0 7rem;
+          margin: 3rem 0 8rem;
           h6{
             font-family: Pop-medium;
           }
