@@ -256,12 +256,6 @@ input[type=number] {
   width: 100%;
 }
 
-.form-outline input {
-  padding: 0.7rem;
-  opacity: 0.5;
-  height: 44px;
-}
-
 .login-form .form-field input {
   width: 100%;
   padding: 10px 15px;
@@ -448,17 +442,18 @@ ul.text-center.log-in-2 li {
   font-size: 15px;
   line-height: 2.2rem;
   color: #010D0A;
-  opacity: 0.6;
 }
 
-.otp-info p {
-  font-size: 15px;
+.otp-info p,.otp-info ul li {
+  font-size: 14px;
   line-height: 27px;
-  color: #010D0A80;
+  color: #818181;
+  font-family: 'Pop-normal';
 }
 
-.otp-info p strong {
+.otp-info p span {
   color: #010D0A;
+  font-family: Pop-medium;
 }
 
 input[type="password"]+img,
@@ -484,8 +479,9 @@ input[type="text"]+img {
 }
 
 .otp-info h4 {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   color: #010D0A;
+  font-family: Pop-medium;
   line-height: 27px;
 }
 
