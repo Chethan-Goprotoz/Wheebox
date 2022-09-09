@@ -860,6 +860,60 @@ a.login-btn.mobile-view {
   right: 70px;
 }
 
+/* slider */
+.swiper-slide {
+  opacity: 0.5;
+  z-index: 1;
+}
+
+.swiper-slide-active {
+  opacity: 1;
+  z-index: 2;
+  display: block;
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+.swiper {
+  height: 240px;
+  margin-top: 40px;
+}
+
+.swiper-pagination {
+  margin-top: 50px !important;
+  top: 170px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #fff !important;
+}
+
+.swiper-pagination-bullet {
+  width: 12px !important;
+  height: 4px !important;
+  display: inline-block;
+  border-radius: 10px !important;
+}
+
+.swiper-pagination-bullet-active {
+  width: 20px !important;
+}
+
+.swiper-3d .swiper-cube-shadow,
+.swiper-3d .swiper-slide,
+.swiper-3d .swiper-slide-shadow,
+.swiper-3d .swiper-slide-shadow-bottom,
+.swiper-3d .swiper-slide-shadow-left,
+.swiper-3d .swiper-slide-shadow-right,
+.swiper-3d .swiper-slide-shadow-top,
+.swiper-3d .swiper-wrapper {
+  transform-style: flat !important;
+}
+
+.swiper-slide-duplicate-prev {
+  opacity: 0 !important;
+}
+
 /* Thank You Page */
 /*========== Responsive Style ==========*/
 /*===== Thank you page =====*/
@@ -941,11 +995,9 @@ a.login-btn.mobile-view {
   .mainlogin-wrap {
     border: 0;
     background: #ffffff;
-  }
-
-  .mainlogin-wrap {
     border-radius: 35px;
     width: 97%;
+    padding: 2.4rem 0rem 0.9rem;
   }
 
   .login-form ul {
@@ -1003,6 +1055,13 @@ a.login-btn.mobile-view {
   .mainlogin3-wrap {
     width: 93%;
     border-radius: 2.188rem;
+  }
+
+  .footer-info span{
+    align-items: flex-start;
+  }
+  .footer-info span img{
+    margin-top: 3px;
   }
 
   /*===== login page =====*/
@@ -1192,81 +1251,4 @@ a.login-btn.mobile-view {
   }
 
   /*===== Verification page =====*/
-}
-
-/* slider */
-.swiper-slide {
-  opacity: 0.5;
-  z-index: 1;
-}
-
-.swiper-slide-active {
-  opacity: 1;
-  z-index: 2;
-  display: block;
-  margin-left: -20px;
-  margin-right: -20px;
-}
-
-.swiper {
-  height: 240px;
-  margin-top: 40px;
-}
-
-.swiper-pagination {
-  margin-top: 50px !important;
-  top: 170px;
-}
-
-.swiper-pagination-bullet-active {
-  background-color: #fff !important;
-}
-
-.swiper-pagination-bullet {
-  width: 12px !important;
-  height: 4px !important;
-  display: inline-block;
-  border-radius: 10px !important;
-}
-
-.swiper-pagination-bullet-active {
-  width: 20px !important;
-}
-
-.swiper-3d .swiper-cube-shadow,
-.swiper-3d .swiper-slide,
-.swiper-3d .swiper-slide-shadow,
-.swiper-3d .swiper-slide-shadow-bottom,
-.swiper-3d .swiper-slide-shadow-left,
-.swiper-3d .swiper-slide-shadow-right,
-.swiper-3d .swiper-slide-shadow-top,
-.swiper-3d .swiper-wrapper {
-  transform-style: flat !important;
-}
-
-.swiper-slide-duplicate-prev {
-  opacity: 0 !important;
-}
-
-.sidebar_div {
-  overflow: hidden !IMPORTANT;
-}
-
-.pattern {
-  width: 318px;
-  height: 414px;
-  overflow: hidden;
-  top: 52px;
-  position: relative;
-  background-image: url(/assets/images/ring-pat-2.png);
-  z-index: 100000000000 !important;
-  background-position: bottom;
-  background-size: contain;
-  background-repeat: no-repeat;
-  transform: rotate(10deg);
-  left: 0px;
-}
-
-.content.varific {
-  margin-top: 40% !important;
 }
