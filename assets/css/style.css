@@ -1006,18 +1006,21 @@ a.login-btn.mobile-view {
     align-items: center;
     margin-bottom: 2rem;
   }
-
+  .login-form li:nth-child(1){
+    padding-left: 1%;
+  }
   .login-form li:nth-child(2) {
     padding-left: 6px;
-    margin-bottom: 0.688rem;
+    margin-bottom: 0rem;
   }
 
   .login-form li span {
-    font-size: 2.813rem;
+    font-size: 3.1rem;
     line-height: 4.25rem;
   }
   .login-form li figure img{
-    width: 140px;
+    width: 145px;
+    object-fit: contain;
   }
   .login-form-top img {
     margin-right: 4px;
