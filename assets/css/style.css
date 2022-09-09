@@ -715,7 +715,7 @@ a.login-btn.mobile-view {
 /* Thank You Page */
 .thank-you {
   background: #cdd3d2;
-  padding: 0px 230px;
+  padding: 0px 200px;
 }
 
 .thank-you-wrap {
@@ -777,18 +777,18 @@ a.login-btn.mobile-view {
 
 .thank-img {
   position: absolute;
-  right: -224px;
+  right: -174px;
   transform: rotate(2deg);
   z-index: 1;
-  bottom: -182px
+  bottom: -199px
 }
 
 .thank-img img {
-  width: 80%;
+  width: 85%;
 }
 
 .cont-btn {
-  margin-top: 40px
+  margin-top: 80px
 }
 
 .cont-btn a {
@@ -867,14 +867,15 @@ a.login-btn.mobile-view {
 /* Thank You Page */
 /*========== Responsive Style ==========*/
 /*===== Thank you page =====*/
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1500px) {
   .thank-img img {
-    width: 69%;
+    width: 72%;
   }
 
   .thank-img {
     position: absolute;
     right: -265px;
+    bottom: -162px;
   }
 
   /*===== Thank you page =====*/
@@ -900,7 +901,7 @@ a.login-btn.mobile-view {
   }
 
   .thank-img img {
-    width: 53%;
+    width: 45%;
   }
 
   .close span {
@@ -1045,7 +1046,8 @@ a.login-btn.mobile-view {
   .thank-img {
     position: relative;
     right: -84px;
-    bottom: -100px;
+    bottom: -63px;
+    transform: rotate(0deg);
   }
 
   .thank-you-wrap {
