@@ -541,6 +541,7 @@ h1,h2,h3,h4,h5{
       }
       h4{
         @include h4Text;
+        margin-bottom: 0;
       }
       .grid{
         display: grid;
@@ -653,14 +654,26 @@ h1,h2,h3,h4,h5{
         margin-bottom: 2.8rem;
         border-radius: 15px;
         .test-maincon{
-          padding: 1.5rem 1.3rem;
-          border-bottom: 1px solid #dbdbdb;
-          .rounded-circle{
-            height: 94px;
-            border: 4px solid #238176;
-            border-radius: 50%;
-            @include flexC(center);
+          padding: 1.5rem 1.3rem 2rem;
+          border-bottom: 1px solid #ebebeb;
+          .donut{
+            flex: 0 0 34%;
+            max-width: 34%;
+            .rounded-circle{
+              width: 100%;
+              height: 85px;
+              border: 4px solid #EBF3F2;
+              border-top-color: #2A9687;
+              @include flexC(center);
+              flex-direction: column;
+            }
+          }
+          .data-div{
+            flex: 0 0 calc(66%/2);
+            max-width: calc(66%/2);
+            display: flex;
             flex-direction: column;
+            justify-content: center;
           }
           h6{
             font-size: 1.4rem;
@@ -670,12 +683,12 @@ h1,h2,h3,h4,h5{
             font-family: Pop-semibold;
           }
           h4{
-            @include h4Text;
+            font-size: 1.8rem;
             color: #0D4136;
-            display: inline-block;
             letter-spacing: -0.03rem;
-            margin-right: 1px;
+            margin-right: 2px;
             font-family: Pop-semibold;
+            line-height: 1;
           }
           span{
             font-size: 11px;
@@ -684,14 +697,17 @@ h1,h2,h3,h4,h5{
           }
           p{
             color: #76807C;
-            font-size: 13px;
+            font-size: 1.15rem;
+            line-height: 1.8rem;
+            margin-bottom: 0;
+            font-family: Pop-normal;
           }
         }
         .btn-test{
           padding: 2rem 1rem;
           @include flexC(center);
           button{
-            @include btnDefault(170px, 38px, $secondary-color);
+            @include btnDefault(150px, 36px, $secondary-color);
             font-size: 1.3rem;
             letter-spacing: -0.02rem;
           }

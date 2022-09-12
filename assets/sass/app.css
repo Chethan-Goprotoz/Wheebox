@@ -1458,6 +1458,7 @@ h1, h2, h3, h4, h5 {
 .selection .main_div .main_header h4 {
   font-size: 1.7rem;
   font-family: Pop-medium;
+  margin-bottom: 0;
 }
 
 .selection .main_div .main_header .grid {
@@ -1628,14 +1629,22 @@ h1, h2, h3, h4, h5 {
 }
 
 .selection .main_div .test_con .test-card .test-maincon {
-  padding: 1.5rem 1.3rem;
-  border-bottom: 1px solid #dbdbdb;
+  padding: 1.5rem 1.3rem 2rem;
+  border-bottom: 1px solid #ebebeb;
 }
 
-.selection .main_div .test_con .test-card .test-maincon .rounded-circle {
-  height: 94px;
-  border: 4px solid #238176;
-  border-radius: 50%;
+.selection .main_div .test_con .test-card .test-maincon .donut {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 34%;
+          flex: 0 0 34%;
+  max-width: 34%;
+}
+
+.selection .main_div .test_con .test-card .test-maincon .donut .rounded-circle {
+  width: 100%;
+  height: 85px;
+  border: 4px solid #EBF3F2;
+  border-top-color: #2A9687;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1651,6 +1660,23 @@ h1, h2, h3, h4, h5 {
           flex-direction: column;
 }
 
+.selection .main_div .test_con .test-card .test-maincon .data-div {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(66%/2);
+          flex: 0 0 calc(66%/2);
+  max-width: calc(66%/2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .selection .main_div .test_con .test-card .test-maincon h6 {
   font-size: 1.4rem;
   line-height: 2.5rem;
@@ -1660,13 +1686,12 @@ h1, h2, h3, h4, h5 {
 }
 
 .selection .main_div .test_con .test-card .test-maincon h4 {
-  font-size: 1.7rem;
-  font-family: Pop-medium;
+  font-size: 1.8rem;
   color: #0D4136;
-  display: inline-block;
   letter-spacing: -0.03rem;
-  margin-right: 1px;
+  margin-right: 2px;
   font-family: Pop-semibold;
+  line-height: 1;
 }
 
 .selection .main_div .test_con .test-card .test-maincon span {
@@ -1677,7 +1702,10 @@ h1, h2, h3, h4, h5 {
 
 .selection .main_div .test_con .test-card .test-maincon p {
   color: #76807C;
-  font-size: 13px;
+  font-size: 1.15rem;
+  line-height: 1.8rem;
+  margin-bottom: 0;
+  font-family: Pop-normal;
 }
 
 .selection .main_div .test_con .test-card .btn-test {
@@ -1694,8 +1722,8 @@ h1, h2, h3, h4, h5 {
 }
 
 .selection .main_div .test_con .test-card .btn-test button {
-  width: 170px;
-  height: 38px;
+  width: 150px;
+  height: 36px;
   text-transform: uppercase;
   letter-spacing: 0.3px;
   font-size: 1.4rem;
