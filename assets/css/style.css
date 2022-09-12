@@ -437,7 +437,18 @@ ul.text-center.log-in-2 li {
   font-size: 14px;
   text-transform: capitalize;
 }
-
+.enter-otp ul{
+  margin-bottom: 1.5rem;
+}
+.enter-otp h4{
+  font-family: Pop-semibold;
+  margin-bottom: 1.5rem;
+}
+.enter-otp h4 span{
+  font-size: 13px;
+  font-family: Pop-medium;
+  margin-left: 5px;
+}
 .otp-info {
   font-size: 15px;
   line-height: 2.2rem;
