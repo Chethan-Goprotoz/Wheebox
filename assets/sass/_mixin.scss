@@ -23,9 +23,9 @@ $btn-gray: #919D9B;
   }
 }
 
-@mixin btnDefault($width, $bgcolor){
+@mixin btnDefault($width, $height, $bgcolor){
 	width: $width;
-  height: 45px;
+  height: $height;
   text-transform: uppercase;
   letter-spacing: 0.3px;
   font-size: 1.4rem;
@@ -39,8 +39,8 @@ $btn-gray: #919D9B;
   }
 }
 
-@mixin inputText{
-  width: 100%;
+@mixin inputText($width){
+  width: $width;
   padding: 10px 15px;
   font-size: 14px;
   background: #ffffff;

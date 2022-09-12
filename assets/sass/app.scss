@@ -31,6 +31,9 @@ h1,h2,h3,h4,h5{
   color: $font-color;
 }
 
+::placeholder{
+  color: #879290;
+}
 //keyframes
 @keyframes slideRight{
   0%{
@@ -92,7 +95,7 @@ h1,h2,h3,h4,h5{
       @include h6Text;
     }
     input[type='email'],input[type='text'],input[type='date'],.box11{
-      @include inputText;
+      @include inputText(100%);
     }
     .box11{
       @include box11;
@@ -166,7 +169,7 @@ h1,h2,h3,h4,h5{
       }
     }
     button{
-      @include btnDefault(150px,$secondary-color);
+      @include btnDefault(150px, 45px,$secondary-color);
     }
   }
 }
@@ -181,7 +184,6 @@ h1,h2,h3,h4,h5{
   padding: 1rem;
   @include flexC(center);
   ::placeholder{
-    color: #879290;
     font-size: 13px;
   }
   input[type='date'].chg_color {
@@ -245,7 +247,7 @@ h1,h2,h3,h4,h5{
           text-decoration: none;
         }
         button{
-          @include btnDefault(110px, $secondary-color);
+          @include btnDefault(110px, 45px, $secondary-color);
           @include flexC(center);
           font-family: Pop-normal;
           i{
@@ -311,7 +313,7 @@ h1,h2,h3,h4,h5{
         }
         input[type="text"],input[type="password"],input[type="email"],
         input[type="number"],input[type="date"],.box11{
-          @include inputText;
+          @include inputText(100%);
         }
         input[type="password"] + img.eye,input[type="text"] + img.eye{
           position: absolute;
@@ -426,7 +428,7 @@ h1,h2,h3,h4,h5{
         }
       }
       button{
-        @include btnDefault(110px, transparent);
+        @include btnDefault(110px, 45px, transparent);
         &.enable{
           border: 1px solid $secondary-color;
           cursor: pointer;
@@ -450,7 +452,7 @@ h1,h2,h3,h4,h5{
 
 // registration form css end
 
-// verification form
+// verification form css start
 .ver_form{
   padding: 1rem;
   min-height: 100vh;
@@ -478,11 +480,11 @@ h1,h2,h3,h4,h5{
           @include h6Text;
         }
         input{
-          @include inputText;
+          @include inputText(100%);
           margin-bottom: 3.2rem;
         }
         button{
-          @include btnDefault(100px, $secondary-color);
+          @include btnDefault(100px, 45px, $secondary-color);
         }
       }
     }
@@ -510,6 +512,195 @@ h1,h2,h3,h4,h5{
     }
   }
 }
+// verification form css end
+
+// Test selection css start
+.selection{
+  padding: 3rem;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: #EAF2EE;
+  .main_div{
+    .main_header{
+      border-radius: 14px;
+      background-color: #fff;
+      padding: 0 1.3rem 0 2.2rem;
+      height: 8.5rem;
+      @include flexC(space-between);
+      margin-bottom: 2.9rem;
+      .logo{
+        width: 41px;
+        height: 41px;
+        img{
+          width: 100%;
+          height: 100%;
+        }
+      }
+      h4{
+        @include h4Text;
+      }
+      .grid{
+        display: grid;
+        grid-template-columns: 67% 33%;
+        grid-gap: 5px;
+        .grid1{
+          text-align: end;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          h6{
+            @include h6Text;
+            color: $font-color;
+            font-family: Pop-medium;
+            margin-bottom: 0.4rem;
+          }
+          p{
+            margin: 0;
+            line-height: 1rem;
+            font-size: 13px;
+            color: #879290;
+          }
+        }
+        .grid2{
+          .profile{
+            display: flex;
+            justify-content: center;
+            img{
+              width: 65%;
+            }
+          }
+        }
+      }
+    }
+    .middle_div{
+      margin-bottom: 3.9rem;
+      .div1{
+        padding: 3.5rem 3.4rem 2.75rem;
+        border-radius: 15px;
+        background: linear-gradient(to top, #2D9D8D, #20776E);
+        h5{
+          @include h5Text;
+          color: #fff;
+          font-family: Pop-semibold;
+          margin-bottom: 0.8rem;
+        }
+        p{
+          font-family: Pop-extralight;
+          color: #fff;
+          span{
+            color: $secondary-color;
+            font-family: Pop-normal;
+          }
+        }
+        .img{
+          max-width: 250px;
+          height: auto;
+          position: absolute;
+          top: -76px;
+          img{
+            width: 100%;
+          }
+        }
+      }
+      .div2{
+        background-color: #fff;
+        border-radius: 15px;
+        padding: 1.6rem 1.8rem;
+      }
+    }
+    .test_con{
+      .row.gx-5{
+        --bs-gutter-x: 2.8rem;
+      }
+      h3{
+        font-size: 2rem;
+        font-family: Pop-medium;
+        margin-bottom: 1.8rem;
+      }
+      input{
+        @include inputText(90%);
+        padding: 10px 15px 10px 41px;
+        background: #fff url(../images/svg/search2.svg) no-repeat scroll 15px center;
+        background-size: 5%;
+      }
+      .filter-btn{
+        button{
+          padding: 0 10px;
+          height: 39px;
+          letter-spacing: 0.3px;
+          font-size: 1.4rem;
+          color: #76807C;
+          border-radius: 0;
+          border: none;
+          background-color: transparent;
+          cursor: pointer;
+          margin-right: 1rem;
+          &:focus{
+            box-shadow: none;
+          }
+          &.active{
+            color: $font-color;
+            border-bottom: 3px solid $primary-color;
+            font-family: Pop-medium;
+          }
+        }
+      }
+      .test-card{
+        background-color: #fff;
+        margin-bottom: 2.8rem;
+        border-radius: 15px;
+        .test-maincon{
+          padding: 1.5rem 1.3rem;
+          border-bottom: 1px solid #dbdbdb;
+          .rounded-circle{
+            height: 94px;
+            border: 4px solid #238176;
+            border-radius: 50%;
+            @include flexC(center);
+            flex-direction: column;
+          }
+          h6{
+            font-size: 1.4rem;
+            line-height: 2.5rem;
+            margin-bottom: 2.4rem;
+            color: #0F2046;
+            font-family: Pop-semibold;
+          }
+          h4{
+            @include h4Text;
+            color: #0D4136;
+            display: inline-block;
+            letter-spacing: -0.03rem;
+            margin-right: 1px;
+            font-family: Pop-semibold;
+          }
+          span{
+            font-size: 11px;
+            color: #0D4136;
+            font-family: Pop-medium;
+          }
+          p{
+            color: #76807C;
+            font-size: 13px;
+          }
+        }
+        .btn-test{
+          padding: 2rem 1rem;
+          @include flexC(center);
+          button{
+            @include btnDefault(170px, 38px, $secondary-color);
+            font-size: 1.3rem;
+            letter-spacing: -0.02rem;
+          }
+        }
+      }
+    }
+  }
+}
+// Test selection css end
 
 // responsive css for mobile
 @media(max-width: 991px){
@@ -582,7 +773,7 @@ h1,h2,h3,h4,h5{
         margin-bottom: 4.5rem;
         .login{
           button{
-            @include btnDefault(90px, $secondary-color);
+            @include btnDefault(90px,  45px,$secondary-color);
             font-size: 1.3rem;
             i{
               margin-top: 0;
@@ -641,7 +832,7 @@ h1,h2,h3,h4,h5{
           }
         }
         button.active{
-          @include btnDefault(100px, $secondary-color);
+          @include btnDefault(100px, 45px, $secondary-color);
           height: 43px;
         }
       }
@@ -664,7 +855,7 @@ h1,h2,h3,h4,h5{
           margin-right: 2.7rem
         }
         button{
-          @include btnDefault(110px, $secondary-color);
+          @include btnDefault(110px, 45px, $secondary-color);
           height: 43px;
         }
       }
