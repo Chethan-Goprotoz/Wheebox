@@ -614,7 +614,7 @@ h1,h2,h3,h4,h5{
     }
     .test_con{
       .row.gx-5{
-        --bs-gutter-x: 2.8rem;
+        --bs-gutter-x: 2.5rem;
       }
       h3{
         font-size: 2rem;
@@ -651,26 +651,42 @@ h1,h2,h3,h4,h5{
       }
       .test-card{
         background-color: #fff;
-        margin-bottom: 2.8rem;
+        margin-bottom: 2.5rem;
         border-radius: 15px;
         .test-maincon{
-          padding: 1.5rem 1.3rem 2rem;
+          padding: 1.5rem 1rem 2rem 1.7rem;
           border-bottom: 1px solid #ebebeb;
-          .donut{
-            flex: 0 0 34%;
-            max-width: 34%;
-            .rounded-circle{
-              width: 100%;
-              height: 85px;
-              border: 4px solid #EBF3F2;
-              border-top-color: #2A9687;
-              @include flexC(center);
-              flex-direction: column;
+          .circular-progress{
+            position: relative;
+            width: 88px;
+            height: 88px;
+            background-color: #EBF3F2;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            transition: all 0.3s ease;
+            &::before{
+              content: '';
+              position: absolute;
+              width: 84%;
+              height: 84%;
+              background-color: #fff;
+              border-radius: 50%;
+            }
+            .value{
+              position: relative;
+              text-align: center;
             }
           }
+          .data-div1{
+            flex: 0 0 29%;
+            max-width: 29%;
+          }
+          .data-div2{
+            flex: 0 0 33%;
+            max-width: 33%;
+          }
           .data-div{
-            flex: 0 0 calc(66%/2);
-            max-width: calc(66%/2);
             display: flex;
             flex-direction: column;
             justify-content: center;

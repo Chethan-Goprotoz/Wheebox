@@ -1560,7 +1560,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .selection .main_div .test_con .row.gx-5 {
-  --bs-gutter-x: 2.8rem;
+  --bs-gutter-x: 2.5rem;
 }
 
 .selection .main_div .test_con h3 {
@@ -1624,47 +1624,57 @@ h1, h2, h3, h4, h5 {
 
 .selection .main_div .test_con .test-card {
   background-color: #fff;
-  margin-bottom: 2.8rem;
+  margin-bottom: 2.5rem;
   border-radius: 15px;
 }
 
 .selection .main_div .test_con .test-card .test-maincon {
-  padding: 1.5rem 1.3rem 2rem;
+  padding: 1.5rem 1rem 2rem 1.7rem;
   border-bottom: 1px solid #ebebeb;
 }
 
-.selection .main_div .test_con .test-card .test-maincon .donut {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 34%;
-          flex: 0 0 34%;
-  max-width: 34%;
+.selection .main_div .test_con .test-card .test-maincon .circular-progress {
+  position: relative;
+  width: 88px;
+  height: 88px;
+  background-color: #EBF3F2;
+  border-radius: 50%;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
-.selection .main_div .test_con .test-card .test-maincon .donut .rounded-circle {
-  width: 100%;
-  height: 85px;
-  border: 4px solid #EBF3F2;
-  border-top-color: #2A9687;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+.selection .main_div .test_con .test-card .test-maincon .circular-progress::before {
+  content: '';
+  position: absolute;
+  width: 84%;
+  height: 84%;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.selection .main_div .test_con .test-card .test-maincon .circular-progress .value {
+  position: relative;
+  text-align: center;
+}
+
+.selection .main_div .test_con .test-card .test-maincon .data-div1 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 29%;
+          flex: 0 0 29%;
+  max-width: 29%;
+}
+
+.selection .main_div .test_con .test-card .test-maincon .data-div2 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 33%;
+          flex: 0 0 33%;
+  max-width: 33%;
 }
 
 .selection .main_div .test_con .test-card .test-maincon .data-div {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 calc(66%/2);
-          flex: 0 0 calc(66%/2);
-  max-width: calc(66%/2);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
