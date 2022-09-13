@@ -618,6 +618,20 @@ h1,h2,h3,h4,h5{
         background-color: #fff;
         border-radius: 15px;
         padding: 1.6rem 1.8rem;
+        .chart.doughnut {
+          margin-top: 2rem;
+          width: 100%;
+          display: flex;
+          position: relative;
+          z-index: 1;
+          .canvas-container{
+            width: 120px;
+            height: 60px;
+            canvas{
+              width: 125px;
+            }
+          }
+        }
       }
     }
     .test_con{

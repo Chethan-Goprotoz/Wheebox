@@ -63,7 +63,19 @@
                 </div>
               </div>
               <div class="col-12 col-md-3 div2">
-                sdfgdsfg
+                <div class="chart doughnut">
+                  <div class="canvas-container position-relative"> <canvas id="myCanvas"></canvas>
+                    <div class="text-inside position-absolute">
+                      <h6 class="fs-2 text-center">Projects <br> Status</h6>
+                    </div> <!-- <h3>vbbh</h3> -->
+                  </div>
+                  <ul>
+                    <li><data value="0.80" data-color="#FF5454">Planned Projects</data> <span>10%</span></li>
+                    <li><data value="0.65" data-color="#1FC875" data-color="#F6BE75">Completed Projects</data> <span>60%</span></li>
+                    <li><data value="0.55" data-color="#2D62ED">Projects on Task</data> <span>35%</span></li>
+                    <li><data value="0.45" data-color="#F6BE75">Projects at Risk</data> <span>5%</span></li>
+                  </ul>
+                </div>
               </div>
             </div>
             <div class="row test_con">
@@ -341,6 +353,7 @@
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/loader.js"></script>
+    <script src="assets/js/chart.min.js"></script>
     <script src="assets/js/selecttest.js"></script>
   </body>
 </html>

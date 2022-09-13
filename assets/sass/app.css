@@ -1577,6 +1577,25 @@ h1, h2, h3, h4, h5 {
   padding: 1.6rem 1.8rem;
 }
 
+.selection .main_div .middle_div .div2 .chart.doughnut {
+  margin-top: 2rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  z-index: 1;
+}
+
+.selection .main_div .middle_div .div2 .chart.doughnut .canvas-container {
+  width: 120px;
+  height: 60px;
+}
+
+.selection .main_div .middle_div .div2 .chart.doughnut .canvas-container canvas {
+  width: 125px;
+}
+
 .selection .main_div .test_con .row.gx-5 {
   --bs-gutter-x: 2.5rem;
 }
