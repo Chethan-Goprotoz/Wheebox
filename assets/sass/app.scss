@@ -619,16 +619,39 @@ h1,h2,h3,h4,h5{
         border-radius: 15px;
         padding: 1.6rem 1.8rem;
         .chart.doughnut {
-          margin-top: 2rem;
           width: 100%;
           display: flex;
           position: relative;
           z-index: 1;
           .canvas-container{
-            width: 120px;
+            width: 130px;
             height: 60px;
             canvas{
               width: 125px;
+            }
+            .text-inside{
+              top: 56px;
+              left: 26%;
+              h4{
+                font-family: Pop-bold;
+                line-height: 0.5;
+              }
+              p{
+                color: #76807C;
+                font-size: 1.15rem;
+                line-height: 1.8rem;
+                margin-bottom: 0;
+                font-family: Pop-normal;
+              }
+            }
+          }
+          ul{
+            li{
+              font-size: 13px;
+              font-family: Pop-normal;
+              &:not(:last-child){
+              margin-bottom: 1rem;
+              }
             }
           }
         }

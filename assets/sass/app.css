@@ -1578,7 +1578,6 @@ h1, h2, h3, h4, h5 {
 }
 
 .selection .main_div .middle_div .div2 .chart.doughnut {
-  margin-top: 2rem;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1588,12 +1587,39 @@ h1, h2, h3, h4, h5 {
 }
 
 .selection .main_div .middle_div .div2 .chart.doughnut .canvas-container {
-  width: 120px;
+  width: 130px;
   height: 60px;
 }
 
 .selection .main_div .middle_div .div2 .chart.doughnut .canvas-container canvas {
   width: 125px;
+}
+
+.selection .main_div .middle_div .div2 .chart.doughnut .canvas-container .text-inside {
+  top: 56px;
+  left: 26%;
+}
+
+.selection .main_div .middle_div .div2 .chart.doughnut .canvas-container .text-inside h4 {
+  font-family: Pop-bold;
+  line-height: 0.5;
+}
+
+.selection .main_div .middle_div .div2 .chart.doughnut .canvas-container .text-inside p {
+  color: #76807C;
+  font-size: 1.15rem;
+  line-height: 1.8rem;
+  margin-bottom: 0;
+  font-family: Pop-normal;
+}
+
+.selection .main_div .middle_div .div2 .chart.doughnut ul li {
+  font-size: 13px;
+  font-family: Pop-normal;
+}
+
+.selection .main_div .middle_div .div2 .chart.doughnut ul li:not(:last-child) {
+  margin-bottom: 1rem;
 }
 
 .selection .main_div .test_con .row.gx-5 {

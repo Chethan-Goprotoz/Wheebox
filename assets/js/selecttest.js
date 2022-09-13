@@ -98,3 +98,25 @@
     })
   }
 })();
+
+
+// creating chart
+const ctx = document.querySelector('#myCanvas').getContext('2d');
+const myChart = new Chart(ctx, {
+    type: 'doughnut',
+    data: { 
+    datasets: [{
+      label: 'My First Dataset',
+      data: [145, 110, 100],
+      backgroundColor: [
+        '#2DBF60',
+        '#F1D42F',
+        '#F01D1D '
+      ],
+      borderWidth: 0,
+      borderColor: 'transparent',
+      spacing: 0,
+      cutout: '68%'
+    }]
+  }
+});
