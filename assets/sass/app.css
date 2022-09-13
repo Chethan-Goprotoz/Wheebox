@@ -109,6 +109,24 @@ h1, h2, h3, h4, h5 {
   }
 }
 
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .bulb_info {
   position: fixed;
   right: 0;
@@ -1622,6 +1640,11 @@ h1, h2, h3, h4, h5 {
   font-family: Pop-medium;
 }
 
+.selection .main_div .test_con .col-12[filterValue].active {
+  -webkit-animation: fadeIn 0.5s ease;
+          animation: fadeIn 0.5s ease;
+}
+
 .selection .main_div .test_con .test-card {
   background-color: #fff;
   margin-bottom: 2.5rem;
@@ -1631,6 +1654,32 @@ h1, h2, h3, h4, h5 {
 .selection .main_div .test_con .test-card .test-maincon {
   padding: 1.5rem 1rem 2rem 1.7rem;
   border-bottom: 1px solid #ebebeb;
+}
+
+.selection .main_div .test_con .test-card .test-maincon span.state {
+  color: #fff;
+  padding: 0 13px;
+  height: 24px;
+  border-radius: 30px;
+  font-size: 12px;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.selection .main_div .test_con .test-card .test-maincon span.expired {
+  background-color: #F01D1D;
+}
+
+.selection .main_div .test_con .test-card .test-maincon span.completed {
+  background-color: #2DBF60;
 }
 
 .selection .main_div .test_con .test-card .test-maincon .circular-progress {
@@ -1649,8 +1698,8 @@ h1, h2, h3, h4, h5 {
 .selection .main_div .test_con .test-card .test-maincon .circular-progress::before {
   content: '';
   position: absolute;
-  width: 84%;
-  height: 84%;
+  width: 86%;
+  height: 86%;
   background-color: #fff;
   border-radius: 50%;
 }
@@ -1704,7 +1753,7 @@ h1, h2, h3, h4, h5 {
   line-height: 1;
 }
 
-.selection .main_div .test_con .test-card .test-maincon span {
+.selection .main_div .test_con .test-card .test-maincon h4 span {
   font-size: 11px;
   color: #0D4136;
   font-family: Pop-medium;
