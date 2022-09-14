@@ -998,11 +998,11 @@ a.login-btn.mobile-view {
   padding: 3rem 3rem 1.5rem;
   color: #ffffff;
 }
-.waiting-lounge h3{font-size: 2.2rem; line-height: 3.4rem; font-family: Pop-bold;}
-.waiting-lounge h4{font-size: 2.2rem; line-height: 2.4rem; font-family: Rob-med;}
+.waiting-lounge h3{font-size: 2rem; line-height: 3.4rem; font-family: Pop-semibold;}
+.waiting-lounge h4{font-size: 2rem; line-height: 2.4rem; font-family: Rob-med;}
 .waiting-lounge p{
   line-height: 2.2rem;
-  font-size: 16px;
+  font-size: 15px;
   font-family: Pop-light;
 }
 .waiting-lounge h3 span {
@@ -1025,7 +1025,7 @@ ul.test-info-head {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 3rem;
+  padding: 1rem 2.4rem;
   margin-bottom: 0;
   margin-top: 33px;
   width: 90%;
@@ -1042,13 +1042,13 @@ ul.test-info-head {
 }
 
 .test-info-head li:first-child {
-  font-size: 2.15rem;
+  font-size: 1.8rem;
   font-family: Rob-med;
   line-height: 2.9rem;
 }
 
 .test-info-head li:last-child {
-  font-size: 1.95rem;
+  font-size: 1.8rem;
   color: #0F2046;
   font-family: Pop-normal;
   line-height: 3.8rem;
@@ -1056,7 +1056,7 @@ ul.test-info-head {
 
 .test-info-head li:last-child span {
   color: #E21D1D;
-  font-size: 2.5rem;
+  font-size: 2.1rem;
   line-height:3.8rem ;
   font-family: Pop-semibold;
   vertical-align: bottom;
@@ -1070,13 +1070,13 @@ ul.test-info-head {
   display: none;
 }
 
-ul.info-text{padding: 1.8rem 2.2rem; margin-bottom: 0;}
+ul.info-text{padding: 1.8rem 2.4rem; margin-bottom: 0;}
 
 ul.info-text li dd {
   display: inline-block;
   margin-right: 20px;
   width: 26%;
-  opacity: 0.8;
+  font-family: Pop-light;
 }
 
 ul.info-text li {
@@ -1088,14 +1088,14 @@ ul.info-text li {
 ul.info-text li:not(:last-child){
   margin-bottom: 0.9rem;
 }
-ul.wl-instructions{margin-top: 2.7rem; padding-left: 0;}
+ul.wl-instructions{margin-top: 2rem; padding-left: 0;}
 
 .wl-instructions li{
   list-style:none;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   list-style: none;
   position: relative;
-  padding-left: 3.5rem;
+  padding-left: 3rem;
   margin-bottom: 1.7rem;
 }
 
@@ -1103,12 +1103,12 @@ ul.wl-instructions{margin-top: 2.7rem; padding-left: 0;}
 .wl-instructions li:before {
   content: " ";
   position: absolute;
-  width: 2.1rem;
-  height: 2.1rem;
-  background: url(/assets/images/check-mark.png);
+  width: 1.8rem;
+  height: 1.8rem;
+  background: url(../images/check-mark.png) no-repeat scroll;
   background-size: 100%;
   left: 0;
-  top: 1px;
+  top: 0.15rem;
   border-radius: 50%;
   font: normal normal normal 14px/1 FontAwesome;
 
@@ -1120,6 +1120,7 @@ ul.wl-instructions{margin-top: 2.7rem; padding-left: 0;}
 .waiting-img img {
   max-width: 54%;
   width: 100%;
+  object-fit: contain;
 }
 
 ul.proceed-btns {
@@ -1152,17 +1153,18 @@ ul.proceed-btns li a { color: #ffffff; text-decoration: none;}
 ul.proceed-btns li:first-child {
   background: #f6ab39;
   padding: 1.2rem 1.4rem;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
   border-radius: 0.6rem;
-  width: 22%;
-  margin: 0px 15px 0px 10px;
+  width: 25%;
+  margin: 0px 5px 0px 10px;
 }
 
 
 ul.proceed-btns li:last-child {
   margin-left: -7%;
-  font-size: 1.6rem; line-height: 2.7rem;
+  font-size: 1.5rem; 
+  line-height: 2.7rem;
   position: relative;
 }
 
@@ -1193,12 +1195,11 @@ ul.proceed-btns li:last-child i {
 
   /* Chrome, Edge, and Safari */
    .standard-inst-wrap ul::-webkit-scrollbar {
-    width: 5px;
+    width: 4px;
   }
 
   .standard-inst-wrap ul::-webkit-scrollbar-track {
-    background: rgba(0,0,0,0.2);
-    
+    background: rgba(0,0,0,0.08);    
   }
 
   .standard-inst-wrap ul::-webkit-scrollbar-thumb {

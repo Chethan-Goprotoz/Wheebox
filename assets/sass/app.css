@@ -1663,6 +1663,51 @@ h1, h2, h3, h4, h5 {
   --bs-gutter-x: 2.5rem;
 }
 
+.selection .main_div .test_con .nothing {
+  display: none;
+}
+
+.selection .main_div .test_con .nothing .no-test {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.selection .main_div .test_con .nothing .no-test img {
+  max-width: 300px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-bottom: 1.5rem;
+}
+
+.selection .main_div .test_con .nothing .no-test h3 {
+  font-size: 1.9rem;
+  font-family: Pop-semibold;
+  margin-bottom: 1rem;
+}
+
+.selection .main_div .test_con .nothing .no-test p {
+  font-size: 15px;
+  color: #5F6965;
+}
+
+.selection .main_div .test_con .nothing.active {
+  display: block;
+  -webkit-animation: fadeIn 0.5s ease;
+          animation: fadeIn 0.5s ease;
+}
+
 .selection .main_div .test_con h3 {
   font-size: 2rem;
   font-family: Pop-medium;
@@ -1721,6 +1766,12 @@ h1, h2, h3, h4, h5 {
   color: #010D0A;
   border-bottom: 3px solid #26887C;
   font-family: Pop-medium;
+}
+
+.selection .main_div .test_con .col-12[filterValue] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .selection .main_div .test_con .col-12[filterValue].active {
@@ -1820,6 +1871,12 @@ h1, h2, h3, h4, h5 {
           justify-content: center;
 }
 
+.selection .main_div .test_con .test-card .test-maincon .data-div span {
+  font-size: 11px;
+  color: #0D4136;
+  font-family: Pop-semibold;
+}
+
 .selection .main_div .test_con .test-card .test-maincon h6 {
   font-size: 1.4rem;
   line-height: 2.5rem;
@@ -1835,12 +1892,6 @@ h1, h2, h3, h4, h5 {
   margin-right: 2px;
   font-family: Pop-semibold;
   line-height: 1;
-}
-
-.selection .main_div .test_con .test-card .test-maincon h4 span {
-  font-size: 11px;
-  color: #0D4136;
-  font-family: Pop-medium;
 }
 
 .selection .main_div .test_con .test-card .test-maincon p {
@@ -1882,6 +1933,20 @@ h1, h2, h3, h4, h5 {
 .selection .main_div .test_con .test-card .btn-test button:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+
+.selection .main_div .test_con .test-card .btn-test img {
+  width: 15px;
+  margin-right: 6px;
+  margin-top: -2px;
+}
+
+.selection .main_div .test_con .test-card .btn-test a {
+  color: #20776E;
+  text-decoration: none;
+  font-family: Pop-medium;
+  font-size: 14px;
+  letter-spacing: -0.01rem;
 }
 
 @media (max-width: 991px) {

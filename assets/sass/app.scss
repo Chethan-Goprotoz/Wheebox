@@ -685,6 +685,32 @@ h1,h2,h3,h4,h5{
       .row.gx-5{
         --bs-gutter-x: 2.5rem;
       }
+      .nothing{
+        display: none;
+        .no-test{
+          @include flexC(center);
+          flex-direction: column;
+          text-align: center;
+          img{
+            max-width: 300px;
+            object-fit: contain;
+            margin-bottom: 1.5rem;
+          }
+          h3{
+            font-size: 1.9rem;
+            font-family: Pop-semibold;
+            margin-bottom: 1rem;
+          }
+          p{
+            font-size: 15px;
+            color: #5F6965;
+          }
+        }
+        &.active{
+          display: block;
+          animation: fadeIn 0.5s ease;
+        }
+      }
       h3{
         font-size: 2rem;
         font-family: Pop-medium;
@@ -720,6 +746,7 @@ h1,h2,h3,h4,h5{
         }
       }
       .col-12[filterValue]{
+        display: flex;
         &.active{
           animation: fadeIn 0.5s ease;
         }
@@ -783,6 +810,11 @@ h1,h2,h3,h4,h5{
             display: flex;
             flex-direction: column;
             justify-content: center;
+            span{
+              font-size: 11px;
+              color: #0D4136;
+              font-family: Pop-semibold;
+            }
           }
           h6{
             font-size: 1.4rem;
@@ -798,11 +830,6 @@ h1,h2,h3,h4,h5{
             margin-right: 2px;
             font-family: Pop-semibold;
             line-height: 1;
-            span{
-              font-size: 11px;
-              color: #0D4136;
-              font-family: Pop-medium;
-            }
           }
           p{
             color: #76807C;
@@ -819,6 +846,18 @@ h1,h2,h3,h4,h5{
             @include btnDefault(150px, 36px, $secondary-color);
             font-size: 1.3rem;
             letter-spacing: -0.02rem;
+          }
+          img{
+            width: 15px;
+            margin-right: 6px;
+            margin-top: -2px;
+          }
+          a{
+            color: #20776E;
+            text-decoration: none;
+            font-family: Pop-medium;
+            font-size: 14px;
+            letter-spacing: -0.01rem;
           }
         }
       }

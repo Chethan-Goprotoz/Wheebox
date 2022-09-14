@@ -1,3 +1,4 @@
+const nodata = document.querySelector('.selection .test_con .nothing');
 
 // circular progress bar
 (()=>{
@@ -28,14 +29,9 @@
     let elemtext = elem.innerText;
     switch(elemtext){
         case 'EXPIRED':
-        case 'COMPLETED':
-        case 'Expired':
-        case 'Completed':{
+        case 'Expired':{
           btn.style.cssText = `opacity: 0.5; cursor: not-allowed;`;
           break;
-        }
-        default:{
-          btn.style.cssText = `opaicty: 1; cursor: pointer;`;
         }
     }
   })
@@ -53,7 +49,8 @@
 
     function filterData(filter){
       let active = filter.closest('.filter-btn').querySelector('button.active');
-      let filterText = filter.innerText.toLowerCase();
+      let filterText = filter.innerText;
+      let filterTextlower = filterText.toLowerCase();
       let filterDiv = filter.closest('.test_con').querySelectorAll('.test-card');
       if(!filter.classList.contains('active')){
         active.classList.remove('active');
@@ -62,7 +59,7 @@
       Array.from(filterDiv).forEach((elem)=>{
         let parentElem = elem.parentNode; 
         let elemlower = parentElem.getAttribute('filterValue').toLowerCase();
-        if(elemlower.includes(filterText) || filterText==='all'){
+        if(elemlower.includes(filterTextlower) || filterTextlower==='all'){
           parentElem.classList.add('active');
           parentElem.style.display="";
         }
@@ -70,9 +67,33 @@
           parentElem.style.display="none";
         }
       })
+
+      let activemember = document.querySelectorAll(`.test_con [filterValue = ${filterText}]`);
+      if(filterTextlower!=='all'){
+        if(activemember.length === 0){
+          nodata.classList.add('active');
+        }
+        else{
+          nodata.classList.remove('active');
+        }
+      }
+      else{
+        checkAllCard();
+      }
     }
   })
 })();
+
+function checkAllCard(){
+  const allCard = document.querySelectorAll('.selection .test_con .test-card');
+  if(allCard.length === 0){
+    nodata.classList.add('active');
+  }
+  else{
+    nodata.classList.remove('active');
+  }
+}
+checkAllCard();
 
 //search demo test
 (()=>{
@@ -101,17 +122,36 @@
 
 
 // creating chart
+// const ctx = document.querySelector('#myCanvas').getContext('2d');
+// const myChart = new Chart(ctx, {
+//     type: 'doughnut',
+//     data: { 
+//     datasets: [{
+//       label: 'My First Dataset',
+//       data: [145, 110, 100],
+//       backgroundColor: [
+//         '#2DBF60',
+//         '#F1D42F',
+//         '#F01D1D '
+//       ],
+//       borderWidth: 0,
+//       borderColor: 'transparent',
+//       spacing: 0,
+//       cutout: '68%'
+//     }]
+//   }
+// });
+
+// for 0 test
 const ctx = document.querySelector('#myCanvas').getContext('2d');
 const myChart = new Chart(ctx, {
     type: 'doughnut',
     data: { 
     datasets: [{
       label: 'My First Dataset',
-      data: [145, 110, 100],
+      data: [100],
       backgroundColor: [
-        '#2DBF60',
-        '#F1D42F',
-        '#F01D1D '
+        '#F1D42F'
       ],
       borderWidth: 0,
       borderColor: 'transparent',
