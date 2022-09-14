@@ -1583,7 +1583,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .selection .main_div .middle_div .div2 .chart.doughnut {
-  width: 52%;
+  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1640,10 +1640,10 @@ h1, h2, h3, h4, h5 {
 }
 
 .selection .main_div .middle_div .div2 ul li span {
-  width: 8px;
-  height: 8px;
+  width: 0.825rem;
+  height: 0.825rem;
   border-radius: 50%;
-  margin-right: 0.2rem;
+  margin-right: 0.28rem;
   display: inline-block;
 }
 
@@ -1768,8 +1768,8 @@ h1, h2, h3, h4, h5 {
 
 .selection .main_div .test_con .test-card .test-maincon .circular-progress {
   position: relative;
-  width: 88px;
-  height: 88px;
+  width: 92px;
+  height: 92px;
   background-color: #EBF3F2;
   border-radius: 50%;
   display: -ms-grid;
