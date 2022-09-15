@@ -1262,14 +1262,30 @@ ul.proceed-btns li:last-child i {
   position: absolute;
   width: 47%;
   height: 5px;
-  /* border-bottom: dotted 3px; */
+  border-bottom: dotted 3px #dddddd;
   color: #D1DFDF;
   right: -62px;
   top: 8px;
-  background: url(/assets/images/doted-line.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
+
+.sd-top-icon.active-line:after {
+  content: " ";
+  position: absolute;
+  width: 47%;
+  height: 5px;
+  right: -62px;
+  top: 8px;
+  background:url(/assets/images/doted-line.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: none;
+}
+
+
+
+
 
 .col-6.col-md-3:last-child .sd-top-icon:after {
   display: none;
@@ -1279,16 +1295,17 @@ ul.proceed-btns li:last-child i {
   width: 8%;
 }
 .diagnosis-box-wrap{
-  margin-top:97px;
+  margin-top:50px;
   padding-bottom: 100px;
 }
 .diagnosis-box .icon {
   margin-bottom: 2rem;
+  height: 21.69px;
 }
 .diagnosis-box img {
  width: 9%;
 }
-
+.system-diagno-banner-wrap{margin-bottom: 0 !important;}
 .selection .main_div .middle_div .div1.system-diagno-banner {
   padding: 4.82rem 3.4rem 4.82rem;
 }
@@ -1320,6 +1337,7 @@ ul.proceed-btns li:last-child i {
   font-size: 1.5rem;
   line-height: 2rem;
   font-family: Pop-medium;
+  margin-bottom: 1rem;
 }
 
 .diagnosis-box p {
@@ -1336,13 +1354,65 @@ h5.sd-banner-heading span {
   margin-right: 4px;
 }
 
+/*show hide*/
+
+
+#camera {
+  display: none;
+}
+/*show hide*
+
+
 /*======== System check  - Camera =========*/
 
 .camera-screen img {
   width: 100%;
 }
+
+.face-cam-btn {
+  margin-top: 25px;
+}
+.face-cam-btn a {
+  background: #ddd;
+  text-decoration: none;
+  color: #010101;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+.diagnosis-box abbr{float: right;}
+.diagnosis-box abbr a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.6rem 0.8rem;
+  border-radius: 0.5rem;
+  font-family: Rob-norm;
+  font-size: 1.2rem;
+}
+.diagnosis-box abbr.inprogress a {
+  background: #f6ab39;
+}
+.diagnosis-box abbr.pending a {
+  background: #a4b5b3;
+}
+.diagnosis-box abbr.completed a {
+  background: #198754;
+}
+
+
+
 /*======== System check  - Camera =========*/
 
+/*======== System check  - Internet =========*/
+.bot-large-img img {
+  width: 80%;
+  margin-bottom: -24px;
+}
+.bot-large-img {
+  text-align: center;
+  margin-top: 10px;
+}
+/*======== System check  - Internet =========*/
 
 /*  System Diagnosis css end */
 

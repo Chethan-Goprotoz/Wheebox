@@ -103,3 +103,10 @@ var swiper = new Swiper(".mySwiper", {
       disableOnInteraction: false
     }
   });
+
+////show Hide///////
+$(document).ready(function(){
+  $(".start").click(function(){
+    $("#camera").slideToggle("slow");
+  });
+});
