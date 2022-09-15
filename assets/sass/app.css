@@ -1694,7 +1694,7 @@ h1, h2, h3, h4, h5 {
 .selection .main_div .test_con .nothing .no-test h3 {
   font-size: 1.9rem;
   font-family: Pop-semibold;
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem;
 }
 
 .selection .main_div .test_con .nothing .no-test p {
@@ -1949,7 +1949,23 @@ h1, h2, h3, h4, h5 {
   letter-spacing: -0.01rem;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1200px) {
+  .reg_form .main_div {
+    padding: 2.8rem 7rem 3rem 11.5rem;
+  }
+  .reg_form .main_div form .form-detail .for_contact {
+    width: 20.5%;
+    top: 26px;
+  }
+  .reg_form .main_div form .form-detail input[type="number"] {
+    padding: 1rem 1.5rem 1rem 28%;
+  }
+  .reg_form .main_div form .form-detail .radio_div label {
+    margin-right: 1.9rem;
+  }
+}
+
+@media (max-width: 992px) {
   .reg_form .sidebar_div {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 24%;
@@ -2003,7 +2019,7 @@ h1, h2, h3, h4, h5 {
   }
 }
 
-@media (max-width: 749px) {
+@media (max-width: 768px) {
   .reg_form {
     background-color: #EFF7F6;
     -webkit-box-align: start;

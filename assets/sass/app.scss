@@ -699,7 +699,7 @@ h1,h2,h3,h4,h5{
           h3{
             font-size: 1.9rem;
             font-family: Pop-semibold;
-            margin-bottom: 1rem;
+            margin-bottom: 0.8rem;
           }
           p{
             font-size: 15px;
@@ -866,8 +866,33 @@ h1,h2,h3,h4,h5{
 }
 // Test selection css end
 
-// responsive css for mobile
-@media(max-width: 991px){
+// responsive css for small size laptop/desktop
+@media(max-width: 1200px){
+  .reg_form{
+    .main_div{
+      padding: 2.8rem 7rem 3rem 11.5rem;
+      form{
+        .form-detail{
+          .for_contact{
+            width: 20.5%;
+            top: 26px;
+          }
+          input[type="number"]{
+            padding: 1rem 1.5rem 1rem 28%;
+          }
+          .radio_div{
+            label{
+              margin-right: 1.9rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// responsive css for tablet
+@media(max-width: 992px){
   .reg_form{
     .sidebar_div{
       flex: 0 0 24%;
@@ -922,7 +947,7 @@ h1,h2,h3,h4,h5{
 }
 
 // responsive css for mobile
-@media(max-width: 749px){
+@media(max-width: 768px){
   .reg_form{
     background-color: #EFF7F6;
     align-items: flex-start;
