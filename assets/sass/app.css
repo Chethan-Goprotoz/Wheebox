@@ -1464,8 +1464,8 @@ h1, h2, h3, h4, h5 {
 }
 
 .selection .main_div .main_header .logo {
-  width: 41px;
-  height: 41px;
+  width: 40px;
+  height: 40px;
 }
 
 .selection .main_div .main_header .logo img {
@@ -1477,6 +1477,8 @@ h1, h2, h3, h4, h5 {
   font-size: 1.7rem;
   font-family: Pop-medium;
   margin-bottom: 0;
+  -webkit-transform: translateX(41%);
+          transform: translateX(41%);
 }
 
 .selection .main_div .main_header .grid {
@@ -1947,6 +1949,299 @@ h1, h2, h3, h4, h5 {
   font-family: Pop-medium;
   font-size: 14px;
   letter-spacing: -0.01rem;
+}
+
+.system-diagnosis {
+  padding: 3rem 0;
+  background-color: #F6F8FC;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.system-diagnosis .main_header {
+  border-radius: 14px;
+  background-color: #fff;
+  padding: 0 1.3rem 0 2.2rem;
+  height: 8.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2.6rem;
+}
+
+.system-diagnosis .main_header .logo {
+  width: 40px;
+  height: 40px;
+}
+
+.system-diagnosis .main_header .logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.system-diagnosis .main_header h4 {
+  font-size: 1.7rem;
+  font-family: Pop-medium;
+  margin-bottom: 0;
+  -webkit-transform: translateX(41%);
+          transform: translateX(41%);
+}
+
+.system-diagnosis .main_header .grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 67% 33%;
+      grid-template-columns: 67% 33%;
+  grid-gap: 5px;
+}
+
+.system-diagnosis .main_header .grid .grid1 {
+  text-align: end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.system-diagnosis .main_header .grid .grid1 h6 {
+  font-size: 1.4rem;
+  line-height: 2.5rem;
+  margin-bottom: 0.65rem;
+  color: #010D0A;
+  font-family: Pop-medium;
+  margin-bottom: 0.4rem;
+}
+
+.system-diagnosis .main_header .grid .grid1 p {
+  margin: 0;
+  line-height: 1rem;
+  font-size: 13px;
+  color: #879290;
+}
+
+.system-diagnosis .main_header .grid .grid2 .profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.system-diagnosis .main_header .grid .grid2 .profile img {
+  width: 65%;
+}
+
+.system-diagnosis .mycol-md-3 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 24%;
+          flex: 0 0 24%;
+  max-width: 24%;
+}
+
+.system-diagnosis .mycol-md-9 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 76%;
+          flex: 0 0 76%;
+  max-width: 76%;
+}
+
+.system-diagnosis .sidebar {
+  height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.system-diagnosis .sidebar ul {
+  list-style-type: none;
+  padding-left: 0;
+  width: 75%;
+}
+
+.system-diagnosis .sidebar ul li {
+  color: #20776E;
+  padding: 1.4rem 1.25rem;
+  font-size: 14px;
+  border-radius: 5px;
+  margin-bottom: 2.7rem;
+  font-family: Pop-medium;
+  opacity: 0.5;
+}
+
+.system-diagnosis .sidebar ul li img {
+  margin-right: 1rem;
+  width: 17px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-top: -2px;
+}
+
+.system-diagnosis .sidebar ul li.active {
+  background: #DAEDEB;
+  opacity: 1;
+}
+
+.system-diagnosis .middle_div {
+  width: 93%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 3.1rem 6rem 2.35rem;
+  position: relative;
+  border-radius: 15px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#2D9D8D), to(#20776E));
+  background: linear-gradient(to top, #2D9D8D, #20776E);
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 5rem;
+}
+
+.system-diagnosis .middle_div .img {
+  position: absolute;
+  max-width: 290px;
+  left: 6.3%;
+  top: -54px;
+}
+
+.system-diagnosis .middle_div .img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.system-diagnosis .middle_div h2 {
+  width: 50%;
+  line-height: 1.9;
+  word-spacing: 0.2rem;
+  color: #fff;
+  font-size: 1.9rem;
+  font-family: 'Pop-normal';
+}
+
+.system-diagnosis .system-div {
+  width: 93%;
+}
+
+.system-diagnosis .system-div .stepper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 7rem;
+}
+
+.system-diagnosis .system-div .stepper span {
+  position: relative;
+  display: inline-block;
+}
+
+.system-diagnosis .system-div .stepper span img {
+  max-width: 21px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.system-diagnosis .system-div .stepper:not(:last-child) span::after {
+  content: '';
+  position: absolute;
+  width: 90px;
+  border: 0.03rem dashed #cbcbcb;
+  -webkit-transform: translateX(68%);
+          transform: translateX(68%);
+  top: 11px;
+}
+
+.system-diagnosis .system-div .stepper-card {
+  width: 98.5%;
+  padding: 2rem 1.6rem 0.7rem;
+  background: #fff;
+  border: 1px solid #EEF3F3;
+  border-radius: 16px;
+}
+
+.system-diagnosis .system-div .stepper-card > img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 1.5rem;
+}
+
+.system-diagnosis .system-div .stepper-card h5 {
+  font-family: Pop-medium;
+  font-size: 15px;
+  text-transform: capitalize;
+  color: #0A2F2A;
+  margin-bottom: 1rem;
+}
+
+.system-diagnosis .system-div .stepper-card .d-flex {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.system-diagnosis .system-div .stepper-card .d-flex p {
+  color: #20776E;
+  line-height: 1.5;
+  font-size: 13px;
+  margin-right: 6px;
+  letter-spacing: -0.03rem;
+}
+
+.system-diagnosis .system-div .stepper-card .d-flex img {
+  max-width: 16px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-top: -11px;
+}
+
+.system-diagnosis .system-div .btn-div {
+  margin-top: 3.4rem;
+}
+
+.system-diagnosis .system-div .btn-div button {
+  width: 152px;
+  height: 51px;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  font-size: 1.4rem;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  background-color: #F6AB39;
+  cursor: pointer;
+  border-radius: 8px;
+  text-transform: capitalize;
+}
+
+.system-diagnosis .system-div .btn-div button:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .face-detect {

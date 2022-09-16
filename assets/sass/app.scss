@@ -533,56 +533,7 @@ h1,h2,h3,h4,h5{
   background-color: #EAF2EE;
   .main_div{
     .main_header{
-      border-radius: 14px;
-      background-color: #fff;
-      padding: 0 1.3rem 0 2.2rem;
-      height: 8.5rem;
-      @include flexC(space-between);
-      margin-bottom: 2.6rem;
-      .logo{
-        width: 41px;
-        height: 41px;
-        img{
-          width: 100%;
-          height: 100%;
-        }
-      }
-      h4{
-        @include h4Text;
-        margin-bottom: 0;
-      }
-      .grid{
-        display: grid;
-        grid-template-columns: 67% 33%;
-        grid-gap: 5px;
-        .grid1{
-          text-align: end;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          h6{
-            @include h6Text;
-            color: $font-color;
-            font-family: Pop-medium;
-            margin-bottom: 0.4rem;
-          }
-          p{
-            margin: 0;
-            line-height: 1rem;
-            font-size: 13px;
-            color: #879290;
-          }
-        }
-        .grid2{
-          .profile{
-            display: flex;
-            justify-content: center;
-            img{
-              width: 65%;
-            }
-          }
-        }
-      }
+      @include mainHeader;
     }
     .middle_div{
       margin-bottom: 3.9rem;
@@ -865,6 +816,151 @@ h1,h2,h3,h4,h5{
   }
 }
 // Test selection css end
+
+//system diagnosis css start
+.system-diagnosis{
+  padding: 3rem 0;
+  background-color: #F6F8FC;
+  min-height: 100vh;
+  width: 100%;
+  .main_header{
+    @include mainHeader;
+  }
+  .mycol-md-3{
+    flex: 0 0 24%;
+    max-width: 24%;
+  }
+  .mycol-md-9{
+    flex: 0 0 76%;
+    max-width: 76%;
+  }
+  .sidebar{
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    ul{
+      list-style-type: none;
+      padding-left: 0;
+      width: 75%;
+      li{
+        color: #20776E;
+        padding: 1.4rem 1.25rem;
+        font-size: 14px;
+        border-radius: 5px;
+        margin-bottom: 2.7rem;
+        font-family: Pop-medium;
+        opacity: 0.5;
+        img{
+          margin-right: 1rem;
+          width: 17px;
+          object-fit: contain;
+          margin-top: -2px;
+        }
+        &.active{
+        background: #DAEDEB;
+          opacity: 1;
+        }
+      }
+    }
+  }
+  .middle_div{
+    width: 93%;
+    display: flex;
+    padding: 3.1rem 6rem 2.35rem;
+    position: relative;
+    border-radius: 15px;
+    background: linear-gradient(to top, #2D9D8D, #20776E);
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 5rem;
+    .img{
+      position: absolute;
+      max-width: 290px;
+      left: 6.3%;
+      top: -54px;
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+    h2{
+      width: 50%;
+      line-height: 1.9;
+      word-spacing: 0.2rem;
+      color: #fff;
+      font-size: 1.9rem;
+      font-family: 'Pop-normal';
+    }
+  }
+  .system-div{
+    width: 93%;
+    .stepper{
+      @include flexC(center);
+      margin-top: 7rem;
+      span{
+        position: relative;
+        display: inline-block;
+        img{
+          max-width: 21px;
+          object-fit: contain;
+        }
+      }
+      &:not(:last-child) span{
+        &::after{
+          content: '';
+          position: absolute;
+          width: 90px;
+          border: 0.03rem dashed #cbcbcb;
+          transform: translateX(68%);
+          top: 11px;
+          }
+        }
+    }
+    .stepper-card{
+      width: 98.5%;
+      padding: 2rem 1.6rem 0.7rem;
+      background: #fff;
+      border: 1px solid #EEF3F3;
+      border-radius: 16px;
+      >img{
+        object-fit: cover;
+        margin-bottom: 1.5rem;
+      }
+      h5{
+        font-family: Pop-medium;
+        font-size: 15px;
+        text-transform: capitalize;
+        color:#0A2F2A;
+        margin-bottom: 1rem;
+      }
+      .d-flex{
+        align-items: center;
+        p{
+          color: #20776E;
+          line-height: 1.5;
+          font-size: 13px;
+          margin-right: 6px;
+          letter-spacing: -0.03rem;
+        }
+        img{
+          max-width: 16px;
+          object-fit: contain;
+          margin-top: -11px;
+        }
+      }
+    }
+    .btn-div{
+      margin-top: 3.4rem;
+      button{
+        @include btnDefault(152px, 51px, $secondary-color);
+        border-radius: 8px;
+        text-transform: capitalize;
+      }
+    }
+  }
+}
+//system diagnosis css end
 
 //face detect css start
 .face-detect{
