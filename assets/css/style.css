@@ -1416,6 +1416,116 @@ h5.sd-banner-heading span {
 
 /*  System Diagnosis css end */
 
+/*  Approver css Start */
+
+.approver {
+  width: 90%;
+}
+.candidate-detail li {
+  list-style: none;
+  margin-bottom: 1rem;
+
+}
+
+.candidate-detail {
+  background: #cbdfda;
+  color: #6E6E6E;
+  border-radius: 0.7rem;
+  padding: 2.5rem;
+  font-size: 1.5rem;
+  line-height: 2.7rem;
+  font-family: Pop-normal;
+}
+.candidate-detail span{color: #000000;}
+.candidate-photo img {
+  width: 100%;
+}
+.candidate-photo-bg {
+  padding: 4% 8% 6% 8% ;
+  background: #fff;
+  border-radius: 2rem;
+}
+.candidate-photo-bg h4 {
+  color: #000000;
+  font-size: 2.2rem;
+  line-height: 3.5rem;
+  margin-bottom: 1rem;
+  font-family: Pop-normal;
+}
+.candidate-photo {
+  margin-top: 50px;
+}
+.form-wrap {
+  margin-top: 50px;
+}
+ul.form-field {
+  padding-left: 0;
+}
+.form-field li {
+  list-style: none;
+  margin-bottom: 2rem;
+}
+.form-field select#template {
+  width: 100%;
+  padding: 10px;
+}
+.form-field input[type="textarea"] {
+  width: 100%;
+  padding: 10px;
+  height: 150px;
+}
+.form-field label {
+  font-size: 1.5rem;
+  line-height: 2.7rem;
+  color: #010D0A;
+  margin-bottom: 0.8rem;
+}
+ul.btn {
+  list-style: none;
+  text-align: left;
+  width: 100%;
+  margin-top: 20px;
+}
+ul.btn a {
+  background-color: #d2d2d2;
+  text-align: center;
+  color: #fff;
+  padding: 1.2rem 2.6rem;
+  border-radius: 0.6rem;
+  text-decoration: none;
+  font-size: 1.6rem;
+  line-height: 3rem;
+}
+
+ul.btn li {
+  display: inline-block;
+}
+ul.btn li:last-child  {
+  float: right;
+}
+
+ul.btn li:first-child a {
+  margin-right: 22px;
+  background: #E21D1D;
+  border: solid 1px #E21D1D;
+}
+
+ul.btn li:nth-child(2) a {
+  background: #ffffff;
+  color: #F6AB39;
+  border: solid 1px #F6AB39;
+}
+ul.btn li:nth-child(3) a {
+  background: #198754;
+  border: solid 1px #198754;
+}
+
+
+
+
+
+/*  Approver css end */
+
 
 /*========== Responsive Style ==========*/
 
