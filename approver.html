@@ -63,43 +63,82 @@
                  </ul>
                 </div>
 
-                <div class="col-12 col-md-5 ">
+                <div class="col-12 col-md-4 ">
                     <ul>
                         <li><span>Login ID:</span> Johndoe@WheeBox.com</li>
                         <li><span>Test language:</span> English</li>
                         <li><span>Test type :</span> </li>
                        </ul>
                 </div>
-                <div class="col-12 col-md-2 ">
-                    <ul>
+                <div class="col-12 col-md-3 ">
+
+                    <ul class="custom_radio">
                         <li><strong>Allocation status</strong> </li>
-                        <li><input type="radio" id="dewey" name="drone" value="dewey" checked>
-                            <label for="dewey">Allow allocation</label></li>
-                        <li><input type="radio" id="dewey" name="drone" value="dewey">
-                            <label for="dewey">Stop allocation</label></li>
+                        <li>
+                          <input type="radio" id="featured-1" name="featured" checked>
+                            <label for="featured-1">Allow allocation</label></li>
+                        <li><input type="radio" id="featured-2" name="featured">
+                          <label for="featured-2">Stop allocation</label></li>
                        </ul>
                 </div>
             </div>
 
 
                 <div class="row candidate-photo gx-5">
-                    <div class="col-12 col-md-6 ">
+                    <div class="col-12 col-md-6 d-flex ">
                         <div class=" candidate-photo-bg">
                         <h4>Candidate Photo</h4>
-                        <img src="/assets/images/candidate-photo.png">
+                        <figure><img src="/assets/images/candidate-photo.png"></figure>
+                        <div class="candidate-btn">
+                          <ul>
+                            <li><img src="/assets/images/candidate-close.png" ></li>
+                            <li><img src="/assets/images/candidate-tik.png" ></li>
+                          </ul>
+                        </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6  ">
+                    <div class="col-12 col-md-6 d-flex  ">
                         <div class="candidate-photo-bg">
                         <h4>Candidate ID Proof Photo</h4>
-                        <img src="/assets/images/candidate-pan.png">
+                        <figure><img src="/assets/images/candidate-pan.png"></figure>
+                        <div class="candidate-btn">
+                          <ul>
+                            <li><img src="/assets/images/candidate-close.png" ></li>
+                            <li><img src="/assets/images/candidate-tik.png" ></li>
+                          </ul>
+                        </div>
                         </div>
                         </div>
                     </div>
 
                     <div class="row form-wrap">
                      <form>
+                      
                         <ul class="form-field">
+
+
+                          <li>
+                            <div class="form-group form-elem">
+                            <div class="custom-select">
+                              <label for="cars">Select Template</label>
+                              <div class="box">
+                                <label for="cars">Select Template</label>
+                                <img src="assets/images/form-select-dropdown.jpg" alt="" />
+                              </div>
+                              <div class="option-container">
+                                  <option>Your ID card is not set clearly kindly focus of camera on ID Card.</option>
+                                  <option>Show your ID Card</option>
+                                  <option>Set focus of camera on your face</option>
+                                  <option>Sit away from the table</option>
+                                  <option>Login and show your ID Proof (Aadhaar card/ voter card/ Pan card) in front of webcam</option>
+                                  <option>Additional people are not allowed in the exam. Kindly ask them to leave</option>
+                                  <option>Your face is not visible clearly.</option>
+                              </div>
+                            </div>
+                          </div>
+                           </li>
+
+<!--                           
                         <li><label>Select Template</label>
                         <select id="template" name="template">
                             <option value="yourid">Your ID card is not set clearly kindly focus of camera on ID Card.</option>
@@ -110,7 +149,7 @@
                             <option value="additional">Additional people are not allowed in the exam. Kindly ask them to leave</option>
                             <option value="your">Your face is not visible clearly.</option>
                           </select>
-                        </li> 
+                        </li>  -->
 
                         <li>
                         <label for="cars">Enter message</label>
@@ -142,7 +181,7 @@
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/loader.js"></script>
-    <script src="assets/js/chart.min.js"></script>
     <script src="assets/js/selecttest.js"></script>
+    
   </body>
 </html>
