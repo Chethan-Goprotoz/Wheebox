@@ -70,7 +70,11 @@ p {
   line-height: 2.8rem;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-family: Pop-normal;
   color: #010D0A;
 }
@@ -124,6 +128,20 @@ h1, h2, h3, h4, h5 {
   }
   100% {
     opacity: 1;
+  }
+}
+
+@-webkit-keyframes loading {
+  to {
+    -webkit-transform: rotate(1turn);
+            transform: rotate(1turn);
+  }
+}
+
+@keyframes loading {
+  to {
+    -webkit-transform: rotate(1turn);
+            transform: rotate(1turn);
   }
 }
 
@@ -212,7 +230,10 @@ h1, h2, h3, h4, h5 {
   margin-bottom: 0.65rem;
 }
 
-.bulb_info .bulb_con input[type='email'], .bulb_info .bulb_con input[type='text'], .bulb_info .bulb_con input[type='date'], .bulb_info .bulb_con .box11 {
+.bulb_info .bulb_con input[type='email'],
+.bulb_info .bulb_con input[type='text'],
+.bulb_info .bulb_con input[type='date'],
+.bulb_info .bulb_con .box11 {
   width: 100%;
   padding: 10px 15px;
   font-size: 14px;
@@ -841,8 +862,12 @@ h1, h2, h3, h4, h5 {
   margin-bottom: 1rem;
 }
 
-.reg_form .main_div form .form-detail input[type="text"], .reg_form .main_div form .form-detail input[type="password"], .reg_form .main_div form .form-detail input[type="email"],
-.reg_form .main_div form .form-detail input[type="number"], .reg_form .main_div form .form-detail input[type="date"], .reg_form .main_div form .form-detail .box11 {
+.reg_form .main_div form .form-detail input[type="text"],
+.reg_form .main_div form .form-detail input[type="password"],
+.reg_form .main_div form .form-detail input[type="email"],
+.reg_form .main_div form .form-detail input[type="number"],
+.reg_form .main_div form .form-detail input[type="date"],
+.reg_form .main_div form .form-detail .box11 {
   width: 100%;
   padding: 10px 15px;
   font-size: 14px;
@@ -868,7 +893,8 @@ h1, h2, h3, h4, h5 {
   margin-bottom: 4rem;
 }
 
-.reg_form .main_div form .form-detail input[type="password"] + img.eye, .reg_form .main_div form .form-detail input[type="text"] + img.eye {
+.reg_form .main_div form .form-detail input[type="password"] + img.eye,
+.reg_form .main_div form .form-detail input[type="text"] + img.eye {
   position: absolute;
   right: 33px;
   top: 4.25rem;
@@ -2097,46 +2123,80 @@ h1, h2, h3, h4, h5 {
   opacity: 1;
 }
 
-.system-diagnosis .middle_div {
+.system-diagnosis .middle .middle_div1 {
+  margin: 5rem 0 1rem;
   width: 93%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   padding: 3.1rem 6rem 2.35rem;
   position: relative;
   border-radius: 15px;
   background: -webkit-gradient(linear, left bottom, left top, from(#2D9D8D), to(#20776E));
   background: linear-gradient(to top, #2D9D8D, #20776E);
+}
+
+.system-diagnosis .middle .middle_div1 .row {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-top: 5rem;
+  margin: 0;
+  padding: 0;
 }
 
-.system-diagnosis .middle_div .img {
+.system-diagnosis .middle .middle_div1 .img {
   position: absolute;
   max-width: 290px;
   left: 6.3%;
   top: -54px;
 }
 
-.system-diagnosis .middle_div .img img {
+.system-diagnosis .middle .middle_div1 .img img {
   width: 100%;
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
 }
 
-.system-diagnosis .middle_div h2 {
+.system-diagnosis .middle .middle_div1 h2 {
   width: 50%;
   line-height: 1.9;
   word-spacing: 0.2rem;
   color: #fff;
   font-size: 1.9rem;
   font-family: 'Pop-normal';
+}
+
+.system-diagnosis .middle .middle_div2 {
+  width: 78%;
+  margin: 0.5rem 0 0 9%;
+}
+
+.system-diagnosis .middle .middle_div2 img {
+  max-width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 15px;
+  margin-bottom: 1.5rem;
+}
+
+.system-diagnosis .middle .middle_div2 .position-relative img:last-child {
+  position: absolute;
+  max-width: 23px;
+  height: auto;
+  top: 14px;
+  left: 14px;
+}
+
+.system-diagnosis .middle .middle_div2 select {
+  padding: 7px 6px;
+  border-radius: 6px;
+  background: #EBEDF1;
+  color: #879290;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 13px;
 }
 
 .system-diagnosis .system-div {
@@ -2153,42 +2213,138 @@ h1, h2, h3, h4, h5 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 7rem;
+  margin-top: 6rem;
 }
 
-.system-diagnosis .system-div .stepper span {
-  position: relative;
-  display: inline-block;
-}
-
-.system-diagnosis .system-div .stepper span img {
+.system-diagnosis .system-div .stepper .progress1 img,
+.system-diagnosis .system-div .stepper .progress3 img {
   max-width: 21px;
   -o-object-fit: contain;
      object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
 }
 
-.system-diagnosis .system-div .stepper:not(:last-child) span::after {
+.system-diagnosis .system-div .stepper .progress2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #D8E6E8;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.system-diagnosis .system-div .stepper .progress2 span {
+  width: 18px;
+  height: 18px;
+  border: 2px solid #dddddd;
+  border-top-color: #009579;
+  display: inline-block;
+  border-radius: 50%;
+  -webkit-animation: loading 1s linear infinite;
+          animation: loading 1s linear infinite;
+}
+
+.system-diagnosis .system-div .stepper .progress1, .system-diagnosis .system-div .stepper .progress2, .system-diagnosis .system-div .stepper .progress3 {
+  position: relative;
+  display: none;
+}
+
+.system-diagnosis .system-div .stepper .progress1.active, .system-diagnosis .system-div .stepper .progress2.active, .system-diagnosis .system-div .stepper .progress3.active {
+  display: block;
+}
+
+.system-diagnosis .system-div .stepper .progress1.active::after, .system-diagnosis .system-div .stepper .progress2.active::after, .system-diagnosis .system-div .stepper .progress3.active::after {
+  display: block;
+}
+
+.system-diagnosis .system-div .stepper:not(:last-child) div::after {
   content: '';
   position: absolute;
   width: 90px;
   border: 0.03rem dashed #cbcbcb;
-  -webkit-transform: translateX(68%);
-          transform: translateX(68%);
+  -webkit-transform: translateX(90%);
+          transform: translateX(90%);
   top: 11px;
+  display: none;
+}
+
+.system-diagnosis .system-div .stepper:not(:last-child) div.progress2::after {
+  border: 0.03rem dashed #30B0A1;
+}
+
+.system-diagnosis .system-div .stepper:not(:last-child) div.progress3::after {
+  border: 0.03rem dashed #26887C;
 }
 
 .system-diagnosis .system-div .stepper-card {
   width: 98.5%;
-  padding: 2rem 1.6rem 0.7rem;
+  padding: 1.9rem 1.6rem 0rem;
   background: #fff;
   border: 1px solid #EEF3F3;
   border-radius: 16px;
+  overflow: hidden;
 }
 
-.system-diagnosis .system-div .stepper-card > img {
+.system-diagnosis .system-div .stepper-card .head img {
   -o-object-fit: cover;
      object-fit: cover;
   margin-bottom: 1.5rem;
+  margin-top: 0 !important;
+}
+
+.system-diagnosis .system-div .stepper-card .status1,
+.system-diagnosis .system-div .stepper-card .status2,
+.system-diagnosis .system-div .stepper-card .status3 {
+  padding: 11px 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 4px;
+}
+
+.system-diagnosis .system-div .stepper-card .status1 p,
+.system-diagnosis .system-div .stepper-card .status2 p,
+.system-diagnosis .system-div .stepper-card .status3 p {
+  color: #fff;
+  line-height: 0;
+  margin: 0;
+  font-size: 12px;
+}
+
+.system-diagnosis .system-div .stepper-card .status1 {
+  background-color: #A4B5B3;
+}
+
+.system-diagnosis .system-div .stepper-card .status2 {
+  background-color: #F6AB39;
+}
+
+.system-diagnosis .system-div .stepper-card .status3 {
+  background-color: #198754;
+}
+
+.system-diagnosis .system-div .stepper-card .status {
+  display: none;
+}
+
+.system-diagnosis .system-div .stepper-card .status.active {
+  display: block;
 }
 
 .system-diagnosis .system-div .stepper-card h5 {
@@ -2196,28 +2352,90 @@ h1, h2, h3, h4, h5 {
   font-size: 15px;
   text-transform: capitalize;
   color: #0A2F2A;
-  margin-bottom: 1rem;
 }
 
-.system-diagnosis .system-div .stepper-card .d-flex {
+.system-diagnosis .system-div .stepper-card .result1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 1.3rem;
 }
 
-.system-diagnosis .system-div .stepper-card .d-flex p {
+.system-diagnosis .system-div .stepper-card .result1 p {
   color: #20776E;
-  line-height: 1.5;
+  line-height: 2;
   font-size: 13px;
   margin-right: 6px;
   letter-spacing: -0.03rem;
 }
 
-.system-diagnosis .system-div .stepper-card .d-flex img {
+.system-diagnosis .system-div .stepper-card .result1 img {
   max-width: 16px;
   -o-object-fit: contain;
      object-fit: contain;
-  margin-top: -11px;
+  margin-top: -2px;
+}
+
+.system-diagnosis .system-div .stepper-card .result2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.system-diagnosis .system-div .stepper-card .result2 img {
+  width: 160px;
+  height: 75px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.system-diagnosis .system-div .stepper-card .result3 {
+  margin-top: 1.3rem;
+}
+
+.system-diagnosis .system-div .stepper-card .result3 p {
+  line-height: 1.6;
+  font-size: 13px;
+  color: #20776E;
+}
+
+.system-diagnosis .system-div .stepper-card .result4 {
+  margin-top: 1.3rem;
+}
+
+.system-diagnosis .system-div .stepper-card .result4 p {
+  line-height: 1.6;
+  font-size: 13px;
+  color: #20776E;
+  font-family: Pop-medium;
+}
+
+.system-diagnosis .system-div .stepper-card .result4 img {
+  max-width: 16px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-top: -2px;
+}
+
+.system-diagnosis .system-div .stepper-card .result {
+  display: none;
+}
+
+.system-diagnosis .system-div .stepper-card .result p {
+  display: inline-block;
+}
+
+.system-diagnosis .system-div .stepper-card .result.active {
+  display: block;
 }
 
 .system-diagnosis .system-div .btn-div {
@@ -2242,6 +2460,119 @@ h1, h2, h3, h4, h5 {
 .system-diagnosis .system-div .btn-div button:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+
+.system-diagnosis .upload-main .middle-photo {
+  margin: 1rem 0 1rem;
+  width: 93%;
+  padding: 3.1rem 6rem 2.35rem;
+  position: relative;
+  border-radius: 15px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#2D9D8D), to(#20776E));
+  background: linear-gradient(to top, #2D9D8D, #20776E);
+}
+
+.system-diagnosis .upload-main .middle-photo .row {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+}
+
+.system-diagnosis .upload-main .middle-photo .img {
+  position: absolute;
+  max-width: 255px;
+  left: 6.3%;
+  top: -10px;
+}
+
+.system-diagnosis .upload-main .middle-photo .img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.system-diagnosis .upload-main .middle-photo h2 {
+  width: 50%;
+  line-height: 1.9;
+  word-spacing: 0.2rem;
+  color: #fff;
+  font-size: 1.9rem;
+  font-family: 'Pop-normal';
+}
+
+.system-diagnosis .upload-main .upload-photo {
+  width: 85%;
+  margin: 2rem 0 0 0%;
+}
+
+.system-diagnosis .upload-main .upload-photo .img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.system-diagnosis .upload-main .upload-photo .img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.system-diagnosis .upload-main .upload-photo .upload1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.system-diagnosis .upload-main .upload-photo .upload1 h6 {
+  font-size: 1.4rem;
+  line-height: 2.5rem;
+  margin-bottom: 0.65rem;
+  color: #0F5156;
+  font-family: Pop-medium;
+}
+
+.system-diagnosis .upload-main .upload-photo .upload1 .img {
+  height: 190px;
+}
+
+.system-diagnosis .upload-main .upload-photo .upload2 .img {
+  height: 300px;
+}
+
+.system-diagnosis .upload-main .upload-photo .upload3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.system-diagnosis .upload-main .upload-photo .upload3 .img {
+  height: 150px;
 }
 
 .face-detect {
@@ -2469,7 +2800,8 @@ h1, h2, h3, h4, h5 {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .reg_form .main_div .step_wise .center_step h6, .reg_form .main_div .step_wise .center_step span {
+  .reg_form .main_div .step_wise .center_step h6,
+  .reg_form .main_div .step_wise .center_step span {
     font-size: 15px;
   }
   .reg_form .main_div .step_wise button.active {

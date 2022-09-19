@@ -302,6 +302,42 @@ $btn-gray: #919D9B;
   }
 }
 
+@mixin sysmiddle($martop,$top,$width){
+  margin: $martop 0 1rem;
+  width: 93%;
+  padding: 3.1rem 6rem 2.35rem;
+  position: relative;
+  border-radius: 15px;
+  background: linear-gradient(to top, #2D9D8D, #20776E);
+  .row{
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+  }
+
+  .img {
+    position: absolute;
+    max-width: $width;
+    left: 6.3%;
+    top: $top;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  h2 {
+    width: 50%;
+    line-height: 1.9;
+    word-spacing: 0.2rem;
+    color: #fff;
+    font-size: 1.9rem;
+    font-family: 'Pop-normal';
+  }
+}
+
 @mixin mainDiv{
   flex: 0 0 83%;
   max-width: 83%;
