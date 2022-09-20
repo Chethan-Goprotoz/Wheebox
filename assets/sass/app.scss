@@ -219,7 +219,7 @@ h5 {
     }
 
     button {
-      @include btnDefault(150px, 45px, $secondary-color);
+      @include btnDefault(150px, 45px, capitalize, none, $secondary-color);
     }
   }
 }
@@ -312,7 +312,7 @@ h5 {
         }
 
         button {
-          @include btnDefault(110px, 45px, $secondary-color);
+          @include btnDefault(110px, 45px, capitalize, none, $secondary-color);
           @include flexC(center);
           font-family: Pop-normal;
 
@@ -531,7 +531,7 @@ h5 {
       }
 
       button {
-        @include btnDefault(110px, 45px, transparent);
+        @include btnDefault(110px, 45px, capitalize, none, transparent);
 
         &.enable {
           border: 1px solid $secondary-color;
@@ -598,7 +598,7 @@ h5 {
         }
 
         button {
-          @include btnDefault(100px, 45px, $secondary-color);
+          @include btnDefault(100px, 45px, capitalize, none, $secondary-color);
         }
       }
     }
@@ -958,7 +958,7 @@ h5 {
           @include flexC(center);
 
           button {
-            @include btnDefault(150px, 36px, $secondary-color);
+            @include btnDefault(150px, 36px, capitalize, none, $secondary-color);
             font-size: 1.3rem;
             letter-spacing: -0.02rem;
           }
@@ -1013,11 +1013,11 @@ h5 {
     ul {
       list-style-type: none;
       padding-left: 0;
-      width: 75%;
+      width: 73%;
 
       li {
         color: #20776E;
-        padding: 1.4rem 1.25rem;
+        padding: 1.35rem 1.25rem;
         font-size: 14px;
         border-radius: 5px;
         margin-bottom: 2.7rem;
@@ -1025,10 +1025,10 @@ h5 {
         opacity: 0.5;
 
         img {
-          margin-right: 1rem;
+          margin-right: 0.9rem;
           width: 17px;
           object-fit: contain;
-          margin-top: -2px;
+          margin-top: -3px;
         }
 
         &.active {
@@ -1277,7 +1277,7 @@ h5 {
       margin-top: 3.4rem;
 
       button {
-        @include btnDefault(152px, 51px, $secondary-color);
+        @include btnDefault(152px, 51px, capitalize, none, $secondary-color);
         border-radius: 8px;
         text-transform: capitalize;
       }
@@ -1289,25 +1289,31 @@ h5 {
     }
     .upload-photo{
       width: 85%;
-      margin: 2rem 0 0 0%;
+      margin: 3rem 0 0 4.5%;
+      .gx-5{
+        --bs-gutter-x: 2.75rem;
+        align-items: flex-start;
+      }
       .img{
         width: 100%;
-        border-radius: 15px;
+        border-radius: 13px;
         img{
           width: 100%;
           height: 100%;
-          border-radius: 15px;
+          border-radius: 13px;
           object-fit: cover;
           object-position: center;
         }
       }
       .upload1{
-        flex: 0 0 21%;
-        max-width: 21%;
+        flex: 0 0 20%;
+        max-width: 20%;
         @include flexC(center);
         flex-direction: column;
         h6{
-          @include h6Text;
+          font-size: 1.3rem;
+          line-height: 2.5rem; 
+          margin-bottom: 0.5rem;
           color: #0F5156;
           font-family: Pop-medium;
         }
@@ -1335,10 +1341,75 @@ h5 {
         }
       }
       .upload2{
-        flex: 0 0 62%;
-        max-width: 62%;
+        flex: 0 0 63%;
+        max-width: 63%;
         .img{
-          height: 270px;
+          height: 280px;
+          position: relative;
+          .desc{
+            position: absolute;
+            width: 75%;
+            padding: 10px;
+            background-color: #fff;
+            border: 1px solid #EEF3F3;
+            border-radius: 20px;
+            transform: translate(16.5%,-119%);
+            .frame{
+              border: 1px solid #EEF3F3;
+              padding: 6px;
+              border-radius: 15px;
+              width: 47.5%;
+              margin: auto;
+              position: relative;
+              img:last-child{
+                position: absolute;
+                right: 12px;
+                top: 12px;
+                max-width: 16px;
+                object-fit: contain;
+              }
+            }
+            p{
+              color: #848E90;
+              font-size: 12px;
+              line-height: 1.5;
+              margin-bottom: 0;
+            }
+            img{
+              width: 100%;
+              height: 95px;
+              object-fit: cover;
+              object-position: 50% 0%;
+              margin-bottom: 1rem;
+              border-radius: 9px;
+            }
+          }
+        }
+        .check{
+          display: grid;
+          grid-template-columns: 6% 93%;
+          margin: 1.7rem 0 0 0.5%;
+          label{
+            color: #5A6768;
+            font-size: 13px;
+            letter-spacing: 0;
+            font-family: Pop-normal;
+          }
+          input{
+            width: 19px;
+            height: 17px;
+            margin-top: 0.3rem;
+          }
+        }
+        .btn-div{
+          margin-top: 2.8rem;
+          button:first-child{
+            @include btnDefault(140px, 47px, capitalize, 1px solid $secondary-color, #fff);
+            color: $secondary-color;
+          }
+          button:last-child{
+            @include btnDefault(180px, 47px, initial, none, $secondary-color);
+          }
         }
       }
       .upload3{
@@ -1346,8 +1417,30 @@ h5 {
         flex-direction: column;
         flex: 0 0 17%;
         max-width: 17%;
+        h6{
+          font-size: 1.3rem;
+          line-height: 2.5rem; 
+          margin-bottom: 0.5rem;
+          color: #0F5156;
+          font-family: Pop-medium;
+        }
         .img{
-          height: 125px;
+          height: 120px;
+          margin-bottom: 1.1rem;
+          background-color: #fff;
+          border: 1px solid #E1F3F3;
+          position: relative;
+          &.img-border{
+            border: 2px solid $primary-color;
+          }
+          img:last-child{
+            position: absolute;
+            right: 7px;
+            top: 7px;
+            max-width: 15px;
+            height: auto;
+            object-fit: contain;
+          }
         }
       }
     }
@@ -1524,7 +1617,7 @@ h5 {
 
         .login {
           button {
-            @include btnDefault(90px, 45px, $secondary-color);
+            @include btnDefault(90px, 45px, capitalize, none, $secondary-color);
             font-size: 1.3rem;
 
             i {
@@ -1598,7 +1691,7 @@ h5 {
         }
 
         button.active {
-          @include btnDefault(100px, 45px, $secondary-color);
+          @include btnDefault(100px, 45px, capitalize, none, $secondary-color);
           height: 43px;
         }
       }
@@ -1628,7 +1721,7 @@ h5 {
         }
 
         button {
-          @include btnDefault(110px, 45px, $secondary-color);
+          @include btnDefault(110px, 45px, capitalize, none, $secondary-color);
           height: 43px;
         }
       }

@@ -538,7 +538,7 @@ h5 {
 .bulb_info .bulb_footer button {
   width: 150px;
   height: 45px;
-  text-transform: uppercase;
+  text-transform: capitalize;
   letter-spacing: 0.3px;
   font-size: 1.4rem;
   color: #fff;
@@ -745,7 +745,7 @@ h5 {
 .reg_form .main_div .formhead .login button {
   width: 110px;
   height: 45px;
-  text-transform: uppercase;
+  text-transform: capitalize;
   letter-spacing: 0.3px;
   font-size: 1.4rem;
   color: #fff;
@@ -1199,7 +1199,7 @@ h5 {
 .reg_form .main_div .step_wise button {
   width: 110px;
   height: 45px;
-  text-transform: uppercase;
+  text-transform: capitalize;
   letter-spacing: 0.3px;
   font-size: 1.4rem;
   color: #fff;
@@ -1405,7 +1405,7 @@ h5 {
 .ver_form .main_div .div-mid form button {
   width: 100px;
   height: 45px;
-  text-transform: uppercase;
+  text-transform: capitalize;
   letter-spacing: 0.3px;
   font-size: 1.4rem;
   color: #fff;
@@ -1946,7 +1946,7 @@ h5 {
 .selection .main_div .test_con .test-card .btn-test button {
   width: 150px;
   height: 36px;
-  text-transform: uppercase;
+  text-transform: capitalize;
   letter-spacing: 0.3px;
   font-size: 1.4rem;
   color: #fff;
@@ -2097,12 +2097,12 @@ h5 {
 .system-diagnosis .sidebar ul {
   list-style-type: none;
   padding-left: 0;
-  width: 75%;
+  width: 73%;
 }
 
 .system-diagnosis .sidebar ul li {
   color: #20776E;
-  padding: 1.4rem 1.25rem;
+  padding: 1.35rem 1.25rem;
   font-size: 14px;
   border-radius: 5px;
   margin-bottom: 2.7rem;
@@ -2111,11 +2111,11 @@ h5 {
 }
 
 .system-diagnosis .sidebar ul li img {
-  margin-right: 1rem;
+  margin-right: 0.9rem;
   width: 17px;
   -o-object-fit: contain;
      object-fit: contain;
-  margin-top: -2px;
+  margin-top: -3px;
 }
 
 .system-diagnosis .sidebar ul li.active {
@@ -2445,7 +2445,7 @@ h5 {
 .system-diagnosis .system-div .btn-div button {
   width: 152px;
   height: 51px;
-  text-transform: uppercase;
+  text-transform: capitalize;
   letter-spacing: 0.3px;
   font-size: 1.4rem;
   color: #fff;
@@ -2505,18 +2505,25 @@ h5 {
 
 .system-diagnosis .upload-main .upload-photo {
   width: 85%;
-  margin: 2rem 0 0 0%;
+  margin: 3rem 0 0 4.5%;
+}
+
+.system-diagnosis .upload-main .upload-photo .gx-5 {
+  --bs-gutter-x: 2.75rem;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .system-diagnosis .upload-main .upload-photo .img {
   width: 100%;
-  border-radius: 15px;
+  border-radius: 13px;
 }
 
 .system-diagnosis .upload-main .upload-photo .img img {
   width: 100%;
   height: 100%;
-  border-radius: 15px;
+  border-radius: 13px;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
@@ -2525,9 +2532,9 @@ h5 {
 
 .system-diagnosis .upload-main .upload-photo .upload1 {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 21%;
-          flex: 0 0 21%;
-  max-width: 21%;
+      -ms-flex: 0 0 20%;
+          flex: 0 0 20%;
+  max-width: 20%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2544,9 +2551,9 @@ h5 {
 }
 
 .system-diagnosis .upload-main .upload-photo .upload1 h6 {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   line-height: 2.5rem;
-  margin-bottom: 0.65rem;
+  margin-bottom: 0.5rem;
   color: #0F5156;
   font-family: Pop-medium;
 }
@@ -2573,13 +2580,123 @@ h5 {
 
 .system-diagnosis .upload-main .upload-photo .upload2 {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 62%;
-          flex: 0 0 62%;
-  max-width: 62%;
+      -ms-flex: 0 0 63%;
+          flex: 0 0 63%;
+  max-width: 63%;
 }
 
 .system-diagnosis .upload-main .upload-photo .upload2 .img {
-  height: 270px;
+  height: 280px;
+  position: relative;
+}
+
+.system-diagnosis .upload-main .upload-photo .upload2 .img .desc {
+  position: absolute;
+  width: 75%;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #EEF3F3;
+  border-radius: 20px;
+  -webkit-transform: translate(16.5%, -119%);
+          transform: translate(16.5%, -119%);
+}
+
+.system-diagnosis .upload-main .upload-photo .upload2 .img .desc .frame {
+  border: 1px solid #EEF3F3;
+  padding: 6px;
+  border-radius: 15px;
+  width: 47.5%;
+  margin: auto;
+  position: relative;
+}
+
+.system-diagnosis .upload-main .upload-photo .upload2 .img .desc .frame img:last-child {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  max-width: 16px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.system-diagnosis .upload-main .upload-photo .upload2 .img .desc p {
+  color: #848E90;
+  font-size: 12px;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+.system-diagnosis .upload-main .upload-photo .upload2 .img .desc img {
+  width: 100%;
+  height: 95px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 0%;
+     object-position: 50% 0%;
+  margin-bottom: 1rem;
+  border-radius: 9px;
+}
+
+.system-diagnosis .upload-main .upload-photo .upload2 .check {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 6% 93%;
+      grid-template-columns: 6% 93%;
+  margin: 1.7rem 0 0 0.5%;
+}
+
+.system-diagnosis .upload-main .upload-photo .upload2 .check label {
+  color: #5A6768;
+  font-size: 13px;
+  letter-spacing: 0;
+  font-family: Pop-normal;
+}
+
+.system-diagnosis .upload-main .upload-photo .upload2 .check input {
+  width: 19px;
+  height: 17px;
+  margin-top: 0.3rem;
+}
+
+.system-diagnosis .upload-main .upload-photo .upload2 .btn-div {
+  margin-top: 2.8rem;
+}
+
+.system-diagnosis .upload-main .upload-photo .upload2 .btn-div button:first-child {
+  width: 140px;
+  height: 47px;
+  text-transform: capitalize;
+  letter-spacing: 0.3px;
+  font-size: 1.4rem;
+  color: #fff;
+  border: 1px solid #F6AB39;
+  border-radius: 6px;
+  background-color: #fff;
+  cursor: pointer;
+  color: #F6AB39;
+}
+
+.system-diagnosis .upload-main .upload-photo .upload2 .btn-div button:first-child:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.system-diagnosis .upload-main .upload-photo .upload2 .btn-div button:last-child {
+  width: 180px;
+  height: 47px;
+  text-transform: initial;
+  letter-spacing: 0.3px;
+  font-size: 1.4rem;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  background-color: #F6AB39;
+  cursor: pointer;
+}
+
+.system-diagnosis .upload-main .upload-photo .upload2 .btn-div button:last-child:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .system-diagnosis .upload-main .upload-photo .upload3 {
@@ -2602,8 +2719,34 @@ h5 {
   max-width: 17%;
 }
 
+.system-diagnosis .upload-main .upload-photo .upload3 h6 {
+  font-size: 1.3rem;
+  line-height: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #0F5156;
+  font-family: Pop-medium;
+}
+
 .system-diagnosis .upload-main .upload-photo .upload3 .img {
-  height: 125px;
+  height: 120px;
+  margin-bottom: 1.1rem;
+  background-color: #fff;
+  border: 1px solid #E1F3F3;
+  position: relative;
+}
+
+.system-diagnosis .upload-main .upload-photo .upload3 .img.img-border {
+  border: 2px solid #26887C;
+}
+
+.system-diagnosis .upload-main .upload-photo .upload3 .img img:last-child {
+  position: absolute;
+  right: 7px;
+  top: 7px;
+  max-width: 15px;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .face-detect {
@@ -2770,7 +2913,7 @@ h5 {
   .reg_form .main_div .formhead .login button {
     width: 90px;
     height: 45px;
-    text-transform: uppercase;
+    text-transform: capitalize;
     letter-spacing: 0.3px;
     font-size: 1.4rem;
     color: #fff;
@@ -2838,7 +2981,7 @@ h5 {
   .reg_form .main_div .step_wise button.active {
     width: 100px;
     height: 45px;
-    text-transform: uppercase;
+    text-transform: capitalize;
     letter-spacing: 0.3px;
     font-size: 1.4rem;
     color: #fff;
@@ -2874,7 +3017,7 @@ h5 {
   .reg_form .bulb_info .bulb_footer button {
     width: 110px;
     height: 45px;
-    text-transform: uppercase;
+    text-transform: capitalize;
     letter-spacing: 0.3px;
     font-size: 1.4rem;
     color: #fff;

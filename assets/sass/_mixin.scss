@@ -23,14 +23,14 @@ $btn-gray: #919D9B;
   }
 }
 
-@mixin btnDefault($width, $height, $bgcolor){
+@mixin btnDefault($width, $height, $textForm, $border, $bgcolor){
 	width: $width;
   height: $height;
-  text-transform: uppercase;
+  text-transform: $textForm;
   letter-spacing: 0.3px;
   font-size: 1.4rem;
   color: #fff;
-  border: none;
+  border: $border;
   border-radius: 6px;
   background-color: $bgcolor;
   cursor: pointer;
