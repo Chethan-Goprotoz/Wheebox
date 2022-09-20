@@ -61,24 +61,59 @@
 
               </div>
             </div>
-             <div class="row profile-wrap">
-                <div class="col-12 col-md-2 profile-left ">
-                  <ul class="profile-user">
-                    <li><span class="user-avtar"><img src="assets/images/users.png"></span></li>
-                    <li>Online users : 0</li>
-                  </ul>
-                </div>
-              <div class="col-12 col-md-10 profile-right ">
-                <div class="row ">
-                <div class="errr-conent-holder">
-                 <img src="assets/images/no-user-is-taking-the-test.png">
-                 <h4>No user is taking the test.</h4>
-                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
+             
+
+            <section>
+              <div class="container-fluid h-custom ">
+                <div class="row d-flex align-items-center resetpassword mx-auto">
+                  <div class="col-md-12 col-lg-5 col-xl-5 resetpassword-left  ">
+                    <figure>
+                      <img src="assets/images/svg/rest-password-left-image.svg" alt="">
+                    </figure>
+                  
+                  </div>
+                  <div class="col-sm-12 col-md-12 col-lg-7 col-xl-7 login-form resetpassword-right">
+                    <div class="close"><img src="/assets/images/svg/profile-close.svg"></div>
+                    <div class="login-form-top mb30">
+                       <h3>Rest your password</h3>
+                       <p>The verification email will be sent to the mailbox Please check it.</p>
+                    </div>
+                    <form>
+                      <!-- Email input -->
+                      <div class="mb-4 form-field">
+                        <label for="email">Email address</label>
+                        <input
+                          type="email"
+                          id="email"
+                          placeholder="Enter your email address"
+                          name="email"
+                          required
+                        />
+                      </div>
+                      <!-- Password input -->
+      
+                      
+                      <div class="position-relative form-field">
+                        <label for="verificationCode">Verification Code</label>
+                        <input type="number" placeholder="Verification Code" name="verificationCode" id="verificationCode" required>
+                      
+                        <img src="assets/images/svg/eye.svg" class="eye" alt="eye" />
+                      </div>
+                      <div class="register-link">
+                          <a href="register.html">Register</a>
+                          <a href="forgot-password.html">Forgot password?</a>
+                      </div>
+                      <div class="text-center text-lg-start mt-4 login-btn">
+                        <input type="submit" value="Submit" name="Submit" />
+                        
+                      </div>
+                    </form>
+                   
+                  </div>
                 </div>
               </div>
-             
-            </div>
+            </section>
+
           
           <!-- row closed -->
         </div>
