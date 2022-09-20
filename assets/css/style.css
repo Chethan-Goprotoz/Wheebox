@@ -1919,8 +1919,6 @@ textarea::placeholder {
 
 /*  Approver css end */
 
-<<<<<<< Updated upstream
-=======
 /* Profile 7 */
 .radio_div input[type="radio"]:checked {
   background-color: #26887C !important;
@@ -2059,7 +2057,6 @@ input[name="allocation"] {
 
 
 
->>>>>>> Stashed changes
 /*========== Responsive Style ==========*/
 
 @media screen and (max-width: 1500px) {
