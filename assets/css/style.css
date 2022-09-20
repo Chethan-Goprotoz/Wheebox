@@ -1919,6 +1919,147 @@ textarea::placeholder {
 
 /*  Approver css end */
 
+<<<<<<< Updated upstream
+=======
+/* Profile 7 */
+.radio_div input[type="radio"]:checked {
+  background-color: #26887C !important;
+  border: 0.185rem solid #26887C !important;
+}
+ .radio_div label {
+  margin-right: 5rem;
+  font-size: 14px;
+  cursor: pointer;
+}
+.radio_div label.active {
+  color: #12846B;
+}
+.radio_div input[type="radio"] {
+  appearance: none;
+  display: inline-block;
+  width: 21px;
+  height: 21px;
+  padding: 0.34rem;
+  background-clip: content-box;
+  border: 1px solid #DBDBDB;
+  border-radius: 50%;
+  margin-right: 8px;
+  cursor: pointer;
+}
+.gridp7{
+  display: grid;
+  grid-template-columns: 17% 76%;
+  align-items: center;
+}
+.gridp7 .gridp72{
+  padding-top: 2px;
+}
+.gridp7 .gridp72 h1{
+  margin-bottom: 0.2rem;
+}
+.gridp7 .gridp72 span{
+  color: dimgrey;
+}
+
+.modal-header{
+  padding: 25px 30px 25px 30px;
+  align-items: flex-start
+}
+.modal-content{
+  border-radius: 1.2rem;
+}
+.modal-header .btn-close{
+  color: #000 !important;
+  font-size: 12px;
+}
+.modal-header span{
+  color: rgb(88, 88, 88);
+  font-size: 14px;
+  margin-top: -10px;
+}
+.modal-header h4{
+  font-size: 24px;
+  margin: 0;
+}
+*{
+  margin: 0;
+}
+.modal-body .al_limit{
+ display: flex;
+ justify-content: space-between;
+ padding: 20px 30px 20px 30px;
+ border-bottom: 1px solid #dee2e6;
+}
+.al_limit h4{
+  font-weight: 600;
+  margin: 0;
+}
+.modal-body{
+  padding: 0;
+}
+.modal-body .al_radio{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 30px 20px 30px;
+  font-weight: 600;
+}
+input[name="allocation"] {
+  background-color: #26887C;
+  border: 0.185rem solid #26887C;
+  margin: 05px;
+  accent-color: #26887C;
+}
+.modal-footer button, .pf_7 .modal-body button{
+  width: 110px;
+  height: 45px;
+  text-transform: capitalize;
+  letter-spacing: 0.3px;
+  font-size: 1.4rem;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  background-color: #F6AB39;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: Pop-normal;
+}
+.modal-footer{
+  padding: 25px 30px 25px 0px;
+}
+.pf_7 .modal-content .modal-header{
+ border: 0px;
+}
+.pf_7 .modal-body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center
+}
+.pf_7 textarea{
+  width: 100%;
+}
+
+@media (min-width: 576px){
+.modal-dialog {
+    max-width: 700px;
+    margin: 1.75rem auto;
+}
+}
+
+/* Profile 7 end */
+
+
+
+>>>>>>> Stashed changes
 /*========== Responsive Style ==========*/
 
 @media screen and (max-width: 1500px) {

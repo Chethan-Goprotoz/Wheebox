@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Face Detected</title>
+
+    <!-- font awesome css -->
+    <link rel="stylesheet" href="assets/font-awesome/all.min.css"/>
+    <link rel="stylesheet" href="assets/font-awesome/fontawesome.css"/>
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" rel="stylesheet"/>
+
+    <!-- loader css -->
+    <link rel="stylesheet" href="assets/css/loader.css">
+
+    <!-- style css -->
+    <link rel="stylesheet" href="assets/sass/app.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+
+<body>
+  <!-- loader start-->
+  <div class="loader-container">
+    <div class="loader"></div>
+  </div>
+  <!-- loader end-->
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title" id="exampleModalLabel">
+            <table>
+                <tr>
+                    <td style="padding-right: 5px;">
+                        <img src="assets/images/svg/Group 45987.svg" alt="" width="50px">
+                    </td>
+                    <td style="padding-left: 5px;"> 
+                        <h4>Proctor Ten</h4>
+                        <span>Proctor</span>
+                    </td>
+                </tr>
+            </table>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="al_limit">
+            <h4>Max Allocation Limit</h4>
+            <h4>25</h4>
+          </div>
+          <div class="al_radio">
+                <div>
+                    Allocation
+                </div>
+                <div>
+                    <input type="radio" name="allocation" value="allow" /><label>Allow allocation</label>
+                    <input type="radio" name="allocation" value="stop" /><label>Stop allocation</label>
+                </div>
+          </div>
+        </div>
+       
+        <div class="modal-footer">
+          <button type="button " class="btn active">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/jquery-2.2.0.min.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/loader.js"></script>
+  <script type="text/javascript">
+    $(window).on('load', function() {
+        $('#exampleModal').modal('show');
+    });
+</script>
+</body>
+</html>
