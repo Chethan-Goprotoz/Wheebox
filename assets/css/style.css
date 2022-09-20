@@ -2007,7 +2007,7 @@ input[name="allocation"] {
   margin: 05px;
   accent-color: #26887C;
 }
-.modal-footer button, .pf_7 .modal-body button{
+.modal-footer .next_btn, .pf_7 .modal-body .next_btn{
   width: 110px;
   height: 45px;
   text-transform: capitalize;
@@ -2018,34 +2018,133 @@ input[name="allocation"] {
   border-radius: 6px;
   background-color: #F6AB39;
   cursor: pointer;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   font-family: Pop-normal;
 }
 .modal-footer{
   padding: 25px 30px 25px 0px;
 }
+/* profile 7 end and 8 start */
 .pf_7 .modal-content .modal-header{
  border: 0px;
 }
 .pf_7 .modal-body{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  align-items: center
+  padding: 0 30px 25px 30px;
 }
 .pf_7 textarea{
   width: 100%;
 }
-
+.pf_7 .modal-footer{
+  padding: 25px 30px 35px 30px;
+  border: 0px solid #cecece;
+  display: block;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+textarea {
+  border: 1px solid #cecece;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  padding: 15px;
+  border-image-slice: 1;
+}
+ .pf_7 .back_btn, .pro_list .back_btn{
+  border: 2px solid #F6AB39;
+  cursor: pointer;
+  color: #F6AB39;
+  z-index: 100;
+  background-color: transparent;
+  width: 110px;
+  height: 45px;
+  text-transform: capitalize;
+  letter-spacing: 0.3px;
+  font-size: 1.4rem;
+  border-radius: 6px;
+}
+.modal-body .btn-div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+/* Dropdown */
+.select-dropdown {
+  position: relative;
+  /* display: inline-block; */
+  max-width: 100%;
+  margin: 0 15px 0 0;
+}
+.select-dropdown::last-child {
+  margin-right: 0px;
+}
+.select-dropdown__button {
+  padding: 10px 35px 10px 15px;
+  background-color: transparent;
+  border: 1px solid #26887C;
+  border-radius: 3px;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  font-weight: 500;
+  font-size: 18px;
+  color: #000;
+}
+.select-dropdown__button::focus {
+  outline: none;
+}
+.select-dropdown__button .zmdi-chevron-down {
+  position: absolute;
+  right: 10px;
+  top: 12px;
+}
+.select-dropdown__list {
+  position: absolute;
+  display: block;
+  left: 0;
+  right: 0;
+  max-height: 300px;
+  overflow: auto;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #cecece;
+  border-top: 0px solid transparent;
+  list-style-type: none;
+  opacity: 0;
+  pointer-events: none;
+  transform-origin: top left;
+  transform: scale(1, 0);
+  transition: all ease-in-out 0.3s;
+  z-index: 2;
+}
+.select-dropdown__list.active {
+  opacity: 1;
+  pointer-events: auto;
+  transform: scale(1, 1);
+}
+.select-dropdown__list-item {
+  display: block;
+  list-style-type: none;
+  padding: 10px 15px;
+  background: #fff;
+  border-top: 1px solid #e6e6e6;
+  font-size: 14px;
+  line-height: 1.4;
+  cursor: pointer;
+  color: #616161;
+  text-align: left;
+  transition: all ease-in-out 0.3s;
+}
+.select-dropdown__list-item:hover {
+  background-color: #26887C;
+  color: #fff;
+  transition: all ease-in-out 0.3s;
+}
+/* Dropdown End */
 @media (min-width: 576px){
 .modal-dialog {
     max-width: 700px;
@@ -2053,7 +2152,45 @@ input[name="allocation"] {
 }
 }
 
-/* Profile 7 end */
+/* Profile 8 end and 9 start */
+.pro_list .modal-content .modal-header, .pro_list .modal-content .modal-footer{
+  border: 0px;
+}
+.pro_list .modal-content .modal-header{
+  padding: 35px 40px 10px 40px;
+}
+.pro_list .modal-body ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.pro_list .modal-body ul li{
+  border: 1px solid #dee2e6;
+  padding: 10px;
+  margin: 10px 0 10px 0;
+}
+.pro_list .modal-body{
+  padding: 0px 40px 0px 40px;
+}
+
+@media (min-width: 576px){
+  .pro_list .modal-dialog {
+    max-width: 1426px;
+    margin: 1.75rem auto;
+}
+}
+/* profile 9 ends 10 start*/
+.rest_pop .resetpassword{
+  margin: 0;
+  width: 100%;
+}
+
+@media (min-width: 576px){
+  .rest_pop .modal-dialog {
+    max-width: 1364px;
+    margin: 1.75rem auto;
+}
+/* profile 10 ends */
 
 
 
