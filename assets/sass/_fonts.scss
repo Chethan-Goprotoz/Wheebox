@@ -10,6 +10,22 @@
 }
 
 @font-face {
+  font-family: Mont-semibold;
+  src: url(../fonts/Montserrant/Montserrat-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: Mont-med;
+  src: url(../fonts/Montserrant/Montserrat-Medium.ttf);
+}
+
+@font-face {
+  font-family: Mont-normal;
+  src: url(../fonts/Montserrant/Montserrat-Regular.ttf);
+  font-weight: normal;
+}
+
+@font-face {
   font-family: Rob-bold;
   src: url(../fonts/Roboto/Roboto-Bold.ttf);
 }

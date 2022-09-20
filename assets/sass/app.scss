@@ -1322,9 +1322,12 @@ h5 {
           margin-bottom: 2rem;
         }
         .regcon1{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
           p{
             color: #ADB4B5;
-            text-align: end;
           }
         }
         .regcon2{
@@ -1335,8 +1338,9 @@ h5 {
         .regcon1,.regcon2{
           p{
             font-size: 13px;
-            line-height: 1.5;
+            line-height: 1.45;
             font-family: Pop-medium;
+            margin-bottom: 0.9rem;
           }
         }
       }
@@ -1392,13 +1396,46 @@ h5 {
           label{
             color: #5A6768;
             font-size: 13px;
-            letter-spacing: 0;
-            font-family: Pop-normal;
+            letter-spacing: -0.01rem;
+            font-family: Mont-normal;
           }
-          input{
-            width: 19px;
-            height: 17px;
-            margin-top: 0.3rem;
+          .grid1{
+            position: relative;
+            input{
+              position: absolute;
+              opacity: 0;
+              height: 20px;
+              width: 20px;
+              top: 2px;
+              cursor: pointer;
+              &:checked + .checkmark{
+                background-color: #20776E;
+                &::after{
+                  display: block;
+                }
+              }
+            }
+            .checkmark{
+              position: absolute;
+              top: 2px;
+              left: 0;
+              height: 20px;
+              width: 20px;
+              border-radius: 4px;
+              background-color: #eee;
+              &::after{
+                content: "";
+                position: absolute;
+                left: 8px;
+                top: 4px;
+                width: 5px;
+                height: 10px;
+                border: solid white;
+                border-width: 0 2px 2px 0;
+                transform: rotate(45deg);
+                display: none;
+              }
+            }
           }
         }
         .btn-div{
@@ -1430,10 +1467,17 @@ h5 {
           background-color: #fff;
           border: 1px solid #E1F3F3;
           position: relative;
+          @include flexC(center);
           &.img-border{
             border: 2px solid $primary-color;
           }
-          img:last-child{
+          img.camera{
+            max-width: 22px;
+            height: auto;
+            object-fit: contain;
+            border-radius: 0px;
+          }
+          img.tick{
             position: absolute;
             right: 7px;
             top: 7px;
@@ -1790,6 +1834,71 @@ h5 {
         .footer-info {
           p {
             margin-bottom: 0.7rem;
+          }
+        }
+      }
+    }
+  }
+  // selection css
+  .selection{
+    padding: 1.2rem;
+    .main_div{
+      .main_header{
+        padding: 0 0.4rem 0 1rem;
+        .logo{
+          width: 48px;
+          height: 34px;
+          img{
+            object-fit: contain;
+            object-position: center;
+          }
+        }
+        h4{
+          font-size: 1.6rem;
+          transform: translateX(79%);
+          text-align: center;
+        }
+        .grid{
+          grid-template-columns: 61% 33%;
+          .grid1{
+            visibility: hidden;
+          }
+          .grid2{
+            .profile{
+              justify-content: flex-end;
+            }
+          }
+        }
+      }
+      .middle_div{
+        .div1{
+          width: 100%;
+          padding: 2.5rem 2rem 1.75rem;
+          margin-bottom: 1.9rem;
+          .img{
+            max-width: 250px;
+            height: 150px;
+            position: absolute;
+            top: 0;
+          }
+        }
+      }
+      .test_con{
+        .filter-btn{
+          margin-bottom: 2rem;
+        }
+        input{
+          width: 75%;
+          margin-bottom: 4rem;
+        }
+        .test-card{
+          width: 100%;
+        }
+        .nothing{
+          .no-test{
+            img{
+              max-width: 235px;
+            }
           }
         }
       }
