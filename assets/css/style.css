@@ -1511,7 +1511,7 @@ h5.sd-banner-heading span {
 
 /*  Approver css Start */
 
-.approver-section{
+.approver-section,.profile-section{
   padding: 3rem;
   width: 100%;
   min-height: 100vh;
