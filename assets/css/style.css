@@ -1981,6 +1981,7 @@ textarea::placeholder {
   width: 100%;
   padding: 15px;
   height: 150px;
+  font-size: 14px;
   border: solid 1px #e0e0e0;
   border-radius: 6px;
   outline: 0;
