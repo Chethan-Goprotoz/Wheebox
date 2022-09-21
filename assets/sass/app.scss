@@ -991,6 +991,20 @@ h5 {
   min-height: 100vh;
   width: 100%;
 
+  .overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 70;
+    background-color: transparent;
+    display: none;
+    &.active{
+      display: block;
+    }
+  }
+
   .main_header {
     @include mainHeader;
   }
@@ -1354,10 +1368,16 @@ h5 {
             position: absolute;
             width: 75%;
             padding: 10px;
+            z-index: 100;
             background-color: #fff;
             border: 1px solid #EEF3F3;
             border-radius: 20px;
             transform: translate(16.5%,-119%);
+            display: none;
+            &.active{
+              animation: fadeIn 0.5s ease;
+              display: block;
+            }
             .frame{
               border: 1px solid #EEF3F3;
               padding: 6px;
@@ -1441,11 +1461,11 @@ h5 {
         .btn-div{
           margin-top: 2.8rem;
           button:first-child{
-            @include btnDefault(140px, 47px, capitalize, 1px solid $secondary-color, #fff);
+            @include btnDefault(132px, 47px, capitalize, 1px solid $secondary-color, #fff);
             color: $secondary-color;
           }
           button:last-child{
-            @include btnDefault(180px, 47px, initial, none, $secondary-color);
+            @include btnDefault(176px, 47px, initial, none, $secondary-color);
           }
         }
       }
@@ -1642,7 +1662,7 @@ h5 {
 }
 
 // responsive css for mobile
-@media(max-width: 768px) {
+@media(max-width: 767px) {
   .reg_form {
     background-color: #EFF7F6;
     align-items: flex-start;
@@ -1843,33 +1863,6 @@ h5 {
   .selection{
     padding: 1.2rem;
     .main_div{
-      .main_header{
-        padding: 0 0.4rem 0 1rem;
-        .logo{
-          width: 48px;
-          height: 34px;
-          img{
-            object-fit: contain;
-            object-position: center;
-          }
-        }
-        h4{
-          font-size: 1.6rem;
-          transform: translateX(79%);
-          text-align: center;
-        }
-        .grid{
-          grid-template-columns: 61% 33%;
-          .grid1{
-            visibility: hidden;
-          }
-          .grid2{
-            .profile{
-              justify-content: flex-end;
-            }
-          }
-        }
-      }
       .middle_div{
         .div1{
           width: 100%;
@@ -1893,11 +1886,178 @@ h5 {
         }
         .test-card{
           width: 100%;
+          .test-maincon{
+            .row{
+              justify-content: space-between;
+            }
+          }
         }
         .nothing{
           .no-test{
             img{
               max-width: 235px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  //system diagnosis
+  .system-diagnosis {
+    padding: 1.3rem 1.3rem;
+    overflow: hidden;
+    .mycol-md-3{
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+    .mycol-md-9{
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+    .sidebar{
+      height: 23vh;
+      justify-content: center;
+      ul{
+        width: 66%;
+        li{
+          padding: 1.3rem 1rem;
+          margin-bottom: 1.8rem;
+          text-align: center;
+        }
+      }
+    }
+    .middle{
+      .middle_div1{
+        width: 100%;
+        padding: 10rem 2rem 2.35rem;
+        .img{
+          max-width: 200px;
+          left: 40%;
+          top: -41px;
+        }
+        h2{
+          width: 100%;
+          line-height: 1.7;
+          word-spacing: 0.15rem;
+          font-size: 1.6rem;
+        }
+      }
+      .middle_div2{
+        width: 100%;
+        margin: 0.5rem 0 0 0%;
+        .row{
+          >.col-12{
+            margin-bottom: 2rem;
+          }
+        }
+        img{
+          margin-bottom: 1.1rem;
+        }
+      }
+    }
+    .system-div{
+      width: 100%;
+      .stepper{
+        &:not(:last-child) div::after{
+          transform: translateX(60%);
+        }
+        &:nth-child(2) div::after{
+          display: none !important;
+        }
+      }
+      .stepper-card{
+        width: 100%;
+        margin-bottom: 1.5rem;
+      }
+      .btn-div{
+        margin-top: 1.4rem;
+        button{
+          @include btnDefault(152px, 44px, capitalize, none, $secondary-color);
+        }
+      }
+    }
+    .upload-main{
+      .middle-photo{
+        width: 100%;
+        padding: 11.2rem 6rem 0.6rem;
+        .img{
+          max-width: 200px;
+          left: 22%;
+          top: -20px;
+        }
+        h2{
+          width: 100%;
+          line-height: 1.8;
+          word-spacing: 0.15rem;
+          font-size: 1.6rem;
+          text-align: center;
+        }
+      }
+      .upload-photo{
+        width: 100%;
+        margin: 3rem 0 0 0%;
+        .upload1{
+          flex: 0 0 100%;
+          max-width: 100%;
+          margin-bottom: 1rem;
+          h6{
+            font-size: 1.5rem;
+            margin-bottom: 0.9rem;
+          }
+          .img{
+            margin-bottom: 1.1rem;
+            display: flex;
+            justify-content: center;
+            img{
+              width: 50%;
+            }
+          }
+          .regcon1{
+            align-items: flex-end;
+          }
+        }
+        .upload2{
+          flex: 0 0 100%;
+          max-width: 100%;
+          margin-bottom: 4rem;
+          .img{
+            img{
+              width: 100%;
+            }
+            .desc{
+              width: 80%;
+              transform: translate(12.6%, -110%);
+            }
+          }
+          .check{
+            grid-template-columns: 9% 90%;
+            label{
+              font-family: 'Pop-normal';
+            }
+          }
+          .btn-div{
+            button:first-child{
+              width: 129px;
+              height: 45px;
+            }
+            button:last-child{
+              width: 172px;
+              height: 45px;
+            }
+          }
+        }
+        .upload3{
+          flex-direction: row;
+          flex: 0 0 100%;
+          max-width: 100%;
+          gap: 1.5rem;
+          h6{
+            font-size: 1.5rem;
+          }
+          .img{
+            img{
+              width: 100%;
             }
           }
         }
