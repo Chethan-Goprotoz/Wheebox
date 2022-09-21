@@ -1461,11 +1461,11 @@ h5 {
         .btn-div{
           margin-top: 2.8rem;
           button:first-child{
-            @include btnDefault(140px, 47px, capitalize, 1px solid $secondary-color, #fff);
+            @include btnDefault(132px, 47px, capitalize, 1px solid $secondary-color, #fff);
             color: $secondary-color;
           }
           button:last-child{
-            @include btnDefault(180px, 47px, initial, none, $secondary-color);
+            @include btnDefault(176px, 47px, initial, none, $secondary-color);
           }
         }
       }
@@ -1923,6 +1923,7 @@ h5 {
         li{
           padding: 1.3rem 1rem;
           margin-bottom: 1.8rem;
+          text-align: center;
         }
       }
     }
@@ -1979,17 +1980,17 @@ h5 {
     .upload-main{
       .middle-photo{
         width: 100%;
-        padding: 12.1rem 6rem 2.35rem;
+        padding: 11.2rem 6rem 0.6rem;
         .img{
           max-width: 200px;
-          left: 21.3%;
-          top: -11px;
+          left: 22%;
+          top: -20px;
         }
         h2{
           width: 100%;
           line-height: 1.8;
           word-spacing: 0.15rem;
-          font-size: 1.7rem;
+          font-size: 1.6rem;
           text-align: center;
         }
       }

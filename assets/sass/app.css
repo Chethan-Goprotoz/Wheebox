@@ -2823,7 +2823,7 @@ h5 {
 }
 
 .system-diagnosis .upload-main .upload-photo .upload2 .btn-div button:first-child {
-  width: 140px;
+  width: 132px;
   height: 47px;
   text-transform: capitalize;
   letter-spacing: 0.3px;
@@ -2842,7 +2842,7 @@ h5 {
 }
 
 .system-diagnosis .upload-main .upload-photo .upload2 .btn-div button:last-child {
-  width: 180px;
+  width: 176px;
   height: 47px;
   text-transform: initial;
   letter-spacing: 0.3px;
@@ -3333,6 +3333,7 @@ h5 {
   .system-diagnosis .sidebar ul li {
     padding: 1.3rem 1rem;
     margin-bottom: 1.8rem;
+    text-align: center;
   }
   .system-diagnosis .middle .middle_div1 {
     width: 100%;
@@ -3394,18 +3395,18 @@ h5 {
   }
   .system-diagnosis .upload-main .middle-photo {
     width: 100%;
-    padding: 12.1rem 6rem 2.35rem;
+    padding: 11.2rem 6rem 0.6rem;
   }
   .system-diagnosis .upload-main .middle-photo .img {
     max-width: 200px;
-    left: 21.3%;
-    top: -11px;
+    left: 22%;
+    top: -20px;
   }
   .system-diagnosis .upload-main .middle-photo h2 {
     width: 100%;
     line-height: 1.8;
     word-spacing: 0.15rem;
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     text-align: center;
   }
   .system-diagnosis .upload-main .upload-photo {
