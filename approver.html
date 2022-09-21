@@ -14,8 +14,6 @@
     <!-- loader css -->
     <link rel="stylesheet" href="assets/css/loader.css"> 
     <!-- style css -->
-    <link rel="stylesheet" href="assets/sass/app.css" rel="stylesheet" /> 
-    <!-- style css -->
     <link rel="stylesheet" href="assets/css/style.css" rel="stylesheet" />
 </head>
 
@@ -26,13 +24,14 @@
     </div> <!-- loader end-->
 
     <!--selection section start -->
-    <section class="selection">
+    <section class="approver-section">
+      <div class="form_overlay"></div>
         <div class="container-fluid">
             <div class="main_div">
                 <div class="row">
                     <div class="main_header">
                         <div class="logo"> <img src="assets/images/mini-logo.png" alt="mini-logo"> </div>
-                        <h4>System Diagnosis</h4>
+                        <h4>Candidate Approval</h4>
                         <div class="grid">
                             <div class="grid1">
                                 <h6>Jane Doe</h6>
@@ -48,21 +47,21 @@
                         <div class="row candidate-detail ">
                             <div class="col-12 col-md-5   ">
                                 <ul>
-                                    <li><span>Name:</span> Ira Doe</li>
-                                    <li><span>Request time:</span> 2022- 08-26 10:43:33</li>
-                                    <li><span>Date of Birth:</span> 12-08-1999</li>
+                                    <li><span>Name :</span> Ira Doe</li>
+                                    <li><span>Request time :</span> 2022-08-26 10:43:33</li>
+                                    <li><span>Date of Birth :</span> 12-08-1999</li>
                                 </ul>
                             </div>
                             <div class="col-12 col-md-4 ">
                                 <ul>
-                                    <li><span>Login ID:</span> Johndoe@WheeBox.com</li>
-                                    <li><span>Test language:</span> English</li>
+                                    <li><span>Login ID :</span> Johndoe@WheeBox.com</li>
+                                    <li><span>Test language :</span> English</li>
                                     <li><span>Test type :</span> </li>
                                 </ul>
                             </div>
                             <div class="col-12 col-md-3 ">
                                 <ul class="custom_radio">
-                                    <li><strong>Allocation status</strong> </li>
+                                    <li><h6>Allocation status</h6> </li>
                                     <li> <input type="radio" id="featured-1" name="featured" checked> <label
                                             for="featured-1">Allow allocation</label></li>
                                     <li><input type="radio" id="featured-2" name="featured"> <label
@@ -98,46 +97,51 @@
                         </div>
                         <div class="row form-wrap">
                             <form>
-                                <ul class="form-field">
-                                    <li>
-                                        <div class="form-group form-elem">
-                                            <div class="custom-select"> <label for="cars">Select Template</label>
-                                                <div class="box"> <label for="cars">Select Template</label> <img
-                                                        src="assets/images/form-select-dropdown.jpg" alt="" /> </div>
-                                                <div class="option-container">
-                                                    <option>Your ID card is not set clearly kindly focus of camera on ID
-                                                        Card.</option>
-                                                    <option>Show your ID Card</option>
-                                                    <option>Set focus of camera on your face</option>
-                                                    <option>Sit away from the table</option>
-                                                    <option>Login and show your ID Proof (Aadhaar card/ voter card/ Pan
-                                                        card) in front of webcam</option>
-                                                    <option>Additional people are not allowed in the exam. Kindly ask
-                                                        them to leave</option>
-                                                    <option>Your face is not visible clearly.</option>
-                                                </div>
+                                  <ul class="form-field">
+                                      <li class="mb-5 pb-3">
+                                          <div class="form-group form-elem">
+                                            <h4>Select Template</h4>
+                                            <div class="custom-select">
+                                              <div class="box">
+                                                  <p class="m-0">Select Template</p>
+                                                  <img src="assets/images/svg/arrowdown.svg" alt="arrow">
+                                              </div>
+                                              <div class="option-container">
+                                                  <div class="option">
+                                                      <p>Your ID card is not set clearly kindly focus of camera on ID
+                                                        Card.</p>
+                                                  </div>
+                                                  <div class="option">
+                                                     <p>Show your ID Card</p>
+                                                 </div>
+                                                 <div class="option">
+                                                     <p>Set focus of camera on your face</p>
+                                                 </div>
+                                                 <div class="option">
+                                                     <p>Sit away from the table</p>
+                                                 </div>
+                                                 <div class="option">
+                                                      <p>Login and show your ID Proof (Aadhaar card/ voter card/ Pan
+                                                        card) in front of webcam</p>
+                                                  </div>
+                                                  <div class="option">
+                                                      <p>Additional people are not allowed in the exam. Kindly ask
+                                                        them to leave</p>
+                                                  </div>
+                                                  <div class="option">
+                                                      <p>Your face is not visible clearly.</p>
+                                                  </div>
+                                              </div>
                                             </div>
-                                        </div>
-                                    </li>
-                                    <!--                           
-                        <li><label>Select Template</label>
-                        <select id="template" name="template">
-                            <option value="yourid">Your ID card is not set clearly kindly focus of camera on ID Card.</option>
-                            <option value="card">Show your ID Card</option>
-                            <option value="face">Set focus of camera on your face</option>
-                            <option value="table">Sit away from the table</option>
-                            <option value="idproof">Login and show your ID Proof (Aadhaar card/ voter card/ Pan card) in front of webcam</option>
-                            <option value="additional">Additional people are not allowed in the exam. Kindly ask them to leave</option>
-                            <option value="your">Your face is not visible clearly.</option>
-                          </select>
-                        </li>  -->
-                                    <li> <label for="cars">Enter message</label> <input type="textarea"> </li>
-                                </ul>
-                                <ul class="btn">
+                                          </div>
+                                      </li>
+                                      <li> <h4>Enter Message</h4> <input type="textarea" placeholder="Enter Message"> </li>
+                                  </ul>
+                                  <ul class="btn">
                                     <li><a href="#">BLOCK FOR 24HRS</a></li>
                                     <li><a href="#">ROOM SCAN</a></li>
                                     <li><a href="#">SAVE & CONTINUE</a></li>
-                                </ul>
+                                  </ul>
                             </form>
                         </div>
                     </div>
@@ -152,6 +156,7 @@
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/loader.js"></script>
+    <script src="assets/js/dropdown.js"></script>
 </body>
 
 </html>

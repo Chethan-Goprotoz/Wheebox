@@ -189,7 +189,7 @@ h5 {
 
 .bulb_info::-webkit-scrollbar-thumb {
   background-color: #769991;
-  border-radius: 30px;
+  border-radius: 15px;
 }
 
 .bulb_info::-webkit-scrollbar-track {
