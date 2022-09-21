@@ -1681,9 +1681,9 @@ span.user-avtar img {
   inset: 0px auto auto 0px;
   margin: 0px;
   transform: translate(1238px, 86px);
-  width: 17%;
-  top: 26px !important;
-  left: -18px !important;
+  width: 18%;
+  top: 11px !important;
+  left: 14px !important;
   border-radius: 0px 0px 10px 10px;
   border:0 !important;
 }
@@ -1697,7 +1697,7 @@ span.user-avtar img {
 }
 
 .dropdown-item span img {
-  width: 9%;
+  width: 9% !important;
 }
 
 .main_header .dropdown-toggle::after{display: none;}
@@ -1708,6 +1708,13 @@ span.user-avtar img {
 
 .main_header .dropdown-item:focus, .dropdown-item:hover{
   background: transparent;
+}
+
+.profile.rounded-circle {
+  cursor: pointer;
+}
+.profile .main_header {
+  position: relative;
 }
 
 /* select section  start css */
@@ -1808,6 +1815,10 @@ textarea::placeholder {
   height: 150px;
   border: solid 1px #AAAAAA;
   border-radius: 6px;
+}
+
+.form-field input[type="password"]+img, input[type="text"]+img, input[type="number"]+img {
+  top: 5rem;
 }
 /* ========Profile end======== */
 
@@ -2144,6 +2155,19 @@ textarea {
   color: #fff;
   transition: all ease-in-out 0.3s;
 }
+
+.modal-header.profile-reset-password .btn-close {
+  color: #000 !important;
+  font-size: 21px;
+  position: absolute;
+  z-index: 9;
+  right: 46px;
+  top: 48px;
+}
+.modal-header.profile-reset-password {
+  padding: 0; border-bottom:0;
+}
+
 /* Dropdown End */
 @media (min-width: 576px){
 .modal-dialog {
@@ -2190,6 +2214,7 @@ textarea {
     max-width: 1364px;
     margin: 1.75rem auto;
 }
+}
 /* profile 10 ends */
 
 
@@ -2222,6 +2247,7 @@ textarea {
 ul.profile-user li {
   font-size: 13px;
 }
+
 /* ========Profile end======== */
 
 }
@@ -2725,7 +2751,16 @@ ul.proceed-btns li:first-child {
     }
   /*=====  waiting lounge css end ===== */
 
+  /*=====  Profile css Start ===== */
+  .errr-conent-holder{width: 98% !important;
+  }
+  .main_header .dropdown-menu {
+    width: 62%;
+    left: 10px !important;
+}
 
+
+/*===== Profile css end ===== */
 }
 
 
@@ -2733,8 +2768,8 @@ ul.proceed-btns li:first-child {
     /*=====  waiting lounge css start ===== */
 
     ul.test-info-head li {
-      width: 100%;
-  }
+      width: 100%;}
+      
   .test-info-head li:first-child {
     font-size: 1.5rem ;
 }
@@ -2754,6 +2789,22 @@ ul.proceed-btns li:first-child {
     top: 2.3rem;
     right: 16px;
   }
+
   /*  Proctor - Rest your password css end */
 
+    /*  Profile 3/4 css start */
+  .main_header .dropdown-menu {
+    width: 62%;
+    left: 10px !important;
+}
+  /*  Profile 3/4 css end */
+}
+
+@media screen and (max-width: 320px) {
+   /*  Profile 3/4 css start */
+.main_header .dropdown-menu {
+  width: 71%;
+  left: 10px !important;
+}
+ /*  Profile 3/4 css end */
 }
