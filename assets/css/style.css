@@ -2083,7 +2083,7 @@ input[type="number"]+img {
   line-height: 4.5rem;
   font-family: Pop-medium;
   margin-top: 0.3rem;
-  margin-bottom: 0;
+  margin-bottom: 1rem;
   text-transform: capitalize;
 }
 
@@ -2101,10 +2101,40 @@ input[type="number"]+img {
   right: 31px;
 }
 
+.resetpassword-right form {
+  margin-top: 2.5rem;
+}
+
+.resetpassword-right .login-btn {
+  margin-top: 4rem !important;
+}
 
 /*  Proctor - Rest your password css end */
 
-
+/*  Multiple faces css Start */
+.modal-content.multiple-faces {
+  width: 60%;
+}
+.mfwrap {
+  padding: 26px 50px;
+}
+.mfwrap img {
+  width: 40%;
+}
+.mfwrap h4 {
+  color: #C22F2F;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  font-family: Pop-medium;
+  margin: 38px 0px 18px 0px;
+}
+.mfwrap p {
+  color: #849694;
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+  font-family: Pop-medium;
+}
+/*  Multiple faces css end */
 
 /*  Approver css end */
 
