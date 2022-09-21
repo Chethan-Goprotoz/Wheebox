@@ -2978,7 +2978,7 @@ textarea {
   }
 
   .standard-inst-wrap ul {
-    max-height: 31vh !important;
+    max-height: 27vh !important;
   }
 
   .wl-instructions li {
@@ -3013,7 +3013,6 @@ textarea {
     font-size: 1.4rem;
     line-height: 2.4rem;
   }
-
   /*=====  waiting lounge css end ===== */
 
   /*=====  Profile css Start ===== */
@@ -3025,7 +3024,6 @@ textarea {
     width: 62%;
     left: 10px !important;
   }
-
   /*===== Profile css end ===== */
 
   /*  Proctor password css Start */
@@ -3041,7 +3039,6 @@ textarea {
     top: 2.3rem;
     right: 16px;
   }
-
   /*  Proctor - Rest your password css end */
 
   .main_header .dropdown-menu {
