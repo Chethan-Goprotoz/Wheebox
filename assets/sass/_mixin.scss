@@ -300,6 +300,33 @@ $btn-gray: #919D9B;
       }
     }
   }
+  @media(max-width: 767px){
+    padding: 0 0.4rem 0 1rem;
+    .logo{
+      width: 48px;
+      height: 34px;
+      img{
+        object-fit: contain;
+        object-position: center;
+      }
+    }
+    h4{
+      font-size: 1.6rem;
+      transform: translateX(79%);
+      text-align: center;
+    }
+    .grid{
+      grid-template-columns: 61% 33%;
+      .grid1{
+        visibility: hidden;
+      }
+      .grid2{
+        .profile{
+          justify-content: flex-end;
+        }
+      }
+    }
+  }
 }
 
 @mixin sysmiddle($martop,$top,$width){
