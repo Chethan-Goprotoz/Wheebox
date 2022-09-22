@@ -2136,6 +2136,61 @@ input[type="number"]+img {
 }
 /*  Multiple faces css end */
 
+
+/*  Documents uploaded css Start */
+.modal-content.uploade-success {
+  width: 48%;
+}
+.uploade-success .mfwrap {
+  padding: 50px;
+}
+.uploade-success ul  {
+  padding-left: 0;
+  margin-top: 1.6rem;
+}
+.uploade-success ul li {
+  display: inline-block;
+  list-style: none;
+}
+.uploade-success li img {
+  width: 80%;
+}
+.uploade-success span {
+  margin-top: 5rem !important;
+  display: block;
+}
+
+.uploade-success h4 {
+  color: #0A2F2A;
+  font-size: 2rem;
+  line-height: 3rem;
+  font-family: Pop-medium;
+  margin: 38px 0px 18px 0px;
+}
+.uploade-success span {
+  margin-top: 5rem !important;
+  display: block;
+  color: #20776E;
+  font-size: 1.4rem;
+  line-height: 2.5rem;
+}
+
+.uploade-success button.btn-close {
+  top: 28px !important;
+  right: 36px !important;
+}
+
+.uploade-success .btn-close {
+  box-sizing: content-box;
+  width: 0.8rem;
+  height: 0.8rem
+}
+
+/*  Documents uploaded css end */
+
+
+
+
 /*  Approver css end */
 
 /* Profile 7 */
