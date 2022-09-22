@@ -413,9 +413,11 @@ header .main_header {
   }
   .bgQuestion {
     margin-bottom: 2.5rem;
+    margin-right: 0;
   }
   .radiodiv {
     margin-left: 0rem;
+    margin-right: 0;
   }
   .footerBtn .d-flex{
     flex-direction: column;
