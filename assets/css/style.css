@@ -2614,7 +2614,28 @@ textarea {
   
 /* QR Code */
 
-
+/* upload answer */
+.qr-modal .qr-footer label{
+  background: #0A2F2A;
+  color: #fff;
+  padding: 10px 30px 10px 30px;
+  border-radius: 05px;
+  font-size: 14px;
+  cursor: pointer;
+  display: inline-block;
+}
+.qr-modal .qr-footer .close-btn{
+  background: transparent;
+  color: #C22F2F;
+  padding: 30px 30px 10px 30px;
+  border-radius: 05px;
+  font-size: 14px;
+  border: 0;
+}
+.upload-pop .modal-body{
+  padding-top: 40px;
+}
+/* upload answer*/
 /*========== Responsive Style ==========*/
 
 @media screen and (max-width: 1500px) {
