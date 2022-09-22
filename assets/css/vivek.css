@@ -1,0 +1,344 @@
+.section1{
+    background-color: #EAF2EE;
+    padding: 3rem;
+}
+
+header .main_header {
+    border-radius: 14px;
+    background-color: #fff;
+    padding: 0 1.3rem 0 2.2rem;
+    height: 8.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 2.6rem;
+  }
+  header .main_header .logo {
+    width: 40px;
+    height: 40px;
+  }
+  header .main_header .logo img {
+    width: 100%;
+    height: 100%;
+  }
+  header .main_header h4 {
+    font-size: 1.7rem;
+    font-family: Pop-medium;
+    margin-bottom: 0;
+    -webkit-transform: translateX(41%);
+            transform: translateX(41%);
+  }
+  header .main_header .grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 67% 33%;
+        grid-template-columns: 67% 33%;
+    grid-gap: 5px;
+  }
+  header .main_header .grid .grid1 {
+    text-align: end;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  header .main_header .grid .grid1 h6 {
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+    margin-bottom: 0.65rem;
+    color: #010D0A;
+    font-family: Pop-medium;
+    margin-bottom: 0.4rem;
+  }
+  header .main_header .grid .grid1 p {
+    margin: 0;
+    line-height: 1rem;
+    font-size: 13px;
+    color: #879290;
+  }
+  header .main_header .grid .grid2 .profile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  header .main_header .grid .grid2 .profile img {
+    width: 65%;
+  }
+
+  .text-danger{
+    color: #F1526C !important;
+  }
+
+  .text-dark{
+    color: #0C1B2C !important;
+  }
+
+  .bg-white{
+    background-color: #FFFFFF !important;
+  }
+  .rounded-lg{
+    border-radius: 7px !important;
+  }
+
+  .speedMeter{
+    border: 1px solid #22A27C;
+    background: #e7f5f0;
+    opacity: 1;
+    border-radius:4px;
+    padding: 4px 6px;
+  }
+  .questionIntro p{
+    font-size: 13px;
+  }
+  .btnInce button:last-child{
+    border: 1px solid #22A27C;
+  }
+
+  .btnInce .shadow-sm1{
+    box-shadow: 0 .125rem .25rem rgba(127, 182, 128, 0.637)!important;
+  }
+
+  /* progress */
+
+  .box{
+    width: 70px;
+    height: 70px;
+  }
+  .box .percent
+{
+  /* width:150px;
+  height:150px; */
+  position:relative;
+}
+.box .percent svg
+{
+  width:72px;
+  height:72px;
+  position:relative;
+}
+.box .percent svg circle
+{
+  width:150px;
+  height:150px;
+  fill:none;
+  stroke-width:5;
+  stroke:#000;
+  transform:translate(-34px,-34px);
+  stroke-dasharray:440;
+  stroke-dashoffset:440;
+  stroke-linecap:round;
+}
+.box .percent svg circle:nth-child(1)
+{
+  stroke-dashoffset:0;
+  stroke:#f3f3f3;
+}
+.box .percent svg circle:nth-child(2)
+{
+  stroke-dashoffset:calc(440 - (440 * 87) / 20);
+  stroke:#F8B953;
+}
+
+.box .percent .num
+{
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  position:absolute;
+  color:#111;
+}
+.box .percent .num h6
+{
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.box .text
+{
+  padding: 10px 0 0;
+  color:#999;
+  font-weight:700;
+  letter-spacing:1px;
+}
+
+
+.bgQuestion{
+  margin-right: 1.5rem;
+  position: relative;
+  color: #FFFFFF;
+  background-image: linear-gradient(to right, #2D9D8D, #20776E);
+ 
+}
+.bgQuestion p{
+  height: 212px;
+  overflow-y: scroll;
+}
+.bgQuestion p::-webkit-scrollbar{
+  width: 4px;
+}
+/* Track */
+.bgQuestion p::-webkit-scrollbar-track {
+  background: #196951;
+}
+
+/* Handle */
+.bgQuestion p::-webkit-scrollbar-thumb {
+  background: #FFFFFF;
+  border-radius: 50px;
+}
+
+.bgQuestion p{
+  font-size: 13px;
+  text-align: left;
+}
+
+
+.bgSpeaker .speaker{
+  background: #167a70;
+  position: absolute;
+  right: 18px;
+  top: 8px;
+  width: 27px;
+  padding-bottom: 5px;
+  border-bottom-left-radius:12px;
+}
+
+.form-check-input[type=radio] {
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.form-check-label{
+  margin-top: 3px;
+  margin-left: 13px;
+  font-size: 13px;
+  cursor: pointer;
+}
+.radiodiv{
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  border:1px solid #B9C4BF;
+}
+.form-check-input:checked[type=radio] {
+  background-image: url('../images/questionaries/checked.svg');
+}
+.form-check-input:checked {
+  background-color: #24B187;
+  border-color: #24B187;
+}
+.ansTick table{
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 6px 12px ;
+}
+.ansTick table tr td.ansWered{
+  position: relative;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 11px;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #24B187;
+  cursor: pointer;
+}
+
+.ansTick table tr td.ansWered::after{
+  content: "";
+  width: 6px;
+  height: 6px;
+  background-color: #FFFFFF;
+  border-radius: 50px;
+  position: absolute;
+  top: 3px;
+  right: 4px;
+}
+
+.ansTick table tr td.ansWaiting{
+  position: relative;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 11px;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #DEC88C;
+  cursor: pointer;
+}
+
+.ansTick table tr td.notAnswered{
+  position: relative;
+  text-align: center;
+  color: #0F2046;
+  font-size: 11px;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #F3FBF5;
+  cursor: pointer;
+}
+
+.footerBtn .btnNxt{
+  border: 1px solid #F6AB39;
+  padding: 8px 16px;
+  color: #F6AB39;
+  border-radius: 4px;
+}
+
+.footerBtn .btnPrev{
+  border: 1px solid #F6AB39;
+  background-color: #F6AB39;
+  padding: 8px 16px;
+  color: #FFFFFF;
+  border-radius: 4px;
+}
+
+.footerBtn .endTest{
+  padding: 8px 16px;
+  color: #FFFFFF;
+  background-color: #EA0707;
+  border-radius: 4px;
+}
+
+.footerBtn .btnNxt img, .footerBtn .btnPrev img{
+  width: 9px; 
+  margin-bottom: 2px;
+}
+
+.btnTest .form-check-input[type="checkbox"]{
+  width: 1.5em;
+  height:1.5em;
+  margin-top: 0em;
+  margin-right: 10px;
+}
+
+.btn:focus {
+  outline: 0;
+  box-shadow: none;
+}
+
+.rounded-xl{
+  border-radius: 18px;
+}
+
+/*  */
