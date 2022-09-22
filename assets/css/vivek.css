@@ -1,5 +1,7 @@
+body{
+  background-color: #EAF2EE;
+}
 .section1{
-    background-color: #EAF2EE;
     padding: 3rem;
 }
 
@@ -189,7 +191,7 @@ header .main_header {
  
 }
 .bgQuestion p{
-  height: 212px;
+  height: 250px;
   overflow-y: scroll;
 }
 .bgQuestion p::-webkit-scrollbar{
@@ -238,6 +240,7 @@ header .main_header {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
   border:1px solid #B9C4BF;
+  border-radius: 5px;
 }
 .form-check-input:checked[type=radio] {
   background-image: url('../images/questionaries/checked.svg');
@@ -298,6 +301,12 @@ header .main_header {
   cursor: pointer;
 }
 
+.chatWindow img{
+  height: 180px;
+  object-fit: cover;
+  border-radius:11px;
+}
+
 .footerBtn .btnNxt{
   border: 1px solid #F6AB39;
   padding: 8px 16px;
@@ -339,6 +348,24 @@ header .main_header {
 
 .rounded-xl{
   border-radius: 18px;
+}
+
+.chatPopUp .popUp1{
+  position: absolute;
+  right: -50px;
+  bottom: -30px;
+  cursor: pointer;
+}
+
+.chatPopUp .badge{
+  background-color:#EA0707;
+  width: 15px;
+  height: 15px;
+  border-radius: 50px;
+  position: absolute;
+  right: 32px;
+    top: 6px;
+
 }
 
 /*  */

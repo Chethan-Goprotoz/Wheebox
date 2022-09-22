@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="84" height="84" viewBox="0 0 84 84">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.464" y1="0.624" x2="0.96" y2="0.061" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#24b187"/>
+      <stop offset="1" stop-color="#4fde9f"/>
+    </linearGradient>
+    <filter id="Ellipse_1163" x="0" y="0" width="84" height="84" filterUnits="userSpaceOnUse">
+      <feOffset dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feFlood flood-opacity="0.153"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_60974" data-name="Group 60974" transform="translate(-1609.691 -894.079)">
+    <g transform="matrix(1, 0, 0, 1, 1609.69, 894.08)" filter="url(#Ellipse_1163)">
+      <circle id="Ellipse_1163-2" data-name="Ellipse 1163" cx="30" cy="30" r="30" transform="translate(12 10)" fill="url(#linear-gradient)"/>
+    </g>
+    <g id="chatss" transform="translate(1641.432 925.875)">
+      <path id="Path_50803" data-name="Path 50803" d="M154.907,65.335H138.442a2.183,2.183,0,0,0-2.183,2.183V86.257l4.094-4.093h14.554a2.183,2.183,0,0,0,2.183-2.183V67.518a2.183,2.183,0,0,0-2.183-2.183Zm-10.415,9.4h-1.91V72.487h1.91Zm3.275,0h-1.91V72.487h1.91Zm3.275,0h-1.91V72.487h1.91Z" transform="translate(-136.259 -65.335)" fill="#fff"/>
+    </g>
+  </g>
+</svg>
