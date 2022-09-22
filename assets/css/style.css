@@ -2636,6 +2636,22 @@ textarea {
   padding-top: 40px;
 }
 /* upload answer*/
+/* warning popup */
+ .waring-pop .qr-footer h3{
+  font-weight: 600;
+  font-size: 24px;
+ }
+ .waring-pop .qr-footer p{
+  font-size: 12px;
+  color: #ADB4B5;
+  text-align: center;
+  line-height: 14px;
+  padding-top: 10px;
+ }
+ .waring-pop .modal-body{
+  padding: 0px 40px 40px 40px;
+ }
+/* warning popup */
 /*========== Responsive Style ==========*/
 
 @media screen and (max-width: 1500px) {
