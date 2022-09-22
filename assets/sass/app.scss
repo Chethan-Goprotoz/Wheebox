@@ -856,6 +856,10 @@ h5 {
         border-radius: 15px;
         width: 93.7%;
 
+        .row{
+          justify-content: space-between;
+        }
+
         .test-maincon {
           padding: 1.5rem 1.2rem 2rem 1.2rem;
           border-bottom: 1px solid #ebebeb;
@@ -1595,8 +1599,44 @@ h5 {
   }
 }
 
+// responsive css for medium size Laptop/Desktop
+@media(min-width: 992px) and (max-width: 1199px){
+  // selection test css
+  .selection{
+    .main_div{
+      .middle_div{
+        .div1{
+          .img{
+            top: -13px;
+          }
+        }
+      }
+      .div2{
+        flex-direction: column;
+        .chart.doughnut{
+          margin: auto auto 1.6rem;
+        }
+      }
+      .test_con{
+        .test-card{
+          .test-maincon{
+            .data-div1{
+              flex: 0 0 27%;
+              max-width: 27%;
+            }
+            .data-div2{
+              flex: 0 0 31%;
+              max-width: 31%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 // responsive css for tablet
-@media(max-width: 992px) {
+@media(min-width: 768px) and (max-width: 991px) {
   .reg_form {
     .sidebar_div {
       flex: 0 0 24%;
@@ -1656,6 +1696,37 @@ h5 {
     .form-detail {
       .radio_div {
         margin-bottom: 4rem;
+      }
+    }
+  }
+  //selection test css
+  .selection{
+    .main_div{
+      .middle_div{
+        .div1{
+          .img{
+            top: -15px;
+          }
+        }
+        .div2{
+          .chart.doughnut{
+            width: 76%;
+          }
+        }
+      }
+      .test_con{
+        input{
+          width: 100%;
+          background-size: 7%;
+          padding: 10px 15px 10px 35px;
+        }
+      }
+      .div2{
+        align-items: center;
+        flex-direction: column;
+        .chart.doughnut{
+          margin-bottom: 1.6rem;
+        }
       }
     }
   }
@@ -1859,30 +1930,60 @@ h5 {
       }
     }
   }
+
   // selection css
   .selection{
     padding: 1.2rem;
     .main_div{
       .middle_div{
+        h2{
+          font-family: 'Pop-medium';
+          margin-bottom: 1rem; 
+        }
         .div1{
           width: 100%;
-          padding: 2.5rem 2rem 1.75rem;
+          padding: 1.5rem 1.5rem 0.2rem;
           margin-bottom: 1.9rem;
           .img{
             max-width: 250px;
             height: 150px;
             position: absolute;
             top: 0;
+            display: none;
+          }
+          h5{
+            margin-bottom: 0.7rem;
+          }
+          p{
+            font-size: 14px;
+            word-spacing: -1px;
+          }
+        }
+        .div2{
+          padding: 0.7rem 1.8rem 1.6rem;
+          ul{
+            margin: 0.9rem 0 0;
           }
         }
       }
       .test_con{
+        h3{
+          font-size: 1.9rem;
+          margin-bottom: 1.7rem;
+          letter-spacing: -0.4px;
+        }
         .filter-btn{
           margin-bottom: 2rem;
+          button{
+            height: 32px;
+          }
         }
         input{
           width: 75%;
-          margin-bottom: 4rem;
+          margin-bottom: 3rem;
+          height: 40px;
+          background-size: 6%;
+          padding: 10px 15px 10px 40px;
         }
         .test-card{
           width: 100%;
@@ -1893,9 +1994,17 @@ h5 {
           }
         }
         .nothing{
+          margin-top: 1.5rem;
           .no-test{
             img{
-              max-width: 235px;
+              max-width: 210px;
+            }
+            h3{
+              font-size: 1.7rem;
+            }
+            p{
+              font-size: 14px;
+              line-height: 2.4rem;
             }
           }
         }

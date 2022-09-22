@@ -347,7 +347,7 @@ header .main_header {
 }
 
 .rounded-xl{
-  border-radius: 18px;
+  border-radius: 15px;
 }
 
 .chatPopUp .popUp1{
@@ -366,9 +366,41 @@ header .main_header {
   right: 32px;
     top: 6px;
 }
+.btnDropdown .select-dropdown.select-dropdown--0{
+  font-size: 13px !important;
+  width: 25%;
+  margin-right: 0px;
+}
+
+.zmdi.zmdi-chevron-down::after{
+  content: "";
+  background-image: url('../images/svg/arrowdown.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 12px;
+  margin-top: 5px;
+  height: 7px;
+  display: block;
+}
+.btnDropdown .select-dropdown__button.select-dropdown__button--0{
+  padding: 1rem;
+  box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+  border: none;
+}
+
+.box .percent svg circle:nth-child(2)::after{
+  content: "";
+  stroke-dashoffset: calc(440 - (440 * 87) / 20);
+  stroke: #F8B953;
+}
 
 
 @media (max-width:600px){
+
+  .section1{
+    padding: 1rem;
+    overflow: hidden;
+  }
 
   .d-flex.justify-content-between.bg-white.rounded-lg.p-4{
     margin-top: 2rem;
@@ -381,9 +413,11 @@ header .main_header {
   }
   .bgQuestion {
     margin-bottom: 2.5rem;
+    margin-right: 0;
   }
   .radiodiv {
     margin-left: 0rem;
+    margin-right: 0;
   }
   .footerBtn .d-flex{
     flex-direction: column;
