@@ -365,7 +365,41 @@ header .main_header {
   position: absolute;
   right: 32px;
     top: 6px;
+}
 
+
+@media (max-width:600px){
+
+  .d-flex.justify-content-between.bg-white.rounded-lg.p-4{
+    margin-top: 2rem;
+  }
+  .quesSec .flexsm{
+    flex-direction: column;
+  }
+  .quesSec .col-md-6.border-end{
+    border: none !important;
+  }
+  .bgQuestion {
+    margin-bottom: 2.5rem;
+  }
+  .radiodiv {
+    margin-left: 0rem;
+  }
+  .footerBtn .d-flex{
+    flex-direction: column;
+  }
+  .footerBtn .btnNP,.footerBtn .btnTest{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footerBtn .btnTest{
+    margin-top: 2rem;
+  }
+  .footerBtn{
+    margin-bottom: 2.5rem;
+  }
 }
 
 /*  */
