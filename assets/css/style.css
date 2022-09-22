@@ -2254,6 +2254,10 @@ input[type="number"]+img {
   font-size: 13px;
 }
 
+.btn-close:focus{
+  box-shadow: none;
+}
+
 .modal-header span {
   color: rgb(88, 88, 88);
   font-size: 14px;
@@ -2414,7 +2418,7 @@ textarea {
 .select-dropdown {
   position: relative;
   /* display: inline-block; */
-  max-width: 100%;
+  width: 99.9%;
   margin: 0 15px 0 0;
 }
 
@@ -2441,8 +2445,9 @@ textarea {
 
 .select-dropdown__button .zmdi-chevron-down {
   position: absolute;
-  right: 10px;
-  top: 12px;
+  right: 15px;
+  top: 8px;
+  font-size: 25px;
 }
 
 .select-dropdown__list {
@@ -2514,13 +2519,27 @@ textarea {
 }
 
 /* Profile 8 end and 9 start */
+
+.pro_list .modal-dialog{
+  max-width: 1100px;
+}
+.pro_list .modal-header h4{
+  font-size: 22px;
+  margin: 0;
+  letter-spacing: -0.1px;
+  font-family: Pop-medium;
+  word-spacing: 1px;
+}
+.pro_list .modal-header .btn-close{
+  font-size: 16px;
+}
 .pro_list .modal-content .modal-header,
 .pro_list .modal-content .modal-footer {
   border: 0px;
 }
 
 .pro_list .modal-content .modal-header {
-  padding: 35px 40px 10px 40px;
+  padding: 4.5rem 4.5rem 1rem 4.5rem;
 }
 
 .pro_list .modal-body ul {
@@ -2531,15 +2550,19 @@ textarea {
 
 .pro_list .modal-body ul li {
   border: 1px solid #dee2e6;
-  padding: 10px;
-  margin: 10px 0 10px 0;
+  padding: 13px 25px;
+  margin: 9px 0 9px 0;
 }
 
 .pro_list .modal-body {
-  padding: 0px 40px 0px 40px;
+  padding: 0px 4.5rem 0px 4.5rem;
 }
 
+.pro_list .modal-footer{
+  padding: 1rem 4.5rem 1.8rem;
+}
 /* profile 9 ends 10 start*/
+
 .rest_pop .resetpassword {
   margin: 0;
   width: 100%;
