@@ -300,7 +300,9 @@ header .main_header {
   background-color: #F3FBF5;
   cursor: pointer;
 }
-
+.chatWindow{
+  height: 180px;
+}
 .chatWindow img{
   height: 180px;
   object-fit: cover;
@@ -354,7 +356,6 @@ header .main_header {
   position: absolute;
   right: -50px;
   bottom: -30px;
-  cursor: pointer;
 }
 
 .chatPopUp .badge{
@@ -392,6 +393,17 @@ header .main_header {
   content: "";
   stroke-dashoffset: calc(440 - (440 * 87) / 20);
   stroke: #F8B953;
+}
+
+.bgQuestion .pHeight{
+  height: 81px;
+  overflow: auto;
+}
+
+.chatPopUp .popUp2{
+  position: absolute;
+  right: 12px;
+  bottom: -30px;
 }
 
 
@@ -434,6 +446,8 @@ header .main_header {
   .footerBtn{
     margin-bottom: 2.5rem;
   }
+
+
 }
 
 /*  */
