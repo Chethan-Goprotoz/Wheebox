@@ -2464,7 +2464,66 @@ textarea {
 }
 
 /* profile 10 ends */
+/* QR Code */
+  .qr-modal .qr-banner{
+    background-color: #F8F8F8;
+    padding: 10px 20px 10px 20px;
+    border-radius: 05px;
+    margin-bottom: 25px;;
+  }
+  .qr-modal .modal-body{
+    padding: 0px 20px 25px 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  /* .qr-modal .modal-body .qr-footer img{
+    margin: 30px 0px 15px 0px;
+  } */
+  .qr-modal .qr-footer{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .qr-modal .qr-footer h3{
+    font-size: 14px;
+    color: #C22F2F;
+    margin: 10px 0 10px 0;
+  }
+  .qr-modal .qr-footer span{
+    font-size: 14px;
+    color: #ADB4B5;
+    padding-right: 10px;
+  }
+  .qr-modal .qr-footer h4{
+    font-size: 16px;
+    color: #162C2D;
+    padding: 16px;
+  }
+  .qr-modal .modal-header{
+    border: 0;
+  }
+  .qr-modal .qr-banner h3{
+    margin: 0;
+    font-size: 16px;
+  }
+  
+  @media (min-width: 576px) {
+    .qr-modal .modal-dialog {
+      max-width: 450px;
+      margin: 1.75rem auto;
+    }
+  }
 
+  
+/* QR Code */
 
 
 /*========== Responsive Style ==========*/
