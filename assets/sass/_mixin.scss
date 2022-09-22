@@ -301,7 +301,8 @@ $btn-gray: #919D9B;
     }
   }
   @media(max-width: 767px){
-    padding: 0 0.4rem 0 1rem;
+    padding: 0 0.4rem 0 0.65rem;
+    margin-bottom: 2.1rem;
     .logo{
       width: 48px;
       height: 34px;
@@ -314,15 +315,27 @@ $btn-gray: #919D9B;
       font-size: 1.6rem;
       transform: translateX(79%);
       text-align: center;
+      display: none;
     }
     .grid{
-      grid-template-columns: 61% 33%;
+      grid-template-columns: 69% 29%;
+      transform: translateX(6px);
+      grid-gap: 1px;
       .grid1{
-        visibility: hidden;
+        align-items: flex-end;
+        transform: translateX(2px);
+        h6{
+          font-size: 1.3rem;
+          line-height: 2rem;
+          margin-bottom: 0.4rem;
+        }
+        p{
+          font-size: 12px;
+        }
       }
       .grid2{
         .profile{
-          justify-content: flex-end;
+          justify-content: center;
         }
       }
     }

@@ -1576,7 +1576,8 @@ h5 {
 
 @media (max-width: 767px) {
   .selection .main_div .main_header {
-    padding: 0 0.4rem 0 1rem;
+    padding: 0 0.4rem 0 0.65rem;
+    margin-bottom: 2.1rem;
   }
   .selection .main_div .main_header .logo {
     width: 48px;
@@ -1593,18 +1594,34 @@ h5 {
     -webkit-transform: translateX(79%);
             transform: translateX(79%);
     text-align: center;
+    display: none;
   }
   .selection .main_div .main_header .grid {
-    -ms-grid-columns: 61% 33%;
-        grid-template-columns: 61% 33%;
+    -ms-grid-columns: 69% 29%;
+        grid-template-columns: 69% 29%;
+    -webkit-transform: translateX(6px);
+            transform: translateX(6px);
+    grid-gap: 1px;
   }
   .selection .main_div .main_header .grid .grid1 {
-    visibility: hidden;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-transform: translateX(2px);
+            transform: translateX(2px);
+  }
+  .selection .main_div .main_header .grid .grid1 h6 {
+    font-size: 1.3rem;
+    line-height: 2rem;
+    margin-bottom: 0.4rem;
+  }
+  .selection .main_div .main_header .grid .grid1 p {
+    font-size: 12px;
   }
   .selection .main_div .main_header .grid .grid2 .profile {
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -1862,6 +1879,12 @@ h5 {
   margin-bottom: 2.15rem;
   border-radius: 15px;
   width: 93.7%;
+}
+
+.selection .main_div .test_con .test-card .row {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .selection .main_div .test_con .test-card .test-maincon {
@@ -2137,7 +2160,8 @@ h5 {
 
 @media (max-width: 767px) {
   .system-diagnosis .main_header {
-    padding: 0 0.4rem 0 1rem;
+    padding: 0 0.4rem 0 0.65rem;
+    margin-bottom: 2.1rem;
   }
   .system-diagnosis .main_header .logo {
     width: 48px;
@@ -2154,18 +2178,34 @@ h5 {
     -webkit-transform: translateX(79%);
             transform: translateX(79%);
     text-align: center;
+    display: none;
   }
   .system-diagnosis .main_header .grid {
-    -ms-grid-columns: 61% 33%;
-        grid-template-columns: 61% 33%;
+    -ms-grid-columns: 69% 29%;
+        grid-template-columns: 69% 29%;
+    -webkit-transform: translateX(6px);
+            transform: translateX(6px);
+    grid-gap: 1px;
   }
   .system-diagnosis .main_header .grid .grid1 {
-    visibility: hidden;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-transform: translateX(2px);
+            transform: translateX(2px);
+  }
+  .system-diagnosis .main_header .grid .grid1 h6 {
+    font-size: 1.3rem;
+    line-height: 2rem;
+    margin-bottom: 0.4rem;
+  }
+  .system-diagnosis .main_header .grid .grid1 p {
+    font-size: 12px;
   }
   .system-diagnosis .main_header .grid .grid2 .profile {
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -3013,7 +3053,34 @@ h5 {
   }
 }
 
-@media (max-width: 992px) {
+@media (min-width: 992px) and (max-width: 1199px) {
+  .selection .main_div .middle_div .div1 .img {
+    top: -13px;
+  }
+  .selection .main_div .div2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .selection .main_div .div2 .chart.doughnut {
+    margin: auto auto 1.6rem;
+  }
+  .selection .main_div .test_con .test-card .test-maincon .data-div1 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 27%;
+            flex: 0 0 27%;
+    max-width: 27%;
+  }
+  .selection .main_div .test_con .test-card .test-maincon .data-div2 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 31%;
+            flex: 0 0 31%;
+    max-width: 31%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
   .reg_form .sidebar_div {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 24%;
@@ -3064,6 +3131,29 @@ h5 {
   }
   .ver_form .form-detail .radio_div {
     margin-bottom: 4rem;
+  }
+  .selection .main_div .middle_div .div1 .img {
+    top: -15px;
+  }
+  .selection .main_div .middle_div .div2 .chart.doughnut {
+    width: 76%;
+  }
+  .selection .main_div .test_con input {
+    width: 100%;
+    background-size: 7%;
+    padding: 10px 15px 10px 35px;
+  }
+  .selection .main_div .div2 {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .selection .main_div .div2 .chart.doughnut {
+    margin-bottom: 1.6rem;
   }
 }
 
@@ -3276,9 +3366,13 @@ h5 {
   .selection {
     padding: 1.2rem;
   }
+  .selection .main_div .middle_div h2 {
+    font-family: 'Pop-medium';
+    margin-bottom: 1rem;
+  }
   .selection .main_div .middle_div .div1 {
     width: 100%;
-    padding: 2.5rem 2rem 1.75rem;
+    padding: 1.5rem 1.5rem 0.2rem;
     margin-bottom: 1.9rem;
   }
   .selection .main_div .middle_div .div1 .img {
@@ -3286,13 +3380,38 @@ h5 {
     height: 150px;
     position: absolute;
     top: 0;
+    display: none;
+  }
+  .selection .main_div .middle_div .div1 h5 {
+    margin-bottom: 0.7rem;
+  }
+  .selection .main_div .middle_div .div1 p {
+    font-size: 14px;
+    word-spacing: -1px;
+  }
+  .selection .main_div .middle_div .div2 {
+    padding: 0.7rem 1.8rem 1.6rem;
+  }
+  .selection .main_div .middle_div .div2 ul {
+    margin: 0.9rem 0 0;
+  }
+  .selection .main_div .test_con h3 {
+    font-size: 1.9rem;
+    margin-bottom: 1.7rem;
+    letter-spacing: -0.4px;
   }
   .selection .main_div .test_con .filter-btn {
     margin-bottom: 2rem;
   }
+  .selection .main_div .test_con .filter-btn button {
+    height: 32px;
+  }
   .selection .main_div .test_con input {
     width: 75%;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
+    height: 40px;
+    background-size: 6%;
+    padding: 10px 15px 10px 40px;
   }
   .selection .main_div .test_con .test-card {
     width: 100%;
@@ -3302,8 +3421,18 @@ h5 {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+  .selection .main_div .test_con .nothing {
+    margin-top: 1.5rem;
+  }
   .selection .main_div .test_con .nothing .no-test img {
-    max-width: 235px;
+    max-width: 210px;
+  }
+  .selection .main_div .test_con .nothing .no-test h3 {
+    font-size: 1.7rem;
+  }
+  .selection .main_div .test_con .nothing .no-test p {
+    font-size: 14px;
+    line-height: 2.4rem;
   }
   .system-diagnosis {
     padding: 1.3rem 1.3rem;
