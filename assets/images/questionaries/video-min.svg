@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="91" height="89.999" viewBox="0 0 91 89.999">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.464" y1="0.624" x2="0.96" y2="0.061" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#24b187"/>
+      <stop offset="1" stop-color="#4fde9f"/>
+    </linearGradient>
+    <filter id="Ellipse_1163" x="0" y="5.999" width="84" height="84" filterUnits="userSpaceOnUse">
+      <feOffset dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feFlood flood-opacity="0.153"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Ellipse_1892" x="40" y="0" width="51" height="51" filterUnits="userSpaceOnUse">
+      <feOffset dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="4" result="blur-2"/>
+      <feFlood flood-opacity="0.153"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_46007" data-name="Group 46007" transform="translate(-1672 -1010)">
+    <g id="Group_46000" data-name="Group 46000" transform="translate(61.809 121.922)">
+      <g transform="matrix(1, 0, 0, 1, 1610.19, 888.08)" filter="url(#Ellipse_1163)">
+        <circle id="Ellipse_1163-2" data-name="Ellipse 1163" cx="30" cy="30" r="30" transform="translate(12 16)" fill="url(#linear-gradient)"/>
+      </g>
+      <g id="noun-video-camera-390624" transform="translate(1518.789 786.079)">
+        <path id="Path_50819" data-name="Path 50819" d="M136.658,140H123.525a2.052,2.052,0,0,0-2.122,1.943V153.11a2.188,2.188,0,0,0,2.122,2.1h13.134a2.064,2.064,0,0,0,1.979-2.1V141.943A1.926,1.926,0,0,0,136.658,140Z" transform="translate(0)" fill="#fff"/>
+        <path id="Path_50820" data-name="Path 50820" d="M471.41,178.151v5.087l5.824,3.173V175Z" transform="translate(-330.989 -33.099)" fill="#fff"/>
+      </g>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 1672, 1010)" filter="url(#Ellipse_1892)">
+      <circle id="Ellipse_1892-2" data-name="Ellipse 1892" cx="13.5" cy="13.5" r="13.5" transform="translate(52 10)" fill="url(#linear-gradient)"/>
+    </g>
+    <line id="Line_327" data-name="Line 327" x2="11.452" transform="translate(1731.5 1033.5)" fill="none" stroke="#fdfdfd" stroke-linecap="round" stroke-width="3"/>
+  </g>
+</svg>
