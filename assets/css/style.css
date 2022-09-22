@@ -277,7 +277,7 @@ input[type=number] {
   width: 100%;
 }
 
-.login-form .form-field input {
+.login-form .form-field input,.profile_10 .main_con input {
   width: 100%;
   padding: 10px 15px;
   font-size: 14px;
@@ -335,7 +335,7 @@ a.login-btn {
   text-transform: uppercase;
 }
 
-.login-btn input {
+.login-btn input,.profile_10 .btn-submit button {
   background: #F6AB39;
   border-radius: 6px;
   padding: 12px 0px;
@@ -2562,6 +2562,64 @@ textarea {
   padding: 1rem 4.5rem 1.8rem;
 }
 /* profile 9 ends 10 start*/
+
+/* profile 10 start */
+.profile_10 .modal-dialog{
+  max-width: 1050px;
+}
+.profile_10 .img{
+  width: 100%;
+  height: inherit;
+}
+.profile_10 .img img{
+  max-height: 550px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.profile_10 .div-right{
+  padding: 2rem 2rem 0;
+}
+.profile_10 .div-right .btn-close{
+  font-size: 16px;
+}
+.profile_10 .main_con{
+  padding: 4.5rem 7rem 6rem;
+}
+.profile_10 .main_con h2{
+  font-size: 2.4rem;
+  font-family: Pop-medium;
+  letter-spacing: -0.05rem;
+  margin-bottom: 0.8rem;
+}
+.profile_10 .main_con h2 + p{
+  color: #5a5a5a;
+  font-size: 13px;
+  margin-bottom: 2.8rem;
+  line-height: 2.5rem;
+}
+.profile_10 .main_con h6{
+  font-size: 1.4rem;
+  line-height: 2.5rem; 
+  margin-bottom: 0.3rem;
+  color: #000;
+}
+.profile_10 .main_con input{
+  margin-bottom: 2.8rem;
+}
+.profile_10 .main_con input[type="number"]+img{
+  top: 4.3rem;
+}
+.profile_10 .btn-submit{
+  margin-top: 4.3rem;
+}
+.profile_10 .btn-submit button{
+  padding: 9px 0;
+}
+.profile_10 .btn-submit button:focus{
+  box-shadow: none;
+}
+/* profile 10 end */
 
 .rest_pop .resetpassword {
   margin: 0;
