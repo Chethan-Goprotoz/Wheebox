@@ -309,6 +309,15 @@ h5 {
       .login {
         a {
           text-decoration: none;
+          color: #26887C;
+          display: flex;
+          align-items: baseline;
+          i{
+            margin-right: 5px;
+          }
+          p{
+            font-family: Pop-medium;
+          }
         }
 
         button {
@@ -861,7 +870,7 @@ h5 {
         }
 
         .test-maincon {
-          padding: 1.5rem 1.2rem 2rem 1.2rem;
+          padding: 1.5rem 1.5rem 2rem 1.5rem;
           border-bottom: 1px solid #ebebeb;
 
           span {
@@ -886,8 +895,8 @@ h5 {
 
           .circular-progress {
             position: relative;
-            width: 92px;
-            height: 92px;
+            width: 94px;
+            height: 94px;
             background-color: #EBF3F2;
             border-radius: 50%;
             display: grid;
@@ -910,8 +919,8 @@ h5 {
           }
 
           .data-div1 {
-            flex: 0 0 29%;
-            max-width: 29%;
+            flex: 0 0 27%;
+            max-width: 27%;
           }
 
           .data-div2 {
@@ -962,7 +971,7 @@ h5 {
           @include flexC(center);
 
           button {
-            @include btnDefault(150px, 36px, capitalize, none, $secondary-color);
+            @include btnDefault(150px, 36px, uppercase, none, $secondary-color);
             font-size: 1.3rem;
             letter-spacing: -0.02rem;
           }
@@ -1699,6 +1708,7 @@ h5 {
       }
     }
   }
+
   //selection test css
   .selection{
     .main_div{

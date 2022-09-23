@@ -122,36 +122,17 @@ checkAllCard();
 
 
 // creating chart
-// const ctx = document.querySelector('#myCanvas').getContext('2d');
-// const myChart = new Chart(ctx, {
-//     type: 'doughnut',
-//     data: { 
-//     datasets: [{
-//       label: 'My First Dataset',
-//       data: [145, 110, 100],
-//       backgroundColor: [
-//         '#2DBF60',
-//         '#F1D42F',
-//         '#F01D1D '
-//       ],
-//       borderWidth: 0,
-//       borderColor: 'transparent',
-//       spacing: 0,
-//       cutout: '68%'
-//     }]
-//   }
-// });
-
-// for 0 test
 const ctx = document.querySelector('#myCanvas').getContext('2d');
 const myChart = new Chart(ctx, {
     type: 'doughnut',
     data: { 
     datasets: [{
       label: 'My First Dataset',
-      data: [100],
+      data: [145, 110, 100],
       backgroundColor: [
-        '#F1D42F'
+        '#2DBF60',
+        '#F1D42F',
+        '#F01D1D '
       ],
       borderWidth: 0,
       borderColor: 'transparent',
@@ -160,3 +141,22 @@ const myChart = new Chart(ctx, {
     }]
   }
 });
+
+// for 0 test
+// const ctx = document.querySelector('#myCanvas').getContext('2d');
+// const myChart = new Chart(ctx, {
+//     type: 'doughnut',
+//     data: { 
+//     datasets: [{
+//       label: 'My First Dataset',
+//       data: [100],
+//       backgroundColor: [
+//         '#F1D42F'
+//       ],
+//       borderWidth: 0,
+//       borderColor: 'transparent',
+//       spacing: 0,
+//       cutout: '68%'
+//     }]
+//   }
+// });
