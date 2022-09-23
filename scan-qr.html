@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Warning</title>
+    <title>Profile 7</title>
 
     <!-- font awesome css -->
     <link rel="stylesheet" href="assets/font-awesome/all.min.css"/>
@@ -28,18 +28,29 @@
   <!-- loader end-->
   
   <!-- Modal -->
-  <div class="modal fade qr-modal warning-pop" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade scan-qr" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <div class="img">
-            <img src="assets/images/svg/warning.svg" alt="warning">
+          <div class="d-flex top-bar">
+            <img src="assets/images/svg/qr-indicator.svg" alt="qr-indicator">
+            <h5>Scan QR Code to submit the documents</h5>
           </div>
-          <h4>2 out of 10 Warnings</h4>
-          <p>Please do not navigate out of test window during the test. Your test will be auto submitted.</p>
+          <div class="qrscanner-div">
+            <div class="img-circle">
+              <img src="assets/images/qrscan.png" alt="qrscan">
+            </div>
+          </div>
+          <div class="d-flex timer">
+            <img src="assets/images/timer.png" alt="timer">
+            <p>Valid for 0 Mins : 57 Sec</p>
+          </div>
+          <div class="d-flex footer">
+            <span>Login ID: </span> <p>jane_doe@wheebox.com</p>
+          </div>
         </div>
       </div>
     </div>
@@ -49,6 +60,7 @@
   <script src="assets/js/popper.min.js"></script>
   <script src="assets/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/loader.js"></script>
+
   <script type="text/javascript">
     $(window).on('load', function() {
         $('#exampleModal').modal('show');
