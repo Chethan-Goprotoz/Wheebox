@@ -2117,26 +2117,41 @@ input[type="number"]+img {
 
 /*  Multiple faces css Start */
 .modal-content.multiple-faces {
-  width: 60%;
+  width: 55%;
 }
-.mfwrap {
-  padding: 26px 50px 10px 50px;
+.modal-content.multiple-faces .modal-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2.2rem 10.5rem 0.8rem;
 }
-.mfwrap img {
-  width: 40%;
+.modal-content.multiple-faces .modal-body .img {
+  margin-bottom: 2.9rem;
 }
-.mfwrap h4 {
+.modal-content.foreign-obj .modal-body .img{
+  margin-bottom: 2.6rem;
+}
+.modal-content.multiple-faces .modal-body img {
+  max-width: 215px;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+.modal-content.foreign-obj .modal-body img{
+  max-width: 190px;
+}
+.modal-content.multiple-faces h4 {
   color: #C22F2F;
-  font-size: 1.6rem;
-  line-height: 2rem;
   font-family: Pop-medium;
-  margin: 38px 0px 18px 0px;
+  font-size: 18px;
+  margin-bottom: 1.7rem;
 }
-.mfwrap p {
+.modal-content.multiple-faces p {
   color: #849694;
-  font-size: 1.4rem;
-  line-height: 2.2rem;
-  font-family: Pop-medium;
+  line-height: 1.65;
+  font-size: 13px;
+  text-align: center;
 }
 /*  Multiple faces css end */
 
@@ -2192,60 +2207,53 @@ input[type="number"]+img {
 
 /*  Documents uploaded css end */
 
-
-/*  Submit Test css Start */
-/* .modal-content.submit-test {
-  width: 48%;
+/* submit test popup  start*/
+.submit-test{
+  max-width: 520px;
 }
-.submit-test img {
-  width: 10%;
+.submit-test .modal-header{
+  border-bottom: none;
+  padding: 2.8rem 2.8rem 2.2rem;
 }
-.submit-test p{
-line-height: 1.5rem;
+.submit-test .modal-body{
+  padding: 0rem 4rem 5.5rem;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction: column;
+  text-align: center;
 }
-.submit-test p.sub-heading {
-  color: #1D1D1D;
+.submit-test .modal-body h4{
+  color: #C22F2F;
+  font-family: Pop-medium;
+  font-size: 18px;
+  margin-bottom: 2.2rem;
+}
+.submit-test .modal-body h6{
+  font-size: 13px;
   font-family: Pop-semibold;
+  margin-bottom: 1rem;
+  color: #1D1D1D;
 }
-.submit-test p.sub-heading span {
-  color: #E21D1D;
+.submit-test .modal-body h6 span{
+  color: #C22F2F;
 }
-
-.submit-test ul {
-  margin-top: 3.7rem;
-}
-
-.submit-test li {
-  list-style: none;
-  display: inline-block;
-}
-
-.submit-test li a {
-  text-decoration: none;
-  padding: 5px 10px;
-  border-radius: 5px;
-  box-shadow: 0px 3px 10px #0000001A;   
-  font-size: 1.2rem;
-}
-
-.submit-test li:first-child a {
-  background: #ffba52;
+.submit-test .modal-body button{
+  padding: 5px 8px;
+  border-radius: 6px;
+  font-size: 12px;
   color: #fff;
-  margin-right: 10px;
+  font-family: Pop-light;
+  margin-top: 1.7rem;
 }
-
-.submit-test li:last-child a {
-  background: #198754;
-  color: #fff;
-  margin-left: 15px;
+.submit-test .modal-body button:first-child{
+  background-color: #FFBA52;
+  margin-right: 2.3rem;
 }
-.submit-test  .mfwrap {
-  padding: 60px 50px 60px 50px;
+.submit-test .modal-body button:last-child{
+  background-color: #198754;
 }
-
-.submit-test  .mfwrap h4 {
-  margin: 25px 0px 18px 0px;
-} */
+/* submit test popup  end*/
 
 /*  Warning Navigating css end */
 /* .modal-content.warning-navigating {
@@ -2841,6 +2849,84 @@ textarea {
   
 /* QR Code */
 
+/* scan-qr popup start */
+.scan-qr .modal-dialog{
+  max-width: 470px;
+}
+.scan-qr .modal-header{
+  border-bottom: none;
+}
+.scan-qr .modal-body{
+  padding: 0 2.7rem 2.7rem;
+}
+.scan-qr .top-bar{
+  height: 58px;
+  border-radius: 12px;
+  background: #F8F8F8;
+  align-items: center;
+  justify-content: center;
+}
+.scan-qr .top-bar img{
+  margin-right: 11px;
+  max-width: 23px;
+}
+.scan-qr .top-bar h5{
+  color: #0A2F2A;
+  font-family: Pop-medium;
+  font-size: 15px;
+  margin-bottom: 0;
+}
+.scan-qr .qrscanner-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0 1.3rem;
+}
+.scan-qr .qrscanner-div .img-circle{
+  background: #E9F7F4;
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.scan-qr .qrscanner-div .img-circle img{
+  width: 60%;
+  height: 60%;
+  object-fit: contain;
+  object-position: center;
+}
+.scan-qr .timer{
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.scan-qr .timer img{
+  max-width: 12px;
+  margin-right: 7px;
+}
+.scan-qr .timer p{
+  margin-bottom: 0;
+  color: #C22F2F;
+  font-size: 14px;
+}
+.scan-qr .footer{
+  justify-content: center;
+  align-items: baseline;
+}
+.scan-qr .footer span{
+  font-size: 14px;
+  color: #ADB4B5;
+  margin-right: 8px;
+}
+.scan-qr .footer p{
+  color: #162C2D;
+  font-size: 14px;
+  font-family: 'Pop-medium';
+}
+/* scan-qr popup end */
+
 /* upload answer */
 .qr-modal .qr-footer label{
   background: #0A2F2A;
@@ -2863,22 +2949,32 @@ textarea {
   padding-top: 40px;
 }
 /* upload answer*/
+
 /* warning popup */
- .waring-pop .qr-footer h3{
-  font-weight: 600;
-  font-size: 24px;
+.warning-pop .modal-body{
+  padding: 2.2rem 6rem 6rem;
+}
+.warning-pop .modal-body img,.submit-test .modal-body img{
+  max-width: 45px;
+  object-fit: contain;
+  object-position: center;
+  margin-bottom: 2.2rem;
+}
+ .warning-pop .modal-body h4{
+  color: #C22F2F;
+  font-family: Pop-medium;
+  font-size: 18px;
+  margin-bottom: 1.8rem;
  }
- .waring-pop .qr-footer p{
-  font-size: 12px;
-  color: #ADB4B5;
+ .warning-pop .modal-body p,.submit-test .modal-body p{
+  color: #849694;
+  line-height: 1.65;
+  font-size: 13px;
   text-align: center;
-  line-height: 14px;
-  padding-top: 10px;
  }
- .waring-pop .modal-body{
-  padding: 0px 40px 40px 40px;
- }
+
 /* warning popup */
+
 /*========== Responsive Style ==========*/
 
 @media screen and (max-width: 1500px) {

@@ -17,7 +17,6 @@
     <link rel="stylesheet" href="assets/css/loader.css" /> 
 
     <!-- style css -->
-    <link rel="stylesheet" href="assets/sass/app.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 
@@ -32,26 +31,20 @@
         aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content submit-test mx-auto">
-                <div class="modal-header profile-reset-password"> <button type="button" class="btn-close"
-                        data-bs-dismiss="modal" aria-label="Close"></button> </div>
+                <div class="modal-header"> 
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> 
+                </div>
                 <div class="modal-body">
-                    <section>
-                        <div class="">
-                            <div class="row d-flex align-items-center ">
-                                <div class="col-md-12 col-lg-12 col-xl-12  text-center mfwrap ">
-                                    <img src="/assets/images/warning.png">
-                                    <h4>Submit Test</h4>
-                                    <p class="sub-heading">Ready to <span>end the test</span> and submit your answers ? </p>
-                                    <p>You cannot change your answer after you submit the test.</p>
-                                    <ul>
-                                        <li><a href="#">Cancel</a></li>
-                                        <li><a href="#">Save & Exit</a></li>
-                                    </ul>
-                                </div>
-                               
-                            </div>
-                        </div>
-                    </section>
+                    <div class="img">
+                        <img src="assets/images/svg/warning.svg" alt="warning">
+                    </div>
+                    <h4>Submit Test</h4>
+                    <h6>Ready to <span>end the test</span> and submit your answers ?</h6>
+                    <p>You cannot change your answers after you submit the test.</p>
+                    <div class="d-flex">
+                        <button class="btn">Cancel</button>
+                        <button class="btn">Save & Exit</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -61,7 +54,8 @@
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/loader.js"></script>
-    <script type="text/javascript">
+
+    <script>
         $(window).on('load', function () {
           $('#exampleModal').modal('show');
         });
