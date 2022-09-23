@@ -277,7 +277,7 @@ input[type=number] {
   width: 100%;
 }
 
-.login-form .form-field input {
+.login-form .form-field input,.profile_10 .main_con input {
   width: 100%;
   padding: 10px 15px;
   font-size: 14px;
@@ -335,7 +335,7 @@ a.login-btn {
   text-transform: uppercase;
 }
 
-.login-btn input {
+.login-btn input,.profile_10 .btn-submit button {
   background: #F6AB39;
   border-radius: 6px;
   padding: 12px 0px;
@@ -2334,6 +2334,10 @@ line-height: 2.2rem;
   font-size: 13px;
 }
 
+.btn-close:focus{
+  box-shadow: none;
+}
+
 .modal-header span {
   color: rgb(88, 88, 88);
   font-size: 14px;
@@ -2494,7 +2498,7 @@ textarea {
 .select-dropdown {
   position: relative;
   /* display: inline-block; */
-  max-width: 100%;
+  width: 99.9%;
   margin: 0 15px 0 0;
 }
 
@@ -2521,8 +2525,9 @@ textarea {
 
 .select-dropdown__button .zmdi-chevron-down {
   position: absolute;
-  right: 10px;
-  top: 12px;
+  right: 15px;
+  top: 8px;
+  font-size: 25px;
 }
 
 .select-dropdown__list {
@@ -2594,13 +2599,27 @@ textarea {
 }
 
 /* Profile 8 end and 9 start */
+
+.pro_list .modal-dialog{
+  max-width: 1100px;
+}
+.pro_list .modal-header h4{
+  font-size: 22px;
+  margin: 0;
+  letter-spacing: -0.1px;
+  font-family: Pop-medium;
+  word-spacing: 1px;
+}
+.pro_list .modal-header .btn-close{
+  font-size: 16px;
+}
 .pro_list .modal-content .modal-header,
 .pro_list .modal-content .modal-footer {
   border: 0px;
 }
 
 .pro_list .modal-content .modal-header {
-  padding: 35px 40px 10px 40px;
+  padding: 4.5rem 4.5rem 1rem 4.5rem;
 }
 
 .pro_list .modal-body ul {
@@ -2611,15 +2630,77 @@ textarea {
 
 .pro_list .modal-body ul li {
   border: 1px solid #dee2e6;
-  padding: 10px;
-  margin: 10px 0 10px 0;
+  padding: 13px 25px;
+  margin: 9px 0 9px 0;
 }
 
 .pro_list .modal-body {
-  padding: 0px 40px 0px 40px;
+  padding: 0px 4.5rem 0px 4.5rem;
 }
 
+.pro_list .modal-footer{
+  padding: 1rem 4.5rem 1.8rem;
+}
 /* profile 9 ends 10 start*/
+
+/* profile 10 start */
+.profile_10 .modal-dialog{
+  max-width: 1050px;
+}
+.profile_10 .img{
+  width: 100%;
+  height: inherit;
+}
+.profile_10 .img img{
+  max-height: 550px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.profile_10 .div-right{
+  padding: 2rem 2rem 0;
+}
+.profile_10 .div-right .btn-close{
+  font-size: 16px;
+}
+.profile_10 .main_con{
+  padding: 4.5rem 7rem 6rem;
+}
+.profile_10 .main_con h2{
+  font-size: 2.4rem;
+  font-family: Pop-medium;
+  letter-spacing: -0.05rem;
+  margin-bottom: 0.8rem;
+}
+.profile_10 .main_con h2 + p{
+  color: #5a5a5a;
+  font-size: 13px;
+  margin-bottom: 2.8rem;
+  line-height: 2.5rem;
+}
+.profile_10 .main_con h6{
+  font-size: 1.4rem;
+  line-height: 2.5rem; 
+  margin-bottom: 0.3rem;
+  color: #000;
+}
+.profile_10 .main_con input{
+  margin-bottom: 2.8rem;
+}
+.profile_10 .main_con input[type="number"]+img{
+  top: 4.3rem;
+}
+.profile_10 .btn-submit{
+  margin-top: 4.3rem;
+}
+.profile_10 .btn-submit button{
+  padding: 9px 0;
+}
+.profile_10 .btn-submit button:focus{
+  box-shadow: none;
+}
+/* profile 10 end */
+
 .rest_pop .resetpassword {
   margin: 0;
   width: 100%;
