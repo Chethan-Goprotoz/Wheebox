@@ -2346,10 +2346,41 @@ line-height: 2.2rem;
   text-decoration: none;
   margin-left: 10px;
 }
-
-
 /*  Upload via webcam – 1 css end */
 
+/*  Upload via webcam  css start */
+.modal-content.upload-via-webcam {
+  width: 70%;
+}
+.upload-via-webcam img {
+  width: 92%;
+}
+.upload-via-webcam .mfwrap {
+  padding: 60px 100px;
+}
+.upload-via-webcam ul {
+  padding-left: 0;
+}
+.upload-via-webcam ul li {
+  list-style: none;
+  min-height: 75px;
+  border: solid 2px #eef8f8;
+  border-radius: 15px;
+  line-height: 91px;
+  width: 98px;
+  margin-bottom: 15px;
+}
+.upload-via-webcam ul li.active {border: 0;}
+.upload-via-webcam ul li span img {
+  width: 30%;
+}
+.upload-via-webcam ul li.active img {
+  width: 100%;
+}
+.upload-via-webcam .left-img-box {
+  text-align: right;
+}
+/*  Upload via webcam  css end */
 
 /* Profile 7 */
 .radio_div input[type="radio"]:checked {
