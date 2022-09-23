@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Profile 7</title>
+    <title>Warning</title>
 
     <!-- font awesome css -->
     <link rel="stylesheet" href="assets/font-awesome/all.min.css"/>
@@ -28,22 +28,18 @@
   <!-- loader end-->
   
   <!-- Modal -->
-  <div class="modal fade qr-modal upload-pop" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade qr-modal warning-pop" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
         <div class="modal-body">
-            <div class="qr-banner">
-                <h3> <img src="assets/images/upload.png" alt="" width="25px" height="25px" style="margin-right: 10px;">Upload Your Answer Sheet</h3>
-            </div>
-            <div>
-                <img src="assets/images/QR group.png" alt="" width="150px" height="150px">
-            </div>
-            <div class="qr-footer">
-                <input type="file" id="upload" hidden/>
-                <label for="upload">Choose file</label>
-            <h4><span>Login ID</span>jane_doe@wheebox.com</h4>
-            <button type="button" data-bs-dismiss="modal" class="close-btn"> Close</button>
-            </div>
+          <div class="img">
+            <img src="assets/images/svg/warning.svg" alt="warning">
+          </div>
+          <h4>2 out of 10 Warnings</h4>
+          <p>Please do not navigate out of test window during the test. Your test will be auto submitted.</p>
         </div>
       </div>
     </div>

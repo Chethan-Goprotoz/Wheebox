@@ -756,6 +756,21 @@ h5 {
 
 .reg_form .main_div .formhead .login a {
   text-decoration: none;
+  color: #26887C;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.reg_form .main_div .formhead .login a i {
+  margin-right: 5px;
+}
+
+.reg_form .main_div .formhead .login a p {
+  font-family: Pop-medium;
 }
 
 .reg_form .main_div .formhead .login button {
@@ -1888,7 +1903,7 @@ h5 {
 }
 
 .selection .main_div .test_con .test-card .test-maincon {
-  padding: 1.5rem 1.2rem 2rem 1.2rem;
+  padding: 1.5rem 1.5rem 2rem 1.5rem;
   border-bottom: 1px solid #ebebeb;
 }
 
@@ -1920,8 +1935,8 @@ h5 {
 
 .selection .main_div .test_con .test-card .test-maincon .circular-progress {
   position: relative;
-  width: 92px;
-  height: 92px;
+  width: 94px;
+  height: 94px;
   background-color: #EBF3F2;
   border-radius: 50%;
   display: -ms-grid;
@@ -1947,9 +1962,9 @@ h5 {
 
 .selection .main_div .test_con .test-card .test-maincon .data-div1 {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 29%;
-          flex: 0 0 29%;
-  max-width: 29%;
+      -ms-flex: 0 0 27%;
+          flex: 0 0 27%;
+  max-width: 27%;
 }
 
 .selection .main_div .test_con .test-card .test-maincon .data-div2 {
@@ -2019,7 +2034,7 @@ h5 {
 .selection .main_div .test_con .test-card .btn-test button {
   width: 150px;
   height: 36px;
-  text-transform: capitalize;
+  text-transform: uppercase;
   letter-spacing: 0.3px;
   font-size: 1.4rem;
   color: #fff;
