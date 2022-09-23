@@ -147,6 +147,7 @@ input[type=number] {
   position: relative;
   overflow: hidden;
   box-shadow: 0px 0px 5.6rem #227d7333;
+  background:#ffffff ;
 }
 
 .mainlogin-wrap::before {
@@ -1669,16 +1670,19 @@ ul.form-field {
   border: solid 1px #E21D1D;
 }
 
+.form-wrap ul.btn li:first-child a:hover{color: #F6AB39 !important;}
+
 .form-wrap ul.btn li:nth-child(2) a {
   background: #ffffff;
   color: #F6AB39;
   border: solid 1px #F6AB39;
 }
-
+.form-wrap ul.btn li:nth-child(2) a:hover {color: #E21D1D !important;}
 .form-wrap ul.btn li:nth-child(3) a {
   background: #198754;
   border: solid 1px #198754;
 }
+.form-wrap ul.btn li:nth-child(3) a:hover {color: #F6AB39 !important;}
 
 .candidate-btn ul {
   text-align: center;
@@ -1982,8 +1986,8 @@ textarea::placeholder {
 
 .form-field input[type="textarea"] {
   width: 100%;
-  padding: 15px;
-  height: 150px;
+  padding: 15px 15px 80px 15px;
+  height: auto;
   font-size: 14px;
   border: solid 1px #e0e0e0;
   border-radius: 6px;
