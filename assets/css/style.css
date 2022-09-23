@@ -2116,7 +2116,7 @@ input[type="number"]+img {
   width: 60%;
 }
 .mfwrap {
-  padding: 26px 50px;
+  padding: 26px 50px 10px 50px;
 }
 .mfwrap img {
   width: 40%;
@@ -2189,9 +2189,89 @@ input[type="number"]+img {
 /*  Documents uploaded css end */
 
 
+/*  Submit Test css Start */
+/* .modal-content.submit-test {
+  width: 48%;
+}
+.submit-test img {
+  width: 10%;
+}
+.submit-test p{
+line-height: 1.5rem;
+}
+.submit-test p.sub-heading {
+  color: #1D1D1D;
+  font-family: Pop-semibold;
+}
+.submit-test p.sub-heading span {
+  color: #E21D1D;
+}
+
+.submit-test ul {
+  margin-top: 3.7rem;
+}
+
+.submit-test li {
+  list-style: none;
+  display: inline-block;
+}
+
+.submit-test li a {
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  box-shadow: 0px 3px 10px #0000001A;   
+  font-size: 1.2rem;
+}
+
+.submit-test li:first-child a {
+  background: #ffba52;
+  color: #fff;
+  margin-right: 10px;
+}
+
+.submit-test li:last-child a {
+  background: #198754;
+  color: #fff;
+  margin-left: 15px;
+}
+.submit-test  .mfwrap {
+  padding: 60px 50px 60px 50px;
+}
+
+.submit-test  .mfwrap h4 {
+  margin: 25px 0px 18px 0px;
+} */
+
+/*  Warning Navigating css end */
+/* .modal-content.warning-navigating {
+  width: 48%;
+}
+.warning-navigating img {
+  width: 10%;
+}
+.warning-navigating p{
+line-height: 2.2rem;
+}
+.warning-navigating .mfwrap {
+  padding: 80px 50px 80px 50px;
+} */
 
 
-/*  Approver css end */
+/*  Warning Navigating css Start */
+
+/*  Upload via webcam – 1 css start */
+.upload-via ul li  img {
+  width: 5%;
+}
+.upload-via ul li span img {
+  width: 2%;
+}
+.upload-via li {
+  list-style: none;
+}
+/*  Upload via webcam – 1 css end */
+
 
 /* Profile 7 */
 .radio_div input[type="radio"]:checked {
