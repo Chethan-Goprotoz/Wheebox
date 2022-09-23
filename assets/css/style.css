@@ -302,6 +302,7 @@ input[type=number] {
   transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
   color: #010D0A;
   margin-bottom: 1.5rem;
+  opacity: 0.4;
 }
 
 .register-link {
@@ -347,7 +348,7 @@ a.login-btn {
   text-decoration: none;
   font-size: 15px;
   line-height: 2.5rem;
-  font-family: Pop-light;
+  font-family: Pop-medium;
   text-transform: uppercase;
 }
 
@@ -418,7 +419,7 @@ p.otp-btn {
 }
 
 .footer-info p {
-  font-size: 12px;
+  font-size: 9px;
   line-height: 1rem;
   font-family: Pop-normal;
   color: #010D0A;
@@ -431,7 +432,7 @@ p.otp-btn {
 }
 
 .footer-info span {
-  font-size: 12px;
+  font-size: 9px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -840,6 +841,9 @@ a.login-btn.mobile-view {
   text-decoration: none;
   color: #fff;
   font-size: 16px;
+}
+.cont-btn a:hover {
+  color: #fff !important;
 }
 
 .close span {
@@ -2261,15 +2265,77 @@ line-height: 2.2rem;
 /*  Warning Navigating css Start */
 
 /*  Upload via webcam – 1 css start */
+.modal-content.upload-via {
+  width: 48%;
+}
+.upload-via ul {
+  background: #F8F8F8;
+  border-radius: 1.3rem;
+  padding: 14px;
+  text-align: left;
+  margin-bottom: 36px;
+}
+
 .upload-via ul li  img {
-  width: 5%;
+  width: 12%;
 }
 .upload-via ul li span img {
-  width: 2%;
+  width: 42%;
 }
+
+
 .upload-via li {
   list-style: none;
+  display: inline-block;
+  width: 100% !important;
+  background: #fff;
+  border-radius: 0.6rem;
+  padding: 14px;
+  margin-bottom: 11px;
 }
+
+.upload-via li span {
+  background: #faefef;
+  width: 35px;
+  height: 35px;
+  float: right;
+  text-align: center;
+  border-radius: 50%;
+  line-height: 35px;
+  margin-top: 6px;
+}
+.upload-via ddd {
+  margin-left: 10px;
+}
+
+.upload-via h3 {
+  margin-bottom: 30px;
+}
+.upload-via .mfwrap {
+  padding: 50px 50px 50px 50px;
+}
+.upload-via h3 span {
+  background: #e9f7f4;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  margin-right: 10px;
+  border-radius: 50%;
+  font-family: "Font Awesome 5 Free";
+}
+.upload-via h3 span i{
+  font-style: normal;
+}
+.upload-via .mfwrap p{
+  color: #ADB4B5;
+}
+.upload-via .mfwrap p a{
+  color: #162C2D;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+
 /*  Upload via webcam – 1 css end */
 
 
