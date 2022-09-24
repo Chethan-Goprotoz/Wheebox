@@ -3172,8 +3172,12 @@ textarea {
 }
 
 
+/* responsive screen for tablet */
+/* @media(min-width: 768px) and (max-width: 991px) {
 
-@media(min-width: 768px) and (max-width: 991px) {
+} */
+
+@media(max-width: 991px) {
 
   /*===== login page =====*/
   .login {
@@ -3515,9 +3519,6 @@ textarea {
   }
 
   /*  Proctor - Rest your password css end */
-}
-
-@media(max-width: 767px) {
 
   /* main header css start */
   .main_header {
