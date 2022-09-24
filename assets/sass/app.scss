@@ -1307,6 +1307,9 @@ h5 {
         @include btnDefault(152px, 51px, capitalize, none, $secondary-color);
         border-radius: 8px;
         text-transform: capitalize;
+        &.btn-light{
+          opacity: 0.5;
+        }
       }
     }
   }
