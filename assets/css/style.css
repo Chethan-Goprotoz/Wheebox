@@ -3173,11 +3173,30 @@ textarea {
 
 
 /* responsive screen for tablet */
-/* @media(min-width: 768px) and (max-width: 991px) {
+@media(min-width: 768px) and (max-width: 991px) {
+  .mainlogin-wrap::before {
+    width: 100%;
+    height: 47%;
+  }
+  .mobile-wrap::before {
+    height: 55%;
+  }
+  .password-wrap::before {
+    height: 45%;
+  }
+  .enterotp-wrap::before {
+    height: 49%;
+  }
+  .mainlogin-wrap::after {
+    width: 0%;
+    height: 53%;
+    right: 0;
+    bottom: 0;
+    background: #FFFFFF;
+  }
+}
 
-} */
-
-@media(max-width: 991px) {
+@media(max-width: 767px) {
 
   /*===== login page =====*/
   .login {
