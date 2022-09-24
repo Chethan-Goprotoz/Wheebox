@@ -406,6 +406,168 @@ header .main_header {
   bottom: -30px;
 }
 
+.iconsFixed {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translate(35%,-50%);
+  border-radius: 7px;
+}
+
+.iconsFixed .popUp img{
+  width: 65%;
+}
+
+.iconsFixed .popUp.badge2{
+  position: relative;
+}
+.iconsFixed .popUp.badge2 .badge{
+  background-color: #EA0707;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  position: absolute;
+  right: 42px;
+  top: 6px;
+}
+
+.shadow-v18{
+  box-shadow: 0px 3px 6px #272D3B33;
+}
+
+.controlBtn .btn{
+  font-size: 12px;
+  color: rgb(151, 150, 150);
+  font-family: Rob-bold;
+  padding: 7px 4px;
+}
+
+textarea:focus{
+  box-shadow:none !important;
+  border: 1px solid #dee2e6!important;
+  border-top-right-radius: 7px;
+  border-top-left-radius: 7px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.controlBtn .btn img{
+  width: 11px;
+}
+.controlBtn{
+  padding: 10px 12px;
+  border-bottom-right-radius: 7px;
+  border-bottom-left-radius: 7px;
+}
+.controlBtn .btn:first-child img{
+  width: 9px;
+}
+.controlBtn .btn:nth-child(2) img{
+  width: 9px;
+}
+.controlBtn .btn:nth-child(3) img{
+  width: 9px;
+}
+
+
+
+
+.btnUpload1{
+position: relative;
+}
+
+.btnUpload2{
+  position: relative;
+  }
+  .btnUpload3{
+    position: relative;
+    }
+
+.btnUploads label{
+  cursor: pointer;
+  border: 1px solid #159478;
+  border-radius: 4px;
+  opacity: 1;
+  color: #159478;
+  padding: 10px 12px;
+  margin-left: 12px;
+  float: right;
+}
+
+.btnUpload1 label{
+  position: absolute;
+  right: -5px;
+  }
+  
+  .btnUpload2 label{
+    position: absolute;
+    right: 213px;
+    }
+    .btnUpload3 label{
+      position:absolute;
+      left: 150px;
+      }
+
+#uploadItem1{
+  opacity: 0;
+  right: -25px;
+  position: absolute;
+  z-index: 0;
+  top:3px;
+}
+
+#uploadItem2{
+  opacity: 0;
+  right: 190px;
+  position: absolute;
+  z-index: 0;
+  top:3px;
+}
+
+#uploadItem3{
+  opacity: 0;
+  /* right: 50px; */
+  position: absolute;
+  z-index: 0;
+  top:3px;
+  left: 150px;
+}
+
+.pHeightImg{
+  height: auto !important;
+  overflow: auto !important;
+}
+
+.dark-lg{
+  background-color: #1B1C32;
+}
+.dark-md{
+  background-color: #272844 !important;
+}
+.dark-sm{
+  background-color: #212952;
+}
+
+.footerBtn.dark-sm{
+  background-color: #1B1C32;
+  border:1px solid #0059AB !important;
+}
+
+.btnDropdown.dark-md .select-dropdown__button--0{
+  background-color: #1B1C32;
+  border:1px solid #FFFFFF !important;
+}
+
+.bgQuestion.dark-lg{
+  background-color: #1B1C32 !important;
+  background-image: none !important;
+}
+
+.bgProgramming{
+  height: 314px;
+}
+
+
 
 @media (max-width:600px){
 
