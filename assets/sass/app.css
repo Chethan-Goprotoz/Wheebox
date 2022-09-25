@@ -2441,8 +2441,8 @@ h5 {
 }
 
 .system-diagnosis .system-div .stepper-card {
-  width: 98.5%;
-  padding: 1.9rem 1.6rem 0rem;
+  width: 99.6%;
+  padding: 1.9rem 1.5rem 0rem;
   background: #fff;
   border: 1px solid #EEF3F3;
   border-radius: 16px;
@@ -2533,7 +2533,7 @@ h5 {
   margin-top: -2px;
 }
 
-.system-diagnosis .system-div .stepper-card .result2 {
+.system-diagnosis .system-div .stepper-card .result2, .system-diagnosis .system-div .stepper-card .result3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2545,7 +2545,7 @@ h5 {
           align-items: flex-end;
 }
 
-.system-diagnosis .system-div .stepper-card .result2 img {
+.system-diagnosis .system-div .stepper-card .result2 img, .system-diagnosis .system-div .stepper-card .result3 img {
   width: 160px;
   height: 75px;
   -o-object-fit: contain;
@@ -2580,6 +2580,15 @@ h5 {
   margin-top: -2px;
 }
 
+.system-diagnosis .system-div .stepper-card .result4 .chrome-icon {
+  max-width: 21px;
+  margin: 0.4rem 0 0.7rem;
+}
+
+.system-diagnosis .system-div .stepper-card .result4 .chro-comp p {
+  margin: 0 4px 0 0;
+}
+
 .system-diagnosis .system-div .stepper-card .result {
   display: none;
 }
@@ -2590,6 +2599,15 @@ h5 {
 
 .system-diagnosis .system-div .stepper-card .result.active {
   display: block;
+}
+
+.system-diagnosis .system-div .stepper-card .inter-analyze {
+  color: #198754;
+  font-family: Pop-medium;
+  font-size: 13px;
+  text-transform: capitalize;
+  margin-bottom: 0;
+  line-height: 1.2;
 }
 
 .system-diagnosis .system-div .btn-div {
@@ -2658,6 +2676,15 @@ h5 {
   word-spacing: 0.2rem;
   color: #fff;
   font-size: 1.9rem;
+  font-family: 'Pop-normal';
+}
+
+.system-diagnosis .upload-main .middle-photo h3 {
+  width: 50%;
+  line-height: 1.9;
+  word-spacing: 0.2rem;
+  color: #fff;
+  font-size: 1.7rem;
   font-family: 'Pop-normal';
 }
 

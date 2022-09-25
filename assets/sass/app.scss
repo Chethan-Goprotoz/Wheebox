@@ -1175,8 +1175,8 @@ h5 {
     }
 
     .stepper-card {
-      width: 98.5%;
-      padding: 1.9rem 1.6rem 0rem;
+      width: 99.6%;
+      padding: 1.9rem 1.5rem 0rem;
       background: #fff;
       border: 1px solid #EEF3F3;
       border-radius: 16px;
@@ -1251,7 +1251,7 @@ h5 {
         }
       }
 
-      .result2 {
+      .result2,.result3 {
         display: flex;
         justify-content: center;
         align-items: flex-end;
@@ -1288,6 +1288,15 @@ h5 {
           object-fit: contain;
           margin-top: -2px;
         }
+        .chrome-icon{
+          max-width: 21px;
+          margin: 0.4rem 0 0.7rem;
+        }
+        .chro-comp{
+          p{
+            margin: 0 4px 0 0;
+          }
+        }
       }
       .result{
         display: none;
@@ -1297,6 +1306,14 @@ h5 {
         &.active{
           display: block;
         }
+      }
+      .inter-analyze{
+        color: #198754;
+        font-family: Pop-medium;
+        font-size: 13px;
+        text-transform: capitalize;
+        margin-bottom: 0;
+        line-height: 1.2;
       }
     }
 
@@ -1316,6 +1333,14 @@ h5 {
   .upload-main{
     .middle-photo{
       @include sysmiddle(1rem,-10px,255px);
+      h3{
+        width: 50%;
+        line-height: 1.9;
+        word-spacing: 0.2rem;
+        color: #fff;
+        font-size: 1.7rem;
+        font-family: 'Pop-normal';
+      }
     }
     .upload-photo{
       width: 85%;
