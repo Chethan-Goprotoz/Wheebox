@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="assets/css/loader.css">
 
     <!-- style css -->
-    <link rel="stylesheet" href="assets/sass/app.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css" rel="stylesheet" />
   </head>
 
 <body>
@@ -27,10 +27,11 @@
   </div>
   <!-- loader end-->
 
-  <section class="face-detect">
-    <div class="container">
-      <div class="row">
-        <div class="mymodal">
+  <!-- Modal -->
+  <div class="modal fade face-detect" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
           <div class="img">
             <img src="assets/images/svg/face-detect.svg" alt="face-detect">
           </div>
@@ -39,11 +40,17 @@
         </div>
       </div>
     </div>
-  </section>
+  </div>
 
   <script src="assets/js/jquery-2.2.0.min.js"></script>
   <script src="assets/js/popper.min.js"></script>
   <script src="assets/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/loader.js"></script>
+
+  <script type="text/javascript">
+    $(window).on('load', function() {
+        $('#exampleModal').modal('show');
+    });
+  </script>
 </body>
 </html>
