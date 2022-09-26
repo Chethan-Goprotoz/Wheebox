@@ -3,7 +3,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Questionaries MCQ</title>
+    <title>Questionaries v1-updated</title>
 
     <!-- bootstrap css -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" rel="stylesheet"/>
@@ -57,7 +57,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 selectSec">
+            <div class="col-md-4">
                 <div class="d-flex justify-content-between btnDropdown bg-white rounded-lg p-4">
                     
                     <select class="w-25 fs-6 border-0 shadow-sm" id="normal-select-1" placeholder-text="Select A">
@@ -95,7 +95,7 @@
                             <button class="btn fontInc shadow-sm1 fw-bold p-3 me-3">A -</button>
                             <button class="btn fontDec shadow-sm1 fw-bold p-3 me-3">A +</button>
                             <button class="btn shadow-sm me-4 p-3 text-success">Flag to review</button>
-                            <button type="button" class="btn d-md-none endTest2">End Test</button>
+                           
                         </div>
                         <div class="box ">
                             <div class="percent">
@@ -111,49 +111,48 @@
                         </div>
                        </div>
                     </div>
-                    <div class="row mt-4 mt-md-5 pb-4 mb-4 gx-5">
-                        <div class="col-md-6 border-end">
-                            <div class="bgQuestion p-5 border-end rounded-lg">
-                                <p class="pe-2 mb-0">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy 
+                    <div class="row mt-5 pb-4 gx-5">
+                        <div class="col-md-12">
+                            <div class="bgQuestion p-5 me-0 rounded-lg">
+                                <p class="pe-2 mb-0 pHeight">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy 
                                     eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
-                                    sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 
-                                    Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
-                                    Lorem ipsum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae labore,
-                                     velit minima nisi quibusdam facilis optio aut explicabo provident, 
-                                     eius adipisci sequi quidem totam dolore praesentium dolorem dolorum voluptas quam.</p>
+                                    sed diam voluptua Lorem _ _ _ _ _ _ _ _ _.</p>
                                     
                                     <div class="bgSpeaker">
                                         <img class="speaker" src="assets/images/questionaries/speaker.svg" width="28" alt="mute">
                                     </div>
                             </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="radiodiv p-4 ps-4">
-                                <div class="form-check form-check-inline">                            
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                                    <label class="form-check-label" for="inlineRadio1">Income and expenditure statement</label>
-                                </div>
-                            </div>
-                            <div class="radiodiv mt-5 p-4 ps-4">
-                                <div class="form-check form-check-inline">                            
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option1">
-                                    <label class="form-check-label" for="inlineRadio2">Profit and loss account</label>
-                                </div>
-                            </div>
-                            <div class="radiodiv mt-5 p-4 ps-4">
-                                <div class="form-check form-check-inline">                            
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option1">
-                                    <label class="form-check-label" for="inlineRadio3">Trail Balance</label>
-                                </div>
-                            </div>
-                            <div class="radiodiv mt-5 p-4 ps-4">
-                                <div class="form-check form-check-inline">                            
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option1">
-                                    <label class="form-check-label" for="inlineRadio4">Balance Sheet</label>
-                                </div>
-                            </div>
-                        </div>
 
+                            <hr class="mt-5">
+                            <div class="btnGroup w-100 mt-5 d-flex justify-content-start">
+                                <div>
+                                    <button type="button" class="btn">Compile</button>
+                                </div>
+                                <div class="ms-5">
+                                    <button type="submit" class="btn">Submit Code</button>
+                                </div>
+                                <div class="ms-5">   
+                                   <select class="form-select d-block" name="">
+                                    <option value="">Select Language</option>
+                                    <option value="">English</option>
+                                    <option value="">Hindi</option>
+                                    <option value="">Telugu</option>
+                                   </select>
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="col-md-12 mt-5">
+                            <div class="formNote">
+                                <div>
+                                    <div class="bgProgramming position-relative bg-dark border-end rounded-lg">
+                                        <img src="assets/images/questionaries/program.png" class="img-fluid w-100 h-100" alt="">
+                                        <div class="resizeBtn">
+                                            <button type="button" class="btn"><img src="assets/images/questionaries/resize.svg" alt=""></button>
+                                        </div>
+                                    </div>
+                                </div>  
+                            </div>                                       
+                        </div>
                     </div>
                 </div>
 
@@ -233,17 +232,16 @@
                         </div>
                         <!-- chat popup -->
                         <div class="chatWindow mt-4">
-                            <a href=""> <img class="w-100" src="assets/images/questionaries/Video.png" class="img-fluid" alt=""></a>
-
+                           <a href=""> <img class="w-100 d-none" src="assets/images/questionaries/Video.png" class="img-fluid" alt=""></a>
                         </div>
-
                         <div class="chatPopUp position-relative">
-                            <div class="popUp1">
-                              <a href="">  <img src="assets/images/questionaries/chatpopup.svg" class="w-75" alt=""></a>
-                            
+                            <div class="popUp1">    
+                               <a href=""> <img src="assets/images/questionaries/chatpopup.svg" class="w-75" alt=""></a>
                                 <div class="badge">2</div>
                             </div>
-                            
+                            <div class="popUp2">
+                                <a href="">  <img src="assets/images/questionaries/video-min.svg" class="w-75" alt=""></a>
+                            </div>                          
                         </div>
                     </div>
                </div>

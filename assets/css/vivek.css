@@ -331,6 +331,8 @@ header .main_header {
   border-radius: 4px;
 }
 
+
+
 .footerBtn .btnNxt img, .footerBtn .btnPrev img{
   width: 9px; 
   margin-bottom: 2px;
@@ -379,7 +381,7 @@ header .main_header {
   background-size: cover;
   background-repeat: no-repeat;
   width: 12px;
-  margin-top: 5px;
+  margin-top: 8px;
   height: 7px;
   display: block;
 }
@@ -469,68 +471,55 @@ textarea:focus{
   width: 9px;
 }
 
-
-
-
-.btnUpload1{
-position: relative;
-}
-
-.btnUpload2{
-  position: relative;
-  }
-  .btnUpload3{
-    position: relative;
-    }
-
-.btnUploads label{
+.labelUpload{
+  position: absolute;
   cursor: pointer;
   border: 1px solid #159478;
   border-radius: 4px;
   opacity: 1;
   color: #159478;
   padding: 10px 12px;
-  margin-left: 12px;
-  float: right;
+}
+.btnUpload1 input{
+  cursor: pointer;
+  opacity: 0;
 }
 
-.btnUpload1 label{
-  position: absolute;
-  right: -5px;
-  }
-  
-  .btnUpload2 label{
-    position: absolute;
-    right: 213px;
-    }
-    .btnUpload3 label{
-      position:absolute;
-      left: 150px;
-      }
-
-#uploadItem1{
+.btnUpload2 input{
+  cursor: pointer;
   opacity: 0;
-  right: -25px;
-  position: absolute;
-  z-index: 0;
-  top:3px;
+
+}
+.btnUpload2 input{
+  width: 62%;
+} 
+.btnUpload2{
+  width: 19%;
+  margin-left:9px
 }
 
-#uploadItem2{
-  opacity: 0;
-  right: 190px;
-  position: absolute;
-  z-index: 0;
-  top:3px;
+.btnGroup button{
+  border: 1px solid #159478;
+  border-radius: 4px;
+  opacity: 1;
+  color: #159478;
+  padding: 10px 12px;
+  color: #159478;
+}
+.btnGroup select{
+  border: 1px solid #159478;
+  border-radius: 4px;
+  opacity: 1;
+  width: 130px;
+  color: #159478;
+  padding: 10px 12px;
+  color: #159478;
 }
 
-#uploadItem3{
-  opacity: 0;
-  /* right: 50px; */
+.resizeBtn{
   position: absolute;
-  z-index: 0;
-  top:3px;
-  left: 150px;
+  top: 0;
+  right: 0;
 }
 
 .pHeightImg{
@@ -565,8 +554,82 @@ position: relative;
 
 .bgProgramming{
   height: 314px;
+  overflow-y: auto;
+}
+.catImg{
+  background: #ABD7D6;
+  text-align: center;
+  border-radius: 5px;
 }
 
+.catImg p{
+  font-size: 12px;
+  padding-bottom: 5px;
+  color: #0A2F2A;
+  margin-bottom: 0;
+}
+
+.catImg img{
+  height: 113px;
+  padding: 12px;
+}
+.catImg::after{
+  content: "";
+  background-color: #FFFFFF;
+  width: 12px;
+  height: 12px;
+  border-radius: 50px;
+  position: absolute;
+  left: 20px;
+  top: 5px;
+}
+.chatPopUp .chatBody.position-absolute{
+  box-shadow: 0px 3px 6px #272D3B33;
+  right: 0;
+  bottom: 33px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.chatName{
+  width: 72%;
+  margin-left: 3px;
+  background-image: linear-gradient(to bottom, #20776E, #2D9D8D);
+  color: #FFFFFF;
+  border-radius: 0px 12px 12px 12px;
+}
+.chatName p,.chatName2 p{
+  font-size: 10px;
+  line-height: 15px;
+}
+
+.chatName2{
+  margin-top: 25px;
+  margin-bottom: 20px;
+  color: #0F2046;
+  border-radius: 12px 12px 0px 12px;
+  width: 81%;
+  background-image: linear-gradient(to bottom, rgba(241, 241, 241, 0.89),rgba(238, 238, 238, 0.575));
+}
+.inputArea button{
+  margin-left: -50px;
+}
+.inputArea button img{
+  width: 32px;
+}
+
+.inputArea input{
+  background: #E1F3FF;
+  padding: 5px 50px 5px 20px;
+  border-radius: 50px;
+}
+.inputArea input:focus{
+  background: #E1F3FF;
+  box-shadow: none;
+}
+.inputArea input::placeholder{
+  font-size: 12px;
+}
 
 
 @media (max-width:600px){
@@ -608,6 +671,78 @@ position: relative;
   .footerBtn{
     margin-bottom: 2.5rem;
   }
+
+
+  .grid .grid1{
+    display: none !important;
+  }
+
+  header .main_header .grid .grid2 .profile img {
+    width: 100%;
+}
+.main_header h4{
+  display: block;
+  transform: none !important;
+}
+
+.selectSec{
+  display: none;
+}
+.questionIntro h4{
+  display: none;
+}
+.flexsm .box{
+  display: none;
+}
+
+.questionIntro p{
+  line-height: 22px;
+  font-size: 13px;
+}
+
+/* .footerBtn{
+  display: none;
+} */
+
+.chatPopUp .popUp1{
+  position: fixed;
+  right: 0;
+  bottom: 10px;
+}
+.btnInce{
+  margin-top: 10px;
+}
+.btnInce button:first-child(){
+  order: 3;
+}
+
+.btnInce button:last-child(){
+  order: 1;
+}
+.btnInce button:nth-child(2){
+  order: 2;
+}
+
+.endTest2 {
+  padding: 10px 28px;
+  font-size: 14px;
+  color: #FFFFFF;
+  background-color: #EA0707;
+  border: none;
+  border-radius: 4px;
+}
+
+.btnInce button:last-child{
+  border:none;
+}
+
+.btnInce .btn.shadow-sm.me-4.p-3.text-success{
+  border: 1px solid #159478;
+}
+.form-check-input{
+  border: 1px solid #20776E;
+}
+
 
 
 }
