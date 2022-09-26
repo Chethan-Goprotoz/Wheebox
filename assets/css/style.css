@@ -2471,6 +2471,9 @@ input[type="number"]+img {
 /*  Upload via webcam – 1 css end */
 
 /*  Upload via webcam  css start */
+.upload-via-webcam h3{font-family: Pop-medium;
+  margin-bottom: 30px;
+}
 .modal-content.upload-via-webcam {
   width: 70%;
 }
@@ -2478,7 +2481,7 @@ input[type="number"]+img {
   width: 92%;
 }
 .upload-via-webcam .mfwrap {
-  padding: 60px 100px;
+  padding: 30px 100px;
 }
 .upload-via-webcam ul {
   padding-left: 0;
@@ -2501,7 +2504,61 @@ input[type="number"]+img {
 }
 .upload-via-webcam .left-img-box {
   text-align: right;
+  
 }
+img.i-icon {
+  width: 4%;
+  position: absolute;
+  top: 14px;
+  left: 50px;
+}
+.upload-via-webcam .image-box {
+  position: relative;
+}
+
+
+.text-overlay {
+  position: absolute;
+  top: 34px;
+  width: 86%;
+  left: 11%;
+  padding: 3%;
+  font-family: Pop-light;
+  font-size: 12px;
+  background: #f8f8f8;
+  text-align: left;
+  border-radius: 8px;
+  color: #848E90;
+}
+
+
+
+.butn-wrap ul{text-align: center;  padding-left: revert;
+margin-top: 30px;}
+
+
+.butn-wrap ul li{
+  display: inline-block;
+  width: auto;
+  border: 0;
+  margin: 0px 6px;
+  min-height: auto;
+  line-height: normal;
+}
+ 
+ .butn-wrap ul li a {
+  border: solid 1px #f6ab39;
+  padding: 16px 30px;
+  border-radius: 10px;
+  font-size: 14px;
+  color: #f6ab39 !important;
+}
+.butn-wrap ul li:last-child a {background:#f6ab39;
+color: #ffffff !important;
+}
+
+
+
 /*  Upload via webcam  css end */
 
 /* Profile 7 */
@@ -3317,6 +3374,38 @@ textarea {
     background: #FFFFFF;
   }
 }
+@media (max-width: 991px) {
+.text-overlay{  font-size: 9px;}
+.butn-wrap ul li a {
+  padding: 9px 8px;
+  border-radius: 3px;
+  font-size: 12px;
+  color: #f6ab39 !important;
+}
+.upload-via-webcam .left-img-box {
+  text-align: center;
+}
+.upload-via-webcam ul li {
+  display: inline-block;
+  width: 23%;
+  margin: 0px 2%;
+}
+.upload-via-webcam ul{
+  text-align: center;
+  margin-top: 20px;
+}
+.butn-wrap ul li{
+  width: auto;
+}
+.butn-wrap ul {
+  padding-left: initial;
+}
+.text-overlay {
+  width: 90%;
+  left: 5%;
+}
+}
+
 
 @media(max-width: 767px) {
 
