@@ -2259,33 +2259,192 @@ input[type="number"]+img {
 }
 /* submit test popup  end*/
 
-/*  Warning Navigating css end */
-/* .modal-content.warning-navigating {
-  width: 48%;
+/* upload answer popup start */
+.upload-answer .modal-body{
+  padding: 2.1rem 2.1rem 2.5rem !important;
 }
-.warning-navigating img {
-  width: 10%;
+.upload-answer .modal-body .img-circle img{
+  max-width: 45px;
 }
-.warning-navigating p{
-line-height: 2.2rem;
+.upload-answer .answerqr-div
+{
+  padding: 2.1rem 0 1.5rem !important;
 }
-.warning-navigating .mfwrap {
-  padding: 80px 50px 80px 50px;
-} */
-
-
-/*  Warning Navigating css Start */
+.upload-answer .bg-pink{
+  background: #F8F8F8;
+  border-radius: 1.2rem;
+  padding: 16px;
+  width: 100%;
+}
+.upload-answer .bg-pink2{
+  width: 100%;
+}
+.upload-answer .bg-pink.mb--7{
+  margin-bottom: 7rem;
+}
+.upload-answer .bg-pink .div-inner {
+  background: #fff;
+  padding: 0 1rem;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5px;
+  position: relative;
+}
+.upload-answer .bg-pink .div-inner:not(:last-child) {
+  margin-bottom: 1.2rem;
+}
+.upload-answer .bg-pink .div1 {
+  display: flex;
+  flex-direction: column;
+}
+.upload-answer .bg-pink .div1 img {
+  max-width: 40px;
+  margin-right: 12px;
+  margin-top: 10px;
+}
+.upload-answer .bg-pink .div1 p {
+  margin: 2px 0 0;
+  font-size: 14px;
+  color: #162C2D;
+}
+.upload-answer .bg-pink .div1 .prog{
+  width: 82%;
+  height: 3px;
+  background-color: #C7C7C7;
+  position: absolute;
+  top: 49.6%;
+  left: 15.7%;
+}
+.upload-answer .bg-pink .div1 .prog .prog-bar{
+  width: 45%;
+  height: 3px;
+  background-color: #0A2F2A;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+.upload-answer .bg-pink .div1 span{
+  font-size: 12px;
+  color: #9A9DA3;
+  margin-right: 29px;
+  margin-top: -15px;
+}
+.upload-answer .bg-pink .div2 img{
+  max-width: 10px;
+  margin-top: 11px;
+}
+.upload-answer .footer button{
+  width: 125px;
+  height: 42px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+.upload-answer .footer button.btn-upload{
+  letter-spacing: 0.2px;
+  color: #fff;
+  background-color: #0A2F2A;
+  font-family: Pop-light;
+}
+.upload-answer .footer button.btn-submit{
+  letter-spacing: 0.2px;
+  color: #fff;
+  background-color: #F6AB39;
+  font-family: Pop-light;
+}
+.upload-answer .footer button.mb--7{
+  margin-bottom: 7rem;
+}
+.upload-answer .footer button.mb--2{
+  margin-bottom: 2.5rem;
+}
+.upload-answer .footer .btn-red{
+  letter-spacing: 0px;
+  background-color: #fff;
+  color: #C22F2F;
+  font-family: Pop-medium;
+}
+/* upload answer popup end */
 
 /*  Upload via webcam – 1 css start */
 .modal-content.upload-via {
-  width: 48%;
+  width: 52%;
 }
-.upload-via ul {
+.upload-via .modal-header{
+  border-bottom: none;
+  padding: 25px 30px 15px;
+}
+.upload-via .head-part{
+  margin-bottom: 2.9rem;
+}
+.upload-via .head-part .bg-lightgreen{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background-color: #E9F7F4;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+.upload-via .head-part .bg-lightgreen img{
+  max-width: 16px;
+}
+.upload-via .head-part h4{
+  color: #0A2F2A;
+  font-family: Pop-medium;
+  font-size: 15px;
+  margin-bottom: 0;
+}
+.upload-via .modal-body{
+  padding: 0 7rem;
+}
+.upload-via .bg-pink,.upload-answer .bg-pink2 {
   background: #F8F8F8;
-  border-radius: 1.3rem;
-  padding: 14px;
-  text-align: left;
-  margin-bottom: 36px;
+  border-radius: 1.2rem;
+  padding: 16px;
+  margin-bottom: 25px;
+}
+.upload-via .bg-pink .div-inner,.upload-answer .bg-pink2 .div-inner{
+  background: #fff;
+  padding: 0 1rem;
+  height: 60px;
+  display: flex;
+  justify-content:space-between;
+  align-items:center;
+  border-radius: 5px;
+}
+.upload-via .bg-pink .div-inner:not(:last-child),.upload-answer .bg-pink2 .div-inner:not(:last-child){
+  margin-bottom: 1.2rem;
+}
+.upload-via .bg-pink .div1,.upload-answer .bg-pink2 .div1{
+  display: flex;
+  align-items: center;
+}
+.upload-via .bg-pink .div1 img,.upload-answer .bg-pink2 .div1 img{
+  max-width: 38px;
+  margin-right: 10px;
+}
+.upload-via .bg-pink .div1 p,.upload-answer .bg-pink2 .div1 p{
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #162C2D;
+}
+.upload-via .bg-pink .div2,.upload-answer .bg-pink2 .div2{
+  display: flex;
+  align-items: center;
+}
+.upload-via .bg-pink .div2,.upload-answer .bg-pink2 .div2{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background-color: #FAEFEF;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+}
+.upload-via .bg-pink .div2 img,.upload-answer .bg-pink2 .div2 img{
+  max-width: 15px;
 }
 
 .upload-via ul li  img {
@@ -2294,57 +2453,20 @@ line-height: 2.2rem;
 .upload-via ul li span img {
   width: 42%;
 }
-
-
-.upload-via li {
-  list-style: none;
-  display: inline-block;
-  width: 100% !important;
-  background: #fff;
-  border-radius: 0.6rem;
-  padding: 14px;
-  margin-bottom: 11px;
+.upload-via .footer {
+  justify-content: center;
+  align-items: baseline;
+  padding: 0 0 28px;
 }
-
-.upload-via li span {
-  background: #faefef;
-  width: 35px;
-  height: 35px;
-  float: right;
-  text-align: center;
-  border-radius: 50%;
-  line-height: 35px;
-  margin-top: 6px;
-}
-.upload-via ddd {
-  margin-left: 10px;
-}
-
-.upload-via h3 {
-  margin-bottom: 30px;
-}
-.upload-via .mfwrap {
-  padding: 50px 50px 50px 50px;
-}
-.upload-via h3 span {
-  background: #e9f7f4;
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
-  margin-right: 10px;
-  border-radius: 50%;
-  font-family: "Font Awesome 5 Free";
-}
-.upload-via h3 span i{
-  font-style: normal;
-}
-.upload-via .mfwrap p{
+.upload-via .footer span {
+  font-size: 14px;
   color: #ADB4B5;
+  margin-right: 8px;
 }
-.upload-via .mfwrap p a{
+.upload-via .footer p {
   color: #162C2D;
-  text-decoration: none;
-  margin-left: 10px;
+  font-size: 14px;
+  font-family: Pop-normal;
 }
 /*  Upload via webcam – 1 css end */
 
@@ -2958,7 +3080,7 @@ textarea {
 .scan-qr .footer p{
   color: #162C2D;
   font-size: 14px;
-  font-family: 'Pop-medium';
+  font-family: Pop-normal;
 }
 /* scan-qr popup end */
 
