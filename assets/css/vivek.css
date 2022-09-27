@@ -235,6 +235,7 @@ header .main_header {
   margin-left: 13px;
   font-size: 13px;
   cursor: pointer;
+  transition: all 0.2s ease;
 }
 .radiodiv{
   margin-left: 1.5rem;
@@ -367,7 +368,30 @@ header .main_header {
   border-radius: 50px;
   position: absolute;
   right: 32px;
-    top: 6px;
+  top: 6px;
+}
+.btnDropdown .custom-select{
+  width: 27%;
+}
+.btnDropdown .custom-select .box{
+  border: none;
+  box-shadow: 0px 0px 7px #b9b9b94d;
+}
+.btnDropdown .custom-select .box p{
+  font-size: 13px;
+}
+.btnDropdown .custom-select .box img {
+  top: 21px;
+  right: 15.5%;
+  max-width: 10px;
+}
+.btnDropdown .custom-select .option{
+  height: 42px;
+  margin: 0;
+}
+.btnDropdown .custom-select .option p{
+  font-size: 13px;
+  margin-bottom: 0;
 }
 .btnDropdown .select-dropdown.select-dropdown--0{
   font-size: 13px !important;
@@ -400,6 +424,7 @@ header .main_header {
 .bgQuestion .pHeight{
   height: 81px;
   overflow: auto;
+  transition: all 0.2s ease;
 }
 
 .chatPopUp .popUp2{

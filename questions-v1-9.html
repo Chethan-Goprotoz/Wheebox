@@ -8,12 +8,21 @@
     <!-- bootstrap css -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" rel="stylesheet"/>
 
+    <!-- loader css -->
+    <link rel="stylesheet" href="assets/css/loader.css" /> 
+    
      <!-- style css -->
      <link rel="stylesheet" href="assets/css/style.css">
      <link rel="stylesheet" href="assets/css/vivek.css" rel="stylesheet" />
 
   </head>
 <body>
+    <!-- loader start-->
+    <div class="loader-container">
+        <div class="loader"></div>
+    </div> <!-- loader end-->
+    
+    <div class="form_overlay"></div>
     
 <div class="section1 pt-3">
     <header>
@@ -48,30 +57,39 @@
                         <div>
                             <h4 class="ms-5 mb-0">CSS3 Animation</h4>
                         </div>
-
                     </div>
-
                     <div class="speedMeter me-3 me-md-5">
-                      
                         <p class="mb-0">  <span> <img src="assets/images/questionaries/meter.svg" width="18" alt=""></span> <span class="text-dark">Aptitude</span> : <span class="text-danger">01:00</span></p>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="d-flex justify-content-between btnDropdown bg-white rounded-lg p-4">
-                    
-                    <select class="w-25 fs-6 border-0 shadow-sm" id="normal-select-1" placeholder-text="Select A">
-                        <option value="1" class="select-dropdown__list-item">Item 1</option>
-                        <option value="2" class="select-dropdown__list-item">Item 2</option>
-                        <option value="3" class="select-dropdown__list-item">Item 3</option>
-                        <option value="4" class="select-dropdown__list-item">Item 4</option>
-                    </select>
+                <div class="d-flex justify-content-between btnDropdown bg-white rounded-lg p-4 form-elem">                   
+                    <div class="custom-select position-relative">
+                        <div class="box">
+                            <p class="m-0">Select A</p>
+                            <img src="assets/images/svg/arrowdown.svg" alt="arrow">
+                        </div>
+                        <div class="option-container">
+                            <div class="option">
+                                <p>Item 1</p>
+                            </div>
+                            <div class="option">
+                               <p>Item 2</p>
+                           </div>
+                           <div class="option">
+                               <p>Item 3 </p>
+                           </div>
+                           <div class="option">
+                            <p>Item 4 </p>
+                        </div>
+                        </div>
+                    </div>
                     <button type="button" class="btn p-3 shadow-sm">View Instruction</button>
                     <button type="button" class="btn p-3 shadow-sm"><img src="assets/images/questionaries/help.svg" width="18" alt=""></button>
                     <button type="button" class="btn p-3 shadow-sm"><img src="assets/images/questionaries/fullscreen.svg" width="18" alt=""></button>
                 </div>
             </div>
-
         </div>
     </section>
 
@@ -87,15 +105,12 @@
                             <div>
                                 <p class="mb-0 mt-2">Multiple Choice (Select 1 out of 4 options, for the question below )</p>
                             </div>
-    
                         </div>
-    
                        <div class="d-flex align-items-center">
                         <div class="btnInce">
                             <button class="btn fontInc shadow-sm1 fw-bold p-3 me-3">A -</button>
                             <button class="btn fontDec shadow-sm1 fw-bold p-3 me-3">A +</button>
                             <button class="btn shadow-sm me-4 p-3 text-success">Flag to review</button>
-                           
                         </div>
                         <div class="box ">
                             <div class="percent">
@@ -107,7 +122,6 @@
                                 <h6 class="mb-0">01:00</h6>
                               </div>
                             </div>
-                            
                         </div>
                        </div>
                     </div>
@@ -257,17 +271,17 @@
                </div>
                <!-- question pannel end -->
             </div>
-
         </div>
     </section>
-
 </div>
 
-<!-- 
+
     <script src="assets/js/jquery-2.2.0.min.js"></script>
-    <script src="assets/js/popper.min.js"></script> -->
+    <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/loader.js"></script>
+    <script src="assets/js/dropdown.js"></script>
+    <script src="assets/js/mcq.js"></script>
     <!-- <script src="assets/js/chart.min.js"></script>
     <script src="assets/js/selecttest.js"></script> -->
 
