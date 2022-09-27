@@ -1,0 +1,124 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>No Test Selection</title>
+
+    <!-- font awesome css -->
+    <link rel="stylesheet" href="assets/font-awesome/all.min.css"/>
+    <link rel="stylesheet" href="assets/font-awesome/fontawesome.css"/>
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" rel="stylesheet"/>
+
+    <!-- loader css -->
+    <link rel="stylesheet" href="assets/css/loader.css">
+
+    <!-- style css -->
+    <link rel="stylesheet" href="assets/sass/app.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- loader start-->
+    <div class="loader-container">
+        <div class="loader"></div>
+    </div>
+    <!-- loader end-->
+
+    <!--selection section start -->
+    <section class="selection">
+      <div class="container-fluid">
+        <div class="main_div">
+          <div class="row">
+            <div class="main_header">
+              <div class="logo">
+                <img src="assets/images/mini-logo.png" alt="mini-logo">
+              </div>
+              <h4>Test Selection</h4>
+              <div class="grid">
+                <div class="grid1">
+                  <h6>Jane Doe</h6>
+                  <p>jane_doe@wheebox.com</p>
+                </div>
+                <div class="grid2">
+                  <div class="profile rounded-circle">
+                    <img src="assets/images/prof-mini.png" alt="profile">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row middle_div gx-1">
+              <h2 class="d-block d-md-none text-center">Test Selection</h2>
+              <div class="col-12 col-md-9 div1">
+                <div class="row">
+                  <div class="col-12 col-md-7 col-lg-8">
+                    <h5>Hi Avinash Sharma</h5>
+                    <p>You have <span>4</span> test to complete. You already completed <span>80%</span> of the daily test. Your progress is <span>very good</span></p>
+                  </div>
+                  <div class="col-12 col-md-5 col-lg-4 position-relative">
+                    <div class="img">
+                      <img src="assets/images/learning.png" alt="learning">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-3 div2">
+                <div class="chart doughnut">
+                  <div class="canvas-container position-relative"> 
+                    <canvas id="myCanvas2"></canvas>
+                    <div class="text-inside position-absolute">
+                      <h4 class="text-center">0</h4>
+                      <p>Total Tests</p>
+                    </div> 
+                  </div>
+                </div>
+                <ul>
+                  <li> <span class="green"></span> Completed Tests</li>
+                  <li> <span class="yellow"></span> Not Started Tests</li>
+                  <li> <span class="red"></span> Expired Tests</li>
+                </ul>
+              </div>
+            </div>
+            <div class="row test_con gx-1">
+              <h3>Your Tests</h3>
+              <div class="d-md-flex justify-content-md-between">
+                <div class="col-12 col-md-7">
+                  <div class="filter-btn">
+                    <button class="btn active">All </button>
+                    <button class="btn">Active</button>
+                    <button class="btn">Completed</button>
+                    <button class="btn">Expired</button>
+                  </div>
+                </div>
+                <div class="col-12 col-md-3 d-md-flex justify-content-md-end">
+                  <input type="search" name="search" placeholder="Search Test" id="search">
+                </div>
+              </div>
+              <div class="row gx-0">
+                <div class="col-12 nothing">
+                  <div class="no-test">
+                    <img src="assets/images/svg/No-data-test.svg" alt="no-data">
+                    <h3>No tests available to display</h3>
+                    <p>All the tests taken by you in the future will appear here. All the best!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- row closed -->
+        </div>
+        <!-- main-div closed -->
+      </div>
+      <!-- container closed -->
+    </section>
+    <!--selection section end -->
+
+    <script src="assets/js/jquery-2.2.0.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/loader.js"></script>
+    <script src="assets/js/chart.min.js"></script>
+    <script src="assets/js/selecttest.js"></script>
+  </body>
+</html>

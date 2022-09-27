@@ -4053,8 +4053,7 @@ span.user-avtar {
     width: 62%;
     left: 10px !important;
   }
-<<<<<<< Updated upstream
-
+  
   /* all popup css start */
   .upload-answer .footer button.mb--7 {
     margin-bottom: 2.5rem;
@@ -4280,102 +4279,4 @@ span.user-avtar {
     max-width: 120px;
   }
   /* all popup css end */
-=======
-}
-
-@media (max-width: 650px) {
-  /*  Upload via webcam  css Start */
-  .modal-content.upload-via-webcam {
-    width: 80%;
-}
-  .upload-via-webcam .mfwrap {
-    padding: 45px 12px;
-}
-.upload-via-webcam ul li.active img {
-  width: 85%;
-}
-.upload-via-webcam span img {
-  margin-right: 0;
-}
-
-.upload-via-webcam ul li {
-  width: 21%;}
-
-.upload-via-webcam ul li.active {
-    border: 0;
-    margin-right: 0;
-}  
-.butn-wrap ul li {
-  width: auto !important;
-}
-.upload-via-webcam ul li{
-  line-height: 90px;
-}
-.text-overlay {
-  width: 84%;
-  left: 8%;
-}
-img.i-icon {
-  top: 12px;
-  left: 41px;
-}
-
-  /*  Upload via webcam  css end */
-/*  Profile3  css Start */
-.main_header .dropdown-menu {
-  width: 78%;
-  left: -34px !important;
-}
-
-.profile-section .main_header h6{
-  margin-right: 10px;
-}
-.profile-section .main_header p{
-  margin-right: 10px !important;
-}
-.main_header .dropdown-menu {
-  left: 2px !important;
-}
-
-/*  Profile3  css end */
-/*  Profile7  css start */
-.modal-body .al_radio {
-  padding: 20px 11px 20px 10px;
-}
-/*  Profile7  css end */
-
-}
-
-@media (max-width: 500px) {
-    /*  Upload via webcam  css Start */
-  .upload-via-webcam ul li {
-    line-height: 71px;
-}
-img.i-icon {
-  top: 16px;
-  left: 32px;
-}
-  /*  Upload via webcam  css end */
-
-/*  Profile7  css start */
-  .modal-body .al_radio{
-    font-size: 12px;
-  }
-/*  Profile7  css end */  
-}
-
-@media (max-width: 360px) {
-  /*  Upload via webcam  css Start */
-.upload-via-webcam ul li {
-  line-height: 47px;
-  min-height: 41px;
-  border-radius: 6px;
-}
-img.i-icon {
-  top: 21px;
-  left: 23px;
-}
-
-  /*  Upload via webcam  css end */
->>>>>>> Stashed changes
 }
