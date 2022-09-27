@@ -4028,6 +4028,10 @@ textarea {
   }
 
   /* all popup css start */
+  .modal-content {
+    width: 91%;
+    margin: auto;
+  }
   .upload-answer .footer button.mb--7 {
     margin-bottom: 2.5rem;
   }
@@ -4049,7 +4053,7 @@ textarea {
     padding: 12px;
   }
   .upload-answer .bg-pink .div1 .prog {
-    width: 73.3%;
+    width: 70.7%;
     height: 3px;
     left: 63px;
   }
@@ -4076,7 +4080,7 @@ textarea {
     margin-bottom: 1.5rem;
   }
   .warning-pop .modal-body {
-    padding: 0rem 5rem 2.5rem;
+    padding: 0rem 4rem 2.5rem;
   }
   .warning-pop .modal-body img, .submit-test .modal-body img {
     max-width: 36px;
