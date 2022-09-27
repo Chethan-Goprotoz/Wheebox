@@ -1984,20 +1984,9 @@ textarea::placeholder {
   background-color: #e8fffa;
 }
 
-/* .form-field input[type="textarea"] {
+.form-field input[type="textarea"] {
   width: 100%;
-  padding: 15px 15px 15px 15px;
-  height: auto;
-  font-size: 14px;
-  border: solid 1px #e0e0e0;
-  border-radius: 6px;
-  outline: 0;
-  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 3%);
-} */
-
-.form-field textarea {
-  width: 100%;
-  padding: 15px 15px 15px 15px;
+  padding: 15px 15px 80px 15px;
   height: auto;
   font-size: 14px;
   border: solid 1px #e0e0e0;
@@ -2132,7 +2121,7 @@ input[type="number"]+img {
 
 /*  Multiple faces css Start */
 .modal-content.multiple-faces {
-  width: 55%;
+  max-width: 600px;
 }
 .modal-content.multiple-faces .modal-body {
   display: flex;
@@ -2172,52 +2161,47 @@ input[type="number"]+img {
 
 
 /*  Documents uploaded css Start */
-.modal-content.uploade-success {
-  width: 48%;
+.uploade-success {
+  max-width: 540px;
 }
-.uploade-success .mfwrap {
-  padding: 50px;
+.uploade-success .modal-header{
+  border-bottom: none;
+  
 }
-.uploade-success ul  {
-  padding-left: 0;
-  margin-top: 1.6rem;
+.uploade-success .modal-body{
+  padding: 1.7rem 4rem 6rem;
 }
-.uploade-success ul li {
-  display: inline-block;
-  list-style: none;
-}
-.uploade-success li img {
-  width: 80%;
-}
-.uploade-success span {
-  margin-top: 5rem !important;
-  display: block;
-}
-
 .uploade-success h4 {
   color: #0A2F2A;
   font-size: 2rem;
-  line-height: 3rem;
+  line-height: 2.8rem;
   font-family: Pop-medium;
-  margin: 38px 0px 18px 0px;
+  margin-bottom: 18px;
+}
+.uploade-success p{
+  font-size: 14px;
+  color: #849694;
+  margin-bottom: 5rem;
 }
 .uploade-success span {
-  margin-top: 5rem !important;
   display: block;
   color: #20776E;
   font-size: 1.4rem;
   line-height: 2.5rem;
 }
-
-.uploade-success button.btn-close {
-  top: 28px !important;
-  right: 36px !important;
+.uploade-success ul  {
+  padding-left: 0;
+  margin-top: 1rem;
 }
-
-.uploade-success .btn-close {
-  box-sizing: content-box;
-  width: 0.8rem;
-  height: 0.8rem
+.uploade-success ul li {
+  display: inline-block;
+  list-style: none;
+  margin-right: 4px;
+}
+.uploade-success li img {
+  max-width: 31px;
+  object-fit: contain;
+  object-position: center;
 }
 
 /*  Documents uploaded css end */
@@ -2482,107 +2466,147 @@ input[type="number"]+img {
 /*  Upload via webcam – 1 css end */
 
 /*  Upload via webcam  css start */
-.upload-via-webcam h3{font-family: Pop-medium;
+.upload-via-webcam{
+  max-width: 650px;
+}
+.upload-via-webcam .modal-header {
+  border-bottom: none;
+  padding: 25px 30px 0px;
+}
+.upload-via-webcam .head-part{
+  margin-bottom: 2.1rem;
+}
+.upload-via-webcam .head-part .bg-lightgreen{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background-color: #E9F7F4;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+.upload-via-webcam .head-part .bg-lightgreen img{
+  max-width: 16px;
+}
+.upload-via-webcam .head-part h4{
+  color: #0A2F2A;
+  font-family: Pop-medium;
+  font-size: 15px;
+  margin-bottom: 0;
+}
+.upload-via-webcam h3{
+  font-family: Pop-medium;
   margin-bottom: 30px;
 }
-.modal-content.upload-via-webcam {
-  width: 70%;
+.upload-via-webcam .modal-body{
+  padding: 0.5rem 10.2rem 3rem;
 }
-.upload-via-webcam img {
-  width: 92%;
+.upload-via-webcam .mycol-9{
+  flex: 0 0 77%;
+  max-width: 77%;
 }
-.upload-via-webcam .mfwrap {
-  padding: 45px 100px;
+.upload-via-webcam .mycol-3{
+  flex: 0 0 23%;
+  max-width: 23%;
 }
-.upload-via-webcam ul {
-  padding-left: 0;
-}
-.upload-via-webcam ul li {
-  list-style: none;
-  min-height: 75px;
-  border: solid 2px #eef8f8;
-  border-radius: 15px;
-  line-height: 91px;
-  width: 98px;
-  margin-bottom: 15px;
-}
-.upload-via-webcam ul li.active {border: 0;}
-.upload-via-webcam ul li span img {
-  width: 30%;
-}
-.upload-via-webcam ul li.active img {
+.upload-via-webcam .main-img{
   width: 100%;
-}
-.upload-via-webcam .left-img-box {
-  text-align: right;
-  
-}
-img.i-icon {
-  width: 4%;
-  position: absolute;
-  top: 14px;
-  left: 50px;
-}
-.upload-via-webcam .image-box {
+  height: 278px;
+  margin-bottom: 1.8rem;
   position: relative;
 }
-
-
-.text-overlay {
+.upload-via-webcam .main-img img.webcam{
+  width: 100%;
+  height: 100%;
+  object-fit: initial;
+  object-position: center;
+}
+.upload-via-webcam .main-img img.info{
   position: absolute;
-  top: 34px;
-  width: 86%;
-  left: 11%;
-  padding: 3%;
-  font-family: Pop-light;
+  top: 13px;
+  left: 4.5%;
+  max-width: 15px;
+  object-fit: contain;
+  object-position: center;
+  cursor: pointer;
+}
+.upload-via-webcam .main-img .img-text{
+  position: absolute;
+  top: 28px;
+  width: 92%;
+  left: 3.95%;
+  background: #F8F8F8;
+  padding: 10px 15px 1px;
+  border-radius: 15px;
+}
+.upload-via-webcam .main-img .img-text p{
   font-size: 12px;
-  background: #f8f8f8;
-  text-align: left;
+  color: #849694;
+  line-height: 1.6;
+}
+.upload-via-webcam .btn-upload{
+  display: flex;
+  justify-content: center;
+}
+.upload-via-webcam .btn-upload button{
+  width: 130px;
+  height: 43px;
+  text-transform: capitalize;
+  letter-spacing: 0.3px;
+  font-size: 1.3rem;
+  color: #fff;
+  border: 1px solid #F6AB39;
   border-radius: 8px;
-  color: #848E90;
+  background-color: #fff;
+  cursor: pointer;
 }
-
-
-
-.butn-wrap ul{text-align: center;  padding-left: revert;
-margin-top: 30px;}
-
-
-.butn-wrap ul li{
-  display: inline-block;
-  width: auto;
-  border: 0;
-  margin: 0px 6px;
-  min-height: auto;
-  line-height: normal;
+.upload-via-webcam .btn-upload button:first-child{
+  color: #F6AB39;
+  border: 1px solid #F6AB39;
+  margin-right: 12px;
 }
- 
- .butn-wrap ul li a {
-  border: solid 1px #f6ab39;
-  padding: 16px 30px;
-  border-radius: 10px;
-  font-size: 14px;
-  color: #f6ab39 !important;
+.upload-via-webcam .btn-upload button:last-child{
+  color: #fff;
+  background-color: #F6AB39;
+  border: none;
 }
-.butn-wrap ul li:last-child a {background:#f6ab39;
-color: #ffffff !important;
+.upload-via-webcam .thumb-img{
+  height: 86px;
+  margin-bottom: 1rem;
+  background-color: #fff;
+  border: 1px solid #E1F3F3;
+  width: 100%;
+  border-radius: 13px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-<<<<<<< Updated upstream
-=======
-.upload-via-webcam .btn-close {
-  font-size: 13px !important;
-  right: 27px !important;
-  top: 18px !important;
+.upload-via-webcam .thumb-img img{
+  width: 100%;
+  height: 100%;
+  border-radius: 13px;
+  object-fit: cover;
+  object-position: center;
 }
-
-.upload-via-webcam abbr img {
-  width: 6.5%;
-  margin-right: 10px;
+.upload-via-webcam .thumb-img.img-border{
+  border: 2px solid #26887C;
 }
-
-
->>>>>>> Stashed changes
+.upload-via-webcam .thumb-img img.tick{
+  position: absolute;
+  right: 7px;
+  top: 7px;
+  max-width: 15px;
+  height: auto;
+  object-fit: contain;
+}
+.upload-via-webcam .thumb-img img.camera{
+  max-width: 19px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 0px;
+}
 /*  Upload via webcam  css end */
 
 /* face detect css start */
@@ -3409,15 +3433,6 @@ textarea {
   }
 
   /*=====  waiting lounge css end ===== */
-/*=====  Profile3 css end ===== */
-  ul.profile-user li {
-    font-size: 9px;
-}
-span.user-avtar {
-  padding: 6px 6px 10px 6px;
-}
-/*=====  Profile3 css end ===== */
-
 }
 
 
@@ -3444,48 +3459,6 @@ span.user-avtar {
     background: #FFFFFF;
   }
 }
-@media (max-width: 991px) {
-  /*  Upload via webcam  css Start */
-
-.text-overlay{  font-size: 9px;}
-.butn-wrap ul li a {
-  padding: 9px 8px;
-  border-radius: 3px;
-  font-size: 12px;
-  color: #f6ab39 !important;
-}
-.upload-via-webcam .left-img-box {
-  text-align: center;
-}
-.upload-via-webcam ul li {
-  display: inline-block;
-  width: 23%;
-  margin: 0px 2%;
-}
-.upload-via-webcam ul{
-  text-align: center;
-  margin-top: 20px;
-}
-.butn-wrap ul li{
-  width: auto;
-}
-.butn-wrap ul {
-  padding-left: initial;
-}
-.text-overlay {
-  width: 90%;
-  left: 5%;
-}
-/*  Upload via webcam  css end */
-/*  Profile3  css Start */
-.profile-user li:first-child:after {
-  bottom: 15px;
-  right: -7px;
-
-}
-/*   Profile3   css end */
-}
-
 
 @media(max-width: 767px) {
 
@@ -4053,7 +4026,7 @@ span.user-avtar {
     width: 62%;
     left: 10px !important;
   }
-  
+
   /* all popup css start */
   .upload-answer .footer button.mb--7 {
     margin-bottom: 2.5rem;
@@ -4130,7 +4103,7 @@ span.user-avtar {
   }
 
   .modal-content.foreign-obj .modal-body img {
-    max-width: 155px;
+    max-width: 135px !important;
   }
   .submit-test .modal-body {
     padding: 0rem 4rem 4rem;
@@ -4157,6 +4130,49 @@ span.user-avtar {
   .modal-content.multiple-faces .modal-body img {
     max-width: 175px;
     height: 100%;
+  }
+  .upload-via-webcam .modal-body {
+    padding: 0.5rem 2.5rem 3rem;
+  }
+  .upload-via-webcam .modal-body .row{
+    --bs-gutter-x: 1rem;
+  }
+  .upload-via-webcam .mycol-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+  .upload-via-webcam .mycol-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .upload-via-webcam .main-img {
+    height: 250px;
+  }
+  .upload-via-webcam .main-img .img-text p {
+    font-size: 11px;
+  }
+  .upload-via-webcam .thumb-img {
+    height: 77px;
+  }
+  .upload-via-webcam .thumb-img img.camera {
+    max-width: 18px;
+  }
+  .upload-via-webcam .thumb-img img.tick {
+    right: 6px;
+    top: 6px;
+    max-width: 14px;
+  }
+  .upload-via-webcam .btn-upload{
+    flex-direction: column;
+    align-items: center;
+  }
+  .upload-via-webcam .btn-upload button {
+    width: 120px;
+    height: 43px;
+  }
+  .upload-via-webcam .btn-upload button:first-child {
+    margin-right: 0px;
+    margin-bottom: 15px;
   }
   .pf_7 .modal-content .modal-header {
     padding: 3.5rem 2.8rem 2.2rem;

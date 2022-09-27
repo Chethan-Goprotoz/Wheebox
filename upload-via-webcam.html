@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Upload via webcam</title> <!-- font awesome css -->
+    <title>Upload via webcam</title> 
+    <!-- font awesome css -->
     <link rel="stylesheet" href="assets/font-awesome/all.min.css" />
     <link rel="stylesheet" href="assets/font-awesome/fontawesome.css" /> 
     
@@ -31,50 +32,42 @@
         aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content upload-via-webcam mx-auto">
-                <div class="modal-header profile-reset-password"> <button type="button" class="btn-close"
+                <div class="modal-header"> <button type="button" class="btn-close"
                         data-bs-dismiss="modal" aria-label="Close"></button> </div>
                 <div class="modal-body">
-                    <section>
-                        <div class="">
-                            <div class="row d-flex align-items-center ">
-                                <div class="col-md-12 col-lg-12 col-xl-12  text-center mfwrap ">
-                                    <h3> <abbr><img src="/assets/images/svg/icon-snapshot.svg"></abbr>Take a snapshot</h3>
-                                    <div class="row">
-                                    <div class="col-md-12 col-lg-9 left-img-box">
-                                        
-                                        <div class="image-box">
-                                        <img src="assets/images/i.png" class="i-icon">
-                                        <img src="assets/images/upload-via-webcam.png">
-                                        <div class="text-overlay">
-                                            Hold your answer sheet to the camera and click a snapshot. Retake image if you are not satisfied with the output. Upload maximum 3 images.
-                                        </div>
-                                    </div>
-                                   
-                                    </div>
-                                    <div class="col-md-12 col-lg-3">
-                                        <ul>
-                                            <li class="active"><img src="assets/images/upload-via-webcam-small.png"></li>
-                                            <li><span><img src="assets/images/web-cam-icon.png"></span></li>
-                                            <li><span><img src="assets/images/web-cam-icon.png"></span></li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-md-12 col-lg-9  ">
-                                    <div class="butn-wrap">
-                                        <ul>
-                                            <li><a>Retake Image</a></li>
-                                            <li><a>Take Image</a></li>
-                                        </ul>
-                                    </div>
+                    <div class="head-part d-flex justify-content-center align-items-center">
+                        <div class="bg-lightgreen">
+                            <img src="assets/images/svg/webcam-icon.svg" alt="webcam">
+                        </div>
+                        <h4>Take a snapshot</h4>
+                    </div>
+                    <div class="row">
+                        <div class="mycol-9">
+                            <div class="main-img">
+                                <img src="assets/images/upload-via-webcam.png" class="webcam" alt="webcam">
+                                <img src="assets/images/svg/info-icon.svg" class="info" alt="info">
+                                <div class="img-text">
+                                    <p>Hold your answer sheet to the camera and click a snapshot, Retake image if you are not satisfied with the output. Upload maximum 3 images.</p>
                                 </div>
-
-                                <div class="col-md-12 col-lg-3"></div>
-
-                                    </div>
-                                </div>
-                               
+                            </div>
+                            <div class="btn-upload">
+                                <button class="btn">Retake Image</button>
+                                <button class="btn">Take Image</button>
                             </div>
                         </div>
-                    </section>
+                        <div class="mycol-3">
+                            <div class="thumb-img img-border">
+                                <img src="assets/images/upload-webcam-sm.png" alt="webcam">
+                                <img src="assets/images/svg/tick-sm.svg" class="tick" alt="tick">
+                            </div>
+                            <div class="thumb-img">
+                                <img src="assets/images/svg/camera.svg" class="camera" alt="photo">
+                            </div>
+                            <div class="thumb-img">
+                                <img src="assets/images/svg/camera.svg" class="camera" alt="photo">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -84,6 +77,7 @@
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/loader.js"></script>
+    
     <script type="text/javascript">
         $(window).on('load', function () {
           $('#exampleModal').modal('show');
