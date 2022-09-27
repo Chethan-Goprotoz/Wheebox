@@ -4076,11 +4076,14 @@ textarea {
     margin-bottom: 1.5rem;
   }
   .warning-pop .modal-body {
-    padding: 1rem 5rem 4rem;
+    padding: 0rem 5rem 2rem;
   }
   .warning-pop .modal-body img, .submit-test .modal-body img {
-    max-width: 42px;
-    margin-bottom: 2.1rem;
+    max-width: 36px;
+    margin-bottom: 1.5rem;
+  }
+  .warning-pop .modal-body h4 {
+    margin-bottom: 1.2rem;
   }
   .upload-via .modal-body {
     padding: 0 2rem;
