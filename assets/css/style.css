@@ -1984,9 +1984,20 @@ textarea::placeholder {
   background-color: #e8fffa;
 }
 
-.form-field input[type="textarea"] {
+/* .form-field input[type="textarea"] {
   width: 100%;
-  padding: 15px 15px 80px 15px;
+  padding: 15px 15px 15px 15px;
+  height: auto;
+  font-size: 14px;
+  border: solid 1px #e0e0e0;
+  border-radius: 6px;
+  outline: 0;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 3%);
+} */
+
+.form-field textarea {
+  width: 100%;
+  padding: 15px 15px 15px 15px;
   height: auto;
   font-size: 14px;
   border: solid 1px #e0e0e0;
@@ -2481,7 +2492,7 @@ input[type="number"]+img {
   width: 92%;
 }
 .upload-via-webcam .mfwrap {
-  padding: 30px 100px;
+  padding: 45px 100px;
 }
 .upload-via-webcam ul {
   padding-left: 0;
@@ -2557,6 +2568,21 @@ margin-top: 30px;}
 color: #ffffff !important;
 }
 
+<<<<<<< Updated upstream
+=======
+.upload-via-webcam .btn-close {
+  font-size: 13px !important;
+  right: 27px !important;
+  top: 18px !important;
+}
+
+.upload-via-webcam abbr img {
+  width: 6.5%;
+  margin-right: 10px;
+}
+
+
+>>>>>>> Stashed changes
 /*  Upload via webcam  css end */
 
 /* face detect css start */
@@ -3383,6 +3409,15 @@ textarea {
   }
 
   /*=====  waiting lounge css end ===== */
+/*=====  Profile3 css end ===== */
+  ul.profile-user li {
+    font-size: 9px;
+}
+span.user-avtar {
+  padding: 6px 6px 10px 6px;
+}
+/*=====  Profile3 css end ===== */
+
 }
 
 
@@ -3410,6 +3445,8 @@ textarea {
   }
 }
 @media (max-width: 991px) {
+  /*  Upload via webcam  css Start */
+
 .text-overlay{  font-size: 9px;}
 .butn-wrap ul li a {
   padding: 9px 8px;
@@ -3439,6 +3476,14 @@ textarea {
   width: 90%;
   left: 5%;
 }
+/*  Upload via webcam  css end */
+/*  Profile3  css Start */
+.profile-user li:first-child:after {
+  bottom: 15px;
+  right: -7px;
+
+}
+/*   Profile3   css end */
 }
 
 
@@ -4008,6 +4053,7 @@ textarea {
     width: 62%;
     left: 10px !important;
   }
+<<<<<<< Updated upstream
 
   /* all popup css start */
   .upload-answer .footer button.mb--7 {
@@ -4234,4 +4280,102 @@ textarea {
     max-width: 120px;
   }
   /* all popup css end */
+=======
+}
+
+@media (max-width: 650px) {
+  /*  Upload via webcam  css Start */
+  .modal-content.upload-via-webcam {
+    width: 80%;
+}
+  .upload-via-webcam .mfwrap {
+    padding: 45px 12px;
+}
+.upload-via-webcam ul li.active img {
+  width: 85%;
+}
+.upload-via-webcam span img {
+  margin-right: 0;
+}
+
+.upload-via-webcam ul li {
+  width: 21%;}
+
+.upload-via-webcam ul li.active {
+    border: 0;
+    margin-right: 0;
+}  
+.butn-wrap ul li {
+  width: auto !important;
+}
+.upload-via-webcam ul li{
+  line-height: 90px;
+}
+.text-overlay {
+  width: 84%;
+  left: 8%;
+}
+img.i-icon {
+  top: 12px;
+  left: 41px;
+}
+
+  /*  Upload via webcam  css end */
+/*  Profile3  css Start */
+.main_header .dropdown-menu {
+  width: 78%;
+  left: -34px !important;
+}
+
+.profile-section .main_header h6{
+  margin-right: 10px;
+}
+.profile-section .main_header p{
+  margin-right: 10px !important;
+}
+.main_header .dropdown-menu {
+  left: 2px !important;
+}
+
+/*  Profile3  css end */
+/*  Profile7  css start */
+.modal-body .al_radio {
+  padding: 20px 11px 20px 10px;
+}
+/*  Profile7  css end */
+
+}
+
+@media (max-width: 500px) {
+    /*  Upload via webcam  css Start */
+  .upload-via-webcam ul li {
+    line-height: 71px;
+}
+img.i-icon {
+  top: 16px;
+  left: 32px;
+}
+  /*  Upload via webcam  css end */
+
+/*  Profile7  css start */
+  .modal-body .al_radio{
+    font-size: 12px;
+  }
+/*  Profile7  css end */  
+}
+
+@media (max-width: 360px) {
+  /*  Upload via webcam  css Start */
+.upload-via-webcam ul li {
+  line-height: 47px;
+  min-height: 41px;
+  border-radius: 6px;
+}
+img.i-icon {
+  top: 21px;
+  left: 23px;
+}
+
+  /*  Upload via webcam  css end */
+>>>>>>> Stashed changes
 }
