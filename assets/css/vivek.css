@@ -832,6 +832,7 @@ textarea:focus{
 
 header .main_header{
   margin-bottom: 1.5rem;
+  height: 6.5rem;
 }
 .quePannel .p-4 .ps-2.pe-2{
   display: none;
