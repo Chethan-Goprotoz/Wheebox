@@ -880,6 +880,9 @@ header .main_header{
 .selectSecDispaly{
   display: none;
 }
+.selectSecDispaly.active{
+  display: block;
+}
 
 .crossgreen{
   display: none;
