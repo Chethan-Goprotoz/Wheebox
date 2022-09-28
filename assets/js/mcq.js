@@ -1,3 +1,4 @@
+//increment and decrement font size
 (()=>{
   const inc_font = document.querySelector('.btnInce .fontDec'),
   dec_font = document.querySelector('.btnInce .fontInc'),
@@ -27,6 +28,7 @@
 
 })();
 
+//show/hide question panel
 (()=>{
   const dot = document.querySelector('.dotgreen1'),
   mcq_panel = document.querySelector('.quePannelDisplay'),
