@@ -946,6 +946,9 @@ header .main_header{
 .shadow-v18{
   box-shadow: none;
 }
+.mcqSec .mx-auto.row.bg-white.quesSec.rounded-topZero{
+  border-radius: 0px 0px !important;
+}
 
 
 }
