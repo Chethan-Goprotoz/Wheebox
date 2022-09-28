@@ -110,6 +110,9 @@ header .main_header {
   .btnInce button:last-child{
     border: 1px solid #22A27C;
   }
+  .btnInce .flag{
+    border: 1px solid #22A27C;
+  }
 
   .btnInce .shadow-sm1{
     box-shadow: 0 .125rem .25rem rgba(127, 182, 128, 0.637)!important;
@@ -657,7 +660,7 @@ textarea:focus{
 }
 
 
-@media (max-width:600px){
+@media (max-width:767px){
 
   .section1{
     padding: 1rem;
@@ -710,9 +713,6 @@ textarea:focus{
   transform: none !important;
 }
 
-.selectSec{
-  display: none;
-}
 .questionIntro h4{
   display: none;
 }
@@ -722,7 +722,8 @@ textarea:focus{
 
 .questionIntro p{
   line-height: 22px;
-  font-size: 13px;
+  font-family:  Pop-semibold;
+  font-size: 16px;
 }
 
 /* .footerBtn{
@@ -767,8 +768,140 @@ textarea:focus{
 .form-check-input{
   border: 1px solid #20776E;
 }
+.speedMeter span img{
+  display: none;
+}
+
+.queNum{
+  top: 11px;
+  position: absolute;
+}
+.queNum h4{
+  margin-bottom: 0;
+}
+.queNum h4 span:last-child{
+  margin-left: 10px;
+  color: #F8B953;
+  font-family: Pop-semibold;
+}
+.bgQuestion{
+  margin-bottom: 0;
+  padding-top:3.5rem !important;
+}
+.bgQuestion p{
+  height: 161px;
+}
+.radiodiv{
+  margin-top: 1.5rem !important;
+}
+
+.quesSec .row.mt-4.mt-md-5.pb-4.mb-4.gx-5{
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+.btnNP{
+  display: none !important;
+}
+
+.footerBtn .endTest{
+  display: none;
+}
+.footerBtn .form-check-labe{
+  font-size: 13px;
+}
+
+.btnTest .form-check-input[type="checkbox"] {
+  width: 2em;
+  height: 2em;
+}
+
+.footerBtn{
+  padding-top: 0px !important;
+  margin-bottom: 0 !important;
+}
+
+.mcqSec .row.mt-5.gx-5{
+  margin-top: 0rem !important;
+  flex-direction: column-reverse;
+}
+
+.quePannel{
+  border-radius: 0 0 15px 15px;
+  margin-bottom: 1.5rem;
+}
+
+header .main_header{
+  margin-bottom: 1.5rem;
+}
+.quePannel .p-4 .ps-2.pe-2{
+  display: none;
+}
+.chatWindow.mt-4{
+  display: none;
+}
+.selectSec .btnDropdown{
+  border-radius: 15px 15px 0 0 !important;
+  padding-bottom: 2px !important;
+}
+
+.btnDropdown .select-dropdown__button.select-dropdown__button--0 {
+  padding: 1rem;
+  box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+  border:1px solid #22A27CD1;
+  color: #22A27CD1;
+  font-weight: bold;
+  background: #ECFFF9;
+}
+.btnDropdown button:nth-child(2){
+  border:1px solid #22A27CD1;
+  font-size: 15px;
+  font-weight: bold;
+  color: #22A27CD1;
+}
+.btnDropdown button.fullScn{
+  display: none !important;
+}
+.btnDropdown button{
+  border:1px solid #22A27CD1;
+}
+.btnDropdown .helpText{
+  color: #22A27CD1;
+  font-size: 15px;
+  margin-left: 5px;
+  font-weight: bold;
+}
+.quePannel .p-4{
+  padding: 0px 10px 10px 10px !important;
+}
+
+/* .selectSec,.quePannel{
+  display: none;
+} */
+.selectSecDispaly{
+  display: none;
+}
+
+.quePannelDisplay{
+  display: none;
+}
 
 
+.mcqSec .quesSec{
+  margin-top: 1.5rem;
+}
+/* .crossgreen{
+  display: none;
+}
+.dotgreen{
+  display: block;
+} */
+
+/* .dotgreen1{
+  display: block;
+}
+.crossgreen1{
+  display: block;
+} */
 
 }
 
