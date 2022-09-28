@@ -38,9 +38,11 @@
   const sliderrow = document.querySelector('.system-div .row.no-wrap'),
   stepper = document.querySelectorAll('.system-div .stepper');
 
-  stepper.forEach((elem,ind)=>{
-    if(elem.querySelector('.progress2.active')){
-      sliderrow.style.transform = "translateX(" + (ind * -53) + "%)";
-    }
+  window.addEventListener('load', (e)=>{
+    stepper.forEach((elem,ind)=>{
+      if(elem.querySelector('.progress2.active') && e.target.scrollingElement.clientWidth < 768){
+        sliderrow.style.transform = "translateX(" + (ind * -53) + "%)";
+      }
+    })
   })
 })();
