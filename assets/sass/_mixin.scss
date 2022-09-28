@@ -291,11 +291,50 @@ $btn-gray: #919D9B;
       }
     }
     .grid2{
+      position: relative;
       .profile{
         display: flex;
         justify-content: center;
         img{
           width: 65%;
+          cursor: pointer;
+        }
+      }
+      .dropdown{
+        position: absolute;
+        top: 57px;
+        right: 0;
+        z-index: 20;
+        max-width: 250px;
+        height: auto;
+        border-radius: 15px;
+        background-color: #fff;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.08);
+        display: none;
+        transition: all 0.2s ease;
+        ul{
+          padding: 0;
+          margin: 0;
+          list-style-type: none;
+          li{
+            display: flex;
+            padding: 1rem 1.6rem;
+            &:not(:last-child){
+              border-bottom: 1px solid #ededed;
+            }
+            a{
+              text-decoration: none;
+              font-family: Pop-normal;
+              color: #0A2F2A;
+              opacity: 0.9;
+              font-size: 13px;
+              margin: 0;
+              padding: 0;
+            }
+          }
+        }
+        &.active{
+          display: block;
         }
       }
     }
@@ -313,17 +352,18 @@ $btn-gray: #919D9B;
     }
     h4{
       font-size: 1.6rem;
-      transform: translateX(79%);
+      transform: translateX(10%);
       text-align: center;
-      display: none;
+      display: block;
     }
     .grid{
-      grid-template-columns: 69% 29%;
+      grid-template-columns: 100% 0%;
       transform: translateX(6px);
       grid-gap: 1px;
       .grid1{
         align-items: flex-end;
         transform: translateX(2px);
+        display: none;
         h6{
           font-size: 1.3rem;
           line-height: 2rem;
@@ -336,6 +376,9 @@ $btn-gray: #919D9B;
       .grid2{
         .profile{
           justify-content: center;
+        }
+        .dropdown{
+          top: 50px;
         }
       }
     }

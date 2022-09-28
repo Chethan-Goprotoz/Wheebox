@@ -45,6 +45,13 @@
                 <div class="profile rounded-circle">
                   <img src="assets/images/prof-mini.png" alt="profile">
                 </div>
+                <div class="dropdown">
+                  <ul>
+                    <li><a href="javascript:void(0)">Jane Doe</a></li>
+                    <li><a href="javascript:void(0)">jane_doe@wheebox.com</a></li>
+                    <li><a href="">Logout</a></li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
@@ -57,7 +64,6 @@
                 </ul>
               </div>
             </div>
-            <h2 class="d-block d-md-none text-center h2-head-mob">System Diagnosis</h2>
             <div class="col-12 mycol-md-9">
               <div class="upload-main">
                 <div class="middle-photo">
@@ -69,10 +75,28 @@
                   </div>
                 </div>
                 <div class="d-block d-md-none mycol-md-3">
-                  <div class="sidebar">
+                  <div class="sidebar sidebar_mob">
                     <ul>
-                      <li> <img src="assets/images/noun-medical-diagnosis.png" alt="medical">1. System Diagnosis</li>
-                      <li class="active"> <img src="assets/images/svg/noun-upload.svg" alt="upload"> 2. Upload Photographs</li>
+                      <li>
+                        <div class="grid">
+                          <div class="grid1">
+                            <img src="assets/images/noun-medical-diagnosis.png" alt="medical">
+                          </div>
+                          <div class="grid2">
+                            1. System Diagnosis
+                          </div>
+                        </div> 
+                      </li>
+                      <li class="active"> 
+                        <div class="grid">
+                          <div class="grid1">
+                            <img src="assets/images/svg/noun-upload.svg" alt="upload">
+                          </div>
+                          <div class="grid2">
+                            2. Upload Photographs
+                          </div>
+                        </div>
+                      </li>  
                     </ul>
                   </div>
                 </div>
@@ -139,6 +163,10 @@
                         <img src="assets/images/svg/tick-sm.svg" class="tick" alt="tick">
                       </div>
                     </div>
+                    <div class="btn-div-mob d-block d-md-none d-flex justify-content-center">
+                      <button class="btn me-4">Retake Image</button>
+                      <button class="btn">Proceed to ID Photo</button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -154,5 +182,6 @@
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/loader.js"></script>
+    <script src="assets/js/system.js"></script>
   </body>
 </html>

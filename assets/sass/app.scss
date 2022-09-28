@@ -60,6 +60,16 @@ h5 {
   }
 }
 
+@keyframes fadeUp {
+  0% {
+    margin-top: 8px;
+  }
+
+  100% {
+    margin-top: 0px;
+  }
+}
+
 @keyframes loading {
   to {
     transform: rotate(1turn);
@@ -2080,7 +2090,7 @@ h5 {
       }
     }
     .sidebar_mob{
-      height: 12vh;
+      height: 18vh;
       justify-content: center;
       align-items: center;
       ul{
@@ -2088,9 +2098,17 @@ h5 {
         display: flex;
         margin: 0;
         li{
-          padding: 1rem;
-          margin-bottom: 1.8rem;
+          margin-bottom: 3rem;
           text-align: center;
+          padding: 1rem 1.5rem;
+          .grid{
+            display: grid;
+            grid-template-columns: 21% 79%;
+            text-align: start;
+            .grid1{
+              display: flex;
+            }
+          }
         }
       }
     }
@@ -2130,14 +2148,21 @@ h5 {
       width: 100%;
       >.row.no-wrap{
         flex-wrap: nowrap;
+        transform: translateX(0%);
+        .col-12{
+          width: 53%;
+        }
       }
       .overflow-control{
         overflow-x: scroll;
+        overflow-y: hidden;
       }
       .stepper{
         margin-top: 1rem;
+        width: 25%;
         &:not(:last-child) div::after{
-          transform: translateX(54.8%);
+          transform: translateX(79.8%);
+          width: 40px;
         }
       }
       .stepper-card{
@@ -2223,6 +2248,7 @@ h5 {
             }
           }
           .btn-div{
+            display: none !important;
             button:first-child{
               width: 129px;
               height: 45px;
@@ -2242,8 +2268,33 @@ h5 {
             font-size: 1.5rem;
           }
           .img{
+            height: 117px;
             img{
               width: 100%;
+            }
+          }
+        }
+        .btn-div-mob{
+          margin-top: 2.8rem;
+          button{
+            text-transform: capitalize;
+            letter-spacing: 0px;
+            font-size: 1.4rem;
+            border-radius: 6px;
+            cursor: pointer;  
+            &:first-child{
+              width: 123px;
+              height: 45px;
+              border: 1px solid #F6AB39;
+              background-color: #fff;
+              color: #F6AB39;
+            }
+            &:last-child{
+              width: 167px;
+              height: 45px;
+              border: none;
+              background-color: #F6AB39;
+              color: #fff;
             }
           }
         }
