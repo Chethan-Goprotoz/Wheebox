@@ -29,7 +29,7 @@
 
 (()=>{
   const dot = document.querySelector('.dotgreen1'),
-  mcq_panel = document.querySelector('.bgQuestion'),
+  mcq_panel = document.querySelector('.quePannelDisplay'),
   cross = document.querySelector('.crossgreen1');
 
   dot.addEventListener('click',()=>{

@@ -194,9 +194,6 @@ header .main_header {
   display: none;
   transition: all 0.3s ease;
 }
-.bgQuestion.active{
-  display: block;
-}
 .bgQuestion p{
   height: 250px;
   overflow-y: scroll;
@@ -662,9 +659,6 @@ textarea:focus{
 .inputArea input::placeholder{
   font-size: 12px;
 }
-.dotgreen{
-  display: none;
-}
 
 
 @media (max-width:767px){
@@ -888,8 +882,15 @@ header .main_header{
   display: none;
 }
 
+.crossgreen{
+  display: none;
+}
+
 .quePannelDisplay{
   display: none;
+}
+.quePannelDisplay.active{
+  display: block;
 }
 
 
