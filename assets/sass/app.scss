@@ -1255,6 +1255,7 @@ h5 {
         display: flex;
         justify-content: center;
         align-items: flex-end;
+        text-align: center;
 
         img {
           width: 160px;
@@ -1772,6 +1773,10 @@ h5 {
 
 // responsive css for mobile
 @media(max-width: 767px) {
+  h2.h2-head-mob{
+    font-family: 'Pop-medium';
+    margin-bottom: 1rem;
+  }
   .reg_form {
     background-color: #EFF7F6;
     align-items: flex-start;
@@ -2069,6 +2074,21 @@ h5 {
         width: 66%;
         li{
           padding: 1.3rem 1rem;
+          margin-bottom: 1rem;
+          text-align: center;
+        }
+      }
+    }
+    .sidebar_mob{
+      height: 12vh;
+      justify-content: center;
+      align-items: center;
+      ul{
+        width: 100%;
+        display: flex;
+        margin: 0;
+        li{
+          padding: 1rem;
           margin-bottom: 1.8rem;
           text-align: center;
         }
@@ -2077,11 +2097,13 @@ h5 {
     .middle{
       .middle_div1{
         width: 100%;
-        padding: 10rem 2rem 2.35rem;
+        padding: 1.5rem 2rem 1rem;
+        margin: 0 0 1rem;
         .img{
           max-width: 200px;
           left: 40%;
           top: -41px;
+          display: none;
         }
         h2{
           width: 100%;
@@ -2092,25 +2114,30 @@ h5 {
       }
       .middle_div2{
         width: 100%;
-        margin: 0.5rem 0 0 0%;
+        margin: 0rem 0 0 0%;
         .row{
           >.col-12{
             margin-bottom: 2rem;
           }
         }
         img{
+          height: 145px;
           margin-bottom: 1.1rem;
         }
       }
     }
     .system-div{
       width: 100%;
+      >.row.no-wrap{
+        flex-wrap: nowrap;
+      }
+      .overflow-control{
+        overflow-x: scroll;
+      }
       .stepper{
+        margin-top: 1rem;
         &:not(:last-child) div::after{
-          transform: translateX(60%);
-        }
-        &:nth-child(2) div::after{
-          display: none !important;
+          transform: translateX(54.8%);
         }
       }
       .stepper-card{
@@ -2127,13 +2154,15 @@ h5 {
     .upload-main{
       .middle-photo{
         width: 100%;
-        padding: 11.2rem 6rem 0.6rem;
+        padding: 1.5rem 1.6rem 0.8rem;
+        text-align: center;
         .img{
           max-width: 200px;
           left: 22%;
           top: -20px;
+          display: none;
         }
-        h2{
+        h3{
           width: 100%;
           line-height: 1.8;
           word-spacing: 0.15rem;
@@ -2143,7 +2172,7 @@ h5 {
       }
       .upload-photo{
         width: 100%;
-        margin: 3rem 0 0 0%;
+        margin: 1rem 0 0 0%;
         .upload1{
           flex: 0 0 100%;
           max-width: 100%;
@@ -2156,8 +2185,9 @@ h5 {
             margin-bottom: 1.1rem;
             display: flex;
             justify-content: center;
+            height: 130px;
             img{
-              width: 50%;
+              width: 40%;
             }
           }
           .regcon1{
@@ -2169,12 +2199,21 @@ h5 {
           max-width: 100%;
           margin-bottom: 4rem;
           .img{
+            height: 183px;
             img{
               width: 100%;
+              object-fit: contain;
             }
             .desc{
-              width: 80%;
-              transform: translate(12.6%, -110%);
+              width: 86.6%;
+              transform: translate(7.6%, -104%);
+              padding: 7px 10px;
+              img{
+                height: 62px;
+              }
+              p{
+                line-height: 1.4;
+              }
             }
           }
           .check{
