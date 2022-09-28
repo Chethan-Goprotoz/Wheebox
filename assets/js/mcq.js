@@ -26,3 +26,25 @@
   })
 
 })();
+
+(()=>{
+  const dot = document.querySelector('.dotgreen1'),
+  mcq_panel = document.querySelector('.bgQuestion'),
+  cross = document.querySelector('.crossgreen1');
+
+  dot.addEventListener('click',()=>{
+    if(!mcq_panel.classList.contains('active')){
+      mcq_panel.classList.add('active');
+      dot.style.display = 'none';
+      cross.style.display = 'block';
+    }
+  })
+
+  cross.addEventListener('click',()=>{
+    if(mcq_panel.classList.contains('active')){
+      mcq_panel.classList.remove('active');
+      cross.style.display = 'none';
+      dot.style.display = 'block';
+    }
+  })
+})();
