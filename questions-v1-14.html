@@ -46,28 +46,31 @@
     </header>
 
     <section>
-        <div class="row  gx-5">
-            <div class="col-md-8">
+        <div class="row gx-0 gx-md-5">
+            <div class="col-10 col-md-8 pe-3 pe-md-4">
                 <div class="d-flex justify-content-between align-items-center bg-white rounded-lg">
                     <div class="ps-3 ps-md-5 pt-4 pb-4">
                         <div class="d-flex">
-                           <a href=""> <span class="me-3 pe-1"><img src="assets/images/questionaries/nex-2.png" width="18" alt=""></span></a>
+                           <a href=""> <span class="me-3 pe-1 d-none d-md-block"><img src="assets/images/questionaries/nex-2.png" width="18" alt=""></span></a>
                             <h4 class="text-dark fw-bold">HTML Demo Test</h4>
                         </div>
                         <div>
-                            <h4 class="ms-5 mb-0">CSS3 Animation</h4>
+                            <h4 class="ms-0 ms-md-5 mb-0">CSS3 Animation</h4>
                         </div>
-
                     </div>
-
-                    <div class="speedMeter me-3 me-md-5">
-                      
+                    <div class="speedMeter me-3 me-md-5">  
                         <p class="mb-0">  <span> <img src="assets/images/questionaries/meter.svg" width="18" alt=""></span> <span class="text-dark">Aptitude</span> : <span class="text-danger">01:00</span></p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="d-flex justify-content-between btnDropdown bg-white rounded-lg p-4 form-elem">        
+            <div class="col-2 mb-4 d-md-none">
+                <div class="bg-white rounded-lg text-center h-100 d-flex align-items-center justify-content-center">
+                    <a href="javascript:void(0)"><img src="assets/images/questionaries/green-dot.svg" class="dotgreen dotgreen1" alt="dot"></a>
+                    <a href="javascript:void(0)"><img src="assets/images/questionaries/cross-toggle.svg" class="crossgreen crossgreen1" alt="cross"></a>
+                </div>
+            </div>
+            <div class="col-md-4 selectSec selectSecDispaly">
+                <div class="d-flex justify-content-between btnDropdown bg-white rounded-lg p-4 form-elem">
                     <div class="custom-select position-relative">
                         <div class="box">
                             <p class="m-0">Select A</p>
@@ -89,8 +92,8 @@
                         </div>
                     </div>
                     <button type="button" class="btn p-3 shadow-sm">View Instruction</button>
-                    <button type="button" class="btn p-3 shadow-sm"><img src="assets/images/questionaries/help.svg" width="18" alt=""></button>
-                    <button type="button" class="btn p-3 shadow-sm"><img src="assets/images/questionaries/fullscreen.svg" width="18" alt=""></button>
+                    <button type="button" class="btn p-3 shadow-sm"><img src="assets/images/questionaries/help.svg" width="18" alt=""> <span class="helpText d-md-none">Help</span></button>
+                    <button type="button" class="btn p-3 shadow-sm fullScn"><img src="assets/images/questionaries/fullscreen.svg" width="18" alt=""></button>
                 </div>
             </div>
 
@@ -98,9 +101,9 @@
     </section>
 
     <section>
-        <div class="row mt-5 gx-5">
+        <div class="row mt-0 mt-md-5 gx-5">
             <div class="col-md-12">
-                <div class="bg-white quesSec p-4 p-md-5 rounded-xl rounded-bottom">
+                <div class="bg-white quesSec p-4 p-md-5 rounded-xl rounded-bottom ">
                     <div class="offset-md-2 col-md-8 ">
                     <div class="d-flex justify-content-between flexsm">
                         <div class=" questionIntro">
@@ -113,28 +116,28 @@
     
                         </div>
     
-                       <div class="d-flex align-items-center">
-                        <div class="btnInce">
-                            <button class="btn fontInc shadow-sm1 fw-bold p-3 me-3">A -</button>
-                            <button class="btn fontDec shadow-sm1 fw-bold p-3 me-3">A +</button>
-                            <button class="btn shadow-sm me-4 p-3 text-success">Flag to review</button>
-                           
-                        </div>
-                        <div class="box ">
-                            <div class="percent">
-                              <svg>
-                                <circle cx="70" cy="70" r="30"></circle>
-                                <circle cx="70" cy="70" r="30"></circle>
-                              </svg>
-                              <div class="num">
-                                <h6 class="mb-0">01:00</h6>
-                              </div>
+                        <div class="d-flex align-items-center">
+                            <div class="btnInce">
+                                <button class="btn fontInc shadow-sm1 fw-bold p-3 me-3">A -</button>
+                                <button class="btn fontDec shadow-sm1 fw-bold p-3 me-3">A +</button>
+                                <button class="btn shadow-sm flag me-4 p-3 text-success">Flag to review</button>
+                                <button type="button" class="btn d-md-none endTest2">End Test</button>
                             </div>
-                            
+                            <div class="box ">
+                                <div class="percent">
+                                  <svg>
+                                    <circle cx="70" cy="70" r="30"></circle>
+                                    <circle cx="70" cy="70" r="30"></circle>
+                                  </svg>
+                                  <div class="num">
+                                    <h6 class="mb-0">01:00</h6>
+                                  </div>
+                                </div>
+                                
+                            </div>
                         </div>
-                       </div>
                     </div>
-                    <div class="row mt-5 pb-4 mb-4 gx-5">
+                    <div class="row mt-5 pb-4 mb-0 mb-md-4 gx-5">
                         <div class="col-md-6 border-end">
                             <div class="bgQuestion p-5 border-end rounded-lg">
                                 <p class="pe-2 mb-0">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy 
@@ -147,6 +150,9 @@
                                     
                                     <div class="bgSpeaker">
                                         <img class="speaker" src="assets/images/questionaries/speaker.svg" width="28" alt="mute">
+                                    </div>
+                                    <div class="d-md-none d-block queNum">
+                                        <h4 class="fw-bold">Questions <span class="fw-bold ms-3">12/30</span> <span>00:48</span></h4>
                                     </div>
                             </div>
                         </div>
@@ -181,19 +187,18 @@
                     </div>
                 </div>
                 <div class="footerBtn ps-4 ps-md-5 pe-4 pe-md-5 pt-4 pb-4 bg-light rounded-xl rounded-top">
-                    <div class="offset-md-2 col-md-8">
-                        <div class="d-flex justify-content-between">
-                            <div class="btnNP">
-                                <button type="button" class="btn btnNxt me-4"><img src="assets/images/questionaries/prev.png" class="me-3" alt=""> Previous Question</button>
-                                <button type="button" class="btn btnPrev">Next Question <img src="assets/images/questionaries/nex-1.png" class="ms-3" alt=""></button>
+                    <div class="d-flex justify-content-between">
+                        <div class="btnNP">
+                            <button type="button" class="btn btnNxt me-4"><img src="assets/images/questionaries/prev.png" class="me-3" alt=""> Previous Question</button>
+                            <button type="button" class="btn btnPrev">Next Question <img src="assets/images/questionaries/nex-1.png" class="ms-3" alt=""></button>
+                        </div>
+                        <div class="btnTest">
+                            <div class="form-check form-check-inline">                            
+                                <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineCheck1" value="option1">
+                                <label class="form-check-labe" for="inlineCheck1">Auto next the questions</label>
                             </div>
-                            <div class="btnTest">
-                                <div class="form-check form-check-inline">                            
-                                    <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineCheck1" value="option1">
-                                    <label class="form-check-labe" for="inlineCheck1">Auto next the questions</label>
-                                </div>
-                                <button type="button" class="btn endTest">End Test</button>
-                            </div>
+                            <button type="button" class="btn endTest">End Test</button>
+                            <div class="d-md-none"><button type="button" class="btn"><img src="assets/images/questionaries/prev-yellow.svg" alt=""></button> <button type="button" class="btn"><img src="assets/images/questionaries/nex-yeelow.svg" alt=""></button> </div>
                         </div>
                     </div>
                 </div>

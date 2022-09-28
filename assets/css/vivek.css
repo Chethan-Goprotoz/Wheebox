@@ -384,7 +384,7 @@ header .main_header {
   font-size: 13px;
 }
 .btnDropdown .custom-select .box img {
-  top: 21px;
+  top: 18px;
   right: 15.5%;
   max-width: 10px;
 }
@@ -899,6 +899,50 @@ header .main_header{
 .mcqSec .quesSec{
   margin-top: 1.5rem;
 }
+
+.btnDropdown .custom-select .box {
+  border: 1px solid #22A27CD1;
+  color: #22A27CD1;
+}
+.btnDropdown .custom-select .box p{
+  color: #22A27CD1;
+  font-weight: bold;
+}
+
+/* .ps-3.ps-md-5.pt-4.pb-4 .d-flex a{
+  display: none;
+}
+.ps-3.ps-md-5.pt-4.pb-4 div h4{
+  margin-left: 0px !important;
+} */
+
+.iconsFixed{
+  display: none;
+}
+
+.mcqSec .mx-auto.row.bg-white.quesSec{
+  flex-direction: column-reverse;
+  margin-top: 0;
+  border-radius: 15px 15px 0 0 !important;
+  /* padding: 0 !important; */
+}
+
+.mcqSec .mx-auto.row.bg-white.quesSec .col-md-4{
+  padding: 0 !important;
+}
+
+.clmDirect{
+  flex-direction: column-reverse;
+}
+.uploadButton .d-flex.justify-content-end.align-items-center {
+  flex-direction: column;
+}
+.uploadButton .d-flex.justify-content-end.align-items-center .btnUpload1,.btnUpload2{
+  margin: auto;
+  margin-top: 1.5rem;
+  width: 100%;
+}
+
 
 }
 
