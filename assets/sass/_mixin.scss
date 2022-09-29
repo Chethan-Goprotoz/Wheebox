@@ -318,7 +318,7 @@ $btn-gray: #919D9B;
           list-style-type: none;
           li{
             display: flex;
-            padding: 1rem 1.6rem;
+            padding: 1.3rem 1.6rem;
             &:not(:last-child){
               border-bottom: 1px solid #ededed;
             }
@@ -330,6 +330,11 @@ $btn-gray: #919D9B;
               font-size: 13px;
               margin: 0;
               padding: 0;
+              display: flex;
+              img{
+                max-width: 17px;
+                margin-right: 0.9rem;
+              }
             }
           }
         }
@@ -342,6 +347,7 @@ $btn-gray: #919D9B;
   @media(max-width: 767px){
     padding: 0 0.4rem 0 0.65rem;
     margin-bottom: 2.1rem;
+    z-index: 10;
     .logo{
       width: 48px;
       height: 34px;

@@ -1638,7 +1638,7 @@ h5 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 1rem 1.6rem;
+  padding: 1.3rem 1.6rem;
 }
 
 .selection .main_div .main_header .grid .grid2 .dropdown ul li:not(:last-child) {
@@ -1653,6 +1653,14 @@ h5 {
   font-size: 13px;
   margin: 0;
   padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.selection .main_div .main_header .grid .grid2 .dropdown ul li a img {
+  max-width: 17px;
+  margin-right: 0.9rem;
 }
 
 .selection .main_div .main_header .grid .grid2 .dropdown.active {
@@ -1663,6 +1671,7 @@ h5 {
   .selection .main_div .main_header {
     padding: 0 0.4rem 0 0.65rem;
     margin-bottom: 2.1rem;
+    z-index: 10;
   }
   .selection .main_div .main_header .logo {
     width: 48px;
@@ -2278,7 +2287,7 @@ h5 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 1rem 1.6rem;
+  padding: 1.3rem 1.6rem;
 }
 
 .system-diagnosis .main_header .grid .grid2 .dropdown ul li:not(:last-child) {
@@ -2293,6 +2302,14 @@ h5 {
   font-size: 13px;
   margin: 0;
   padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.system-diagnosis .main_header .grid .grid2 .dropdown ul li a img {
+  max-width: 17px;
+  margin-right: 0.9rem;
 }
 
 .system-diagnosis .main_header .grid .grid2 .dropdown.active {
@@ -2303,6 +2320,7 @@ h5 {
   .system-diagnosis .main_header {
     padding: 0 0.4rem 0 0.65rem;
     margin-bottom: 2.1rem;
+    z-index: 10;
   }
   .system-diagnosis .main_header .logo {
     width: 48px;
