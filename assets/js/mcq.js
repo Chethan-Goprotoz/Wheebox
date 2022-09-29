@@ -1,3 +1,13 @@
+//dropdown
+(()=>{
+  const dropTrigger = document.querySelector('.main_header .grid2 .profile'),
+  dropBox = document.querySelector('.main_header .grid2 .dropdown');
+
+  dropTrigger.addEventListener('click',()=>{
+      dropBox.classList.toggle('active');
+  })
+})();
+
 //increment and decrement font size
 (()=>{
   const inc_font = document.querySelector('.btnInce .fontDec'),

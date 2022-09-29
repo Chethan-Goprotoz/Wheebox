@@ -923,17 +923,17 @@ a.login-btn.mobile-view {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-bottom: 2.9rem;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2.6rem;
 }
 
 .main_header .logo {
-  width: 41px;
-  height: 41px;
+  width: 40px;
+  height: 40px;
 }
 
 .main_header .logo img {
@@ -945,14 +945,15 @@ a.login-btn.mobile-view {
   font-size: 1.7rem;
   font-family: Pop-medium;
   margin-bottom: 0;
-  transform: translateX(41%);
+  -webkit-transform: translateX(41%);
+          transform: translateX(41%);
 }
 
 .main_header .grid {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 67% 33%;
-  grid-template-columns: 67% 33%;
+      grid-template-columns: 67% 33%;
   grid-gap: 5px;
 }
 
@@ -963,11 +964,11 @@ a.login-btn.mobile-view {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .main_header .grid .grid1 h6 {
@@ -986,17 +987,77 @@ a.login-btn.mobile-view {
   color: #879290;
 }
 
+.main_header .grid .grid2 {
+  position: relative;
+}
+
 .main_header .grid .grid2 .profile {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .main_header .grid .grid2 .profile img {
   width: 65%;
+  cursor: pointer;
+}
+
+.main_header .grid .grid2 .dropdown {
+  position: absolute;
+  top: 57px;
+  right: 0;
+  z-index: 20;
+  max-width: 250px;
+  height: auto;
+  border-radius: 15px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.08);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.08);
+  display: none;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.main_header .grid .grid2 .dropdown ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.main_header .grid .grid2 .dropdown ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1.3rem 1.6rem;
+}
+
+.main_header .grid .grid2 .dropdown ul li:not(:last-child) {
+  border-bottom: 1px solid #ededed;
+}
+
+.main_header .grid .grid2 .dropdown ul li a {
+  text-decoration: none;
+  font-family: Pop-normal;
+  color: #0A2F2A;
+  opacity: 0.9;
+  font-size: 13px;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main_header .grid .grid2 .dropdown ul li a img {
+  max-width: 17px;
+  margin-right: 0.9rem;
+}
+
+.main_header .grid .grid2 .dropdown.active {
+  display: block;
 }
 /* main header css end */
 
@@ -1389,7 +1450,7 @@ ul.proceed-btns li:last-child i {
   margin-bottom: 0 !important;
 }
 
-.selection .main_div .middle_div .div1.system-diagno-banner {
+.middle_div .div1.system-diagno-banner {
   padding: 4.82rem 3.4rem 4.82rem;
 }
 
@@ -3294,7 +3355,7 @@ textarea {
 @media screen and (max-width: 1480px) {
 
   /*===== System Diagnosis start  =====*/
-  .selection .main_div .middle_div .div1.system-diagno-banner {
+  .middle_div .div1.system-diagno-banner {
     padding: 3rem 3.4rem 3rem;
   }
   /*===== System Diagnosis end  =====*/
@@ -3803,48 +3864,44 @@ textarea {
 
   /*  Proctor - Rest your password css end */
 
-  /* main header css start */
+  /* main_header css start */
   .main_header {
-    padding: 0 0.4rem 0 1rem;
+    padding: 0 0.4rem 0 0.65rem;
     margin-bottom: 2.1rem;
+    z-index: 10;
   }
-
   .main_header .logo {
     width: 48px;
     height: 34px;
   }
-
   .main_header .logo img {
     -o-object-fit: contain;
-    object-fit: contain;
+       object-fit: contain;
     -o-object-position: center;
-    object-position: center;
+       object-position: center;
   }
-
   .main_header h4 {
     font-size: 1.6rem;
-    -webkit-transform: translateX(79%);
-            transform: translateX(79%);
+    -webkit-transform: translateX(10%);
+            transform: translateX(10%);
     text-align: center;
-    display: none;
+    display: block;
   }
-
   .main_header .grid {
-    -ms-grid-columns: 69% 29%;
-        grid-template-columns: 69% 29%;
+    -ms-grid-columns: 100% 0%;
+        grid-template-columns: 100% 0%;
     -webkit-transform: translateX(6px);
             transform: translateX(6px);
     grid-gap: 1px;
   }
-
   .main_header .grid .grid1 {
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
     -webkit-transform: translateX(2px);
             transform: translateX(2px);
+    display: none;
   }
-
   .main_header .grid .grid1 h6 {
     font-size: 1.3rem;
     line-height: 2rem;
@@ -3853,13 +3910,15 @@ textarea {
   .main_header .grid .grid1 p {
     font-size: 12px;
   }
-
   .main_header .grid .grid2 .profile {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
-  /* main header css end */
+  .main_header .grid .grid2 .dropdown {
+    top: 50px;
+  }
+  /* main_header css end */
 
   /*=====  waiting lounge css start ===== */
   h2.mobile-only-display{
@@ -3904,8 +3963,6 @@ textarea {
     line-height: 2.2rem;
     font-size: 14px;
   }
-
-
 
   ul.test-info-head {
     align-items: center;
@@ -3996,36 +4053,11 @@ textarea {
   }
   /*=====  waiting lounge css end ===== */
 
-  /*=====  Profile css Start ===== */
-  .errr-conent-holder {
-    width: 98% !important;
+  /*  Apptpover/Proctor password css Start */
+  .approver-section, .profile-section {
+    padding: 1.2rem;
   }
-
-  .main_header .dropdown-menu {
-    width: 62%;
-    left: 10px !important;
-  }
-  /*===== Profile css end ===== */
-
-  /*  Proctor password css Start */
-  .resetpassword-right {
-    padding: 20px 10px !important;
-  }
-
-  .resetpassword-right h3 {
-    margin-top: 42px;
-  }
-
-  .resetpassword-right .close {
-    top: 2.3rem;
-    right: 16px;
-  }
-  /*  Proctor - Rest your password css end */
-
-  .main_header .dropdown-menu {
-    width: 62%;
-    left: 10px !important;
-  }
+  /* Apptpover/Proctor password css end */
 
   /* all popup css start */
   .modal-content {

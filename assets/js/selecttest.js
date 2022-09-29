@@ -1,5 +1,15 @@
 const nodata = document.querySelector('.selection .test_con .nothing');
 
+//dropdown
+(()=>{
+  const dropTrigger = document.querySelector('.main_header .grid2 .profile'),
+  dropBox = document.querySelector('.main_header .grid2 .dropdown');
+
+  dropTrigger.addEventListener('click',()=>{
+      dropBox.classList.toggle('active');
+  })
+})();
+
 // circular progress bar
 (()=>{
   const progressBar = document.querySelectorAll('.circular-progress'),
