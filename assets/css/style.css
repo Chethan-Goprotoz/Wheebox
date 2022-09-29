@@ -1067,20 +1067,6 @@ a.login-btn.mobile-view {
   position: relative;
 }
 
-
-/* .wat-lo-bg:after {
-  width: 95%;
-  height: 20px;
-  content: " ";
-  position: absolute;
-  background: #2c998a;
-  
-  left: 2.5%;
-  bottom: 40px;
-  border-radius: 0 0px 16px 16px;
-} */
-
-
 .lounge {
   width: 100%;
   min-height: 100vh;
@@ -1312,14 +1298,9 @@ ul.proceed-btns li:last-child i {
   max-height: 22vh !IMPORTANT;
   overflow: auto;
 }
-
+/* waiting lounge css end */
 
 /* ===== Scrollbar CSS ===== */
-
-
-
-
-
 
 /* Firefox */
 .standard-inst-wrap ul {
@@ -1341,238 +1322,6 @@ ul.proceed-btns li:last-child i {
   border-radius: 10px;
   /* border: 3px solid #ffffff; */
 }
-
-
-/* waiting lounge css end */
-
-/* System Diagnosis start */
-
-.left-syst-dia li {
-  border-radius: 9px;
-  padding: 1.8rem 3.5rem 1.8rem 3.9rem;
-  margin-bottom: 21px;
-  list-style: none;
-  font-family: Pop-medium;
-  font-size: 1.5rem;
-  color: #20776E;
-  line-height: 2rem;
-  width: 79%;
-  opacity: 0.5;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.left-syst-dia li.active {
-  background: #DAEDEB;
-  opacity: 1;
-  transition: all 0.3s ease;
-}
-
-.left-syst-dia li span {
-  margin-left: -17px;
-  margin-right: 10px;
-}
-
-.system-diagno-img {
-  height: auto;
-  position: absolute;
-  top: -84px;
-}
-
-.system-diagno-img img {
-  width: 100%;
-}
-
-.diagnosis-box {
-  background: #ffffff;
-  border-radius: 1.6rem;
-  padding: 2.4rem;
-  margin-top: 2.2rem;
-}
-
-.sd-top-icon {
-  position: relative;
-}
-
-.sd-top-icon:after {
-  content: " ";
-  position: absolute;
-  width: 47%;
-  height: 5px;
-  border-bottom: dotted 3px #dddddd;
-  color: #D1DFDF;
-  right: -62px;
-  top: 8px;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-.sd-top-icon.active-line:after {
-  content: " ";
-  position: absolute;
-  width: 47%;
-  height: 5px;
-  right: -62px;
-  top: 8px;
-  background: url(/assets/images/doted-line.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  border: none;
-}
-
-
-
-
-
-.col-6.col-md-3:last-child .sd-top-icon:after {
-  display: none;
-}
-
-.sd-top-icon img {
-  width: 8%;
-}
-
-.diagnosis-box-wrap {
-  margin-top: 50px;
-  padding-bottom: 100px;
-}
-
-.diagnosis-box .icon {
-  margin-bottom: 2rem;
-  height: 21.69px;
-}
-
-.diagnosis-box img {
-  width: 9%;
-}
-
-.system-diagno-banner-wrap {
-  margin-bottom: 0 !important;
-}
-
-.middle_div .div1.system-diagno-banner {
-  padding: 4.82rem 3.4rem 4.82rem;
-}
-
-.system-diagno-banner h5 {
-  margin-left: 5rem;
-  font-size: 2.5rem !important;
-  line-height: 3.9rem !important;
-}
-
-.system-diagno-banner {
-  margin-top: 50px;
-}
-
-.system-diagno-banner a {
-  background: #f6ab39;
-  color: #ffffff;
-  text-decoration: none;
-  padding: 1.4rem 2.2rem;
-  border-radius: 0.5rem;
-  font-family: Rob-norm;
-
-}
-
-.tick-icon img {
-  width: 7%;
-  margin-left: 2px;
-}
-
-.diagnosis-box h4 {
-  color: #0A2F2A;
-  font-size: 1.5rem;
-  line-height: 2rem;
-  font-family: Pop-medium;
-  margin-bottom: 1rem;
-}
-
-.diagnosis-box p {
-  color: #20776E;
-  font-size: 1.2rem;
-  line-height: 2rem;
-  font-family: Pop-normal;
-  margin-bottom: 0;
-}
-
-h5.sd-banner-heading span {
-  font-style: italic;
-  font-family: Pop-light;
-  margin-right: 4px;
-}
-
-/*show hide*/
-
-
-#camera {
-  display: none;
-}
-
-/*show hide*
-
-
-/*======== System check  - Camera =========*/
-
-.camera-screen img {
-  width: 100%;
-}
-
-.face-cam-btn {
-  margin-top: 25px;
-}
-
-.face-cam-btn a {
-  background: #ddd;
-  text-decoration: none;
-  color: #010101;
-  padding: 1rem 2rem;
-  border-radius: 0.5rem;
-  font-size: 1rem;
-}
-
-.diagnosis-box abbr {
-  float: right;
-}
-
-.diagnosis-box abbr a {
-  color: #ffffff;
-  text-decoration: none;
-  padding: 0.6rem 0.8rem;
-  border-radius: 0.5rem;
-  font-family: Rob-norm;
-  font-size: 1.2rem;
-}
-
-.diagnosis-box abbr.inprogress a {
-  background: #f6ab39;
-}
-
-.diagnosis-box abbr.pending a {
-  background: #a4b5b3;
-}
-
-.diagnosis-box abbr.completed a {
-  background: #198754;
-}
-
-
-
-/*======== System check  - Camera =========*/
-
-/*======== System check  - Internet =========*/
-.bot-large-img img {
-  width: 80%;
-  margin-bottom: -24px;
-}
-
-.bot-large-img {
-  text-align: center;
-  margin-top: 10px;
-}
-
-/*======== System check  - Internet =========*/
-
-/*  System Diagnosis css end */
 
 /*  Approver css Start */
 
@@ -1828,7 +1577,6 @@ span.user-avtar :after {
   right: -18px;
 }
 
-
 .profile-user li:first-child {
   /* width: 50px; */
   margin-right: 12%;
@@ -1846,7 +1594,6 @@ span.user-avtar :after {
   border-radius: 50%;
 }
 
-
 ul.profile-user li:last-child {
   width: 89%;
 }
@@ -1854,7 +1601,6 @@ ul.profile-user li:last-child {
 span.user-avtar img {
   width: 75%;
 }
-
 
 .profile-right {
   position: relative;
@@ -1949,7 +1695,6 @@ span.user-avtar img {
 }
 
 /* select section  start css */
-
 
 .form-elem .custom-select {
   width: 100%;
@@ -2066,8 +1811,6 @@ input[type="number"]+img {
 
 
 /* select section end css */
-
-
 .custom_radio input[type="radio"] {
   display: none;
 }
