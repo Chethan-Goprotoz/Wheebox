@@ -1619,8 +1619,38 @@ h5 {
 
 //face detect css end
 
+// responsive css for medium size laptop
+@media(min-width: 1200px) and (max-width: 1399px){
+  //system diagnosis
+  .system-diagnosis{
+    .middle{
+      .middle_div1{
+        margin: 3rem 0 1rem;
+        .img{
+          left: 6%;
+          top: -18px;
+        }
+      }
+    }
+    .system-div{
+      .stepper-card{
+        .result1{
+          p{
+            width: 75%;
+          }
+        }
+      }
+      .stepper:not(:last-child){
+        div::after{
+          transform: translateX(74%);
+        }
+      }
+    }
+  }
+}
+
 // responsive css for small size laptop/desktop
-@media(max-width: 1200px) {
+@media(max-width: 1199px) {
   .reg_form {
     .main_div {
       padding: 2.8rem 7rem 3rem 11.5rem;
@@ -1676,6 +1706,67 @@ h5 {
               flex: 0 0 31%;
               max-width: 31%;
             }
+          }
+        }
+      }
+    }
+  }
+  //system diagnosis
+  .system-diagnosis{
+    .middle{
+      .middle_div1{
+        padding: 2.02rem 2rem 1.35rem;
+        .img{
+          max-width: 290px;
+          left: 5.3%;
+          top: -39px;
+        }
+        h2{
+          font-size: 1.9rem;
+        }
+      }
+    }
+    .system-div{
+      .stepper:not(:last-child){
+        div::after{
+          width: 90px;
+          transform: translateX(57%);
+        }
+      }
+      .stepper-card{
+        margin-bottom: 1.5rem;
+      }
+    }
+    .upload-main{
+      .middle-photo{
+        width: 96%;
+        .img{
+          max-width: 230px;
+          left: 7%;
+          top: 13px;
+        }
+      }
+      .upload-photo{
+        width: 91.3%;
+        margin: 3rem 0 0 2.5%;
+        .gx-5{
+          --bs-gutter-x: 2.2rem;
+        }
+        .upload1{
+          .img{
+            height: 120px;    
+            margin-bottom: 1.5rem;
+          }
+        }
+        .upload2{
+          .img{
+            height: 270px;    
+          }
+        }
+        .upload3{
+          .img{
+            height: 101px;    
+            margin-bottom: 1.5rem;
           }
         }
       }
@@ -1775,6 +1866,94 @@ h5 {
         flex-direction: column;
         .chart.doughnut{
           margin-bottom: 1.6rem;
+        }
+      }
+    }
+  }
+  //system diagnosis
+  .system-diagnosis{
+    .middle{
+      .middle_div1{
+        margin: 3.5rem 0 0rem;
+        width: 93%;
+        padding: 1.5rem 3rem 0.9rem;
+        .img{
+          left: 3.3%;
+          top: -31px;
+          max-width: 229px;
+        }
+        h2{
+          font-size: 1.7rem;
+          line-height: 1.7;
+          word-spacing: 0.1rem;
+        }
+      }
+    }
+    .system-div{
+      .stepper:not(:last-child){
+        div::after{
+          width: 57px;
+          transform: translateX(78%);
+        }
+      }
+      .stepper-card{
+        margin-bottom: 1.5rem;
+      }
+      .btn-div{
+        margin-top: 2rem;
+        button{
+          width: 135px;
+          height: 46px;
+        }
+      }
+    }
+    .upload-main{
+      .middle-photo{
+        padding: 2.1rem 6rem 1.35rem;
+        width: 100%;
+        .img{
+          max-width: 200px;
+          left: 7%;
+          top: 13px;
+        }
+      }
+      .upload-photo{
+        width: 94.9%;
+        margin: 4rem 0 0 4.5%;
+        .gx-5{
+          --bs-gutter-x: 1.75rem;
+        }
+        .upload1{
+          flex: 0 0 27%;
+          max-width: 27%;
+          .img{
+            height: 125px;
+            margin-bottom: 1.5rem;
+          }
+        }
+        .upload2{
+          flex: 0 0 51%;
+          max-width: 51%;
+          .img{
+            height: 250px;
+            .desc{
+              width: 81.3%;
+              transform: translate(11.5%, -104%);
+              img{
+                height: 76px;
+              }
+            }
+          }
+          .check{
+            grid-template-columns: 12% 88%;
+          }
+        }
+        .upload3{
+          flex: 0 0 21%;
+          max-width: 21%;
+          .img{
+            height: 93px;
+          }
         }
       }
     }
@@ -2203,21 +2382,29 @@ h5 {
           flex: 0 0 100%;
           max-width: 100%;
           margin-bottom: 1rem;
+          flex-direction: row;
           h6{
             font-size: 1.5rem;
             margin-bottom: 0.9rem;
+            display: none;
+            margin-left: 5.5%;
           }
           .img{
             margin-bottom: 1.1rem;
             display: flex;
             justify-content: center;
-            height: 130px;
+            height: 120px;
+            width: 65%;
+            border-radius: 30px;
             img{
-              width: 40%;
+              width: 100%;
+              object-fit: contain;
             }
           }
           .regcon1{
-            align-items: flex-end;
+            align-items: baseline;
+            padding-left: 8%;
+            text-align: inherit;
           }
         }
         .upload2{
