@@ -27,6 +27,67 @@
         body.modal-open{
             background-color: #fff;
         }
+        .disclaimer { 
+  background: rgba(0,0,0,0.67);
+}
+.disclaimer .modal-dialog{    
+  margin: 0;
+  max-width: 100%;
+  position: relative;
+}
+
+.disclaimer .dis-a-holder {
+  width: 42%;
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  top: -149px;
+  left: 25%;
+}
+.disclaimer .thumbs-down {
+  display: inline-block;
+  margin-left: 130px;
+  margin-top: -15px;
+}
+.disclaimer a.trsp-btn {
+  border: solid 3px #fff;
+  padding: 12px 45px;
+  border-radius: 5px;
+  font-size: 15px;
+  text-decoration: none;
+  margin-top: 20px;
+  display: inline-block;
+  color: #ffffff;
+}
+ a.skip-btn{
+  border: solid 3px #fff;
+  padding: 12px 45px;
+  border-radius: 5px;
+  font-size: 15px;
+  text-decoration: none;
+  margin-top: 20px;
+  display: inline-block;
+  color: #ffffff;
+  
+}
+a.skip-btn {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.disclaimer .dis-a-holder p {
+  font-size: 1.8rem;
+  line-height: 3rem;
+  font-family: Pop-medium;
+}
+.disclaimer .dis-a-holder p.num {
+  margin-top: 43px;
+  font-family: Pop-normal;
+}
+.disclaimer .modal-content {
+  border: 0;
+}
+.circale img{width: 40%;}
     </style>
 
   </head>
@@ -62,14 +123,19 @@
         <div class="modal-body">
             <div class="row">
                 <div class="dis-a-holder mx-auto">
-                 <div class="circale"><img src="/assets/images/svg/ellipse-a-a.svg" alt=""></div> 
+                 <div class="circale"><img src="/assets/images/disc.png" alt=""></div> 
                   <div class="thumbs-down"><img src="/assets/images/svg/a-thumbs-down.svg" alt=""></div>
                 <p>Increase and Decrease the size of the text !</p>
                 <p class="num">2/10</p>
                 <a class="trsp-btn">Next</a>
+                <a class="skip-btn"> Skip </a>
+                
+
                 </div>
             </div>
         </div>
+
+       
       </div>
     </div>
   </div>
