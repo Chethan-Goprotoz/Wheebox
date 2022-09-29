@@ -4305,15 +4305,31 @@ textarea {
     width: 80px;
     height: 38px;
   }
+  .profile_10 .modal-body{
+    position: relative;
+    padding: 4rem 2rem 0;
+  }
+  .profile_10 .div-right {
+    padding: 2rem 0rem 0;
+  }
   .profile_10 .div-right .btn-close {
     font-size: 14px;
+    position: absolute;
+    right: 18px;
+    top: 11px;
   }
   .profile_10 .img img {
-    max-height: 220px;
-    object-position: 50% 77%;
+    max-height: 210px;
+    object-position: 50% 57%;
+    border-radius: 13px;
   }
   .profile_10 .main_con {
-    padding: 0rem 0rem 3.5rem;
+    padding: 0rem 0rem 2.5rem;
+  }
+  .profile_10 .main_con .res-mob{
+    position: absolute;
+    top: 60px;
+    left: 12%;
   }
   .profile_10 .main_con h2 {
     font-size: 1.9rem;
@@ -4323,6 +4339,7 @@ textarea {
   .profile_10 .main_con h2 + p {
     margin-bottom: 2.5rem;
     line-height: 2.4rem;
+    width: 80%;
   }
   .profile_10 .btn-submit {
     margin-top: 3.3rem;
@@ -4331,7 +4348,7 @@ textarea {
   }
   .profile_10 .btn-submit button {
     padding: 9px 0;
-    max-width: 120px;
+    max-width: 130px;
   }
   /* all popup css end */
 }
