@@ -1062,16 +1062,20 @@ a.login-btn.mobile-view {
 /* main header css end */
 
 /* waiting lounge css start */
+.waiting-header-main{
+  padding: 3rem 2.3rem 0rem;
+}
 .wat-lo-bg {
   background-color: #EAF2EE;
   position: relative;
 }
-
+.what-lounge{
+  background: transparent linear-gradient(358deg, #2D9D8D 0%, #20776E 100%) 0% 0% no-repeat padding-box;
+}
 .lounge {
   width: 100%;
   min-height: 100vh;
   background-color: #EAF2EE;
-  padding: 3rem 3rem 1.5rem;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -1082,12 +1086,10 @@ a.login-btn.mobile-view {
   background: transparent linear-gradient(358deg, #2D9D8D 0%, #20776E 100%) 0% 0% no-repeat padding-box;
   width: 100%;
   border-radius: 1.8rem;
-
-
 }
 
 .waiting-lounge {
-  padding: 3rem 3rem 1.5rem;
+  padding: 3rem 3.8rem 1.5rem;
   color: #ffffff;
 }
 
@@ -1225,7 +1227,6 @@ ul.wl-instructions {
   top: 0.15rem;
   border-radius: 50%;
   font: normal normal normal 14px/1 FontAwesome;
-
 }
 
 .waiting-img {
@@ -1245,13 +1246,11 @@ ul.proceed-btns {
   justify-content: flex-end;
 }
 
-
 ul.proceed-btns li {
   width: 59%;
   text-align: center;
   list-style: none;
 }
-
 
 ul.proceed-btns li a {
   color: #ffffff;
@@ -1277,7 +1276,6 @@ ul.proceed-btns li:first-child {
   width: 25%;
   margin: 0px 5px 0px 10px;
 }
-
 
 ul.proceed-btns li:last-child {
   margin-left: -7%;
@@ -1324,7 +1322,6 @@ ul.proceed-btns li:last-child i {
 }
 
 /*  Approver css Start */
-
 .approver-section,.profile-section{
   padding: 3rem;
   width: 100%;
@@ -1920,7 +1917,6 @@ input[type="number"]+img {
 .resetpassword-right .login-btn {
   margin-top: 4rem !important;
 }
-
 /*  Proctor - Rest your password css end */
 
 /*  Multiple faces css Start */
@@ -2526,10 +2522,6 @@ input[type="number"]+img {
   margin: 0;
 }
 
-* {
-  margin: 0;
-}
-
 .modal-body .al_limit {
   display: flex;
   justify-content: space-between;
@@ -3075,82 +3067,81 @@ textarea {
   font-size: 13px;
   text-align: center;
  }
+/* warning popup end*/
 
-/* warning popup */
+/* disclaimer css start */
+.disclaimer{
+  background: #292929;;
+  height: 100%;
+  overflow-y: hidden;
+}
+.disclaimer .modal-dialog{
+  max-width: 100%;
+  height: 100%;
+  width: 100vh;
+  position: relative;
+}
+.disclaimer .modal-dialog .modal-content{
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+}
+.disclaimer .descp1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 11%;
+  left: 16%;
+}
+.disclaimer .descp1 img.img-desp{
+  max-width: 150px;
+  object-fit: contain;
+  margin-left: -22%;
+}
+.disclaimer .descp1 img.img-thumb-arrow{
+  max-width: 68px;
+}
+.disclaimer .descp1 h5{
+  color: #fff;
+  margin-bottom: 3.8rem;
+  font-size: 1.5rem;
+  font-family: Pop-light;
+  letter-spacing: 0.3px;
+  margin-top: -3px;
+}
+.disclaimer .descp1 span{
+  color: #fff;
+  font-family: Pop-light;
+  margin-bottom: 1.1rem;
+  font-size: 1.4rem;
+  letter-spacing: 0.3px;
+}
+.disclaimer .descp1 button,.disclaimer .skip button{
+  padding: 0.9rem 3.4rem;
+  outline: none;
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  font-family: 'Pop-light';
+  font-size: 14px;
+  letter-spacing: 0.3px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.disclaimer .skip{
+  position: absolute;
+  right: 0%;
+  bottom: 8%;
+}
+/* disclaimer css end */
+
+
 
 /*========== Responsive Style ==========*/
 
-@media screen and (max-width: 1500px) {
-
-  /*===== Thank you page =====*/
-  .thank-img img {
-    width: 72%;
-  }
-
-  .thank-img {
-    position: absolute;
-    right: -265px;
-    bottom: -162px;
-  }
-  /*===== Thank you page end=====*/
-}
-
-@media screen and (max-width: 1480px) {
-
-  /*===== System Diagnosis start  =====*/
-  .middle_div .div1.system-diagno-banner {
-    padding: 3rem 3.4rem 3rem;
-  }
-  /*===== System Diagnosis end  =====*/
-
-  /* ========Profile Start======== */
-  ul.profile-user li {
-    font-size: 13px;
-  }
-  /* ========Profile end======== */
-}
-
-@media screen and (max-width: 1351px) {
-
-  /* waiting lounge css end */
-  ul.proceed-btns li:first-child {
-    margin: 0px 27px 0px 10px;
-  }
-
-  ul.proceed-btns li {
-    width: 61%;
-  }
-  /* waiting lounge css end */
-}
-
-@media screen and (max-width: 1300px) {
-
-  /*===== System Diagnosis start  =====*/
-  .system-diagno-banner h5 {
-    font-size: 2.3rem !important;
-  }
-
-  /*===== System Diagnosis end  =====*/
-  /* ========Profile Start======== */
-  ul.profile-user li {
-    font-size: 12px;
-  }
-
-  /* ========Profile end======== */
-
-}
-
 @media screen and (max-width: 1100px) {
-
-  /*===== System Diagnosis start  =====*/
-  .system-diagno-img {
-    top: 0;
-  }
-
-  /*===== System Diagnosis end  =====*/
-
-  /*===== System Diagnosis end  =====*/
-
   /* ========Profile Start======== */
   .main_header .dropdown-menu {
     width: 23%;
@@ -3177,11 +3168,7 @@ textarea {
     font-size: 1.2rem;
     line-height: 2rem;
   }
-
-
   /* ========Profile end======== */
-  /*===== System Diagnosis end  =====*/
-
 }
 
 @media screen and (max-width: 1000px) {
@@ -3224,19 +3211,7 @@ textarea {
   .login-form-top li {
     width: 50%;
   }
-
   /*===== Thank you page =====*/
-
-  /*=====  waiting lounge css start ===== */
-  ul.proceed-btns li:first-child {
-    font-size: 1.2rem;
-  }
-
-  ul.info-text li dd {
-    width: auto;
-  }
-
-  /*=====  waiting lounge css end ===== */
 }
 
 
@@ -3664,6 +3639,9 @@ textarea {
   /* main_header css end */
 
   /*=====  waiting lounge css start ===== */
+  .waiting-header-main {
+    padding: 1.2rem 0.6rem 0rem;
+  }
   h2.mobile-only-display{
     font-family: 'Pop-medium';
     margin-bottom: 1rem;
@@ -3679,7 +3657,7 @@ textarea {
   }
 
   .waiting-lounge {
-    padding: 1.5rem;
+    padding: 2rem 1.5rem;
   }
 
   .waiting-lounge h3{
