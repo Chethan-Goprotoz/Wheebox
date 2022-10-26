@@ -1,0 +1,303 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Result list detail page</title>
+
+    <!-- font awesome css -->
+    <link rel="stylesheet" href="assets/font-awesome/all.min.css"/>
+    <link rel="stylesheet" href="assets/font-awesome/fontawesome.css"/>
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" rel="stylesheet"/>
+
+    <!-- loader css -->
+    <link rel="stylesheet" href="assets/css/loader.css">
+
+    <!-- style css -->
+    <link rel="stylesheet" href="assets/sass/app.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="assets/css/style.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <!-- loader start-->
+    <div class="loader-container">
+        <div class="loader"></div>
+    </div>
+    <!-- loader end-->
+
+    <!--selection section start -->
+    <section class="selection-new">
+      <div class="container-fluid">
+        <div class="main_div">
+          <div class="row">
+            <div class="main_header">
+              <div class="logo">
+                <img src="assets/images/logo_logo.png" alt="mini-logo">
+              </div>
+              <h4>System Diagnosis</h4>
+              <div class="grid">
+                <div class="grid1">
+                  <h6>Jane Doe</h6>
+                  <p>jane_doe@wheebox.com</p>
+                </div>
+                <div class="grid2">
+                  <div class="profile rounded-circle">
+                    <img src="assets/images/prof-mini.png" alt="profile">
+                  </div>
+                  <div class="dropdown">
+                    <ul>
+                      <li><a href="#"> <img src="assets/images/svg/userrrr.svg" alt="View logs"> Jane Doe</a></li>
+                      <li><a href="#"><img src="assets/images/svg/userrrr.svg" alt="View logs">jane_doe@wheebox.com</a></li>
+                      <li><a href="#"><img src="assets/images/svg/signout.svg" alt="Sign out"> Logout</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- row closed -->
+        </div>
+
+        <div class="sidebar">
+            <div class="d-flex">
+                <div class="side1">
+                    <div class="d-flex profile-details">
+                        <img src="assets/images/capphoto.png" alt="">
+                        <div class="profile-info">
+                            <h5>Jane Doe</h5>
+                            <p>jane_do0e@wheelbox.com</p>
+                        </div>
+                    </div>
+                    <div>
+                       <div class="d-flex sideMenu">
+                        <img src="assets/images/AppDetailsIcon.svg" alt="">
+                        <p>Applicant Details</p>
+                       </div>
+                    </div>
+                    <div>
+                        <div class="d-flex sideMenu">
+                         <img src="assets/images/ScoreCardIcon.svg" alt="">
+                         <p>Score Card</p>
+                        </div>
+                     </div>
+                     <div>
+                        <div class="d-flex sideMenu active-one">
+                         <img src="assets/images/BenchmarkIcon.svg" alt="">
+                         <p>Benchmark</p>
+                        </div>
+                     </div>
+                     <div>
+                        <div class="d-flex sideMenu">
+                         <img src="assets/images/OnlineReportIcon.svg" alt="">
+                         <p>Online Report</p>
+                        </div>
+                     </div>
+                </div>
+                <div class="inside-container">
+                  <h3>Benchmark</h3>
+                  <div class="d-flex gap-4">
+                    <div class="stats-card appDetailCard">
+                        <h3>View Benchmark</h3>
+                        <div id="chart"></div>
+                    </div>
+                    <div class="stats-card appDetailCard">
+                        <h3>View Strengths</h3>
+                        <canvas id="myChart"></canvas>
+                    </div>
+                    </div>
+                    <div class="d-flex gap-4 score-marks">
+                        <div class="stats-card appDetailCard">
+                            <h3>View Benchmark</h3>
+                            <canvas id="myChart2"></canvas>
+                        </div>
+                        <div class="stats-card appDetailCard">
+                            <h3>View Strengths</h3>
+                            
+                        </div>
+                        </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <!-- main-div closed -->
+      </div>
+      <!-- container closed -->
+    </section>
+    <!--selection section end -->
+
+    <script src="assets/js/jquery-2.2.0.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/loader.js"></script>
+    <script src="assets/js/chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="assets/js/phase2.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <script>
+              
+              var options = {
+          series: [{
+          name: 'series1',
+          data: [31, 40, 28, 51, 42, 109, 100],
+          
+        },
+         {
+          name: 'series2',
+          data: [11, 32, 45, 32, 34, 52, 41],
+          color:'black',
+          color:'orange'
+          
+        }],
+          chart: {
+          height: 350,
+          type: 'area',
+          toolbar:{
+            show:false,
+        },
+        },
+        fill: {
+  type: 'gradient',
+  gradient: {
+    shade: 'dark',
+    type: "horizontal",
+    shadeIntensity: 0.5,
+    gradientToColors: ["red", "yellow"],
+    inverseColors: true,
+    opacityFrom: 1,
+    opacityTo: 1,
+    stops: [0, 50, 100],
+    colorStops: []
+  }
+},
+        
+        legend: {
+          show: false,
+        },
+        
+        dataLabels: {
+          enabled: false
+        },
+        stroke: {
+          curve: 'straight'
+        },
+        xaxis: {
+          type: 'datetime',
+          categories: ["2018-09-19T00:00:00.000Z", "2018-09-19T01:30:00.000Z", "2018-09-19T02:30:00.000Z", "2018-09-19T03:30:00.000Z", "2018-09-19T04:30:00.000Z", "2018-09-19T05:30:00.000Z", "2018-09-19T06:30:00.000Z"]
+        },
+        tooltip: {
+         show:false,
+        },
+        
+        };
+
+        var chart = new ApexCharts(document.querySelector("#chart"), options);
+        chart.render();
+      
+    </script>
+
+
+<script>
+    const labels2 = [
+   'January',
+   'February',
+   'March',
+   'April',
+   'May',
+   'June',
+ ];
+ const data2 = {
+   labels: labels2,
+   datasets: [{
+     label: 'My First dataset',
+     backgroundColor: 'rgb(255, 99, 132)',
+     borderColor: 'rgb(255, 99, 132)',
+     data: [40, 100, 80, 100, 65, 45, 82,100],
+     tension: 0.4,
+     borderColor: '#4791FF',
+     pointBackgroundColor:'#4791FF'
+   },
+   {
+     label: 'My First dataset',
+     backgroundColor: 'rgb(255, 99, 132)',
+     borderColor: 'rgb(255, 99, 132)',
+     data: [20, 55, 24, 75, 100, 45, 80,40],
+     tension: 0.4,
+     borderColor: '#0CBF7D',
+     pointBackgroundColor:'#0CBF7D'
+     
+   }]
+ };
+   
+     const config2 = {
+   type: 'line',
+   data: data2,
+   options: {
+     responsive: true,
+     plugins: {
+       legend: {
+        display: false,
+       },
+     }
+   },
+ };
+   </script>
+ 
+ <script>
+     const myChart2 = new Chart(
+       document.getElementById('myChart2'),
+       config2
+     );
+   </script>
+
+
+<script>
+   var bar_ctx = document.getElementById('myChart').getContext('2d');
+
+var purple_orange_gradient = bar_ctx.createLinearGradient(0, 0, 0, 600);
+purple_orange_gradient.addColorStop(0, '#8040FF');
+purple_orange_gradient.addColorStop(1, '#402080');
+
+var bar_chart = new Chart(bar_ctx, {
+    type: 'bar',
+    data: {
+        labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+        datasets: [{
+            label: '# of Votes',
+            data: [12, 19, 3, 8, 14, 5],
+						backgroundColor: purple_orange_gradient,
+						hoverBackgroundColor: purple_orange_gradient,
+						hoverBorderWidth: 2,
+						hoverBorderColor: 'purple'
+        },
+        {
+            label: '# of Votes',
+            data: [12, 19, 3, 8, 14, 5],
+						backgroundColor: purple_orange_gradient,
+						hoverBackgroundColor: purple_orange_gradient,
+						hoverBorderWidth: 2,
+						hoverBorderColor: 'purple'
+        }
+    ]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero:true
+                }
+            }]
+        }
+    }
+});
+
+
+
+</script>
+
+
+  </body>
+</html>
