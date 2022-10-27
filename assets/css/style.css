@@ -44,6 +44,8 @@
   src: url(../fonts/Poppins/Poppins-Bold.ttf);
 }
 
+
+
 * {
   margin: 0px;
   padding: 0px;
@@ -4098,7 +4100,8 @@ textarea {
 
 .selection-new{
   background-color: #F6F8FC;
-  height: 120vh;
+  min-height: 100%;
+  background-size: cover;
   padding: 2rem;
 }
 

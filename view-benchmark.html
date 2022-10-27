@@ -63,7 +63,7 @@
 
         <div class="sidebar">
             <div class="d-flex">
-                <div class="side1">
+                <div class="side1 d-md-block d-none">
                     <div class="d-flex profile-details">
                         <img src="assets/images/capphoto.png" alt="">
                         <div class="profile-info">
@@ -98,23 +98,49 @@
                 </div>
                 <div class="inside-container">
                   <h3>Benchmark</h3>
-                  <div class="d-flex gap-4">
+                  <div class="d-flex flex-md-row flex-column  gap-4">
                     <div class="stats-card appDetailCard">
-                        <h3>View Benchmark</h3>
+                        <div class="d-flex justify-content-between">
+                          <h3>View Benchmark</h3>
+                          <div class="d-flex">
+                            <div class="pf-indicator pf-color1"></div>
+                            <p>Attempted</p>
+                        </div>
+                        </div>
                         <div id="chart"></div>
                     </div>
                     <div class="stats-card appDetailCard">
-                        <h3>View Strengths</h3>
+                      <div class="d-flex justify-content-between">
+                        <h3>View Benchmark</h3>
+                        <div class="d-flex">
+                          <div class="pf-indicator pf-color1"></div>
+                          <p>Attempted</p>
+                          
+                      </div>
+                      
+                      </div>
                         <canvas id="myChart"></canvas>
                     </div>
                     </div>
-                    <div class="d-flex gap-4 score-marks">
+                    <div class="d-flex flex-md-row flex-column gap-4 score-marks">
                         <div class="stats-card appDetailCard">
+                          <div class="d-flex justify-content-between">
                             <h3>View Benchmark</h3>
+                            <div class="d-flex">
+                              <div class="pf-indicator pf-color1"></div>
+                              <p>Attempted</p>
+                          </div>
+                          </div>
                             <canvas id="myChart2"></canvas>
                         </div>
                         <div class="stats-card appDetailCard">
-                            <h3>View Strengths</h3>
+                          <div class="d-flex justify-content-between">
+                            <h3>View Benchmark</h3>
+                            <div class="d-flex">
+                              <div class="pf-indicator pf-color1"></div>
+                              <p>Attempted</p>
+                          </div>
+                          </div>
                             <div class="d-flex gap-5 justify-content-center">
                               <div class="circular-progress">
                                 <div class="value-container">
@@ -211,7 +237,7 @@ var gradient = newnew.createLinearGradient(0, 0, 0, 400);
 
 
 <script>
-    const labels2 = ["Pattern Completion", "Maths", "Logical Reasoning", "Attention To Details", "Articulation"];
+    const labels2 = [["Pattern","Completion"], "Maths", ["Logical "," Reasoning"],[ "Attention To","Details"], "Articulation"];
  const data2 = {
    labels: labels2,
    datasets: [{
@@ -271,7 +297,7 @@ var gradient = newnew.createLinearGradient(0, 0, 0, 400);
 var bar_chart = new Chart(bar_ctx, {
     type: 'bar',
     data: {
-        labels: ["Pattern Completion", "Maths", "Logical Reasoning", "Attention To Details", "Articulation"],
+        labels: [["Pattern","Completion"], "Maths", ["Logical "," Reasoning"],[ "Attention To","Details"], "Articulation"],
         datasets: [{
             label: '# of Votes',
             data: [75, 65, 70, 70, 70],
