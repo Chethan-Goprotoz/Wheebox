@@ -27,8 +27,9 @@ let progressEndValue2 = 70;
 let speed2 = 10;
 
 let progress2 = setInterval(() => {
+    var prograssvalue = document.getElementById("progressvalue")
   progressValue2++;
-  valueContainer2.textContent = `${progressValue2}%`;
+  prograssvalue.textContent = `${progressValue2}%`;
   progressBar2.style.background = `conic-gradient(
     #2CD9C5 ${progressValue2 * 3.6}deg,
       #EDF0F4 ${progressValue2 * 3.6}deg

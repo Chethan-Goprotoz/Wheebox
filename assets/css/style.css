@@ -4112,7 +4112,7 @@ textarea {
 
 .profile-info p{
    color: #849694;
-   font-size: 14px;
+   font-size: 11px;
    margin-bottom: 0;
 }
 
@@ -4298,6 +4298,31 @@ textarea {
   background-color: #2D99FF;
 }
 
+.pf-color5{
+  background-color: #2CD9C5;
+}
+
+.pf-color6{
+  background-color: #FDDD33;
+}
+
+.pf-color7{
+  background-color: #8040FF;
+}
+
+.pf-color8{
+  background-color: #F8009C;
+}
+
+.pf-color9{
+  background-color: #4791FF;
+}
+
+.pf-color10{
+  background-color: #02BC77;
+}
+
+
 .stats-card{
   width: 50%;
 }
@@ -4324,6 +4349,10 @@ textarea {
  .value-container{
   position: relative;
   z-index: 20;
+  font-size: 24px !important;
+  font-weight: 600 !important;
+  color: #2C3652 !important;
+  text-align: center !important;
  }
 
  .circular-progress2{
@@ -4347,6 +4376,17 @@ textarea {
 
  .value-container2{
   position: relative;
+  font-size: 24px !important;
+  font-weight: 600 !important;
+  color: #2C3652 !important;
+  text-align: center !important;
+ }
+
+ .yourscore{
+  position: relative;
+  font-size: 18px !important;
+  font-weight: 600 !important;
+  color: #2C3652 !important;
  }
 
 
