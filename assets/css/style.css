@@ -4369,3 +4369,19 @@ textarea {
   }
 
 }
+
+@media(max-width: 992px) {
+  .selection-new{
+    padding: 16px;
+  }
+  
+  .inside-container{
+    padding: 16px;
+    margin: 0;
+  }
+
+  .stats-card{
+    width: 100%;
+  }
+
+}
