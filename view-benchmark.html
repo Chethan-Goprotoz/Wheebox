@@ -115,7 +115,19 @@
                         </div>
                         <div class="stats-card appDetailCard">
                             <h3>View Strengths</h3>
-                            
+                            <div class="d-flex gap-5 justify-content-center">
+                              <div class="circular-progress">
+                                <div class="value-container">
+                                  
+                                </div>
+                              </div>
+
+                              <div class="circular-progress2">
+                                <div class="value-container2">
+                                  
+                                </div>
+                              </div>
+                            </div>
                         </div>
                         </div>
                   </div>
@@ -138,20 +150,30 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     
     <script>
+var newnew = document.getElementById("myChart2").getContext("2d");
+var gradient = newnew.createLinearGradient(0, 0, 0, 400);
+            gradient.addColorStop(0, '#2CD9C5');
+            gradient.addColorStop(1, '#166D63');
+
               
               var options = {
           series: [{
           name: 'series1',
           data: [31, 40, 28, 51, 42, 109, 100],
+          color:'#FDDD33',
+          
           
         },
          {
           name: 'series2',
           data: [11, 32, 45, 32, 34, 52, 41],
-          color:'black',
-          color:'orange'
+          color: '#2CD9C5'
           
         }],
+        fill: {
+        type: "solid",
+        fillOpacity: 10,
+      },
           chart: {
           height: 350,
           type: 'area',
@@ -159,20 +181,8 @@
             show:false,
         },
         },
-        fill: {
-  type: 'gradient',
-  gradient: {
-    shade: 'dark',
-    type: "horizontal",
-    shadeIntensity: 0.5,
-    gradientToColors: ["red", "yellow"],
-    inverseColors: true,
-    opacityFrom: 1,
-    opacityTo: 1,
-    stops: [0, 50, 100],
-    colorStops: []
-  }
-},
+        
+        
         
         legend: {
           show: false,
@@ -201,21 +211,14 @@
 
 
 <script>
-    const labels2 = [
-   'January',
-   'February',
-   'March',
-   'April',
-   'May',
-   'June',
- ];
+    const labels2 = ["Pattern Completion", "Maths", "Logical Reasoning", "Attention To Details", "Articulation"];
  const data2 = {
    labels: labels2,
    datasets: [{
      label: 'My First dataset',
      backgroundColor: 'rgb(255, 99, 132)',
      borderColor: 'rgb(255, 99, 132)',
-     data: [40, 100, 80, 100, 65, 45, 82,100],
+     data: [40, 100, 80, 100, 65],
      tension: 0.4,
      borderColor: '#4791FF',
      pointBackgroundColor:'#4791FF'
@@ -224,7 +227,7 @@
      label: 'My First dataset',
      backgroundColor: 'rgb(255, 99, 132)',
      borderColor: 'rgb(255, 99, 132)',
-     data: [20, 55, 24, 75, 100, 45, 80,40],
+     data: [20, 55, 24, 75, 100],
      tension: 0.4,
      borderColor: '#0CBF7D',
      pointBackgroundColor:'#0CBF7D'
@@ -257,31 +260,36 @@
 <script>
    var bar_ctx = document.getElementById('myChart').getContext('2d');
 
-var purple_orange_gradient = bar_ctx.createLinearGradient(0, 0, 0, 600);
-purple_orange_gradient.addColorStop(0, '#8040FF');
-purple_orange_gradient.addColorStop(1, '#402080');
+   var Purplegradient = bar_ctx.createLinearGradient(0, 0, 0, 400);
+            Purplegradient.addColorStop(0, '#8040FF');
+            Purplegradient.addColorStop(1, '#402080');
+
+    var pinkgradient = bar_ctx.createLinearGradient(0, 0, 0, 900);
+    pinkgradient.addColorStop(0, '#F8009C');
+    pinkgradient.addColorStop(1, '#7C004E');
 
 var bar_chart = new Chart(bar_ctx, {
     type: 'bar',
     data: {
-        labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+        labels: ["Pattern Completion", "Maths", "Logical Reasoning", "Attention To Details", "Articulation"],
         datasets: [{
             label: '# of Votes',
-            data: [12, 19, 3, 8, 14, 5],
-						backgroundColor: purple_orange_gradient,
-						hoverBackgroundColor: purple_orange_gradient,
+            data: [75, 65, 70, 70, 70],
+						backgroundColor: Purplegradient,
 						hoverBorderWidth: 2,
-						hoverBorderColor: 'purple'
+						hoverBorderColor: 'purple', 
+            barThickness: 10,
         },
         {
             label: '# of Votes',
-            data: [12, 19, 3, 8, 14, 5],
-						backgroundColor: purple_orange_gradient,
-						hoverBackgroundColor: purple_orange_gradient,
+            data: [42, 100, 60, 100, 100],
+						backgroundColor: pinkgradient,
 						hoverBorderWidth: 2,
-						hoverBorderColor: 'purple'
+						hoverBorderColor: 'purple',
+            barThickness: 10,
         }
-    ]
+    ],
+    
     },
     options: {
         scales: {

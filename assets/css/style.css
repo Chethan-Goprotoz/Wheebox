@@ -4098,7 +4098,7 @@ textarea {
 
 .selection-new{
   background-color: #F6F8FC;
-  height: 100vh;
+  height: 120vh;
   padding: 2rem;
 }
 
@@ -4298,6 +4298,53 @@ textarea {
 .stats-card{
   width: 50%;
 }
+
+ .circular-progress{
+  position: relative;
+  height: 250px;
+  width: 250px;
+  background-color: black;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+ }
+
+ .circular-progress::before{
+  content: "";
+  position: absolute;
+  height: 90%;
+  width: 90%;
+  background-color: white;
+  border-radius: 50%;
+ }
+
+ .value-container{
+  position: relative;
+  z-index: 20;
+ }
+
+ .circular-progress2{
+  position: relative;
+  height: 250px;
+  width: 250px;
+  background-color: black;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+ }
+
+ .circular-progress2::before{
+  content: "";
+  position: absolute;
+  height: 90%;
+  width: 90%;
+  background-color: white;
+  border-radius: 50%;
+ }
+
+ .value-container2{
+  position: relative;
+ }
 
 
 
