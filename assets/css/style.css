@@ -4096,6 +4096,7 @@ textarea {
   word-break: break-all;
   border-radius: 9px;
   padding: 10px;
+  cursor: pointer;
 }
 
 .selection-new{
@@ -4125,11 +4126,13 @@ textarea {
   height: 62px;
   padding: 15px;
   margin-top: 30px;
+  cursor: pointer;
 }
 
 .active-one{
   background-color: #DAEDEB;
 }
+
 
 
 
@@ -4197,14 +4200,14 @@ textarea {
 }
 
 .left-head{
-  font-size: 16px;
+  font-size: 14px;
   color: #8B91A9;
   width: 45%;
   padding-bottom: 15px;
 }
 
 .right-data{
-  font-size: 16px;
+  font-size: 14px;
   color: #2C3652;
   font-weight: 600;
   word-break: break-all;
@@ -4212,14 +4215,14 @@ textarea {
 }
 
 .pd-left-head{
-  font-size: 16px;
+  font-size: 14px;
   color: #8B91A9;
   width: 55%;
   padding-bottom: 15px;
 }
 
 .pd-right-data{
-  font-size: 16px;
+  font-size: 14px;
   color: #2C3652;
   font-weight: 600;
   word-break: keep-all;
@@ -4418,6 +4421,14 @@ textarea {
   font-weight: 300;
  }
 
+ .click{
+  cursor: pointer;
+ }
+
+ .home-search{
+  cursor: pointer;
+ }
+
 
 /* end of new css */
 
@@ -4451,10 +4462,6 @@ textarea {
 
   .stats-card{
     width: 100%;
-  }
-
-  .d-mobile{
-    display: none;
   }
   
 
