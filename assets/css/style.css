@@ -4352,3 +4352,20 @@ textarea {
 
 
 /* end of new css */
+
+
+@media(max-width: 767px) {
+  .selection-new{
+    padding: 16px;
+  }
+  
+  .inside-container{
+    padding: 16px;
+    margin: 0;
+  }
+
+  .stats-card{
+    width: 100%;
+  }
+
+}
