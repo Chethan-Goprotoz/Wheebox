@@ -29,7 +29,7 @@
     <!-- loader end-->
 
     <!--selection section start -->
-    <section class="selection-new">
+    <div class="selection-new">
       <div class="container-fluid">
         <div class="main_div">
           <div class="row">
@@ -37,22 +37,28 @@
               <div class="logo">
                 <img src="assets/images/logo_logo.png" alt="mini-logo">
               </div>
-              <h4></h4>
-              <div class="grid">
-                <div class="grid1">
-                  <h6>Jane Doe</h6>
-                  <p>jane_doe@wheebox.com</p>
-                </div>
-                <div class="grid2">
-                  <div class="profile rounded-circle">
-                    <img src="assets/images/prof-mini.png" alt="profile">
+              <div class="d-flex align-items-center justify-content-around ">
+                <img src="assets/images/back-arrow.svg" alt="">
+                <h4>Back To Result List </h4>
+              </div>
+              <div class="d-flex align-items-center gap-5">
+                <div class="d-flex d-none d-md-flex">
+                  <div>
+                    <img src="assets/images/home-icon.svg" alt="">
                   </div>
-                  <div class="dropdown">
-                    <ul>
-                      <li><a href="#"> <img src="assets/images/svg/userrrr.svg" alt="View logs"> Jane Doe</a></li>
-                      <li><a href="#"><img src="assets/images/svg/userrrr.svg" alt="View logs">jane_doe@wheebox.com</a></li>
-                      <li><a href="#"><img src="assets/images/svg/signout.svg" alt="Sign out"> Logout</a></li>
-                    </ul>
+                  <div>
+                    <img src="assets/images/search-icon.svg" alt="">
+                  </div>
+                </div>
+                <div class="grid-new">
+                  <div class="grid1-new">
+                    <div class="profile rounded-circle">
+                      <img src="assets/images/prof-mini.png" alt="profile">
+                    </div>
+                  </div>
+                  <div class="grid2-new d-none d-md-block">
+                    <h6>Jane Doe</h6>
+                    <p>jane_doe@wheebox.com</p>
                   </div>
                 </div>
               </div>
@@ -60,7 +66,12 @@
           </div>
           <!-- row closed -->
         </div>
-
+        <div>
+          <div class="d-flex justify-content-end">
+            <img src="/assets/images/left-arow.svg" alt="">
+            <img src="assets/images/right-arrow.svg" alt="">
+          </div>
+        </div>
         <div class="sidebar">
             <div class="d-flex">
                 <div class="side1 d-lg-block d-none">
@@ -203,8 +214,7 @@ var gradient = newnew.createLinearGradient(0, 0, 0, 400);
           name: 'series1',
           data: [31, 40, 28, 51, 42],
           color:'#FDDD33',
-          
-          
+
         },
          {
           name: 'series2',
@@ -216,16 +226,17 @@ var gradient = newnew.createLinearGradient(0, 0, 0, 400);
         type: "solid",
         fillOpacity: 10,
       },
+      
           chart: {
-          height: 350,
+            width: '100%',
+          
           type: 'area',
+          
           toolbar:{
             show:false,
         },
         },
-        
-        
-        
+
         legend: {
           show: false,
         },
@@ -236,9 +247,20 @@ var gradient = newnew.createLinearGradient(0, 0, 0, 400);
         stroke: {
           curve: 'straight'
         },
-        xaxis: {
-          type: 'String',
-          categories: [["Pattern","Completion"], "Maths", ["Logical "," Reasoning"],[ "Attention To","Details"], "Articulation"]
+        xaxis: { 
+          categories: [["Pattern","Completion"], "Maths", ["Logical","Reasoning"], ["Attention","To Details"], "Articulation"],
+          tickPlacement: 'between',
+          labels: {
+            rotate: 0,
+          },
+        },
+        yaxis: {
+          range: 10,
+          labels: {
+            formatter: function (value) {
+          return value + "%";
+    }
+          },
         },
         tooltip: {
          show:false,
@@ -315,7 +337,7 @@ var bar_chart = new Chart(bar_ctx, {
     data: {
         labels: [["Pattern","Completion"], "Maths", ["Logical "," Reasoning"],[ "Attention To","Details"], "Articulation"],
         datasets: [{
-            label: '# of Votes',
+            label: 'Percent',
             data: [75, 65, 70, 70, 70],
 						backgroundColor: Purplegradient,
 						hoverBorderWidth: 2,
@@ -323,7 +345,7 @@ var bar_chart = new Chart(bar_ctx, {
             barThickness: 10,
         },
         {
-            label: '# of Votes',
+            label: 'Percent',
             data: [42, 100, 60, 100, 100],
 						backgroundColor: pinkgradient,
 						hoverBorderWidth: 2,
@@ -334,13 +356,19 @@ var bar_chart = new Chart(bar_ctx, {
     
     },
     options: {
+      plugins: {
+       legend: {
+        display: false,
+       },
+     },
         scales: {
             yAxes: [{
                 ticks: {
                     beginAtZero:true
                 }
             }]
-        }
+        },
+        
     }
 });
 

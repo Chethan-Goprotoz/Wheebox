@@ -4112,7 +4112,7 @@ textarea {
 
 .profile-info p{
    color: #849694;
-   font-size: 11px;
+   font-size: 12px;
    margin-bottom: 0;
 }
 
@@ -4147,11 +4147,13 @@ textarea {
 .inside-container{
    border: 1px solid #EBEBEB;
    border-radius: 10px;
-   width: 100%;
+   width: 80%;
    height: 100%;
-   margin: 25px;
+   margin-left: 25px;
    padding: 25px;
 }
+
+
 
 .inside-container h3{
   font-size: 18px;
@@ -4389,6 +4391,32 @@ textarea {
   color: #2C3652 !important;
  }
 
+ .grid-new{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+ }
+
+ .grid1-new{
+  margin-right: 10px;
+ }
+
+ .grid2-new{
+  margin-top: 10px;
+ }
+
+ .grid2-new h6{
+  color: #0A2F2A;
+  font-size: 16px;
+  font-weight: 600;
+ }
+
+ .grid2-new p{
+  color: #849694;
+  font-size: 14px;
+  font-weight: 300;
+ }
 
 
 /* end of new css */
@@ -4418,10 +4446,16 @@ textarea {
   .inside-container{
     padding: 16px;
     margin: 0;
+    width: 100%;
   }
 
   .stats-card{
     width: 100%;
   }
+
+  .d-mobile{
+    display: none;
+  }
+  
 
 }
