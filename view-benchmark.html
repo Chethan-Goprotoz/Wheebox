@@ -333,7 +333,8 @@ var gradient = newnew.createLinearGradient(0, 0, 0, 400);
         
       },
       }
-     }
+     },
+     
    },
  };
    </script>
@@ -397,7 +398,21 @@ var bar_chart = new Chart(bar_ctx, {
         },
       },
       }
-     }
+     },
+     tooltips: {
+            custom: function(tooltip) {
+              if (!tooltip) return;
+              tooltip.displayColors = false;
+            },
+            callbacks: {
+              label: function(tooltipItem, data) {
+                return tooltipItem.xLabel + " :" + tooltipItem.yLabel;
+              },
+              title: function(tooltipItem, data) {
+                return;
+              }
+            },
+          },
    },
 });
 
