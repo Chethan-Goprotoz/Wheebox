@@ -4226,6 +4226,8 @@ textarea {
   padding-bottom: 15px;
 }
 
+.apexcharts-data-labels{ display:contents !important; }
+
 .nav-arrows{
   width: 23px;
   height: 23px;
