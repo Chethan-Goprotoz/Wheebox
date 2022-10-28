@@ -4091,6 +4091,10 @@ textarea {
   margin-top: 10px;
 }
 
+.anchor-dec{
+  text-decoration: none;
+}
+
 .profile-details{
   border: 1px solid #20776E;
   word-break: break-all;
@@ -4180,9 +4184,10 @@ textarea {
 .appDetailCard h2{
   color: #2C3652;
   font-size: 20px;
-  font-weight: 600;
+  font-family: pop-semibold;
   margin-top: 10px;
   margin-bottom: 20px;
+
 
 }
 
@@ -4221,6 +4226,29 @@ textarea {
   padding-bottom: 15px;
 }
 
+.nav-arrows{
+  width: 23px;
+  height: 23px;
+ }
+
+ .nav-arrows-1{
+  width: 18.41px;
+  height: 19.17px;
+ }
+
+ .nav-arrows-2{
+  width: 40px;
+ }
+
+ .btr-line{
+  font-size: 14px;
+  font-family: nunito;
+  font-weight: bold;
+  color: #00000099;
+  margin-left: 10px;
+  margin-top: 7px;
+ }
+
 .pd-right-data{
   font-size: 14px;
   color: #2C3652;
@@ -4238,6 +4266,7 @@ textarea {
   color: #888888;
   font-weight: 300;
   font-size: 16px;
+  margin-bottom: 0;
 }
 
 .score-marks h6{
@@ -4427,7 +4456,20 @@ textarea {
 
  .home-search{
   cursor: pointer;
+  background-color: #20776E;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
  }
+
+ .home-search:hover{
+  background-color: #124842;
+ }
+
+
 
 
 /* end of new css */
