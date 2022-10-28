@@ -168,10 +168,10 @@
                         <h3>Proctoring Score</h3>
                         <div class="row">
                             <div class="d-flex justify-content-center mt-5">
-                              <div class="circular-progress">
+                              <div class="circular-progress progress-color">
                                 <div >
                                   <p class="value-container"></p>
-                                  <p class="yourscore">Your Score</p>
+                                  
                                 </div>
                               </div>
                             </div>
@@ -384,20 +384,20 @@
 
                           <div class="instructions">
                             <img src="assets/images/yellow.png" alt="">
-                            <h6>Green</h6>
-                            <p>Correct front face found</p>
+                            <h6>Yellow</h6>
+                            <p>No face found or no correct front face</p>
                           </div>
 
                           <div class="instructions">
                             <img src="assets/images/red2.png" alt="">
-                            <h6>Green</h6>
-                            <p>Correct front face found</p>
+                            <h6>Red</h6>
+                            <p>More than one face found</p>
                           </div>
 
                           <div class="instructions">
                             <img src="assets/images/red.png" alt="">
-                            <h6>Green</h6>
-                            <p>Correct front face found</p>
+                            <h6>Red</h6>
+                            <p>No bonafide candidate</p>
                           </div>
                         </div>
                       </div>
@@ -422,6 +422,7 @@
     <script src="assets/js/loader.js"></script>
     <script src="assets/js/chart.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="assets/js/phase2.js"></script>
     <script> 
           var options = {
           series: [20,20,20],
