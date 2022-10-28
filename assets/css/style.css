@@ -4320,6 +4320,10 @@ textarea {
   margin-right: 10px;
 }
 
+.legend{
+ font-size: 12px !important;
+}
+
 .pf-color1{
   background-color: #9986F9;
 }
@@ -4365,8 +4369,8 @@ textarea {
 
  .circular-progress{
   position: relative;
-  height: 250px;
-  width: 250px;
+  height: 200px;
+  width: 200px;
   background-color: black;
   border-radius: 50%;
   display: grid;
@@ -4393,8 +4397,8 @@ textarea {
 
  .circular-progress2{
   position: relative;
-  height: 250px;
-  width: 250px;
+  height: 200px;
+  width: 200px;
   background-color: black;
   border-radius: 50%;
   display: grid;
