@@ -1,8 +1,10 @@
+// Start of Your Score (You vs Topper)
+
 let progressBar = document.querySelector(".circular-progress");
 let valueContainer = document.querySelector(".value-container");
 
 let progressValue = 0;
-let progressEndValue = 70;
+let progressEndValue = 30;
 let speed = 10;
 
 let progress = setInterval(() => {
@@ -17,7 +19,10 @@ let progress = setInterval(() => {
   }
 }, speed);
 
+// End of Your Score (You vs Topper)
 
+
+// Start of Topper Score (You vs Topper)
 
 let progressBar2 = document.querySelector(".circular-progress2");
 let valueContainer2 = document.querySelector(".value-container2");
@@ -39,6 +44,9 @@ let progress2 = setInterval(() => {
   }
 }, speed);
 
+
+
+// End of Topper Score (You vs Topper)
 
 
 function sidemenu(){
