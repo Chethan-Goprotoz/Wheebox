@@ -167,8 +167,9 @@ fillOpacity: 10,
 
   chart: {
     width: '100%',
+    fontFamily: 'Pop-normal',
+    height: '100%',
     
-  
   type: 'area',
   
   toolbar:{
@@ -191,7 +192,7 @@ xaxis: {
   tickPlacement: 'between',
   tickAmount:10,
   labels: {
-    rotate: 0,
+    
   },
 },
 yaxis: {
@@ -217,7 +218,7 @@ viewBenchmark.render();
 
 // start of view Improvements
 
-const labels2 = [["Pattern","Completion"], "Maths", ["Logical "," Reasoning"],[ "Attention To","Details"], "Articulation"];
+const labels2 = [["Pattern","Completion"], "Maths", ["Logical","Reasoning"],[ "Attention To","Details"], "Articulation"];
  const data2 = {
     labels: labels2,
     datasets: [{
@@ -250,6 +251,14 @@ const labels2 = [["Pattern","Completion"], "Maths", ["Logical "," Reasoning"],[ 
        legend: {
         display: false,
        },
+       tooltip:{
+        callbacks:{
+          title:(context)=>{
+            console.log(context[0].label)
+            return context[0].label.replaceAll(',',' ')
+          }
+        }
+       },
      },
      scales:{
       y:{
@@ -262,6 +271,16 @@ const labels2 = [["Pattern","Completion"], "Maths", ["Logical "," Reasoning"],[ 
         },
         
       },
+      },
+      x:{
+        ticks: {
+         
+          font: {
+            family: 'pop-normal', 
+          
+        },
+          
+        },
       }
      },
      
@@ -288,10 +307,12 @@ var Purplegradient = bar_ctx.createLinearGradient(0, 0, 0, 400);
  pinkgradient.addColorStop(0, '#F8009C');
  pinkgradient.addColorStop(1, '#7C004E');
 
+ 
+
 var bar_chart = new Chart(bar_ctx, {
  type: 'bar',
  data: {
-     labels: [["Pattern","Completion"], "Maths", ["Logical "," Reasoning"],[ "Attention To","Details"], "Articulation"],
+     labels: [["Pattern","Completion"], "Maths", ["Logical ","Reasoning"],[ "Attention To","Details"], "Articulation"],
      datasets: [{
          label: 'Percent',
          data: [75, 65, 70, 70, 70],
@@ -316,6 +337,14 @@ var bar_chart = new Chart(bar_ctx, {
     legend: {
      display: false,
     },
+    tooltip:{
+      callbacks:{
+        title:(context)=>{
+          console.log(context[0].label)
+          return context[0].label.replaceAll(',',' ')
+        }
+      }
+     },
   },
   scales:{
    y:{
@@ -329,10 +358,14 @@ var bar_chart = new Chart(bar_ctx, {
    },
    
    },
+
    x:{
      grid: {
          display:false
      },
+     font: {
+      family: 'pop-normal', 
+  },
    }
   },
   tooltips: {
