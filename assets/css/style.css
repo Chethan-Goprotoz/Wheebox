@@ -4099,7 +4099,7 @@ textarea {
   border: 1px solid #20776E;
   word-break: break-all;
   border-radius: 9px;
-  padding: 10px;
+  padding: 5px 10px;
   cursor: pointer;
 }
 
@@ -4129,7 +4129,7 @@ textarea {
   border-radius: 5px;
   height: 62px;
   padding: 15px;
-  margin-top: 30px;
+  margin-top: 20px;
   cursor: pointer;
 }
 
@@ -4315,7 +4315,15 @@ textarea {
 .pf-indicator{
   width: 15px;
   height: 15px;
-  border-radius: 6px;
+  border-radius: 0px;
+  margin-top: 5px;
+  margin-right: 10px;
+}
+
+.pf-indicator-c{
+  width: 15px;
+  height: 15px;
+  border-radius: 8px;
   margin-top: 5px;
   margin-right: 10px;
 }
@@ -4525,14 +4533,15 @@ textarea {
  
  }
 
- .table-new{
-  border-collapse: separate;
-    border-spacing: 0 1em;
+ .main-table{
+  border-collapse:separate !important;
+  border-spacing:0 15px !important;
  }
 
  .instructions img{
   width: 153px;
   height: 152px;
+  margin-bottom: 15px;
  }
 
  .instructions h6{
@@ -4545,6 +4554,21 @@ textarea {
   color: #848E90;
   font-size: 14px;
   font-weight: 300;
+ }
+
+ .ins-yellow{
+  color: #FFB41D !important;
+ }
+
+ .ins-red{
+  color: #FF7474;
+ }
+
+ .instructions{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  
  }
 
 .chat-box h3{
@@ -4564,6 +4588,38 @@ textarea {
   margin-top: 10px;
 }
 
+.navbar-alignment{
+  width: 30%;
+}
+
+.icon-rotate{
+  transform: rotate(90deg);
+  transition: 0.5s ease-in-out;
+}
+
+.icon-w{
+  font-size: 20px;
+  margin-top: 5px;
+  margin-left: 10px;
+  color: #1C7068;
+}
+
+.view-strenghts-graph{
+  margin-top: 10%;
+}
+.table-header{
+  background-color: #DAEDEB;
+  box-shadow: 0px 1px 5px #C5C5C5;
+  border-radius: 10px !important;
+  
+}
+
+
+.table-header td{
+  font-weight: bold;
+  border: none !important;
+}
+
 /* end of new css */
 
 
@@ -4581,6 +4637,8 @@ textarea {
     width: 100%;
   }
 
+  
+
 }
 
 @media(max-width: 992px) {
@@ -4597,6 +4655,22 @@ textarea {
   .stats-card{
     width: 100%;
   }
+
+  .side1{
+    width: 20%;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    left: -300px;
+    max-width: 300px;
+    transition: 0.5s linear;
+    z-index: 100;
+    background-color: #F6F8FC;
+  }
+
+  .sidebar-active{
+    left: 0;
+  }
   
 
 }
@@ -4608,4 +4682,12 @@ textarea {
   .chart-flex{
     width: 100%;
   }
+}
+
+@media(min-width: 1599px) {
+
+.btr-link{
+  margin-right: 60px;
+}
+
 }

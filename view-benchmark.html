@@ -135,7 +135,7 @@
                            </div>
                         </div>
                         </div>
-                        <div id="chart"></div>
+                        <div id="viewBenchmark"></div>
                     </div>
                     <div class="stats-card appDetailCard">
                       <div class="d-flex flex-wrap justify-content-between align-items-center">
@@ -152,13 +152,15 @@
                        </div>
                       
                       </div>
-                        <canvas id="myChart"></canvas>
+                      <div class="view-strenghts-graph">
+                        <canvas id="viewStrengths"></canvas>
+                      </div> 
                     </div>
                     </div>
                     <div class="d-flex flex-lg-row flex-column gap-4 score-marks">
                         <div class="stats-card appDetailCard">
                           <div class="d-flex flex-wrap justify-content-between align-items-center">
-                            <h3 class="legend">View Improvements</h3>
+                            <h3>View Improvements</h3>
                             <div class="d-flex flex-wrap gap-md-5 gap-1">
                               <div class="d-flex">
                                  <div class="pf-indicator pf-color9"></div>
@@ -170,7 +172,7 @@
                               </div>
                            </div>
                           </div>
-                            <canvas id="myChart2"></canvas>
+                            <canvas id="viewImprovements"></canvas>
                         </div>
                         <div class="stats-card appDetailCard">
                           <div class="d-flex justify-content-between">
@@ -211,221 +213,8 @@
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <script src="assets/js/phase2.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="assets/js/phase2.js"></script>
     
-    <script>
-var newnew = document.getElementById("myChart2").getContext("2d");
-var gradient = newnew.createLinearGradient(0, 0, 0, 400);
-            gradient.addColorStop(0, '#2CD9C5');
-            gradient.addColorStop(1, '#166D63');
-
-              
-              var options = {
-          series: [{
-          name: 'series1',
-          data: [31, 40, 28, 51, 42],
-          color:'#FDDD33',
-
-        },
-         {
-          name: 'series2',
-          data: [11, 32, 45, 32, 34],
-          color: '#2CD9C5'
-          
-        }],
-        fill: {
-        type: "solid",
-        fillOpacity: 10,
-      },
-      
-          chart: {
-            width: '100%',
-            
-          
-          type: 'area',
-          
-          toolbar:{
-            show:false,
-        },
-        },
-
-        legend: {
-          show: false,
-        },
-        
-        dataLabels: {
-          enabled: false
-        },
-        stroke: {
-          curve: 'straight'
-        },
-        xaxis: { 
-          categories: [["Pattern","Completion"], "Maths", ["Logical","Reasoning"], ["Attention","To Details"], "Articulation"],
-          tickPlacement: 'between',
-          tickAmount:10,
-          labels: {
-            rotate: 0,
-          },
-        },
-        yaxis: {
-          range: 10,
-          labels: {
-            formatter: function (value) {
-          return value + "%";
-    }
-          },
-        },
-        tooltip: {
-         show:false,
-        },
-        
-        };
-
-        var chart = new ApexCharts(document.querySelector("#chart"), options);
-        chart.render();
-      
-    </script>
-
-
-<script>
-    const labels2 = [["Pattern","Completion"], "Maths", ["Logical "," Reasoning"],[ "Attention To","Details"], "Articulation"];
- const data2 = {
-    labels: labels2,
-    datasets: [{
-     label: 'My First dataset',
-     backgroundColor: 'rgb(255, 99, 132)',
-     borderColor: 'rgb(255, 99, 132)',
-     data: [40, 100, 80, 100, 65],
-     tension: 0.4,
-     borderColor: '#4791FF',
-     pointBackgroundColor:'#4791FF'
-   },
-   {
-     label: 'My First dataset',
-     backgroundColor: 'rgb(255, 99, 132)',
-     borderColor: 'rgb(255, 99, 132)',
-     data: [20, 55, 24, 75, 100],
-     tension: 0.4,
-     borderColor: '#0CBF7D',
-     pointBackgroundColor:'#0CBF7D'
-     
-   }]
- };
-   
-     const config2 = {
-   type: 'line',
-   data: data2,
-   options: {
-     responsive: true,
-     plugins: {
-       legend: {
-        display: false,
-       },
-     },
-     scales:{
-      y:{
-        ticks: {
-        maxTicksLimit: 10,
-        min: 0,
-        max: this.max,
-        callback: function (value) {
-          return (value / this.max * 100).toFixed(0) + '%'; 
-        },
-        
-      },
-      }
-     },
-     
-   },
- };
-   </script>
- 
- <script>
-     const myChart2 = new Chart(
-       document.getElementById('myChart2'),
-       config2
-     );
-   </script>
-
-
-<script>
-   var bar_ctx = document.getElementById('myChart').getContext('2d');
-
-   var Purplegradient = bar_ctx.createLinearGradient(0, 0, 0, 400);
-            Purplegradient.addColorStop(0, '#8040FF');
-            Purplegradient.addColorStop(1, '#402080');
-
-    var pinkgradient = bar_ctx.createLinearGradient(0, 0, 0, 900);
-    pinkgradient.addColorStop(0, '#F8009C');
-    pinkgradient.addColorStop(1, '#7C004E');
-
-var bar_chart = new Chart(bar_ctx, {
-    type: 'bar',
-    data: {
-        labels: [["Pattern","Completion"], "Maths", ["Logical "," Reasoning"],[ "Attention To","Details"], "Articulation"],
-        datasets: [{
-            label: 'Percent',
-            data: [75, 65, 70, 70, 70],
-						backgroundColor: Purplegradient,
-						hoverBorderWidth: 2,
-						hoverBorderColor: 'purple', 
-            barThickness: 10,
-        },
-        {
-            label: 'Percent',
-            data: [42, 100, 60, 100, 100],
-						backgroundColor: pinkgradient,
-						hoverBorderWidth: 2,
-						hoverBorderColor: 'purple',
-            barThickness: 10,
-        }
-    ],
-    
-    },
-    options: {
-      plugins: {
-       legend: {
-        display: false,
-       },
-     },
-     scales:{
-      y:{
-        ticks: {
-          maxTicksLimit: 10,
-        min: 0,
-        max: this.max,// Your absolute max value
-        callback: function (value) {
-          return (value / this.max * 100).toFixed(0) + '%'; // convert it to percentage
-        },
-      },
-      
-      },
-      x:{
-        grid: {
-            display:false
-        },
-      }
-     },
-     tooltips: {
-            custom: function(tooltip) {
-              if (!tooltip) return;
-              tooltip.displayColors = false;
-            },
-            callbacks: {
-              label: function(tooltipItem, data) {
-                return tooltipItem.xLabel + " :" + tooltipItem.yLabel;
-              },
-              title: function(tooltipItem, data) {
-                return;
-              }
-            },
-          },
-   },
-});
-
-
-
-</script>
-
 
   </body>
 </html>
