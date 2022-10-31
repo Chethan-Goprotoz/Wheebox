@@ -4561,7 +4561,7 @@ textarea {
  }
 
  .ins-red{
-  color: #FF7474;
+  color: #FF7474 !important;
  }
 
  .instructions{

@@ -37,22 +37,22 @@
               <div class="logo">
                 <img src="assets/images/logo_logo.png" alt="mini-logo">
               </div>
-              <div class="d-flex align-items-center justify-content-around">
+              <div class="d-flex align-items-center d-none d-md-flex justify-content-around btr-link">
                 <img src="assets/images/back-arrow.svg" alt="">
                 <a class="anchor-dec" href="#"><h5 class="btr-line">Back To Result List</h5></a>
               </div>
              <div></div>
               <div class="d-flex align-items-center gap-5">
-                <div class="d-flex d-none d-md-flex gap-4">
+                <div class="d-flex gap-4">
+                  <div class="home-search">
+                    <img class="nav-arrows" src="assets/images/search-hover.svg" alt="">
+                  </div>
                   <div>
                     <a href="#">
                       <div class="home-search">
                         <img class="nav-arrows-1" src="assets/images/home-hover.svg" alt="">
                       </div>
                     </a>
-                  </div>
-                  <div class="home-search">
-                    <img class="nav-arrows" src="assets/images/search-hover.svg" alt="">
                   </div>
                 </div>
                 <div class="grid-new">
@@ -73,52 +73,57 @@
         </div>
         <div>
           <div>
-            <div class="d-flex justify-content-end">
-              <a href="#">
-                <img class="nav-arrows-2" src="/assets/images/left-arow.svg" alt="">
-              </a>
-             <a href="#">
-              <img class="nav-arrows-2" src="assets/images/right-arrow.svg" alt="">
-             </a>
+            <div class="d-flex justify-content-lg-end justify-content-between">
+              <div>
+                <i onclick="sidemenu()" id="menu-icon" class="fas fa-solid icon-w fa-bars d-block d-lg-none"></i>
+              </div>
+              <div>
+                <a href="#">
+                  <img class="nav-arrows-2" src="/assets/images/left-arow.svg" alt="">
+                </a>
+               <a href="#">
+                <img class="nav-arrows-2" src="assets/images/right-arrow.svg" alt="">
+               </a>
+              </div>
             </div>
           </div>
         </div>
 
         <div class="sidebar">
             <div class="d-flex">
-                <div class="side1 d-lg-block d-none">
-                    <div class="d-flex profile-details">
-                        <img src="assets/images/capphoto.png" alt="">
-                        <div class="profile-info">
-                            <h5>Jane Doe</h5>
-                            <p>jane_do0e@wheelbox.com</p>
-                        </div>
+              <div class="side1" id="sidebar-menu">
+                <div class="d-flex profile-details">
+                    <img src="assets/images/capphoto.png" alt="">
+                    <div class="profile-info">
+                        <h5>Jane Doe</h5>
+                        <p>jane_do0e@wheelbox.com</p>
                     </div>
-                    <div>
-                       <div class="d-flex sideMenu active-one">
-                        <img src="assets/images/AppDetailsIcon.svg" alt="">
-                        <p>Applicant Details</p>
-                       </div>
-                    </div>
-                    <div>
-                        <div class="d-flex sideMenu">
-                         <img src="assets/images/ScoreCardIcon.svg" alt="">
-                         <p>Score Card</p>
-                        </div>
-                     </div>
-                     <div>
-                        <div class="d-flex sideMenu">
-                         <img src="assets/images/BenchmarkIcon.svg" alt="">
-                         <p>Benchmark</p>
-                        </div>
-                     </div>
-                     <div>
-                        <div class="d-flex sideMenu">
-                         <img src="assets/images/OnlineReportIcon.svg" alt="">
-                         <p>Online Report</p>
-                        </div>
-                     </div>
                 </div>
+                <div>
+                   <div class="d-flex sideMenu active-one mt-5">
+                    <img src="assets/images/AppDetailsIcon.svg" alt="">
+                    <p>Applicant Details</p>
+                   </div>
+                </div>
+                <div>
+                    <div class="d-flex sideMenu">
+                     <img src="assets/images/ScoreCardIcon.svg" alt="">
+                     <p>Score Card</p>
+                    </div>
+                 </div>
+                 <div>
+                    <div class="d-flex sideMenu">
+                     <img src="assets/images/BenchmarkIcon.svg" alt="">
+                     <p>Benchmark</p>
+                    </div>
+                 </div>
+                 <div>
+                    <div class="d-flex sideMenu">
+                     <img src="assets/images/OnlineReportIcon.svg" alt="">
+                     <p>Online Report</p>
+                    </div>
+                 </div>
+            </div>
                 <div class="inside-container">
                   <h3>Applicant Details</h3>
                   <div class="row gap-4">
