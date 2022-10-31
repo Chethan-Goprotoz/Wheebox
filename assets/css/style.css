@@ -4089,6 +4089,7 @@ textarea {
   border-radius: 50%;
   margin-right: 10px;
   margin-top: 10px;
+  margin-left: 12px;
 }
 
 .anchor-dec{
@@ -4123,6 +4124,7 @@ textarea {
 
 .profile-info{
   margin-top: 6px;
+  
 }
 
 .sideMenu{
@@ -4143,6 +4145,7 @@ textarea {
 .sideMenu img{
   width: 20px;
   margin-right: 20px;
+  margin-left: 12px;
 }
 
 .sideMenu p{
@@ -4317,7 +4320,7 @@ textarea {
   width: 15px;
   height: 15px;
   border-radius: 0px;
-  margin-top: 5px;
+  margin-top: 6px;
   margin-right: 10px;
 }
 
@@ -4331,6 +4334,7 @@ textarea {
 
 .legend{
  font-size: 12px !important;
+ margin-bottom: 12px !important;
 }
 
 .pf-color1{
@@ -4398,7 +4402,7 @@ textarea {
  .value-container{
   position: relative;
   z-index: 20;
-  font-size: 24px !important;
+  font-size: 23px !important;
   font-weight: 600 !important;
   color: #2C3652 !important;
   text-align: center !important;
@@ -4606,13 +4610,17 @@ textarea {
 }
 
 .view-strenghts-graph{
-  margin-top: 10.1%;
+  
 }
 .table-header{
   background-color: #DAEDEB;
   box-shadow: 0px 1px 5px #C5C5C5;
   border-radius: 10px !important;
   
+}
+
+.box-heading-alignment{
+
 }
 
 

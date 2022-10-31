@@ -168,7 +168,8 @@ fillOpacity: 10,
   chart: {
     width: '100%',
     fontFamily: 'Pop-normal',
-    height: '100%',
+    
+
     
   type: 'area',
   
@@ -197,10 +198,14 @@ xaxis: {
 },
 yaxis: {
   range: 10,
+  
   labels: {
     formatter: function (value) {
   return value + "%";
-}
+},
+style: {
+  fontSize: '12px'
+},
   },
 },
 tooltip: {
