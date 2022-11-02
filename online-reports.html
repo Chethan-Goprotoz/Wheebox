@@ -181,8 +181,8 @@
                                   <p id="value-container3" class="value-container3">6</p>
                                 </div>
                               </div>
-                              <div>
-                                hello
+                              <div class="warning-sign d-none" id="risksign">
+                                <img src="assets/images/warning.png" alt="">
                               </div>
                             </div>
                         </div>
@@ -197,7 +197,7 @@
                  
                   <div class="d-flex flex-column bg-white p-5 mt-5">
                     <div class="onlineTab">
-                      <div class="nav flex-row nav-pills me-3 justify-content-between" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                      <div class="nav nav-alt flex-row nav-pills me-3 justify-content-between" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                         <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" >All Images</button>
                         <button class="nav-link new-tab" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#section1" type="button" role="tab" >System Promp</button>
                         <button class="nav-link new-tab" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#section2" type="button" role="tab" >Screen Shots</button>
@@ -287,7 +287,7 @@
                         </div>
                       </div>
                       <div class="tab-pane fade" id="section2" role="tabpanel" >
-                        <div class="d-flex  mt-5 gap-4 flex-wrap">
+                        <div class="d-flex  mt-5 gap-4 flex-wrap screenshots">
                           <img class="img-fluid" src="assets/images/question (1).png" alt="">
                           <img class="img-fluid" src="assets/images/question (2).png" alt="">
                           <img class="img-fluid" src="assets/images/question (3).png" alt="">
@@ -310,35 +310,35 @@
                             <tbody>
                               <tr class="table-row-1">
                                 <td class="p-4">1</td>
-                                <td class="p-4">Wednesday</td>
+                                <td class="p-4">Test Start Time</td>
                                 <td class="p-4">August</td>
                                 <td class="p-4">14:55:17</td>
                                
                               </tr>
                               <tr class="table-row-1">
                                 <td class="p-4">2</td>
-                                <td class="p-4">Wednesday</td>
+                                <td class="p-4">No Front Face Found</td>
                                 <td class="p-4">August</td>
                                 <td class="p-4">14:55:17</td>
                                
                               </tr>
                               <tr class="table-row-1">
                                 <td class="p-4">3</td>
-                                <td class="p-4">Wednesday</td>
+                                <td class="p-4">No Front Face Found</td>
                                 <td class="p-4">August</td>
                                 <td class="p-4">14:55:17</td>
                                
                               </tr>
                               <tr class="table-row-1">
                                 <td class="p-4">4</td>
-                                <td class="p-4">Wednesday</td>
+                                <td class="p-4">External Object Detected</td>
                                 <td class="p-4">August</td>
                                 <td class="p-4">14:55:17</td>
                                
                               </tr>
                               <tr class="table-row-1">
                                 <td class="p-4">5</td>
-                                <td class="p-4">Wednesday</td>
+                                <td class="p-4">Submit Test</td>
                                 <td class="p-4">August</td>
                                 <td class="p-4">14:55:17</td>
                                
@@ -350,18 +350,26 @@
                       <div class="tab-pane fade" id="section4" role="tabpanel" >
                         <div class="mt-5">
                           <div>
-                            <img src="" alt="">
+                            <div class="d-flex chat-section">
+                              <img src="assets/images/svg/Group 45987.svg" alt="">
                             <div class="chat-box">
                               <h3>John Wilson (Admin)</h3>
                               <p>You did a really great work! Can you please make me one more report until tomorrow EOB?</p>
                             </div>
+                            </div>
+                            <div class="d-flex chat-section">
+                              <img src="assets/images/svg/Group 45987.svg" alt="">
                             <div class="chat-box">
                               <h3>John Wilson (Admin)</h3>
                               <p>You did a really great work! Can you please make me one more report until tomorrow EOB?</p>
                             </div>
+                            </div>
+                            <div class="d-flex chat-section">
+                              <img src="assets/images/svg/Group 45987.svg" alt="">
                             <div class="chat-box">
                               <h3>John Wilson (Admin)</h3>
                               <p>You did a really great work! Can you please make me one more report until tomorrow EOB?</p>
+                            </div>
                             </div>
                           </div>
                         </div>
@@ -413,7 +421,7 @@
                           <div class="instructions">
                             <img src="assets/images/yellow.png" alt="">
                             <h6 class="ins-yellow">Yellow</h6>
-                            <p>No face found or no correct front face</p>
+                            <p>No face found or no<br /> correct front face</p>
                           </div>
 
                           <div class="instructions">
@@ -451,74 +459,7 @@
     <script src="assets/js/chart.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <script src="assets/js/phase2.js"></script>
-    <script> 
-          var options = {
-          series: [20,20,20],
-          labels: ['Unattempted','incorrect','Correct'],
-          chart: {
-          type: 'polarArea',
-          height: '200px'
-        },
-        stroke: {
-          colors: ['#fff']
-        },
-        
-        fill: {
-  colors: ['#F6AB39', '#FF6C40', '#2D99FF'],
-  opacity: 1,
-}, 
-            dataLabels: {
-            enabled: true,
-            textAnchor: 'middle',
-            background: {
-            enabled: true,
-            foreColor: '#fff',
-            padding: 4,
-            borderRadius: 2,
-            borderWidth: 1,
-            borderColor: '#fff',
-            opacity: 0.9,
-            dropShadow: {
-              enabled: false,
-              top: 1,
-              left: 1,
-              blur: 1,
-              color: '#000',
-              opacity: 0.45
-    },
-    
-  },
-  style: {
-      fontSize: '10px',
-      fontFamily: 'Helvetica, Arial, sans-serif',
-      fontWeight: 'bold',
-      colors: ['#F6AB39', '#FF6C40', '#2D99FF'],
-  },
-  
-        },
-        legend: {
-          show: false,
-        },
-        grid:{
-          show:false,
-        },
-        yaxis: {
-      show: false,
-      labels: {
-        show: false,
-      },
-      lines: {
-            show: false
-        },
-        
-      
-    },
-       
-  
-        };
-        var chart = new ApexCharts(document.querySelector("#chart"), options);
-        chart.render();
-    </script>
+   
     
     
   </body>

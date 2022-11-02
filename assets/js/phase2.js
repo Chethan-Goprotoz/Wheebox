@@ -53,7 +53,7 @@ let progress2 = setInterval(() => {
 let progressBar3 = document.getElementById("circular-progress3")
 let valueContainer3 = document.getElementById("value-container3")
 let progressValue3 = 0;
-let progressEndValue3 = 50;
+let progressEndValue3 = 40;
 let speed3 = 10;
 
 let progress3 = setInterval(() => {
@@ -63,10 +63,23 @@ let progress3 = setInterval(() => {
     #2CD9C5 ${progressValue3 * 3.6}deg,
       #EDF0F4 ${progressValue3 * 3.6}deg
   )`;
+ 
   if (progressValue3 == progressEndValue3) {
     clearInterval(progress3);
-  }
+  };
+  var risksign = document.getElementById("risksign")
+  var riskwarning = document.getElementById("riskwarning")
+  
+  if (progressEndValue3<=50){
+    risksign.classList.remove("d-none")
+    riskwarning.classList.remove("d-none")
+  };
+  
 }, speed);
+
+// proctoring score warning 
+
+
 
 
 // end of online reports
@@ -445,3 +458,5 @@ var bar_chart = new Chart(bar_ctx, {
 
 
 // End of Phase 2 Charts Data
+
+

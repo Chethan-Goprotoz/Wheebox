@@ -4526,12 +4526,18 @@ textarea {
   color: #2C3652;
  }
 
+ .nav-alt{
+  flex-wrap: nowrap !important;
+ }
+
  .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
   background-color: #ECF6F5 !important;
   color: #2C3652 !important;
-  
+  flex-wrap: nowrap !important;
   height: 54px !important;
   border-bottom: 2px solid #20776E;
+  font-size: 16px !important;
+  
  }
 
 
@@ -4563,6 +4569,11 @@ textarea {
   box-shadow: 0px 1px 5px #C5C5C5;
   border-radius: 10px;
  
+ }
+
+ .table-row-1 td{
+  color: #666666 !important;
+  font-size: 14px;
  }
 
  .main-table{
@@ -4619,6 +4630,10 @@ textarea {
   margin-bottom: 0;
 }
 
+.screenshots img{
+  width: 278px;
+}
+
 .chat-box p{
   color: #9E9E9E;
   font-size: 12px;
@@ -4671,6 +4686,8 @@ textarea {
 
 .onlineTab{
   position: relative;
+  overflow-x: auto !important;
+  overflow-y: hidden;
 }
 
 .vLine{
@@ -4920,6 +4937,25 @@ textarea {
   padding-top: 10px;
   border-radius: 6px;
   margin-top: 15px;
+}
+
+.warning-sign{
+  position: absolute;
+  transform: translate(50px,50px);
+}
+
+.warning-sign img{
+  width: 20px;
+  
+}
+
+.chat-section{
+  margin-top: 30px;  
+}
+
+.chat-section img{
+  width: 32px;
+  margin-right: 15px;
 }
 
 
