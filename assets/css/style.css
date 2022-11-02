@@ -4194,7 +4194,7 @@ textarea {
 
 .appDetailCard h3{
   color: #2C3652;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
   margin-top: 10px;
   margin-bottom: 20px;
@@ -4456,7 +4456,7 @@ textarea {
  .value-container3{
   position: relative;
   z-index: 20;
-  font-size: 23px !important;
+  font-size: 44px !important;
   font-weight: 600 !important;
   color: #2C3652 !important;
   text-align: center !important;
@@ -4885,6 +4885,7 @@ textarea {
   list-style: none;
   background: none !important;
   gap: 20px;
+  align-items: center;
 }
 
 .pagination-new li .new-link{
@@ -4910,6 +4911,17 @@ textarea {
 .graph-container{
   overflow-x: auto;
 }
+
+.RiskWarning{
+  background-color: #FFC3C3;
+  color: #DF1F1F;
+  width: 177px;
+  text-align: center;
+  padding-top: 10px;
+  border-radius: 6px;
+  margin-top: 15px;
+}
+
 
 
 
