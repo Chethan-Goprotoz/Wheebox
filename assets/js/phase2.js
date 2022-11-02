@@ -32,9 +32,8 @@ let progressEndValue2 = 70;
 let speed2 = 10;
 
 let progress2 = setInterval(() => {
-    var prograssvalue = document.getElementById("progressvalue")
   progressValue2++;
-  prograssvalue.textContent = `${progressValue2}%`;
+  valueContainer2.textContent = `${progressValue2}%`;
   progressBar2.style.background = `conic-gradient(
     #2CD9C5 ${progressValue2 * 3.6}deg,
       #EDF0F4 ${progressValue2 * 3.6}deg
@@ -48,6 +47,29 @@ let progress2 = setInterval(() => {
 
 // End of Topper Score (You vs Topper)
 
+
+// start of online reports
+
+let progressBar3 = document.getElementById("circular-progress3")
+let valueContainer3 = document.getElementById("value-container3")
+let progressValue3 = 0;
+let progressEndValue3 = 50;
+let speed3 = 10;
+
+let progress3 = setInterval(() => {
+  progressValue3++;
+  valueContainer3.textContent = `${progressValue3}%`;
+  progressBar3.style.background = `conic-gradient(
+    #2CD9C5 ${progressValue3 * 3.6}deg,
+      #EDF0F4 ${progressValue3 * 3.6}deg
+  )`;
+  if (progressValue3 == progressEndValue3) {
+    clearInterval(progress3);
+  }
+}, speed);
+
+
+// end of online reports
 
 function sidemenu(){
   var sidebar = document.getElementById("sidebar-menu")
@@ -163,7 +185,7 @@ var bar_chart = new Chart(bar_ctx, {
  data: {
      labels: [["Pattern","Completion"], "Maths", ["Logical ","Reasoning"],[ "Attention To","Details"], "Articulation"],
      datasets: [{
-         label: 'Percent',
+         label: 'Data',
          data: [10, 32, 45, 32, 34],
          backgroundColor: benchmarkcolorone,
          hoverBorderWidth: 2,
@@ -171,7 +193,7 @@ var bar_chart = new Chart(bar_ctx, {
          fill: true,
      },
      {
-         label: 'Percent',
+         label: 'Data',
          data: [30, 40, 28, 51, 42],
          backgroundColor: benchmarkcolortwo,
          hoverBorderWidth: 2,

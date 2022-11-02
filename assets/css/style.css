@@ -4244,7 +4244,7 @@ textarea {
  }
 
  .btr-line{
-  font-size: 14px;
+  font-size: 20px;
   font-family: nunito;
   font-weight: bold;
   color: #00000099;
@@ -4287,10 +4287,11 @@ textarea {
 }
 
 .total-q h6{
-  font-size: 28px;
+  font-size: 20px;
   color: #171717;
   font-weight: 400;
   text-align: center;
+  font-family: Pop-medium;
 }
 
 /* .performance-footer p::before{
@@ -4433,6 +4434,34 @@ textarea {
   text-align: center !important;
  }
 
+ .circular-progress3{
+  position: relative;
+  height: 200px;
+  width: 200px;
+  background-color: black;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+ }
+
+ .circular-progress3::before{
+  content: "";
+  position: absolute;
+  height: 90%;
+  width: 90%;
+  background-color: white;
+  border-radius: 50%;
+ }
+
+ .value-container3{
+  position: relative;
+  z-index: 20;
+  font-size: 23px !important;
+  font-weight: 600 !important;
+  color: #2C3652 !important;
+  text-align: center !important;
+ }
+
  .yourscore{
   position: relative;
   font-size: 18px !important;
@@ -4540,6 +4569,10 @@ textarea {
   border-collapse:separate !important;
   border-spacing:0 15px !important;
  }
+
+ .table-main-section{
+  overflow-x: auto;
+ }
  
 
  .main-table td{
@@ -4615,6 +4648,10 @@ textarea {
 .chartResponsive{
   height: 300px;
 }
+
+.chartResponsive-benchmark{
+  height: 300px;
+}
 .table-header{
   background-color: #DAEDEB;
   box-shadow: 0px 1px 5px #C5C5C5;
@@ -4653,13 +4690,6 @@ textarea {
   margin-right: 15px;
 }
 
-.progress{
-  background-color: #E3E3E3;
-  border-radius: 10px;
-  overflow: visible;
-  position: relative;
-}
-
 .table-img{
   width: 61px;
   height: 61px;
@@ -4671,6 +4701,7 @@ textarea {
   border-radius: 10px;
   overflow: visible;
   position: relative;
+  width: 170px;
 }
 .pass-field{
   background-color: #DBFFEA !important;
@@ -4678,11 +4709,14 @@ textarea {
   width: 91px;
   display: block;
   text-align: center;
-  margin-top: 25px;
+  margin-top: 0px;
   border-radius: 10px;
   color: #236849;
   font-family: pop-normal;
+  padding-top: 7px;
 }
+
+
 
 .timetaken{
   color: #FFA000;
@@ -4709,11 +4743,174 @@ textarea {
 
 }
 
-
-
-.new-value{
-  transform: translateX(120px);
+.new-proline{
+  
 }
+
+.percentage-section{
+  width: 250px;
+}
+
+.input-data{
+  color: #666666;
+  text-transform: capitalize;
+}
+
+.test-taker-data h6{
+  color: #404040;
+  font-size: 16px;
+  font-family: Pop-medium;
+  text-transform: capitalize;
+  margin-top: 9px;
+}
+
+.test-taker-data p{
+  color: #666666;
+  font-size: 14px;
+  font-family: Pop-normal;
+  text-transform: lowercase;
+}
+
+.percentile-data{
+  margin-left: 40px;
+}
+
+
+.progress-line-value p{
+  position: absolute;
+  margin-left: 140px;
+  margin-top: -8px;
+  font-size: 16px;
+  font-family: Pop-medium;
+  color: #000000;
+}
+
+.progress-line{
+  background-color: #20776E;
+  border-radius: 10px;
+}
+
+.main-table tbody tr td{
+  background-color: white;
+}
+
+.fa-ellipsis-vertical{
+  color: #ACACAC;
+  font-size: 25px;
+  text-align: center;
+  margin-right: 20px;
+}
+
+.options-data{
+  text-align: center;
+}
+
+
+.checkboxone {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  margin-left: 16px;
+}
+
+.checkbox__input {
+  display: none;
+}
+
+.checkbox__box {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #90A4AD;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  transition: background 0.15, border-color0.15;
+  margin-right: 16px;
+}
+
+.checkbox__box::after {
+  content: '\2714';
+  color: #F8F8F8;
+}
+
+.checkbox__input:checked+.checkbox__box {
+  background: #20776E ;
+  border-color: #DAEDEB;
+}
+
+.result-tab{
+  min-width: 180px;
+  height: 54px;
+}
+
+.result-tab p{
+  text-align: center;
+  color: #8B91A9;
+  font-size: 16px;
+  margin-bottom: 0;
+  margin-top: 15px;
+}
+
+.active-result-tab{
+  background-color: white;
+  border-bottom: 3px solid #20776E;
+  color: #2C3652 !important;
+}
+
+.result-tab-section{
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+
+.search-bar{
+  background-color: #EEEEEE;
+  height: 40px;
+  border: none;
+  padding: 10px;
+}
+
+.download-btn{
+  background-color: #20776E;
+  color: white;
+  box-shadow: 0px 3px 6px #5462E247;
+  width: 150px;
+  height: 40px;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.pagination-new{
+  display: flex;
+  list-style: none;
+  background: none !important;
+  gap: 20px;
+}
+
+.pagination-new li .new-link{
+  background-color: #20776E !important;
+  padding: 5px 10px !important;
+  color: white !important;
+  text-align: center !important;
+  box-shadow: 0px 3px 6px #5462E247 !important;
+  border-radius: 5px I !important;
+}
+
+.pagination-new li .new-link{
+  background: none;
+  border: none;
+}
+
+.page-link-page{
+  background-color: none;
+  text-decoration: none;
+  color: #666666;
+}
+
+.graph-container{
+  overflow-x: auto;
+}
+
 
 
 /* end of new css */
@@ -4771,6 +4968,11 @@ textarea {
   .chartResponsive{
     height: 300px;
   }
+
+  .chartResponsive-benchmark{
+    height: 600px;
+    width: 600px;
+  }
   
 
 }
@@ -4782,6 +4984,8 @@ textarea {
   .chart-flex{
     width: 100%;
   }
+
+ 
 }
 
 @media(min-width: 1599px) {
