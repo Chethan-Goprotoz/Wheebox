@@ -63,7 +63,7 @@ function sidemenu(){
 // start of overall performance
 var options = {
   series: [20,20,20],
-  labels: ['Unattempted','Incorrect','Correct'],
+  labels: ['Correct','Incorrect','Unattempted'],
   colors: ['#F6AB39', '#FF6C40', '#2D99FF'],
   chart: {
   type: 'polarArea',
@@ -146,76 +146,97 @@ OverallPerformance.render();
 
 // start of view benchmark
 
+var bar_ctx = document.getElementById('viewBenchmark').getContext('2d');
 
-var options = {
-  series: [{
-  name: 'series1',
-  data: [31, 40, 28, 51, 42],
-  color:'#FDDD33',
+var benchmarkcolorone = bar_ctx.createLinearGradient(0, 0, 0, 400);
+benchmarkcolorone.addColorStop(0, '#2CD9C5');
+benchmarkcolorone.addColorStop(1, '#166D63');
 
-},
- {
-  name: 'series2',
-  data: [11, 32, 45, 32, 34],
-  color: '#2CD9C5'
-  
-}],
-fill: {
-type: "solid",
-fillOpacity: 10,
-},
+ var benchmarkcolortwo = bar_ctx.createLinearGradient(0, 0, 0, 900);
+ benchmarkcolortwo.addColorStop(0, '#FDDD33');
+ benchmarkcolortwo.addColorStop(1, '#7F6F1A');
 
-  chart: {
-    width: '100%',
-    fontFamily: 'Pop-normal',
-    
+ 
 
-    
-  type: 'area',
-  
-  toolbar:{
-    show:false,
-},
-},
-
-legend: {
-  show: false,
-},
-
-dataLabels: {
-  enabled: false
-},
-stroke: {
-  curve: 'straight'
-},
-xaxis: { 
-  categories: [["Pattern","Completion"], "Maths", ["Logical","Reasoning"], ["Attention","To Details"], "Articulation"],
-  tickPlacement: 'between',
-  tickAmount:10,
-  labels: {
-    
+var bar_chart = new Chart(bar_ctx, {
+ type: 'line',
+ data: {
+     labels: [["Pattern","Completion"], "Maths", ["Logical ","Reasoning"],[ "Attention To","Details"], "Articulation"],
+     datasets: [{
+         label: 'Percent',
+         data: [10, 32, 45, 32, 34],
+         backgroundColor: benchmarkcolorone,
+         hoverBorderWidth: 2,
+         hoverBorderColor: 'purple', 
+         fill: true,
+     },
+     {
+         label: 'Percent',
+         data: [30, 40, 28, 51, 42],
+         backgroundColor: benchmarkcolortwo,
+         hoverBorderWidth: 2,
+         hoverBorderColor: 'purple',
+         fill: true,
+     }
+ ],
+ 
+ },
+ options: {
+  maintainAspectRatio:false,
+   plugins: {
+    legend: {
+     display: false,
+    },
+    tooltip:{
+      callbacks:{
+        title:(context)=>{
+          console.log(context[0].label)
+          return context[0].label.replaceAll(',',' ')
+        }
+      }
+     },
   },
-},
-yaxis: {
-  range: 10,
-  
-  labels: {
-    formatter: function (value) {
-  return value + "%";
-},
-style: {
-  fontSize: '12px'
-},
+  scales:{
+    y:{
+      beginAtZero: true,
+      ticks: {  
+      maxTicksLimit: 10,
+      stepSize: 10,
+      min: 0,
+      max: this.max,
+      callback: function (value) {
+        return (value / this.max * 100).toFixed(0) + '%'; 
+      },
+      offset: true,
+      
+    },
+    },
+
+   x:{
+     grid: {
+         display:false
+     },
+     font: {
+      family: 'pop-normal', 
   },
+   }
+  },
+  tooltips: {
+         custom: function(tooltip) {
+           if (!tooltip) return;
+           tooltip.displayColors = false;
+         },
+         callbacks: {
+           label: function(tooltipItem, data) {
+             return tooltipItem.xLabel + " :" + tooltipItem.yLabel;
+           },
+           title: function(tooltipItem, data) {
+             return;
+           }
+         },
+       },
 },
-tooltip: {
- show:false,
-},
-
-};
-
-var viewBenchmark = new ApexCharts(document.querySelector("#viewBenchmark"), options);
-viewBenchmark.render();
+});
 
 
 
@@ -251,6 +272,7 @@ const labels2 = [["Pattern","Completion"], "Maths", ["Logical","Reasoning"],[ "A
    type: 'line',
    data: data2,
    options: {
+    maintainAspectRatio:false,
      responsive: true,
      plugins: {
        legend: {
@@ -267,23 +289,28 @@ const labels2 = [["Pattern","Completion"], "Maths", ["Logical","Reasoning"],[ "A
      },
      scales:{
       y:{
+        beginAtZero: true,
         ticks: {
+
+          
         maxTicksLimit: 10,
+        stepSize: 20,
         min: 0,
         max: this.max,
         callback: function (value) {
           return (value / this.max * 100).toFixed(0) + '%'; 
         },
+        offset: true,
         
       },
       },
       x:{
         ticks: {
-         
           font: {
             family: 'pop-normal', 
           
         },
+        
           
         },
       }
@@ -338,6 +365,7 @@ var bar_chart = new Chart(bar_ctx, {
  
  },
  options: {
+  maintainAspectRatio:false,
    plugins: {
     legend: {
      display: false,
@@ -360,6 +388,7 @@ var bar_chart = new Chart(bar_ctx, {
      callback: function (value) {
        return (value / this.max * 100).toFixed(0) + '%'; // convert it to percentage
      },
+     
    },
    
    },

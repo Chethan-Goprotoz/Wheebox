@@ -34,13 +34,18 @@
         <div class="main_div">
           <div class="row">
             <div class="main_header mb-1">
-              <div class="logo">
-                <img src="assets/images/logo_logo.png" alt="mini-logo">
+              <div class="d-flex justify-content-between" style="
+              width: 30%;
+          ">
+                <div class="logo new-logopart">
+                  <img src="assets/images/logo_logo.png" alt="mini-logo">
+                </div>
+                <div class="d-flex align-items-center d-none d-md-flex justify-content-around btr-link navbar-place">
+                  <img src="assets/images/back-arrow.svg" alt="">
+                  <a class="anchor-dec" href="#"><h5 class="btr-line">Back To Result List</h5></a>
+                </div>
               </div>
-              <div class="d-flex align-items-center d-none d-md-flex justify-content-around btr-link">
-                <img src="assets/images/back-arrow.svg" alt="">
-                <a class="anchor-dec" href="#"><h5 class="btr-line">Back To Result List</h5></a>
-              </div>
+              
              <div></div>
               <div class="d-flex align-items-center gap-5">
                 <div class="d-flex gap-4">
@@ -71,7 +76,7 @@
           </div>
           <!-- row closed -->
         </div>
-        <div>
+       
           <div>
             <div class="d-flex justify-content-lg-end justify-content-between">
               <div>
@@ -87,7 +92,7 @@
               </div>
             </div>
           </div>
-        </div>
+        
       </div>
         <div class="sidebar">
             <div class="d-flex">
@@ -142,7 +147,9 @@
                            </div>
                         </div>
                         </div>
-                        <div id="viewBenchmark"></div>
+                        <div class="chartResponsive">
+                          <canvas id="viewBenchmark"></canvas>
+                        </div>
                     </div>
                     <div class="stats-card appDetailCard">
                       <div class="d-flex flex-wrap justify-content-between align-items-center">
@@ -159,7 +166,7 @@
                        </div>
                       
                       </div>
-                      <div class="view-strenghts-graph">
+                      <div class="view-strenghts-graph chartResponsive">
                         <canvas id="viewStrengths"></canvas>
                       </div> 
                     </div>
@@ -167,7 +174,7 @@
                     <div class="d-flex flex-lg-row flex-column gap-4 score-marks">
                         <div class="stats-card appDetailCard">
                           <div class="d-flex flex-wrap justify-content-between align-items-center">
-                            <h3>View Inprovements</h3>
+                            <h3>View Improvements</h3>
                             <div class="d-flex flex-wrap gap-md-5 gap-1">
                               <div class="d-flex">
                                  <div class="pf-indicator pf-color7"></div>
@@ -179,7 +186,9 @@
                               </div>
                            </div>
                           </div>
+                           <div class="chartResponsive">
                             <canvas id="viewImprovements"></canvas>
+                           </div>
                         </div>
                         <div class="stats-card appDetailCard">
                           <div class="d-flex justify-content-between">
