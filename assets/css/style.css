@@ -4523,7 +4523,11 @@ textarea {
  }
 
  .nav-link{
-  color: #2C3652;
+  color: #8B91A9;
+ }
+
+ .nav-link:focus, .nav-link:hover{
+  color: rgb(32, 119, 110) !important;
  }
 
  .nav-alt{
@@ -5170,7 +5174,6 @@ textarea {
     width: 100%;
   }
 
- 
 }
 
 @media(min-width: 1599px) {
@@ -5180,3 +5183,4 @@ textarea {
 }
 
 }
+
