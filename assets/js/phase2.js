@@ -23,6 +23,8 @@ function sidemenu(){
   var icon = document.getElementById("menu-icon")
   sidebar.classList.toggle("sidebar-active")
   icon.classList.toggle("icon-rotate")
+  icon.classList.toggle("fa-bars")
+  icon.classList.toggle("fa-xmark")
 }
 
 
@@ -120,7 +122,7 @@ OverallPerformance.render();
 var benchmark = document.getElementById('viewBenchmark').getContext('2d');
 
 var benchmarkcolorone = benchmark.createLinearGradient(0, 0, 0, 400);
-benchmarkcolorone.addColorStop(0, '#2CD9C5');
+benchmarkcolorone.addColorStop(0, 'rgba(44, 217, 197, 0.9)');
 benchmarkcolorone.addColorStop(1, '#166D63');
 
  var benchmarkcolortwo = benchmark.createLinearGradient(0, 0, 0, 900);
