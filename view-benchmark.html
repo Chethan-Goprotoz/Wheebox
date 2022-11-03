@@ -146,7 +146,7 @@
                         </div>
                         </div>
                         <div class="graph-container">
-                          <div class="chartResponsive-benchmark ">
+                          <div class="chartResponsive-benchmark">
                             <canvas id="viewBenchmark"></canvas>
                           </div>
                         </div>
@@ -166,9 +166,11 @@
                        </div>
                       
                       </div>
-                      <div class="view-strenghts-graph chartResponsive">
-                        <canvas id="viewStrengths"></canvas>
-                      </div> 
+                      <div class="graph-container">
+                        <div class="chartResponsive-benchmark">
+                          <canvas id="viewStrengths"></canvas>
+                        </div>
+                      </div>
                     </div>
                     </div>
                     <div class="d-flex flex-lg-row flex-column gap-4 score-marks">
@@ -186,28 +188,34 @@
                               </div>
                            </div>
                           </div>
-                           <div class="chartResponsive">
-                            <canvas id="viewImprovements"></canvas>
-                           </div>
+                          <div class="graph-container">
+                            <div class="chartResponsive-benchmark">
+                              <canvas id="viewImprovements"></canvas>
+                            </div>
+                          </div>
                         </div>
                         <div class="stats-card appDetailCard">
                           <div class="d-flex justify-content-between">
                             <h3>You vs Topper</h3>
                           </div>
                             <div class="d-flex flex-column flex-md-row flex-lg-row gap-5 justify-content-center align-items-center mt-5">
-                              <div id="circular-progress" class="circular-progress">
-                                <div>
-                                  <p id="value-container" class="value-container">1</p>
-                                  <p class="yourscore">Your Score</p>
-                                </div>
-                              </div>
+                             <div class="progressBarContainer">
+                              <svg class="progressBar purple noselect" data-progress="25" x="0px" y="0px" viewBox="0 0 80 80">
+                                <path class="track" d="M5,40a35,35 0 1,0 70,0a35,35 0 1,0 -70,0" />
+                                <path class="fill" d="M5,40a35,35 0 1,0 70,0a35,35 0 1,0 -70,0" />
+                              </svg>
+                              <p class="counter-part">25%</p>
+                              <p class="counter-part2">Your Score</p>
+                             </div>
 
-                              <div id="circular-progress2" class="circular-progress2">
-                                <div>
-                                  <p id="progressvalue" class="value-container2">2</p>
-                                  <p class="yourscore">Topper Score</p>
-                                </div>
-                              </div>
+                             <div class="progressBarContainer">
+                              <svg class="progressBar green noselect" data-progress="75" x="0px" y="0px" viewBox="0 0 80 80">
+                                <path class="track" d="M5,40a35,35 0 1,0 70,0a35,35 0 1,0 -70,0" />
+                                <path class="fill" d="M5,40a35,35 0 1,0 70,0a35,35 0 1,0 -70,0" />
+                              </svg>
+                              <p class="counter-part">75%</p>
+                              <p class="counter-part3">Topper Score</p>
+                             </div>
                             </div>
                         </div>
                         </div>
@@ -229,7 +237,12 @@
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <script src="assets/js/phase2.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="assets/js/phase2.js"></script>
+
+
+    <script>
+
+
+    </script>
     
 
   </body>

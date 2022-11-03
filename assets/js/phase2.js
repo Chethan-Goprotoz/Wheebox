@@ -1,85 +1,19 @@
 // Start of Your Score (You vs Topper)
 
-let progressBar = document.querySelector(".circular-progress");
-let valueContainer = document.querySelector(".value-container");
 
-let progressValue = 0;
-let progressEndValue = 30;
-let speed = 10;
+var progressBarCircle = function (array, callback, scope) {
+	for (var i = 0; i < array.length; i++) {
+		callback.call(scope, i, array[i]);
+	}
+};
 
-let progress = setInterval(() => {
-  progressValue++;
-  valueContainer.textContent = `${progressValue}%`;
-  progressBar.style.background = `conic-gradient(
-    #826AF9 ${progressValue * 3.6}deg,
-      #EDF0F4 ${progressValue * 3.6}deg
-  )`;
-  if (progressValue == progressEndValue) {
-    clearInterval(progress);
-  }
-}, speed);
-
-// End of Your Score (You vs Topper)
-
-
-// Start of Topper Score (You vs Topper)
-
-let progressBar2 = document.querySelector(".circular-progress2");
-let valueContainer2 = document.querySelector(".value-container2");
-
-let progressValue2 = 0;
-let progressEndValue2 = 70;
-let speed2 = 10;
-
-let progress2 = setInterval(() => {
-  progressValue2++;
-  valueContainer2.textContent = `${progressValue2}%`;
-  progressBar2.style.background = `conic-gradient(
-    #2CD9C5 ${progressValue2 * 3.6}deg,
-      #EDF0F4 ${progressValue2 * 3.6}deg
-  )`;
-  if (progressValue2 == progressEndValue2) {
-    clearInterval(progress2);
-  }
-}, speed);
-
-
-
-// End of Topper Score (You vs Topper)
-
-
-// start of online reports
-
-let progressBar3 = document.getElementById("circular-progress3")
-let valueContainer3 = document.getElementById("value-container3")
-let progressValue3 = 0;
-let progressEndValue3 = 40;
-let speed3 = 10;
-
-let progress3 = setInterval(() => {
-  progressValue3++;
-  valueContainer3.textContent = `${progressValue3}%`;
-  progressBar3.style.background = `conic-gradient(
-    #2CD9C5 ${progressValue3 * 3.6}deg,
-      #EDF0F4 ${progressValue3 * 3.6}deg
-  )`;
- 
-  if (progressValue3 == progressEndValue3) {
-    clearInterval(progress3);
-  };
-  var risksign = document.getElementById("risksign")
-  var riskwarning = document.getElementById("riskwarning")
-  
-  if (progressEndValue3<=50){
-    risksign.classList.remove("d-none")
-    riskwarning.classList.remove("d-none")
-  };
-  
-}, speed);
-
-// proctoring score warning 
-
-
+window.onload = function(){
+	var max = -219.99078369140625;
+	progressBarCircle(document.querySelectorAll('.progressBar'), function (index, value) {
+	percent = value.getAttribute('data-progress');
+		value.querySelector('.fill').setAttribute('style', 'stroke-dashoffset: ' + ((100 - percent) / 100) * max);
+	});
+}
 
 
 // end of online reports
@@ -90,6 +24,8 @@ function sidemenu(){
   sidebar.classList.toggle("sidebar-active")
   icon.classList.toggle("icon-rotate")
 }
+
+
 
 
 // Start of Phase 2 Charts data
@@ -181,97 +117,99 @@ OverallPerformance.render();
 
 // start of view benchmark
 
-var bar_ctx = document.getElementById('viewBenchmark').getContext('2d');
+var benchmark = document.getElementById('viewBenchmark').getContext('2d');
 
-var benchmarkcolorone = bar_ctx.createLinearGradient(0, 0, 0, 400);
+var benchmarkcolorone = benchmark.createLinearGradient(0, 0, 0, 400);
 benchmarkcolorone.addColorStop(0, '#2CD9C5');
 benchmarkcolorone.addColorStop(1, '#166D63');
 
- var benchmarkcolortwo = bar_ctx.createLinearGradient(0, 0, 0, 900);
+ var benchmarkcolortwo = benchmark.createLinearGradient(0, 0, 0, 900);
  benchmarkcolortwo.addColorStop(0, '#FDDD33');
  benchmarkcolortwo.addColorStop(1, '#7F6F1A');
 
  
 
-var bar_chart = new Chart(bar_ctx, {
- type: 'line',
- data: {
-     labels: [["Pattern","Completion"], "Maths", ["Logical ","Reasoning"],[ "Attention To","Details"], "Articulation"],
-     datasets: [{
-         label: 'Data',
-         data: [10, 32, 45, 32, 34],
-         backgroundColor: benchmarkcolorone,
-         hoverBorderWidth: 2,
-         hoverBorderColor: 'purple', 
-         fill: true,
-     },
-     {
-         label: 'Data',
-         data: [30, 40, 28, 51, 42],
-         backgroundColor: benchmarkcolortwo,
-         hoverBorderWidth: 2,
-         hoverBorderColor: 'purple',
-         fill: true,
-     }
- ],
- 
- },
- options: {
-  maintainAspectRatio:false,
-   plugins: {
-    legend: {
-     display: false,
-    },
-    tooltip:{
-      callbacks:{
-        title:(context)=>{
-          console.log(context[0].label)
-          return context[0].label.replaceAll(',',' ')
-        }
+ var bar_chart = new Chart(benchmark, {
+  type: 'line',
+  data: {
+      labels: [["Pattern","Completion"], "Maths", ["Logical ","Reasoning"],[ "Attention To","Details"], "Articulation"],
+      datasets: [{
+          label: 'Percent',
+          data: [25, 65, 70, 70, 70],
+          backgroundColor: benchmarkcolorone,
+          hoverBorderWidth: 2,
+          hoverBorderColor: 'purple', 
+          barThickness: 10,
+          fill:true,
+      },
+      {
+          label: 'Percent',
+          data: [42, 20, 60, 100, 100],
+          backgroundColor: benchmarkcolortwo,
+          hoverBorderWidth: 2,
+          hoverBorderColor: 'purple',
+          barThickness: 10,
+          fill:true,
       }
-     },
+  ],
+  
   },
-  scales:{
+  options: {
+   maintainAspectRatio:false,
+    plugins: {
+     legend: {
+      display: false,
+     },
+     tooltip:{
+       callbacks:{
+         title:(context)=>{
+           console.log(context[0].label)
+           return context[0].label.replaceAll(',',' ')
+         }
+       }
+      },
+   },
+   scales:{
     y:{
       beginAtZero: true,
-      ticks: {  
-      maxTicksLimit: 10,
-      stepSize: 10,
+      ticks: {
+        maxTicksLimit: 10,
       min: 0,
-      max: this.max,
+      max: this.max,// Your absolute max value
       callback: function (value) {
-        return (value / this.max * 100).toFixed(0) + '%'; 
+        return (value / this.max * 100).toFixed(0) + '%'; // convert it to percentage
       },
-      offset: true,
       
     },
+    
     },
-
-   x:{
-     grid: {
-         display:false
-     },
-     font: {
-      family: 'pop-normal', 
-  },
-   }
-  },
-  tooltips: {
-         custom: function(tooltip) {
-           if (!tooltip) return;
-           tooltip.displayColors = false;
-         },
-         callbacks: {
-           label: function(tooltipItem, data) {
-             return tooltipItem.xLabel + " :" + tooltipItem.yLabel;
-           },
-           title: function(tooltipItem, data) {
-             return;
-           }
-         },
-       },
-},
-});
+ 
+    x:{
+      grid: {
+          display:false
+      },
+      font: {
+       family: 'pop-normal', 
+   },
+    }
+   },
+   tooltips: {
+          custom: function(tooltip) {
+            if (!tooltip) return;
+            tooltip.displayColors = false;
+          },
+          callbacks: {
+            label: function(tooltipItem, data) {
+              return tooltipItem.xLabel + " :" + tooltipItem.yLabel;
+            },
+            title: function(tooltipItem, data) {
+              return;
+            }
+          },
+        },
+ },
+ });
+ 
 
 
 
@@ -283,7 +221,7 @@ const labels2 = [["Pattern","Completion"], "Maths", ["Logical","Reasoning"],[ "A
  const data2 = {
     labels: labels2,
     datasets: [{
-     label: 'My First dataset',
+     label: 'Data',
      backgroundColor: 'rgb(255, 99, 132)',
      borderColor: 'rgb(255, 99, 132)',
      data: [40, 100, 80, 100, 65],
@@ -292,13 +230,13 @@ const labels2 = [["Pattern","Completion"], "Maths", ["Logical","Reasoning"],[ "A
      pointBackgroundColor:'#4791FF'
    },
    {
-     label: 'My First dataset',
+     label: 'Data',
      backgroundColor: 'rgb(255, 99, 132)',
      borderColor: 'rgb(255, 99, 132)',
      data: [20, 55, 24, 75, 100],
      tension: 0.4,
      borderColor: '#0CBF7D',
-     pointBackgroundColor:'#0CBF7D'
+     pointBackgroundColor:'#0CBF7D',
      
    }]
  };
@@ -326,9 +264,6 @@ const labels2 = [["Pattern","Completion"], "Maths", ["Logical","Reasoning"],[ "A
       y:{
         beginAtZero: true,
         ticks: {
-
-          
-        maxTicksLimit: 10,
         stepSize: 20,
         min: 0,
         max: this.max,
@@ -458,5 +393,3 @@ var bar_chart = new Chart(bar_ctx, {
 
 
 // End of Phase 2 Charts Data
-
-

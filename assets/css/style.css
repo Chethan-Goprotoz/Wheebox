@@ -4628,6 +4628,13 @@ textarea {
   font-size: 12px;
   font-weight: bold;
   margin-bottom: 0;
+  display: inline;
+  margin-right: 15px;
+}
+
+.time{
+  color: #CACACA;
+  font-size: 10px;
 }
 
 .screenshots img{
@@ -4961,6 +4968,104 @@ textarea {
 
 
 
+/*===== The CSS =====*/
+.progressBar{
+	width: 200px;
+	height: 200px;
+}
+.progressBar .track, .progressBar .fill{
+	fill: rgba(0, 0, 0, 0);
+	stroke-width: 3;
+	transform: rotate(90deg)translate(0px, -80px);
+}
+.progressBar .track{
+	stroke: #EDF0F4;
+}
+.progressBar .fill {
+	stroke: rgb(255, 255, 255);
+	stroke-dasharray: 219.99078369140625;
+	stroke-dashoffset: -219.99078369140625;
+	transition: stroke-dashoffset 1s;
+}
+.progressBar.purple .fill {
+	stroke: #826AF9
+}
+.progressBar.green .fill {
+	stroke: #2CD9C5;
+}
+
+.progressBar.gradient .fill {
+	stroke: #2CD9C5;
+}
+.progressBar .value, .progressBar .text {
+	font-family: 'Open Sans';
+	fill: #2C3652;
+	text-anchor: middle;
+  font-size: 10px;
+
+}
+.progressBar .text {
+	font-size: 12px;
+}
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+		cursor: default;
+}
+
+.counter-part{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  transform: translate(-72px,70px);
+  font-family: Pop-semibold;
+  font-size: 24px !important;
+}
+
+.counter-report{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  transform: translate(-50px,85px);
+  font-family: Pop-semibold;
+  font-size: 44px !important;
+}
+
+.counter-part2{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  transform: translate(-55px,110px);
+  text-align: center !important;
+  font-size: 12px;
+  font-family: Pop-normal;
+}
+
+.counter-part3{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  transform: translate(-48px,110px);
+  text-align: center !important;
+  font-size: 12px;
+  font-family: Pop-normal;
+}
+
+
+
+.progressBarContainer{
+  position: relative;
+}
+
+
 /* end of new css */
 
 
@@ -4977,9 +5082,6 @@ textarea {
   .stats-card{
     width: 100%;
   }
-
-  
-
 }
 
 @media(max-width: 992px) {
@@ -5018,9 +5120,43 @@ textarea {
   }
 
   .chartResponsive-benchmark{
-    height: 600px;
+    height: 400px;
     width: 600px;
   }
+
+  .left-head{
+    font-size: 14px;
+    color: #8B91A9;
+    width: 55%;
+    padding-bottom: 15px;
+  }
+  
+  .right-data{
+    font-size: 14px;
+    color: #2C3652;
+    font-weight: 600;
+    word-break: keep-all;
+    padding-bottom: 16px;
+    padding-left: 8px;
+  }
+  
+  .pd-left-head{
+    font-size: 14px;
+    color: #8B91A9;
+    width: 55%;
+    padding-bottom: 15px;
+  }
+
+  .pd-right-data{
+    font-size: 14px;
+    color: #2C3652;
+    font-weight: 600;
+    word-break: keep-all;
+    padding-bottom: 16px;
+    padding-left: 16px;
+  }
+
+
   
 
 }
