@@ -4969,6 +4969,8 @@ textarea {
   font-size: 16px;
   margin-bottom: 0;
   margin-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .active-result-tab{
@@ -5163,6 +5165,22 @@ textarea {
 
 .progressBarContainer{
   position: relative;
+}
+
+.card-container{
+  margin-top: 75px;
+
+}
+
+.insightCard{
+  width: 49%;
+}
+
+
+.piechart{
+  width: 400px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 

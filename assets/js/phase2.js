@@ -1,4 +1,5 @@
 
+
 var progressBarCircle = function (array, callback, scope) {
 	for (var i = 0; i < array.length; i++) {
 		callback.call(scope, i, array[i]);
@@ -403,6 +404,13 @@ var bar_chart = new Chart(bar_ctx, {
 
 
 // end of view strengths
+
+
+
+
+// total applicant
+
+
 
 
 // End of Phase 2 Charts Data
