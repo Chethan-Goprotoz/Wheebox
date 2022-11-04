@@ -4105,7 +4105,7 @@ textarea {
   transition: width 2s;
 }
 
-.previous-arrow:hover::after{
+.previous-arrow::after{
   content: "Previous Applicant";
   color: #666666;
   padding-top: 10px;
@@ -4119,11 +4119,17 @@ textarea {
   box-shadow: 0px 3px 6px #00000029;
   border-radius: 4px;
   display: block;
-  
+  opacity: 0;
+  -webkit-transition: all 0.4s ;
+    transition: all 0.4s ;
+}
+
+.previous-arrow:hover::after{
+  opacity: 1;
 }
 
 
-.next-arrow:hover::after{
+.next-arrow::after{
   content: "Next Applicant";
   color: #666666;
   padding-top: 10px;
@@ -4137,7 +4143,13 @@ textarea {
   box-shadow: 0px 3px 6px #00000029;
   border-radius: 4px;
   display: block;
-  transition: 1s ease-in-out;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s ;
+  opacity: 0;
+}
+
+.next-arrow:hover::after{
+  opacity: 1;
 }
 
 
