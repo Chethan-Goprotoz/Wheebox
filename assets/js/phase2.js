@@ -1,5 +1,22 @@
 // Start of Your Score (You vs Topper)
 
+let proctoringscore = document.getElementById("riskwarning")
+let proctoringvalue = document.getElementById("counter-report")
+let proctoringRiskSign = document.getElementById("risksign")
+let proctoringvalue_number = parseInt(progressId.dataset.progress)
+
+if(proctoringvalue_number<10){
+  proctoringvalue.style.transform = "translate(-60px,85px)"
+}
+
+proctoringvalue.textContent = (proctoringvalue_number + "%")
+
+
+
+if(proctoringvalue_number>50){
+  proctoringscore.style.display = "none"
+  proctoringRiskSign.style.display = "none"
+}
 
 var progressBarCircle = function (array, callback, scope) {
 	for (var i = 0; i < array.length; i++) {
@@ -393,11 +410,13 @@ var bar_chart = new Chart(bar_ctx, {
          },
        },
 },
-});
+},
+);
+
+
+
 
 // end of view strengths
 
 
 // End of Phase 2 Charts Data
-
-

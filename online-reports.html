@@ -175,11 +175,11 @@
                         <div class="row">
                             <div class="d-flex justify-content-center">
                               <div class="progressBarContainer">
-                                <svg class="progressBar gradient noselect" data-progress="25" x="0px" y="0px" viewBox="0 0 80 80">
+                                <svg class="progressBar gradient noselect" id="progressId"  x="0px" y="0px" viewBox="0 0 80 80" data-progress="49">
                                   <path class="track" d="M5,40a35,35 0 1,0 70,0a35,35 0 1,0 -70,0" />
                                   <path class="fill" d="M5,40a35,35 0 1,0 70,0a35,35 0 1,0 -70,0" />
                                 </svg>
-                                <p id="counter-report" class="counter-report">25%</p>
+                                <p id="counter-report" class="counter-report"></p>
                                </div>
                               <div class="warning-sign" id="risksign">
                                 <img src="assets/images/warning.png" alt="">
@@ -411,7 +411,7 @@
                         </div>
                       </div>
                       <div class="tab-pane fade" id="section7" role="tabpanel" >
-                        <div class="d-flex justify-content-lg-between justify-content-center flex-wrap mt-5">
+                        <div class="d-flex justify-content-lg-between align-items-center justify-content-center gap-5 flex-wrap mt-5">
                           <div class="instructions">
                             <img src="assets/images/green.png" alt="">
                             <h6>Green</h6>
@@ -419,9 +419,9 @@
                           </div>
 
                           <div class="instructions">
-                            <img src="assets/images/yellow.png" alt="">
+                            <img class="yellow-img" src="assets/images/yellow.png" alt="">
                             <h6 class="ins-yellow">Yellow</h6>
-                            <p>No face found or no<br /> correct front face</p>
+                            <p >No face found or no<br /> correct front face</p>
                           </div>
 
                           <div class="instructions">

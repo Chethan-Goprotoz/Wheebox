@@ -4109,6 +4109,10 @@ textarea {
   
 }
 
+.yellow-img{
+  margin-top: 30px;
+}
+
 .previous-arrow{
   transition: width 2s;
 }
@@ -4687,6 +4691,7 @@ textarea {
   color: #848E90;
   font-size: 14px;
   font-weight: 300;
+  text-align: center;
  }
 
  .ins-yellow{
@@ -4698,10 +4703,7 @@ textarea {
  }
 
  .instructions{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;  
+  
  }
 
 .chat-box h3{
