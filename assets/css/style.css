@@ -4092,9 +4092,57 @@ textarea {
   margin-left: 4px;
 }
 
+.navigationBtns{
+  position: relative;
+}
+
 .anchor-dec{
   text-decoration: none;
+  
 }
+
+.previous-arrow{
+  transition: width 2s;
+}
+
+.previous-arrow:hover::after{
+  content: "Previous Applicant";
+  color: #666666;
+  padding-top: 10px;
+  text-align: center;
+  width: 155px;
+  height: 44px;
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  transform: translate(-120px,45px);
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 4px;
+  display: block;
+  
+}
+
+
+.next-arrow:hover::after{
+  content: "Next Applicant";
+  color: #666666;
+  padding-top: 10px;
+  text-align: center;
+  width: 131px;
+  height: 44px;
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  transform: translate(-55px,45px);
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 4px;
+  display: block;
+  transition: 1s ease-in-out;
+}
+
+
+
+
 
 .profile-details{
   border: 1px solid #20776E;
@@ -4249,6 +4297,8 @@ textarea {
  .nav-arrows-2{
   width: 40px;
  }
+
+
 
  .btr-line{
   font-size: 20px;
