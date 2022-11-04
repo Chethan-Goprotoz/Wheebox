@@ -1,4 +1,20 @@
-// Start of Your Score (You vs Topper)
+// Start of sidebar
+
+
+function sidemenu(){
+  var sidebar = document.getElementById("sidebar-menu")
+  var icon = document.getElementById("menu-icon")
+  sidebar.classList.toggle("sidebar-active")
+  icon.classList.toggle("icon-rotate")
+  icon.classList.toggle("fa-bars")
+  icon.classList.toggle("fa-xmark")
+}
+
+
+
+// end of sidebar
+
+// Start of Proctoring Score 
 
 let proctoringscore = document.getElementById("riskwarning")
 let proctoringvalue = document.getElementById("counter-report")
@@ -18,6 +34,9 @@ if(proctoringvalue_number>50){
   proctoringRiskSign.style.display = "none"
 }
 
+
+// end of proctoring score
+
 var progressBarCircle = function (array, callback, scope) {
 	for (var i = 0; i < array.length; i++) {
 		callback.call(scope, i, array[i]);
@@ -32,18 +51,7 @@ window.onload = function(){
 	});
 }
 
-
 // end of online reports
-
-function sidemenu(){
-  var sidebar = document.getElementById("sidebar-menu")
-  var icon = document.getElementById("menu-icon")
-  sidebar.classList.toggle("sidebar-active")
-  icon.classList.toggle("icon-rotate")
-  icon.classList.toggle("fa-bars")
-  icon.classList.toggle("fa-xmark")
-}
-
 
 
 
