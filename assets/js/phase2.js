@@ -1,41 +1,3 @@
-// Start of sidebar
-
-
-function sidemenu(){
-  var sidebar = document.getElementById("sidebar-menu")
-  var icon = document.getElementById("menu-icon")
-  sidebar.classList.toggle("sidebar-active")
-  icon.classList.toggle("icon-rotate")
-  icon.classList.toggle("fa-bars")
-  icon.classList.toggle("fa-xmark")
-}
-
-
-
-// end of sidebar
-
-// Start of Proctoring Score 
-
-let proctoringscore = document.getElementById("riskwarning")
-let proctoringvalue = document.getElementById("counter-report")
-let proctoringRiskSign = document.getElementById("risksign")
-let proctoringvalue_number = parseInt(progressId.dataset.progress)
-
-if(proctoringvalue_number<10){
-  proctoringvalue.style.transform = "translate(-60px,85px)"
-}
-
-proctoringvalue.textContent = (proctoringvalue_number + "%")
-
-
-
-if(proctoringvalue_number>50){
-  proctoringscore.style.display = "none"
-  proctoringRiskSign.style.display = "none"
-}
-
-
-// end of proctoring score
 
 var progressBarCircle = function (array, callback, scope) {
 	for (var i = 0; i < array.length; i++) {
@@ -51,9 +13,22 @@ window.onload = function(){
 	});
 }
 
-// end of online reports
+
+// Start of sidebar
 
 
+function sidemenu(){
+  var sidebar = document.getElementById("sidebar-menu")
+  var icon = document.getElementById("menu-icon")
+  sidebar.classList.toggle("sidebar-active")
+  icon.classList.toggle("icon-rotate")
+  icon.classList.toggle("fa-bars")
+  icon.classList.toggle("fa-xmark")
+}
+
+
+
+// end of sidebar
 
 // Start of Phase 2 Charts data
 
@@ -142,6 +117,9 @@ OverallPerformance.render();
 
 // end of overall performance
 
+
+
+// end of online reports
 
 // start of view benchmark
 

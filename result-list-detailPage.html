@@ -1,279 +1,223 @@
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Result list detail page</title>
-
-    <!-- font awesome css -->
-    <link rel="stylesheet" href="assets/font-awesome/all.min.css"/>
-    <link rel="stylesheet" href="assets/font-awesome/fontawesome.css"/>
-
-    <!-- bootstrap css -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" rel="stylesheet"/>
-
-    <!-- loader css -->
-    <link rel="stylesheet" href="assets/css/loader.css">
-
-    <!-- style css -->
+    <title>Result list detail page</title> <!-- font awesome css -->
+    <link rel="stylesheet" href="assets/font-awesome/all.min.css" />
+    <link rel="stylesheet" href="assets/font-awesome/fontawesome.css" /> <!-- bootstrap css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" rel="stylesheet" /> <!-- loader css -->
+    <link rel="stylesheet" href="assets/css/loader.css"> <!-- style css -->
     <link rel="stylesheet" href="assets/sass/app.css" rel="stylesheet" />
-
     <link rel="stylesheet" href="assets/css/style.css" rel="stylesheet">
-  </head>
+</head>
 
-  <body>
+<body>
     <!-- loader start-->
     <div class="loader-container">
         <div class="loader"></div>
-    </div>
-    <!-- loader end-->
-
+    </div> <!-- loader end-->
     <!--selection section start -->
     <section class="selection-new">
-      <div class="container-fluid">
-        <div class="main_div">
-          <div class="row">
-            <div class="main_header mb-1">
-              <div class="d-flex justify-content-between navpart1">
-                <div class="logo new-logopart">
-                  <img src="assets/images/logo_logo.png" alt="mini-logo">
-                </div>
-                <div class="d-flex align-items-center d-none d-md-flex justify-content-around btr-link navbar-place">
-                  <img src="assets/images/back-arrow.svg" alt="">
-                  <a class="anchor-dec" href="#"><h5 class="btr-line">Back To Result List</h5></a>
-                </div>
-              </div>
-              
-             <div></div>
-              <div class="d-flex align-items-center gap-5">
-                <div class="d-flex gap-4">
-                  <div class="home-search">
-                    <img class="nav-arrows" src="assets/images/search-hover.svg" alt="">
-                  </div>
-                  <div>
-                    <a href="#">
-                      <div class="home-search">
-                        <img class="nav-arrows-1" src="assets/images/home-hover.svg" alt="">
-                      </div>
-                    </a>
-                  </div>
-                </div>
-                <div class="grid-new">
-                  <div class="grid1-new">
-                    <div class="profile rounded-circle">
-                      <img src="assets/images/prof-mini.png" alt="profile">
-                    </div>
-                  </div>
-                  <div class="grid2-new d-none d-md-block">
-                    <h6>Jane Doe</h6>
-                    <p>jane_doe@wheebox.com</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- row closed -->
-        </div>
-        <div>
-          <div>
-            <div class="d-flex justify-content-lg-end justify-content-between">
-              <div>
-                <i onclick="sidemenu()" id="menu-icon" class="fas fa-solid icon-w fa-bars d-block d-lg-none"></i>
-              </div>
-              <div class="navigationBtns">
-                <a class="anchor-dec previous-arrow" href="#">
-                 <img class="nav-arrows-2" src="/assets/images/left-arow.svg" alt="">
-                </a>
-                <a class="anchor-dec next-arrow" href="#">
-                  <img class="nav-arrows-2" src="/assets/images/right-arrow.svg" alt="">
-                 </a>
-             </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="sidebar">
-            <div class="d-flex">
-              <div class="side1" id="sidebar-menu">
-                <div class="d-flex profile-details">
-                    <img src="assets/images/capphoto.png" alt="">
-                    <div class="profile-info">
-                        <h5>Jane Doe</h5>
-                        <p>jane_do0e@wheelbox.com</p>
-                    </div>
-                </div>
-                <a href="#">
-                  <div class="d-flex sideMenu active-one mt-5">
-                    <img src="assets/images/AppDetailsIcon.svg" alt="">
-                    <p>Applicant Details</p>
-                   </div>
-                </a>
-               <a href="#">
-                <div class="d-flex sideMenu">
-                  <img src="assets/images/ScoreCardIcon.svg" alt="">
-                  <p>Score Card</p>
-                 </div>
-               </a>
-                 <a href="#">
-                  <div class="d-flex sideMenu">
-                    <img src="assets/images/BenchmarkIcon.svg" alt="">
-                    <p>Benchmark</p>
-                   </div>
-                 </a>
-                 <a href="#">
-                  <div class="d-flex sideMenu">
-                    <img src="assets/images/OnlineReportIcon.svg" alt="">
-                    <p>Online Report</p>
-                   </div>
-                 </a>
-            </div>
-                <div class="inside-container">
-                  <h3>Applicant Details</h3>
-                  <div class="row gap-4">
-                    <div class="col-lg-4 col-12  appDetailCard">
-                        <img class="acc-image" src="assets/images/capphoto.png" alt="">
-                        <h2>Pesto Tech</h2>
-                        <table>
-                            <tr class="table-row">
-                                <td class="left-head">Login Id</td>
-                                <td class="right-data">pestotech@demo.com</td>
-                            </tr>
-                            <tr>
-                                <td class="left-head">Domain Name</td>
-                                <td class="right-data">Wheebox Assesment</td>
-                            </tr>
-                            <tr>
-                                <td class="left-head">Test Name</td>
-                                <td class="right-data">MCQ and Subjective</td>
-                            </tr>
-                            <tr>
-                                <td class="left-head">Date of Exam</td>
-                                <td class="right-data">2022-06-22</td>
-                            </tr>
-                        </table>
-                    </div>
-
-                    <div class="col-lg-3 col-12 appDetailCard">
-                        <h3>Personal Details</h3>
-                        <table>
-                            <tr class="table-row">
-                                <td class="dp-left-head">Gender</td>
-                                <td class="pd-right-data">Male</td>
-                            </tr>
-                            <tr>
-                                <td class="dp-left-head">Date Of Birth</td>
-                                <td class="pd-right-data">1990-01-01</td>
-                            </tr>
-                            <tr>
-                                <td class="dp-left-head">City</td>
-                                <td class="pd-right-data">Gurgaon</td>
-                            </tr>
-                            <tr>
-                                <td class="dp-left-head">Test City</td>
-                                <td class="pd-right-data">Gurgaon</td>
-                            </tr>
-                            <tr>
-                                <td class="dp-left-head">Registration Date</td>
-                                <td class="pd-right-data">2022-12-22</td>
-                            </tr>
-                            <tr>
-                                <td class="dp-left-head">Zone</td>
-                                <td class="pd-right-data">Haryana</td>
-                            </tr>
-                            <tr>
-                                <td class="dp-left-head">Region</td>
-                                <td class="pd-right-data">Gurgaon</td>
-                            </tr>
-                            <tr>
-                                <td class="dp-left-head">Center State</td>
-                                <td class="pd-right-data">Haryana</td>
-                            </tr>
-                            <tr>
-                                <td class="dp-left-head">Center District</td>
-                                <td class="pd-right-data">Gurgaon</td>
-                            </tr>
-                        </table>
-                    </div>
-
-                    <div class="col appDetailCard">
-                        <h3>Overall Performance</h3>
-                        <div class="row new-row">
-                            <div class="col-lg-7 col-12 chart-flex">
-                            <div id="OverallPerformance"></div>
-                                <div class="total-q">
-                                    <p>Total Questions</p>
-                                    <h6>100</h6>
-                                </div>
-                            </div>
-                            <div class="performance-footer d-lg-none d-block">
-                              <div class="d-flex flex-wrap gap-2 justify-content-between">
-                                      <div class="d-flex">
-                                        <div class="pf-indicator pf-color2"></div>
-                                        <p>Correct</p>
-                                    </div>
-  
-                                    <div class="d-flex">
-                                      <div class="pf-indicator pf-color3"></div>
-                                      <p>Incorrect</p>
-                                  </div>
-  
-                                  <div class="d-flex">
-                                    <div class="pf-indicator pf-color4"></div>
-                                    <p>Unattempted</p>
-                                </div>
-                              </div>
-                          </div>
-                            <div class="col-lg-5 col-12">
-                                 <div class="score">
-                                    <div class="score-marks">
-                                        <p>Max Marks</p>
-                                        <h6>40.0</h6>
-                                    </div>
-                                    <div class="score-marks">
-                                        <p>Marks Obtained</p>
-                                        <h6>1.0</h6>
-                                    </div>
-                                    <div class="score-marks">
-                                        <p>Percentage Obtained</p>
-                                        <h6>2.5%</h6>
-                                    </div>
-                                 </div>
-                            </div>
+        <div class="container-fluid">
+            <div class="main_div">
+                <div class="row">
+                    <div class="main_header mb-1">
+                        <div class="d-flex justify-content-between navpart1">
+                            <div class="logo new-logopart"> <img src="assets/images/logo_logo.png" alt="mini-logo"> </div>
+                            <div class="d-flex align-items-center d-none d-md-flex justify-content-around btr-link navbar-place"> <img src="assets/images/back-arrow.svg" alt=""> <a class="anchor-dec" href="#">
+                                    <h5 class="btr-line">Back To Result List</h5>
+                                </a> </div>
                         </div>
-
-                        <div class="performance-footer d-lg-block d-none">
-                            <div class="d-flex flex-wrap gap-2 justify-content-between">
-                                    <div class="d-flex">
-                                      <div class="pf-indicator pf-color2"></div>
-                                      <p>Correct</p>
-                                  </div>
-
-                                  <div class="d-flex">
-                                    <div class="pf-indicator pf-color3"></div>
-                                    <p>Incorrect</p>
+                        <div></div>
+                        <div class="d-flex align-items-center gap-5">
+                            <div class="d-flex gap-4">
+                                <div class="home-search"> <img class="nav-arrows" src="assets/images/search-hover.svg" alt=""> </div>
+                                <div> <a href="#">
+                                        <div class="home-search"> <img class="nav-arrows-1" src="assets/images/home-hover.svg" alt=""> </div>
+                                    </a> </div>
+                            </div>
+                            <div class="grid-new">
+                                <div class="grid1-new">
+                                    <div class="profile rounded-circle"> <img src="assets/images/prof-mini.png" alt="profile"> </div>
                                 </div>
-
-                                <div class="d-flex">
-                                  <div class="pf-indicator pf-color4"></div>
-                                  <p>Unattempted</p>
-                              </div>
+                                <div class="grid2-new d-none d-md-block">
+                                    <h6>Jane Doe</h6>
+                                    <p>jane_doe@wheebox.com</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                  </div>
+                </div> <!-- row closed -->
+            </div>
+            <div>
+                <div>
+                    <div class="d-flex justify-content-lg-end justify-content-between">
+                        <div> <i onclick="sidemenu()" id="menu-icon" class="fas fa-solid icon-w fa-bars d-block d-lg-none"></i> </div>
+                        <div class="navigationBtns"> <a class="anchor-dec previous-arrow" href="#"> <img class="nav-arrows-2" src="/assets/images/left-arow.svg" alt=""> </a> <a class="anchor-dec next-arrow" href="#"> <img class="nav-arrows-2" src="/assets/images/right-arrow.svg" alt=""> </a> </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <!-- main-div closed -->
-      </div>
-      <!-- container closed -->
+            <div class="sidebar">
+                <div class="d-flex">
+                    <div class="side1" id="sidebar-menu">
+                        <div class="d-flex profile-details"> <img src="assets/images/capphoto.png" alt="">
+                            <div class="profile-info">
+                                <h5>Jane Doe</h5>
+                                <p>jane_do0e@wheelbox.com</p>
+                            </div>
+                        </div> <a href="#">
+                            <div class="d-flex sideMenu active-one mt-5"> <img src="assets/images/AppDetailsIcon.svg" alt="">
+                                <p>Applicant Details</p>
+                            </div>
+                        </a> <a href="#">
+                            <div class="d-flex sideMenu"> <img src="assets/images/ScoreCardIcon.svg" alt="">
+                                <p>Score Card</p>
+                            </div>
+                        </a> <a href="#">
+                            <div class="d-flex sideMenu"> <img src="assets/images/BenchmarkIcon.svg" alt="">
+                                <p>Benchmark</p>
+                            </div>
+                        </a> <a href="#">
+                            <div class="d-flex sideMenu"> <img src="assets/images/OnlineReportIcon.svg" alt="">
+                                <p>Online Report</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="inside-container">
+                        <h3>Applicant Details</h3>
+                        <div class="row gap-4">
+                            <div class="col-lg-4 col-12  appDetailCard"> <img class="acc-image" src="assets/images/capphoto.png" alt="">
+                                <h2>Pesto Tech</h2>
+                                <table>
+                                    <tr class="table-row">
+                                        <td class="left-head">Login Id</td>
+                                        <td class="right-data">pestotech@demo.com</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="left-head">Domain Name</td>
+                                        <td class="right-data">Wheebox Assesment</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="left-head">Test Name</td>
+                                        <td class="right-data">MCQ and Subjective</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="left-head">Date of Exam</td>
+                                        <td class="right-data">2022-06-22</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="col-lg-3 col-12 appDetailCard">
+                                <h3>Personal Details</h3>
+                                <table>
+                                    <tr class="table-row">
+                                        <td class="dp-left-head">Gender</td>
+                                        <td class="pd-right-data">Male</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="dp-left-head">Date Of Birth</td>
+                                        <td class="pd-right-data">1990-01-01</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="dp-left-head">City</td>
+                                        <td class="pd-right-data">Gurgaon</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="dp-left-head">Test City</td>
+                                        <td class="pd-right-data">Gurgaon</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="dp-left-head">Registration Date</td>
+                                        <td class="pd-right-data">2022-12-22</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="dp-left-head">Zone</td>
+                                        <td class="pd-right-data">Haryana</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="dp-left-head">Region</td>
+                                        <td class="pd-right-data">Gurgaon</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="dp-left-head">Center State</td>
+                                        <td class="pd-right-data">Haryana</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="dp-left-head">Center District</td>
+                                        <td class="pd-right-data">Gurgaon</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="col appDetailCard">
+                                <h3>Overall Performance</h3>
+                                <div class="row new-row">
+                                    <div class="col-lg-7 col-12 chart-flex">
+                                        <div id="OverallPerformance"></div>
+                                        <div class="total-q">
+                                            <p>Total Questions</p>
+                                            <h6>100</h6>
+                                        </div>
+                                    </div>
+                                    <div class="performance-footer d-lg-none d-block">
+                                        <div class="d-flex flex-wrap gap-2 justify-content-between">
+                                            <div class="d-flex">
+                                                <div class="pf-indicator pf-color2"></div>
+                                                <p>Correct</p>
+                                            </div>
+                                            <div class="d-flex">
+                                                <div class="pf-indicator pf-color3"></div>
+                                                <p>Incorrect</p>
+                                            </div>
+                                            <div class="d-flex">
+                                                <div class="pf-indicator pf-color4"></div>
+                                                <p>Unattempted</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5 col-12">
+                                        <div class="score">
+                                            <div class="score-marks">
+                                                <p>Max Marks</p>
+                                                <h6>40.0</h6>
+                                            </div>
+                                            <div class="score-marks">
+                                                <p>Marks Obtained</p>
+                                                <h6>1.0</h6>
+                                            </div>
+                                            <div class="score-marks">
+                                                <p>Percentage Obtained</p>
+                                                <h6>2.5%</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="performance-footer d-lg-block d-none">
+                                    <div class="d-flex flex-wrap gap-2 justify-content-between">
+                                        <div class="d-flex">
+                                            <div class="pf-indicator pf-color2"></div>
+                                            <p>Correct</p>
+                                        </div>
+                                        <div class="d-flex">
+                                            <div class="pf-indicator pf-color3"></div>
+                                            <p>Incorrect</p>
+                                        </div>
+                                        <div class="d-flex">
+                                            <div class="pf-indicator pf-color4"></div>
+                                            <p>Unattempted</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- main-div closed -->
+        </div> <!-- container closed -->
     </section>
     <!--selection section end -->
-
-   
-    
     <script src="https://kit.fontawesome.com/5817738a37.js" crossorigin="anonymous"></script>
-
     <script src="assets/js/jquery-2.2.0.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
@@ -281,5 +225,6 @@
     <script src="assets/js/chart.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <script src="assets/js/phase2.js"></script>
-  </body>
+</body>
+
 </html>

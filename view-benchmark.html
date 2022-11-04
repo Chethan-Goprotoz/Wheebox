@@ -1,231 +1,175 @@
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>View Benchmark</title>
-
-    <!-- font awesome css -->
-    <link rel="stylesheet" href="assets/font-awesome/all.min.css"/>
-    <link rel="stylesheet" href="assets/font-awesome/fontawesome.css"/>
-
-    <!-- bootstrap css -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" rel="stylesheet"/>
-
-    <!-- loader css -->
-    <link rel="stylesheet" href="assets/css/loader.css">
-
-    <!-- style css -->
+    <title>View Benchmark</title> <!-- font awesome css -->
+    <link rel="stylesheet" href="assets/font-awesome/all.min.css" />
+    <link rel="stylesheet" href="assets/font-awesome/fontawesome.css" /> <!-- bootstrap css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" rel="stylesheet" /> <!-- loader css -->
+    <link rel="stylesheet" href="assets/css/loader.css"> <!-- style css -->
     <link rel="stylesheet" href="assets/sass/app.css" rel="stylesheet" />
-
     <link rel="stylesheet" href="assets/css/style.css" rel="stylesheet">
-  </head>
+</head>
 
-  <body>
+<body>
     <!-- loader start-->
     <div class="loader-container">
         <div class="loader"></div>
-    </div>
-    <!-- loader end-->
-
+    </div> <!-- loader end-->
     <!--selection section start -->
     <div class="selection-new">
-      <div class="container-fluid">
-        <div class="main_div">
-          <div class="row">
-            <div class="main_header mb-1">
-              <div class="d-flex justify-content-between navpart1">
-                <div class="logo new-logopart">
-                  <img src="assets/images/logo_logo.png" alt="mini-logo">
-                </div>
-                <div class="d-flex align-items-center d-none d-md-flex justify-content-around btr-link navbar-place">
-                  <img src="assets/images/back-arrow.svg" alt="">
-                  <a class="anchor-dec" href="#"><h5 class="btr-line">Back To Result List</h5></a>
-                </div>
-              </div>
-              
-             <div></div>
-              <div class="d-flex align-items-center gap-5">
-                <div class="d-flex gap-4">
-                  <div class="home-search">
-                    <img class="nav-arrows" src="assets/images/search-hover.svg" alt="">
-                  </div>
-                  <div>
-                    <a href="#">
-                      <div class="home-search">
-                        <img class="nav-arrows-1" src="assets/images/home-hover.svg" alt="">
-                      </div>
-                    </a>
-                  </div>
-                </div>
-                <div class="grid-new">
-                  <div class="grid1-new">
-                    <div class="profile rounded-circle">
-                      <img src="assets/images/prof-mini.png" alt="profile">
+        <div class="container-fluid">
+            <div class="main_div">
+                <div class="row">
+                    <div class="main_header mb-1">
+                        <div class="d-flex justify-content-between navpart1">
+                            <div class="logo new-logopart"> <img src="assets/images/logo_logo.png" alt="mini-logo"> </div>
+                            <div class="d-flex align-items-center d-none d-md-flex justify-content-around btr-link navbar-place"> <img src="assets/images/back-arrow.svg" alt=""> <a class="anchor-dec" href="#">
+                                    <h5 class="btr-line">Back To Result List</h5>
+                                </a> </div>
+                        </div>
+                        <div></div>
+                        <div class="d-flex align-items-center gap-5">
+                            <div class="d-flex gap-4">
+                                <div class="home-search"> <img class="nav-arrows" src="assets/images/search-hover.svg" alt=""> </div>
+                                <div> <a href="#">
+                                        <div class="home-search"> <img class="nav-arrows-1" src="assets/images/home-hover.svg" alt=""> </div>
+                                    </a> </div>
+                            </div>
+                            <div class="grid-new">
+                                <div class="grid1-new">
+                                    <div class="profile rounded-circle"> <img src="assets/images/prof-mini.png" alt="profile"> </div>
+                                </div>
+                                <div class="grid2-new d-none d-md-block">
+                                    <h6>Jane Doe</h6>
+                                    <p>jane_doe@wheebox.com</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                  <div class="grid2-new d-none d-md-block">
-                    <h6>Jane Doe</h6>
-                    <p>jane_doe@wheebox.com</p>
-                  </div>
+                </div> <!-- row closed -->
+            </div>
+            <div>
+                <div class="d-flex justify-content-lg-end justify-content-between">
+                    <div> <i onclick="sidemenu()" id="menu-icon" class="fas fa-solid icon-w fa-bars d-block d-lg-none"></i> </div>
+                    <div class="navigationBtns"> <a class="anchor-dec previous-arrow" href="#"> <img class="nav-arrows-2" src="/assets/images/left-arow.svg" alt=""> </a> <a class="anchor-dec next-arrow" href="#"> <img class="nav-arrows-2" src="/assets/images/right-arrow.svg" alt=""> </a> </div>
                 </div>
-              </div>
             </div>
-          </div>
-          <!-- row closed -->
         </div>
-       
-          <div>
-            <div class="d-flex justify-content-lg-end justify-content-between">
-              <div>
-                <i onclick="sidemenu()" id="menu-icon" class="fas fa-solid icon-w fa-bars d-block d-lg-none"></i>
-              </div>
-              <div class="navigationBtns">
-                <a class="anchor-dec previous-arrow" href="#">
-                 <img class="nav-arrows-2" src="/assets/images/left-arow.svg" alt="">
-                </a>
-                <a class="anchor-dec next-arrow" href="#">
-                  <img class="nav-arrows-2" src="/assets/images/right-arrow.svg" alt="">
-                 </a>
-             </div>
-            </div>
-          </div>
-        
-      </div>
         <div class="sidebar">
             <div class="d-flex">
-              <div class="side1" id="sidebar-menu">
-                <div class="d-flex profile-details">
-                    <img src="assets/images/capphoto.png" alt="">
-                    <div class="profile-info">
-                        <h5>Jane Doe</h5>
-                        <p>jane_do0e@wheelbox.com</p>
-                    </div>
+                <div class="side1" id="sidebar-menu">
+                    <div class="d-flex profile-details"> <img src="assets/images/capphoto.png" alt="">
+                        <div class="profile-info">
+                            <h5>Jane Doe</h5>
+                            <p>jane_do0e@wheelbox.com</p>
+                        </div>
+                    </div> <a href="#">
+                        <div class="d-flex sideMenu mt-5"> <img src="assets/images/AppDetailsIcon.svg" alt="">
+                            <p>Applicant Details</p>
+                        </div>
+                    </a> <a href="#">
+                        <div class="d-flex sideMenu"> <img src="assets/images/ScoreCardIcon.svg" alt="">
+                            <p>Score Card</p>
+                        </div>
+                    </a> <a href="#">
+                        <div class="d-flex sideMenu active-one"> <img src="assets/images/BenchmarkIcon.svg" alt="">
+                            <p>Benchmark</p>
+                        </div>
+                    </a> <a href="#">
+                        <div class="d-flex sideMenu"> <img src="assets/images/OnlineReportIcon.svg" alt="">
+                            <p>Online Report</p>
+                        </div>
+                    </a>
                 </div>
-                <a href="#">
-                  <div class="d-flex sideMenu mt-5">
-                    <img src="assets/images/AppDetailsIcon.svg" alt="">
-                    <p>Applicant Details</p>
-                   </div>
-                </a>
-               <a href="#">
-                <div class="d-flex sideMenu">
-                  <img src="assets/images/ScoreCardIcon.svg" alt="">
-                  <p>Score Card</p>
-                 </div>
-               </a>
-                 <a href="#">
-                  <div class="d-flex sideMenu active-one">
-                    <img src="assets/images/BenchmarkIcon.svg" alt="">
-                    <p>Benchmark</p>
-                   </div>
-                 </a>
-                 <a href="#">
-                  <div class="d-flex sideMenu">
-                    <img src="assets/images/OnlineReportIcon.svg" alt="">
-                    <p>Online Report</p>
-                   </div>
-                 </a>
-            </div>
-                
                 <div class="inside-container">
-                  <h3>Benchmark</h3>
-                  <div class="d-flex flex-lg-row flex-column  gap-4 score-marks">
-                    <div class="stats-card appDetailCard">
-                        <div class="d-flex flex-wrap justify-content-between align-items-center">
-                          <h3>View Benchmark</h3>
-                          <div class="d-flex flex-wrap gap-md-5 gap-1">
-                           <div class="d-flex ">
-                              <div class="pf-indicator pf-color5"></div>
-                              <p class="legend">Candidate Score</p>
-                           </div>
-                           <div class="d-flex">
-                            <div class="pf-indicator pf-color6"></div>
-                              <p class="legend">Group Mean Score</p>
-                           </div>
+                    <h3>Benchmark</h3>
+                    <div class="d-flex flex-lg-row flex-column  gap-4 score-marks">
+                        <div class="stats-card appDetailCard">
+                            <div class="d-flex flex-wrap justify-content-between align-items-center">
+                                <h3>View Benchmark</h3>
+                                <div class="d-flex flex-wrap gap-md-5 gap-1">
+                                    <div class="d-flex ">
+                                        <div class="pf-indicator pf-color5"></div>
+                                        <p class="legend">Candidate Score</p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="pf-indicator pf-color6"></div>
+                                        <p class="legend">Group Mean Score</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="graph-container">
+                                <div class="chartResponsive-benchmark"> <canvas id="viewBenchmark"></canvas> </div>
+                            </div>
                         </div>
+                        <div class="stats-card appDetailCard">
+                            <div class="d-flex flex-wrap justify-content-between align-items-center">
+                                <h3>View Strengths</h3>
+                                <div class="d-flex flex-wrap gap-md-5 gap-1">
+                                    <div class="d-flex">
+                                        <div class="pf-indicator pf-color7"></div>
+                                        <p class="legend">Strength Area</p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="pf-indicator pf-color8"></div>
+                                        <p class="legend">Standard Benchmark</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="graph-container">
+                                <div class="chartResponsive-benchmark"> <canvas id="viewStrengths"></canvas> </div>
+                            </div>
                         </div>
-                        <div class="graph-container">
-                          <div class="chartResponsive-benchmark">
-                            <canvas id="viewBenchmark"></canvas>
-                          </div>
-                        </div>
-                    </div>
-                    <div class="stats-card appDetailCard">
-                      <div class="d-flex flex-wrap justify-content-between align-items-center">
-                        <h3>View Strengths</h3>
-                        <div class="d-flex flex-wrap gap-md-5 gap-1">
-                          <div class="d-flex">
-                             <div class="pf-indicator pf-color7"></div>
-                             <p class="legend">Strength Area</p>
-                          </div>
-                          <div class="d-flex">
-                           <div class="pf-indicator pf-color8"></div>
-                             <p class="legend">Standard Benchmark</p>
-                          </div>
-                       </div>
-                      
-                      </div>
-                      <div class="graph-container">
-                        <div class="chartResponsive-benchmark">
-                          <canvas id="viewStrengths"></canvas>
-                        </div>
-                      </div>
-                    </div>
                     </div>
                     <div class="d-flex flex-lg-row flex-column gap-4 score-marks">
                         <div class="stats-card appDetailCard">
-                          <div class="d-flex flex-wrap justify-content-between align-items-center">
-                            <h3>View Improvements</h3>
-                            <div class="d-flex flex-wrap gap-md-5 gap-1">
-                              <div class="d-flex">
-                                 <div class="pf-indicator pf-color7"></div>
-                                 <p class="legend">Improvements Area</p>
-                              </div>
-                              <div class="d-flex">
-                               <div class="pf-indicator pf-color8"></div>
-                                 <p class="legend">Standard Benchmark</p>
-                              </div>
-                           </div>
-                          </div>
-                          <div class="graph-container">
-                            <div class="chartResponsive-benchmark">
-                              <canvas id="viewImprovements"></canvas>
+                            <div class="d-flex flex-wrap justify-content-between align-items-center">
+                                <h3>View Improvements</h3>
+                                <div class="d-flex flex-wrap gap-md-5 gap-1">
+                                    <div class="d-flex">
+                                        <div class="pf-indicator pf-color7"></div>
+                                        <p class="legend">Improvements Area</p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="pf-indicator pf-color8"></div>
+                                        <p class="legend">Standard Benchmark</p>
+                                    </div>
+                                </div>
                             </div>
-                          </div>
+                            <div class="graph-container">
+                                <div class="chartResponsive-benchmark"> <canvas id="viewImprovements"></canvas> </div>
+                            </div>
                         </div>
                         <div class="stats-card appDetailCard">
-                          <div class="d-flex justify-content-between">
-                            <h3>You vs Topper</h3>
-                          </div>
+                            <div class="d-flex justify-content-between">
+                                <h3>You vs Topper</h3>
+                            </div>
                             <div class="d-flex flex-column flex-md-row flex-lg-row gap-5 justify-content-center align-items-center mt-5">
-                             <div class="progressBarContainer">
-                              <svg class="progressBar purple noselect" data-progress="25" x="0px" y="0px" viewBox="0 0 80 80">
-                                <path class="track" d="M5,40a35,35 0 1,0 70,0a35,35 0 1,0 -70,0" />
-                                <path class="fill" d="M5,40a35,35 0 1,0 70,0a35,35 0 1,0 -70,0" />
-                              </svg>
-                              <p class="counter-part">25%</p>
-                              <p class="counter-part2">Your Score</p>
-                             </div>
-
-                             <div class="progressBarContainer">
-                              <svg class="progressBar green noselect" data-progress="75" x="0px" y="0px" viewBox="0 0 80 80">
-                                <path class="track" d="M5,40a35,35 0 1,0 70,0a35,35 0 1,0 -70,0" />
-                                <path class="fill" d="M5,40a35,35 0 1,0 70,0a35,35 0 1,0 -70,0" />
-                              </svg>
-                              <p class="counter-part">75%</p>
-                              <p class="counter-part3">Topper Score</p>
-                             </div>
+                                <div class="progressBarContainer"> <svg class="progressBar purple noselect" data-progress="25" x="0px" y="0px" viewBox="0 0 80 80">
+                                        <path class="track" d="M5,40a35,35 0 1,0 70,0a35,35 0 1,0 -70,0" />
+                                        <path class="fill" d="M5,40a35,35 0 1,0 70,0a35,35 0 1,0 -70,0" />
+                                    </svg>
+                                    <p class="counter-part">25%</p>
+                                    <p class="counter-part2">Your Score</p>
+                                </div>
+                                <div class="progressBarContainer"> <svg class="progressBar green noselect" data-progress="75" x="0px" y="0px" viewBox="0 0 80 80">
+                                        <path class="track" d="M5,40a35,35 0 1,0 70,0a35,35 0 1,0 -70,0" />
+                                        <path class="fill" d="M5,40a35,35 0 1,0 70,0a35,35 0 1,0 -70,0" />
+                                    </svg>
+                                    <p class="counter-part">75%</p>
+                                    <p class="counter-part3">Topper Score</p>
+                                </div>
                             </div>
                         </div>
-                        </div>
-                  </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- main-div closed -->
-      </div>
-      <!-- container closed -->
+    </div> <!-- main-div closed -->
+    </div> <!-- container closed -->
     </section>
     <!--selection section end -->
     <script src="https://kit.fontawesome.com/5817738a37.js" crossorigin="anonymous"></script>
@@ -237,13 +181,7 @@
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <script src="assets/js/phase2.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script> </script>
+</body>
 
-
-    <script>
-
-
-    </script>
-    
-
-  </body>
 </html>

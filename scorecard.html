@@ -1,294 +1,236 @@
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Score Card</title>
-
-    <!-- font awesome css -->
-    <link rel="stylesheet" href="assets/font-awesome/all.min.css"/>
-    <link rel="stylesheet" href="assets/font-awesome/fontawesome.css"/>
-
-    <!-- bootstrap css -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" rel="stylesheet"/>
-
-    <!-- loader css -->
-    <link rel="stylesheet" href="assets/css/loader.css">
-
-    <!-- style css -->
+    <title>Score Card</title> <!-- font awesome css -->
+    <link rel="stylesheet" href="assets/font-awesome/all.min.css" />
+    <link rel="stylesheet" href="assets/font-awesome/fontawesome.css" /> <!-- bootstrap css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" rel="stylesheet" /> <!-- loader css -->
+    <link rel="stylesheet" href="assets/css/loader.css"> <!-- style css -->
     <link rel="stylesheet" href="assets/sass/app.css" rel="stylesheet" />
-
     <link rel="stylesheet" href="assets/css/style.css" rel="stylesheet">
-  </head>
+</head>
 
-  <body>
+<body>
     <!-- loader start-->
     <div class="loader-container">
         <div class="loader"></div>
-    </div>
-    <!-- loader end-->
-
+    </div> <!-- loader end-->
     <!--selection section start -->
     <section class="selection-new">
-      <div class="container-fluid">
-        <div class="main_div">
-          <div class="row">
-            <div class="main_header mb-1">
-              <div class="d-flex justify-content-between" style="width:34.5%;">
-                <div class="logo new-logopart">
-                  <img src="assets/images/logo_logo.png" alt="mini-logo">
-                </div>
-                <div class="d-flex align-items-center d-none d-lg-flex justify-content-around btr-link navbar-place">
-                  <img src="assets/images/back-arrow.svg" alt="">
-                  <a class="anchor-dec" href="#"><h5 class="btr-line">Back To Result List</h5></a>
-                </div>
-              </div>
-              
-             <div></div>
-              <div class="d-flex align-items-center gap-5">
-                <div class="d-flex gap-4">
-                  <div class="home-search">
-                    <img class="nav-arrows" src="assets/images/search-hover.svg" alt="">
-                  </div>
-                  <div>
-                    <a href="#">
-                      <div class="home-search">
-                        <img class="nav-arrows-1" src="assets/images/home-hover.svg" alt="">
-                      </div>
-                    </a>
-                  </div>
-                </div>
-                <div class="grid-new">
-                  <div class="grid1-new">
-                    <div class="profile rounded-circle">
-                      <img src="assets/images/prof-mini.png" alt="profile">
-                    </div>
-                  </div>
-                  <div class="grid2-new d-none d-md-block">
-                    <h6>Jane Doe</h6>
-                    <p>jane_doe@wheebox.com</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- row closed -->
-        </div>
-        <div>
-          <div>
-            <div class="d-flex justify-content-lg-end justify-content-between">
-              <div>
-                <i onclick="sidemenu()" id="menu-icon" class="fas fa-solid icon-w fa-bars d-block d-lg-none"></i>
-              </div>
-              <div>
-                <a class="anchor-dec" href="#">
-                 <img class="nav-arrows-2" src="/assets/images/left-arow.svg" alt="">
-                </a>
-              <a href="#">
-               <img class="nav-arrows-2" src="assets/images/right-arrow.svg" alt="">
-              </a>
-             </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="sidebar">
-            <div class="d-flex">
-                <div class="side1" id="sidebar-menu">
-                    <div class="d-flex profile-details">
-                        <img src="assets/images/capphoto.png" alt="">
-                        <div class="profile-info">
-                            <h5>Jane Doe</h5>
-                            <p>jane_do0e@wheelbox.com</p>
+        <div class="container-fluid">
+            <div class="main_div">
+                <div class="row">
+                    <div class="main_header mb-1">
+                        <div class="d-flex justify-content-between" style="width:34.5%;">
+                            <div class="logo new-logopart"> <img src="assets/images/logo_logo.png" alt="mini-logo"> </div>
+                            <div class="d-flex align-items-center d-none d-lg-flex justify-content-around btr-link navbar-place"> <img src="assets/images/back-arrow.svg" alt=""> <a class="anchor-dec" href="#">
+                                    <h5 class="btr-line">Back To Result List</h5>
+                                </a> </div>
                         </div>
-                    </div>
-                    <div>
-                       <div class="d-flex sideMenu  mt-5">
-                        <img src="assets/images/AppDetailsIcon.svg" alt="">
-                        <p>Applicant Details</p>
-                       </div>
-                    </div>
-                    <div>
-                        <div class="d-flex active-one sideMenu">
-                         <img src="assets/images/ScoreCardIcon.svg" alt="">
-                         <p>Score Card</p>
-                        </div>
-                     </div>
-                     <div>
-                        <div class="d-flex sideMenu">
-                         <img src="assets/images/BenchmarkIcon.svg" alt="">
-                         <p>Benchmark</p>
-                        </div>
-                     </div>
-                     <div>
-                        <div class="d-flex sideMenu">
-                         <img src="assets/images/OnlineReportIcon.svg" alt="">
-                         <p>Online Report</p>
-                        </div>
-                     </div>
-                </div>
-                <div class="inside-container">
-                  <h3>Score Card</h3>
-                  <div class="row gap-4">
-                    <div class="col-lg-3 col-12 appDetailCard">
-                        <h3>Other Details</h3>
-                        <table class="fulltable">
-                            <tr class="table-row">
-                                <td class="pd-left-head">Submission Type</td>
-                                <td class="pd-right-data">User Submit</td>
-                            </tr>
-                            <tr>
-                                <td class="pd-left-head">Browser</td>
-                                <td class="pd-right-data">CHROME 10</td>
-                            </tr>
-                            <tr>
-                                <td class="pd-left-head">Browser Version</td>
-                                <td class="pd-right-data">102.0.5005.63-OS</td>
-                            </tr>
-                            <tr>
-                                <td class="pd-left-head">Operating System</td>
-                                <td class="pd-right-data">WINDOWS_10</td>
-                            </tr>
-                            <tr>
-                                <td class="pd-left-head">Navigation Detail</td>
-                                <td class="pd-right-data">NA</td>
-                            </tr>
-                        </table>
-                    </div>
-
-                    <div class="col-lg-4 col-12 appDetailCard">
-                        <h3>Overall Performance</h3>
-                        
-                    </div>
-
-                    <div class="col appDetailCard">
-                        <h3>Section Wise Graph</h3>
-
-                        <div class="performance-footer d-lg-block d-none">
-                            <div class="d-flex flex-wrap gap-2 justify-content-between">
-                                    <div class="d-flex">
-                                      <div class="pf-indicator pf-color2"></div>
-                                      <p>Correct</p>
-                                  </div>
-
-                                  <div class="d-flex">
-                                    <div class="pf-indicator pf-color3"></div>
-                                    <p>Incorrect</p>
+                        <div></div>
+                        <div class="d-flex align-items-center gap-5">
+                            <div class="d-flex gap-4">
+                                <div class="home-search"> <img class="nav-arrows" src="assets/images/search-hover.svg" alt=""> </div>
+                                <div> <a href="#">
+                                        <div class="home-search"> <img class="nav-arrows-1" src="assets/images/home-hover.svg" alt=""> </div>
+                                    </a> </div>
+                            </div>
+                            <div class="grid-new">
+                                <div class="grid1-new">
+                                    <div class="profile rounded-circle"> <img src="assets/images/prof-mini.png" alt="profile"> </div>
                                 </div>
-
-                                <div class="d-flex">
-                                  <div class="pf-indicator pf-color4"></div>
-                                  <p>Unattempted</p>
-                              </div>
+                                <div class="grid2-new d-none d-md-block">
+                                    <h6>Jane Doe</h6>
+                                    <p>jane_doe@wheebox.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- row closed -->
+            </div>
+            <div>
+                <div>
+                    <div class="d-flex justify-content-lg-end justify-content-between">
+                        <div> <i onclick="sidemenu()" id="menu-icon" class="fas fa-solid icon-w fa-bars d-block d-lg-none"></i> </div>
+                        <div> <a class="anchor-dec" href="#"> <img class="nav-arrows-2" src="/assets/images/left-arow.svg" alt=""> </a> <a href="#"> <img class="nav-arrows-2" src="assets/images/right-arrow.svg" alt=""> </a> </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebar">
+                <div class="d-flex">
+                    <div class="side1" id="sidebar-menu">
+                        <div class="d-flex profile-details"> <img src="assets/images/capphoto.png" alt="">
+                            <div class="profile-info">
+                                <h5>Jane Doe</h5>
+                                <p>jane_do0e@wheelbox.com</p>
                             </div>
                         </div>
                         <div>
-                            <canvas id="wisegraph"></canvas>
+                            <div class="d-flex sideMenu  mt-5"> <img src="assets/images/AppDetailsIcon.svg" alt="">
+                                <p>Applicant Details</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="d-flex active-one sideMenu"> <img src="assets/images/ScoreCardIcon.svg" alt="">
+                                <p>Score Card</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="d-flex sideMenu"> <img src="assets/images/BenchmarkIcon.svg" alt="">
+                                <p>Benchmark</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="d-flex sideMenu"> <img src="assets/images/OnlineReportIcon.svg" alt="">
+                                <p>Online Report</p>
+                            </div>
                         </div>
                     </div>
-                  </div>
-                  
-                  <div>
-                    <div class="table-main-section">
-                        <table class="table main-table">
-                            <thead>
-                              <tr class="table-row-1 table-header ">
-                                <td class="p-4">Subject</td>
-                                <td class="p-4">Total Questions</td>
-                                <td class="p-4">Unattempted</td>
-                                <td class="p-4">Attempted</td>
-                                <td class="p-4">Correct Answers</td>
-                                <td class="p-4">Incorrect Answers</td>
-                                <td class="p-4">Percentage</td>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr class="table-row-1">
-                                <td class="p-4 input-data">Pattern Completion</td>
-                                <td class="p-4 input-data">10</td>
-                                <td class="p-4 input-data">0</td>
-                                <td class="p-4 input-data">10</td>
-                                <td class="p-4 input-data">0</td>
-                                <td class="p-4 input-data">0</td>
-                                <td class="p-4">
-                                    <div class="progress d-flex">
-                                        <div class="progress-line" style="width: 30%;">
+                    <div class="inside-container">
+                        <h3>Score Card</h3>
+                        <div class="row gap-4">
+                            <div class="col-lg-3 col-12 appDetailCard">
+                                <h3>Other Details</h3>
+                                <table class="fulltable">
+                                    <tr class="table-row">
+                                        <td class="pd-left-head">Submission Type</td>
+                                        <td class="pd-right-data">User Submit</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="pd-left-head">Browser</td>
+                                        <td class="pd-right-data">CHROME 10</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="pd-left-head">Browser Version</td>
+                                        <td class="pd-right-data">102.0.5005.63-OS</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="pd-left-head">Operating System</td>
+                                        <td class="pd-right-data">WINDOWS_10</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="pd-left-head">Navigation Detail</td>
+                                        <td class="pd-right-data">NA</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="col-lg-4 col-12 appDetailCard">
+                                <h3>Overall Performance</h3>
+                            </div>
+                            <div class="col appDetailCard">
+                                <h3>Section Wise Graph</h3>
+                                <div class="performance-footer d-lg-block d-none">
+                                    <div class="d-flex flex-wrap gap-2 justify-content-between">
+                                        <div class="d-flex">
+                                            <div class="pf-indicator pf-color2"></div>
+                                            <p>Correct</p>
+                                        </div>
+                                        <div class="d-flex">
+                                            <div class="pf-indicator pf-color3"></div>
+                                            <p>Incorrect</p>
+                                        </div>
+                                        <div class="d-flex">
+                                            <div class="pf-indicator pf-color4"></div>
+                                            <p>Unattempted</p>
                                         </div>
                                     </div>
-                                    </td>
-                              </tr>
-                              <tr class="table-row-1">
-                                <td class="p-4 input-data">Pattern Completion</td>
-                                <td class="p-4 input-data">10</td>
-                                <td class="p-4 input-data">0</td>
-                                <td class="p-4 input-data">10</td>
-                                <td class="p-4 input-data">0</td>
-                                <td class="p-4 input-data">0</td>
-                                <td class="p-4">
-                                    <div class="progress d-flex">
-                                        <div class="progress-line" style="width: 30%;">
-                                        </div>
-                                    </div>
-                                    </td>
-                              </tr>
-                              <tr class="table-row-1">
-                                <td class="p-4 input-data">Pattern Completion</td>
-                                <td class="p-4 input-data">10</td>
-                                <td class="p-4 input-data">0</td>
-                                <td class="p-4 input-data">10</td>
-                                <td class="p-4 input-data">0</td>
-                                <td class="p-4 input-data">0</td>
-                                <td class="p-4">
-                                    <div class="progress d-flex">
-                                        <div class="progress-line" style="width: 30%;">
-                                        </div>
-                                    </div>
-                                    </td>
-                              </tr>
-                              <tr class="table-row-1">
-                                <td class="p-4 input-data">Pattern Completion</td>
-                                <td class="p-4 input-data">10</td>
-                                <td class="p-4 input-data">0</td>
-                                <td class="p-4 input-data">10</td>
-                                <td class="p-4 input-data">0</td>
-                                <td class="p-4 input-data">0</td>
-                                <td class="p-4">
-                                    <div class="progress d-flex">
-                                        <div class="progress-line" style="width: 30%;">
-                                        </div>
-                                    </div>
-                                    </td>
-                              </tr>
-                              <tr class="table-row-1">
-                                <td class="p-4 input-data">Pattern Completion</td>
-                                <td class="p-4 input-data">10</td>
-                                <td class="p-4 input-data">0</td>
-                                <td class="p-4 input-data">10</td>
-                                <td class="p-4 input-data">0</td>
-                                <td class="p-4 input-data">0</td>
-                                <td class="p-4">
-                                    <div class="progress d-flex">
-                                        <div class="progress-line" style="width: 30%;">
-                                        </div>
-                                    </div>
-                                    </td>
-                              </tr>
-                
-                            </tbody>
-                          </table>
-                      </div>
-                  </div>
+                                </div>
+                                <div> <canvas id="wisegraph"></canvas> </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="table-main-section">
+                                <table class="table main-table">
+                                    <thead>
+                                        <tr class="table-row-1 table-header ">
+                                            <td class="p-4">Subject</td>
+                                            <td class="p-4">Total Questions</td>
+                                            <td class="p-4">Unattempted</td>
+                                            <td class="p-4">Attempted</td>
+                                            <td class="p-4">Correct Answers</td>
+                                            <td class="p-4">Incorrect Answers</td>
+                                            <td class="p-4">Percentage</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="table-row-1">
+                                            <td class="p-4 input-data">Pattern Completion</td>
+                                            <td class="p-4 input-data">10</td>
+                                            <td class="p-4 input-data">0</td>
+                                            <td class="p-4 input-data">10</td>
+                                            <td class="p-4 input-data">0</td>
+                                            <td class="p-4 input-data">0</td>
+                                            <td class="p-4">
+                                                <div class="progress d-flex">
+                                                    <div class="progress-line" style="width: 30%;"> </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="table-row-1">
+                                            <td class="p-4 input-data">Pattern Completion</td>
+                                            <td class="p-4 input-data">10</td>
+                                            <td class="p-4 input-data">0</td>
+                                            <td class="p-4 input-data">10</td>
+                                            <td class="p-4 input-data">0</td>
+                                            <td class="p-4 input-data">0</td>
+                                            <td class="p-4">
+                                                <div class="progress d-flex">
+                                                    <div class="progress-line" style="width: 30%;"> </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="table-row-1">
+                                            <td class="p-4 input-data">Pattern Completion</td>
+                                            <td class="p-4 input-data">10</td>
+                                            <td class="p-4 input-data">0</td>
+                                            <td class="p-4 input-data">10</td>
+                                            <td class="p-4 input-data">0</td>
+                                            <td class="p-4 input-data">0</td>
+                                            <td class="p-4">
+                                                <div class="progress d-flex">
+                                                    <div class="progress-line" style="width: 30%;"> </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="table-row-1">
+                                            <td class="p-4 input-data">Pattern Completion</td>
+                                            <td class="p-4 input-data">10</td>
+                                            <td class="p-4 input-data">0</td>
+                                            <td class="p-4 input-data">10</td>
+                                            <td class="p-4 input-data">0</td>
+                                            <td class="p-4 input-data">0</td>
+                                            <td class="p-4">
+                                                <div class="progress d-flex">
+                                                    <div class="progress-line" style="width: 30%;"> </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="table-row-1">
+                                            <td class="p-4 input-data">Pattern Completion</td>
+                                            <td class="p-4 input-data">10</td>
+                                            <td class="p-4 input-data">0</td>
+                                            <td class="p-4 input-data">10</td>
+                                            <td class="p-4 input-data">0</td>
+                                            <td class="p-4 input-data">0</td>
+                                            <td class="p-4">
+                                                <div class="progress d-flex">
+                                                    <div class="progress-line" style="width: 30%;"> </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <!-- main-div closed -->
-      </div>
-      <!-- container closed -->
+            </div> <!-- main-div closed -->
+        </div> <!-- container closed -->
     </section>
     <!--selection section end -->
-
-   
-    
     <script src="https://kit.fontawesome.com/5817738a37.js" crossorigin="anonymous"></script>
     <script src="assets/js/jquery-2.2.0.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
@@ -297,110 +239,109 @@
     <script src="assets/js/chart.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
     <script>
-
-var wisegraph = document.getElementById('wisegraph').getContext('2d');
-
-var wisecolor1 = wisegraph.createLinearGradient(0, 0, 0, 400);
-wisecolor1.addColorStop(0, '#2CD9C5');
-wisecolor1.addColorStop(1, '#5BB4A9');
-
- var wisecolor2 = wisegraph.createLinearGradient(0, 0, 0, 900);
- wisecolor2.addColorStop(0, '#FF6C40');
- wisecolor2.addColorStop(1, '#BC735D');
-
- var wisecolor3 = wisegraph.createLinearGradient(0, 0, 0, 900);
- wisecolor3.addColorStop(0, '#FEE76B');
- wisecolor3.addColorStop(1, '#B09C31');
-
- 
-
-var bar_chart = new Chart(wisegraph, {
- type: 'bar',
- data: {
-     labels: [["Pattern","Completion"], "Maths", ["Logical ","Reasoning"],[ "Attention To","Details"], "Articulation"],
-     datasets: [{
-         label: 'Percent',
-         data: [20,8,16,12,14],
-         backgroundColor: wisecolor1,
-         hoverBorderWidth: 2,
-         hoverBorderColor: 'purple', 
-         barThickness: 10,
-     },
-     {
-         label: 'Percent',
-         data: [8,15,5,3,2],
-         backgroundColor: wisecolor2,
-         hoverBorderWidth: 2,
-         hoverBorderColor: 'purple',
-         barThickness: 10,
-     },
-     {
-         label: 'Percent',
-         data: [4,8,2,2,2],
-         backgroundColor: wisecolor3,
-         hoverBorderWidth: 2,
-         hoverBorderColor: 'purple',
-         barThickness: 10,
-     }
- ],
- 
- },
- options: {
-  maintainAspectRatio:false,
-   plugins: {
-    legend: {
-     display: false,
-    },
-    tooltip:{
-      callbacks:{
-        title:(context)=>{
-          console.log(context[0].label)
-          return context[0].label.replaceAll(',',' ')
-        }
-      }
-     },
-  },
-  scales:{
-   y:{
-     ticks: {
-       maxTicksLimit: 10,
-     min: 0,
-     max: this.max,// Your absolute max value
-     callback: function (value) {
-       return (value / this.max * 100).toFixed(0) + '%'; // convert it to percentage
-     },
-     
-   },
-   
-   },
-
-   x:{
-     grid: {
-         display:false
-     },
-     font: {
-      family: 'pop-normal', 
-  },
-   }
-  },
-  tooltips: {
-         custom: function(tooltip) {
-           if (!tooltip) return;
-           tooltip.displayColors = false;
+        var wisegraph = document.getElementById('wisegraph').getContext('2d');
+        
+        var wisecolor1 = wisegraph.createLinearGradient(0, 0, 0, 400);
+        wisecolor1.addColorStop(0, '#2CD9C5');
+        wisecolor1.addColorStop(1, '#5BB4A9');
+        
+         var wisecolor2 = wisegraph.createLinearGradient(0, 0, 0, 900);
+         wisecolor2.addColorStop(0, '#FF6C40');
+         wisecolor2.addColorStop(1, '#BC735D');
+        
+         var wisecolor3 = wisegraph.createLinearGradient(0, 0, 0, 900);
+         wisecolor3.addColorStop(0, '#FEE76B');
+         wisecolor3.addColorStop(1, '#B09C31');
+        
+         
+        
+        var bar_chart = new Chart(wisegraph, {
+         type: 'bar',
+         data: {
+             labels: [["Pattern","Completion"], "Maths", ["Logical ","Reasoning"],[ "Attention To","Details"], "Articulation"],
+             datasets: [{
+                 label: 'Percent',
+                 data: [20,8,16,12,14],
+                 backgroundColor: wisecolor1,
+                 hoverBorderWidth: 2,
+                 hoverBorderColor: 'purple', 
+                 barThickness: 10,
+             },
+             {
+                 label: 'Percent',
+                 data: [8,15,5,3,2],
+                 backgroundColor: wisecolor2,
+                 hoverBorderWidth: 2,
+                 hoverBorderColor: 'purple',
+                 barThickness: 10,
+             },
+             {
+                 label: 'Percent',
+                 data: [4,8,2,2,2],
+                 backgroundColor: wisecolor3,
+                 hoverBorderWidth: 2,
+                 hoverBorderColor: 'purple',
+                 barThickness: 10,
+             }
+         ],
+         
          },
-         callbacks: {
-           label: function(tooltipItem, data) {
-             return tooltipItem.xLabel + " :" + tooltipItem.yLabel;
+         options: {
+          maintainAspectRatio:false,
+           plugins: {
+            legend: {
+             display: false,
+            },
+            tooltip:{
+              callbacks:{
+                title:(context)=>{
+                  console.log(context[0].label)
+                  return context[0].label.replaceAll(',',' ')
+                }
+              }
+             },
+          },
+          scales:{
+           y:{
+             ticks: {
+               maxTicksLimit: 10,
+             min: 0,
+             max: this.max,// Your absolute max value
+             callback: function (value) {
+               return (value / this.max * 100).toFixed(0) + '%'; // convert it to percentage
+             },
+             
            },
-           title: function(tooltipItem, data) {
-             return;
+           
+           },
+        
+           x:{
+             grid: {
+                 display:false
+             },
+             font: {
+              family: 'pop-normal', 
+          },
            }
-         },
-       },
-},
-});
+          },
+          tooltips: {
+                 custom: function(tooltip) {
+                   if (!tooltip) return;
+                   tooltip.displayColors = false;
+                 },
+                 callbacks: {
+                   label: function(tooltipItem, data) {
+                     return tooltipItem.xLabel + " :" + tooltipItem.yLabel;
+                   },
+                   title: function(tooltipItem, data) {
+                     return;
+                   }
+                 },
+               },
+        },
+        });
     </script>
-  </body>
+</body>
+
 </html>
