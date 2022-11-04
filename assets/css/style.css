@@ -3469,6 +3469,10 @@ textarea {
     line-height: 2.4rem;
   }
 
+  .sidebar a{
+    text-decoration: none;
+  }
+
   .second-row {
     flex: 0 0 83%;
     max-width: 83%;
@@ -4081,6 +4085,10 @@ textarea {
 
 .side1{
   width: 20%;
+}
+
+.side1 a{
+  text-decoration: none;
 }
 
 .profile-details img{
