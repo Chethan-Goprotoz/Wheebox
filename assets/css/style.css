@@ -4669,7 +4669,7 @@ textarea {
 .icon-w{
   font-size: 20px;
   margin-top: 5px;
-  margin-left: 10px;
+  margin-left: 15px;
   color: #1C7068;
 }
 
@@ -5097,6 +5097,20 @@ textarea {
 
   .stats-card{
     width: 100%;
+  }
+
+  .home-search{
+    width: 30px;
+    height: 30px;
+  }
+  .nav-arrows-1{
+    width: 13px;
+    height: 13px;
+  }
+
+  .nav-arrows{
+    width: 13px;
+    height: 13px;
   }
 }
 
