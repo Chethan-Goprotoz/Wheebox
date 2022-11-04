@@ -4783,6 +4783,11 @@ textarea {
 
 .percentage-section{
   width: 250px;
+  
+}
+
+.percentile-section{
+  text-align: center;
 }
 
 .input-data{
@@ -4807,6 +4812,7 @@ textarea {
 
 .percentile-data{
   margin-left: 40px;
+  text-align: center;
 }
 
 
@@ -5168,6 +5174,10 @@ textarea {
     word-break: keep-all;
     padding-bottom: 16px;
     padding-left: 16px;
+  }
+
+  .percentage-section{
+    padding-right: 150px !important;
   }
 
 
