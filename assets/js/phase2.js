@@ -85,6 +85,7 @@ grid:{
   show:false,
 },
 yaxis: {
+  
 show: false,
 labels: {
 show: false,
@@ -187,8 +188,11 @@ benchmarkcolorone.addColorStop(1, '#166D63');
     },
  
     x:{
+      
+      
       grid: {
-          display:false
+          display:false,
+          
       },
       font: {
        family: 'pop-normal', 
@@ -395,3 +399,5 @@ var bar_chart = new Chart(bar_ctx, {
 
 
 // End of Phase 2 Charts Data
+
+
