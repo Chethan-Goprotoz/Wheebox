@@ -4981,7 +4981,7 @@ textarea {
 
 .result-tab-section{
   margin-top: 50px;
-  flex-wrap: wrap;
+  padding-bottom: 35px;
 }
 
 .search-bar{
@@ -5178,12 +5178,54 @@ textarea {
 
 
 .piechart{
-  width: 400px;
-  margin-right: auto;
-  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  
 }
 
 
+.chart-container{
+  width: 100px;
+  height: 100px;
+}
+
+.poor{
+  color: #FF0000;
+  font-size: 16px;
+  font-family: Pop-medium;
+}
+
+.improvement{
+  color: #FF9100;
+  font-size: 16px;
+  font-family: Pop-medium;
+}
+
+.average{
+  color: #FFC300;
+  font-size: 16px;
+  font-family: Pop-medium;
+}
+
+.good{
+  color: #46B000;
+  font-size: 16px;
+  font-family: Pop-medium;
+}
+
+.percentage-wise div p{
+  margin-bottom: 0;
+}
+
+.percentage-wise div{
+  margin-right: 30px;
+  margin-bottom: 16px;
+}
+
+.total-applicant{
+  width: 500px;
+  height: 500px;
+}
 /* end of new css */
 
 
@@ -5214,6 +5256,12 @@ textarea {
     width: 13px;
     height: 13px;
   }
+
+  .result-tab{
+    height: auto;
+  }
+
+  
 }
 
 @media(max-width: 992px) {
@@ -5306,6 +5354,10 @@ textarea {
 
   .dp-left-head{
     width: 68.5%;
+  }
+
+  .insightCard{
+    width: 100%;
   }
  
   

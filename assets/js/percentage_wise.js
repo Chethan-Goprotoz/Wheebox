@@ -1,0 +1,113 @@
+var chartDom = document.getElementById('main');
+var myChart = echarts.init(chartDom);
+var option;
+var colorPalette = ['#9191F4', '#F16DAE'];
+
+option = {
+ 
+  tooltip: {
+    trigger: 'item'
+  },
+  legend: {
+   show:false,
+  },
+  series: [
+    {
+      name: 'Data',
+      type: 'pie',
+      radius: '50%',
+      data: [
+        { value: 75, name: 'Male' },
+        { value: 25, name: 'Female' },
+
+      ],
+      color:colorPalette,
+      emphasis: {
+        itemStyle: {
+          shadowBlur: 10,
+          shadowOffsetX: 0,
+          shadowColor: 'rgba(0, 0, 0, 0.5)'
+        }
+      },
+      label: {
+          formatter: '{b}: ({d}%)'
+        },
+        startAngle:270,
+    }
+  ]
+};
+
+option && myChart.setOption(option);
+
+
+
+var bar_ctx = document.getElementById('percentage_wise').getContext('2d');
+
+var Purplegradient = bar_ctx.createLinearGradient(0, 0, 0, 400);
+         Purplegradient.addColorStop(0, '#2CD9C5');
+         Purplegradient.addColorStop(1, '#5BB4A9');
+
+
+
+ 
+
+var bar_chart = new Chart(bar_ctx, {
+ type: 'bar',
+ data: {
+     labels: [["0% - 20%"], "21% - 40%", ["41% - 60%"],[ "61% - 80%"], "81% - 100%"],
+     datasets: [{
+         label: 'Percent',
+         data: [20, 150, 300, 400, 350],
+         backgroundColor: Purplegradient,
+         hoverBorderWidth: 4,
+         hoverBorderColor: 'purple', 
+         barThickness: 20,
+     },
+     
+ ],
+ 
+ },
+ options: {
+  maintainAspectRatio:false,
+   plugins: {
+    legend: {
+     display: false,
+    },
+    tooltip:{
+      callbacks:{
+        title:(context)=>{
+          console.log(context[0].label)
+          return context[0].label.replaceAll(',',' ')
+        }
+      }
+     },
+  },
+  scales:{
+  
+
+   x:{
+     grid: {
+         display:false
+     },
+     font: {
+      family: 'pop-normal', 
+  },
+   }
+  },
+  tooltips: {
+         custom: function(tooltip) {
+           if (!tooltip) return;
+           tooltip.displayColors = false;
+         },
+         callbacks: {
+           label: function(tooltipItem, data) {
+             return tooltipItem.xLabel + " :" + tooltipItem.yLabel;
+           },
+           title: function(tooltipItem, data) {
+             return;
+           }
+         },
+       },
+},
+},
+);
