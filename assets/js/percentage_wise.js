@@ -17,10 +17,21 @@ option = {
       type: 'pie',
       radius: '50%',
       data: [
-        { value: 75, name: 'Male' },
-        { value: 25, name: 'Female' },
+        { value: 75, name: 'Male',itemStyle: {
+          color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+            { offset: 0, color: '#7676D4' },
+            { offset: 1, color: '#9191F4' }
+          ])
+        }, },
+        { value: 25, name: 'Female',itemStyle: {
+          color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+            { offset: 0, color: '#D04C92' },
+            { offset: 1, color: '#F16DAE ' }
+          ])
+        }, },
 
       ],
+      
       color:colorPalette,
       emphasis: {
         itemStyle: {
