@@ -102,7 +102,7 @@
                                 </div>
                             </div>
                             <div class="graph-container">
-                                <div class="chartResponsive-benchmark"> <canvas id="viewBenchmark"></canvas> </div>
+                                <div class="chartResponsive-benchmark"> <canvas id="viewBenchmark"></canvas> </div><!-- data in phase2.js -->
                             </div>
                         </div>
                         <div class="stats-card appDetailCard">
@@ -119,8 +119,9 @@
                                     </div>
                                 </div>
                             </div>
+                            
                             <div class="graph-container">
-                                <div class="chartResponsive-benchmark"> <canvas id="viewStrengths"></canvas> </div>
+                                <div class="chartResponsive-benchmark"> <canvas id="viewStrengths"></canvas> </div> <!-- data in phase2.js -->
                             </div>
                         </div>
                     </div>
@@ -140,7 +141,7 @@
                                 </div>
                             </div>
                             <div class="graph-container">
-                                <div class="chartResponsive-benchmark"> <canvas id="viewImprovements"></canvas> </div>
+                                <div class="chartResponsive-benchmark"> <canvas id="viewImprovements"></canvas> </div><!-- data in phase2.js -->
                             </div>
                         </div>
                         <div class="stats-card appDetailCard">
@@ -148,14 +149,14 @@
                                 <h3>You vs Topper</h3>
                             </div>
                             <div class="d-flex flex-column flex-md-row flex-lg-row gap-5 justify-content-center align-items-center mt-5">
-                                <div class="progressBarContainer"> <svg class="progressBar purple noselect" data-progress="25" x="0px" y="0px" viewBox="0 0 80 80">
+                                <div class="progressBarContainer"> <svg class="progressBar purple noselect" data-progress="25" x="0px" y="0px" viewBox="0 0 80 80">  <!-- pass data in "data-progress" -->
                                         <path class="track" d="M5,40a35,35 0 1,0 70,0a35,35 0 1,0 -70,0" />
                                         <path class="fill" d="M5,40a35,35 0 1,0 70,0a35,35 0 1,0 -70,0" />
                                     </svg>
-                                    <p class="counter-part">25%</p>
+                                    <p class="counter-part">30%</p>
                                     <p class="counter-part2">Your Score</p>
                                 </div>
-                                <div class="progressBarContainer"> <svg class="progressBar green noselect" data-progress="75" x="0px" y="0px" viewBox="0 0 80 80">
+                                <div class="progressBarContainer"> <svg class="progressBar green noselect" data-progress="75" x="0px" y="0px" viewBox="0 0 80 80"><!-- pass data in "data-progress" -->
                                         <path class="track" d="M5,40a35,35 0 1,0 70,0a35,35 0 1,0 -70,0" />
                                         <path class="fill" d="M5,40a35,35 0 1,0 70,0a35,35 0 1,0 -70,0" />
                                     </svg>
@@ -167,6 +168,7 @@
                     </div>
                 </div>
             </div>
+            
         </div>
     </div> <!-- main-div closed -->
     </div> <!-- container closed -->
