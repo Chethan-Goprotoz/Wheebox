@@ -4675,6 +4675,7 @@ textarea {
  .main-table{
   border-collapse:separate !important;
   border-spacing:0 15px !important;
+  width: 100%;
  }
 
  .table-main-section{
@@ -5010,6 +5011,7 @@ textarea {
   height: 40px;
   text-align: center;
   padding-top: 5px;
+  cursor: pointer;
 }
 
 .pagination-new{
@@ -5072,6 +5074,10 @@ textarea {
 .chat-section img{
   width: 32px;
   margin-right: 15px;
+}
+
+.dt-buttons{
+  display: none;
 }
 
 
@@ -5237,6 +5243,32 @@ textarea {
   width: 500px;
   height: 500px;
 }
+
+.dataTables_filter
+{ display: none;}
+
+.dataTables_length{
+  margin-left: 30px;
+  margin-top: 6px;
+}
+
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current{
+background-color: #20776E !important;
+}
+
+.paging_full_numbers a.paginate_button {
+  color: #fff !important;
+}
+
+.paging_full_numbers a.paginate_active {
+  color: #fff !important;
+}
+
+
+
+
+
 /* end of new css */
 
 

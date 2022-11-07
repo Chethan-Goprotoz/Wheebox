@@ -23,7 +23,7 @@ function sidemenu() {
 // Start of Phase 2 Charts data
 // start of overall performance
 var options = {
-  series: [20, 20, 20],
+  series: [50, 40, 80],
   labels: ['Correct', 'Incorrect', 'Unattempted'],
   colors: ['#F6AB39', '#FF6C40', '#2D99FF'],
   chart: {
