@@ -78,7 +78,7 @@ var bar_chart = new Chart(bar_ctx, {
  data: {
      labels: [["0% - 20%"], "21% - 40%", ["41% - 60%"],[ "61% - 80%"], "81% - 100%"],
      datasets: [{
-        label: 'Applicant Percentage',
+        label: 'No of Applicants',
          data: [20, 150, 300, 400, 350],
          backgroundColor: Purplegradient,
          hoverBorderWidth: 4,

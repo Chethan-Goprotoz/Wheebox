@@ -4983,6 +4983,7 @@ textarea {
   margin-top: 15px;
   padding-left: 15px;
   padding-right: 15px;
+  
 }
 
 .active-result-tab{
@@ -4991,8 +4992,11 @@ textarea {
   color: #2C3652 !important;
 }
 
+
+
 .result-tab-section{
   margin-top: 50px;
+  margin-left: 80px;
   
 }
 
@@ -5186,6 +5190,7 @@ textarea {
 
 .card-container{
   margin-top: 75px;
+  margin-left: 80px;
 
 }
 
@@ -5272,9 +5277,7 @@ background-color: #20776E !important;
   font-family: Pop-normal;
 }
 
-.percent-value{
-
-}
+.percent-value{}
 
 
 
