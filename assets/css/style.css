@@ -4993,7 +4993,7 @@ textarea {
 
 .result-tab-section{
   margin-top: 50px;
-  padding-bottom: 35px;
+  
 }
 
 .search-bar{
@@ -5265,6 +5265,16 @@ background-color: #20776E !important;
   color: #fff !important;
 }
 
+.selected-ratio{
+  margin-top: 14px;
+  color: #2C3652;
+  font-size: 16px;
+  font-family: Pop-normal;
+}
+
+.percent-value{
+
+}
 
 
 
