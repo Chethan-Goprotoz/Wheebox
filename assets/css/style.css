@@ -4454,6 +4454,17 @@ textarea {
 .pf-color10{
   background-color: #02BC77;
 }
+.pf-color11{
+  background-color: #7676D4;
+}
+
+.pf-color12{
+  background-color: #F16DAE;
+}
+
+.pf-color13{
+  background-color: #eacda3;
+}
 
 
 .stats-card{
@@ -4826,7 +4837,7 @@ textarea {
   border-radius: 10px;
   color: #236849;
   font-family: pop-normal;
-  padding-top: 7px;
+  padding-top: 10px;
 }
 
 
@@ -4895,9 +4906,9 @@ textarea {
 }
 
 
-.progress-line-value p{
+.progress-line-value{
   position: absolute;
-  margin-left: 140px;
+  margin-left: 190px;
   margin-top: -8px;
   font-size: 16px;
   font-family: Pop-medium;
@@ -5259,6 +5270,10 @@ textarea {
 
   .result-tab{
     height: auto;
+  }
+
+  .total-applicant{
+    width: 100%;
   }
 
   

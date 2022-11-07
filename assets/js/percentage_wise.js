@@ -4,6 +4,7 @@ var option;
 var colorPalette = ['#9191F4', '#F16DAE'];
 
 option = {
+  
  
   tooltip: {
     trigger: 'item'
@@ -15,9 +16,9 @@ option = {
     {
       name: 'Data',
       type: 'pie',
-      radius: '50%',
+      radius: '60%',
       data: [
-        { value: 75, name: 'Male',itemStyle: {
+        { value: 65, name: 'Male',itemStyle: {
           color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
             { offset: 0, color: '#7676D4' },
             { offset: 1, color: '#9191F4' }
@@ -29,19 +30,29 @@ option = {
             { offset: 1, color: '#F16DAE ' }
           ])
         }, },
+        { value: 10, name: 'Other',itemStyle: {
+          color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+            { offset: 0, color: '#eacda3' },
+            { offset: 1, color: '#d6ae7b ' }
+          ])
+        }, },
 
       ],
+      position: 'left',
       
       color:colorPalette,
       emphasis: {
+        
         itemStyle: {
           shadowBlur: 10,
           shadowOffsetX: 0,
-          shadowColor: 'rgba(0, 0, 0, 0.5)'
+          shadowColor: 'rgba(0, 0, 0, 0.5)',
+            
         }
       },
       label: {
-          formatter: '{b}: ({d}%)'
+          formatter: '{b}: \n ({c}%)',
+          
         },
         startAngle:270,
     }
@@ -67,7 +78,7 @@ var bar_chart = new Chart(bar_ctx, {
  data: {
      labels: [["0% - 20%"], "21% - 40%", ["41% - 60%"],[ "61% - 80%"], "81% - 100%"],
      datasets: [{
-         label: 'Percent',
+         
          data: [20, 150, 300, 400, 350],
          backgroundColor: Purplegradient,
          hoverBorderWidth: 4,
@@ -90,7 +101,8 @@ var bar_chart = new Chart(bar_ctx, {
           console.log(context[0].label)
           return context[0].label.replaceAll(',',' ')
         }
-      }
+      },
+      displayColors: false,
      },
   },
   scales:{
