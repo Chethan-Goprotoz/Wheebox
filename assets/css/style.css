@@ -5008,6 +5008,8 @@ textarea {
   border-bottom: 1px solid #D6DBE1;
 }
 
+
+
 .result-tab p{
   text-align: center;
   color: #8B91A9;
@@ -5060,8 +5062,11 @@ object-position: bottom;
 .result-tab-section{
   margin-top: 50px;
   margin-left: 80px;
-  
-  
+}
+
+.result-tab-section-2{
+  margin-top: 50px;
+  margin-left: 25px;
 }
 
 .search-bar{
