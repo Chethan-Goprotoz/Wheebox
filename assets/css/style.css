@@ -5651,6 +5651,7 @@ border-radius: 5px !important;
     width: 100%;
   }
 
+ 
   
 
   
@@ -5773,6 +5774,10 @@ border-radius: 5px !important;
   .mobile-stopper{
     overflow-y: none !important;
     overflow: -moz-scrollbars-none !important;
+  }
+
+  .dropdownOptions{
+    transform: translate(90px,40px);
   }
  
   
