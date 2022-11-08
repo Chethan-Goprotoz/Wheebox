@@ -5252,6 +5252,15 @@ position: absolute;
   color: #FF0000;
   font-size: 16px;
   font-family: Pop-medium;
+  
+}
+
+.catLevelAdj{
+  padding-left: 4;
+}
+
+.catLevel{
+  min-width: 60px;
 }
 
 .improvement{
