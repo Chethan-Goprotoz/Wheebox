@@ -4677,7 +4677,7 @@ textarea {
  }
 
  .table-row-1 td{
-  color: #666666 !important;
+  
   font-size: 14px;
  }
 
@@ -4854,10 +4854,27 @@ textarea {
   padding-top: 10px;
 }
 
+.fail-field{
+  background-color: #FFCECB !important;
+  height: 42px;
+  width: 91px;
+  display: block;
+  text-align: center;
+  margin-top: 0px;
+  border-radius: 10px;
+  color: #A12A22;
+  font-family: pop-normal;
+  padding-top: 10px;
+}
+
 
 
 .timetaken{
-  color: #FFA000;
+  color: #FFA000 !important;
+}
+
+.timetaken-red{
+  color: #FF0000 !important;
 }
 
 .progress-number{
@@ -4891,7 +4908,7 @@ textarea {
 }
 
 .percentile-section{
-  text-align: center;
+  /* text-align: center; */
 }
 
 .input-data{
@@ -4916,7 +4933,7 @@ textarea {
 
 .percentile-data{
   margin-left: 40px;
-  text-align: center;
+ 
 }
 
 
