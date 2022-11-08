@@ -179,7 +179,7 @@
                     <p class="progress-line-value">30%</p>
                 </div>
                 </td>
-                <td class="p-4 input-data percentile-data">100</td>
+                 <td class="p-4 input-data percentile-data">80 <span><img class="percentile-crown" src="assets/images/crown.png" alt=""></span></td>
                 <td><span class="pass-field">Pass</span></td>
                 <td class="p-4 timetaken">23m:20s</td>
                 <td class="options-data">
@@ -214,7 +214,7 @@
                     <p class="progress-line-value">30%</p>
                 </div>
                 </td>
-                <td class="p-4 input-data percentile-data">100</td>
+                 <td class="p-4 input-data percentile-data">90 <span><img class="percentile-crown" src="assets/images/crown.png" alt=""></span></td>
                 <td><span class="pass-field">Pass</span></td>
                 <td class="p-4 timetaken">23m:20s</td>
                 <td class="options-data"><i class="fas fa-solid fa-ellipsis-vertical"></i>
@@ -247,7 +247,7 @@
                     <p class="progress-line-value">30%</p>
                 </div>
                 </td>
-                <td class="p-4 input-data percentile-data">100</td>
+                 <td class="p-4 input-data percentile-data">100 <span><img class="percentile-crown" src="assets/images/crown.png" alt=""></span></td>
                 <td><span class="fail-field">Fail</span></td>
                 <td class="p-4 timetaken">23m:20s</td>
                 <td class="options-data"><i class="fas fa-solid fa-ellipsis-vertical"></i>
@@ -280,7 +280,7 @@
                     <p class="progress-line-value">30%</p>
                 </div>
                 </td>
-                <td class="p-4 input-data percentile-data">100</td>
+                 <td class="p-4 input-data percentile-data">100 <span><img class="percentile-crown" src="assets/images/crown.png" alt=""></span></td>
                 <td><span class="fail-field">Fail</span></td>
                 <td class="p-4 timetaken">23m:20s</td>
                 <td class="options-data"><i class="fas fa-solid fa-ellipsis-vertical"></i>
@@ -312,7 +312,7 @@
                     <p class="progress-line-value">30%</p>
                 </div>
                 </td>
-                <td class="p-4 input-data percentile-data">100</td>
+                 <td class="p-4 input-data percentile-data">100 <span><img class="percentile-crown" src="assets/images/crown.png" alt=""></span></td>
                 <td><span class="fail-field">Fail</span></td>
                 <td class="p-4 timetaken">23m:20s</td>
                 <td class="options-data"><i class="fas fa-solid fa-ellipsis-vertical"></i>
@@ -344,7 +344,7 @@
                     <p class="progress-line-value">30%</p>
                 </div>
                 </td>
-                <td class="p-4 input-data percentile-data">100</td>
+                 <td class="p-4 input-data percentile-data">100 <span><img class="percentile-crown" src="assets/images/crown.png" alt=""></span></td>
                 <td><span class="fail-field">Fail</span></td>
                 <td class="p-4 timetaken">23m:20s</td>
                 <td class="options-data"><i class="fas fa-solid fa-ellipsis-vertical"></i>
@@ -376,7 +376,7 @@
                     <p class="progress-line-value">30%</p>
                 </div>
                 </td>
-                <td class="p-4 input-data percentile-data">100</td>
+                 <td class="p-4 input-data percentile-data">100 <span><img class="percentile-crown" src="assets/images/crown.png" alt=""></span></td>
                 <td><span class="fail-field">Fail</span></td>
                 <td class="p-4 timetaken">23m:20s</td>
                 <td class="options-data"><i class="fas fa-solid fa-ellipsis-vertical"></i>
@@ -646,7 +646,23 @@
       
       var input = buttonclick.parentElement.children[1]
       input.classList.toggle("navbar-place")
+
+
     })
+  }
+</script>
+
+<script>
+  var percentile = document.getElementsByClassName("percentile-data")
+  for (var j=0;j<percentile.length;j++){
+    var percentilevalue = percentile[j]
+    var parentPercentile = percentilevalue.children[0]
+    if(parseInt(percentilevalue.textContent)>parseInt(90)){
+      parentPercentile.classList.remove("d-none")
+    }
+    else{
+      parentPercentile.classList.add("d-none")
+    }
   }
 </script>
     
