@@ -4995,6 +4995,22 @@ textarea {
   
 }
 
+.scorecard-lv{
+  width: 100%;
+  padding-top: 20%;
+  z-index: -50;
+}
+
+.scorecard-container{
+ position: relative;
+}
+
+.scorecard-line{
+
+position: absolute;
+
+}
+
 .active-result-tab{
   background-color: white;
   border-bottom: 3px solid #20776E;
