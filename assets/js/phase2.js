@@ -27,7 +27,7 @@ var options = {
   labels: ['Correct', 'Incorrect', 'Unattempted'],
   colors: ['#F6AB39', '#FF6C40', '#2D99FF'],
   chart: {
-      type: 'polarArea',
+      type: 'pie',
       height: '200px'
   },
   stroke: {
@@ -38,8 +38,8 @@ var options = {
       opacity: 1,
   },
   dataLabels: {
+    
       enabled: true,
-      textAnchor: 'middle',
       background: {
           enabled: true,
           foreColor: '#fff',
@@ -62,7 +62,9 @@ var options = {
           fontFamily: 'Helvetica, Arial, sans-serif',
           fontWeight: 'bold',
           colors: ['#F6AB39', '#FF6C40', '#2D99FF'],
+          
       },
+      
   },
   legend: {
       show: false,

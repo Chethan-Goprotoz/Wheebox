@@ -4982,6 +4982,9 @@ textarea {
 .result-tab{
   min-width: 180px;
   height: 54px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-bottom: 1px solid #D6DBE1;
 }
 
 .result-tab p{
@@ -5019,6 +5022,7 @@ position: absolute;
 
 .active-result-tab p{
   color: #2C3652;
+  
 }
 
 
