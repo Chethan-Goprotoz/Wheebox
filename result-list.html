@@ -18,9 +18,11 @@
     <!-- style css -->
     <link rel="stylesheet" href="assets/sass/app.css" rel="stylesheet" />
 
-    <link rel="stylesheet" href="assets/css/style.css" rel="stylesheet">
+   
 
     <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
+
+    <link rel="stylesheet" href="assets/css/style.css" rel="stylesheet">
   </head>
 
   <body>
@@ -74,8 +76,8 @@
 
       <!-- start of Result list -->
 
-      <div class="result-tab-section d-flex justify-content-between">
-        <div class="d-flex gap-1 flex-wrap">
+      <div class="result-tab-section d-flex justify-content-between flex-wrap">
+        <div class="d-flex gap-1 horizontal-scroll">
           <div class="result-tab active-result-tab">
             <p>Result List</p>
           </div>
@@ -86,10 +88,24 @@
             <p>Compare Applicant</p>
           </div>
         </div>
-        <div class="d-flex gap-4">
+        <div class="d-flex gap-4 flex-wrap">
           <input class="search-bar" type="text" id="filterbox" placeholder="Search">
-          <div class="download-btn" id="ExportReporttoExcel">
+          <div class="download-btn d-flex justify-content-around" id="ExportReporttoExcel" onclick="resultDownload()">
             <p>Download</p>
+            <img class="download-icon" src="assets/images/svg/download-icon.svg" alt="">
+            <div class="dropdownOptions" id="dropdownOptions">
+              <ul>
+                <li>Download Report</li>
+              <li>Print List</li>
+              <li>Export PDF</li>
+              <li>Export Excel</li>
+              <li>Export to Excel Section Wise Common</li>
+              <li>Download Typing Response</li>
+              </ul>
+            </div>
+          </div>
+          <div class="refresh-btn d-flex justify-content-center align-items-center">
+            <img src="assets/images/svg/refresh.svg" alt="">
           </div>
         </div>
       </div>
@@ -98,7 +114,7 @@
         <table id="result_list_table" class="table main-table">
             <thead>
               <tr class="table-row-1 table-header">
-                <td class="p-4"></td>
+                <td class="p-4">S.No</td>
                 <td class="p-4">Test Taker</td>
                 <td class="p-4">Test Name</td>
                 <td class="p-4 percentage-section">Percentage</td>
@@ -110,12 +126,8 @@
             </thead>
             <tbody>
               <tr class="table-row-1">
-                <td class="p-4">
-                  <label class="checkboxone" for="sbs-checkbox7">
-                    <input id="sbs-checkbox7" class="checkbox__input" type="checkbox">
-                    <div class="checkbox__box">
-                    </div> 
-                </label>
+                <td class="p-4 input-data">
+                 1
                 </td>
                 <td class="p-4">
                 <div class="d-flex">
@@ -134,7 +146,7 @@
                     <p class="progress-line-value">99%</p>
                 </div>
                 </td>
-                <td class="p-4 input-data percentile-data">100</td>
+                <td class="p-4 input-data percentile-data">100 <span><img class="percentile-crown" src="assets/images/crown.png" alt=""></span></td>
                 <td><span class="pass-field">Pass</span></td>
                 <td class="p-4 timetaken">23m:20s</td>
                 <td class="options-data"><i class="fas fa-solid fa-ellipsis-vertical"></i></td>
@@ -142,11 +154,7 @@
 
               <tr class="table-row-1">
                 <td class="p-4">
-                  <label class="checkboxone" for="sbs-checkbox2">
-                    <input id="sbs-checkbox2" class="checkbox__input" type="checkbox">
-                    <div class="checkbox__box">
-                    </div> 
-                </label>
+                 2
                 </td>
                 <td class="p-4">
                 <div class="d-flex">
@@ -173,11 +181,7 @@
 
               <tr class="table-row-1">
                 <td class="p-4">
-                  <label class="checkboxone" for="sbs-checkbox3">
-                    <input id="sbs-checkbox3" class="checkbox__input" type="checkbox">
-                    <div class="checkbox__box">
-                    </div> 
-                </label>
+                 3
                 </td>
                 <td class="p-4">
                 <div class="d-flex">
@@ -204,11 +208,7 @@
 
               <tr class="table-row-1">
                 <td class="p-4">
-                  <label class="checkboxone" for="sbs-checkbox4">
-                    <input id="sbs-checkbox4" class="checkbox__input" type="checkbox">
-                    <div class="checkbox__box">
-                    </div> 
-                </label>
+                 4
                 </td>
                 <td class="p-4">
                 <div class="d-flex">
@@ -235,11 +235,7 @@
 
               <tr class="table-row-1">
                 <td class="p-4">
-                  <label class="checkboxone" for="sbs-checkbox5">
-                    <input id="sbs-checkbox5" class="checkbox__input" type="checkbox">
-                    <div class="checkbox__box">
-                    </div> 
-                </label>
+                 5
                 </td>
                 <td class="p-4">
                 <div class="d-flex">
@@ -266,11 +262,7 @@
 
               <tr class="table-row-1">
                 <td class="p-4">
-                  <label class="checkboxone" for="sbs-checkbox6">
-                    <input id="sbs-checkbox6" class="checkbox__input" type="checkbox">
-                    <div class="checkbox__box">
-                    </div> 
-                </label>
+                 6
                 </td>
                 <td class="p-4">
                 <div class="d-flex">
@@ -297,11 +289,7 @@
 
               <tr class="table-row-1">
                 <td class="p-4">
-                  <label class="checkboxone" for="sbs-checkbox6">
-                    <input id="sbs-checkbox6" class="checkbox__input" type="checkbox">
-                    <div class="checkbox__box">
-                    </div> 
-                </label>
+                 7
                 </td>
                 <td class="p-4">
                 <div class="d-flex">
@@ -328,11 +316,7 @@
 
               <tr class="table-row-1">
                 <td class="p-4">
-                  <label class="checkboxone" for="sbs-checkbox6">
-                    <input id="sbs-checkbox6" class="checkbox__input" type="checkbox">
-                    <div class="checkbox__box">
-                    </div> 
-                </label>
+                 8
                 </td>
                 <td class="p-4">
                 <div class="d-flex">
@@ -359,11 +343,7 @@
 
               <tr class="table-row-1">
                 <td class="p-4">
-                  <label class="checkboxone" for="sbs-checkbox6">
-                    <input id="sbs-checkbox6" class="checkbox__input" type="checkbox">
-                    <div class="checkbox__box">
-                    </div> 
-                </label>
+                 9
                 </td>
                 <td class="p-4">
                 <div class="d-flex">
@@ -390,11 +370,7 @@
 
               <tr class="table-row-1">
                 <td class="p-4">
-                  <label class="checkboxone" for="sbs-checkbox6">
-                    <input id="sbs-checkbox6" class="checkbox__input" type="checkbox">
-                    <div class="checkbox__box">
-                    </div> 
-                </label>
+                 10
                 </td>
                 <td class="p-4">
                 <div class="d-flex">
@@ -421,11 +397,7 @@
 
               <tr class="table-row-1">
                 <td class="p-4">
-                  <label class="checkboxone" for="sbs-checkbox6">
-                    <input id="sbs-checkbox6" class="checkbox__input" type="checkbox">
-                    <div class="checkbox__box">
-                    </div> 
-                </label>
+                 11
                 </td>
                 <td class="p-4">
                 <div class="d-flex">
@@ -452,11 +424,7 @@
 
               <tr class="table-row-1">
                 <td class="p-4">
-                  <label class="checkboxone" for="sbs-checkbox6">
-                    <input id="sbs-checkbox6" class="checkbox__input" type="checkbox">
-                    <div class="checkbox__box">
-                    </div> 
-                </label>
+                 12
                 </td>
                 <td class="p-4">
                 <div class="d-flex">
@@ -483,11 +451,7 @@
 
               <tr class="table-row-1">
                 <td class="p-4">
-                  <label class="checkboxone" for="sbs-checkbox6">
-                    <input id="sbs-checkbox6" class="checkbox__input" type="checkbox">
-                    <div class="checkbox__box">
-                    </div> 
-                </label>
+                 13
                 </td>
                 <td class="p-4">
                 <div class="d-flex">
@@ -501,9 +465,9 @@
                 <td class="p-4 input-data">MCQ And Subjective</td>
                 <td class="p-4">
                 <div class="progress d-flex">
-                    <div class="progress-line" style="width: 90%;">
+                    <div class="progress-line">
                     </div>
-                      <p class="progress-line-value">30%</p>
+                      <p class="progress-line-value">99%</p>
                 </div>
                 </td>
                 <td class="p-4 input-data percentile-data">100</td>
@@ -568,11 +532,13 @@
         { 
             extend: 'excel',
         }
-        ]
+        ],
+        language: {
+          lengthMenu: "_MENU_ records per page",
+          info:"Showing _START_ to _END_ of _TOTAL_",
+            }
   });
-  $('#ExportReporttoExcel').on('click', function() {
-  $('.buttons-excel').click()
-});
+
 
 
   $('#filterbox').keyup( function() {
@@ -583,6 +549,16 @@
 });
 
 
+</script>
+
+<script>
+ function resultDownload(){
+    
+  var dropdown = document.getElementById("dropdownOptions")
+  dropdown.classList.toggle("navbar-place")
+ 
+
+  }
 </script>
     
 

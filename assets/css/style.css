@@ -4684,11 +4684,15 @@ textarea {
  .main-table{
   border-collapse:separate !important;
   border-spacing:0 15px !important;
-  width: 100%;
+  
  }
+
+
 
  .table-main-section{
   overflow-x: auto;
+  padding-left: 20px;
+  padding-right: 20px;
  }
  
 
@@ -4868,7 +4872,7 @@ textarea {
 }
 
 .navbar-place{
-  display: block;
+  display: block !important;
   
   
 }
@@ -5015,10 +5019,10 @@ textarea {
 }
 
 .scorecard-line{
-
-position: absolute;
-transform: translate(150px,130px) rotate(30deg);
+  position: relative;
+transform: translate(130px,130px) rotate(10deg);
 width: 60px;
+object-position: bottom;
 
 
 }
@@ -5059,6 +5063,15 @@ width: 60px;
   text-align: center;
   padding-top: 5px;
   cursor: pointer;
+  position: relative;
+}
+
+.refresh-btn{
+  background-color: #20776E;
+  color: white;
+  box-shadow: 0px 3px 6px #5462E247;
+  height: 40px;
+  width: 40px;
 }
 
 .pagination-new{
@@ -5127,6 +5140,10 @@ width: 60px;
 
 .dt-buttons{
   display: none;
+}
+
+.horizontal-scroll{
+  overflow-y: auto;
 }
 
 
@@ -5315,6 +5332,7 @@ width: 60px;
 
 .dataTables_wrapper .dataTables_paginate .paginate_button.current{
 background-color: #20776E !important;
+border-radius: 5px !important;
 }
 
 .paging_full_numbers a.paginate_button {
@@ -5323,6 +5341,19 @@ background-color: #20776E !important;
 
 .paging_full_numbers a.paginate_active {
   color: #fff !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button{
+  color: #20776E !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled, .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:hover, .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:active{
+  cursor:not-allowed;
+ 
+}
+
+.percentile-crown{
+  margin-top: -5px;
 }
 
 .selected-ratio{
@@ -5335,6 +5366,11 @@ background-color: #20776E !important;
 .percent-value{
   color: #2B324F;
   font-size: 12px;
+}
+
+.download-icon{
+  width: 20px;
+  margin-bottom: 7px;
 }
 
 
@@ -5461,6 +5497,43 @@ background-color: #20776E !important;
   animation-delay: .8s;
 }
 
+.dataTables_wrapper .dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover{
+  color: white !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover{
+  background: #20776E !important;
+  color: white !important;
+}
+
+.dropdownOptions{
+  z-index: 55;
+  height: 100%;
+  position: absolute;
+  width: 300px;
+  height: auto;
+  border-radius: 15px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.08);
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  color: black;
+  display: none;
+  transform: translate(-70px,40px);
+}
+
+.dropdownOptions ul li{
+  list-style: none;
+  text-align: left;
+  border-bottom: 1px solid #ededed;
+  padding-top: 15px;
+  padding-bottom: 16px;
+
+}
+
+
+
 
 
 
@@ -5556,7 +5629,12 @@ background-color: #20776E !important;
     width: 100%;
   }
 
+  .search-bar{
+    margin-top: 16px;
+    width: 100%;
+  }
 
+  
 
   
 }
@@ -5590,6 +5668,7 @@ background-color: #20776E !important;
     z-index: 100;
     background-color: #F6F8FC;
     padding: 16px;
+    
   }
 
   .sidebar-active{
@@ -5672,6 +5751,11 @@ background-color: #20776E !important;
   .yellow-img{
     margin-top: 10px;
     
+  }
+
+  .mobile-stopper{
+    overflow-y: none !important;
+    overflow: -moz-scrollbars-none !important;
   }
  
   
