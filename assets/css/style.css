@@ -5545,6 +5545,24 @@ border-radius: 5px !important;
   transform: translate(-70px,40px);
 }
 
+.dropdownend{
+  z-index: 55;
+  height: 100%;
+  position: absolute;
+  width: 300px;
+  height: auto;
+  border-radius: 15px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.08);
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  color: black;
+  right: 0;
+  transform: translate(-30px,20px);
+  display: none;
+}
+
 .dropdownOptions ul li{
   list-style: none;
   text-align: left;
@@ -5552,6 +5570,14 @@ border-radius: 5px !important;
   padding-top: 15px;
   padding-bottom: 16px;
 
+}
+
+.dropdownend ul li{
+  list-style: none;
+  text-align: left;
+  border-bottom: 1px solid #ededed;
+  padding-top: 15px;
+  padding-bottom: 16px;
 }
 
 
