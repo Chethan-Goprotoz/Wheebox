@@ -5932,6 +5932,21 @@ border-radius: 5px !important;
     right: 0;
   }
 
+  .percent1-5{
+    position: absolute;
+    transform: translate(10px,75px);
+  }
+  
+  .percent5-7{
+    position: absolute;
+    transform: translate(120px,30px);
+  }
+  
+  .percent7-9{
+    position: absolute;
+    transform: translate(230px,75px);
+  }
+
  
   
 
