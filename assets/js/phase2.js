@@ -14,10 +14,12 @@ window.onload = function() {
 function sidemenu() {
   var sidebar = document.getElementById("sidebar-menu")
   var icon = document.getElementById("menu-icon")
+  bodySelector.append.classList.add("fullselector")
   sidebar.classList.toggle("sidebar-active")
   icon.classList.toggle("icon-rotate")
   icon.classList.toggle("fa-bars")
   icon.classList.toggle("fa-xmark")
+  var bodySelector = document.getElementById("fullselector")
 }
 // end of sidebar
 // Start of Phase 2 Charts data
@@ -107,30 +109,31 @@ var benchmarkcolortwo = benchmark.createLinearGradient(0, 0, 0, 900);
 benchmarkcolortwo.addColorStop(0, '#FDDD33');
 benchmarkcolortwo.addColorStop(1, '#7F6F1A');
 var bar_chart = new Chart(benchmark, {
-  type: 'line',
+  type: 'bar',
   data: {
       labels: [
           ["Pattern", "Completion"], "Maths", ["Logical ", "Reasoning"],
           ["Attention To", "Details"], "Articulation"
       ],
       datasets: [{
+        label: 'Percent',
+        data: [42, 20, 60, 100, 100],
+        borderColor: benchmarkcolortwo,
+        hoverBorderWidth: 2,
+        hoverBorderColor: 'purple',
+        type: 'line',
+        
+    },
+    {
               label: 'Percent',
               data: [25, 65, 70, 70, 70],
               backgroundColor: benchmarkcolorone,
               hoverBorderWidth: 2,
               hoverBorderColor: 'purple',
               barThickness: 10,
-              fill: true,
+              
           },
-          {
-              label: 'Percent',
-              data: [42, 20, 60, 100, 100],
-              backgroundColor: benchmarkcolortwo,
-              hoverBorderWidth: 2,
-              hoverBorderColor: 'purple',
-              barThickness: 10,
-              fill: true,
-          }
+          
       ],
   },
   options: {

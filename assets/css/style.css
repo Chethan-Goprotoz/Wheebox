@@ -55,6 +55,7 @@
 body {
   background-color: #ddd;
   font-family: Pop-normal;
+  
 }
 
 html {
@@ -4235,6 +4236,7 @@ textarea {
    min-height: 100%;
    margin-left: 25px;
    padding: 25px;
+   
 }
 
 
@@ -4255,7 +4257,7 @@ textarea {
 }
 
 .card-width{
-  width: 33%;
+  width: 32%;
 }
 
 .acc-image{
@@ -4575,6 +4577,7 @@ textarea {
   justify-content: center;
   align-items: center;
   padding: 10px;
+  position: relative;
  }
 
  .grid1-new{
@@ -4889,10 +4892,17 @@ textarea {
 }
 
 .navbar-place{
-  display: block !important;
-  
-  
+  display: block;
 }
+
+.dropdownActive{
+  display: block !important;
+}
+
+.dropdownInactive{
+  display: none !important;
+}
+
 .new-logopart{
   width: 60%;
 
@@ -5580,6 +5590,84 @@ border-radius: 5px !important;
   padding-bottom: 16px;
 }
 
+.profileDropdown{
+  z-index: 55;
+  height: 100%;
+  position: absolute;
+  width: 300px;
+  height: auto;
+  border-radius: 15px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.08);
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  color: black;
+  right: 0;
+  top: 100px;
+  display: none;
+  
+}
+
+.profileDropdown ul li{
+  list-style: none;
+  text-align: left;
+  border-bottom: 1px solid #ededed;
+  padding-top: 15px;
+  padding-bottom: 16px;
+
+}
+
+.background-scorecard{
+  width: 300px;
+  height: 300px;
+  padding-top: 70px;
+  position: relative;
+}
+
+.background-scorecard img{
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+}
+
+.arrow-container{
+  width: 150px;
+  height: 150px;
+  background-color: transparent;
+  position: absolute;
+  top: 150px;
+  left: 75px;
+}
+
+.arrow-wrapper{
+  width: 75px;
+  height: 75px;
+  background-color: transparent;
+  position: relative;
+}
+
+.arrow img{
+  width: auto;
+  height: 130px;
+  
+}
+
+.arrow{
+  position: absolute;
+  top: 10px;
+  left: 33px;
+}
+
+.speed-0{
+  transform: rotate(10deg);
+}
+
+.mobile-menu-stopper{
+  overflow: hidden;
+ block-size: 100%;
+}
+
 
 
 
@@ -5644,7 +5732,10 @@ border-radius: 5px !important;
 @media(max-width: 767px) {
   .selection-new{
     padding: 16px;
+    
   }
+
+ 
   
   .inside-container{
     padding: 16px;
@@ -5809,6 +5900,10 @@ border-radius: 5px !important;
 
   .dropdownOptions{
     transform: translate(90px,40px);
+  }
+
+  .card-width{
+    width: 100%;
   }
  
   
