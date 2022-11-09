@@ -5670,10 +5670,6 @@ border-radius: 5px !important;
  block-size: 100%;
 }
 
-.mobile-stopper{
-  overflow-y: none !important;
-  overflow: -moz-scrollbars-none !important;
-}
 
 
 

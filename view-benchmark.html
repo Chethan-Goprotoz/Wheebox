@@ -38,15 +38,25 @@
                                         <div class="home-search"> <img class="nav-arrows-1" src="assets/images/home-hover.svg" alt=""> </div>
                                     </a> </div>
                             </div>
-                            <div class="grid-new">
-                                <div class="grid1-new">
-                                    <div class="profile rounded-circle"> <img src="assets/images/prof-mini.png" alt="profile"> </div>
+                            <div class="grid-new" id="profile-out">
+                                <div class="grid1-new" onclick="profile()">
+                                  <div class="profile rounded-circle">
+                                    <img src="assets/images/prof-mini.png" alt="profile">
+                                  </div>
                                 </div>
-                                <div class="grid2-new d-none d-md-block">
-                                    <h6>Jane Doe</h6>
-                                    <p>jane_doe@wheebox.com</p>
+                                <div class="grid2-new d-none d-md-block" onclick="profile()">
+                                  <h6>Jane Doe</h6>
+                                  <p>jane_doe@wheebox.com</p>
                                 </div>
-                            </div>
+                                <div class="profileDropdown" id="profileDropdown">
+                                  <ul>
+                                    <li>Admin Profile</li>
+                                  <li>Change Password</li>
+                                  <li>Help Center</li>
+                                  <li>Log Out</li>
+                                  </ul>
+                                </div>
+                              </div>
                         </div>
                     </div>
                 </div> <!-- row closed -->
@@ -183,7 +193,23 @@
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <script src="assets/js/phase2.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script> </script>
+    <script>
+      function profile(){
+
+profileMenu = document.getElementById("profileDropdown")
+profileMenu.classList.toggle("dropdownActive")
+
+document.addEventListener('click', function profile(event) {
+console.log("clicked")
+const box4 = document.getElementById('profile-out');
+
+if (!box4.contains(event.target)) {
+profileMenu.classList.remove("dropdownActive")
+}
+});
+
+}
+</script>
 </body>
 
 </html>

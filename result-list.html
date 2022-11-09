@@ -55,13 +55,13 @@
                       </a>
                     </div>
                   </div>
-                  <div class="grid-new" onclick="profile()">
-                    <div class="grid1-new">
+                  <div class="grid-new" id="profile-out">
+                    <div class="grid1-new" onclick="profile()">
                       <div class="profile rounded-circle">
                         <img src="assets/images/prof-mini.png" alt="profile">
                       </div>
                     </div>
-                    <div class="grid2-new d-none d-md-block">
+                    <div class="grid2-new d-none d-md-block" onclick="profile()">
                       <h6>Jane Doe</h6>
                       <p>jane_doe@wheebox.com</p>
                     </div>
@@ -157,7 +157,7 @@
                 <td class="p-4 input-data percentile-data">100 <span><img class="percentile-crown" src="assets/images/crown.png" alt=""></span></td>
                 <td><span class="pass-field">Pass</span></td>
                 <td class="p-4 timetaken-red">23m:20s</td>
-                <td class="options-data"><i class="fas fa-solid fa-ellipsis-vertical"></i>
+                <td class="options-data" id="option-out"><i class="fas fa-solid fa-ellipsis-vertical"></i>
                   <div class="dropdownend">
                     <ul>
                       <li>Download Report</li>
@@ -188,9 +188,9 @@
                 </div>
                 </td>
                  <td class="p-4 input-data percentile-data">80 <span><img class="percentile-crown" src="assets/images/crown.png" alt=""></span></td>
-                <td><span class="pass-field">Pass</span></td>
+                <td><span class="pass-field">P</span></td>
                 <td class="p-4 timetaken">23m:20s</td>
-                <td class="options-data">
+                <td class="options-data" id="option-out">
                   <i class="fas fa-solid fa-ellipsis-vertical"></i>
                     <div class="dropdownend">
                       <ul>
@@ -225,7 +225,7 @@
                  <td class="p-4 input-data percentile-data">90 <span><img class="percentile-crown" src="assets/images/crown.png" alt=""></span></td>
                 <td><span class="pass-field">Pass</span></td>
                 <td class="p-4 timetaken">23m:20s</td>
-                <td class="options-data"><i class="fas fa-solid fa-ellipsis-vertical"></i>
+                <td class="options-data" id="option-out"><i class="fas fa-solid fa-ellipsis-vertical"></i>
                   <div class="dropdownend">
                     <ul>
                       <li>Download Report</li>
@@ -258,7 +258,7 @@
                  <td class="p-4 input-data percentile-data">100 <span><img class="percentile-crown" src="assets/images/crown.png" alt=""></span></td>
                 <td><span class="fail-field">Fail</span></td>
                 <td class="p-4 timetaken">23m:20s</td>
-                <td class="options-data"><i class="fas fa-solid fa-ellipsis-vertical"></i>
+                <td class="options-data" id="option-out"><i class="fas fa-solid fa-ellipsis-vertical"></i>
                   <div class="dropdownend">
                     <ul>
                       <li>Download Report</li>
@@ -291,7 +291,7 @@
                  <td class="p-4 input-data percentile-data">100 <span><img class="percentile-crown" src="assets/images/crown.png" alt=""></span></td>
                 <td><span class="fail-field">Fail</span></td>
                 <td class="p-4 timetaken">23m:20s</td>
-                <td class="options-data"><i class="fas fa-solid fa-ellipsis-vertical"></i>
+                <td class="options-data" id="option-out"><i class="fas fa-solid fa-ellipsis-vertical"></i>
                   <div class="dropdownend">
                     <ul>
                       <li>Download Report</li>
@@ -323,7 +323,7 @@
                  <td class="p-4 input-data percentile-data">100 <span><img class="percentile-crown" src="assets/images/crown.png" alt=""></span></td>
                 <td><span class="fail-field">Fail</span></td>
                 <td class="p-4 timetaken">23m:20s</td>
-                <td class="options-data"><i class="fas fa-solid fa-ellipsis-vertical"></i>
+                <td class="options-data" id="option-out"><i class="fas fa-solid fa-ellipsis-vertical"></i>
                   <div class="dropdownend">
                     <ul>
                       <li>Download Report</li>
@@ -355,7 +355,7 @@
                  <td class="p-4 input-data percentile-data">100 <span><img class="percentile-crown" src="assets/images/crown.png" alt=""></span></td>
                 <td><span class="fail-field">Fail</span></td>
                 <td class="p-4 timetaken">23m:20s</td>
-                <td class="options-data"><i class="fas fa-solid fa-ellipsis-vertical"></i>
+                <td class="options-data" id="option-out"><i class="fas fa-solid fa-ellipsis-vertical"></i>
                   <div class="dropdownend">
                     <ul>
                       <li>Download Report</li>
@@ -387,7 +387,7 @@
                  <td class="p-4 input-data percentile-data">100 <span><img class="percentile-crown" src="assets/images/crown.png" alt=""></span></td>
                 <td><span class="fail-field">Fail</span></td>
                 <td class="p-4 timetaken">23m:20s</td>
-                <td class="options-data"><i class="fas fa-solid fa-ellipsis-vertical"></i>
+                <td class="options-data" id="option-out"><i class="fas fa-solid fa-ellipsis-vertical"></i>
                   <div class="dropdownend">
                     <ul>
                       <li>Download Report</li>
@@ -420,7 +420,7 @@
                 <td class="p-4 input-data percentile-data">100 <span><img class="percentile-crown" src="assets/images/crown.png" alt=""></span></td>
                 <td><span class="pass-field">Pass</span></td>
                 <td class="p-4 timetaken-red">23m:20s</td>
-                <td class="options-data"><i class="fas fa-solid fa-ellipsis-vertical"></i>
+                <td class="options-data" id="option-out"><i class="fas fa-solid fa-ellipsis-vertical"></i>
                   <div class="dropdownend">
                     <ul>
                       <li>Download Report</li>
@@ -453,7 +453,7 @@
                 <td class="p-4 input-data percentile-data">100 <span><img class="percentile-crown" src="assets/images/crown.png" alt=""></span></td>
                 <td><span class="pass-field">Pass</span></td>
                 <td class="p-4 timetaken-red">23m:20s</td>
-                <td class="options-data"><i class="fas fa-solid fa-ellipsis-vertical"></i>
+                <td class="options-data" id="option-out"><i class="fas fa-solid fa-ellipsis-vertical"></i>
                   <div class="dropdownend">
                     <ul>
                       <li>Download Report</li>
@@ -485,7 +485,7 @@
                 <td class="p-4 input-data percentile-data">100 <span><img class="percentile-crown" src="assets/images/crown.png" alt=""></span></td>
                 <td><span class="pass-field">Pass</span></td>
                 <td class="p-4 timetaken-red">23m:20s</td>
-                <td class="options-data"><i class="fas fa-solid fa-ellipsis-vertical"></i>
+                <td class="options-data" id="option-out"><i class="fas fa-solid fa-ellipsis-vertical"></i>
                   <div class="dropdownend">
                     <ul>
                       <li>Download Report</li>
@@ -517,7 +517,7 @@
                 <td class="p-4 input-data percentile-data">100 <span><img class="percentile-crown" src="assets/images/crown.png" alt=""></span></td>
                 <td><span class="pass-field">Pass</span></td>
                 <td class="p-4 timetaken-red">23m:20s</td>
-                <td class="options-data"><i class="fas fa-solid fa-ellipsis-vertical"></i>
+                <td class="options-data" id="option-out"><i class="fas fa-solid fa-ellipsis-vertical"></i>
                   <div class="dropdownend">
                     <ul>
                       <li>Download Report</li>
@@ -549,7 +549,7 @@
                 <td class="p-4 input-data percentile-data">100 <span><img class="percentile-crown" src="assets/images/crown.png" alt=""></span></td>
                 <td><span class="pass-field">Pass</span></td>
                 <td class="p-4 timetaken-red">23m:20s</td>
-                <td class="options-data"><i class="fas fa-solid fa-ellipsis-vertical"></i>
+                <td class="options-data" id="option-out"><i class="fas fa-solid fa-ellipsis-vertical"></i>
                   <div class="dropdownend">
                     <ul>
                       <li>Download Report</li>
@@ -664,12 +664,11 @@
       var input = buttonclick.parentElement.children[1]
       input.classList.toggle("dropdownActive")
 
-      console.log('user clicked: ', event.target);
+      console.log('user clicked: ', event.target); 
     })
-    
-
-
   }
+
+ 
 </script>
 
 <script>
@@ -694,11 +693,11 @@
     profileMenu.classList.toggle("dropdownActive")
 
     document.addEventListener('click', function profile(event) {
-  // 👇️ the element the user clicked
-  const box4 = document.getElementById('profileDropdown');
+  console.log("clicked")
+  const box4 = document.getElementById('profile-out');
 
   if (!box4.contains(event.target)) {
-    console.log("cheked")
+    profileMenu.classList.remove("dropdownActive")
   }
 });
 
