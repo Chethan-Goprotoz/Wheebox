@@ -4411,6 +4411,16 @@ textarea {
    font-size: 14px;
 }
 
+.performance-footer-score{
+  margin-top: 20px;
+}
+
+.performance-footer-score p{
+  color: #6E6E6E;
+   opacity: 74%;
+   font-size: 12px;
+}
+
 .pf-indicator{
   width: 15px;
   height: 15px;
@@ -4427,6 +4437,18 @@ textarea {
   margin-top: 5px;
   margin-right: 10px;
 }
+
+.pf-indicator-score{
+  width: 15px;
+  height: 15px;
+  border-radius: 0px;
+  margin-top: 6px;
+  margin-right: 10px;
+  margin-left: 10px;
+  
+}
+
+
 
 .legend{
  font-size: 12px !important;
