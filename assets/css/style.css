@@ -6059,6 +6059,15 @@ border-radius: 5px !important;
   .result-tab-section-2{
     margin-left: 0;
   }
+
+  .dropdownend{
+    transform: translate(250px,30px);
+    right: 0;
+  }
+
+  .searchContainer{
+    margin-top: 20px;
+  }
  
   
 

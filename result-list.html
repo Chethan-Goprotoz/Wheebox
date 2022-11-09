@@ -96,7 +96,7 @@
             <p>Compare Applicant</p>
           </div>
         </div>
-        <div class="d-flex gap-4 flex-wrap" id="mousecontainer">
+        <div class="d-flex gap-4 flex-wrap searchContainer" id="mousecontainer">
           <input class="search-bar" type="text" id="filterbox" placeholder="Search">
           <div class="download-btn d-flex justify-content-around" id="ExportReporttoExcel" onclick="resultDownload()">
             <p>Download</p>
@@ -569,7 +569,8 @@
                       <li>Download Report</li>
                       <li>Download Detailed Score Card</li>
                     </ul>
-                  </div></td>
+                  </div>
+                </td>
               </tr>
 
             </tbody>
@@ -668,22 +669,26 @@
 
 
 <!-- <script>
+  
   var sideoptions = document.getElementsByClassName("options-data");
   for (var i=0;i<sideoptions.length;i++){
     var button = sideoptions[i];
-    button.addEventListener("click",function(event){
-
-      var buttonclick = event.target
-      
+    button.addEventListener("click",function(random){
+      var buttonclick = random.target
       var input = buttonclick.parentElement.children[1]
-      input.classList.toggle("dropdownActive")
-
-      console.log('user clicked: ', event.target); 
-    })
+      input.classList.toggle("dropdownActive") 
+    },
+    
+    
+    
+    )
   }
 
  
-</script> -->
+
+  
+ 
+</script>  -->
 
 <script>
   var percentile = document.getElementsByClassName("percentile-data")
