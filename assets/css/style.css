@@ -5571,7 +5571,7 @@ border-radius: 5px !important;
   transition: all 0.2s ease;
   color: black;
   right: 0;
-  transform: translate(-30px,20px);
+  transform: translate(0px,20px);
   display: none;
 }
 
