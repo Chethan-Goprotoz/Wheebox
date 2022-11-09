@@ -5147,6 +5147,20 @@ object-position: bottom;
   position: relative;
 }
 
+.download-btn3{
+  background-color: #20776E;
+  color: white;
+  box-shadow: 0px 3px 6px #5462E247;
+  width: auto;
+  height: 40px;
+  text-align: center;
+  padding-top: 5px;
+  cursor: pointer;
+  position: relative;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
 .download-btn-compare{
   background-color: #20776E;
   color: white;
@@ -5245,6 +5259,7 @@ object-position: bottom;
 
 .horizontal-scroll{
   overflow-y: auto;
+  padding-bottom: 4px;
 }
 
 
@@ -5867,6 +5882,9 @@ border-radius: 5px !important;
   visibility: hidden;
 }
 
+.compareDownloadMobile{
+  display: none;
+}
 
 
 
@@ -5993,6 +6011,9 @@ border-radius: 5px !important;
   .percent7-9{
     position: absolute;
     transform: translate(230px,75px);
+  }
+  .compareDownloadMobile{
+    display: block;
   }
 
  
