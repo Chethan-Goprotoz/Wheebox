@@ -18,9 +18,11 @@
     <!-- style css -->
     <link rel="stylesheet" href="assets/sass/app.css" rel="stylesheet" />
 
-    <link rel="stylesheet" href="assets/css/style.css" rel="stylesheet">
+   
 
     <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
+
+    <link rel="stylesheet" href="assets/css/style.css" rel="stylesheet">
   </head>
 
   <body>
@@ -53,15 +55,23 @@
                       </a>
                     </div>
                   </div>
-                  <div class="grid-new">
-                    <div class="grid1-new">
+                  <div class="grid-new" id="profile-out">
+                    <div class="grid1-new" onclick="profile()">
                       <div class="profile rounded-circle">
                         <img src="assets/images/prof-mini.png" alt="profile">
                       </div>
                     </div>
-                    <div class="grid2-new d-none d-md-block">
+                    <div class="grid2-new d-none d-md-block" onclick="profile()">
                       <h6>Jane Doe</h6>
                       <p>jane_doe@wheebox.com</p>
+                    </div>
+                    <div class="profileDropdown" id="profileDropdown">
+                      <ul>
+                        <li>Admin Profile</li>
+                      <li>Change Password</li>
+                      <li>Help Center</li>
+                      <li>Log Out</li>
+                      </ul>
                     </div>
                   </div>
                 </div>
@@ -74,28 +84,42 @@
 
       <!-- start of Result list -->
 
-      <div class="result-tab-section d-flex justify-content-between">
-        <div class="d-flex gap-1 flex-wrap">
-          <div class="result-tab ">
+      <div class="result-tab-section-2 d-flex justify-content-between flex-wrap">
+        <div class="d-flex gap-1 horizontal-scroll">
+          <div class="result-tab active-result-tab">
             <p>Result List</p>
           </div>
           <div class="result-tab">
             <p>Percentage Wise Insight</p>
           </div>
-          <div class="result-tab active-result-tab">
+          <div class="result-tab">
             <p>Compare Applicant</p>
           </div>
-        </div>
-        <div class="d-flex gap-5 align-items-center">
+          <div class="d-flex gap-5 align-items-center">
             <p class="selected-ratio">Selected applicant 1/5</p>
             <div class="download-btn">
                 <p>Compare</p>
               </div>
           </div>
-        <div class="d-flex gap-4">
+        </div>
+        <div class="d-flex gap-4 flex-wrap searchContainer" id="mousecontainer">
           <input class="search-bar" type="text" id="filterbox" placeholder="Search">
-          <div class="download-btn" id="ExportReporttoExcel">
-            <p>Download</p>
+          <div class="download-btn2 d-flex justify-content-around" id="ExportReporttoExcel" onclick="resultDownload()">
+            
+            <img class="download-icon" src="assets/images/svg/download-icon.svg" alt="">
+            <div class="dropdownOptions" id="dropdownOptions">
+              <ul>
+                <li>Download Report</li>
+              <li>Print List</li>
+              <li>Export PDF</li>
+              <li>Export Excel</li>
+              <li>Export to Excel Section Wise Common</li>
+              <li>Download Typing Response</li>
+              </ul>
+            </div>
+          </div>
+          <div class="refresh-btn d-flex justify-content-center align-items-center">
+            <img src="assets/images/svg/refresh.svg" alt="">
           </div>
         </div>
       </div>
@@ -104,7 +128,7 @@
         <table id="result_list_table" class="table main-table">
             <thead>
               <tr class="table-row-1 table-header">
-                <td class="p-4"></td>
+                <td class="p-4">S.No</td>
                 <td class="p-4">Test Taker</td>
                 <td class="p-4">Test Name</td>
                 <td class="p-4 percentage-section">Percentage</td>
@@ -116,12 +140,8 @@
             </thead>
             <tbody>
               <tr class="table-row-1">
-                <td class="p-4">
-                  <label class="checkboxone" for="sbs-checkbox7">
-                    <input id="sbs-checkbox7" class="checkbox__input" type="checkbox">
-                    <div class="checkbox__box">
-                    </div> 
-                </label>
+                <td class="p-4 input-data">
+                 1
                 </td>
                 <td class="p-4">
                 <div class="d-flex">
@@ -137,53 +157,26 @@
                 <div class="progress d-flex">
                     <div class="progress-line">
                     </div>
-                    <p class="progress-line-value">60%</p>
+                    <p class="progress-line-value">99%</p>
+                    <p class="progress-hover">24/40</p>
+                    
                 </div>
                 </td>
-                <td class="p-4 input-data percentile-data">100</td>
+                <td class="p-4 input-data percentile-data">100 <span><img class="percentile-crown" src="assets/images/crown.png" alt=""></span></td>
                 <td><span class="pass-field">Pass</span></td>
-                <td class="p-4 timetaken">23m:20s</td>
-                <td class="options-data"><i class="fas fa-solid fa-ellipsis-vertical"></i></td>
+                <td class="p-4 timetaken-red">23m:20s</td>
+                <td class="options-data" id="option-out"><i class="fas fa-solid fa-ellipsis-vertical"></i>
+                  <div class="dropdownend">
+                    <ul>
+                      <li>Download Report</li>
+                      <li>Download Detailed Score Card</li>
+                    </ul>
+                  </div></td>
               </tr>
 
               <tr class="table-row-1">
                 <td class="p-4">
-                  <label class="checkboxone" for="sbs-checkbox2">
-                    <input id="sbs-checkbox2" class="checkbox__input" type="checkbox">
-                    <div class="checkbox__box">
-                    </div> 
-                </label>
-                </td>
-                <td class="p-4">
-                <div class="d-flex">
-                    <img class="table-img" src="assets/images/prof-mini.png" alt="">
-                    <div class="test-taker-data">
-                        <h6>Demo Pesto Tech</h6>
-                        <p>pestotech@demo.com</p>
-                    </div>
-                </div>
-            </td>
-                <td class="p-4 input-data">MCQ And Subjective</td>
-                <td class="p-4">
-                <div class="progress d-flex">
-                    <div class="progress-line">
-                    </div>
-                    <p class="progress-line-value">30%</p>
-                </div>
-                </td>
-                <td class="p-4 input-data percentile-data">100</td>
-                <td><span class="pass-field">Pass</span></td>
-                <td class="p-4 timetaken">23m:20s</td>
-                <td class="options-data"><i class="fas fa-solid fa-ellipsis-vertical"></i></td>
-              </tr>
-
-              <tr class="table-row-1">
-                <td class="p-4">
-                  <label class="checkboxone" for="sbs-checkbox3">
-                    <input id="sbs-checkbox3" class="checkbox__input" type="checkbox">
-                    <div class="checkbox__box">
-                    </div> 
-                </label>
+                 2
                 </td>
                 <td class="p-4">
                 <div class="d-flex">
@@ -200,21 +193,26 @@
                     <div class="progress-line">
                     </div>
                     <p class="progress-line-value">30%</p>
+                    <p class="progress-hover">24/40</p>
                 </div>
                 </td>
-                <td class="p-4 input-data percentile-data">100</td>
+                 <td class="p-4 input-data percentile-data">80 <span><img class="percentile-crown" src="assets/images/crown.png" alt=""></span></td>
                 <td><span class="pass-field">Pass</span></td>
                 <td class="p-4 timetaken">23m:20s</td>
-                <td class="options-data"><i class="fas fa-solid fa-ellipsis-vertical"></i></td>
+                <td class="options-data" id="option-out">
+                  <i class="fas fa-solid fa-ellipsis-vertical"></i>
+                    <div class="dropdownend">
+                      <ul>
+                        <li>Download Report</li>
+                        <li>Download Detailed Score Card</li>
+                      </ul>
+                    </div>
+                </td>
               </tr>
 
               <tr class="table-row-1">
                 <td class="p-4">
-                  <label class="checkboxone" for="sbs-checkbox4">
-                    <input id="sbs-checkbox4" class="checkbox__input" type="checkbox">
-                    <div class="checkbox__box">
-                    </div> 
-                </label>
+                 3
                 </td>
                 <td class="p-4">
                 <div class="d-flex">
@@ -231,21 +229,24 @@
                     <div class="progress-line">
                     </div>
                     <p class="progress-line-value">30%</p>
+                    <p class="progress-hover">24/40</p>
                 </div>
                 </td>
-                <td class="p-4 input-data percentile-data">100</td>
+                 <td class="p-4 input-data percentile-data">90 <span><img class="percentile-crown" src="assets/images/crown.png" alt=""></span></td>
                 <td><span class="pass-field">Pass</span></td>
                 <td class="p-4 timetaken">23m:20s</td>
-                <td class="options-data"><i class="fas fa-solid fa-ellipsis-vertical"></i></td>
+                <td class="options-data" id="option-out"><i class="fas fa-solid fa-ellipsis-vertical"></i>
+                  <div class="dropdownend">
+                    <ul>
+                      <li>Download Report</li>
+                      <li>Download Detailed Score Card</li>
+                    </ul>
+                  </div></td>
               </tr>
 
               <tr class="table-row-1">
                 <td class="p-4">
-                  <label class="checkboxone" for="sbs-checkbox5">
-                    <input id="sbs-checkbox5" class="checkbox__input" type="checkbox">
-                    <div class="checkbox__box">
-                    </div> 
-                </label>
+                 4
                 </td>
                 <td class="p-4">
                 <div class="d-flex">
@@ -261,22 +262,25 @@
                 <div class="progress d-flex">
                     <div class="progress-line">
                     </div>
-                    <p class="progress-line-value">60%</p>
+                    <p class="progress-line-value">30%</p>
+                    <p class="progress-hover">24/40</p>
                 </div>
                 </td>
-                <td class="p-4 input-data percentile-data">100</td>
-                <td><span class="pass-field">Pass</span></td>
+                 <td class="p-4 input-data percentile-data">30 <span><img class="percentile-crown" src="assets/images/crown.png" alt=""></span></td>
+                <td><span class="fail-field">Fail</span></td>
                 <td class="p-4 timetaken">23m:20s</td>
-                <td class="options-data"><i class="fas fa-solid fa-ellipsis-vertical"></i></td>
+                <td class="options-data" id="option-out"><i class="fas fa-solid fa-ellipsis-vertical"></i>
+                  <div class="dropdownend">
+                    <ul>
+                      <li>Download Report</li>
+                      <li>Download Detailed Score Card</li>
+                    </ul>
+                  </div></td>
               </tr>
 
               <tr class="table-row-1">
                 <td class="p-4">
-                  <label class="checkboxone" for="sbs-checkbox6">
-                    <input id="sbs-checkbox6" class="checkbox__input" type="checkbox">
-                    <div class="checkbox__box">
-                    </div> 
-                </label>
+                 5
                 </td>
                 <td class="p-4">
                 <div class="d-flex">
@@ -290,24 +294,26 @@
                 <td class="p-4 input-data">MCQ And Subjective</td>
                 <td class="p-4">
                 <div class="progress d-flex">
-                    <div class="progress-line" style="width: 90%;">
+                    <div class="progress-line">
                     </div>
-                      <p class="progress-line-value">30%</p>
+                    <p class="progress-line-value">30%</p>
+                    <p class="progress-hover">24/40</p>
                 </div>
                 </td>
-                <td class="p-4 input-data percentile-data">100</td>
-                <td><span class="pass-field">Pass</span></td>
+                 <td class="p-4 input-data percentile-data">30 <span><img class="percentile-crown" src="assets/images/crown.png" alt=""></span></td>
+                <td><span class="fail-field">Fail</span></td>
                 <td class="p-4 timetaken">23m:20s</td>
-                <td class="options-data"><i class="fas fa-solid fa-ellipsis-vertical"></i></td>
+                <td class="options-data" id="option-out"><i class="fas fa-solid fa-ellipsis-vertical"></i>
+                  <div class="dropdownend">
+                    <ul>
+                      <li>Download Report</li>
+                      <li>Download Detailed Score Card</li>
+                    </ul>
+                  </div></td>
               </tr>
-
               <tr class="table-row-1">
                 <td class="p-4">
-                  <label class="checkboxone" for="sbs-checkbox6">
-                    <input id="sbs-checkbox6" class="checkbox__input" type="checkbox">
-                    <div class="checkbox__box">
-                    </div> 
-                </label>
+                 6
                 </td>
                 <td class="p-4">
                 <div class="d-flex">
@@ -321,24 +327,26 @@
                 <td class="p-4 input-data">MCQ And Subjective</td>
                 <td class="p-4">
                 <div class="progress d-flex">
-                    <div class="progress-line" style="width: 90%;">
+                    <div class="progress-line">
                     </div>
-                      <p class="progress-line-value">30%</p>
+                    <p class="progress-line-value">30%</p>
+                    <p class="progress-hover">24/40</p>
                 </div>
                 </td>
-                <td class="p-4 input-data percentile-data">100</td>
-                <td><span class="pass-field">Pass</span></td>
+                 <td class="p-4 input-data percentile-data">30 <span><img class="percentile-crown" src="assets/images/crown.png" alt=""></span></td>
+                <td><span class="fail-field">Fail</span></td>
                 <td class="p-4 timetaken">23m:20s</td>
-                <td class="options-data"><i class="fas fa-solid fa-ellipsis-vertical"></i></td>
+                <td class="options-data" id="option-out"><i class="fas fa-solid fa-ellipsis-vertical"></i>
+                  <div class="dropdownend">
+                    <ul>
+                      <li>Download Report</li>
+                      <li>Download Detailed Score Card</li>
+                    </ul>
+                  </div></td>
               </tr>
-
               <tr class="table-row-1">
                 <td class="p-4">
-                  <label class="checkboxone" for="sbs-checkbox6">
-                    <input id="sbs-checkbox6" class="checkbox__input" type="checkbox">
-                    <div class="checkbox__box">
-                    </div> 
-                </label>
+                 7
                 </td>
                 <td class="p-4">
                 <div class="d-flex">
@@ -352,24 +360,26 @@
                 <td class="p-4 input-data">MCQ And Subjective</td>
                 <td class="p-4">
                 <div class="progress d-flex">
-                    <div class="progress-line" style="width: 90%;">
+                    <div class="progress-line">
                     </div>
-                      <p class="progress-line-value">30%</p>
+                    <p class="progress-line-value">30%</p>
+                    <p class="progress-hover">24/40</p>
                 </div>
                 </td>
-                <td class="p-4 input-data percentile-data">100</td>
-                <td><span class="pass-field">Pass</span></td>
+                 <td class="p-4 input-data percentile-data">30 <span><img class="percentile-crown" src="assets/images/crown.png" alt=""></span></td>
+                <td><span class="fail-field">Fail</span></td>
                 <td class="p-4 timetaken">23m:20s</td>
-                <td class="options-data"><i class="fas fa-solid fa-ellipsis-vertical"></i></td>
+                <td class="options-data" id="option-out"><i class="fas fa-solid fa-ellipsis-vertical"></i>
+                  <div class="dropdownend">
+                    <ul>
+                      <li>Download Report</li>
+                      <li>Download Detailed Score Card</li>
+                    </ul>
+                  </div></td>
               </tr>
-
               <tr class="table-row-1">
                 <td class="p-4">
-                  <label class="checkboxone" for="sbs-checkbox6">
-                    <input id="sbs-checkbox6" class="checkbox__input" type="checkbox">
-                    <div class="checkbox__box">
-                    </div> 
-                </label>
+                 8
                 </td>
                 <td class="p-4">
                 <div class="d-flex">
@@ -383,24 +393,27 @@
                 <td class="p-4 input-data">MCQ And Subjective</td>
                 <td class="p-4">
                 <div class="progress d-flex">
-                    <div class="progress-line" style="width: 90%;">
+                    <div class="progress-line">
                     </div>
-                      <p class="progress-line-value">30%</p>
+                    <p class="progress-line-value">30%</p>
+                    <p class="progress-hover">24/40</p>
                 </div>
                 </td>
-                <td class="p-4 input-data percentile-data">100</td>
-                <td><span class="pass-field">Pass</span></td>
+                 <td class="p-4 input-data percentile-data">30 <span><img class="percentile-crown" src="assets/images/crown.png" alt=""></span></td>
+                <td><span class="fail-field">Fail</span></td>
                 <td class="p-4 timetaken">23m:20s</td>
-                <td class="options-data"><i class="fas fa-solid fa-ellipsis-vertical"></i></td>
+                <td class="options-data" id="option-out"><i class="fas fa-solid fa-ellipsis-vertical"></i>
+                  <div class="dropdownend">
+                    <ul>
+                      <li>Download Report</li>
+                      <li>Download Detailed Score Card</li>
+                    </ul>
+                  </div></td>
               </tr>
 
               <tr class="table-row-1">
-                <td class="p-4">
-                  <label class="checkboxone" for="sbs-checkbox6">
-                    <input id="sbs-checkbox6" class="checkbox__input" type="checkbox">
-                    <div class="checkbox__box">
-                    </div> 
-                </label>
+                <td class="p-4 input-data">
+                 9
                 </td>
                 <td class="p-4">
                 <div class="d-flex">
@@ -414,24 +427,27 @@
                 <td class="p-4 input-data">MCQ And Subjective</td>
                 <td class="p-4">
                 <div class="progress d-flex">
-                    <div class="progress-line" style="width: 90%;">
+                    <div class="progress-line">
                     </div>
-                      <p class="progress-line-value">30%</p>
+                    <p class="progress-line-value">99%</p>
+                    <p class="progress-hover">24/40</p>
                 </div>
                 </td>
-                <td class="p-4 input-data percentile-data">100</td>
+                <td class="p-4 input-data percentile-data">100 <span><img class="percentile-crown" src="assets/images/crown.png" alt=""></span></td>
                 <td><span class="pass-field">Pass</span></td>
-                <td class="p-4 timetaken">23m:20s</td>
-                <td class="options-data"><i class="fas fa-solid fa-ellipsis-vertical"></i></td>
+                <td class="p-4 timetaken-red">23m:20s</td>
+                <td class="options-data" id="option-out"><i class="fas fa-solid fa-ellipsis-vertical"></i>
+                  <div class="dropdownend">
+                    <ul>
+                      <li>Download Report</li>
+                      <li>Download Detailed Score Card</li>
+                    </ul>
+                  </div></td>
               </tr>
 
               <tr class="table-row-1">
-                <td class="p-4">
-                  <label class="checkboxone" for="sbs-checkbox6">
-                    <input id="sbs-checkbox6" class="checkbox__input" type="checkbox">
-                    <div class="checkbox__box">
-                    </div> 
-                </label>
+                <td class="p-4 input-data">
+                 10
                 </td>
                 <td class="p-4">
                 <div class="d-flex">
@@ -445,24 +461,26 @@
                 <td class="p-4 input-data">MCQ And Subjective</td>
                 <td class="p-4">
                 <div class="progress d-flex">
-                    <div class="progress-line" style="width: 90%;">
+                    <div class="progress-line">
                     </div>
-                      <p class="progress-line-value">30%</p>
+                    <p class="progress-line-value">99%</p>
+                    <p class="progress-hover">24/40</p>
                 </div>
                 </td>
-                <td class="p-4 input-data percentile-data">100</td>
+                <td class="p-4 input-data percentile-data">100 <span><img class="percentile-crown" src="assets/images/crown.png" alt=""></span></td>
                 <td><span class="pass-field">Pass</span></td>
-                <td class="p-4 timetaken">23m:20s</td>
-                <td class="options-data"><i class="fas fa-solid fa-ellipsis-vertical"></i></td>
+                <td class="p-4 timetaken-red">23m:20s</td>
+                <td class="options-data" id="option-out"><i class="fas fa-solid fa-ellipsis-vertical"></i>
+                  <div class="dropdownend">
+                    <ul>
+                      <li>Download Report</li>
+                      <li>Download Detailed Score Card</li>
+                    </ul>
+                  </div></td>
               </tr>
-
               <tr class="table-row-1">
-                <td class="p-4">
-                  <label class="checkboxone" for="sbs-checkbox6">
-                    <input id="sbs-checkbox6" class="checkbox__input" type="checkbox">
-                    <div class="checkbox__box">
-                    </div> 
-                </label>
+                <td class="p-4 input-data">
+                 11
                 </td>
                 <td class="p-4">
                 <div class="d-flex">
@@ -476,30 +494,32 @@
                 <td class="p-4 input-data">MCQ And Subjective</td>
                 <td class="p-4">
                 <div class="progress d-flex">
-                    <div class="progress-line" style="width: 90%;">
+                    <div class="progress-line">
                     </div>
-                      <p class="progress-line-value">30%</p>
+                    <p class="progress-line-value">99%</p>
+                    <p class="progress-hover">24/40</p>
                 </div>
                 </td>
-                <td class="p-4 input-data percentile-data">100</td>
+                <td class="p-4 input-data percentile-data">100 <span><img class="percentile-crown" src="assets/images/crown.png" alt=""></span></td>
                 <td><span class="pass-field">Pass</span></td>
-                <td class="p-4 timetaken">23m:20s</td>
-                <td class="options-data"><i class="fas fa-solid fa-ellipsis-vertical"></i></td>
+                <td class="p-4 timetaken-red">23m:20s</td>
+                <td class="options-data" id="option-out"><i class="fas fa-solid fa-ellipsis-vertical"></i>
+                  <div class="dropdownend">
+                    <ul>
+                      <li>Download Report</li>
+                      <li>Download Detailed Score Card</li>
+                    </ul>
+                  </div></td>
               </tr>
-
               <tr class="table-row-1">
-                <td class="p-4">
-                  <label class="checkboxone" for="sbs-checkbox6">
-                    <input id="sbs-checkbox6" class="checkbox__input" type="checkbox">
-                    <div class="checkbox__box">
-                    </div> 
-                </label>
+                <td class="p-4 input-data">
+                 12
                 </td>
                 <td class="p-4">
                 <div class="d-flex">
                     <img class="table-img" src="assets/images/prof-mini.png" alt="">
                     <div class="test-taker-data">
-                        <h6>hello</h6>
+                        <h6>Demo Pesto Tech</h6>
                         <p>pestotech@demo.com</p>
                     </div>
                 </div>
@@ -507,15 +527,56 @@
                 <td class="p-4 input-data">MCQ And Subjective</td>
                 <td class="p-4">
                 <div class="progress d-flex">
-                    <div class="progress-line" style="width: 90%;">
+                    <div class="progress-line">
                     </div>
-                      <p class="progress-line-value">30%</p>
+                    <p class="progress-line-value">99%</p>
+                    <p class="progress-hover">24/40</p>
                 </div>
                 </td>
-                <td class="p-4 input-data percentile-data">100</td>
+                <td class="p-4 input-data percentile-data">100 <span><img class="percentile-crown" src="assets/images/crown.png" alt=""></span></td>
                 <td><span class="pass-field">Pass</span></td>
-                <td class="p-4 timetaken">23m:20s</td>
-                <td class="options-data"><i class="fas fa-solid fa-ellipsis-vertical"></i></td>
+                <td class="p-4 timetaken-red">23m:20s</td>
+                <td class="options-data" id="option-out"><i class="fas fa-solid fa-ellipsis-vertical"></i>
+                  <div class="dropdownend">
+                    <ul>
+                      <li>Download Report</li>
+                      <li>Download Detailed Score Card</li>
+                    </ul>
+                  </div></td>
+              </tr>
+              <tr class="table-row-1">
+                <td class="p-4 input-data">
+                 13
+                </td>
+                <td class="p-4">
+                <div class="d-flex">
+                    <img class="table-img" src="assets/images/prof-mini.png" alt="">
+                    <div class="test-taker-data">
+                        <h6>Demo Pesto Tech</h6>
+                        <p>pestotech@demo.com</p>
+                    </div>
+                </div>
+            </td>
+                <td class="p-4 input-data">MCQ And Subjective</td>
+                <td class="p-4">
+                <div class="progress d-flex">
+                    <div class="progress-line">
+                    </div>
+                    <p class="progress-line-value">99%</p>
+                    <p class="progress-hover">24/40</p>
+                </div>
+                </td>
+                <td class="p-4 input-data percentile-data">100 <span><img class="percentile-crown" src="assets/images/crown.png" alt=""></span></td>
+                <td><span class="pass-field">Pass</span></td>
+                <td class="p-4 timetaken-red">23m:20s</td>
+                <td class="options-data" id="option-out"><i class="fas fa-solid fa-ellipsis-vertical"></i>
+                  <div class="dropdownend">
+                    <ul>
+                      <li>Download Report</li>
+                      <li>Download Detailed Score Card</li>
+                    </ul>
+                  </div>
+                </td>
               </tr>
 
             </tbody>
@@ -574,24 +635,98 @@
         { 
             extend: 'excel',
         }
-        ]
+        ],
+        language: {
+          lengthMenu: "_MENU_ records per page",
+          info:"Showing _START_ to _END_ of _TOTAL_",
+            }
   });
-  $('#ExportReporttoExcel').on('click', function() {
-  $('.buttons-excel').click()
-});
+
 
 
   $('#filterbox').keyup( function() {
     tableNew.search( this.value ).draw();
     } );
 
-    $('result_list_table').DataTable( {
-    buttons: [
-        'excel'
-    ]
-} );
+    
 });
 
+
+</script>
+
+<script>
+ function resultDownload(){
+    
+  var dropdown = document.getElementById("dropdownOptions")
+  dropdown.classList.toggle("dropdownActive")
+
+  document.addEventListener('click', function resultDownload(event) {
+  // 👇️ the element the user clicked
+  const box = document.getElementById('mousecontainer');
+
+  if (!box.contains(event.target)) {
+    dropdown.classList.remove("dropdownActive")
+  }
+});
+ 
+
+  }
+</script>
+
+
+<!-- <script>
+  
+  var sideoptions = document.getElementsByClassName("options-data");
+  for (var i=0;i<sideoptions.length;i++){
+    var button = sideoptions[i];
+    button.addEventListener("click",function(random){
+      var buttonclick = random.target
+      var input = buttonclick.parentElement.children[1]
+      input.classList.toggle("dropdownActive") 
+    },
+    
+    
+    
+    )
+  }
+
+ 
+
+  
+ 
+</script>  -->
+
+<script>
+  var percentile = document.getElementsByClassName("percentile-data")
+  for (var j=0;j<percentile.length;j++){
+    var percentilevalue = percentile[j]
+    var parentPercentile = percentilevalue.children[0]
+    if(parseInt(percentilevalue.textContent)>parseInt(90)){
+      parentPercentile.classList.remove("d-none")
+    }
+    else{
+      parentPercentile.classList.add("d-none")
+    }
+  }
+</script>
+
+<script>
+
+  function profile(){
+
+    profileMenu = document.getElementById("profileDropdown")
+    profileMenu.classList.toggle("dropdownActive")
+
+    document.addEventListener('click', function profile(event) {
+  console.log("clicked")
+  const box4 = document.getElementById('profile-out');
+
+  if (!box4.contains(event.target)) {
+    profileMenu.classList.remove("dropdownActive")
+  }
+});
+
+  }
 
 </script>
     

@@ -5135,6 +5135,18 @@ object-position: bottom;
   position: relative;
 }
 
+.download-btn2{
+  background-color: #20776E;
+  color: white;
+  box-shadow: 0px 3px 6px #5462E247;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  padding-top: 5px;
+  cursor: pointer;
+  position: relative;
+}
+
 .refresh-btn{
   background-color: #20776E;
   color: white;
