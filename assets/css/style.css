@@ -5106,6 +5106,11 @@ object-position: bottom;
   height: 40px;
   width: 40px;
   margin-right: 17px;
+  cursor: pointer;
+}
+
+.refresh-btn:hover{
+  background-color: #165750;
 }
 
 .pagination-new{
@@ -5643,8 +5648,8 @@ border-radius: 5px !important;
   height: 150px;
   background-color: transparent;
   position: absolute;
-  top: 150px;
-  left: 75px;
+  top: 170px;
+  left: 90px;
 }
 
 .arrow-wrapper{
@@ -5713,11 +5718,57 @@ border-radius: 5px !important;
   margin-top: 30px !important;
 }
 
+/* Overall performance */
+
+.lv-0{
+
+}
+
+.lv-10{
+  
+}
+
+.lv-20{
+  
+}
+
+.lv-30{
+  
+}
+
+.lv-40{
+  
+}
+
+.lv-50{
+  
+}
+
+.lv-60{
+  
+}
+
+.lv-70{
+  
+}
+
+.lv-80{
+  
+}
+
+.lv-90{
+  
+}
+
+.lv-100{
+
+}
 
 
 
 
 
+/* end of overall performance */
 
 /* ANIMATIONS
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
