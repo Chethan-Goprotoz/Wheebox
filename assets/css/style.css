@@ -6098,13 +6098,8 @@ border-radius: 5px !important;
   padding-right: 0px;
   }
 
-  .dropdownend{
-    transform: translate(250px,30px);
-    right: 0;
-  }
- 
-  
 
+ 
 }
 
 @media (min-width: 990px) and (max-width: 1170px  ) {
