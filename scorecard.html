@@ -92,7 +92,7 @@
                     <div class="inside-container">
                         <h3>Score Card</h3>
                         <div class="d-flex gap-4 flex-wrap">
-                            <div class="appDetailCard card-width">
+                            <div class="appDetailCard card-width-score">
                                 <h3>Other Details</h3>
                                 <table class="fulltable">
                                     <tr class="table-row">
@@ -117,7 +117,7 @@
                                     </tr>
                                 </table>
                             </div>
-                            <div class="appDetailCard card-width">
+                            <div class="appDetailCard card-width-score">
                                 <h3>Overall Performance</h3>
                                 <!-- <ul class="chart-skills">
                                     <li>
@@ -133,10 +133,15 @@
                                   </ul> -->
                                  <div class="d-flex justify-content-center align-items-end">
                                     <div class="background-scorecard">
-                                        <p>Hello</p>
+                                        <div>
+                                            <p class="space-limiter">data</p>
+                                            <p class="percent1-5">51-70%</p>
+                                            <p class="percent5-7">51-70%</p>
+                                            <p class="percent7-9">70-100%</p>
+                                        </div>
                                         <img src="assets/images/svg/scorecard-lv.png" alt="">
                                         <div class="arrow-container">
-                                            <div class="arrow-wrapper speed-0">
+                                            <div class="arrow-wrapper lv-100">
                                                 <div class="arrow">
                                                     <img src="assets/images/svg/pointerLine.svg" alt="">
                                                 </div>
@@ -145,7 +150,7 @@
                                      </div>
                                  </div>
                             </div>
-                            <div class="appDetailCard card-width">
+                            <div class="appDetailCard card-width-score">
                                 <h3>Section Wise Graph</h3>
                                 <div class="performance-footer d-lg-block d-none">
                                     <div class="d-flex flex-wrap gap-2 justify-content-between">
@@ -163,7 +168,11 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div> <canvas id="wisegraph"></canvas> </div>
+                                <div class="graph-container"> 
+                                <div class="chartResponsive-benchmark2">
+                                    <canvas id="wisegraph"></canvas>
+                                </div>    
+                                </div>
                             </div>
                         </div>
                         <div>
@@ -177,7 +186,7 @@
                                             <td class="p-4">Attempted</td>
                                             <td class="p-4">Correct Answers</td>
                                             <td class="p-4">Incorrect Answers</td>
-                                            <td class="p-4">Percentage</td>
+                                            <td class="p-4 percentage-section">Percentage</td>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -190,7 +199,11 @@
                                             <td class="p-4 input-data">0</td>
                                             <td class="p-4">
                                                 <div class="progress d-flex">
-                                                    <div class="progress-line" style="width: 30%;"> </div>
+                                                    <div class="progress-line" style="width: 90%;">
+                                                    </div>
+                                                    <p class="progress-line-value">99%</p>
+                                                    <p class="progress-hover">24/40</p>
+                                                    
                                                 </div>
                                             </td>
                                         </tr>
@@ -203,7 +216,11 @@
                                             <td class="p-4 input-data">0</td>
                                             <td class="p-4">
                                                 <div class="progress d-flex">
-                                                    <div class="progress-line" style="width: 30%;"> </div>
+                                                    <div class="progress-line" style="width: 90%;">
+                                                    </div>
+                                                    <p class="progress-line-value">99%</p>
+                                                    <p class="progress-hover">24/40</p>
+                                                    
                                                 </div>
                                             </td>
                                         </tr>
@@ -216,7 +233,11 @@
                                             <td class="p-4 input-data">0</td>
                                             <td class="p-4">
                                                 <div class="progress d-flex">
-                                                    <div class="progress-line" style="width: 30%;"> </div>
+                                                    <div class="progress-line" style="width: 90%;">
+                                                    </div>
+                                                    <p class="progress-line-value">99%</p>
+                                                    <p class="progress-hover">24/40</p>
+                                                    
                                                 </div>
                                             </td>
                                         </tr>
@@ -229,7 +250,11 @@
                                             <td class="p-4 input-data">0</td>
                                             <td class="p-4">
                                                 <div class="progress d-flex">
-                                                    <div class="progress-line" style="width: 30%;"> </div>
+                                                    <div class="progress-line" style="width: 90%;">
+                                                    </div>
+                                                    <p class="progress-line-value">99%</p>
+                                                    <p class="progress-hover">24/40</p>
+                                                    
                                                 </div>
                                             </td>
                                         </tr>
@@ -242,7 +267,11 @@
                                             <td class="p-4 input-data">0</td>
                                             <td class="p-4">
                                                 <div class="progress d-flex">
-                                                    <div class="progress-line" style="width: 30%;"> </div>
+                                                    <div class="progress-line" style="width: 90%;">
+                                                    </div>
+                                                    <p class="progress-line-value">99%</p>
+                                                    <p class="progress-hover">24/40</p>
+                                                    
                                                 </div>
                                             </td>
                                         </tr>
@@ -264,6 +293,7 @@
     <script src="assets/js/chart.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
     <script>
         var wisegraph = document.getElementById('wisegraph').getContext('2d');
         
@@ -367,6 +397,10 @@
         },
         });
     </script>
+
+
+
+    
 </body>
 
 </html>

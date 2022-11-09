@@ -4261,6 +4261,10 @@ textarea {
   width: 32%;
 }
 
+.card-width-score{
+  width: 32%;
+}
+
 .acc-image{
   width: 165px;
   height: 165px;
@@ -4788,6 +4792,10 @@ textarea {
 .chartResponsive-benchmark{
   height: 300px;
 }
+
+.chartResponsive-benchmark2{
+  height: 250px;
+}
 .table-header{
   background-color: #DAEDEB;
   box-shadow: 0px 1px 5px #C5C5C5;
@@ -5110,7 +5118,7 @@ object-position: bottom;
 }
 
 .refresh-btn:hover{
-  background-color: #165750;
+  background-color: #20776E;
 }
 
 .pagination-new{
@@ -5144,6 +5152,8 @@ object-position: bottom;
 .graph-container{
   overflow-x: auto;
 }
+
+
 
 .RiskWarning{
   background-color: #FFC3C3;
@@ -5721,47 +5731,88 @@ border-radius: 5px !important;
 /* Overall performance */
 
 .lv-0{
-
+  transform: rotate(-95deg);
+  top: 130px;
+  right: 70px;
 }
 
 .lv-10{
-  
+  transform: rotate(-85deg);
+  top: 115px;
+  right: 75px;
 }
 
 .lv-20{
-  
+  transform: rotate(-75deg);
+  top: 98px;
+  right: 78px;
 }
 
 .lv-30{
-  
+  transform: rotate(-65deg);
+  top: 82px;
+  right: 78px;
 }
 
 .lv-40{
-  
+  transform: rotate(-55deg);
+  top: 66px;
+  right: 74px;
 }
 
 .lv-50{
-  
+  transform: rotate(-30deg);
+  top: 30px;
+  right: 52px;
 }
 
 .lv-60{
-  
+  transform: rotate(0deg);
+  top: 3px;
+  right: 11px;
 }
 
 .lv-70{
-  
+  transform: rotate(20deg);
+  top: 0px;
+  right: -25px;
 }
 
 .lv-80{
-  
+  transform: rotate(50deg);
+  top: 14px;
+  right: -73px;
 }
 
 .lv-90{
-  
+  transform: rotate(70deg);
+  top: 36px;
+  right: -97px;
 }
 
 .lv-100{
+  transform: rotate(90deg);
+  top: 65px;
+  right: -114px;
+}
 
+.percent1-5{
+  position: absolute;
+  transform: translate(-10px,90px);
+}
+
+.percent5-7{
+  position: absolute;
+  transform: translate(120px,30px);
+}
+
+.percent7-9{
+  position: absolute;
+  transform: translate(260px,90px);
+}
+
+.space-limiter{
+  visibility: hidden;
 }
 
 
@@ -6031,4 +6082,11 @@ border-radius: 5px !important;
 }
 
 }
+
+@media(max-width: 1300px) {
+
+  .card-width-score{
+    width: 100%;
+  }
+  }
 
