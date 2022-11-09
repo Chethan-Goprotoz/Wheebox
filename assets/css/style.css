@@ -5950,6 +5950,7 @@ border-radius: 5px !important;
   }
 
  
+ 
   
 
   
@@ -6095,6 +6096,11 @@ border-radius: 5px !important;
   .table-main-section{
     padding-left: 0px;
   padding-right: 0px;
+  }
+
+  .dropdownend{
+    transform: translate(250px,30px);
+    right: 0;
   }
  
   
