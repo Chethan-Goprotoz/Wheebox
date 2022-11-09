@@ -5928,7 +5928,7 @@ border-radius: 5px !important;
   }
 
   .dropdownend{
-    transform: translate(720px,30px);
+    transform: translate(690px,20px);
     right: 0;
   }
 
@@ -6081,10 +6081,10 @@ border-radius: 5px !important;
     margin-left: 0;
   }
 
-  .dropdownend{
+  /* .dropdownend{
     transform: translate(250px,30px);
     right: 0;
-  }
+  } */
 
   .searchContainer{
     margin-top: 20px;
