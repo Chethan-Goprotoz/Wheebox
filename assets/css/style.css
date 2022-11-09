@@ -4187,6 +4187,7 @@ textarea {
   min-height: 100%;
   background-size: cover;
   padding: 2rem;
+  
 }
 
 .profile-info h5{
@@ -5669,7 +5670,10 @@ border-radius: 5px !important;
  block-size: 100%;
 }
 
-
+.mobile-stopper{
+  overflow-y: none !important;
+  overflow: -moz-scrollbars-none !important;
+}
 
 
 
@@ -5894,10 +5898,7 @@ border-radius: 5px !important;
     
   }
 
-  .mobile-stopper{
-    overflow-y: none !important;
-    overflow: -moz-scrollbars-none !important;
-  }
+ 
 
   .dropdownOptions{
     transform: translate(90px,40px);

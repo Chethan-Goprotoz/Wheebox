@@ -14,12 +14,13 @@ window.onload = function() {
 function sidemenu() {
   var sidebar = document.getElementById("sidebar-menu")
   var icon = document.getElementById("menu-icon")
-  bodySelector.append.classList.add("fullselector")
+  var selector = document.getElementById("fullselector")
+  selector.classList.toggle("mobile-menu-stopper")
   sidebar.classList.toggle("sidebar-active")
   icon.classList.toggle("icon-rotate")
   icon.classList.toggle("fa-bars")
   icon.classList.toggle("fa-xmark")
-  var bodySelector = document.getElementById("fullselector")
+  
 }
 // end of sidebar
 // Start of Phase 2 Charts data
