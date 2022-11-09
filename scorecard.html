@@ -24,9 +24,9 @@
             <div class="main_div">
                 <div class="row">
                     <div class="main_header mb-1">
-                        <div class="d-flex justify-content-between" style="width:34.5%;">
+                        <div class="d-flex justify-content-between navpart1">
                             <div class="logo new-logopart"> <img src="assets/images/logo_logo.png" alt="mini-logo"> </div>
-                            <div class="d-flex align-items-center d-none d-lg-flex justify-content-around btr-link navbar-place"> <img src="assets/images/back-arrow.svg" alt=""> <a class="anchor-dec" href="#">
+                            <div class="d-flex align-items-center d-none d-md-flex justify-content-around btr-link navbar-place"> <img src="assets/images/back-arrow.svg" alt=""> <a class="anchor-dec" href="#">
                                     <h5 class="btr-line">Back To Result List</h5>
                                 </a> </div>
                         </div>
@@ -38,25 +38,33 @@
                                         <div class="home-search"> <img class="nav-arrows-1" src="assets/images/home-hover.svg" alt=""> </div>
                                     </a> </div>
                             </div>
-                            <div class="grid-new">
-                                <div class="grid1-new">
-                                    <div class="profile rounded-circle"> <img src="assets/images/prof-mini.png" alt="profile"> </div>
+                            <div class="grid-new" id="profile-out">
+                                <div class="grid1-new" onclick="profile()">
+                                  <div class="profile rounded-circle">
+                                    <img src="assets/images/prof-mini.png" alt="profile">
+                                  </div>
                                 </div>
-                                <div class="grid2-new d-none d-md-block">
-                                    <h6>Jane Doe</h6>
-                                    <p>jane_doe@wheebox.com</p>
+                                <div class="grid2-new d-none d-md-block" onclick="profile()">
+                                  <h6>Jane Doe</h6>
+                                  <p>jane_doe@wheebox.com</p>
                                 </div>
-                            </div>
+                                <div class="profileDropdown" id="profileDropdown">
+                                  <ul>
+                                    <li>Admin Profile</li>
+                                  <li>Change Password</li>
+                                  <li>Help Center</li>
+                                  <li>Log Out</li>
+                                  </ul>
+                                </div>
+                              </div>
                         </div>
                     </div>
                 </div> <!-- row closed -->
             </div>
             <div>
-                <div>
-                    <div class="d-flex justify-content-lg-end justify-content-between">
-                        <div> <i onclick="sidemenu()" id="menu-icon" class="fas fa-solid icon-w fa-bars d-block d-lg-none"></i> </div>
-                        <div> <a class="anchor-dec" href="#"> <img class="nav-arrows-2" src="/assets/images/left-arow.svg" alt=""> </a> <a href="#"> <img class="nav-arrows-2" src="assets/images/right-arrow.svg" alt=""> </a> </div>
-                    </div>
+                <div class="d-flex justify-content-lg-end justify-content-between">
+                    <div> <i onclick="sidemenu()" id="menu-icon" class="fas fa-solid icon-w fa-bars d-block d-lg-none"></i> </div>
+                    <div class="navigationBtns"> <a class="anchor-dec previous-arrow" href="#"> <img class="nav-arrows-2" src="/assets/images/left-arow.svg" alt=""> </a> <a class="anchor-dec next-arrow" href="#"> <img class="nav-arrows-2" src="/assets/images/right-arrow.svg" alt=""> </a> </div>
                 </div>
             </div>
             <div class="sidebar">
@@ -67,27 +75,23 @@
                                 <h5>Jane Doe</h5>
                                 <p>jane_do0e@wheelbox.com</p>
                             </div>
-                        </div>
-                        <div>
-                            <div class="d-flex sideMenu  mt-5"> <img src="assets/images/AppDetailsIcon.svg" alt="">
+                        </div> <a href="#">
+                            <div class="d-flex sideMenu mt-5"> <img src="assets/images/AppDetailsIcon.svg" alt="">
                                 <p>Applicant Details</p>
                             </div>
-                        </div>
-                        <div>
-                            <div class="d-flex active-one sideMenu"> <img src="assets/images/ScoreCardIcon.svg" alt="">
+                        </a> <a href="#">
+                            <div class="d-flex sideMenu"> <img src="assets/images/ScoreCardIcon.svg" alt="">
                                 <p>Score Card</p>
                             </div>
-                        </div>
-                        <div>
-                            <div class="d-flex sideMenu"> <img src="assets/images/BenchmarkIcon.svg" alt="">
+                        </a> <a href="#">
+                            <div class="d-flex sideMenu active-one"> <img src="assets/images/BenchmarkIcon.svg" alt="">
                                 <p>Benchmark</p>
                             </div>
-                        </div>
-                        <div>
+                        </a> <a href="#">
                             <div class="d-flex sideMenu"> <img src="assets/images/OnlineReportIcon.svg" alt="">
                                 <p>Online Report</p>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="inside-container">
                         <h3>Score Card</h3>
@@ -176,7 +180,7 @@
                             </div>
                         </div>
                         <div>
-                            <div class="table-main-section">
+                            <div class="table-main-section2">
                                 <table class="table main-table">
                                     <thead>
                                         <tr class="table-row-1 table-header ">
@@ -285,6 +289,7 @@
         </div> <!-- container closed -->
     </section>
     <!--selection section end -->
+   
     <script src="https://kit.fontawesome.com/5817738a37.js" crossorigin="anonymous"></script>
     <script src="assets/js/jquery-2.2.0.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
@@ -293,6 +298,25 @@
     <script src="assets/js/chart.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script>
+        function profile(){
+    
+    profileMenu = document.getElementById("profileDropdown")
+    profileMenu.classList.toggle("dropdownActive")
+    
+    document.addEventListener('click', function profile(event) {
+    console.log("clicked")
+    const box4 = document.getElementById('profile-out');
+    
+    if (!box4.contains(event.target)) {
+    profileMenu.classList.remove("dropdownActive")
+    }
+    });
+    
+    }
+    </script>
+   
 
     <script>
         var wisegraph = document.getElementById('wisegraph').getContext('2d');
@@ -397,6 +421,13 @@
         },
         });
     </script>
+
+
+
+
+<script>
+    
+</script>
 
 
 
