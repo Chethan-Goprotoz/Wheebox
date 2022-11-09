@@ -5932,6 +5932,8 @@ border-radius: 5px !important;
     right: 0;
   }
 
+
+
   .percent1-5{
     position: absolute;
     transform: translate(10px,75px);
@@ -6088,6 +6090,11 @@ border-radius: 5px !important;
 
   .searchContainer{
     margin-top: 20px;
+  }
+
+  .table-main-section{
+    padding-left: 0px;
+  padding-right: 0px;
   }
  
   
