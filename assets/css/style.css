@@ -5011,6 +5011,7 @@ textarea {
 
 .options-data{
   text-align: center;
+  transition: 0.5s ease;
 }
 
 
@@ -5637,6 +5638,7 @@ border-radius: 5px !important;
   color: black;
   display: none;
   transform: translate(-70px,40px);
+  transition: 0.5s ease;
 }
 
 .dropdownend{
@@ -5663,6 +5665,7 @@ border-radius: 5px !important;
   border-bottom: 1px solid #ededed;
   padding-top: 15px;
   padding-bottom: 16px;
+  cursor: pointer;
 
 }
 
@@ -5672,6 +5675,7 @@ border-radius: 5px !important;
   border-bottom: 1px solid #ededed;
   padding-top: 15px;
   padding-bottom: 16px;
+  cursor: pointer;
 }
 
 .options-data:hover  .dropdownend {
@@ -5704,7 +5708,7 @@ border-radius: 5px !important;
   border-bottom: 1px solid #ededed;
   padding-top: 15px;
   padding-bottom: 16px;
-
+  cursor: pointer;
 }
 
 .background-scorecard{
@@ -6157,12 +6161,16 @@ border-radius: 5px !important;
   } */
 
   .searchContainer{
-    margin-top: 20px;
+    margin-top: 16px;
   }
 
   .table-main-section{
     padding-left: 0px;
   padding-right: 0px;
+  }
+
+  .compare-section{
+    margin-top: 16px;
   }
 
 
