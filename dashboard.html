@@ -1,0 +1,136 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>View Benchmark</title> <!-- font awesome css -->
+    <link rel="stylesheet" href="assets/font-awesome/all.min.css" />
+    <link rel="stylesheet" href="assets/font-awesome/fontawesome.css" /> <!-- bootstrap css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" rel="stylesheet" /> <!-- loader css -->
+    <link rel="stylesheet" href="assets/css/loader.css"> <!-- style css -->
+    <link rel="stylesheet" href="assets/sass/app.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- loader start-->
+    <div class="loader-container">
+        <div class="loader"></div>
+    </div> <!-- loader end-->
+    <!--selection section start -->
+    <div class="selection-new " id="fullselector">
+        <div class="container-fluid">
+            <div class="main_div">
+                <div class="row">
+                    <div class="main_header mb-1">
+                        <div class="d-flex justify-content-between navpart1">
+                            <div class="logo new-logopart"> <img src="assets/images/logo_logo.png" alt="mini-logo"> </div>
+                            <div class="d-flex align-items-center d-none d-md-flex justify-content-around btr-link navbar-place"> <img src="assets/images/back-arrow.svg" alt=""> <a class="anchor-dec" href="#">
+                                    <h5 class="btr-line">Back To Result List</h5>
+                                </a> </div>
+                        </div>
+                        <div></div>
+                        <div class="d-flex align-items-center gap-5">
+                            <div class="d-flex gap-4">
+                                <div class="home-search"> <img class="nav-arrows" src="assets/images/search-hover.svg" alt=""> </div>
+                                <div> <a href="#">
+                                        <div class="home-search"> <img class="nav-arrows-1" src="assets/images/home-hover.svg" alt=""> </div>
+                                    </a> </div>
+                            </div>
+                            <div class="grid-new" id="profile-out">
+                                <div class="grid1-new" onclick="profile()">
+                                  <div class="profile rounded-circle">
+                                    <img src="assets/images/prof-mini.png" alt="profile">
+                                  </div>
+                                </div>
+                                <div class="grid2-new d-none d-md-block" onclick="profile()">
+                                  <h6>Jane Doe</h6>
+                                  <p>jane_doe@wheebox.com</p>
+                                </div>
+                                <div class="profileDropdown" id="profileDropdown">
+                                  <ul>
+                                    <li>Admin Profile</li>
+                                  <li>Change Password</li>
+                                  <li>Help Center</li>
+                                  <li>Log Out</li>
+                                  </ul>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                </div> <!-- row closed -->
+            </div>
+            <div>
+                <div class="d-flex justify-content-lg-end justify-content-between">
+                    <div> <i onclick="sidemenu()" id="menu-icon" class="fas fa-solid icon-w fa-bars d-block d-lg-none"></i> </div>
+                    <div class="navigationBtns"> <a class="anchor-dec previous-arrow" href="#"> <img class="nav-arrows-2" src="/assets/images/left-arow.svg" alt=""> </a> <a class="anchor-dec next-arrow" href="#"> <img class="nav-arrows-2" src="/assets/images/right-arrow.svg" alt=""> </a> </div>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar">
+            <div class="d-flex">
+                <div class="side1" id="sidebar-menu">
+                    <div class="d-flex profile-details"> <img src="assets/images/capphoto.png" alt="">
+                        <div class="profile-info">
+                            <h5>Jane Doe</h5>
+                            <p>jane_do0e@wheelbox.com</p>
+                        </div>
+                    </div> <a href="#">
+                        <div class="d-flex sideMenu mt-5"> <img src="assets/images/AppDetailsIcon.svg" alt="">
+                            <p>Applicant Details</p>
+                        </div>
+                    </a> <a href="#">
+                        <div class="d-flex sideMenu"> <img src="assets/images/ScoreCardIcon.svg" alt="">
+                            <p>Score Card</p>
+                        </div>
+                    </a> <a href="#">
+                        <div class="d-flex sideMenu active-one"> <img src="assets/images/BenchmarkIcon.svg" alt="">
+                            <p>Benchmark</p>
+                        </div>
+                    </a> <a href="#">
+                        <div class="d-flex sideMenu"> <img src="assets/images/OnlineReportIcon.svg" alt="">
+                            <p>Online Report</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="inside-container">
+                    <h3>Benchmark</h3>
+                   <div></div>
+                </div>
+            </div>
+            
+        </div>
+    </div> <!-- main-div closed -->
+    </div> <!-- container closed -->
+    </section>
+    <!--selection section end -->
+    <script src="https://kit.fontawesome.com/5817738a37.js" crossorigin="anonymous"></script>
+    <script src="assets/js/jquery-2.2.0.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/loader.js"></script>
+    <script src="assets/js/chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="assets/js/phase2.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+      function profile(){
+
+profileMenu = document.getElementById("profileDropdown")
+profileMenu.classList.toggle("dropdownActive")
+
+document.addEventListener('click', function profile(event) {
+console.log("clicked")
+const box4 = document.getElementById('profile-out');
+
+if (!box4.contains(event.target)) {
+profileMenu.classList.remove("dropdownActive")
+}
+});
+
+}
+</script>
+</body>
+
+</html>
