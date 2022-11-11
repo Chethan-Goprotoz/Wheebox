@@ -4240,6 +4240,12 @@ textarea {
    
 }
 
+.inside-container2{
+  min-height: 100%;
+  margin-top: 30px;
+  width: 100%;
+}
+
 
 
 .inside-container h3{
@@ -4250,7 +4256,7 @@ textarea {
   font-family: pop-semibold;
 }
 
-.appDetailCard{
+.dashboardCard{
   background: #FFFFFF 0% 0% no-repeat padding-box;
   box-shadow: 0px 0px 7px #B8B8B854;
   border-radius: 10px;
@@ -4954,6 +4960,10 @@ textarea {
   
 }
 
+.percentage-section2{
+  max-width: 50px;
+}
+
 .percentile-section{
   /* text-align: center; */
 }
@@ -5238,6 +5248,17 @@ object-position: bottom;
   transform: translate(50px,50px);
 }
 
+.warning-sign2 img{
+  width: 24px;
+}
+
+.TestriskCandidate h2{
+  color: #20776E;
+  font-size: 96px;
+  font-weight: 600;
+}
+
+
 .warning-sign img{
   width: 20px;
   
@@ -5271,6 +5292,8 @@ object-position: bottom;
 	width: 200px;
 	height: 200px;
 }
+
+
 .progressBar .track, .progressBar .fill{
 	fill: rgba(0, 0, 0, 0);
 	stroke-width: 3;
@@ -5305,6 +5328,50 @@ object-position: bottom;
 .progressBar .text {
 	font-size: 12px;
 }
+
+
+.progressBar2{
+	width: 80px;
+	height: 80px;
+}
+
+
+.progressBar2 .track, .progressBar2 .fill{
+	fill: rgba(0, 0, 0, 0);
+	stroke-width: 3;
+	transform: rotate(90deg)translate(0px, -80px);
+}
+.progressBar2 .track{
+	stroke: #EDF0F4;
+}
+.progressBar2 .fill {
+	stroke: rgb(255, 255, 255);
+	stroke-dasharray: 219.99078369140625;
+	stroke-dashoffset: -219.99078369140625;
+	transition: stroke-dashoffset 1s;
+}
+.progressBar2.purple .fill {
+	stroke: #826AF9
+}
+.progressBar2.green .fill {
+	stroke: #2CD9C5;
+}
+
+.progressBar2.gradient .fill {
+	stroke: #2CD9C5;
+}
+.progressBar2 .value, .progressBar2 .text {
+	font-family: 'Open Sans';
+	fill: #2C3652;
+	text-anchor: middle;
+  font-size: 10px;
+
+}
+.progressBar2 .text {
+	font-size: 12px;
+}
+
+
 .noselect {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -5890,59 +5957,84 @@ border-radius: 5px !important;
   display: none;
 }
 
-
-
-
-/* end of overall performance */
-
-/* ANIMATIONS
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-@keyframes rotate-one {
-  100% {
-    transform: rotate(50.6deg);
-    /**
-     * 12% => 21.6deg
-     */
-  }
+.card-img img{
+  width: 32px;
+  height: 32px;
 }
 
-@keyframes rotate-two {
-  0% {
-    transform: rotate(50.6deg);
-  }
-  100% {
-    transform: rotate(130.2deg);
-    /**
-     * 32% => 57.6deg 
-     * 57.6 + 21.6 => 79.2deg
-     */
-  }
+.dashboardCard{
+  width: 100%;
+  background-color: white;
 }
 
-@keyframes rotate-three {
-  0% {
-    transform: rotate(140.4deg);
-  }
-  100% {
-    transform: rotate(180deg);
-    /**
-     * 34% => 61.2deg 
-     * 61.2 + 79.2 => 140.4deg
-     */
-  }
+.dashboardCard-img img{
+  width: 32px;
 }
 
 
 
-@keyframes fade-in {
-  0%,
-  90% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+.dashboard-content p{
+  color: #2C3652;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.dashboard-content h3{
+  color: #2C3652;
+  font-size: 51px;
+  font-weight: bold;
+  margin-top: 16px;
+}
+
+.dashboardCard-img{
+  border-radius: 16px;
+  width: 60px;
+  height: 60px;
+  background-color: #F7F7F7;
+}
+
+.border-1{
+  border: 1px solid #20776E;
+}
+
+.border-2{
+  border: 1px solid #F5C525;
+}
+
+.border-3{
+  border: 1px solid #FF9062;
+}
+
+.border-4{
+  border: 1px solid #3ACBE8;
+}
+
+.testcard{
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border: 1px solid #20776E4A;
+  box-shadow: 0px 10px 16px #E4E4E4;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+
+.testsection2{
+  margin-top: 66px;
+}
+
+.testGraph{
+  width: 100%;
+}
+
+.testGraphShrink{
+  width: 60%;
+}
+
+.appDetailCard{
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 0px 7px #B8B8B854;
+  border-radius: 10px;
+  padding: 20px;
 }
 
 

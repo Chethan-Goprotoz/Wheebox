@@ -1,108 +1,288 @@
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>View Benchmark</title> <!-- font awesome css -->
+    <title>Dashboard</title>
+    <!-- font awesome css -->
     <link rel="stylesheet" href="assets/font-awesome/all.min.css" />
-    <link rel="stylesheet" href="assets/font-awesome/fontawesome.css" /> <!-- bootstrap css -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" rel="stylesheet" /> <!-- loader css -->
-    <link rel="stylesheet" href="assets/css/loader.css"> <!-- style css -->
+    <link rel="stylesheet" href="assets/font-awesome/fontawesome.css" />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- loader css -->
+    <link rel="stylesheet" href="assets/css/loader.css">
+    <!-- style css -->
     <link rel="stylesheet" href="assets/sass/app.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/style.css" rel="stylesheet">
-</head>
-
-<body>
+  </head>
+  <body>
     <!-- loader start-->
     <div class="loader-container">
-        <div class="loader"></div>
-    </div> <!-- loader end-->
+      <div class="loader"></div>
+    </div>
+    <!-- loader end-->
     <!--selection section start -->
     <div class="selection-new " id="fullselector">
-        <div class="container-fluid">
-            <div class="main_div">
-                <div class="row">
-                    <div class="main_header mb-1">
-                        <div class="d-flex justify-content-between navpart1">
-                            <div class="logo new-logopart"> <img src="assets/images/logo_logo.png" alt="mini-logo"> </div>
-                            <div class="d-flex align-items-center d-none d-md-flex justify-content-around btr-link navbar-place"> <img src="assets/images/back-arrow.svg" alt=""> <a class="anchor-dec" href="#">
-                                    <h5 class="btr-line">Back To Result List</h5>
-                                </a> </div>
-                        </div>
-                        <div></div>
-                        <div class="d-flex align-items-center gap-5">
-                            <div class="d-flex gap-4">
-                                <div class="home-search"> <img class="nav-arrows" src="assets/images/search-hover.svg" alt=""> </div>
-                                <div> <a href="#">
-                                        <div class="home-search"> <img class="nav-arrows-1" src="assets/images/home-hover.svg" alt=""> </div>
-                                    </a> </div>
-                            </div>
-                            <div class="grid-new" id="profile-out">
-                                <div class="grid1-new" onclick="profile()">
-                                  <div class="profile rounded-circle">
-                                    <img src="assets/images/prof-mini.png" alt="profile">
-                                  </div>
-                                </div>
-                                <div class="grid2-new d-none d-md-block" onclick="profile()">
-                                  <h6>Jane Doe</h6>
-                                  <p>jane_doe@wheebox.com</p>
-                                </div>
-                                <div class="profileDropdown" id="profileDropdown">
-                                  <ul>
-                                    <li>Admin Profile</li>
-                                  <li>Change Password</li>
-                                  <li>Help Center</li>
-                                  <li>Log Out</li>
-                                  </ul>
-                                </div>
-                              </div>
-                        </div>
-                    </div>
-                </div> <!-- row closed -->
-            </div>
-            <div>
-                <div class="d-flex justify-content-lg-end justify-content-between">
-                    <div> <i onclick="sidemenu()" id="menu-icon" class="fas fa-solid icon-w fa-bars d-block d-lg-none"></i> </div>
-                    <div class="navigationBtns"> <a class="anchor-dec previous-arrow" href="#"> <img class="nav-arrows-2" src="/assets/images/left-arow.svg" alt=""> </a> <a class="anchor-dec next-arrow" href="#"> <img class="nav-arrows-2" src="/assets/images/right-arrow.svg" alt=""> </a> </div>
+      <div class="container-fluid">
+        <div class="main_div">
+          <div class="row">
+            <div class="main_header mb-1">
+              <div class="d-flex justify-content-between navpart1">
+                <div class="logo new-logopart">
+                  <img src="assets/images/logo_logo.png" alt="mini-logo">
                 </div>
-            </div>
-        </div>
-        <div class="sidebar">
-            <div class="d-flex">
-                <div class="side1" id="sidebar-menu">
-                    <div class="d-flex profile-details"> <img src="assets/images/capphoto.png" alt="">
-                        <div class="profile-info">
-                            <h5>Jane Doe</h5>
-                            <p>jane_do0e@wheelbox.com</p>
-                        </div>
-                    </div> <a href="#">
-                        <div class="d-flex sideMenu mt-5"> <img src="assets/images/AppDetailsIcon.svg" alt="">
-                            <p>Applicant Details</p>
-                        </div>
-                    </a> <a href="#">
-                        <div class="d-flex sideMenu"> <img src="assets/images/ScoreCardIcon.svg" alt="">
-                            <p>Score Card</p>
-                        </div>
-                    </a> <a href="#">
-                        <div class="d-flex sideMenu active-one"> <img src="assets/images/BenchmarkIcon.svg" alt="">
-                            <p>Benchmark</p>
-                        </div>
-                    </a> <a href="#">
-                        <div class="d-flex sideMenu"> <img src="assets/images/OnlineReportIcon.svg" alt="">
-                            <p>Online Report</p>
-                        </div>
+                <div class="d-flex align-items-center d-none d-md-flex justify-content-around btr-link navbar-place">
+                  <img src="assets/images/back-arrow.svg" alt="">
+                  <a class="anchor-dec" href="#">
+                    <h5 class="btr-line">Back To Result List</h5>
+                  </a>
+                </div>
+              </div>
+              <div></div>
+              <div class="d-flex align-items-center gap-5">
+                <div class="d-flex gap-4">
+                  <div class="home-search">
+                    <img class="nav-arrows" src="assets/images/search-hover.svg" alt="">
+                  </div>
+                  <div>
+                    <a href="#">
+                      <div class="home-search">
+                        <img class="nav-arrows-1" src="assets/images/home-hover.svg" alt="">
+                      </div>
                     </a>
+                  </div>
                 </div>
-                <div class="inside-container">
-                    <h3>Benchmark</h3>
-                   <div></div>
+                <div class="grid-new" id="profile-out">
+                  <div class="grid1-new" onclick="profile()">
+                    <div class="profile rounded-circle">
+                      <img src="assets/images/prof-mini.png" alt="profile">
+                    </div>
+                  </div>
+                  <div class="grid2-new d-none d-md-block" onclick="profile()">
+                    <h6>Jane Doe</h6>
+                    <p>jane_doe@wheebox.com</p>
+                  </div>
+                  <div class="profileDropdown" id="profileDropdown">
+                    <ul>
+                      <li>Admin Profile</li>
+                      <li>Change Password</li>
+                      <li>Help Center</li>
+                      <li>Log Out</li>
+                    </ul>
+                  </div>
                 </div>
+              </div>
             </div>
-            
+          </div>
+          <!-- row closed -->
         </div>
-    </div> <!-- main-div closed -->
-    </div> <!-- container closed -->
+      </div>
+      <div class="sidebar">
+        <div class="d-flex">
+          <div class="side1" id="sidebar-menu">
+            <div class="d-flex"></div>
+            <a href="#">
+              <div class="d-flex sideMenu mt-5">
+                <img src="assets/images/svg/RpassDashboard-icon.svg" alt="">
+                <p>Dashboard</p>
+              </div>
+            </a>
+            <a href="#">
+              <div class="d-flex sideMenu">
+                <img src="assets/images/svg/manage-auto-icon.svg" alt="">
+                <p>Manage Auto-Procto...</p>
+              </div>
+            </a>
+            <a href="#">
+              <div class="d-flex sideMenu">
+                <img src="assets/images/svg/advanceAnalytics.svg" alt="">
+                <p>Advance Analytics</p>
+              </div>
+            </a>
+            <a href="#">
+              <div class="d-flex sideMenu">
+                <img class="pb-2" src="assets/images/svg/futurecampus.svg" alt="">
+                <p>Future Campus Analy...</p>
+              </div>
+            </a>
+            <a href="#">
+              <div class="d-flex sideMenu">
+                <img src="assets/images/svg/rpassDashboard.svg" alt="">
+                <p>RPaaS Dashboard</p>
+              </div>
+            </a>
+            <a href="#">
+              <div class="d-flex sideMenu">
+                <img src="assets/images/svg/proctoringScore.svg" alt="">
+                <p>Proctoring Report</p>
+              </div>
+            </a>
+          </div>
+          <div class="inside-container2">
+            <h3>Dashboard</h3>
+            <div class="row">
+              <div class="col-3">
+                <div class="d-flex justify-content-between testcard">
+                  <div class="dashboard-content">
+                    <p>Total Test <br /> Takers </p>
+                    <h3>12414</h3>
+                  </div>
+                  <div class="dashboardCard-img border-1 d-flex justify-content-center align-items-center">
+                    <img src="./assets/images/QR_group.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="d-flex justify-content-between testcard">
+                  <div class="dashboard-content">
+                    <p>Total Test <br /> Takers </p>
+                    <h3>0</h3>
+                  </div>
+                  <div class="dashboardCard-img border-2 d-flex justify-content-center align-items-center">
+                    <img src="./assets/images/QR_group.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="d-flex justify-content-between testcard">
+                  <div class="dashboard-content">
+                    <p>Total Test <br /> Takers </p>
+                    <h3>52</h3>
+                  </div>
+                  <div class="dashboardCard-img border-3 d-flex justify-content-center align-items-center">
+                    <img src="./assets/images/QR_group.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="d-flex justify-content-between testcard">
+                  <div class="dashboard-content">
+                    <p>Total Test <br /> Takers </p>
+                    <h3>1574</h3>
+                  </div>
+                  <div class="dashboardCard-img border-4 d-flex justify-content-center align-items-center">
+                    <img src="./assets/images/QR_group.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="testsection2">
+              <div class="d-flex gap-4">
+                <div class="testcard testGraph">
+                  <div class="graph-container">
+                    <div class="chartResponsive-benchmark">
+                      <canvas id="testgraph1"></canvas>
+                    </div>
+                    <!-- data in phase2.js -->
+                  </div>
+                </div>
+                <div class="testcard testGraph">
+                  <div class="d-flex justify-content-center align-items-end">
+                    <div class="background-scorecard">
+                      <div>
+                        <p class="space-limiter">data</p>
+                        <p class="percent1-5">0-50%</p>
+                        <p class="percent5-7">51-70%</p>
+                        <p class="percent7-9">70-100%</p>
+                      </div>
+                      <img src="assets/images/svg/scorecard-lv.png" alt="">
+                      <div class="arrow-container">
+                        <div class="arrow-wrapper lv-100">
+                          <div class="arrow">
+                            <img src="assets/images/svg/pointerLine.svg" alt="">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="testsection2">
+              <div class="d-flex gap-4">
+                <div class="testcard testGraph">
+                  <div class="">
+                    <table class="table main-table">
+                      <thead>
+                        <tr class="table-row-1 table-header">
+                          <td class="p-4">Test Taker</td>
+                          <td class="p-4">Test Name</td>
+                          <td class="p-4 percentage-section2">Percentage</td>
+                          <td class="p-4 percentile-section">Percentile</td>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr class="table-row-1">
+                          <td class="p-4">
+                            <div class="d-flex">
+                              <img class="table-img" src="assets/images/prof-mini.png" alt="">
+                              <div class="test-taker-data">
+                                <h6>Demo Pesto Tech</h6>
+                                <p>pestotech@demo.com</p>
+                              </div>
+                            </div>
+                          </td>
+                          <td class="p-4 input-data">MCQ And Subjective</td>
+                          <td class="p-4">
+                            <div class="progress d-flex">
+                              <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                              <p class="progress-hover">24/40</p>
+                            </div>
+                          </td>
+                          <td class="p-4">
+                            <div class="progressBarContainer">
+                              <svg class="progressBar2 purple noselect" data-progress="25" x="0px" y="0px" viewBox="0 0 80 80">
+                                <!-- pass data in "data-progress" -->
+                                <path class="track" d="M5,40a35,35 0 1,0 70,0a35,35 0 1,0 -70,0" />
+                                <path class="fill" d="M5,40a35,35 0 1,0 70,0a35,35 0 1,0 -70,0" />
+                              </svg>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="testcard testGraph"></div>
+              </div>
+            </div>
+            <div class="testsection2">
+              <div class="d-flex gap-4">
+                <div class="testcard testGraphShrink">
+                  <div class="mt-5">
+                    <div class="d-flex justify-content-center">
+                      <div class="TestriskCandidate">
+                        <h2>73</h2>
+                      </div>
+                      <div class="warning-sign2" id="risksign">
+                        <img src="assets/images/warning.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-center">
+                    <div class="RiskWarning" id="riskwarning">
+                      <p>At Risk Candidate</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="testcard testGraph">
+                    <div class="graph-container">
+                        <div class="chartResponsive-benchmark">
+                          <canvas id="countTrend"></canvas>
+                        </div>
+                        <!-- data in phase2.js -->
+                      </div>
+                </div>
+              </div>
+            </div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- main-div closed -->
+    </div>
+    <!-- container closed -->
     </section>
     <!--selection section end -->
     <script src="https://kit.fontawesome.com/5817738a37.js" crossorigin="anonymous"></script>
@@ -111,26 +291,160 @@
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/loader.js"></script>
     <script src="assets/js/chart.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
-    <script src="assets/js/phase2.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script>
-      function profile(){
+      var progressBarCircle = function(array, callback, scope) {
+        for (var i = 0; i < array.length; i++) {
+          callback.call(scope, i, array[i]);
+        }
+      };
+      window.onload = function() {
+        var max = -219.99078369140625;
+        progressBarCircle(document.querySelectorAll('.progressBar2'), function(index, value) {
+          percent = value.getAttribute('data-progress');
+          value.querySelector('.fill').setAttribute('style', 'stroke-dashoffset: ' + ((100 - percent) / 100) * max);
+        });
+      }
+    </script>
+    <script>
+      function profile() {
+        profileMenu = document.getElementById("profileDropdown")
+        profileMenu.classList.toggle("dropdownActive")
+        document.addEventListener('click', function profile(event) {
+          console.log("clicked")
+          const box4 = document.getElementById('profile-out');
+          if (!box4.contains(event.target)) {
+            profileMenu.classList.remove("dropdownActive")
+          }
+        });
+      }
+    </script>
+    <script>
+      const labels2 = [
+        ["Jan-Mar"], "Apr-Jun", ["Jul-Sep"], "Oct-Dec"
+      ];
+      const data2 = {
+        labels: labels2,
+        datasets: [{
+          label: 'Data',
+          data: [0, 20, 40, 80],
+          tension: 0.6,
+          borderColor: '#FF6C40',
+          pointBackgroundColor: '#FF6C40',
+          pointBorderColor:"#FFFFFF",
+          pointBorderWidth:"4",
+          pointRadius: 5,
 
-profileMenu = document.getElementById("profileDropdown")
-profileMenu.classList.toggle("dropdownActive")
+        }, ]
+      };
+      const config2 = {
+        type: 'line',
+        data: data2,
+        options: {
+          maintainAspectRatio: false,
+          responsive: true,
+          plugins: {
+            legend: {
+              display: false,
+            },
+            tooltip: {
+              callbacks: {
+                title: (context) => {
+                  console.log(context[0].label)
+                  return context[0].label.replaceAll(',', ' ')
+                }
+              }
+            },
+          },
+          scales: {
+            y: {
+              beginAtZero: true,
+              ticks: {
+                stepSize: 20,
+                min: 0,
+                max: this.max,
+                callback: function(value) {
+                  return (value / this.max * 100).toFixed(0) + '%';
+                },
+                offset: true,
+              },
+            },
+            x: {
+              ticks: {
+                font: {
+                  family: 'pop-normal',
+                },
+              },
+            }
+          },
+        },
+      };
+      const viewImprovements = new Chart(document.getElementById('testgraph1'), config2);
+    </script>
 
-document.addEventListener('click', function profile(event) {
-console.log("clicked")
-const box4 = document.getElementById('profile-out');
 
-if (!box4.contains(event.target)) {
-profileMenu.classList.remove("dropdownActive")
-}
-});
-
-}
-</script>
-</body>
-
+<script>
+    const labels3 = [
+          ["Pattern", "Completion"], "Maths", ["Logical ", "Reasoning"],
+          ["Attention To", "Details"], "Articulation"
+      ];
+    const data3 = {
+      labels: labels3,
+      datasets: [{
+        label: 'Data',
+        data: [0,40,20,100,40],
+        tension: 0,
+        borderColor: '#20776E',
+        pointBackgroundColor: '#FFFFFF',
+        pointBorderColor:"#20776E",
+        pointBorderWidth:"4",
+        pointRadius: 5,
+      }, ]
+    };
+    const config3 = {
+      type: 'line',
+      data: data3,
+      options: {
+        maintainAspectRatio: false,
+        responsive: true,
+        plugins: {
+          legend: {
+            display: false,
+          },
+          tooltip: {
+            callbacks: {
+              title: (context) => {
+                console.log(context[0].label)
+                return context[0].label.replaceAll(',', ' ')
+              }
+            }
+          },
+        },
+        scales: {
+          y: {
+            beginAtZero: true,
+            ticks: {
+              stepSize: 20,
+              min: 0,
+              max: this.max,
+              callback: function(value) {
+                return (value / this.max * 100).toFixed(0) + '%';
+              },
+              offset: true,
+            },
+          },
+          x: {
+            ticks: {
+              font: {
+                family: 'pop-normal',
+              },
+            },
+          }
+        },
+      },
+    };
+    const countTrend = new Chart(document.getElementById('countTrend'), config3);
+  </script>
+   
+  </body>
 </html>
