@@ -6115,6 +6115,20 @@ border-radius: 5px !important;
   border-radius: 10px;
 }
 
+.mapcontainer{
+  width: 200px;
+  display: block;
+}
+
+.mapcontainer svg{
+  width: 100px;
+  display: block;
+  overflow: visible;
+  scale: 0.7;
+}
+
+
+
 
 
 
