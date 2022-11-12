@@ -70,33 +70,39 @@
           </div>
           <!-- row closed -->
         </div>
+        <div>
+          <div class="d-flex justify-content-lg-end justify-content-between">
+              <div> <i onclick="sidemenu()" id="menu-icon" class="fas fa-solid icon-w fa-bars d-block d-lg-none"></i> </div>
+             
+          </div>
+      </div>
       </div>
       <div class="sidebar">
         <div class="d-flex">
-            <div class="side1" id="sidebar-menu">
-                <div class="d-flex profile-details"> <img src="assets/images/capphoto.png" alt="">
-                    <div class="profile-info">
-                        <h5>Jane Doe</h5>
-                        <p>jane_do0e@wheelbox.com</p>
-                    </div>
-                </div> <a href="#">
-                    <div class="d-flex sideMenu mt-5"> <img src="assets/images/AppDetailsIcon.svg" alt="">
-                        <p>Applicant Details</p>
-                    </div>
-                </a> <a href="#">
-                    <div class="d-flex sideMenu"> <img src="assets/images/ScoreCardIcon.svg" alt="">
-                        <p>Score Card</p>
-                    </div>
-                </a> <a href="#">
-                    <div class="d-flex sideMenu"> <img src="assets/images/BenchmarkIcon.svg" alt="">
-                        <p>Benchmark</p>
-                    </div>
-                </a> <a href="#">
-                    <div class="d-flex sideMenu active-one"> <img src="assets/images/OnlineReportIcon.svg" alt="">
-                        <p>Online Report</p>
-                    </div>
-                </a>
-            </div>
+          <div class="side1" id="sidebar-menu">
+            <div class="d-flex profile-details"> <img src="assets/images/capphoto.png" alt="">
+                <div class="profile-info">
+                    <h5>Jane Doe</h5>
+                    <p>jane_do0e@wheelbox.com</p>
+                </div>
+            </div> <a href="#">
+                <div class="d-flex sideMenu mt-5"> <img src="assets/images/AppDetailsIcon.svg" alt="">
+                    <p>Applicant Details</p>
+                </div>
+            </a> <a href="#">
+                <div class="d-flex sideMenu"> <img src="assets/images/ScoreCardIcon.svg" alt="">
+                    <p>Score Card</p>
+                </div>
+            </a> <a href="#">
+                <div class="d-flex sideMenu active-one"> <img src="assets/images/BenchmarkIcon.svg" alt="">
+                    <p>Benchmark</p>
+                </div>
+            </a> <a href="#">
+                <div class="d-flex sideMenu"> <img src="assets/images/OnlineReportIcon.svg" alt="">
+                    <p>Online Report</p>
+                </div>
+            </a>
+        </div>
             <div class="inside-container2">
               <h3>Dashboard</h3>
               <div class="row">
@@ -698,6 +704,19 @@ onmouseover="TamilNadu()"
 	<script src='https://cdn.plot.ly/plotly-2.16.1.min.js'></script>
   <script src="assets/js/statesInfo.js"></script>
   
+  <script>
+    function sidemenu() {
+  var sidebar = document.getElementById("sidebar-menu")
+  var icon = document.getElementById("menu-icon")
+  var selector = document.getElementById("fullselector")
+  selector.classList.toggle("mobile-menu-stopper")
+  sidebar.classList.toggle("sidebar-active")
+  icon.classList.toggle("icon-rotate")
+  icon.classList.toggle("fa-bars")
+  icon.classList.toggle("fa-xmark")
+  
+}
+  </script>
 
 
   
