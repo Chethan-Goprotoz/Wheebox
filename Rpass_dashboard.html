@@ -1,0 +1,382 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <!-- font awesome css -->
+    <link rel="stylesheet" href="assets/font-awesome/all.min.css" />
+    <link rel="stylesheet" href="assets/font-awesome/fontawesome.css" />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- loader css -->
+    <link rel="stylesheet" href="assets/css/loader.css">
+    <!-- style css -->
+    <link rel="stylesheet" href="assets/sass/app.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css" rel="stylesheet">
+  </head>
+  
+  <body>
+    <!-- loader start-->
+    <div class="loader-container">
+      <div class="loader"></div>
+    </div>
+    <!-- loader end-->
+    <!--selection section start -->
+    <div class="selection-new " id="fullselector">
+      <div class="container-fluid">
+        <div class="main_div">
+          <div class="row">
+            <div class="main_header mb-1">
+              <div class="d-flex justify-content-between navpart1">
+                <div class="logo new-logopart">
+                  <img src="assets/images/logo_logo.png" alt="mini-logo">
+                </div>
+               
+              </div>
+              <div></div>
+              <div class="d-flex align-items-center gap-5">
+                <div class="d-flex gap-4">
+                  
+                  <div>
+                    <a href="#">
+                      <div class="home-search">
+                        <img class="nav-arrows-1" src="assets/images/home-hover.svg" alt="">
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="grid-new" id="profile-out">
+                  <div class="grid1-new" onclick="profile()">
+                    <div class="profile rounded-circle">
+                      <img src="assets/images/prof-mini.png" alt="profile">
+                    </div>
+                  </div>
+                  <div class="grid2-new d-none d-md-block" onclick="profile()">
+                    <h6>Jane Doe</h6>
+                    <p>jane_doe@wheebox.com</p>
+                  </div>
+                  <div class="profileDropdown" id="profileDropdown">
+                    <ul>
+                      <li>Admin Profile</li>
+                      <li>Change Password</li>
+                      <li>Help Center</li>
+                      <li>Log Out</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- row closed -->
+        </div>
+      </div>
+      <div class="sidebar">
+        <div class="d-flex">
+            <div class="side1" id="sidebar-menu">
+                <div class="d-flex profile-details"> <img src="assets/images/capphoto.png" alt="">
+                    <div class="profile-info">
+                        <h5>Jane Doe</h5>
+                        <p>jane_do0e@wheelbox.com</p>
+                    </div>
+                </div> <a href="#">
+                    <div class="d-flex sideMenu mt-5"> <img src="assets/images/AppDetailsIcon.svg" alt="">
+                        <p>Applicant Details</p>
+                    </div>
+                </a> <a href="#">
+                    <div class="d-flex sideMenu"> <img src="assets/images/ScoreCardIcon.svg" alt="">
+                        <p>Score Card</p>
+                    </div>
+                </a> <a href="#">
+                    <div class="d-flex sideMenu"> <img src="assets/images/BenchmarkIcon.svg" alt="">
+                        <p>Benchmark</p>
+                    </div>
+                </a> <a href="#">
+                    <div class="d-flex sideMenu active-one"> <img src="assets/images/OnlineReportIcon.svg" alt="">
+                        <p>Online Report</p>
+                    </div>
+                </a>
+            </div>
+          <div class="inside-container">
+            <h3>Dashboard</h3>
+            <div class="row">
+              <div class="col-6 col-md-3">
+                <div class="d-flex justify-content-between testcard">
+                  <div class="dashboard-content">
+                    <p>Total Test <br /> Takers </p>
+                    <h3>12414</h3>
+                  </div>
+                  <div class="dashboardCard-img border-1 d-flex justify-content-center align-items-center">
+                    <img src="./assets/images/all.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="d-flex justify-content-between testcard">
+                  <div class="dashboard-content">
+                    <p>Total Test <br /> Takers </p>
+                    <h3>0</h3>
+                  </div>
+                  <div class="dashboardCard-img border-2 d-flex justify-content-center align-items-center">
+                    <img src="./assets/images/dashboard-calendar.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="d-flex justify-content-between testcard">
+                  <div class="dashboard-content">
+                    <p>Total Test <br /> Takers </p>
+                    <h3>52</h3>
+                  </div>
+                  <div class="dashboardCard-img border-3 d-flex justify-content-center align-items-center">
+                    <img src="./assets/images/calendar (1).png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="d-flex justify-content-between testcard">
+                  <div class="dashboard-content">
+                    <p>Total Test <br /> Takers </p>
+                    <h3>1574</h3>
+                  </div>
+                  <div class="dashboardCard-img border-4 d-flex justify-content-center align-items-center">
+                    <img src="./assets/images/calendar (2).png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="testsection2">
+              <div class="d-flex gap-4 flex-wrap flex-column flex-md-row">
+                <div class="testcard testGraphShrink">
+                    <div class="d-flex justify-content-between">
+                        <h3>Test Takers Count-Trend</h3>
+                        <select class="form-select yeardropdown">
+                            <option disabled hidden selected> 2021</option>
+                            <option value="1">Weekly</option>
+                            <option value="2">Monthly</option>
+                            <option value="3">Yearly</option>
+                            <option value="4">Custom Date</option>
+                          </select>
+                    </div>
+                  <div class="graph-container">
+                    <div class="chartResponsive-benchmark">
+                      <canvas id="testgraph1"></canvas>
+                    </div>
+                    <!-- data in phase2.js -->
+                  </div>
+                </div>
+                <div class="testcard testGraphShrink">
+                    <h3>Overall Test Takers Performance</h3>
+                    <div id='myDiv'><!-- Plotly chart will be drawn inside this DIV --></div>
+                </div>
+              </div>
+            </div>
+           
+          
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- main-div closed -->
+    </div>
+    <!-- container closed -->
+    </section>
+    <!--selection section end -->
+    <script src="https://kit.fontawesome.com/5817738a37.js" crossorigin="anonymous"></script>
+    <script src="assets/js/jquery-2.2.0.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/loader.js"></script>
+    <script src="assets/js/chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Load plotly.js into the DOM -->
+	<script src='https://cdn.plot.ly/plotly-2.16.1.min.js'></script>
+
+
+    <script>
+
+var data = [
+  {
+    domain: { x: [0, 1], y: [0, 1] },
+    value: 61.9,
+    type: "indicator",
+    mode: "gauge+number",
+    gauge: { axis: { range: [null, 100] } }
+  }
+];
+
+
+var layout = {
+    showlegend: false,
+    tickformat: '.0%',
+    responsive: true
+};
+
+
+
+Plotly.newPlot('myDiv', data, layout,{displayModeBar: false});
+
+
+    </script>
+
+    <script>
+      var progressBarCircle = function(array, callback, scope) {
+        for (var i = 0; i < array.length; i++) {
+          callback.call(scope, i, array[i]);
+        }
+      };
+      window.onload = function() {
+        var max = -219.99078369140625;
+        progressBarCircle(document.querySelectorAll('.progressBar2'), function(index, value) {
+          percent = value.getAttribute('data-progress');
+          value.querySelector('.fill').setAttribute('style', 'stroke-dashoffset: ' + ((100 - percent) / 100) * max);
+        });
+      }
+    </script>
+    <script>
+      function profile() {
+        profileMenu = document.getElementById("profileDropdown")
+        profileMenu.classList.toggle("dropdownActive")
+        document.addEventListener('click', function profile(event) {
+          console.log("clicked")
+          const box4 = document.getElementById('profile-out');
+          if (!box4.contains(event.target)) {
+            profileMenu.classList.remove("dropdownActive")
+          }
+        });
+      }
+    </script>
+    <script>
+      const labels2 = [
+        ["Jan-Mar"], "Apr-Jun", ["Jul-Sep"], "Oct-Dec"
+      ];
+      const data2 = {
+        labels: labels2,
+        datasets: [{
+          label: 'Data',
+          data: [0, 20, 40, 80],
+          tension: 0.6,
+          borderColor: '#FF6C40',
+          pointBackgroundColor: '#FF6C40',
+          pointBorderColor:"#FFFFFF",
+          pointBorderWidth:"4",
+          pointRadius: 5,
+
+        }, ]
+      };
+      const config2 = {
+        type: 'line',
+        data: data2,
+        options: {
+          maintainAspectRatio: false,
+          responsive: true,
+          plugins: {
+            legend: {
+              display: false,
+            },
+            tooltip: {
+              callbacks: {
+                title: (context) => {
+                  console.log(context[0].label)
+                  return context[0].label.replaceAll(',', ' ')
+                }
+              }
+            },
+          },
+          scales: {
+            y: {
+              beginAtZero: true,
+              ticks: {
+                stepSize: 20,
+                min: 0,
+                max: this.max,
+                callback: function(value) {
+                  return (value / this.max * 100).toFixed(0) + '%';
+                },
+                offset: true,
+              },
+            },
+            x: {
+              ticks: {
+                font: {
+                  family: 'pop-normal',
+                },
+              },
+            }
+          },
+        },
+      };
+      const viewImprovements = new Chart(document.getElementById('testgraph1'), config2);
+    </script>
+
+
+<script>
+    const labels3 = [
+          ["Pattern", "Completion"], "Maths", ["Logical ", "Reasoning"],
+          ["Attention To", "Details"], "Articulation"
+      ];
+    const data3 = {
+      labels: labels3,
+      datasets: [{
+        label: 'Data',
+        data: [0,40,20,100,40],
+        tension: 0,
+        borderColor: '#20776E',
+        pointBackgroundColor: '#FFFFFF',
+        pointBorderColor:"#20776E",
+        pointBorderWidth:"4",
+        pointRadius: 5,
+      }, ]
+    };
+    const config3 = {
+      type: 'line',
+      data: data3,
+      options: {
+        maintainAspectRatio: false,
+        responsive: true,
+        plugins: {
+          legend: {
+            display: false,
+          },
+          tooltip: {
+            callbacks: {
+              title: (context) => {
+                console.log(context[0].label)
+                return context[0].label.replaceAll(',', ' ')
+              }
+            }
+          },
+        },
+        scales: {
+          y: {
+            beginAtZero: true,
+            ticks: {
+              stepSize: 20,
+              min: 0,
+              max: this.max,
+              callback: function(value) {
+                return (value / this.max * 100).toFixed(0) + '%';
+              },
+              offset: true,
+            },
+          },
+          x: {
+            ticks: {
+              font: {
+                family: 'pop-normal',
+              },
+            },
+          }
+        },
+      },
+    };
+    const countTrend = new Chart(document.getElementById('countTrend'), config3);
+  </script>
+
+
+<script>
+   
+</script>
+   
+  </body>
+</html>

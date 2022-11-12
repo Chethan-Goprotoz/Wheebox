@@ -4251,8 +4251,9 @@ textarea {
 .inside-container2{
   min-height: 100%;
   margin-top: 30px;
-  width: 100%;
-  padding-left: 16px;
+  width: 80%;
+  padding: 20px;
+  margin-left: 15px;
 }
 
 .inside-container2 h3{
@@ -4839,6 +4840,8 @@ textarea {
 .chartResponsive-benchmark2{
   height: 250px;
 }
+
+
 .table-header{
   background-color: #DAEDEB;
   box-shadow: 0px 1px 5px #C5C5C5;
@@ -6052,12 +6055,14 @@ border-radius: 5px !important;
 }
 
 .testGraph{
-  width: 100%;
+  width: 50%;
 }
 
 .testGraphShrink{
-  width: 60%;
+  width: 49.2%;
 }
+
+
 
 .appDetailCard{
   background: #FFFFFF 0% 0% no-repeat padding-box;
@@ -6103,7 +6108,18 @@ border-radius: 5px !important;
 
 .testTable::-webkit-scrollbar{
   width: 5px;
+  height: 5px;
 }
+
+
+.testTable::-webkit-scrollbar-thumb:horizontal{
+  background: #A9A9A9;
+  border-radius: 10px;
+}
+.testTable::-webkit-scrollbar:horizontal{
+  
+}
+
 
 .testTable::-webkit-scrollbar-thumb{
   background: #A9A9A9;
@@ -6115,24 +6131,91 @@ border-radius: 5px !important;
   border-radius: 10px;
 }
 
-.mapcontainer{
-  width: 200px;
-  display: block;
-}
+
+
 
 .mapcontainer svg{
-  width: 100px;
+
   display: block;
   overflow: visible;
-  scale: 0.7;
+  scale: 0.45;
+transform: translate(-130px,-350px);
+  
 }
 
-.jammu-info{
-  fill: red;
+.mapYello{
+  fill: #FFB332;
+  stroke: white;
+}
+
+.mapPurple{
+  fill: #243950;
+  stroke: white;
+}
+
+.mapOrange{
+  fill: #FC7135;
+  stroke: white;
+}
+
+.mapBlue{
+  fill: #3D6F87;
   stroke: white;
 }
 
 
+
+.mapHover{
+  fill: #243950;
+  stroke: white;
+}
+
+.mapselector{
+  fill: red;
+}
+
+.guagescale{
+  scale: 1;
+}
+
+.rpass-icons{
+  margin-left: 25px;
+}
+
+.mapwidth{
+  width: 30%;
+  height: 600px;
+}
+
+.tablewidth{
+  width: 70%;
+  
+}
+
+.mapinfotab{
+  text-align: right;
+}
+
+.mapinfocontainer{
+  background-color: #EBFFFD;
+  border: 2px solid #76FFF1;
+  padding: 10px;
+  border-radius: 16px;
+  float: right;
+}
+
+.mapcolor{
+  fill: #233854;
+  stroke: #233854;
+}
+
+.andhra-info{
+  fill: red;
+}
+
+.andhra-info::after{
+  
+}
 
 
 
@@ -6207,6 +6290,8 @@ border-radius: 5px !important;
   .compareDownloadMobile{
     display: block;
   }
+
+ 
 
  
  
@@ -6328,6 +6413,32 @@ border-radius: 5px !important;
     margin-top: 10px;
     
   }
+
+  .testGraphShrink{
+    width: 100%;
+  }
+
+  .testGraph{
+    width: 100%;
+  }
+
+  .inside-container2{
+    width: 100%;
+    margin-left: 0;
+    padding: 16px;
+  }
+
+  .tablewidth{
+    width: 100%;
+  }
+
+  .mapwidth{
+    width: 100%;
+  }
+
+ .gridBox{
+  margin-bottom: 16px;
+ }
 
  
 
