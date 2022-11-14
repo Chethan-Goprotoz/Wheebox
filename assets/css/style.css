@@ -6920,6 +6920,14 @@ text-align: left;
 
 }
 
+@media(min-width: 1780px) {
+
+  .progressBar2Value{
+    right: 25px;
+  }
+  
+  }
+
 @media(max-width: 1300px) {
 
   .card-width-score{
