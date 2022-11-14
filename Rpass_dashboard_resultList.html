@@ -1,0 +1,441 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rpass Dashboard</title>
+    <!-- font awesome css -->
+    <link rel="stylesheet" href="assets/font-awesome/all.min.css" />
+    <link rel="stylesheet" href="assets/font-awesome/fontawesome.css" />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- loader css -->
+    <link rel="stylesheet" href="assets/css/loader.css">
+    <!-- style css -->
+    <link rel="stylesheet" href="assets/sass/app.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css" rel="stylesheet">
+  </head>
+  
+  <body>
+    <!-- loader start-->
+    <div class="loader-container">
+      <div class="loader"></div>
+    </div>
+    <!-- loader end-->
+    <!--selection section start -->
+    <div class="selection-new " id="fullselector">
+      <div class="container-fluid">
+        <div class="main_div">
+          <div class="row">
+            <div class="main_header mb-1">
+              <div class="d-flex justify-content-between navpart1">
+                <div class="logo new-logopart">
+                  <img src="assets/images/logo_logo.png" alt="mini-logo">
+                </div>
+              </div>
+              <div class="d-flex align-items-center gap-5">
+                <div class="d-flex gap-4">
+                  
+                  <div>
+                    <a href="#">
+                      <div class="home-search">
+                        <img class="nav-arrows-1" src="assets/images/home-hover.svg" alt="">
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="grid-new" id="profile-out">
+                  <div class="grid1-new" onclick="profile()">
+                    <div class="profile rounded-circle">
+                      <img src="assets/images/prof-mini.png" alt="profile">
+                    </div>
+                  </div>
+                  <div class="grid2-new d-none d-md-block" onclick="profile()">
+                    <h6>Jane Doe</h6>
+                    <p>jane_doe@wheebox.com</p>
+                  </div>
+                  <div class="profileDropdown" id="profileDropdown">
+                    <ul>
+                      <li>Admin Profile</li>
+                      <li>Change Password</li>
+                      <li>Help Center</li>
+                      <li>Log Out</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- row closed -->
+        </div>
+        <div class="d-flex justify-content-lg-end justify-content-between mt-3">
+          <div> <i onclick="sidemenu()" id="menu-icon" class="fas fa-solid icon-w fa-bars d-block d-lg-none"></i> </div>
+          <div class="filter-container d-lg-none d-flex justify-content-center align-items-center">
+            <i class="fa-solid fa-filter filter-icon"></i>
+          </div>
+      </div>
+      </div>
+      <div class="sidebar">
+        <div class="d-flex">
+          <div class="side1" id="sidebar-menu">
+            <a href="#">
+               <div class="d-flex sideMenu mt-5 active-one"> <img class="icon-align" src="assets/images/svg/RpassDashboard-icon.svg" alt="">
+                   <p>Dashboard</p>
+               </div>
+           </a> <a href="#">
+               <div class="d-flex sideMenu"> <img class="icon-align" src="assets/images/svg/manage-auto-icon.svg" alt="">
+                   <p>Manage Auto-Procto...</p>
+               </div>
+           </a> <a href="#">
+               <div class="d-flex sideMenu"> <img class="icon-align" src="assets/images/svg/advanceAnalytics.svg" alt="">
+                   <p>Advance Analytics</p>
+               </div>
+           </a> <a href="#">
+               <div class="d-flex sideMenu"> <img class="icon-align" src="assets/images/svg/futurecampus.svg" alt="">
+                   <p>Future Campus Analy...</p>
+               </div>
+           </a>
+           <a href="#">
+             <div class="d-flex sideMenu"> <img class="icon-align" src="assets/images/svg/rpassDashboard.svg" alt="">
+                 <p>RPaaS Dashboard</p>
+             </div>
+         </a>
+         <a href="#">
+           <div class="d-flex sideMenu"> <img class="icon-align" src="assets/images/svg/proctoringScore.svg" alt="">
+               <p>Proctoring Report</p>
+           </div>
+       </a>
+       </div>
+          <div class="inside-container-dashboard">
+            <div class="d-flex justify-content-between">
+              <h3>Dashboard</h3>
+              <div class="filter-container d-none d-lg-flex d-flex justify-content-center align-items-center">
+                <i class="fa-solid fa-filter filter-icon"></i>
+              </div>
+            </div>
+           
+            <div class="table-main-section">
+                <table id="result_list_table" class="table main-table">
+                    <thead>
+                      <tr class="table-row-1 table-header">
+                       
+                        <td class="p-4">Test Taker</td>
+                        <td class="p-4">Candidate Unique ID</td>
+                        <td class="p-4 percentage-section">Event ID</td>
+                        <td class="p-4 percentile-section">Test Frequency</td>
+                        <td class="p-4"></td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="table-row-1">
+                       
+                        <td class="p-4">
+                        <div class="d-flex">
+                            <img class="table-img" src="assets/images/prof-mini.png" alt="">
+                            <div class="test-taker-data">
+                                <h6>Demo Pesto Tech</h6>
+                                <p>pestotech@demo.com</p>
+                            </div>
+                        </div>
+                    </td>
+                        <td class="p-4 input-data">amaruatrpaas</td>
+                        <td class="p-4 input-data">demopestotech100</td>
+                        <td class="p-4 input-data">demopestotech100</td>
+                        
+                       
+                        <td class="options-data" id="option-out"><i class="fas fa-solid fa-ellipsis-vertical"></i>
+                          <div class="dropdownend">
+                            <ul>
+                              <li>Download Report</li>
+                            </ul>
+                          </div></td>
+                      </tr>
+                      <tr class="table-row-1">
+                       
+                        <td class="p-4">
+                        <div class="d-flex">
+                            <img class="table-img" src="assets/images/prof-mini.png" alt="">
+                            <div class="test-taker-data">
+                                <h6>Demo Pesto Tech</h6>
+                                <p>pestotech@demo.com</p>
+                            </div>
+                        </div>
+                    </td>
+                        <td class="p-4 input-data">amaruatrpaas</td>
+                        <td class="p-4 input-data">demopestotech100</td>
+                        <td class="p-4 input-data">demopestotech100</td>
+                        
+                       
+                        <td class="options-data" id="option-out"><i class="fas fa-solid fa-ellipsis-vertical"></i>
+                          <div class="dropdownend">
+                            <ul>
+                              <li>Download Report</li>
+                            </ul>
+                          </div></td>
+                      </tr>
+                      <tr class="table-row-1">
+                       
+                        <td class="p-4">
+                        <div class="d-flex">
+                            <img class="table-img" src="assets/images/prof-mini.png" alt="">
+                            <div class="test-taker-data">
+                                <h6>Demo Pesto Tech</h6>
+                                <p>pestotech@demo.com</p>
+                            </div>
+                        </div>
+                    </td>
+                        <td class="p-4 input-data">amaruatrpaas</td>
+                        <td class="p-4 input-data">demopestotech100</td>
+                        <td class="p-4 input-data">demopestotech100</td>
+                        
+                       
+                        <td class="options-data" id="option-out"><i class="fas fa-solid fa-ellipsis-vertical"></i>
+                          <div class="dropdownend">
+                            <ul>
+                              <li>Download Report</li>
+                            </ul>
+                          </div></td>
+                      </tr>
+                      <tr class="table-row-1">
+                       
+                        <td class="p-4">
+                        <div class="d-flex">
+                            <img class="table-img" src="assets/images/prof-mini.png" alt="">
+                            <div class="test-taker-data">
+                                <h6>Demo Pesto Tech</h6>
+                                <p>pestotech@demo.com</p>
+                            </div>
+                        </div>
+                    </td>
+                        <td class="p-4 input-data">amaruatrpaas</td>
+                        <td class="p-4 input-data">demopestotech100</td>
+                        <td class="p-4 input-data">demopestotech100</td>
+                        
+                       
+                        <td class="options-data" id="option-out"><i class="fas fa-solid fa-ellipsis-vertical"></i>
+                          <div class="dropdownend">
+                            <ul>
+                              <li>Download Report</li>
+                            </ul>
+                          </div></td>
+                      </tr>
+                      <tr class="table-row-1">
+                       
+                        <td class="p-4">
+                        <div class="d-flex">
+                            <img class="table-img" src="assets/images/prof-mini.png" alt="">
+                            <div class="test-taker-data">
+                                <h6>Demo Pesto Tech</h6>
+                                <p>pestotech@demo.com</p>
+                            </div>
+                        </div>
+                    </td>
+                        <td class="p-4 input-data">amaruatrpaas</td>
+                        <td class="p-4 input-data">demopestotech100</td>
+                        <td class="p-4 input-data">demopestotech100</td>
+                        
+                       
+                        <td class="options-data" id="option-out"><i class="fas fa-solid fa-ellipsis-vertical"></i>
+                          <div class="dropdownend">
+                            <ul>
+                              <li>Download Report</li>
+                            </ul>
+                          </div></td>
+                      </tr>
+                      <tr class="table-row-1">
+                       
+                        <td class="p-4">
+                        <div class="d-flex">
+                            <img class="table-img" src="assets/images/prof-mini.png" alt="">
+                            <div class="test-taker-data">
+                                <h6>Demo Pesto Tech</h6>
+                                <p>pestotech@demo.com</p>
+                            </div>
+                        </div>
+                    </td>
+                        <td class="p-4 input-data">amaruatrpaas</td>
+                        <td class="p-4 input-data">demopestotech100</td>
+                        <td class="p-4 input-data">demopestotech100</td>
+                        
+                       
+                        <td class="options-data" id="option-out"><i class="fas fa-solid fa-ellipsis-vertical"></i>
+                          <div class="dropdownend">
+                            <ul>
+                              <li>Download Report</li>
+                            </ul>
+                          </div></td>
+                      </tr>
+                      <tr class="table-row-1">
+                       
+                        <td class="p-4">
+                        <div class="d-flex">
+                            <img class="table-img" src="assets/images/prof-mini.png" alt="">
+                            <div class="test-taker-data">
+                                <h6>Demo Pesto Tech</h6>
+                                <p>pestotech@demo.com</p>
+                            </div>
+                        </div>
+                    </td>
+                        <td class="p-4 input-data">amaruatrpaas</td>
+                        <td class="p-4 input-data">demopestotech100</td>
+                        <td class="p-4 input-data">demopestotech100</td>
+                        
+                       
+                        <td class="options-data" id="option-out"><i class="fas fa-solid fa-ellipsis-vertical"></i>
+                          <div class="dropdownend">
+                            <ul>
+                              <li>Download Report</li>
+                            </ul>
+                          </div></td>
+                      </tr>
+                      <tr class="table-row-1">
+                       
+                        <td class="p-4">
+                        <div class="d-flex">
+                            <img class="table-img" src="assets/images/prof-mini.png" alt="">
+                            <div class="test-taker-data">
+                                <h6>Demo Pesto Tech</h6>
+                                <p>pestotech@demo.com</p>
+                            </div>
+                        </div>
+                    </td>
+                        <td class="p-4 input-data">amaruatrpaas</td>
+                        <td class="p-4 input-data">demopestotech100</td>
+                        <td class="p-4 input-data">demopestotech100</td>
+                        
+                       
+                        <td class="options-data" id="option-out"><i class="fas fa-solid fa-ellipsis-vertical"></i>
+                          <div class="dropdownend">
+                            <ul>
+                              <li>Download Report</li>
+                            </ul>
+                          </div></td>
+                      </tr>
+                      <tr class="table-row-1">
+                       
+                        <td class="p-4">
+                        <div class="d-flex">
+                            <img class="table-img" src="assets/images/prof-mini.png" alt="">
+                            <div class="test-taker-data">
+                                <h6>Demo Pesto Tech</h6>
+                                <p>pestotech@demo.com</p>
+                            </div>
+                        </div>
+                    </td>
+                        <td class="p-4 input-data">amaruatrpaas</td>
+                        <td class="p-4 input-data">demopestotech100</td>
+                        <td class="p-4 input-data">demopestotech100</td>
+                        
+                       
+                        <td class="options-data" id="option-out"><i class="fas fa-solid fa-ellipsis-vertical"></i>
+                          <div class="dropdownend">
+                            <ul>
+                              <li>Download Report</li>
+                            </ul>
+                          </div></td>
+                      </tr>
+                      <tr class="table-row-1">
+                       
+                        <td class="p-4">
+                        <div class="d-flex">
+                            <img class="table-img" src="assets/images/prof-mini.png" alt="">
+                            <div class="test-taker-data">
+                                <h6>Demo Pesto Tech</h6>
+                                <p>pestotech@demo.com</p>
+                            </div>
+                        </div>
+                    </td>
+                        <td class="p-4 input-data">amaruatrpaas</td>
+                        <td class="p-4 input-data">demopestotech100</td>
+                        <td class="p-4 input-data">demopestotech100</td>
+                        
+                       
+                        <td class="options-data" id="option-out"><i class="fas fa-solid fa-ellipsis-vertical"></i>
+                          <div class="dropdownend">
+                            <ul>
+                              <li>Download Report</li>
+                            </ul>
+                          </div></td>
+                      </tr>
+                      <tr class="table-row-1">
+                       
+                        <td class="p-4">
+                        <div class="d-flex">
+                            <img class="table-img" src="assets/images/prof-mini.png" alt="">
+                            <div class="test-taker-data">
+                                <h6>Demo Pesto Tech</h6>
+                                <p>pestotech@demo.com</p>
+                            </div>
+                        </div>
+                    </td>
+                        <td class="p-4 input-data">amaruatrpaas</td>
+                        <td class="p-4 input-data">demopestotech100</td>
+                        <td class="p-4 input-data">demopestotech100</td>
+                        
+                       
+                        <td class="options-data" id="option-out"><i class="fas fa-solid fa-ellipsis-vertical"></i>
+                          <div class="dropdownend">
+                            <ul>
+                              <li>Download Report</li>
+                            </ul>
+                          </div></td>
+                      </tr>
+        
+                   
+        
+                    </tbody>
+                  </table>
+              </div>
+           
+          
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- main-div closed -->
+    </div>
+    <!-- container closed -->
+    </section>
+    <!--selection section end -->
+    <script src="https://kit.fontawesome.com/5817738a37.js" crossorigin="anonymous"></script>
+    <script src="assets/js/jquery-2.2.0.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/loader.js"></script>
+    <script src="assets/js/chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.2.3/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.2.3/js/buttons.html5.min.js"></script>
+
+
+
+
+
+    <script>
+      function profile() {
+        profileMenu = document.getElementById("profileDropdown")
+        profileMenu.classList.toggle("dropdownActive")
+        document.addEventListener('click', function profile(event) {
+          console.log("clicked")
+          const box4 = document.getElementById('profile-out');
+          if (!box4.contains(event.target)) {
+            profileMenu.classList.remove("dropdownActive")
+          }
+        });
+      }
+    </script>
+
+
+
+
+<script>
+   
+</script>
+   
+  </body>
+</html>
