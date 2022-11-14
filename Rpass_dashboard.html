@@ -3,7 +3,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dashboard</title>
+    <title>Rpass Dashboard</title>
     <!-- font awesome css -->
     <link rel="stylesheet" href="assets/font-awesome/all.min.css" />
     <link rel="stylesheet" href="assets/font-awesome/fontawesome.css" />
@@ -32,9 +32,7 @@
                 <div class="logo new-logopart">
                   <img src="assets/images/logo_logo.png" alt="mini-logo">
                 </div>
-               
               </div>
-              <div></div>
               <div class="d-flex align-items-center gap-5">
                 <div class="d-flex gap-4">
                   
@@ -70,35 +68,44 @@
           </div>
           <!-- row closed -->
         </div>
+        <div class="d-flex justify-content-lg-end justify-content-between">
+          <div> <i onclick="sidemenu()" id="menu-icon" class="fas fa-solid icon-w fa-bars d-block d-lg-none"></i> </div>
+         
+      </div>
       </div>
       <div class="sidebar">
         <div class="d-flex">
             <div class="side1" id="sidebar-menu">
-                <div class="d-flex profile-details"> <img src="assets/images/capphoto.png" alt="">
-                    <div class="profile-info">
-                        <h5>Jane Doe</h5>
-                        <p>jane_do0e@wheelbox.com</p>
-                    </div>
-                </div> <a href="#">
-                    <div class="d-flex sideMenu mt-5"> <img src="assets/images/AppDetailsIcon.svg" alt="">
-                        <p>Applicant Details</p>
+                 <a href="#">
+                    <div class="d-flex sideMenu mt-5"> <img class="icon-align" src="assets/images/svg/RpassDashboard-icon.svg" alt="">
+                        <p>Dashboard</p>
                     </div>
                 </a> <a href="#">
-                    <div class="d-flex sideMenu"> <img src="assets/images/ScoreCardIcon.svg" alt="">
-                        <p>Score Card</p>
+                    <div class="d-flex sideMenu"> <img class="icon-align" src="assets/images/svg/manage-auto-icon.svg" alt="">
+                        <p>Manage Auto-Procto...</p>
                     </div>
                 </a> <a href="#">
-                    <div class="d-flex sideMenu"> <img src="assets/images/BenchmarkIcon.svg" alt="">
-                        <p>Benchmark</p>
+                    <div class="d-flex sideMenu"> <img class="icon-align" src="assets/images/svg/advanceAnalytics.svg" alt="">
+                        <p>Advance Analytics</p>
                     </div>
                 </a> <a href="#">
-                    <div class="d-flex sideMenu active-one"> <img src="assets/images/OnlineReportIcon.svg" alt="">
-                        <p>Online Report</p>
+                    <div class="d-flex sideMenu"> <img class="icon-align" src="assets/images/svg/futurecampus.svg" alt="">
+                        <p>Future Campus Analy...</p>
                     </div>
                 </a>
+                <a href="#">
+                  <div class="d-flex sideMenu active-one"> <img class="icon-align" src="assets/images/svg/rpassDashboard.svg" alt="">
+                      <p>RPaaS Dashboard</p>
+                  </div>
+              </a>
+              <a href="#">
+                <div class="d-flex sideMenu"> <img class="icon-align" src="assets/images/svg/proctoringScore.svg" alt="">
+                    <p>Proctoring Report</p>
+                </div>
+            </a>
             </div>
-          <div class="inside-container">
-            <h3>Dashboard</h3>
+          <div class="inside-container-dashboard">
+            <h3>RPaaS Dashboard</h3>
             <div class="row">
               <div class="col-6 col-md-3">
                 <div class="d-flex justify-content-between testcard">
@@ -165,9 +172,25 @@
                     <!-- data in phase2.js -->
                   </div>
                 </div>
-                <div class="testcard testGraphShrink">
+                <div class="testcard testGraphShrink guageContainer">
                     <h3>Overall Test Takers Performance</h3>
-                    <div id='myDiv'><!-- Plotly chart will be drawn inside this DIV --></div>
+                    <!-- <div id='myDiv'></div> -->
+                    <div class="d-flex justify-content-center">
+                      <div class="percentLegend d-none d-md-block">
+                        <p class="percent100">100%</p>
+                        <p class="percent80">80%</p>
+                        <p class="percent60">60%</p>
+                        <p class="percent40">40%</p>
+                        <p class="percent20">20%</p>
+                        <p class="percent0">0%</p>
+                      </div>
+                      <div class="gauge">
+                        <div class="gauge__body">
+                          <div class="gauge__fill"></div>
+                          <div class="gauge__cover"></div>
+                        </div>
+                      </div>
+                    </div>
                 </div>
               </div>
             </div>
@@ -193,31 +216,27 @@
 	<script src='https://cdn.plot.ly/plotly-2.16.1.min.js'></script>
 
 
-    <script>
+  <script>
+    const gaugeElement = document.querySelector(".gauge");
 
-var data = [
-  {
-    domain: { x: [0, 1], y: [0, 1] },
-    value: 61.9,
-    type: "indicator",
-    mode: "gauge+number",
-    gauge: { axis: { range: [null, 100] } }
+function setGaugeValue(gauge, value) {
+  if (value < 0 || value > 1) {
+    return;
   }
-];
+
+  gauge.querySelector(".gauge__fill").style.transform = `rotate(${
+    value / 2
+  }turn)`;
+  gauge.querySelector(".gauge__cover").textContent = `${Math.round(
+    value * 100
+  )}%`;
+}
+
+setGaugeValue(gaugeElement, 0.8);
+
+  </script>
 
 
-var layout = {
-    showlegend: false,
-    tickformat: '.0%',
-    responsive: true
-};
-
-
-
-Plotly.newPlot('myDiv', data, layout,{displayModeBar: false});
-
-
-    </script>
 
     <script>
       var progressBarCircle = function(array, callback, scope) {
