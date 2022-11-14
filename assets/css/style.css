@@ -4266,6 +4266,10 @@ textarea {
    margin-top: 10px;
 }
 
+.inside-container-dashboard a{
+  text-decoration: none;
+}
+
 .inside-container-dashboard h3{
   font-size: 18px;
   letter-spacing: 0px;
