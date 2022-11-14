@@ -5285,6 +5285,26 @@ object-position: bottom;
   font-size: 18px;
 }
 
+.RiskWarning2{
+  background-color: #FFC3C3;
+  text-align: center;
+  border-radius: 6px;
+  margin-top: 15px;
+  padding: 3px;
+  height: auto;
+  
+}
+
+.RiskWarning2 p{
+  color: #DF1F1F !important;
+  font-size: 14px !important;
+  height: 20px;
+  text-align: center;
+  padding-left: 5px;
+  padding-right: 5px;
+  
+}
+
 .warning-sign{
   position: absolute;
   transform: translate(50px,50px);
@@ -6054,19 +6074,19 @@ border-radius: 5px !important;
   background-color: #F7F7F7;
 }
 
-.border-1{
+.border-line-1{
   border: 1px solid #20776E;
 }
 
-.border-2{
+.border-line-2{
   border: 1px solid #F5C525;
 }
 
-.border-3{
+.border-line-3{
   border: 1px solid #FF9062;
 }
 
-.border-4{
+.border-line-4{
   border: 1px solid #3ACBE8;
 }
 
@@ -6096,6 +6116,7 @@ border-radius: 5px !important;
 
 .testGraph{
   width: 50%;
+  z-index: 32;
 }
 
 .testGraphShrink{
@@ -6142,7 +6163,7 @@ border-radius: 5px !important;
 
 .testTable{
   overflow-y: scroll;
-  max-height: 500px;
+  max-height: 550px;
   padding-right: 10px;
 }
 
@@ -6180,8 +6201,8 @@ border-radius: 5px !important;
 .mapcontainer svg{
   display: block;
   overflow: visible;
-  scale: 0.45;
-transform: translate(-130px,-350px);
+  scale: 0.5;
+transform: translate(-180px,-320px);
   
 }
 
@@ -6424,6 +6445,7 @@ transform: translate(-130px,-350px);
 
 .pop-value{
   margin-top: 12px;
+  text-align: left;
 }
 
 .pop-color1{
@@ -6436,10 +6458,12 @@ transform: translate(-130px,-350px);
 
 .pop-color3{
 color: #FFB230;
+text-align: left;
 }
 
 .pop-color4{
 color: #223752;
+text-align: left;
 }
 
 .sno-width{
@@ -6449,6 +6473,10 @@ color: #223752;
 
 .export-icon{
   transform: rotate(180deg);
+}
+
+.risksign{
+  width: 20px;
 }
 
 
