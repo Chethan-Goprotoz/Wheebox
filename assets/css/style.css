@@ -5760,6 +5760,8 @@ border-radius: 5px !important;
   color: white !important;
 }
 
+
+
 .dropdownOptions{
   z-index: 55;
   height: 100%;
@@ -5816,6 +5818,42 @@ border-radius: 5px !important;
 }
 
 .options-data:hover  .dropdownend {
+  display: block !important;
+}
+
+.downloadReport{
+
+  z-index: 55;
+   height: 100%;
+   position: absolute;
+   width: 160px;
+   height: auto;
+   border-radius: 15px;
+   background-color: #fff;
+   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.08);
+   box-shadow: 0 0 5px rgba(0, 0, 0, 0.08);
+   -webkit-transition: all 0.2s ease;
+   transition: all 0.2s ease;
+   color: black;
+   display: none;
+   transform: translate(-141px,13px);
+   transition: 0.5s ease;
+   padding-right: 5px;
+   padding-top: 5px;
+ 
+ }
+ 
+ .downloadReport ul li {
+ 
+ list-style: none;
+   text-align: left;
+   padding-top: 15px;
+   padding-bottom: 16px;
+   cursor: pointer;
+ 
+ }
+
+ .options-data:hover  .downloadReport {
   display: block !important;
 }
 
