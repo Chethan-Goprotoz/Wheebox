@@ -6928,6 +6928,22 @@ text-align: left;
   
   }
 
+  @media(min-width: 1850px) {
+
+    .progressBar2Value{
+      right: 32px;
+    }
+    
+    }
+
+    @media(min-width: 1910px) {
+
+      .progressBar2Value{
+        right: 38px;
+      }
+      
+      }
+
 @media(max-width: 1300px) {
 
   .card-width-score{
