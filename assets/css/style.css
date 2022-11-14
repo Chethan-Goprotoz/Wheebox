@@ -6350,6 +6350,11 @@ transform: translate(-89px,-110px)
   padding: 10px;
   border-radius: 16px;
   float: right;
+  width: 200px;
+}
+
+.mapinfocontainer div p{
+  text-align: left;
 }
 
 .mapcolor{
