@@ -4947,6 +4947,16 @@ textarea {
   position: relative;
   width: 170px;
 }
+
+.progress-com{
+  background-color: #E3E3E3;
+  border-radius: 10px;
+  overflow: visible;
+  position: relative;
+  width: 120px;
+}
+
+
 .pass-field{
   background-color: #DBFFEA !important;
   height: 42px;
@@ -5070,6 +5080,15 @@ textarea {
 .progress-line-value{
   position: absolute;
   margin-left: 190px;
+  margin-top: -8px;
+  font-size: 16px;
+  font-family: Pop-medium;
+  color: #000000;
+}
+
+.progress-line-value-com{
+  position: absolute;
+  margin-left: 130px;
   margin-top: -8px;
   font-size: 16px;
   font-family: Pop-medium;
