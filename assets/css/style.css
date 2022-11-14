@@ -6576,6 +6576,14 @@ text-align: left;
   text-decoration: none;
 }
 
+.tabledrop{
+  background-color: #EEEEEE !important;
+}
+
+.fa-print{
+  color: white;
+}
+
 
 
 /* end of new css */
@@ -6592,6 +6600,11 @@ text-align: left;
   .inside-container{
     padding: 16px;
     margin: 0;
+  }
+
+  .inside-compare-app{
+    margin: 1px;
+    padding: 10px;
   }
 
   .stats-card{

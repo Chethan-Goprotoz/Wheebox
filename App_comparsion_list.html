@@ -80,23 +80,12 @@
              <div>
                 <div class="d-flex gap-4 flex-wrap searchContainer" id="mousecontainer">
                     <input class="search-bar" type="text" id="filterbox" placeholder="Search">
-                    <div class="download-btn d-flex justify-content-around" id="ExportReporttoExcel" onclick="resultDownload()">
-                      <p>Download</p>
-                      <img class="download-icon" src="assets/images/svg/download-icon.svg" alt="">
-                      <div class="dropdownOptions" id="dropdownOptions">
-                        <ul>
-                            <li>Download Report</li>
-                            <li>Print List</li>
-                            <li>Export PDF</li>
-                            <li>Export Excel</li>
-                            <li>Export to Excel Section Wise Common</li>
-                            <li>Download Typing Response</li>
-                        </ul>
+                    <div class="filter-container d-none d-lg-flex d-flex justify-content-center align-items-center">
+                        <i class="fa-solid fa-filter filter-icon"></i>
                       </div>
-                    </div>
-                    <div class="refresh-btn d-flex justify-content-center align-items-center">
-                      <img class="export-icon" src="assets/images/svg/download-icon.svg" alt="">
-                    </div>
+                      <div class="filter-container d-none d-lg-flex d-flex justify-content-center align-items-center">
+                        <i class="fa-solid fa-print"></i>
+                      </div>
                   </div>
              </div>
             </div>
@@ -284,14 +273,14 @@
                       </tr>
 
                       <tr class="table-row-1" data-bs-toggle="collapse" data-bs-target="#scoreDetails" role="button">
-                        <td class="p-4">
+                        <td class="p-4 tabledrop">
                             Score Details
                         </td>
-                        <td class="p-4 input-data "></td>
-                        <td class="p-4 input-data"></td>
-                        <td class="p-4 input-data"></td>
-                        <td class="p-4 input-data"></td>
-                        <td class="p-4 input-data"></td>
+                        <td class="p-4 input-data tabledrop "></td>
+                        <td class="p-4 input-data tabledrop"></td>
+                        <td class="p-4 input-data tabledrop"></td>
+                        <td class="p-4 input-data tabledrop"></td>
+                        <td class="p-4 input-data tabledrop"></td>
                        
                       </tr>
                       
@@ -377,14 +366,14 @@
                       </tr>
 
                       <tr class="table-row-1" data-bs-toggle="collapse" data-bs-target="#educationalDetails" role="button">
-                        <td class="p-4">
+                        <td class="p-4 tabledrop">
                             Educational Details
                         </td>
-                        <td class="p-4 input-data "></td>
-                        <td class="p-4 input-data"></td>
-                        <td class="p-4 input-data"></td>
-                        <td class="p-4 input-data"></td>
-                        <td class="p-4 input-data"></td>
+                        <td class="p-4 input-data tabledrop"></td>
+                        <td class="p-4 input-data tabledrop"></td>
+                        <td class="p-4 input-data tabledrop"></td>
+                        <td class="p-4 input-data tabledrop"></td>
+                        <td class="p-4 input-data tabledrop"></td>
                        
                       </tr>
 
@@ -443,9 +432,8 @@
                             </div>
                             <p class="progress-line-value-com">99%</p>
                             <p class="progress-hover">24/40</p>
-                            
                         </div></td>
-                       
+
                       </tr>
 
                       <tr class="table-row-1 collapse multi-collapse" id="educationalDetails">
@@ -550,14 +538,14 @@
 
 
                       <tr class="table-row-1" data-bs-toggle="collapse" data-bs-target="#ProfessionalDetails" role="button">
-                        <td class="p-4">
+                        <td class="p-4 tabledrop">
                             Professional Details
                         </td>
-                        <td class="p-4 input-data "></td>
-                        <td class="p-4 input-data"></td>
-                        <td class="p-4 input-data"></td>
-                        <td class="p-4 input-data"></td>
-                        <td class="p-4 input-data"></td>
+                        <td class="p-4 input-data tabledrop"></td>
+                        <td class="p-4 input-data tabledrop"></td>
+                        <td class="p-4 input-data tabledrop"></td>
+                        <td class="p-4 input-data tabledrop"></td>
+                        <td class="p-4 input-data tabledrop"></td>
                       
                       </tr>
 
@@ -597,15 +585,8 @@
                         <td class="p-4 input-data">Information Technology</td>
                         <td class="p-4 input-data">Information Technology</td>
                         <td class="p-4 input-data">Information Technology</td>
-                        <td class="p-4 input-data">Information Technology</td>
-                       
-                       
+                        <td class="p-4 input-data">Information Technology</td> 
                       </tr>
-                      
-                      
-                      
-                     
-        
                     </tbody>
                   </table>
               </div>
