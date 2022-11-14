@@ -406,6 +406,21 @@
     <script src="https://cdn.datatables.net/buttons/2.2.3/js/buttons.html5.min.js"></script>>
 
     <script>
+      function sidemenu() {
+    var sidebar = document.getElementById("sidebar-menu")
+    var icon = document.getElementById("menu-icon")
+    var selector = document.getElementById("fullselector")
+    selector.classList.toggle("mobile-menu-stopper")
+    sidebar.classList.toggle("sidebar-active")
+    icon.classList.toggle("icon-rotate")
+    icon.classList.toggle("fa-bars")
+    icon.classList.toggle("fa-xmark")
+    
+  }
+    </script>
+
+
+    <script>
         $(document).ready(function () {
         var tableNew =  $('#result_list_table').DataTable({
           dom: 'Bf<"top"f>rt<"bottom"ilp><"clear">',
