@@ -6443,6 +6443,10 @@ color: #223752;
   text-align: center;
 }
 
+.export-icon{
+  transform: rotate(180deg);
+}
+
 
 
 /* end of new css */
