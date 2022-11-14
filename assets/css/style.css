@@ -4258,6 +4258,10 @@ textarea {
   margin-left: 15px;
 }
 
+.inside-container2 a{
+  text-decoration: none;
+}
+
 .inside-container-dashboard{
    width: 80%;
    min-height: 100%;
@@ -6477,6 +6481,10 @@ text-align: left;
 
 .risksign{
   width: 20px;
+}
+
+.gridBox a{
+  text-decoration: none;
 }
 
 
