@@ -6692,6 +6692,33 @@ text-align: left;
   border-bottom-left-radius: 10px;
 }
 
+.ModalPop p{
+  color: #000;
+  font-size: 14px;
+  font-family: Pop-medium;
+  margin-top: 10px;
+}
+
+.ModalWidth{
+  max-width: 60%  !important;
+}
+
+.ModalButton{
+  border: 1px solid #20776E;
+  text-align: center;
+  width: 149px;
+  height: 40px;
+}
+
+.ModalCancelBtn{
+  background-color: white;
+  color: #20776E;
+}
+
+.ModalAddBtn{
+  background-color: #20776E;
+  color: white;
+}
 
 
 
@@ -6841,6 +6868,10 @@ text-align: left;
 
   .compareDownloadMobile{
     display: block;
+  }
+
+  .ModalWidth{
+    max-width: 100%  !important;
   }
 
 
