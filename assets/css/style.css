@@ -6185,6 +6185,7 @@ border-radius: 5px !important;
   border-radius: 10px;
   padding: 20px;
   
+  
 }
 
 .testcard h4{
@@ -6570,10 +6571,15 @@ text-align: left;
 
 .risksign{
   width: 20px;
+  margin-bottom: 18px;
 }
 
 .gridBox a{
   text-decoration: none;
+}
+
+.gridBox{
+  max-height: 208px;
 }
 
 .tabledrop{
@@ -6761,22 +6767,116 @@ text-align: left;
     width: 20px;
   }
 
- 
+  .guageContainer{
+    height: 400px;
+  }
 
+  .percentLegend .percent0{
+    transform: translate(2px,204px);
+    font-size: 14px;
+  }
 
+  .percentLegend .percent20{
+    transform: translate(-9px,88px);
+    font-size: 14px;
+  }
+
+  .percentLegend .percent40{
+    font-size: 14px;
+    transform: translate(70px,27px);
+  }
+
+  .percentLegend .percent60{
+    font-size: 14px;
+    transform: translate(189px,22px);
+  }
+
+  .percentLegend .percent80{
+    font-size: 14px;
+    transform: translate(265px,64px);
+  }
+
+  .percentLegend .percent100{
+    font-size: 14px;
+    transform: translate(282px, 207px);
+  }
 
 
   .compareDownloadMobile{
     display: block;
   }
 
- 
-
- 
- 
-  
 
   
+}
+
+
+@media(max-width: 389px) {
+
+  .percentLegend .percent0{
+    transform: translate(2px,190px);
+    font-size: 14px;
+  }
+
+  .percentLegend .percent20{
+    transform: translate(-9px,88px);
+    font-size: 14px;
+  }
+
+  .percentLegend .percent40{
+    font-size: 14px;
+    transform: translate(70px,27px);
+  }
+
+  .percentLegend .percent60{
+    font-size: 14px;
+    transform: translate(189px,24px);
+  }
+
+  .percentLegend .percent80{
+    font-size: 14px;
+    transform: translate(241px,55px);
+  }
+
+  .percentLegend .percent100{
+    font-size: 14px;
+    transform: translate(237px, 190px);
+  }
+
+}
+
+
+@media(max-width: 396px) {
+  .percentLegend .percent0{
+    transform: translate(2px,190px);
+    font-size: 14px;
+  }
+
+  .percentLegend .percent20{
+    transform: translate(-9px,88px);
+    font-size: 14px;
+  }
+
+  .percentLegend .percent40{
+    font-size: 14px;
+    transform: translate(70px,27px);
+  }
+
+  .percentLegend .percent60{
+    font-size: 14px;
+    transform: translate(189px,24px);
+  }
+
+  .percentLegend .percent80{
+    font-size: 14px;
+    transform: translate(241px,55px);
+  }
+
+  .percentLegend .percent100{
+    font-size: 14px;
+    transform: translate(264px, 190px);
+  }
+
 }
 
 @media(max-width: 992px) {
