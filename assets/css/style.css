@@ -4926,7 +4926,7 @@ textarea {
 
 .com-table-img{
   width: 40px;
-  height: px;
+  height: 40px;
   margin-right: 15px;
 }
 
@@ -5088,7 +5088,7 @@ textarea {
 
 .progress-line-value-com{
   position: absolute;
-  margin-left: 130px;
+  margin-left: 128px;
   margin-top: -8px;
   font-size: 16px;
   font-family: Pop-medium;
@@ -6584,6 +6584,74 @@ text-align: left;
   color: white;
 }
 
+.plustoggle{
+  text-align: right;
+  transition: 0.2s;
+}
+
+.plustoggle2{
+  text-align: right;
+  transition: 0.2s;
+}
+
+.plustoggle3{
+  text-align: right;
+  transition: 0.2s;
+}
+
+.plustoggle i{
+  color: #20776E;
+  background-color: #C9EDF1;
+  border: 1px solid #20776E;
+  padding: 5px;
+  border-radius: 5px;
+  transition: 0.2s;
+}
+
+.plustoggle2 i{
+  color: #20776E;
+  background-color: #C9EDF1;
+  border: 1px solid #20776E;
+  padding: 5px;
+  border-radius: 5px;
+  transition: 0.2s;
+}
+
+.plustoggle3 i{
+  color: #20776E;
+  background-color: #C9EDF1;
+  border: 1px solid #20776E;
+  padding: 5px;
+  border-radius: 5px;
+  transition: 0.2s;
+}
+
+
+.toggle-collapse td div i{
+  transition: 0.2s ease-in-out;
+}
+
+.table-profile{
+  align-items: center;
+  width: 180px;
+}
+
+.tableSideHeading{
+  font-size: 14px;
+  color: #000000;
+  font-family: Pop-medium !important;
+  padding-left: 15px !important;
+}
+
+.tableCollapseHeading{
+  font-size: 18px !important;
+  color: #000000;
+  font-family: Pop-medium;
+}
+
+
+
+
 
 
 /* end of new css */
@@ -6679,6 +6747,18 @@ text-align: left;
     width: 30px;
     height: 30px;
     margin-right: 5px;
+  }
+  
+  .dashboardCard-img{
+    border-radius: 4px;
+    width: 35px;
+    height: 35px;
+    background-color: #F7F7F7;
+
+  }
+
+  .dashboardCard-img img{
+    width: 20px;
   }
 
  
@@ -6890,6 +6970,7 @@ text-align: left;
 
   .dashboard-content p{
     font-size: 12px;
+    min-height:90px
   }
 
   .testcard{
@@ -6909,6 +6990,8 @@ text-align: left;
   .mapcontainer{
     justify-content: center;
   }
+
+
 
 
  
