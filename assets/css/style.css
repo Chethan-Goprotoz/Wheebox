@@ -4146,6 +4146,33 @@ textarea {
   opacity: 1;
 }
 
+.filter-label::after{
+  content: "Print";
+  color: #666666;
+  padding-top: 10px;
+  text-align: center;
+  width: 155px;
+  height: 44px;
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  transform: translate(-58px,53px);
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 4px;
+  display: block;
+  opacity: 0;
+  -webkit-transition: all 0.4s ;
+    transition: all 0.4s ;
+}
+
+.filter-label:hover::after{
+  opacity: 1;
+}
+
+.print-relative{
+  position: relative;
+}
+
 
 .next-arrow::after{
   content: "Next Applicant";
