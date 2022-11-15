@@ -4244,7 +4244,7 @@ textarea {
 
 .inside-compare-app{
   min-height: 100%;
-  margin-left: 25px;
+  
   padding: 25px;
 }
 
@@ -4252,7 +4252,7 @@ textarea {
   font-size: 18px;
   letter-spacing: 0px;
   color: #2C3652;
-  margin-bottom: 36px;
+  margin-bottom: 2px;
   font-family: pop-semibold;
 }
 
