@@ -6720,6 +6720,91 @@ text-align: left;
   color: white;
 }
 
+.advanceModal{
+  font-size: 16px !important;
+  height: 54px !important;
+}
+
+.calendar{
+  width: 400px;
+  height: 52px;
+  border: 1px solid #20776E;
+  border-radius: 4px;
+  box-shadow: 0px 2px 12px #20776E29;
+  padding-left: 10px;
+  
+}
+
+.calendar-container{
+  position: relative;
+  width: 400px;
+}
+
+.calendar-container p{
+  font-size: 14px;
+  color: #000;
+  margin-bottom: 4px;
+}
+
+.fa-calendar{
+  color: #20776E;
+  position: absolute;
+  top: 55px;
+  right: 3%;
+}
+
+.daterangepicker td.active, .daterangepicker td.active:hover{
+  background-color: #20776E;
+}
+
+.applyBtn{
+  background-color: #20776E;
+}
+
+.selectContent{
+  background-color: white;
+  margin-top: 15px;
+  padding: 20px;
+  box-shadow: 0px 4px 16px #DEDEDE88;
+  display: none;
+}
+
+.selectWrapper.active .selectContent{
+  display: block;
+}
+
+.selectOptions{
+  list-style: none;
+  padding-left: 5px !important;
+  overflow-y: scroll;
+  height: 150px;
+}
+
+.selectOptions li{
+  text-align: left;
+  width: 100%;
+  margin-top: 10px;
+  
+}
+
+.selectSearch input{
+  background-color: #EEEEEE;
+  border: none;
+  width: 100%;
+  height: 40px;
+  padding-left: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 

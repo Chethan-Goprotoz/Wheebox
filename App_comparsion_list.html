@@ -84,7 +84,7 @@
              <div>
                 <div class="d-flex gap-4 flex-wrap searchContainer" id="mousecontainer">
                     <input class="search-bar" type="text" id="filterbox" placeholder="Search">
-                    <div class="filter-container d-lg-flex d-flex justify-content-center align-items-center" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <div class="filter-container d-lg-flex d-flex justify-content-center align-items-center" data-bs-toggle="modal" data-bs-target="#ModalPopup">
                         <i class="fa-solid fa-filter filter-icon"></i>
                       </div>
                       <div class="print-relative">
@@ -93,7 +93,7 @@
                         </div>
                       </div>
                 
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="ModalPopup" tabindex="-1">
   <div class="modal-dialog ModalWidth modal-dialog-centered">
     <div class="modal-content p-4">
       <div class="d-flex justify-content-end">
@@ -275,7 +275,7 @@
         </div>
         <div class="d-flex justify-content-center mt-5">
           <div>
-            <button class="ModalButton ModalCancelBtn">Cancel</button>
+            <button class="ModalButton ModalCancelBtn" data-bs-dismiss="modal">Cancel</button>
             <button class="ModalButton ModalAddBtn">Add</button>
           </div>
         </div>

@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="assets/css/loader.css">
     <!-- style css -->
     <link rel="stylesheet" href="assets/sass/app.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    
     <link rel="stylesheet" href="assets/css/style.css" rel="stylesheet">
   </head>
   
@@ -74,7 +76,204 @@
           <div class="d-flex justify-content-lg-end justify-content-between mt-3">
               <div> <i onclick="sidemenu()" id="menu-icon" class="fas fa-solid icon-w fa-bars d-block d-lg-none"></i> </div>
               <div class="filter-container d-lg-none d-flex justify-content-center align-items-center">
-                <i class="fa-solid fa-filter filter-icon"></i>
+                <i class="fa-solid fa-filter filter-icon" ></i>
+              </div>
+              <button type="button" class="btn btn-primary" >
+                Launch demo modal
+              </button>
+              
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog ModalWidth modal-dialog-centered">
+                  <div class="modal-content p-4">
+                    <div class="d-flex justify-content-end">
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div>
+                      <div>
+                       <div class="d-flex justify-content-center">
+                        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link advanceModal active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab">Domain Search</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link advanceModal" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab">Data wise Search</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link advanceModal" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab">Single user Search</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link advanceModal" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact2" type="button" role="tab">Combined Search</button>
+                          </li>
+                        </ul>
+                       </div>
+                        <div class="tab-content" id="pills-tabContent">
+                          <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                            <div class="d-flex justify-content-center">
+                              <div>
+                                <div class="calendar-container">
+                                  <p>*Select domain:</p>
+                                  <div class="select_box">
+                                    <select class="calendar">
+                                        <option>IT- NXT Gent</option>
+                                        <option>IT- Programming</option>
+                                        <option>IT-Database</option>
+                                        <option>ERP</option>
+                                        <option>Testing</option>
+                                    </select>
+                                  </div>
+                                </div>
+                                <div class="calendar-container">
+                                  <p>*Select test name:</p>
+                                  <div class="select_box">
+                                    <select class="calendar">
+                                        <option>IT- NXT Gent</option>
+                                        <option>IT- Programming</option>
+                                        <option>IT-Database</option>
+                                        <option>ERP</option>
+                                        <option>Testing</option>
+                                    </select>
+                                  </div>
+                                </div>
+                              </div>
+
+                              
+                            </div>
+                          </div>
+                          <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                            <div class="d-flex justify-content-center">
+                              <div class="calendar-container">
+                                <p>*Select Start Date &End Date:</p>
+                                <input type="text" name="datefilter" class="calendar" value="" placeholder="Select"/>
+                                <i class="fa-regular fa-calendar"></i>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                            <div class="d-flex justify-content-between">
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                  Search By Full Name
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                  Search by Registered mail ID or Login ID
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                  Search by Registered mail ID or Login ID
+                                </label>
+                              </div>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                              <input type="text" name="" id="" class="calendar">
+                            </div>
+                          </div>
+                          <div class="tab-pane fade" id="pills-contact2" role="tabpanel" aria-labelledby="pills-contact-tab">
+                            <div class="row">
+                              <div class="col-6">
+                                <div class="calendar-container">
+                                  <p>*Select Start Date &End Date:</p>
+                                  <input type="text" name="datefilter" class="calendar" value="" placeholder="Select"/>
+                                  <i class="fa-regular fa-calendar"></i>
+                                </div>
+
+                                <div class="calendar-container">
+                                  <p>*Select test name:</p>
+                                  <div class="select_box">
+                                    <select class="calendar">
+                                        <option>IT- NXT Gent</option>
+                                        <option>IT- Programming</option>
+                                        <option>IT-Database</option>
+                                        <option>ERP</option>
+                                        <option>Testing</option>
+                                    </select>
+                                  </div>
+                                </div>
+
+                                <div class="calendar-container">
+                                  <p>*Select test name:</p>
+                                  <div class="select_box">
+                                    <select class="calendar">
+                                        <option>IT- NXT Gent</option>
+                                        <option>IT- Programming</option>
+                                        <option>IT-Database</option>
+                                        <option>ERP</option>
+                                        <option>Testing</option>
+                                    </select>
+                                  </div>
+                                </div>
+
+
+                              </div>
+
+                              <div class="col-6">
+
+                                <div class="calendar-container">
+                                  <p>*Select test name:</p>
+                                  <div class="select_box">
+                                    <select class="calendar">
+                                        <option>IT- NXT Gent</option>
+                                        <option>IT- Programming</option>
+                                        <option>IT-Database</option>
+                                        <option>ERP</option>
+                                        <option>Testing</option>
+                                    </select>
+                                  </div>
+                                </div>
+
+                                <div class="calendar-container">
+                                  <p>*Select test name:</p>
+                                  <div class="select_box">
+                                    <select class="calendar">
+                                        <option>IT- NXT Gent</option>
+                                        <option>IT- Programming</option>
+                                        <option>IT-Database</option>
+                                        <option>ERP</option>
+                                        <option>Testing</option>
+                                    </select>
+                                  </div>
+                                </div>
+
+                                <div class="calendar-container">
+                                  
+                                  <div class="d-flex">
+                                  
+                                    <div class="form-check">
+                                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                      <label class="form-check-label" for="flexRadioDefault1">
+                                        Search By Full Name
+                                      </label>
+                                    </div>
+                                    <div class="form-check">
+                                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                      <label class="form-check-label" for="flexRadioDefault1">
+                                        Search By Full Name
+                                      </label>
+                                    </div>
+                                  </div>
+                                </div>
+
+                              </div>
+                            </div>
+                           
+                          </div>
+                        </div>
+                        
+                      </div>
+                      <div class="d-flex justify-content-center mt-5">
+                        <div>
+                          <button class="ModalButton ModalAddBtn">Submit</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
           </div>
       </div>
@@ -754,6 +953,32 @@ onmouseover="TamilNadu()"
     <!-- Load plotly.js into the DOM -->
 	<script src='https://cdn.plot.ly/plotly-2.16.1.min.js'></script>
   <script src="assets/js/statesInfo.js"></script>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+
+
+<script type="text/javascript">
+  $(function() {
+  
+    $('input[name="datefilter"]').daterangepicker({
+        autoUpdateInput: false,
+        locale: {
+            cancelLabel: 'Clear'
+        }
+    });
+  
+    $('input[name="datefilter"]').on('apply.daterangepicker', function(ev, picker) {
+        $(this).val(picker.startDate.format('MM/DD/YYYY') + ' - ' + picker.endDate.format('MM/DD/YYYY'));
+    });
+  
+    $('input[name="datefilter"]').on('cancel.daterangepicker', function(ev, picker) {
+        $(this).val('');
+    });
+  
+  });
+  </script>
   
   <script>
     function sidemenu() {
