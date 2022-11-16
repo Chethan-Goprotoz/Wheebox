@@ -4266,7 +4266,7 @@ textarea {
    min-height: 100%;
    margin-left: 25px;
    padding: 25px;
-   
+
 }
 
 .inside-compare-app{
@@ -4297,6 +4297,7 @@ textarea {
   width: 80%;
   padding: 20px;
   margin-left: 15px;
+  position: relative;
 }
 
 .inside-container2 a{
@@ -6556,9 +6557,9 @@ transform: translate(-89px,-110px)
   cursor: pointer;
 }
 
-.filter-container:hover{
-  background-color: #09534c;
-}
+
+
+
 
 .population{
   
@@ -6723,6 +6724,9 @@ text-align: left;
 .advanceModal{
   font-size: 16px !important;
   height: 54px !important;
+  padding-left: 50px;
+  padding-right: 50px;
+  
 }
 
 .calendar{
@@ -6732,12 +6736,36 @@ text-align: left;
   border-radius: 4px;
   box-shadow: 0px 2px 12px #20776E29;
   padding-left: 10px;
+}
+
+.vscomp-toggle-button{
+  background-color: white;
+  border: 1px solid #20776E;
+  width: 400px;
+  height: 52px;
+  border-radius: 4px;
+  box-shadow: 0px 2px 12px #20776E29;
   
 }
+
+.vscomp-ele{
+  max-width: 400px;
+}
+
 
 .calendar-container{
   position: relative;
   width: 400px;
+  margin-top: 50px;
+  z-index: 200;
+}
+
+.calendar-container2{
+  position: relative;
+  width: 80%;
+  margin-top: 50px;
+  z-index: 200;
+  
 }
 
 .calendar-container p{
@@ -6766,46 +6794,50 @@ text-align: left;
   margin-top: 15px;
   padding: 20px;
   box-shadow: 0px 4px 16px #DEDEDE88;
-  display: none;
+  
 }
 
 .selectWrapper.active .selectContent{
   display: block;
 }
 
-.selectOptions{
-  list-style: none;
-  padding-left: 5px !important;
-  overflow-y: scroll;
-  height: 150px;
+.filter-popup{
+  width: 100%;
+  height: 33%;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 40;
+  border-radius: 10px;
+  display: none;
 }
 
-.selectOptions li{
-  text-align: left;
-  width: 100%;
-  margin-top: 10px;
-  
+.adpop{
+  display: block;
 }
 
-.selectSearch input{
-  background-color: #EEEEEE;
-  border: none;
-  width: 100%;
-  height: 40px;
+
+
+
+.filter-popup h2{
+  text-align: center;
+  color: #2C3652;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 24px;
+  margin-bottom: 80px;
+}
+
+.SearchNameField input{
+  width: 400px;
+  height: 52px;
+  border: 1px solid #20776E;
+  border-radius: 4px;
+  box-shadow: 0px 2px 12px #20776E29;
   padding-left: 10px;
+  margin-top: 80px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
