@@ -1,0 +1,355 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rpass Dashboard</title>
+    <!-- font awesome css -->
+    <link rel="stylesheet" href="assets/font-awesome/all.min.css" />
+    <link rel="stylesheet" href="assets/font-awesome/fontawesome.css" />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- loader css -->
+    <link rel="stylesheet" href="assets/css/loader.css">
+    <!-- style css -->
+    <link rel="stylesheet" href="assets/sass/app.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <link rel="stylesheet" href="assets/css/virtual-select.min.css">
+  </head>
+  
+  <body>
+    <!-- loader start-->
+    <div class="loader-container">
+      <div class="loader"></div>
+    </div>
+    <!-- loader end-->
+    <!--selection section start -->
+    <div class="selection-new " id="fullselector">
+      <div class="container-fluid">
+        <div class="main_div">
+          <div class="row">
+            <div class="main_header mb-1">
+              <div class="d-flex justify-content-between navpart1">
+                <div class="logo new-logopart">
+                  <img src="assets/images/logo_logo.png" alt="mini-logo">
+                </div>
+              </div>
+              <div class="d-flex align-items-center gap-5">
+                <div class="d-flex gap-4">
+                  
+                  <div>
+                    <a href="#">
+                      <div class="home-search">
+                        <img class="nav-arrows-1" src="assets/images/home-hover.svg" alt="">
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="grid-new" id="profile-out">
+                  <div class="grid1-new" onclick="profile()">
+                    <div class="profile rounded-circle">
+                      <img src="assets/images/prof-mini.png" alt="profile">
+                    </div>
+                  </div>
+                  <div class="grid2-new d-none d-md-block" onclick="profile()">
+                    <h6>Jane Doe</h6>
+                    <p>jane_doe@wheebox.com</p>
+                  </div>
+                  <div class="profileDropdown" id="profileDropdown">
+                    <ul>
+                      <li>Admin Profile</li>
+                      <li>Change Password</li>
+                      <li>Help Center</li>
+                      <li>Log Out</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- row closed -->
+        </div>
+        <div class="d-flex justify-content-lg-end justify-content-between mt-3">
+          <div> <i onclick="sidemenu()" id="menu-icon" class="fas fa-solid icon-w fa-bars d-block d-lg-none"></i> </div>
+          <div class="filter-container d-lg-none d-flex justify-content-center align-items-center">
+            <i class="fa-solid fa-filter filter-icon"></i>
+          </div>
+      </div>
+      </div>
+      <div class="sidebar">
+        <div class="d-flex">
+          <div class="side1" id="sidebar-menu">
+            <a href="#">
+               <div class="d-flex sideMenu mt-5"> <img class="icon-align" src="assets/images/svg/RpassDashboard-icon.svg" alt="">
+                   <p>Dashboard</p>
+               </div>
+           </a> <a href="#">
+               <div class="d-flex sideMenu"> <img class="icon-align" src="assets/images/svg/manage-auto-icon.svg" alt="">
+                   <p>Manage Auto-Procto...</p>
+               </div>
+           </a> <a href="#">
+               <div class="d-flex sideMenu"> <img class="icon-align" src="assets/images/svg/advanceAnalytics.svg" alt="">
+                   <p>Advance Analytics</p>
+               </div>
+           </a> <a href="#">
+               <div class="d-flex sideMenu"> <img class="icon-align" src="assets/images/svg/futurecampus.svg" alt="">
+                   <p>Future Campus Analy...</p>
+               </div>
+           </a>
+           <a href="#">
+             <div class="d-flex sideMenu active-one"> <img class="icon-align" src="assets/images/svg/rpassDashboard.svg" alt="">
+                 <p>RPaaS Dashboard</p>
+             </div>
+         </a>
+         <a href="#">
+           <div class="d-flex sideMenu"> <img class="icon-align" src="assets/images/svg/proctoringScore.svg" alt="">
+               <p>Proctoring Report</p>
+           </div>
+       </a>
+       </div>
+          <div class="inside-container-dashboard">
+            <div class="filter-popup" id="filter-popup">
+                <h2>Advance Search</h2>
+                <div>
+                  <div>
+                    <div class="d-flex justify-content-center">
+                      <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link advanceModal active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab">Domain Search</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link advanceModal" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab">Data wise Search</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link advanceModal" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab">Single user Search</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link advanceModal" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact2" type="button" role="tab">Combined Search</button>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="tab-content" id="pills-tabContent">
+                      <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                        <div class="d-flex justify-content-center">
+                          <div class="calendar-container">
+                            <p>*Select Start Date &End Date:</p>
+                            <select id="SearchDropdown" name="native-select" placeholder="Select" data-search="true" data-silent-initial-value-set="true">
+                              <option value="1">Option 1</option>
+                              <option value="2">Option 2</option>
+                              <option value="3">Option 3</option>
+                              <option value="4">Option 4</option>
+                              <option value="5">Option 5</option>
+                              <option value="6">Option 6</option>
+                            </select>
+                            <p class="mt-5">*Select Start Date &End Date:</p>
+                            <select id="SearchDropdown" name="native-select" placeholder="Select" data-search="true" data-silent-initial-value-set="true">
+                              <option value="1">Option 1</option>
+                              <option value="2">Option 2</option>
+                              <option value="3">Option 3</option>
+                              <option value="4">Option 4</option>
+                              <option value="5">Option 5</option>
+                              <option value="6">Option 6</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                        <div class="d-flex justify-content-center">
+                         <div class="calendar-container">
+                            <p>*Select Start Date &End Date:</p>
+                            <input type="text" name="datefilter" class="calendar" value="" placeholder="Select"/>
+                            <i class="fa-regular fa-calendar"></i>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                        <div class="d-flex justify-content-center">
+                          <div class="calendar-container2">
+                            <div class="d-flex justify-content-between">
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                  Search by Full name
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                  Search by Registered mail ID or Login ID
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                  Search by Mobile number
+                                </label>
+                              </div>
+                            </div>
+                            <div class="d-flex justify-content-center SearchNameField">
+                              <input type="text">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tab-pane fade" id="pills-contact2" role="tabpanel" aria-labelledby="pills-contact-tab">
+                        <div class="d-flex justify-content-center p-5">
+                          <div class="col-12 col-md-6">
+                            <div >
+                              <p>*Select Start Date &End Date:</p>
+                              <input type="text" name="datefilter" class="calendar" value="" placeholder="Select"/>
+                              <i class="fa-regular fa-calendar"></i>
+                            </div>
+                            <div>
+                                <p>*Select Start Date &End Date:</p>
+                              <select id="SearchDropdown" name="native-select" placeholder="Select" data-search="true" data-silent-initial-value-set="true">
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                                <option value="3">Option 3</option>
+                                <option value="4">Option 4</option>
+                                <option value="5">Option 5</option>
+                                <option value="6">Option 6</option>
+                              </select>
+                            </div>
+                            <div>
+                              <p>*Select Start Date &End Date:</p>
+                            <select id="SearchDropdown" name="native-select" placeholder="Select" data-search="true" data-silent-initial-value-set="true">
+                              <option value="1">Option 1</option>
+                              <option value="2">Option 2</option>
+                              <option value="3">Option 3</option>
+                              <option value="4">Option 4</option>
+                              <option value="5">Option 5</option>
+                              <option value="6">Option 6</option>
+                            </select>
+                            </div>
+  
+                          </div>
+                          <div class="col-12 col-md-6">
+                            <div>
+                              <p>*Select Start Date &End Date:</p>
+                            <select id="SearchDropdown" name="native-select" placeholder="Select" data-search="true" data-silent-initial-value-set="true">
+                              <option value="1">Option 1</option>
+                              <option value="2">Option 2</option>
+                              <option value="3">Option 3</option>
+                              <option value="4">Option 4</option>
+                              <option value="5">Option 5</option>
+                              <option value="6">Option 6</option>
+                            </select>
+                            </div>
+                            <div>
+                              <p>*Select Start Date &End Date:</p>
+                            <select id="SearchDropdown" name="native-select" placeholder="Select" data-search="true" data-silent-initial-value-set="true">
+                              <option value="1">Option 1</option>
+                              <option value="2">Option 2</option>
+                              <option value="3">Option 3</option>
+                              <option value="4">Option 4</option>
+                              <option value="5">Option 5</option>
+                              <option value="6">Option 6</option>
+                            </select>
+                            </div>
+                            <div class="d-flex mt-5 gap-3">
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                  Male
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                  Female
+                                </label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-center mt-5">
+                    <div>
+                      <button class="ModalButton ModalAddBtn">Submit</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- main-div closed -->
+    </div>
+    <!-- container closed -->
+    </section>
+    <!--selection section end -->
+    <script src="https://kit.fontawesome.com/5817738a37.js" crossorigin="anonymous"></script>
+    <script src="assets/js/jquery-2.2.0.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/loader.js"></script>
+    <script src="assets/js/chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Load plotly.js into the DOM -->
+	<script src='https://cdn.plot.ly/plotly-2.16.1.min.js'></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <script src="assets/js/virual-select.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+
+
+    <script>
+        VirtualSelect.init({
+          ele: '#SearchDropdown'
+        });
+      </script>
+      <script type="text/javascript">
+        $(function() {
+          $('input[name="datefilter"]').daterangepicker({
+            autoUpdateInput: false,
+            locale: {
+              cancelLabel: 'Clear'
+            }
+          });
+          $('input[name="datefilter"]').on('apply.daterangepicker', function(ev, picker) {
+            $(this).val(picker.startDate.format('MM/DD/YYYY') + ' - ' + picker.endDate.format('MM/DD/YYYY'));
+          });
+          $('input[name="datefilter"]').on('cancel.daterangepicker', function(ev, picker) {
+            $(this).val('');
+          });
+        });
+      </script>
+
+<script>
+  function sidemenu() {
+var sidebar = document.getElementById("sidebar-menu")
+var icon = document.getElementById("menu-icon")
+var selector = document.getElementById("fullselector")
+selector.classList.toggle("mobile-menu-stopper")
+sidebar.classList.toggle("sidebar-active")
+icon.classList.toggle("icon-rotate")
+icon.classList.toggle("fa-bars")
+icon.classList.toggle("fa-xmark")
+
+}
+</script>
+
+
+    <script>
+      function profile() {
+        profileMenu = document.getElementById("profileDropdown")
+        profileMenu.classList.toggle("dropdownActive")
+        document.addEventListener('click', function profile(event) {
+          console.log("clicked")
+          const box4 = document.getElementById('profile-out');
+          if (!box4.contains(event.target)) {
+            profileMenu.classList.remove("dropdownActive")
+          }
+        });
+      }
+    </script>
+<script>
+   
+</script>
+   
+  </body>
+</html>

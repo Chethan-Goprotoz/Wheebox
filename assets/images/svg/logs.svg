@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="22" viewBox="0 0 24 22">
+  <g id="Group_66704" data-name="Group 66704" transform="translate(6373 1430)">
+    <g id="Group_66702" data-name="Group 66702" transform="translate(-6373 -1430)">
+      <rect id="Rectangle_12451" data-name="Rectangle 12451" width="19" height="22" rx="4" fill="#25857a"/>
+      <rect id="Rectangle_12452" data-name="Rectangle 12452" width="13" height="7" rx="2" transform="translate(11 12)" fill="#fff"/>
+      <g id="Group_66703" data-name="Group 66703" transform="translate(14.5 13.226)">
+        <path id="Path_63340" data-name="Path 63340" d="M1,17.523H6.522l-.8.8L5.9,18.5l1.1-1.1-1.1-1.1-.179.179.8.8H1Z" transform="translate(-1 -16.293)" fill="#25857a"/>
+        <path id="Path_63341" data-name="Path 63341" d="M0,1.23H5.522l-.8.8.179.179,1.1-1.1L4.9,0,4.725.179l.8.8H0Z" transform="translate(6.007 4.439) rotate(180)" fill="#f01d1d"/>
+      </g>
+    </g>
+    <line id="Line_1198" data-name="Line 1198" x2="10.776" transform="translate(-6369.767 -1425.33)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="0.5"/>
+    <line id="Line_1199" data-name="Line 1199" x2="7.184" transform="translate(-6369.767 -1423.175)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="0.5"/>
+    <line id="Line_1200" data-name="Line 1200" x2="5.747" transform="translate(-6369.767 -1421.02)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="0.5"/>
+    <line id="Line_1202" data-name="Line 1202" x2="8.621" transform="translate(-6369.767 -1418.865)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="0.5"/>
+    <line id="Line_1203" data-name="Line 1203" x2="8.621" transform="translate(-6369.767 -1416.71)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="0.5"/>
+    <line id="Line_1204" data-name="Line 1204" x2="8.621" transform="translate(-6369.767 -1414.554)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="0.5"/>
+  </g>
+</svg>

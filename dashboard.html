@@ -16,7 +16,6 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
     <link rel="stylesheet" href="assets/css/virtual-select.min.css">
     <link rel="stylesheet" href="assets/css/style.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
   </head>
   <body>
     <!-- loader start-->
@@ -76,6 +75,7 @@
               <i onclick="sidemenu()" id="menu-icon" class="fas fa-solid icon-w fa-bars d-block d-lg-none"></i>
             </div>
             <div class="filter-container d-lg-none d-flex justify-content-center align-items-center">
+              <p>Filter</p>
               <i class="fa-solid fa-filter filter-icon"></i>
             </div>
           </div>
@@ -122,173 +122,10 @@
             </a>
           </div>
           <div class="inside-container2">
-            <div class="filter-popup" id="filter-popup">
-              <h2>Advance Search</h2>
-              <div>
-                <div>
-                  <div class="d-flex justify-content-center">
-                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                      <li class="nav-item" role="presentation">
-                        <button class="nav-link advanceModal active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab">Domain Search</button>
-                      </li>
-                      <li class="nav-item" role="presentation">
-                        <button class="nav-link advanceModal" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab">Data wise Search</button>
-                      </li>
-                      <li class="nav-item" role="presentation">
-                        <button class="nav-link advanceModal" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab">Single user Search</button>
-                      </li>
-                      <li class="nav-item" role="presentation">
-                        <button class="nav-link advanceModal" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact2" type="button" role="tab">Combined Search</button>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="tab-content" id="pills-tabContent">
-                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                      <div class="d-flex justify-content-center">
-                        <div class="calendar-container">
-                          <p>*Select Start Date &End Date:</p>
-                          <select id="SearchDropdown" name="native-select" placeholder="Select" data-search="true" data-silent-initial-value-set="true">
-                            <option value="1">Option 1</option>
-                            <option value="2">Option 2</option>
-                            <option value="3">Option 3</option>
-                            <option value="4">Option 4</option>
-                            <option value="5">Option 5</option>
-                            <option value="6">Option 6</option>
-                          </select>
-                          <p class="mt-5">*Select Start Date &End Date:</p>
-                          <select id="SearchDropdown" name="native-select" placeholder="Select" data-search="true" data-silent-initial-value-set="true">
-                            <option value="1">Option 1</option>
-                            <option value="2">Option 2</option>
-                            <option value="3">Option 3</option>
-                            <option value="4">Option 4</option>
-                            <option value="5">Option 5</option>
-                            <option value="6">Option 6</option>
-                          </select>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                      <div class="d-flex justify-content-center">
-                       <div class="calendar-container">
-                          <p>*Select Start Date &End Date:</p>
-                          <input type="text" name="datefilter" class="calendar" value="" placeholder="Select"/>
-                          <i class="fa-regular fa-calendar"></i>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-                      <div class="d-flex justify-content-center">
-                        <div class="calendar-container2">
-                          <div class="d-flex justify-content-between">
-                            <div class="form-check">
-                              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                              <label class="form-check-label" for="flexRadioDefault1">
-                                Search by Full name
-                              </label>
-                            </div>
-                            <div class="form-check">
-                              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                              <label class="form-check-label" for="flexRadioDefault1">
-                                Search by Registered mail ID or Login ID
-                              </label>
-                            </div>
-                            <div class="form-check">
-                              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                              <label class="form-check-label" for="flexRadioDefault1">
-                                Search by Mobile number
-                              </label>
-                            </div>
-                          </div>
-                          <div class="d-flex justify-content-center SearchNameField">
-                            <input type="text">
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="tab-pane fade" id="pills-contact2" role="tabpanel" aria-labelledby="pills-contact-tab">
-                      <div class="d-flex justify-content-center p-5">
-                        <div class="col-12 col-md-6">
-                          <div >
-                            <p>*Select Start Date &End Date:</p>
-                            <input type="text" name="datefilter" class="calendar" value="" placeholder="Select"/>
-                            <i class="fa-regular fa-calendar"></i>
-                          </div>
-                          <div>
-                              <p>*Select Start Date &End Date:</p>
-                            <select id="SearchDropdown" name="native-select" placeholder="Select" data-search="true" data-silent-initial-value-set="true">
-                              <option value="1">Option 1</option>
-                              <option value="2">Option 2</option>
-                              <option value="3">Option 3</option>
-                              <option value="4">Option 4</option>
-                              <option value="5">Option 5</option>
-                              <option value="6">Option 6</option>
-                            </select>
-                          </div>
-                          <div>
-                            <p>*Select Start Date &End Date:</p>
-                          <select id="SearchDropdown" name="native-select" placeholder="Select" data-search="true" data-silent-initial-value-set="true">
-                            <option value="1">Option 1</option>
-                            <option value="2">Option 2</option>
-                            <option value="3">Option 3</option>
-                            <option value="4">Option 4</option>
-                            <option value="5">Option 5</option>
-                            <option value="6">Option 6</option>
-                          </select>
-                          </div>
-
-                        </div>
-                        <div class="col-12 col-md-6">
-                          <div>
-                            <p>*Select Start Date &End Date:</p>
-                          <select id="SearchDropdown" name="native-select" placeholder="Select" data-search="true" data-silent-initial-value-set="true">
-                            <option value="1">Option 1</option>
-                            <option value="2">Option 2</option>
-                            <option value="3">Option 3</option>
-                            <option value="4">Option 4</option>
-                            <option value="5">Option 5</option>
-                            <option value="6">Option 6</option>
-                          </select>
-                          </div>
-                          <div>
-                            <p>*Select Start Date &End Date:</p>
-                          <select id="SearchDropdown" name="native-select" placeholder="Select" data-search="true" data-silent-initial-value-set="true">
-                            <option value="1">Option 1</option>
-                            <option value="2">Option 2</option>
-                            <option value="3">Option 3</option>
-                            <option value="4">Option 4</option>
-                            <option value="5">Option 5</option>
-                            <option value="6">Option 6</option>
-                          </select>
-                          </div>
-                          <div class="d-flex mt-5 gap-3">
-                            <div class="form-check">
-                              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                              <label class="form-check-label" for="flexRadioDefault1">
-                                Male
-                              </label>
-                            </div>
-                            <div class="form-check">
-                              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                              <label class="form-check-label" for="flexRadioDefault1">
-                                Female
-                              </label>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="d-flex justify-content-center mt-5">
-                  <div>
-                    <button class="ModalButton ModalAddBtn">Submit</button>
-                  </div>
-                </div>
-              </div>
-            </div>
             <div class="d-flex justify-content-between">
               <h3>Dashboard</h3>
               <div class="filter-container d-none d-lg-flex d-flex justify-content-center align-items-center" onclick="AdvancePopup()">
+                <p>Filter</p>
                 <i class="fa-solid fa-filter filter-icon"></i>
               </div>
             </div>
@@ -731,8 +568,7 @@
     <script src="assets/js/statesInfo.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
-    <script src="assets/js/virual-select.min.js"></script>
+
 
 
 <script>
