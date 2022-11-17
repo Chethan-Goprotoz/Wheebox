@@ -6819,7 +6819,6 @@ text-align: left;
 }
 
 .filter-popup{
-  width: 100%;
   height: 100%;
   background-color: white;
   border-radius: 10px;
@@ -6891,6 +6890,8 @@ text-align: left;
   border: 3px solid #FF7474;
 }
 
+
+
 .flipcard{
   position: relative;
   transition: transform 1000ms;
@@ -6920,13 +6921,41 @@ text-align: left;
   color: #20776E;
 }
 
-.flipcard:hover{
+.rankcard:hover >.flipcard{
   transform: rotateY(180deg);
 }
 
 .frontcard{
   backface-visibility: hidden;
 }
+
+.form-check-input:checked[type=radio]{
+  background-image: none;
+}
+
+.form-check-input:checked{
+  background-color: #20776E;
+  border-color: #DAEDEB;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* end of new css */
@@ -7086,6 +7115,14 @@ text-align: left;
     align-items: center;
    }
 
+   .calendar {
+    width: 280px;
+   }
+
+   .tabs-area{
+    flex-direction: column;
+   }
+
 
   
 }
@@ -7156,6 +7193,8 @@ text-align: left;
     font-size: 14px;
     transform: translate(264px, 190px);
   }
+
+
 
 }
 
@@ -7371,6 +7410,10 @@ text-align: left;
     justify-content: center;
   }
 
+  .vscomp-toggle-button{
+    width: 280px;
+  }
+
 
 
 
@@ -7427,3 +7470,11 @@ text-align: left;
   }
   }
 
+
+  @media(max-width: 1330px) {
+
+    .advanceModal{
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    }
