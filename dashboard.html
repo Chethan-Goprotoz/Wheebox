@@ -85,12 +85,29 @@
       <div class="sidebar">
         <div class="d-flex">
           <div class="side1" id="sidebar-menu">
-            <a href="#">
-              <div class="d-flex sideMenu mt-5 active-one">
+            
+              <div class="d-flex sideMenu mt-5 active-one" data-bs-toggle="collapse" href="#dashboard" role="button">
                 <img class="icon-align" src="assets/images/svg/RpassDashboard-icon.svg" alt="">
-                <p>Dashboard</p>
+                <div class="d-flex justify-content-between align-items-center w-100 sidemenudropdown">
+                  <p>Dashboard</p>
+                  <i class="fa-solid fa-chevron-down"></i>
+                </div>
               </div>
-            </a>
+
+              <div class="collapse" id="dashboard">
+                <div class="sidemenudropdown-items">
+                  <a href="#">
+                    <p>Option1</p>
+                  </a>
+                  <a href="#">
+                    <p>Option2</p>
+                  </a>
+                  <a href="#">
+                    <p>Option3</p>
+                  </a>
+                </div>
+              </div>
+            
             <a href="#">
               <div class="d-flex sideMenu">
                 <img class="icon-align" src="assets/images/svg/manage-auto-icon.svg" alt="">
@@ -216,7 +233,8 @@
                           <p class="percent7-90">70-100%</p>
                         </div>
                         <img src="assets/images/svg/scorecard-lv.png" alt="">
-                        <div class="gauge-pointer-switch" id="gauge-pointer" data-gauge="100">
+                        <!-- pass data value (data-gauge=" ") to change needle -->
+                        <div class="gauge-pointer-switch" id="gauge-pointer" data-gauge="90"> 
                           <img class="gauge-pointer" src="assets/images/svg/pointerLine.svg" alt="">
                         </div>
                       </div>

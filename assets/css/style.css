@@ -6984,6 +6984,17 @@ text-align: left;
   transform: translate(-13px,6px) rotate(84deg);
 }
 
+.sidemenudropdown p{
+  margin-top: 10px;
+}
+
+.sidemenudropdown-items a p{
+  margin-left: 63px;
+  font-size: 14px;
+  color: #20776E;
+  font-family: Pop-medium;
+  margin-top: 16px;
+}
 
 
 
