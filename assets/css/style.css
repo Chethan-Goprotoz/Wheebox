@@ -6724,6 +6724,7 @@ text-align: left;
   text-align: center;
   width: 149px;
   height: 40px;
+  margin-bottom: 50px;
 }
 
 .ModalCancelBtn{
@@ -6764,15 +6765,15 @@ text-align: left;
 }
 
 .vscomp-ele{
-  max-width: 400px;
+  max-width: 100%;
 }
 
 
 .calendar-container{
   position: relative;
-  width: 400px;
   margin-top: 50px;
   z-index: 200;
+  
 }
 
 .calendar-container2{
@@ -6788,6 +6789,7 @@ text-align: left;
   color: #000;
   margin-bottom: 4px;
 }
+
 
 .fa-calendar{
   color: #20776E;
