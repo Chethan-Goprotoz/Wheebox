@@ -216,7 +216,7 @@
                           <p class="percent7-90">70-100%</p>
                         </div>
                         <img src="assets/images/svg/scorecard-lv.png" alt="">
-                        <div class="gauge-pointer-switch">
+                        <div class="gauge-pointer-switch" id="gauge-pointer" data-gauge="100">
                           <img class="gauge-pointer" src="assets/images/svg/pointerLine.svg" alt="">
                         </div>
                       </div>
@@ -570,6 +570,51 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
     <script src="assets/js/virual-select.min.js"></script>
+
+
+    <script>
+      var gauge_container = document.getElementById("gauge-pointer")
+      var gauge_value = gauge_container.dataset.gauge
+
+      if(parseInt(gauge_value)<=10){
+        gauge_container.classList.add("gauge-percent-10")
+      }
+      else if (parseInt(gauge_value)<=20) {
+        gauge_container.classList.add("gauge-percent-20")
+      }
+      else if (parseInt(gauge_value)<=30) {
+        gauge_container.classList.add("gauge-percent-30")
+      }
+      else if (parseInt(gauge_value)<=40) {
+        gauge_container.classList.add("gauge-percent-40")
+      }
+      else if (parseInt(gauge_value)<=50) {
+        gauge_container.classList.add("gauge-percent-50")
+      }
+      else if (parseInt(gauge_value)<=60) {
+        gauge_container.classList.add("gauge-percent-60")
+      }
+      else if (parseInt(gauge_value)<=65) {
+        gauge_container.classList.add("gauge-percent-65")
+      }
+      else if (parseInt(gauge_value)<=70) {
+        gauge_container.classList.add("gauge-percent-70")
+      }
+      
+      else if (parseInt(gauge_value)<=80) {
+        gauge_container.classList.add("gauge-percent-80")
+      }
+      else if (parseInt(gauge_value)<=90) {
+        gauge_container.classList.add("gauge-percent-90")
+      }
+      else{
+        gauge_container.classList.add("gauge-percent-100")
+      }
+      
+      
+      
+      
+    </script>
 
 
 <script>
