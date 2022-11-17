@@ -6988,7 +6988,7 @@ text-align: left;
   margin-top: 10px;
 }
 
-.sidemenudropdown-items a p{
+.sidemenudropdown-items a li{
   margin-left: 63px;
   font-size: 14px;
   color: #20776E;
@@ -6996,6 +6996,10 @@ text-align: left;
   margin-top: 16px;
 }
 
+.calendar-position{
+  position: relative;
+  width: 400px;
+}
 
 
 
@@ -7180,6 +7184,10 @@ text-align: left;
     flex-direction: column;
    }
 
+   .calendar-position{
+    width: 280px;
+   }
+
 
   
 }
@@ -7290,7 +7298,7 @@ text-align: left;
     left: -100%;
     max-width: 100%;
     transition: 0.5s linear;
-    z-index: 100;
+    z-index: 300;
     background-color: #F6F8FC;
     padding: 16px;
     
