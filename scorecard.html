@@ -136,22 +136,22 @@
                                     
                                   </ul> -->
                                  <div class="d-flex justify-content-center align-items-end">
-                                    <div class="background-scorecard">
-                                        <div>
-                                            <p class="space-limiter">data</p>
-                                            <p class="percent1-5">0-50%</p>
-                                            <p class="percent5-7">51-70%</p>
-                                            <p class="percent7-9">70-100%</p>
-                                        </div>
-                                        <img src="assets/images/svg/scorecard-lv.png" alt="">
-                                        <div class="arrow-container">
-                                            <div class="arrow-wrapper lv-100">
-                                                <div class="arrow">
-                                                    <img src="assets/images/svg/pointerLine.svg" alt="">
-                                                </div>
+                                    <div class="d-flex justify-content-center align-items-end">
+                                        <div class="d-flex justify-content-center mt-">
+                                          <div class="gauge-full2">
+                                            <div>
+                                              <p class="percent1-50">0-50%</p>
+                                              <p class="percent5-70">51-70%</p>
+                                              <p class="percent7-90">70-100%</p>
                                             </div>
+                                            <img src="assets/images/svg/scorecard-lv.png" alt="">
+                                            <!-- pass data value (data-gauge=" ") to change needle -->
+                                            <div class="gauge-pointer-switch" id="gauge-pointer" data-gauge="50"> 
+                                              <img class="gauge-pointer" src="assets/images/svg/pointerLine.svg" alt="">
+                                            </div>
+                                          </div>
                                         </div>
-                                     </div>
+                                      </div>
                                  </div>
                             </div>
                             <div class="appDetailCard card-width-score">
@@ -299,6 +299,50 @@
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="assets/js/phase2.js"></script>
+
+    <script>
+        var gauge_container = document.getElementById("gauge-pointer")
+        var gauge_value = gauge_container.dataset.gauge
+  
+        if(parseInt(gauge_value)<=10){
+          gauge_container.classList.add("gauge-percent-10")
+        }
+        else if (parseInt(gauge_value)<=20) {
+          gauge_container.classList.add("gauge-percent-20")
+        }
+        else if (parseInt(gauge_value)<=30) {
+          gauge_container.classList.add("gauge-percent-30")
+        }
+        else if (parseInt(gauge_value)<=40) {
+          gauge_container.classList.add("gauge-percent-40")
+        }
+        else if (parseInt(gauge_value)<=50) {
+          gauge_container.classList.add("gauge-percent-50")
+        }
+        else if (parseInt(gauge_value)<=60) {
+          gauge_container.classList.add("gauge-percent-60")
+        }
+        else if (parseInt(gauge_value)<=65) {
+          gauge_container.classList.add("gauge-percent-65")
+        }
+        else if (parseInt(gauge_value)<=70) {
+          gauge_container.classList.add("gauge-percent-70")
+        }
+        
+        else if (parseInt(gauge_value)<=80) {
+          gauge_container.classList.add("gauge-percent-80")
+        }
+        else if (parseInt(gauge_value)<=90) {
+          gauge_container.classList.add("gauge-percent-90")
+        }
+        else{
+          gauge_container.classList.add("gauge-percent-100")
+        }
+        
+        
+        
+        
+      </script>
 
     <script>
         function profile(){

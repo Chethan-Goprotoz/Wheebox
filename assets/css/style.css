@@ -6534,6 +6534,19 @@ transform: translate(-89px,-110px)
   margin-top: 30%;
 }
 
+.gauge-full2 img{
+  width: 300px;
+}
+
+.gauge-full2{
+  position: relative;
+  vertical-align: baseline;
+  scale: 0.85;
+  margin-top: 30%;
+}
+
+
+
 .gauge-pointer{
   position: absolute;
   width: 100px;
@@ -7099,6 +7112,8 @@ text-align: left;
     margin-top: 0;
   }
 
+  
+
   .mapcontainer svg{
     scale: 0.45;
     transform: translate(-173px,-350px);
@@ -7259,6 +7274,11 @@ text-align: left;
   .percentLegend .percent100{
     font-size: 14px;
     transform: translate(264px, 190px);
+  }
+
+  .gauge-full2{
+    scale: 0.7;
+    
   }
 
 
