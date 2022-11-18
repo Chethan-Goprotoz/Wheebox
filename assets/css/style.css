@@ -7004,11 +7004,18 @@ text-align: left;
 }
 
 .sidemenudropdown-items a li{
-  margin-left: 63px;
-  font-size: 14px;
+  padding-left: 24px;
+  font-size: 18px;
   color: #20776E;
   font-family: Pop-medium;
-  margin-top: 16px;
+  margin-top: 10px;
+  padding-top: 20px;
+  list-style: circle;  
+  height: 62px;
+}
+
+.sidemenudropdown-items a li:hover{
+  background-color: #E9E9E9;
 }
 
 .calendar-position{
@@ -7107,6 +7114,10 @@ text-align: left;
   border: none;
 }
 
+.fa-chevron-down{
+  font-size: 12px;
+  color: #20776E;
+}
 
 
 
