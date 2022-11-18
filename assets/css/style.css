@@ -7102,6 +7102,9 @@ text-align: left;
   right: 5%;
 }
 
+.modal-content{
+  border-radius: 20px;
+}
 
 
 
