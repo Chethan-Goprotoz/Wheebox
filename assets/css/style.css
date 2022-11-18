@@ -7031,7 +7031,6 @@ text-align: left;
 
 .item-container{
   position: relative;
-  
 }
 
 .item-container p{
@@ -7076,6 +7075,7 @@ text-align: left;
 
 .inside-modal{
   position: relative;
+  
 }
 
 .close-btn-new{
