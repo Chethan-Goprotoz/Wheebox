@@ -198,28 +198,28 @@
                 <div class="tab-content" id="v-pills-tabContent">
                   <div class="tab-pane fade show active" id="all-images" role="tabpanel">
                     <div class="d-flex flex-wrap gap-5 mt-5">
-                      <div class="online-test-card online-warning" data-hover="Not-Found">
+                      <div class="online-test-card online-warning" data-bs-toggle="modal" data-bs-target="#imagePopup" data-hover="Not-Found">
                         <img src="assets/images/online-test1.png" alt="">
                         <div class="online-footer">
                           <li>2022-06-22</li>
                           <li>14:55:17</li>
                         </div>
                       </div>
-                      <div class="online-test-card online-ok" data-hover="Face-Found">
+                      <div class="online-test-card online-ok" data-bs-toggle="modal" data-bs-target="#imagePopup"  data-hover="Face-Found">
                         <img src="assets/images/online-test2.png" alt="">
                         <div class="online-footer">
                           <li>2022-06-22</li>
                           <li>14:55:17</li>
                         </div>
                       </div>
-                      <div class="online-test-card online-ok" data-hover="Face-Found">
+                      <div class="online-test-card online-ok" data-bs-toggle="modal" data-bs-target="#imagePopup" data-hover="Face-Found">
                         <img src="assets/images/online-test3.png" alt="">
                         <div class="online-footer">
                           <li>2022-06-22</li>
                           <li>14:55:17</li>
                         </div>
                       </div>
-                      <div class="online-test-card online-warning" data-hover="MultiFace-Found">
+                      <div class="online-test-card online-warning" data-bs-toggle="modal" data-bs-target="#imagePopup" data-hover="MultiFace-Found">
                         <img src="assets/images/online-test4.png" alt="">
                         <div class="online-footer">
                           <li>2022-06-22</li>
@@ -417,6 +417,65 @@
                     </div>
                   </div>
                 </div>
+
+                <!--start of popup modal -->
+
+                <div class="modal fade" id="imagePopup" tabindex="-1" >
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="inside-modal">
+                          <button type="button" data-dismiss="modal" class="close-btn-new close"  data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i></button>
+                          <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel"  data-bs-pause="false" data-bs-interval="100">
+                              
+                              <div class="carousel-indicators custom-indicator">
+                                  <div class="PausePlayControls">
+                                      <button class="imagePlay" onclick="play()"><i class="fa-solid fa-play"></i></button>
+                                      <button class="ImagePause" onclick="pause()"><i class="fa-solid fa-pause"></i></button>
+                                  </div>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active " aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                              </div>
+                              <div class="carousel-inner">
+                                <div class="carousel-item item-container active">
+                                  <img src="assets/images/all-images-1.png" class="d-block w-100" alt="...">
+                                 
+                                  <p>Captured Time <span class="image-time">2022-11-07 01:16:08</span></p>
+                                  <div>
+                                      <img class="error-image" src="assets/images/svg/face-not-detected.svg" alt="">
+                                      
+                                  </div>
+                                </div>
+                                <div class="carousel-item item-container">
+                                  <img src="assets/images/all-images-1.png" class="d-block w-100" alt="...">
+                                  <p>Captured Time <span class="image-time">2022-12-07 01:08:08</span></p>
+                                  <div>
+                                      <img class="error-image" src="assets/images/svg/object-detected.svg" alt="">
+                                  </div>
+                                </div>
+                                <div class="carousel-item item-container">
+                                  <img src="assets/images/all-images-1.png" class="d-block w-100" alt="...">
+                                  <p>Captured Time <span class="image-time">2022-20-08 09:16:08</span></p>
+                                  <div>
+                                      <img class="error-image" src="assets/images/svg/multi-face-detected.svg" alt="">
+                                  </div>
+                                </div>
+                                <div class="carousel-item item-container">
+                                  <img src="assets/images/all-images-1.png" class="d-block w-100" alt="...">
+                                  <p>Captured Time <span class="image-time">2022-20-08 09:16:08</span></p>
+                                  <div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- end of popup modal -->
+
               </div>
             </div>
           </div>
