@@ -7285,6 +7285,27 @@ text-align: left;
     width: 280px;
    }
 
+   .item-container p{
+ 
+    left: 10%;
+    
+  }
+
+  .error-image{
+  width: 50px;
+  top: 30%;
+  }
+
+  .PausePlayControls{
+    left: -50px;
+  }
+
+
+  .carousel-indicators{
+    margin-right: 5%;
+    margin-left: 20%;
+  }
+
 
   
 }
