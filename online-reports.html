@@ -28,43 +28,40 @@
           <div class="row">
             <div class="main_header mb-1">
               <div class="d-flex justify-content-between navpart1">
-                <div class="logo new-logopart">
-                  <img src="assets/images/logo_logo.png" alt="mini-logo">
-                </div>
-                <div class="d-flex align-items-center d-none d-md-flex justify-content-around btr-link navbar-place">
-                  <img src="assets/images/back-arrow.svg" alt="">
-                  <a class="anchor-dec" href="#">
-                    <h5 class="btr-line">Back To Result List</h5>
-                  </a>
-                </div>
+                  <div class="logo new-logopart"> <img src="assets/images/logo_logo.png" alt="mini-logo"> </div>
+                  <div class="d-flex align-items-center d-none d-md-flex justify-content-around btr-link navbar-place"> <img src="assets/images/back-arrow.svg" alt=""> <a class="anchor-dec" href="#">
+                          <h5 class="btr-line">Back To Result List</h5>
+                      </a> </div>
               </div>
               <div></div>
               <div class="d-flex align-items-center gap-5">
-                <div class="d-flex gap-4">
-                  <div class="home-search">
-                    <img class="nav-arrows" src="assets/images/search-hover.svg" alt="">
+                  <div class="d-flex gap-4">
+                      <div class="home-search"> <img class="nav-arrows" src="assets/images/search-hover.svg" alt=""> </div>
+                      <div> <a href="#">
+                              <div class="home-search"> <img class="nav-arrows-1" src="assets/images/home-hover.svg" alt=""> </div>
+                          </a> </div>
                   </div>
-                  <div>
-                    <a href="#">
-                      <div class="home-search">
-                        <img class="nav-arrows-1" src="assets/images/home-hover.svg" alt="">
+                  <div class="grid-new" id="profile-out">
+                      <div class="grid1-new" onclick="profile()">
+                        <div class="profile rounded-circle">
+                          <img src="assets/images/prof-mini.png" alt="profile">
+                        </div>
                       </div>
-                    </a>
-                  </div>
-                </div>
-                <div class="grid-new">
-                  <div class="grid1-new">
-                    <div class="profile rounded-circle">
-                      <img src="assets/images/prof-mini.png" alt="profile">
+                      <div class="grid2-new d-none d-md-block" onclick="profile()">
+                        <h6>Jane Doe</h6>
+                        <p>jane_doe@wheebox.com</p>
+                      </div>
+                      <div class="profileDropdown" id="profileDropdown">
+                        <ul>
+                          <li>Admin Profile</li>
+                        <li>Change Password</li>
+                        <li>Help Center</li>
+                        <li>Log Out</li>
+                        </ul>
+                      </div>
                     </div>
-                  </div>
-                  <div class="grid2-new d-none d-md-block">
-                    <h6>Jane Doe</h6>
-                    <p>jane_doe@wheebox.com</p>
-                  </div>
-                </div>
               </div>
-            </div>
+          </div>
           </div>
           <!-- row closed -->
         </div>
@@ -438,5 +435,23 @@
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <script src="assets/js/phase2.js"></script>
     <script src="assets/js/proctoringScore.js"></script>
+
+    
+    <script>
+      function profile() {
+        profileMenu = document.getElementById("profileDropdown")
+        profileMenu.classList.toggle("dropdownActive")
+        document.addEventListener('click', function profile(event) {
+          console.log("clicked")
+          const box4 = document.getElementById('profile-out');
+          if (!box4.contains(event.target)) {
+            profileMenu.classList.remove("dropdownActive")
+          }
+        });
+      }
+    </script>
+
   </body>
 </html>
+
+

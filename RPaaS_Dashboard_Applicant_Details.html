@@ -159,209 +159,241 @@
                         </div>
                         <div class="d-flex flex-column bg-white p-5 mt-5">
                             <div class="onlineTab">
-                                <div class="nav nav-alt flex-row nav-pills me-3 justify-content-between" id="v-pills-tab" role="tablist" aria-orientation="vertical"> <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab">All Images</button> <button class="nav-link new-tab" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#section1" type="button" role="tab">System Promp</button> <button class="nav-link new-tab" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#section2" type="button" role="tab">Screen Shots</button> <button class="nav-link new-tab" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#section3" type="button" role="tab">Logs</button> <button class="nav-link new-tab" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#section4" type="button" role="tab">Chat History</button> <button class="nav-link new-tab" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#section5" type="button" role="tab">Problem Images</button> <button class="nav-link new-tab" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#section6" type="button" role="tab">Approved Images</button> <button class="nav-link new-tab" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#section7" type="button" role="tab">Instructions</button> </div>
-                                <div class="vLine"></div>
+                              <div class="nav nav-alt flex-row nav-pills me-3 justify-content-between" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                <button class="nav-link new-tab active" id="all-images-tab" data-bs-toggle="pill" data-bs-target="#all-images" type="button" role="tab"><img class="tab-icons" src="assets/images/svg/all images.svg" alt="">All Images</button>
+                                <button class="nav-link new-tab" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#section1" type="button" role="tab"><img class="tab-icons" src="assets/images/svg/systemPrompt.svg" alt="">System Promp</button>
+                                <button class="nav-link new-tab" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#section2" type="button" role="tab"><img class="tab-icons" src="assets/images/svg/screenshots.svg" alt="">Screen Shots</button>
+                                <button class="nav-link new-tab" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#section3" type="button" role="tab"><img class="tab-icons" src="assets/images/svg/logs.svg" alt="">Logs</button>
+                                <button class="nav-link new-tab" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#section4" type="button" role="tab"><img class="tab-icons" src="assets/images/svg/chatHistory.svg" alt="">Chat History</button>
+                                <button class="nav-link new-tab" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#section5" type="button" role="tab"><img class="tab-icons" src="assets/images/svg/problemImages.svg" alt="">Problem Images</button>
+                                <button class="nav-link new-tab" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#section6" type="button" role="tab"><img class="tab-icons" src="assets/images/svg/approvedImages.svg" alt="">Approved Images</button>
+                                <button class="nav-link new-tab" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#section7" type="button" role="tab"><img class="tab-icons" src="assets/images/svg/instructions.svg" alt="">Instructions</button>
+                              </div>
+                              <div class="vLine"></div>
                             </div>
                             <div class="tab-content" id="v-pills-tabContent">
-                                <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel">
-                                    <div class="d-flex flex-wrap gap-5 mt-5">
-                                        <div class="online-test-card online-warning"> <img src="assets/images/online-test1.png" alt="">
-                                            <div class="online-footer">
-                                                <li>2022-06-22</li>
-                                                <li>14:55:17</li>
-                                            </div>
-                                        </div>
-                                        <div class="online-test-card online-ok"> <img src="assets/images/online-test2.png" alt="">
-                                            <div class="online-footer">
-                                                <li>2022-06-22</li>
-                                                <li>14:55:17</li>
-                                            </div>
-                                        </div>
-                                        <div class="online-test-card online-ok"> <img src="assets/images/online-test3.png" alt="">
-                                            <div class="online-footer">
-                                                <li>2022-06-22</li>
-                                                <li>14:55:17</li>
-                                            </div>
-                                        </div>
-                                        <div class="online-test-card online-warning"> <img src="assets/images/online-test4.png" alt="">
-                                            <div class="online-footer">
-                                                <li>2022-06-22</li>
-                                                <li>14:55:17</li>
-                                            </div>
-                                        </div>
+                              <div class="tab-pane fade show active" id="all-images" role="tabpanel">
+                                <div class="d-flex flex-wrap gap-5 mt-5">
+                                  <div class="online-test-card online-warning" data-hover="Not-Found">
+                                    <img src="assets/images/online-test1.png" alt="">
+                                    <div class="online-footer">
+                                      <li>2022-06-22</li>
+                                      <li>14:55:17</li>
                                     </div>
-                                </div>
-                                <div class="tab-pane fade" id="section1" role="tabpanel">
-                                    <div class="mt-3 p-2" style="overflow-x:auto;">
-                                        <table class="table main-table">
-                                            <tbody>
-                                                <tr class="table-row-1">
-                                                    <td class="p-4">Navigation</td>
-                                                    <td class="p-4">Wednesday</td>
-                                                    <td class="p-4">August</td>
-                                                    <td class="p-4">14:55:17</td>
-                                                    <td class="p-4">2022</td>
-                                                </tr>
-                                                <tr class="table-row-1">
-                                                    <td class="p-4">Navigation</td>
-                                                    <td class="p-4">Wednesday</td>
-                                                    <td class="p-4">August</td>
-                                                    <td class="p-4">14:55:17</td>
-                                                    <td class="p-4">2022</td>
-                                                </tr>
-                                                <tr class="table-row-1">
-                                                    <td class="p-4">Navigation</td>
-                                                    <td class="p-4">Wednesday</td>
-                                                    <td class="p-4">August</td>
-                                                    <td class="p-4">14:55:17</td>
-                                                    <td class="p-4">2022</td>
-                                                </tr>
-                                                <tr class="table-row-1">
-                                                    <td class="p-4">Navigation</td>
-                                                    <td class="p-4">Wednesday</td>
-                                                    <td class="p-4">August</td>
-                                                    <td class="p-4">14:55:17</td>
-                                                    <td class="p-4">2022</td>
-                                                </tr>
-                                                <tr class="table-row-1">
-                                                    <td class="p-4">Navigation</td>
-                                                    <td class="p-4">Wednesday</td>
-                                                    <td class="p-4">August</td>
-                                                    <td class="p-4">14:55:17</td>
-                                                    <td class="p-4">2022</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                                  </div>
+                                  <div class="online-test-card online-ok" data-hover="Face-Found">
+                                    <img src="assets/images/online-test2.png" alt="">
+                                    <div class="online-footer">
+                                      <li>2022-06-22</li>
+                                      <li>14:55:17</li>
                                     </div>
-                                </div>
-                                <div class="tab-pane fade" id="section2" role="tabpanel">
-                                    <div class="d-flex  mt-5 gap-4 flex-wrap screenshots"> <img class="img-fluid" src="assets/images/question (1).png" alt=""> <img class="img-fluid" src="assets/images/question (2).png" alt=""> <img class="img-fluid" src="assets/images/question (3).png" alt=""> <img class="img-fluid" src="assets/images/question (4).png" alt=""> <img class="img-fluid" src="assets/images/question (5).png" alt=""> </div>
-                                </div>
-                                <div class="tab-pane fade" id="section3" role="tabpanel">
-                                    <div class="mt-3 p-2" style="overflow-x:auto;">
-                                        <table class="table main-table">
-                                            <thead>
-                                                <tr class="table-row-1 table-header">
-                                                    <td class="p-4">S.No</td>
-                                                    <td class="p-4">Action</td>
-                                                    <td class="p-4">Date</td>
-                                                    <td class="p-4">Time</td>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr class="table-row-1">
-                                                    <td class="p-4">1</td>
-                                                    <td class="p-4">Test Start Time</td>
-                                                    <td class="p-4">August</td>
-                                                    <td class="p-4">14:55:17</td>
-                                                </tr>
-                                                <tr class="table-row-1">
-                                                    <td class="p-4">2</td>
-                                                    <td class="p-4">No Front Face Found</td>
-                                                    <td class="p-4">August</td>
-                                                    <td class="p-4">14:55:17</td>
-                                                </tr>
-                                                <tr class="table-row-1">
-                                                    <td class="p-4">3</td>
-                                                    <td class="p-4">No Front Face Found</td>
-                                                    <td class="p-4">August</td>
-                                                    <td class="p-4">14:55:17</td>
-                                                </tr>
-                                                <tr class="table-row-1">
-                                                    <td class="p-4">4</td>
-                                                    <td class="p-4">External Object Detected</td>
-                                                    <td class="p-4">August</td>
-                                                    <td class="p-4">14:55:17</td>
-                                                </tr>
-                                                <tr class="table-row-1">
-                                                    <td class="p-4">5</td>
-                                                    <td class="p-4">Submit Test</td>
-                                                    <td class="p-4">August</td>
-                                                    <td class="p-4">14:55:17</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                                  </div>
+                                  <div class="online-test-card online-ok" data-hover="Face-Found">
+                                    <img src="assets/images/online-test3.png" alt="">
+                                    <div class="online-footer">
+                                      <li>2022-06-22</li>
+                                      <li>14:55:17</li>
                                     </div>
-                                </div>
-                                <div class="tab-pane fade" id="section4" role="tabpanel">
-                                    <div class="mt-5">
-                                        <div>
-                                            <div class="d-flex chat-section">
-                                                <img class="chat-img" src="assets/images/svg/Group 45987.svg" alt="">
-                                                <div class="chat-box">
-                                                    <h3>John Wilson (Admin)</h3> <time class="time">12:11</time>
-                                                    <p>You did a really great work! Can you please make me one more report until tomorrow EOB?</p>
-                                                </div>
-                                            </div>
-                                            <div class="d-flex chat-section"> <img class="chat-img" src="assets/images/svg/Group 45987.svg" alt="">
-                                                <div class="chat-box">
-                                                    <h3>John Wilson (Admin)</h3><time class="time">12:11</time>
-                                                    <p>You did a really great work! Can you please make me one more report until tomorrow EOB?</p>
-                                                </div>
-                                            </div>
-                                            <div class="d-flex chat-section"> <img class="chat-img" src="assets/images/svg/Group 45987.svg" alt="">
-                                                <div class="chat-box">
-                                                    <h3>John Wilson (Admin)</h3><time class="time">12:11</time>
-                                                    <p>You did a really great work! Can you please make me one more report until tomorrow EOB?</p>
-                                                </div>
-                                            </div>
-                                        </div>
+                                  </div>
+                                  <div class="online-test-card online-warning" data-hover="MultiFace-Found">
+                                    <img src="assets/images/online-test4.png" alt="">
+                                    <div class="online-footer">
+                                      <li>2022-06-22</li>
+                                      <li>14:55:17</li>
                                     </div>
+                                  </div>
                                 </div>
-                                <div class="tab-pane fade" id="section5" role="tabpanel">
-                                    <div class="d-flex flex-wrap gap-5 mt-5">
-                                        <div class="online-test-card online-warning"> <img src="assets/images/online-test1.png" alt="">
-                                            <div class="online-footer">
-                                                <li>2022-06-22</li>
-                                                <li>14:55:17</li>
-                                            </div>
-                                        </div>
-                                        <div class="online-test-card online-warning"> <img src="assets/images/online-test1.png" alt="">
-                                            <div class="online-footer">
-                                                <li>2022-06-22</li>
-                                                <li>14:55:17</li>
-                                            </div>
-                                        </div>
+                              </div>
+                              <div class="tab-pane fade" id="section1" role="tabpanel">
+                                <div class="mt-3 p-2" style="overflow-x:auto;">
+                                  <table class="table main-table">
+                                    <tbody>
+                                      <tr class="table-row-1">
+                                        <td class="p-4">Navigation</td>
+                                        <td class="p-4">Wednesday</td>
+                                        <td class="p-4">August</td>
+                                        <td class="p-4">14:55:17</td>
+                                        <td class="p-4">2022</td>
+                                      </tr>
+                                      <tr class="table-row-1">
+                                        <td class="p-4">Navigation</td>
+                                        <td class="p-4">Wednesday</td>
+                                        <td class="p-4">August</td>
+                                        <td class="p-4">14:55:17</td>
+                                        <td class="p-4">2022</td>
+                                      </tr>
+                                      <tr class="table-row-1">
+                                        <td class="p-4">Navigation</td>
+                                        <td class="p-4">Wednesday</td>
+                                        <td class="p-4">August</td>
+                                        <td class="p-4">14:55:17</td>
+                                        <td class="p-4">2022</td>
+                                      </tr>
+                                      <tr class="table-row-1">
+                                        <td class="p-4">Navigation</td>
+                                        <td class="p-4">Wednesday</td>
+                                        <td class="p-4">August</td>
+                                        <td class="p-4">14:55:17</td>
+                                        <td class="p-4">2022</td>
+                                      </tr>
+                                      <tr class="table-row-1">
+                                        <td class="p-4">Navigation</td>
+                                        <td class="p-4">Wednesday</td>
+                                        <td class="p-4">August</td>
+                                        <td class="p-4">14:55:17</td>
+                                        <td class="p-4">2022</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </div>
+                              </div>
+                              <div class="tab-pane fade" id="section2" role="tabpanel">
+                                <div class="d-flex  mt-5 gap-4 flex-wrap screenshots">
+                                  <img class="img-fluid" src="assets/images/question (1).png" alt="">
+                                  <img class="img-fluid" src="assets/images/question (2).png" alt="">
+                                  <img class="img-fluid" src="assets/images/question (3).png" alt="">
+                                  <img class="img-fluid" src="assets/images/question (4).png" alt="">
+                                  <img class="img-fluid" src="assets/images/question (5).png" alt="">
+                                </div>
+                              </div>
+                              <div class="tab-pane fade" id="section3" role="tabpanel">
+                                <div class="mt-3 p-2" style="overflow-x:auto;">
+                                  <table class="table main-table">
+                                    <thead>
+                                      <tr class="table-row-1 table-header">
+                                        <td class="p-4">S.No</td>
+                                        <td class="p-4">Action</td>
+                                        <td class="p-4">Date</td>
+                                        <td class="p-4">Time</td>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr class="table-row-1">
+                                        <td class="p-4">1</td>
+                                        <td class="p-4">Test Start Time</td>
+                                        <td class="p-4">August</td>
+                                        <td class="p-4">14:55:17</td>
+                                      </tr>
+                                      <tr class="table-row-1">
+                                        <td class="p-4">2</td>
+                                        <td class="p-4">No Front Face Found</td>
+                                        <td class="p-4">August</td>
+                                        <td class="p-4">14:55:17</td>
+                                      </tr>
+                                      <tr class="table-row-1">
+                                        <td class="p-4">3</td>
+                                        <td class="p-4">No Front Face Found</td>
+                                        <td class="p-4">August</td>
+                                        <td class="p-4">14:55:17</td>
+                                      </tr>
+                                      <tr class="table-row-1">
+                                        <td class="p-4">4</td>
+                                        <td class="p-4">External Object Detected</td>
+                                        <td class="p-4">August</td>
+                                        <td class="p-4">14:55:17</td>
+                                      </tr>
+                                      <tr class="table-row-1">
+                                        <td class="p-4">5</td>
+                                        <td class="p-4">Submit Test</td>
+                                        <td class="p-4">August</td>
+                                        <td class="p-4">14:55:17</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </div>
+                              </div>
+                              <div class="tab-pane fade" id="section4" role="tabpanel">
+                                <div class="mt-5">
+                                  <div>
+                                    <div class="d-flex chat-section">
+                                      <img src="assets/images/svg/Group 45987.svg" alt="">
+                                      <div class="chat-box">
+                                        <h3>John Wilson (Admin)</h3>
+                                        <time class="time">12:11</time>
+                                        <p>You did a really great work! Can you please make me one more report until tomorrow EOB?</p>
+                                      </div>
                                     </div>
-                                </div>
-                                <div class="tab-pane fade" id="section6" role="tabpanel">
-                                    <div class="d-flex flex-wrap gap-5 mt-5">
-                                        <div class="online-test-card online-ok"> <img src="assets/images/online-test1.png" alt="">
-                                            <div class="online-footer">
-                                                <li>2022-06-22</li>
-                                                <li>14:55:17</li>
-                                            </div>
-                                        </div>
-                                        <div class="online-test-card online-ok"> <img src="assets/images/online-test1.png" alt="">
-                                            <div class="online-footer">
-                                                <li>2022-06-22</li>
-                                                <li>14:55:17</li>
-                                            </div>
-                                        </div>
+                                    <div class="d-flex chat-section">
+                                      <img src="assets/images/svg/Group 45987.svg" alt="">
+                                      <div class="chat-box">
+                                        <h3>John Wilson (Admin)</h3>
+                                        <time class="time">12:11</time>
+                                        <p>You did a really great work! Can you please make me one more report until tomorrow EOB?</p>
+                                      </div>
                                     </div>
-                                </div>
-                                <div class="tab-pane fade" id="section7" role="tabpanel">
-                                    <div class="d-flex justify-content-lg-between align-items-center justify-content-center gap-5 flex-wrap mt-5">
-                                        <div class="instructions"> <img src="assets/images/green.png" alt="">
-                                            <h6>Green</h6>
-                                            <p>Correct front face found</p>
-                                        </div>
-                                        <div class="instructions"> <img class="yellow-img" src="assets/images/yellow.png" alt="">
-                                            <h6 class="ins-yellow">Yellow</h6>
-                                            <p>No face found or no<br /> correct front face</p>
-                                        </div>
-                                        <div class="instructions"> <img class="red-img" src="assets/images/red2.png" alt="">
-                                            <h6 class="ins-red">Red</h6>
-                                            <p>More than one face found</p>
-                                        </div>
-                                        <div class="instructions"> <img src="assets/images/red.png" alt="">
-                                            <h6 class="ins-red">Red</h6>
-                                            <p>Not bonafide candidate</p>
-                                        </div>
+                                    <div class="d-flex chat-section">
+                                      <img src="assets/images/svg/Group 45987.svg" alt="">
+                                      <div class="chat-box">
+                                        <h3>John Wilson (Admin)</h3>
+                                        <time class="time">12:11</time>
+                                        <p>You did a really great work! Can you please make me one more report until tomorrow EOB?</p>
+                                      </div>
                                     </div>
+                                  </div>
                                 </div>
+                              </div>
+                              <div class="tab-pane fade" id="section5" role="tabpanel">
+                                <div class="d-flex flex-wrap gap-5 mt-5">
+                                  <div class="online-test-card online-warning">
+                                    <img src="assets/images/online-test1.png" alt="">
+                                    <div class="online-footer">
+                                      <li>2022-06-22</li>
+                                      <li>14:55:17</li>
+                                    </div>
+                                  </div>
+                                  <div class="online-test-card online-warning">
+                                    <img src="assets/images/online-test1.png" alt="">
+                                    <div class="online-footer">
+                                      <li>2022-06-22</li>
+                                      <li>14:55:17</li>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="tab-pane fade" id="section6" role="tabpanel">
+                                <div class="d-flex flex-wrap gap-5 mt-5">
+                                  <div class="online-test-card online-ok">
+                                    <img src="assets/images/online-test1.png" alt="">
+                                    <div class="online-footer">
+                                      <li>2022-06-22</li>
+                                      <li>14:55:17</li>
+                                    </div>
+                                  </div>
+                                  <div class="online-test-card online-ok">
+                                    <img src="assets/images/online-test1.png" alt="">
+                                    <div class="online-footer">
+                                      <li>2022-06-22</li>
+                                      <li>14:55:17</li>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="tab-pane fade" id="section7" role="tabpanel">
+                                <div class="d-flex justify-content-lg-between align-items-center justify-content-center gap-5 flex-wrap mt-5">
+                                  <div class="instructions">
+                                    <img src="assets/images/green.png" alt="">
+                                    <h6>Green</h6>
+                                    <p>Correct front face found</p>
+                                  </div>
+                                  <div class="instructions">
+                                    <img class="yellow-img" src="assets/images/yellow.png" alt="">
+                                    <h6 class="ins-yellow">Yellow</h6>
+                                    <p>No face found or no <br /> correct front face </p>
+                                  </div>
+                                  <div class="instructions">
+                                    <img src="assets/images/red2.png" alt="">
+                                    <h6 class="ins-red">Red</h6>
+                                    <p>More than one face found</p>
+                                  </div>
+                                  <div class="instructions">
+                                    <img src="assets/images/red.png" alt="">
+                                    <h6 class="ins-red">Red</h6>
+                                    <p>Not bonafide candidate</p>
+                                  </div>
+                                </div>
+                              </div>
                             </div>
-                        </div>
+                          </div>
                     </div>
                 </div>
             </div> <!-- main-div closed -->
