@@ -1,0 +1,139 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rpass Dashboard</title>
+    <!-- font awesome css -->
+    <link rel="stylesheet" href="assets/font-awesome/all.min.css" />
+    <link rel="stylesheet" href="assets/font-awesome/fontawesome.css" />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- loader css -->
+    <link rel="stylesheet" href="assets/css/loader.css">
+    <!-- style css -->
+    <link rel="stylesheet" href="assets/sass/app.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css" rel="stylesheet">
+  </head>
+  
+  <body>
+    <!-- loader start-->
+    <div class="loader-container">
+      <div class="loader"></div>
+    </div>
+    <!-- loader end-->
+    <!--selection section start -->
+    <div class="selection-new " id="fullselector">
+     
+      <div class="sidebar">
+        <div class="d-flex">
+          <div class="side1" id="sidebar-menu">
+            <a href="#">
+               <div class="d-flex sideMenu mt-5"> <img class="icon-align" src="assets/images/svg/RpassDashboard-icon.svg" alt="">
+                   <p>Dashboard</p>
+               </div>
+           </a> <a href="#">
+               <div class="d-flex sideMenu"> <img class="icon-align" src="assets/images/svg/manage-auto-icon.svg" alt="">
+                   <p>Manage Auto-Procto...</p>
+               </div>
+           </a> <a href="#">
+               <div class="d-flex sideMenu"> <img class="icon-align" src="assets/images/svg/advanceAnalytics.svg" alt="">
+                   <p>Advance Analytics</p>
+               </div>
+           </a> <a href="#">
+               <div class="d-flex sideMenu"> <img class="icon-align" src="assets/images/svg/futurecampus.svg" alt="">
+                   <p>Future Campus Analy...</p>
+               </div>
+           </a>
+           <a href="#">
+             <div class="d-flex sideMenu active-one"> <img class="icon-align" src="assets/images/svg/rpassDashboard.svg" alt="">
+                 <p>RPaaS Dashboard</p>
+             </div>
+         </a>
+         <a href="#">
+           <div class="d-flex sideMenu"> <img class="icon-align" src="assets/images/svg/proctoringScore.svg" alt="">
+               <p>Proctoring Report</p>
+           </div>
+       </a>
+       </div>
+          <div>
+            <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Launch demo modal
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="inside-modal">
+            <button type="button" class="close-btn-new"><i class="fa-solid fa-xmark"></i></button>
+            <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel"  data-bs-pause="false" data-bs-interval="100">
+                
+                <div class="carousel-indicators custom-indicator">
+                    <div class="PausePlayControls">
+                        <button class="imagePlay" onclick="play()"><i class="fa-solid fa-play"></i></button>
+                        <button class="ImagePause" onclick="pause()"><i class="fa-solid fa-pause"></i></button>
+                    </div>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active " aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+
+
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item item-container active">
+                    <img src="https://i.picsum.photos/id/10/2500/1667.jpg?hmac=J04WWC_ebchx3WwzbM-Z4_KC_LeLBWr5LZMaAkWkF68" class="d-block w-100" alt="...">
+                    <p>Captured Time <span class="image-time">2022-11-07 01:16:08</span></p>
+                    <div>
+                        <img class="error-image" src="assets/images/svg/no-face-found.svg" alt="">
+                    </div>
+                  </div>
+                  <div class="carousel-item item-container">
+                    <img src="https://i.picsum.photos/id/10/2500/1667.jpg?hmac=J04WWC_ebchx3WwzbM-Z4_KC_LeLBWr5LZMaAkWkF68" class="d-block w-100" alt="...">
+                    <p>Captured Time <span class="image-time">2022-11-07 01:16:08</span></p>
+                  </div>
+                  <div class="carousel-item item-container">
+                    <img src="https://i.picsum.photos/id/10/2500/1667.jpg?hmac=J04WWC_ebchx3WwzbM-Z4_KC_LeLBWr5LZMaAkWkF68" class="d-block w-100" alt="...">
+                    <p>Captured Time <span class="image-time">2022-11-07 01:16:08</span></p>
+                  </div>
+                </div>
+              </div>
+        </div>
+       
+
+
+
+
+      </div>
+    </div>
+  </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- main-div closed -->
+    </div>
+    <!-- container closed -->
+    </section>
+    <!--selection section end -->
+    <script src="https://kit.fontawesome.com/5817738a37.js" crossorigin="anonymous"></script>
+    <script src="assets/js/jquery-2.2.0.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/loader.js"></script>
+
+<script>
+   function play(){
+    $("#carouselExampleIndicators").carousel("cycle");
+   }
+
+   function pause(){
+    $("#carouselExampleIndicators").carousel("pause");
+   
+   }
+</script>
+
+   
+  </body>
+</html>

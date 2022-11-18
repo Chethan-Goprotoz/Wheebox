@@ -7017,10 +7017,90 @@ text-align: left;
 }
 
 
+.carousel-indicators [data-bs-target]{
+  margin-right: 0;
+  margin-left: 0;
+  background-color: white;
+  width: 100%;
+}
 
 
+.custom-indicator{
+  margin-bottom: 40px;
+}
+
+.item-container{
+  position: relative;
+  
+}
+
+.item-container p{
+  color: white;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  left: 30%;
+  
+}
+
+.imagePlay{
+  background: none;
+  width: 20px;
+  border: none;
+}
 
 
+.ImagePause{
+  background: none;
+  width: 20px;
+  border: none;
+}
+
+.PausePlayControls{
+  position: absolute;
+  left: -12%;
+}
+
+.control-position{
+  position: relative;
+}
+
+ .fa-play{
+  color: white;
+}
+
+
+.fa-pause{
+  color: white;
+}
+
+.inside-modal{
+  position: relative;
+}
+
+.close-btn-new{
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 50;
+  width: 36px;
+  height: 36px;
+  background-color: white;
+  border: none;
+  margin: 15px;
+  border-radius: 8px;
+}
+
+.image-time{
+  color: white;
+  font-family: Pop-medium;
+}
+
+.error-image{
+  position: absolute;
+  top: 15%;
+  right: 5%;
+}
 
 
 
