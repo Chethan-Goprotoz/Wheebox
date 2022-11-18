@@ -7104,6 +7104,7 @@ text-align: left;
 
 .modal-content{
   border-radius: 20px;
+  border: none;
 }
 
 
