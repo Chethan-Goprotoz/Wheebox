@@ -7398,7 +7398,17 @@ text-align: left;
   .mapinfocontainer {
     width: 150px;
   }
+
+  .nav-mob{
+    flex-wrap: nowrap;
+    width: 100%;
+  }
   
+
+  .nav-mob .nav-link{
+    width: 140px;
+    margin-left: 16px;
+  }
  
 
 
