@@ -5315,7 +5315,15 @@ object-position: bottom;
   box-shadow: 0px 3px 6px #5462E247;
   height: 40px;
   width: 40px;
-  margin-right: 17px;
+  cursor: pointer;
+}
+
+.new-filter-icon{
+  background-color: #20776E;
+  color: white;
+  box-shadow: 0px 3px 6px #5462E247;
+  height: 40px;
+  width: 40px;
   cursor: pointer;
 }
 
@@ -7117,6 +7125,10 @@ text-align: left;
 .fa-chevron-down{
   font-size: 12px;
   color: #20776E;
+}
+
+.gender-text{
+  margin-top: -4px;
 }
 
 
