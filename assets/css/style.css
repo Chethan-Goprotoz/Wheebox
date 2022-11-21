@@ -6426,7 +6426,7 @@ transform: translate(-89px,-110px)
 }
 
 .mapinfotab{
-  text-align: right;
+  text-align: left;
 }
 
 .mapinfocontainer{
@@ -6434,12 +6434,14 @@ transform: translate(-89px,-110px)
   border: 2px solid #76FFF1;
   padding: 10px;
   border-radius: 16px;
-  float: right;
+  float: left;
   width: 200px;
 }
 
 .mapinfocontainer div p{
   text-align: left;
+  color: #9F9F9F;
+  font-size: 16px;
 }
 
 .mapcolor{
@@ -7169,6 +7171,30 @@ text-align: left;
   margin-bottom: 20px;
 }
 
+#mapname{
+  color: #999999 !important;
+  font-size: 16px;
+}
+
+#maptotal{
+  margin-left: 5px;
+  color: #4A4A4A;
+  font-family: Pop-medium;
+}
+
+#mappass{
+  margin-left: 5px;
+  color: #4A4A4A;
+  font-family: Pop-medium;
+}
+
+#mapfail{
+  margin-left: 5px;
+  color: #4A4A4A;
+  font-family: Pop-medium;
+}
+
+
 
 
 
@@ -7368,6 +7394,12 @@ text-align: left;
     margin-right: 5%;
     margin-left: 20%;
   }
+
+  .mapinfocontainer {
+    width: 150px;
+  }
+  
+ 
 
 
   
@@ -7663,6 +7695,14 @@ text-align: left;
 
   .vscomp-toggle-button{
     width: 280px;
+  }
+
+  .testsection2{
+    margin-top: 20px;
+  }
+
+  .testsection3{
+    margin-top: 20px;
   }
 
 

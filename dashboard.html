@@ -67,10 +67,12 @@
             <div>
               <i onclick="sidemenu()" id="menu-icon" class="fas fa-solid icon-w fa-bars d-block d-lg-none"></i>
             </div>
+           <a href="advance-filter.html">
             <div class="filter-container d-lg-none d-flex justify-content-center align-items-center">
               <p>Advance Filter</p>
-              <i class="fa-solid fa-arrow-right"></i>
+              <i class="fa-solid fa-arrow-right filter-arrow"></i>
             </div>
+           </a>
           </div>
         </div>
       </div>
@@ -213,10 +215,12 @@
           <div class="inside-container2">
             <div class="d-flex justify-content-between">
               <h3>Dashboard</h3>
+             <a href="advance-filter.html">
               <div class="filter-container d-none d-lg-flex d-flex justify-content-center align-items-center" onclick="AdvancePopup()">
-               <p>Advance Filter</p>
-               <i class="fa-solid fa-arrow-right filter-arrow"></i>
-              </div>
+                <p>Advance Filter</p>
+                <i class="fa-solid fa-arrow-right filter-arrow"></i>
+               </div>
+             </a>
             </div>
             <div class="row">
               <div class="col-6 col-md-3">
@@ -304,7 +308,7 @@
                         </div>
                         <img src="assets/images/svg/scorecard-lv.png" alt="">
                         <!-- pass data value (data-gauge=" ") to change needle -->
-                        <div class="gauge-pointer-switch" id="gauge-pointer" data-gauge="50"> 
+                        <div class="gauge-pointer-switch" id="gauge-pointer" data-gauge="99"> 
                           <img class="gauge-pointer" src="assets/images/svg/pointerLine.svg" alt="">
                         </div>
                       </div>
@@ -545,11 +549,11 @@
                       <!-- <img class="img-fluid mapcolor" src="assets/images/svg/andhra-pradesh.svg" alt=""> -->
                       <div>
                         <p id="mapname">Uttar Pradesh</p>
-                        <p>Total: <span id="maptotal">1300</span>
+                        <p class="mapsidetitle">Total: <span id="maptotal">1300</span>
                         </p>
-                        <p>Pass: <span id="mappass">1000</span>
+                        <p class="mapsidetitle">Pass: <span id="mappass">1000</span>
                         </p>
-                        <p>Fail: <span id="mapfail">300</span>
+                        <p class="mapsidetitle">Fail: <span id="mapfail">300</span>
                         </p>
                       </div>
                     </div>
