@@ -156,7 +156,7 @@
                       <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
                         <div class="d-flex justify-content-center">
                          <div class="calendar-container">
-                            <p>*Select Start Date &End Date:</p>
+                            <p>*Select Start Date & End Date:</p>
                             <input type="text" name="datefilter" class="calendar" value="" placeholder="Select"/>
                             <i class="fa-regular fa-calendar"></i>
                           </div>
@@ -167,98 +167,103 @@
                           <div class="calendar-container2">
                             <div class="d-flex justify-content-between">
                               <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                <input class="form-check-input checkboxvalue1" onclick="checkbox1()" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                                 <label class="form-check-label" for="flexRadioDefault1">
                                   Search by Full name
                                 </label>
                               </div>
                               <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                <input class="form-check-input checkboxvalue2" onclick="checkbox2()" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                                 <label class="form-check-label" for="flexRadioDefault1">
                                   Search by Registered mail ID or Login ID
                                 </label>
                               </div>
                               <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                <input class="form-check-input checkboxvalue3" onclick="checkbox3()" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                                 <label class="form-check-label" for="flexRadioDefault1">
                                   Search by Mobile number
                                 </label>
                               </div>
                             </div>
                             <div class="d-flex justify-content-center SearchNameField">
-                              <input type="text" placeholder="Enter full Name of the applicant">
+                              <input type="text" id="checkboxinputplaceholder" placeholder="Enter full Name of the applicant">
                             </div>
                           </div>
                         </div>
                       </div>
                       <div class="tab-pane fade" id="pills-contact2" role="tabpanel" aria-labelledby="pills-contact-tab">
-                        <div class="d-flex justify-content-center p-5 tabs-area">
-                          <div class="col-12 col-md-6">
-                            <div class="calendar-position">
-                              <p>*Select Start Date & End Date:</p>
-                              <input type="text" name="datefilter" class="calendar" value="" placeholder="Select"/>
-                              <i class="fa-regular fa-calendar"></i>
-                            </div>
-                            <div>
-                                <p>*Select Start test name:</p>
-                              <select id="SearchDropdown" name="native-select" placeholder="Select" data-search="true" data-silent-initial-value-set="true">
-                                <option value="1">IT-NXT Gent</option>
-                                <option value="2">IT-Programming</option>
-                                <option value="3">IT-Database</option>
-                                <option value="4">ERP</option>
-                                <option value="5">Testing</option>
-                                <option value="6">Option 6</option>
-                              </select>
-                            </div>
-                            <div>
-                              <p>*Select Location:</p>
-                            <select id="SearchDropdown" name="native-select" placeholder="Select" data-search="true" data-silent-initial-value-set="true">
-                              <option value="1">Option 1</option>
-                              <option value="2">Option 2</option>
-                              <option value="3">Option 3</option>
-                              <option value="4">Option 4</option>
-                              <option value="5">Option 5</option>
-                              <option value="6">Option 6</option>
-                            </select>
-                            </div>
-  
-                          </div>
-                          <div class="col-12 col-md-6">
-                            <div>
-                              <p>*Select domain:</p>
-                            <select id="SearchDropdown" name="native-select" placeholder="Select" data-search="true" data-silent-initial-value-set="true">
-                              <option value="1">Option 1</option>
-                              <option value="2">Option 2</option>
-                              <option value="3">Option 3</option>
-                              <option value="4">Option 4</option>
-                              <option value="5">Option 5</option>
-                              <option value="6">Option 6</option>
-                            </select>
-                            </div>
-                            <div>
-                              <p>*Select test score</p>
-                            <select id="SearchDropdown" name="native-select" placeholder="Select" data-search="true" data-silent-initial-value-set="true">
-                              <option value="1">Option 1</option>
-                              <option value="2">Option 2</option>
-                              <option value="3">Option 3</option>
-                              <option value="4">Option 4</option>
-                              <option value="5">Option 5</option>
-                              <option value="6">Option 6</option>
-                            </select>
-                            </div>
-                            <div class="d-flex mt-5 gap-3">
-                                <p class="gender-text">*Select gender:</p>
-                              <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                <label class="form-check-label" for="flexRadioDefault1">
-                                  Male
-                                </label>
+                        <div class="">
+                          <div class="d-flex justify-content-center p-5 tabs-area">
+                            <div class="col-12 col-md-6">
+                              <div class="d-grid justify-content-center">
+                                <div class="calendar-position">
+                                  <p>*Select Start Date & End Date:</p>
+                                  <input type="text" name="datefilter" class="calendar" value="" placeholder="Select"/>
+                                  <i class="fa-regular fa-calendar"></i>
+                                </div>
+                                <div>
+                                    <p>*Select Start test name:</p>
+                                  <select id="SearchDropdown" name="native-select" placeholder="Select" data-search="true" data-silent-initial-value-set="true">
+                                    <option value="1">IT-NXT Gent</option>
+                                    <option value="2">IT-Programming</option>
+                                    <option value="3">IT-Database</option>
+                                    <option value="4">ERP</option>
+                                    <option value="5">Testing</option>
+                                    <option value="6">Option 6</option>
+                                  </select>
+                                </div>
+                                <div>
+                                  <p>*Select Location:</p>
+                                <select id="SearchDropdown" name="native-select" placeholder="Select" data-search="true" data-silent-initial-value-set="true">
+                                  <option value="1">Option 1</option>
+                                  <option value="2">Option 2</option>
+                                  <option value="3">Option 3</option>
+                                  <option value="4">Option 4</option>
+                                  <option value="5">Option 5</option>
+                                  <option value="6">Option 6</option>
+                                </select>
+                                </div>
                               </div>
-                              <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                <label class="form-check-label" for="flexRadioDefault1">
-                                  Female
-                                </label>
+                            </div>
+                            <div class="col-12 col-md-6">
+                              <div class="d-grid justify-content-center">
+                                <div>
+                                  <p>*Select domain:</p>
+                                <select id="SearchDropdown" name="native-select" placeholder="Select" data-search="true" data-silent-initial-value-set="true">
+                                  <option value="1">Option 1</option>
+                                  <option value="2">Option 2</option>
+                                  <option value="3">Option 3</option>
+                                  <option value="4">Option 4</option>
+                                  <option value="5">Option 5</option>
+                                  <option value="6">Option 6</option>
+                                </select>
+                                </div>
+                                <div>
+                                  <p>*Select test score</p>
+                                <select id="SearchDropdown" name="native-select" placeholder="Select" data-search="true" data-silent-initial-value-set="true">
+                                  <option value="1">Option 1</option>
+                                  <option value="2">Option 2</option>
+                                  <option value="3">Option 3</option>
+                                  <option value="4">Option 4</option>
+                                  <option value="5">Option 5</option>
+                                  <option value="6">Option 6</option>
+                                </select>
+                                </div>
+                                <div class="d-flex mt-5 gap-3">
+                                    <p class="gender-text">*Select gender:</p>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                      Male
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                      Female
+                                    </label>
+                                  </div>
+                                </div>
                               </div>
                             </div>
                           </div>
@@ -291,6 +296,35 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
     <script src="assets/js/virual-select.min.js"></script>
+
+
+    <script>
+      function checkbox1(){
+        var checkbox1 = document.querySelector(".checkboxvalue1")
+        var textfield = document.getElementById("checkboxinputplaceholder")
+        if (checkbox1.checked==true){
+          textfield.placeholder = "Enter full Name of the applicant"
+        }
+      }
+
+      function checkbox2(){
+        var checkbox2 = document.querySelector(".checkboxvalue2")
+        var textfield = document.getElementById("checkboxinputplaceholder")
+        if (checkbox2.checked==true){
+          textfield.placeholder = "Enter Email ID or Login ID of the applicant"
+        }
+      }
+
+      function checkbox3(){
+        var checkbox3 = document.querySelector(".checkboxvalue3")
+        var textfield = document.getElementById("checkboxinputplaceholder")
+        if (checkbox3.checked==true){
+          textfield.placeholder = "Enter Mobile Number of the applicant"
+        }
+      }
+
+
+    </script>
  
 
 
@@ -347,6 +381,7 @@ icon.classList.toggle("fa-xmark")
       }
     </script>
 <script>
+ 
    
 </script>
    
