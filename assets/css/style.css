@@ -4197,6 +4197,30 @@ textarea {
   opacity: 1;
 }
 
+.exportCSV::after{
+  content: "Export CSV";
+  color: #666666;
+  padding-top: 10px;
+  text-align: center;
+  width: 131px;
+  height: 44px;
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  transform: translate(-50px,60px);
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 4px;
+  display: block;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s ;
+  opacity: 0;
+  z-index: 100;
+}
+
+.exportCSV:hover::after{
+  opacity: 1;
+}
+
 
 
 
