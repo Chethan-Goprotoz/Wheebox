@@ -7155,7 +7155,19 @@ text-align: left;
   margin-top: -4px;
 }
 
+.exportPopup p{
+  text-align: center;
+  font-size: 16px;
+  color: #849694;
+}
 
+.ModalCloseBlack{
+  cursor: pointer;
+}
+
+.exportIcon{
+  margin-bottom: 20px;
+}
 
 
 

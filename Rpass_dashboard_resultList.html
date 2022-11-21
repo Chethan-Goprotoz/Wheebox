@@ -72,9 +72,7 @@
         </div>
         <div class="d-flex justify-content-lg-end justify-content-between mt-3">
           <div> <i onclick="sidemenu()" id="menu-icon" class="fas fa-solid icon-w fa-bars d-block d-lg-none"></i> </div>
-          <div class="filter-container d-lg-none d-flex justify-content-center align-items-center">
-            <i class="fa-solid fa-filter filter-icon"></i>
-          </div>
+         
       </div>
       </div>
       <div class="sidebar">
@@ -128,8 +126,29 @@
                         </ul>
                       </div>
                     </div>
-                    <div class="refresh-btn d-flex exportCSV justify-content-center align-items-center">
+                    <div class="refresh-btn d-flex exportCSV justify-content-center align-items-center" data-bs-toggle="modal" data-bs-target="#exampleModal" type="button">
                       <img class="export-icon" src="assets/images/svg/download-icon.svg" alt="">
+                    </div>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                          <div class="exportPopup">
+                            <div class="d-flex justify-content-end p-5 ModalCloseBlack" data-bs-dismiss="modal" >
+                              <i class="fa-sharp fa-solid fa-xmark"></i>
+                            </div>
+                           <div class="d-flex justify-content-center exportIcon">
+                            <img src="/assets/images/svg/exportCSV.svg" alt="">
+                           </div>
+                            <p>Are you sure you want to export this list to excel?</p>
+                            <div class="d-flex justify-content-center mt-5">
+                              <div>
+                                <button class="ModalButton ModalCancelBtn" data-bs-dismiss="modal">Cancel</button>
+                                <button class="ModalButton ModalAddBtn">Yes, Export</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
              </div>
