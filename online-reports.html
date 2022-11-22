@@ -163,7 +163,7 @@
                   </div>
                 </div>
               </div>
-              <div class="d-flex flex-column bg-white p-5 mt-5">
+              <div class="d-flex flex-column bg-white p-5 mt-5 imagedropdown-section" >
                 <div class="onlineTab">
                   <div class="nav nav-alt flex-row nav-pills me-3 justify-content-between" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                     <button class="nav-link new-tab active" id="all-images-tab" data-bs-toggle="pill" data-bs-target="#all-images" type="button" role="tab"><img class="tab-icons" src="assets/images/svg/all images.svg" alt="">All Images</button>
@@ -171,11 +171,18 @@
                     <button class="nav-link new-tab" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#section2" type="button" role="tab"><img class="tab-icons" src="assets/images/svg/screenshots.svg" alt="">Screen Shots</button>
                     <button class="nav-link new-tab" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#section3" type="button" role="tab"><img class="tab-icons" src="assets/images/svg/logs.svg" alt="">Logs</button>
                     <button class="nav-link new-tab" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#section4" type="button" role="tab"><img class="tab-icons" src="assets/images/svg/chatHistory.svg" alt="">Chat History</button>
-                    <button class="nav-link new-tab" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#section5" type="button" role="tab"><img class="tab-icons" src="assets/images/svg/problemImages.svg" alt="">Problem Images</button>
-                    <button class="nav-link new-tab" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#section6" type="button" role="tab"><img class="tab-icons" src="assets/images/svg/approvedImages.svg" alt="">Approved Images</button>
                     <button class="nav-link new-tab" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#section7" type="button" role="tab"><img class="tab-icons" src="assets/images/svg/instructions.svg" alt="">Instructions</button>
+                    <div class="dropdown-menu-new" onclick="imagedropdown()">
+                      <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
                   </div>
                   <div class="vLine"></div>
+                </div>
+                <div class="imagedropdown" id="imagedropdown">
+                  <div class="nav nav-alt-2 nav-pills">
+                    <button class="nav-link new-tab Imagedropdown-item" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#section5" type="button" role="tab"><img class="tab-icons" src="assets/images/svg/problemImages.svg" alt="">Problem Images</button>
+                  <button class="nav-link new-tab Imagedropdown-item" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#section6" type="button" role="tab"><img class="tab-icons" src="assets/images/svg/approvedImages.svg" alt="">Approved Images</button>
+                  </div>
                 </div>
                 <div class="tab-content" id="v-pills-tabContent">
                   <div class="tab-pane fade show active" id="all-images" role="tabpanel">
@@ -477,7 +484,21 @@
     <script src="assets/js/phase2.js"></script>
     <script src="assets/js/proctoringScore.js"></script>
 
+    <script>
 
+      function imagedropdown(){
+        var dropdownsection = document.getElementById("imagedropdown");
+        dropdownsection.classList.toggle("imagedropdown-active");
+        document.addEventListener('click', function imagedropdown(event) {
+          console.log("clicked")
+          const box5 = document.getElementsByClassName('nav-alt');
+          if (!box5.contains(event.target)) {
+            dropdownsection.classList.remove("imagedropdown-active")
+          }
+        });
+      }
+
+    </script>
 
 
 
