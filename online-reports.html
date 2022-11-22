@@ -488,15 +488,18 @@
 
       function imagedropdown(){
         var dropdownsection = document.getElementById("imagedropdown");
+        var container = document.querySelector("imagedropdown")
         dropdownsection.classList.toggle("imagedropdown-active");
-        document.addEventListener('click', function imagedropdown(event) {
-          console.log("clicked")
-          const box5 = document.getElementsByClassName('nav-alt');
-          if (!box5.contains(event.target)) {
-            dropdownsection.classList.remove("imagedropdown-active")
-          }
-        });
       }
+
+      document.addEventListener("click",function(event){
+        
+          if(event.target.closest(".imagedropdown")){
+            dropdownsection.add("imagedropdown-active")
+          }
+
+          dropdownsection.remove("imagedropdown-active")
+        })
 
     </script>
 
