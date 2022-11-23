@@ -173,7 +173,7 @@
                     <button class="nav-link new-tab" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#section4" type="button" role="tab"><img class="tab-icons" src="assets/images/svg/chatHistory.svg" alt="">Chat History</button>
                     <button class="nav-link new-tab" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#section7" type="button" role="tab"><img class="tab-icons" src="assets/images/svg/instructions.svg" alt="">Instructions</button>
                     <div class="dropdown-menu-new" onclick="imagedropdown()">
-                      <i class="fa-solid fa-ellipsis-vertical"></i>
+                      <i class="fa-solid fa-ellipsis-vertical dropdownBtn-Selector"></i>
                     </div>
                   </div>
                   <div class="vLine"></div>
@@ -488,18 +488,15 @@
 
       function imagedropdown(){
         var dropdownsection = document.getElementById("imagedropdown");
-        var container = document.querySelector("imagedropdown")
         dropdownsection.classList.toggle("imagedropdown-active");
       }
 
-      document.addEventListener("click",function(event){
-        
-          if(event.target.closest(".imagedropdown")){
-            dropdownsection.add("imagedropdown-active")
-          }
-
-          dropdownsection.remove("imagedropdown-active")
-        })
+      window.onclick = function(){
+        if(!event.target.matches(".dropdown-menu-new .dropdownBtn-Selector")){
+          var dropdownsection = document.getElementById("imagedropdown");
+        dropdownsection.classList.remove("imagedropdown-active");
+        }
+      }
 
     </script>
 
