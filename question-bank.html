@@ -1,0 +1,422 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Question Bank</title>
+    <!-- font awesome css -->
+    <link rel="stylesheet" href="assets/font-awesome/all.min.css" />
+    <link rel="stylesheet" href="assets/font-awesome/fontawesome.css" />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="assets/images/logo_logo.png" sizes="16x16" type="image/x-icon">
+    <!-- loader css -->
+    <link rel="stylesheet" href="assets/css/loader.css">
+    <!-- style css -->
+    <!-- <link rel="stylesheet" href="assets/sass/app.css" rel="stylesheet" /> -->
+    <link rel="stylesheet" href="assets/css/virtual-select.min.css">
+    <link rel="stylesheet" href="assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/phase-3.css" rel="stylesheet">
+
+  </head>
+  
+  <body>
+    <!-- loader start-->
+    <div class="loader-container">
+      <div class="loader"></div>
+    </div>
+    <!-- loader end-->
+    <!--selection section start -->
+    <div class="selection-new " id="fullselector">
+      <div class="container-fluid">
+        <div class="main_div">
+          <div class="row">
+            <div class="main_header mb-1">
+              <div class="d-flex justify-content-between navpart1">
+                <div class="logo new-logopart">
+                  <img src="assets/images/logo_logo.png" alt="mini-logo">
+                </div>
+              </div>
+              <div class="d-flex align-items-center gap-5">
+                <div class="d-flex gap-4">
+                  
+                  <div>
+                    <a href="#">
+                      <div class="home-search">
+                        <img class="nav-arrows-1" src="assets/images/home-hover.svg" alt="">
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="grid-new" id="profile-out">
+                  <div class="grid1-new" onclick="profile()">
+                    <div class="profile rounded-circle">
+                      <img src="assets/images/prof-mini.png" alt="profile">
+                    </div>
+                  </div>
+                  <div class="grid2-new d-none d-md-block" onclick="profile()">
+                    <h6>Jane Doe</h6>
+                    <p>jane_doe@wheebox.com</p>
+                  </div>
+                  <div class="profileDropdown" id="profileDropdown">
+                    <ul>
+                      <li>Admin Profile</li>
+                      <li>Change Password</li>
+                      <li>Help Center</li>
+                      <li>Log Out</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- row closed -->
+        </div>
+        <div class="d-flex mobileMenu justify-content-lg-end justify-content-between d-md-none mt-3">
+          
+          <div class="d-flex justify-content-between align-items-center"> 
+            <img src="./assets/images/Question_Bank/menu.png" onclick="sidemenu()" id="menu-icon" class="fas fa-solid icon-w fa-bars d-block d-lg-none ms-0">
+            <h3 class="mb-0">Question Bank</h3>
+          </div>
+         
+          <div class="dropdown">
+            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+              Quick links
+            </a>
+          
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+      </div>
+      </div>
+      <div class="sidebar">
+        <div class="d-flex">
+          <div class="side1" id="sidebar-menu">
+            <img src="./assets/images/Question_Bank/croxMenu.png" onclick="sidemenu()" id="menu-icon d-md-none" class="openMenuIcon fas fa-solid icon-w fa-bars d-block d-lg-none ms-0" aria-hidden="true">
+            <a href="#">
+               <div class="d-flex sideMenu mt-5"> <img class="icon-align" src="assets/images/Question_Bank/noun-dashboard-4527077.svg" alt="">
+                   <p>Dashboard</p>
+               </div>
+           </a> <a href="#">
+               <div class="d-flex sideMenu active-one"> <img class="icon-align" src="assets/images/Question_Bank/noun-question.svg" alt="">
+                   <p>Question Bank</p>
+               </div>
+           </a> <a href="#">
+               <div class="d-flex sideMenu"> <img class="icon-align" src="assets/images/Question_Bank/noun-setting-2193905.svg" alt="">
+                   <p>Test Management</p>
+               </div>
+           </a> <a href="#">
+               <div class="d-flex sideMenu"> <img class="icon-align" src="assets/images/Question_Bank/noun-survey-3881626.svg" alt="">
+                   <p>Evaluation</p>
+               </div>
+           </a>
+           <a href="#">
+             <div class="d-flex sideMenu"> <img class="icon-align" src="assets/images/Question_Bank/noun-clipboard-4426919.svg" alt="">
+                 <p>Roaster Managment</p>
+             </div>
+         </a>
+         <a href="#">
+           <div class="d-flex sideMenu"> <img class="icon-align" src="assets/images/Question_Bank/noun-administration-99475.svg" alt="">
+               <p>Admin Control</p>
+           </div>
+       </a>
+       <a href="#">
+        <div class="d-flex sideMenu"> <img class="icon-align" src="assets/images/Question_Bank/noun-headphone-5272179.svg" alt="">
+            <p>Tech Support</p>
+        </div>
+        </a>
+       </div>
+          <div class="inside-container-dashboard">
+            <div class="d-flex justify-content-between align-items-center mb-5">
+              <h3 class="mb-0 d-none d-md-block">Question Bank</h3>
+              
+            </div>
+            <!-- tabs container -->
+            <div class="quesBankTabs">
+                <!-- Nav pills -->
+              <ul class="nav nav-pills nav-justified" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" data-bs-toggle="pill" href="#home"><img src="./assets/images/Question_Bank/noun-question.svg" width="16" alt=""> General Question</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-bs-toggle="pill" href="#menu1"><img src="./assets/images/Question_Bank/Programming Hands On.svg" width="16" alt=""> Programming <span class="d-none d-md-inline">Hands On</span></a>
+                </li>
+              </ul>
+            <!-- Tab panes -->
+              <div class="tab-content">
+                <div id="home" class="container tab-pane active"><br>
+                 
+                  <div class="d-flex flexWrap justify-content-between align-items-center mb-5 mt-4">
+                    <h3 class="mb-0">Create Question</h3>
+                    <div class="d-flex gap-4">
+                      <div class="filter-container filter-container-shadow d-lg-flex d-flex justify-content-center align-items-center">
+                        <p>Bulk Upload <img src="./assets/images/Question_Bank/Bulk Upload.svg" class="ms-2" alt=""></p> 
+                      </div>
+                      <div class="filter-container filter-container-shadow w-auto ps-3 pe-3 d-lg-flex d-flex justify-content-center align-items-center">
+                        <p>Review Questions <img src="./assets/images/Question_Bank/Review Questions.svg" class="ms-2" alt=""></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="selectDropdown p-5 bg-light1">
+                    <div class="d-flex justify-content-end mb-4">
+                      <button class="btn addNewSubj" type="button">Add New Subject</button>
+                    </div>
+                    <div class="row gx-5 gy-4">
+                      <div class="col-sm-4 col-md-4">
+                        <div class="calendar-container mt-0">
+                          <p>Select Subject</p>
+                          <select id="SearchDropdown" name="native-select" placeholder="Select Subject Here" data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
+                              <option value="5">English</option>
+                              <option value="1">Hindi</option>
+                              <option value="2">Maths</option>
+                              <option value="3">Physics</option>
+                              <option value="4">Chemistry</option>
+                          </select>
+                          
+                        </div>
+                      </div>
+                      <div class="col-sm-4 col-md-4">
+                        <div class="calendar-container mt-0">
+                          <p>Select Topic</p>
+                          <select id="SearchDropdown" name="native-select" placeholder="Select Topic Here" data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
+                              <option value="5">Grammer</option>
+                              <option value="1">Tense</option>
+                              <option value="2">Passage</option>
+                              <option value="3">Story</option>
+                              <option value="4">Poetry</option>
+                          </select>
+                          
+                        </div>
+                      </div>
+                      <div class="col-sm-4 col-md-4">
+                        <div class="calendar-container mt-0">
+                          <p>Select Subtopics</p>
+                          <select id="SearchDropdown" name="native-select" placeholder="Select Subtopic Here" data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
+                              <option value="5">Tenses</option>
+                              <option value="2">Passage</option>
+                              <option value="3">Story</option>
+                              <option value="4">Poetry</option>
+                          </select>
+                          
+                        </div>
+                      </div>
+                      <div class="col-sm-4 col-md-4">
+                        <div class="calendar-container mt-0">
+                          <p>Select Question Type</p>
+                          <select id="SearchDropdown" name="native-select" placeholder="Select Question type" data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
+                              <option value="5">MCQ</option>
+                              <option value="2">Subjective</option>
+                              <option value="3">Answer</option>
+                          </select>
+                          
+                        </div>
+                      </div>
+                      <div class="col-sm-4 col-md-4">
+                        <div class="calendar-container mt-0">
+                          <p>Select Difficulty Level</p>
+                          <select id="SearchDropdown" name="native-select" placeholder="Select Difficulty Level" data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
+                              <option value="5">Easy</option>
+                              <option value="2">Moderate</option>
+                              <option value="3">Hard</option>
+                              
+                          </select>
+                          
+                        </div>
+                      </div>
+                      <div class="col-sm-4 col-md-4">
+                        <div class="calendar-container mt-0">
+                          <p>Select Language</p>
+                          <select id="SearchDropdown" name="native-select" placeholder="Select Languages Here" data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
+                              <option value="5">English</option>
+                              <option value="2">Hindi</option>
+                              <option value="3">Telugu</option>
+                          </select>
+                          
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+
+                  <div class="bg-white p-5 formArea mt-5">
+                    <div class="formNote">
+                      <div class="">
+                         <div class="d-flex justify-content-between align-items-center mb-5">
+                           <h3 class="mb-0">Multiple Choice Question</h3>
+                           <a href=""><img src="./assets/images/Question_Bank/delete.png" alt="" width="18"></a>
+                         </div>
+                          <textarea class="form-control bg-white pt-4 ps-4 border-success1 border-bottom-0" id="exampleFormControlTextarea1" rows="6" placeholder="Please type the Question text in this area." spellcheck="false"></textarea>
+                          <div class="controlBtn border-success1 bg-white border-top-0">
+                              <button type="button" class="btn"><img src="assets/images/questionaries/noun-bold-3871803.svg" alt=""></button>
+                              <button type="button" class="btn"><img src="assets/images/questionaries/noun-italic-4926333.svg" alt=""></button>
+                              <button type="button" class="btn"><img src="assets/images/questionaries/noun-underline-3871798.svg" alt=""></button>
+                              <button type="button" class="btn"><img src="assets/images/questionaries/noun-text-colour-4414429.svg" alt=""></button>
+
+                              <button type="button" class="btn ms-2"><img src="assets/images/questionaries/noun-bullet-list-3871822.svg" alt=""></button>
+                              <button type="button" class="btn"><img src="assets/images/questionaries/noun-sub-bullet-3031236.svg" alt=""></button>
+                              <button type="button" class="btn"><img src="assets/images/questionaries/noun-number-list-3871818.svg" alt=""></button>
+                              
+                              <button type="button" class="btn ms-2"><img src="assets/images/questionaries/noun-align-left-3871870.svg" alt=""></button>
+                              <button type="button" class="btn"><img src="assets/images/questionaries/noun-align-right-3871865.svg" alt=""></button>
+                              <button type="button" class="btn"><img src="assets/images/questionaries/noun-align-center-3871867.svg" alt=""></button>
+                              
+                          </div>
+                      </div>
+                    </div>
+                    <div class="inputGroups">
+                      <form action="">
+                        <div class="d-flex justify-content-between align-items-center pt-4">
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">  
+                          </div>
+                          <div class="w-100">    
+                            <input type="text" class="form-control" placeholder="Please type the option text in this area." required>
+                          </div>
+                          <div>
+                            <a href=""><img src="./assets/images/Question_Bank/crosx.png" alt=""></a>
+                          </div>
+                        </div>
+  
+                        <div class="d-flex justify-content-between align-items-center pt-4">
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">  
+                          </div>
+                          <div class="w-100">    
+                            <input type="text" class="form-control" placeholder="Please type the option text in this area.">
+                          </div>
+                          <div>
+                            <a href=""><img src="./assets/images/Question_Bank/crosx.png" alt=""></a>
+                          </div>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center pt-4">
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">  
+                          </div>
+                          <div class="w-100">    
+                            <input type="text" class="form-control" placeholder="Please type the option text in this area.">
+                          </div>
+                          <div>
+                            <a href=""><img src="./assets/images/Question_Bank/crosx.png" alt=""></a>
+                          </div>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center pt-4">
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">  
+                          </div>
+                          <div class="w-100">    
+                            <input type="text" class="form-control" placeholder="Please type the option text in this area.">
+                          </div>
+                          <div>
+                            <a href=""><img src="./assets/images/Question_Bank/crosx.png" alt=""></a>
+                          </div>
+                        </div>
+  
+                        <div class="d-flex justify-content-between align-items-center pt-5 addOption">
+                          <div>
+                            <a href="">Add Hint ?</a>
+                          </div>
+                          <div>
+                            <a href=""><img src="./assets/images/Question_Bank/add-plus.png" alt="" class="me-3"> Add More Option</a>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                  <div class="footerBtn mt-5 d-flex justify-content-between align-items-center">
+                    <div>
+                      <button type="button" class="btn btnBorder">Preview <img src="./assets/images/Question_Bank/eye.svg" class="ms-2" alt=""></button>
+                    </div>
+                    <div>
+                      <button type="button" class="btn btnDark">Save & Add More Question <img src="./assets/images/Question_Bank/plus.svg" class="ms-2" alt=""> </button>
+                    </div>
+                  </div>
+
+                </div>
+                <div id="menu1" class="container tab-pane fade"><br>
+                  <h3>Programming Hands On</h3>
+                  <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+              </div>
+            </div> 
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- main-div closed -->
+    </div>
+    <!-- container closed -->
+    </section>
+    <!--selection section end -->
+    <script src="https://kit.fontawesome.com/5817738a37.js" crossorigin="anonymous"></script>
+    <script src="assets/js/jquery-2.2.0.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/loader.js"></script>
+    <script src="assets/js/chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="assets/js/virual-select.min.js"></script>
+    <!-- Load plotly.js into the DOM -->
+	<script src='https://cdn.plot.ly/plotly-2.16.1.min.js'></script>
+
+
+
+  <script>
+    VirtualSelect.init({
+      ele: '#SearchDropdown'
+    });
+  </script>
+
+
+  <script type="text/javascript">
+    $(function() {
+      $('input[name="datefilter"]').daterangepicker({
+        autoUpdateInput: false,
+        locale: {
+          cancelLabel: 'Clear'
+        }
+      });
+      $('input[name="datefilter"]').on('apply.daterangepicker', function(ev, picker) {
+        $(this).val(picker.startDate.format('MM/DD/YYYY') + ' - ' + picker.endDate.format('MM/DD/YYYY'));
+      });
+      $('input[name="datefilter"]').on('cancel.daterangepicker', function(ev, picker) {
+        $(this).val('');
+      });
+    });
+  </script>
+
+<script>
+  function sidemenu() {
+var sidebar = document.getElementById("sidebar-menu")
+var icon = document.getElementById("menu-icon")
+var selector = document.getElementById("fullselector")
+selector.classList.toggle("mobile-menu-stopper")
+sidebar.classList.toggle("sidebar-active")
+icon.classList.toggle("icon-rotate")
+icon.classList.toggle("fa-bars")
+icon.classList.toggle("fa-xmark")
+
+}
+</script>
+
+
+
+ 
+    <script>
+      function profile() {
+        profileMenu = document.getElementById("profileDropdown")
+        profileMenu.classList.toggle("dropdownActive")
+        document.addEventListener('click', function profile(event) {
+          console.log("clicked")
+          const box4 = document.getElementById('profile-out');
+          if (!box4.contains(event.target)) {
+            profileMenu.classList.remove("dropdownActive")
+          }
+        });
+      }
+    </script>
+    
+  </body>
+</html>

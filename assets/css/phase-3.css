@@ -1,0 +1,245 @@
+.d-flex.sideMenu{
+    align-items: center;
+    margin-top: 8px;
+    height: 45px;
+}
+
+.sideMenu p{
+    margin-bottom: 0px;
+    font-size: 14px;
+}
+
+.d-flex.sideMenu:hover{
+    background-color: #DAEDEB;
+}
+
+.quesBankTabs .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    height: auto !important;
+}
+
+.quesBankTabs .nav-item .nav-link,.quesBankTabs .nav-item .nav-link.active{
+    font-size: 14px !important;
+    font-weight: bold;
+}
+
+.quesBankTabs .nav-item .nav-link.active{
+    border-bottom: 1px solid #20776E;
+    border-radius: 0px;
+    color: #20776E !important;
+    padding: 8px;
+}
+.quesBankTabs .nav-item .nav-link{
+    border-bottom: 1px solid #e9ecec;
+    color: #849694;
+    padding: 8px;
+}
+.quesBankTabs .nav-pills .nav-link.active{
+    background: #FFFFFF 0% 0% no-repeat padding-box !important;
+    border-radius: 10px 10px 0px 0px;
+    opacity: 1;
+  
+}
+.selectDropdown .row .calendar-container .vscomp-toggle-button{
+    height: 42px;
+}
+.addNewSubj{
+    border: 1px solid #20776E;
+    border-radius: 5px;
+    opacity: 1;
+    height: 40px;
+    width: 158px;
+    color: #20776E;
+    text-transform: capitalize;
+    font-size: 14px;
+}
+.selectDropdown.p-5.bg-light1{
+    background-color: #EDFAF4;
+}
+
+.controlBtn {
+    padding: 10px 12px;
+    border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+
+.controlBtn .btn {
+    font-size: 12px;
+    color: rgb(151, 150, 150);
+    font-family: Rob-bold;
+    padding: 7px 4px;
+}
+.controlBtn .btn:first-child img,.controlBtn .btn:nth-child(2) img,.controlBtn .btn:nth-child(3) img {
+    width: 9px;
+}
+
+.controlBtn .btn img {
+    width: 11px;
+}
+
+.bg-white.p-5.formArea{
+    box-shadow: 0px 1px 6px #00000014;
+    border-radius: 11px;
+    opacity: 1;
+}
+.inputGroups input[type="radio"]{
+    width: 20px;
+    height:20px;
+    border: 0.5px solid #20776E;
+    opacity: 1;
+}
+
+.inputGroups input[type="text"]{
+    height: 39px;
+    border: 0.5px solid #20776E;
+    border-radius: 10px;
+    opacity: 1;
+    width: 97%;
+    margin: auto;
+    font-size: 13px;
+}
+
+.inputGroups input[type="text"]::placeholder{
+    letter-spacing: 0px;
+    color: #BFBFBF;
+    opacity: 1;
+    font-family: Pop-normal;
+}
+.inputGroups input[type="text"]:focus{
+    box-shadow: none;
+}
+.addOption a{
+    text-decoration: underline;
+    letter-spacing: 0px;
+    font-family: Pop-normal;
+    font-size: 16px;
+    color: #20776E;
+    opacity: 1;
+}
+
+.footerbtn .btnBorder{
+    width: 125px;
+    height: 40px;
+    border: 1px solid #20776E;
+    border-radius: 5px;
+    opacity: 1;
+    color: #20776E;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 0px;
+}
+
+.footerbtn .btnDark{
+    width: 240px;
+    height: 40px;
+    background: #20776E 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #5462E247;
+    border-radius: 5px;
+    opacity: 1;
+    color: #FFFFFF;
+    opacity: 1;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.formNote textarea::placeholder{
+    font-family: Pop-normal;
+    letter-spacing: 0px;
+    font-size: 14px;
+    opacity: 1;
+    color: #BFBFBF !important;
+}
+
+.formNote textarea:focus{
+    box-shadow: none;
+    font-size: 14px;
+    height: auto;
+ 
+}
+
+.formNote .border-success1{
+    border: 0.5px solid #20776E;
+}
+
+.filter-container-shadow{
+    box-shadow: 0px 3px 6px #5462E247;
+    border-radius: 5px;
+    opacity: 1;
+}
+
+
+@media (max-width:600px){
+    .footerbtn{
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+   
+    .mobileMenu h3{
+        font-size: 18px;
+        color: #0C1B2C;
+        font-family: Pop-medium;
+        margin-left: 1.5rem;
+    }
+    .mobileMenu .dropdown-toggle{
+        background-color: #20776E;
+        width: 127px;
+        height: 40px;
+        font-size: 14px;
+        color: #FFFFFF;
+        font-family: Pop-medium;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+    }
+    .mobileMenu .dropdown-toggle:focus a:hover{
+        color: #FFFFFF !important;
+    }
+    .quesBankTabs .nav-item .nav-link.nav-link.active,.quesBankTabs .nav-item .nav-link.nav-link{
+        padding: 15px 8px;
+    }
+    .inside-container-dashboard{
+        padding: 0;
+    }
+    .flexWrap{
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+    .tab-content .container.tab-pane{
+        padding: 0px;
+    }
+    .filter-container-shadow.w-auto{
+        width: 150px;
+    }
+    .vscomp-toggle-button{
+        width: 100%;
+    }
+    .calendar-container p{
+        font-size: 18px;
+    }
+    .selectDropdown .row .calendar-container .vscomp-toggle-button{
+        height: 50px;
+    }
+    .vscomp-value{
+        font-size: 16px;
+    }
+    .formNote .controlBtn {
+        display: flex;
+        justify-content: space-between;
+
+    }
+    .side1.sidebar-active{
+        background-color: #FFFFFF;
+        padding-top: 55px;
+        padding-left: 93px;
+    }
+    .side1.sidebar-active {
+        left: -21px;
+        border-radius: 20px;
+        top: 0;
+    }
+    .side1.sidebar-active .openMenuIcon{
+        position: absolute !important;
+        right: 27px;
+        top: 20px;
+    }
+}
