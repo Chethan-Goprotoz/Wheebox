@@ -1,0 +1,434 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Question Bank</title>
+    <!-- font awesome css -->
+    <link rel="stylesheet" href="assets/font-awesome/all.min.css" />
+    <link rel="stylesheet" href="assets/font-awesome/fontawesome.css" />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="assets/images/logo_logo.png" sizes="16x16" type="image/x-icon">
+    <!-- loader css -->
+    <link rel="stylesheet" href="assets/css/loader.css">
+    <!-- style css -->
+    <!-- <link rel="stylesheet" href="assets/sass/app.css" rel="stylesheet" /> -->
+    <link rel="stylesheet" href="assets/css/virtual-select.min.css">
+    <link rel="stylesheet" href="assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/phase-3.css" rel="stylesheet">
+
+  </head>
+  
+  <body>
+    <!-- loader start-->
+    <div class="loader-container">
+      <div class="loader"></div>
+    </div>
+    <!-- loader end-->
+    <!--selection section start -->
+    <div class="selection-new " id="fullselector">
+      <div class="container-fluid">
+        <div class="main_div">
+          <div class="row">
+            <div class="main_header mb-1">
+              <div class="d-flex justify-content-between navpart1">
+                <div class="logo new-logopart">
+                  <img src="assets/images/logo_logo.png" alt="mini-logo">
+                </div>
+              </div>
+              <div class="d-flex align-items-center gap-5">
+                <div class="d-flex gap-4">
+                  
+                  <div>
+                    <a href="#">
+                      <div class="home-search">
+                        <img class="nav-arrows-1" src="assets/images/home-hover.svg" alt="">
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="grid-new" id="profile-out">
+                  <div class="grid1-new" onclick="profile()">
+                    <div class="profile rounded-circle">
+                      <img src="assets/images/prof-mini.png" alt="profile">
+                    </div>
+                  </div>
+                  <div class="grid2-new d-none d-md-block" onclick="profile()">
+                    <h6>Jane Doe</h6>
+                    <p>jane_doe@wheebox.com</p>
+                  </div>
+                  <div class="profileDropdown" id="profileDropdown">
+                    <ul>
+                      <li>Admin Profile</li>
+                      <li>Change Password</li>
+                      <li>Help Center</li>
+                      <li>Log Out</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- row closed -->
+        </div>
+        <div class="d-flex mobileMenu justify-content-lg-end justify-content-between d-md-none mt-3">
+          
+          <div class="d-flex justify-content-between align-items-center"> 
+            <img src="./assets/images/Question_Bank/menu.png" onclick="sidemenu()" id="menu-icon" class="fas fa-solid icon-w fa-bars d-block d-lg-none ms-0">
+            <h3 class="mb-0">Question Bank</h3>
+          </div>
+         
+          <div class="dropdown">
+            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+              Quick links
+            </a>
+          
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+      </div>
+      </div>
+      <div class="sidebar">
+        <div class="d-flex">
+          <div class="side1" id="sidebar-menu">
+            <img src="./assets/images/Question_Bank/croxMenu.png" onclick="sidemenu()" id="menu-icon d-md-none" class="openMenuIcon fas fa-solid icon-w fa-bars d-block d-lg-none ms-0" aria-hidden="true">
+            <a href="#">
+               <div class="d-flex sideMenu mt-5"> <img class="icon-align" src="assets/images/Question_Bank/noun-dashboard-4527077.svg" alt="">
+                   <p>Dashboard</p>
+               </div>
+           </a> <a href="#">
+               <div class="d-flex sideMenu active-one"> <img class="icon-align" src="assets/images/Question_Bank/noun-question.svg" alt="">
+                <a href="question-bank.html"> <p>Question Bank</p></a>
+               </div>
+           </a> <a href="#">
+               <div class="d-flex sideMenu"> <img class="icon-align" src="assets/images/Question_Bank/noun-setting-2193905.svg" alt="">
+                   <p>Test Management</p>
+               </div>
+           </a> <a href="#">
+               <div class="d-flex sideMenu"> <img class="icon-align" src="assets/images/Question_Bank/noun-survey-3881626.svg" alt="">
+                   <p>Evaluation</p>
+               </div>
+           </a>
+           <a href="#">
+             <div class="d-flex sideMenu"> <img class="icon-align" src="assets/images/Question_Bank/noun-clipboard-4426919.svg" alt="">
+                 <p>Roaster Managment</p>
+             </div>
+         </a>
+         <a href="#">
+           <div class="d-flex sideMenu"> <img class="icon-align" src="assets/images/Question_Bank/noun-administration-99475.svg" alt="">
+               <p>Admin Control</p>
+           </div>
+       </a>
+       <a href="#">
+        <div class="d-flex sideMenu"> <img class="icon-align" src="assets/images/Question_Bank/noun-headphone-5272179.svg" alt="">
+            <p>Tech Support</p>
+        </div>
+        </a>
+       </div>
+          <div class="inside-container-dashboard">
+            <div class="d-flex justify-content-between align-items-center mb-5">
+              <h3 class="mb-0 d-none d-md-block">Question Bank</h3>
+              <div class="filter-container filter-container-shadow w-auto ps-3 pe-3 d-lg-flex d-flex justify-content-center align-items-center" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <p>Search Question <img src="./assets/images/Question_Bank/Review Questions.svg" class="ms-2" alt=""></p>
+              </div>
+            </div>
+            <!-- crosX container -->
+            <div class="searchFilterTag">
+              <div>
+                <div class="d-flex gap-3 text-center justify-content-start align-items-center">
+                  <div class="filterTag">
+                    <div>
+                      <h5>Question Reference Number</h5>
+                      <h6>4010257</h6>
+                    </div>
+                    <div>
+                      <a href="" class="ps-2"><img src="./assets/images/Question_Bank/filterx.png" alt="" width="12"></a>
+                    </div>
+                  </div>
+                  <div class="filterTag">
+                    <div>
+                      <h5>Subject</h5>
+                      <h6>English</h6>
+                    </div>
+                    <div>
+                      <a href="" class="ps-2"><img src="./assets/images/Question_Bank/filterx.png" alt="" width="12"></a>
+                    </div>
+                  </div>
+                  <div class="filterTag">
+                    <div>
+                      <h5>Question Type</h5>
+                      <h6>Multiple Choice</h6>
+                    </div>
+                    <div>
+                      <a href="" class="ps-2"><img src="./assets/images/Question_Bank/filterx.png" alt="" width="12"></a>
+                    </div>
+                  </div>
+                  <div class="filterTag">
+                    <div>
+                      <h5>Level</h5>
+                      <h6>Easy</h6>
+                    </div>
+                    <div>
+                      <a href="" class="ps-2"><img src="./assets/images/Question_Bank/filterx.png" alt="" width="12"></a>
+                    </div>
+                  </div>
+                  <div class="filterTag">
+                    <div>
+                      <h5>Subtopics</h5>
+                      <h6>Maths</h6>
+                    </div>
+                    <div>
+                      <a href="" class="ps-2"><img src="./assets/images/Question_Bank/filterx.png" alt="" width="12"></a>
+                    </div>
+                  </div>
+                  <div class="filterTag">
+                    <div>
+                      <h5>Topic</h5>
+                      <h6>Mathematics</h6>
+                    </div>
+                    <div>
+                      <a href="" class="ps-2"><img src="./assets/images/Question_Bank/filterx.png" alt="" width="12"></a>
+                    </div>
+                  </div>
+                  <div class="filterTag">
+                    <div>
+                      <h5>Language</h5>
+                      <h6>English</h6>
+                    </div>
+                    <div>
+                      <a href="" class="ps-2"><img src="./assets/images/Question_Bank/filterx.png" alt="" width="12"></a>
+                    </div>
+                  </div>
+                  <div class="filterTag">
+                    <div>
+                      <h5>Status</h5>
+                      <h6>Done</h6>
+                    </div>
+                    <div>
+                      <a href="" class="ps-2"><img src="./assets/images/Question_Bank/filterx.png" alt="" width="12"></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- accordian -->
+            <div class="accordion qusAnsAccordian" id="accordionExample">
+              <div class="accordion-item shadow-sm mb-4 mt-4">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+
+                 <div class="d-flex justify-content-between align-items-center w-100">
+                  <div class="d-flex accHead justify-content-between align-items-center ">
+                    <h6 class="me-2 mb-0"><b>Q 1.</b></h6>
+                    <h6 class="mb-0">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore a aliquyam?</h6>
+                  </div>
+                  <div>
+                    <h6 class="me-4 mb-0"><a href="" class="ms-auto"><img src="./assets/images/Question_Bank/delete.png" width="12" alt=""></a></h6>
+                  </div>
+                 </div>
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <ul class="mb-0">
+                      <li><span>A.</span> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.</li>
+                      <li><span>B.</span> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.</li>
+                      <li><span>C.</span> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.</li>
+                      <li><span>D.</span> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.</li>
+                    </ul>
+                    <h5>Correct Answer</h5>
+                    <ul class="mb-0">
+                      <li><span>C.</span> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.</li>
+                    </ul>  
+
+                    <div class="text-end pb-4">
+                      <button type="button" class="btn btnBorder mx-au">Edit <img src="./assets/images/Question_Bank/editBtn.png" alt=""></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item shadow-sm mb-4 mt-4">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button bg-white collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <div class="d-flex justify-content-between align-items-center w-100">
+                      <div class="d-flex accHead justify-content-between align-items-center ">
+                        <h6 class="me-2 mb-0"><b>Q 2.</b></h6>
+                        <h6 class="mb-0">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore a aliquyam?</h6>
+                      </div>
+                      <div>
+                        <h6 class="me-4 mb-0"><a href="" class="ms-auto"><img src="./assets/images/Question_Bank/delete.png" width="12" alt=""></a></h6>
+                      </div>
+                     </div>
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <ul class="mb-0">
+                      <li><span>A.</span> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.</li>
+                      <li><span>B.</span> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.</li>
+                      <li><span>C.</span> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.</li>
+                      <li><span>D.</span> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.</li>
+                    </ul>
+                    <h5>Correct Answer</h5>
+                    <ul class="mb-0">
+                      <li><span>C.</span> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.</li>
+                    </ul>  
+
+                    <div class="text-end pb-4">
+                      <button type="button" class="btn btnBorder mx-au">Edit <img src="./assets/images/Question_Bank/editBtn.png" alt=""></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item shadow-sm mb-4 mt-4">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button bg-white collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseTwo">
+                    <div class="d-flex justify-content-between align-items-center w-100">
+                      <div class="d-flex accHead justify-content-between align-items-center ">
+                        <h6 class="me-2 mb-0"><b>Q 3.</b></h6>
+                        <h6 class="mb-0">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore a aliquyam?</h6>
+                      </div>
+                      <div>
+                        <h6 class="me-4 mb-0"><a href="" class="ms-auto"><img src="./assets/images/Question_Bank/delete.png" width="12" alt=""></a></h6>
+                      </div>
+                     </div>
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <ul class="mb-0">
+                      <li><span>A.</span> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.</li>
+                      <li><span>B.</span> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.</li>
+                      <li><span>C.</span> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.</li>
+                      <li><span>D.</span> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.</li>
+                    </ul>
+                    <h5>Correct Answer</h5>
+                    <ul class="mb-0">
+                      <li><span>B.</span> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.</li>
+                    </ul>  
+
+                    <div class="text-end pb-4">
+                      <button type="button" class="btn btnBorder mx-au">Edit <img src="./assets/images/Question_Bank/editBtn.png" alt=""></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item shadow-sm mb-4 mt-4">
+                <h2 class="accordion-header" id="headingFour">
+                  <button class="accordion-button bg-white collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                    <div class="d-flex justify-content-between align-items-center w-100">
+                      <div class="d-flex accHead justify-content-between align-items-center ">
+                        <h6 class="me-2 mb-0"><b>Q 4.</b></h6>
+                        <h6 class="mb-0">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore a aliquyam?</h6>
+                      </div>
+                      <div>
+                        <h6 class="me-4 mb-0"><a href="" class="ms-auto"><img src="./assets/images/Question_Bank/delete.png" width="12" alt=""></a></h6>
+                      </div>
+                     </div>
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <ul class="mb-0">
+                      <li><span>A.</span> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.</li>
+                      <li><span>B.</span> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.</li>
+                      <li><span>C.</span> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.</li>
+                      <li><span>D.</span> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.</li>
+                    </ul>
+                    <h5>Correct Answer</h5>
+                    <ul class="mb-0">
+                      <li><span>D.</span> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.</li>
+                    </ul>  
+
+                    <div class="text-end pb-4">
+                      <button type="button" class="btn btnBorder mx-au">Edit <img src="./assets/images/Question_Bank/editBtn.png" alt=""></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- main-div closed -->
+    </div>
+    <!-- container closed -->
+    </section>
+    <!--selection section end -->
+    <script src="https://kit.fontawesome.com/5817738a37.js" crossorigin="anonymous"></script>
+    <script src="assets/js/jquery-2.2.0.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/loader.js"></script>
+    <script src="assets/js/chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="assets/js/virual-select.min.js"></script>
+    <!-- Load plotly.js into the DOM -->
+	<script src='https://cdn.plot.ly/plotly-2.16.1.min.js'></script>
+
+
+
+  <script>
+    VirtualSelect.init({
+      ele: '#SearchDropdown'
+    });
+  </script>
+
+
+  <script type="text/javascript">
+    $(function() {
+      $('input[name="datefilter"]').daterangepicker({
+        autoUpdateInput: false,
+        locale: {
+          cancelLabel: 'Clear'
+        }
+      });
+      $('input[name="datefilter"]').on('apply.daterangepicker', function(ev, picker) {
+        $(this).val(picker.startDate.format('MM/DD/YYYY') + ' - ' + picker.endDate.format('MM/DD/YYYY'));
+      });
+      $('input[name="datefilter"]').on('cancel.daterangepicker', function(ev, picker) {
+        $(this).val('');
+      });
+    });
+  </script>
+
+<script>
+  function sidemenu() {
+var sidebar = document.getElementById("sidebar-menu")
+var icon = document.getElementById("menu-icon")
+var selector = document.getElementById("fullselector")
+selector.classList.toggle("mobile-menu-stopper")
+sidebar.classList.toggle("sidebar-active")
+icon.classList.toggle("icon-rotate")
+icon.classList.toggle("fa-bars")
+icon.classList.toggle("fa-xmark")
+
+}
+</script>
+
+
+
+ 
+    <script>
+      function profile() {
+        profileMenu = document.getElementById("profileDropdown")
+        profileMenu.classList.toggle("dropdownActive")
+        document.addEventListener('click', function profile(event) {
+          console.log("clicked")
+          const box4 = document.getElementById('profile-out');
+          if (!box4.contains(event.target)) {
+            profileMenu.classList.remove("dropdownActive")
+          }
+        });
+      }
+    </script>
+    
+  </body>
+</html>

@@ -139,15 +139,15 @@
                 <!-- Nav pills -->
               <ul class="nav nav-pills nav-justified" role="tablist">
                 <li class="nav-item">
-                  <a class="nav-link active" data-bs-toggle="pill" href="#home"><img src="./assets/images/Question_Bank/noun-question.svg" width="16" alt=""> General Question</a>
+                  <a class="nav-link active" data-bs-toggle="pill" href="#GeneralQuestion"><img src="./assets/images/Question_Bank/noun-question.svg" width="16" alt=""> General Question</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" data-bs-toggle="pill" href="#menu1"><img src="./assets/images/Question_Bank/Programming Hands On.svg" width="16" alt=""> Programming <span class="d-none d-md-inline">Hands On</span></a>
+                  <a class="nav-link" data-bs-toggle="pill" href="#Programming"><img src="./assets/images/Question_Bank/Programming Hands On.svg" width="16" alt=""> Programming <span class="d-none d-md-inline">Hands On</span></a>
                 </li>
               </ul>
             <!-- Tab panes -->
               <div class="tab-content">
-                <div id="home" class="container tab-pane active"><br>
+                <div id="GeneralQuestion" class="container tab-pane active"><br>
                  
                   <div class="d-flex flexWrap justify-content-between align-items-center mb-5 mt-4">
                     <h3 class="mb-0">Create Question</h3>
@@ -155,9 +155,103 @@
                       <div class="filter-container filter-container-shadow d-lg-flex d-flex justify-content-center align-items-center">
                         <p>Bulk Upload <img src="./assets/images/Question_Bank/Bulk Upload.svg" class="ms-2" alt=""></p> 
                       </div>
-                      <div class="filter-container filter-container-shadow w-auto ps-3 pe-3 d-lg-flex d-flex justify-content-center align-items-center">
+                      <div class="filter-container filter-container-shadow w-auto ps-3 pe-3 d-lg-flex d-flex justify-content-center align-items-center" data-bs-toggle="modal" data-bs-target="#exampleModal">
                         <p>Review Questions <img src="./assets/images/Question_Bank/Review Questions.svg" class="ms-2" alt=""></p>
                       </div>
+                      <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog  modal-dialog-centered reviewQuesModal">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Search Question</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <form action="" method="post">
+                              <div class="modal-body p-5 ms-5 me-5">
+                                <div class="row gx-5 gy-4">
+                                  <div class="col-sm-4 col-md-6 mt-0">
+                                    <div class="calendar-container mt-0">
+                                      <p>Select Subject</p>
+                                      <select id="SearchDropdown" name="native-select" placeholder="Select Subject Here" data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
+                                          <option value="5">English</option>
+                                          <option value="1">Hindi</option>
+                                          <option value="2">Maths</option>
+                                          <option value="3">Physics</option>
+                                          <option value="4">Chemistry</option>
+                                      </select>
+                                      
+                                    </div>
+                                  </div>
+                                  <div class="col-sm-4 col-md-6 mt-0">
+                                    <div class="calendar-container mt-0">
+                                      <p>Select Topic</p>
+                                      <select id="SearchDropdown" name="native-select" placeholder="Select Topic Here" data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
+                                          <option value="5">Grammer</option>
+                                          <option value="1">Tense</option>
+                                          <option value="2">Passage</option>
+                                          <option value="3">Story</option>
+                                          <option value="4">Poetry</option>
+                                      </select>
+                                      
+                                    </div>
+                                  </div>
+                                  <div class="col-sm-4 col-md-6">
+                                    <div class="calendar-container mt-0">
+                                      <p>Select Subtopics</p>
+                                      <select id="SearchDropdown" name="native-select" placeholder="Select Subtopic Here" data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
+                                          <option value="5">Tenses</option>
+                                          <option value="2">Passage</option>
+                                          <option value="3">Story</option>
+                                          <option value="4">Poetry</option>
+                                      </select>
+                                      
+                                    </div>
+                                  </div>
+                                  <div class="col-sm-4 col-md-6">
+                                    <div class="calendar-container mt-0">
+                                      <p>Select Question Type</p>
+                                      <select id="SearchDropdown" name="native-select" placeholder="Select Question type" data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
+                                          <option value="5">MCQ</option>
+                                          <option value="2">Subjective</option>
+                                          <option value="3">Answer</option>
+                                      </select>
+                                      
+                                    </div>
+                                  </div>
+                                  <div class="col-sm-4 col-md-6">
+                                    <div class="calendar-container mt-0">
+                                      <p>Select Difficulty Level</p>
+                                      <select id="SearchDropdown" name="native-select" placeholder="Select Difficulty Level" data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
+                                          <option value="5">Easy</option>
+                                          <option value="2">Moderate</option>
+                                          <option value="3">Hard</option>
+                                          
+                                      </select>
+                                      
+                                    </div>
+                                  </div>
+                                  <div class="col-sm-4 col-md-6">
+                                    <div class="calendar-container mt-0">
+                                      <p>Select Question Status</p>
+                                      <select id="SearchDropdown" name="native-select" placeholder="Select Question Status" data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
+                                          <option value="5">Done</option>
+                                          <option value="2">Pending</option>
+                                          <option value="3">Working</option>
+                                      </select>
+                                      
+                                    </div>
+                                  </div>                   
+                                </div>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btnBorder" data-bs-dismiss="modal">Cancel</button>
+                                <button type="submit" class="btn btnDark">Submit</button>
+                              </div>
+                            </form>
+                            </div>
+                          </div>
+                        </div>
+                      <!-- modal end -->
                     </div>
                   </div>
                   <div class="selectDropdown p-5 bg-light1">
@@ -236,8 +330,7 @@
                           </select>
                           
                         </div>
-                      </div>
-                      
+                      </div>                   
                     </div>
                   </div>
 
@@ -335,9 +428,346 @@
                   </div>
 
                 </div>
-                <div id="menu1" class="container tab-pane fade"><br>
-                  <h3>Programming Hands On</h3>
-                  <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <div id="Programming" class="container tab-pane fade"><br>
+                  <div class="d-flex flexWrap justify-content-between align-items-center mb-5 mt-4">
+                    <h3 class="mb-0">Create Question</h3>
+                    <div class="d-flex gap-4">
+                      <div class="w-auto ps-3 pe-3 filter-container filter-container-shadow d-lg-flex d-flex justify-content-center align-items-center">
+                       <a href="question-bank-manage-compilers.html"> <p>Manage Compilers <img src="./assets/images/Question_Bank/m-compilers.png" width="16" class="ms-2" alt=""></p> </a>
+                      </div>
+                      <div class="filter-container filter-container-shadow w-auto ps-3 pe-3 d-lg-flex d-flex justify-content-center align-items-center">
+                       <a href="question-bank-search-que-1.html"> <p>Review Questions <img src="./assets/images/Question_Bank/Review Questions.svg" class="ms-2" alt=""></p></a>
+                      </div>
+                     
+                    </div>
+                  </div>
+                  <div class="selectDropdown p-5 bg-light1">
+                    <div class="d-flex justify-content-end mb-4">
+                      <button class="btn addNewSubj" type="button">Add New Subject</button>
+                    </div>
+                    <div class="row gx-5 gy-4">
+                      <div class="col-sm-4 col-md-4">
+                        <div class="calendar-container mt-0">
+                          <p>Select Subject</p>
+                          <select id="SearchDropdown" name="native-select" placeholder="Select Subject Here" data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
+                              <option value="5">English</option>
+                              <option value="1">Hindi</option>
+                              <option value="2">Maths</option>
+                              <option value="3">Physics</option>
+                              <option value="4">Chemistry</option>
+                          </select>
+                          
+                        </div>
+                      </div>
+                      <div class="col-sm-4 col-md-4">
+                        <div class="calendar-container mt-0">
+                          <p>Select Topic</p>
+                          <select id="SearchDropdown" name="native-select" placeholder="Select Topic Here" data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
+                              <option value="5">Grammer</option>
+                              <option value="1">Tense</option>
+                              <option value="2">Passage</option>
+                              <option value="3">Story</option>
+                              <option value="4">Poetry</option>
+                          </select>
+                          
+                        </div>
+                      </div>
+                      <div class="col-sm-4 col-md-4">
+                        <div class="calendar-container mt-0">
+                          <p>Select Subtopics</p>
+                          <select id="SearchDropdown" name="native-select" placeholder="Select Subtopic Here" data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
+                              <option value="5">Tenses</option>
+                              <option value="2">Passage</option>
+                              <option value="3">Story</option>
+                              <option value="4">Poetry</option>
+                          </select>
+                          
+                        </div>
+                      </div>
+                                       
+                    </div>
+                  </div>
+
+                  <div class="bg-white p-5 formArea queStatement mt-5">
+                    <div class="formNote">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="">
+                            <div class="d-flex justify-content-between align-items-center mb-4">
+                              <h5 class="mb-0 title1">Question Statement</h5>
+                              <a href="#" data-bs-toggle="modal" data-bs-target="#programSnippet"><button class="btn w-auto addNewSubj" type="button">Programming Snippet</button></a>
+
+                              <!-- popup for programming snippet -->
+                             
+                                  <div class="modal fade" id="programSnippet" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                      <div class="modal-content">
+                                        <div class="modal-header d-flex align-items-center border-0">
+                                          <h5 class="modal-title modal-title-snippet" id="exampleModalLabel">Programming Snippet</h5>
+                                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body ps-5 pe-5 border-0">
+                                          <div class="">
+                                            <div class="d-flex justify-content-between align-items-center mb-4">
+                                              <h5 class="mb-0 title1">Type your problem Snippet</h5>
+                                              <a href=""><button class="btn w-auto addNewSubj" type="button">Choose Compiler</button></a>                            
+                                            </div>
+                                            <div class="codeCompiler d-flex align-items-center position-relative">                              
+                                              <textarea class="form-control bg-white pt-4 border-success1 " id="exampleFormControlTextarea1" rows="8" placeholder="Please type the Question text in this area." spellcheck="false"></textarea>
+                                                <h6 class="num1">1</h6>
+                                            </div>
+                                         </div>
+                                        </div>
+                                        <div class="modal-footer border-0">
+                                        
+                                          <button type="button" class="btn w-auto btnDark ps-3 pe-3 text-white">Add Programming Snippet</button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                              <!-- end -->
+                            </div>
+                            <div class="">
+                              <textarea class="form-control textArea1 bg-white pt-4 ps-4 border-success1 border-bottom-0" id="exampleFormControlTextarea1" rows="6" placeholder="Please type the Question text in this area." spellcheck="false"></textarea>
+                              <div class="controlBtn border-success1 bg-white border-top-0">
+                                  <button type="button" class="btn"><img src="assets/images/questionaries/noun-bold-3871803.svg" alt=""></button>
+                                  <button type="button" class="btn"><img src="assets/images/questionaries/noun-italic-4926333.svg" alt=""></button>
+                                  <button type="button" class="btn"><img src="assets/images/questionaries/noun-underline-3871798.svg" alt=""></button>
+                                  <button type="button" class="btn"><img src="assets/images/questionaries/noun-text-colour-4414429.svg" alt=""></button>
+    
+                                  <button type="button" class="btn ms-2"><img src="assets/images/questionaries/noun-bullet-list-3871822.svg" alt=""></button>
+                                  <button type="button" class="btn"><img src="assets/images/questionaries/noun-sub-bullet-3031236.svg" alt=""></button>
+                                  <button type="button" class="btn"><img src="assets/images/questionaries/noun-number-list-3871818.svg" alt=""></button>
+                                  
+                                  <button type="button" class="btn ms-2"><img src="assets/images/questionaries/noun-align-left-3871870.svg" alt=""></button>
+                                  <button type="button" class="btn"><img src="assets/images/questionaries/noun-align-right-3871865.svg" alt=""></button>
+                                  <button type="button" class="btn"><img src="assets/images/questionaries/noun-align-center-3871867.svg" alt=""></button>                                 
+                              </div>
+                            </div>
+                         </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="">
+                            <div class="d-flex justify-content-between align-items-center mb-4">
+                              <h5 class="mb-0 title1">Write Code</h5>
+                              <a href=""><button class="btn w-auto addNewSubj" type="button">Programming Snippet</button></a>                            
+                            </div>
+                            <div class="codeCompiler d-flex align-items-center position-relative">                              
+                              <textarea class="form-control bg-white pt-4 border-success1 " id="exampleFormControlTextarea1" rows="8" placeholder="Please type the Question text in this area." spellcheck="false"></textarea>
+                                <h6 class="num1">1</h6>
+                            </div>
+                         </div>
+                        </div>
+                      </div>
+
+                      <div class="fourCards pt-5">
+                        <div class="row">
+                          <div class="col-md-3 col-lg-3 col-xl-3 col-xxl-2">
+                            <div class="border-success1 fourCards1">
+                              <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                  <h6 class="mb-0">Test Cases</h6>
+                                </div>
+                                <div>
+                                  <a href=""><img src="./assets/images/Question_Bank/help-que.svg" width="14" alt=""></a>
+                                </div>
+                              </div>
+                              <div class="d-flex position-relative card-green justify-content-between align-items-center">
+                                <div class="lineAfter">
+                                  <h2 class="mb-0">20</h2>
+                                  <h3>Allowed</h3>
+                                </div>
+                                <div>
+                                  <h2 class="mb-0">10</h2>
+                                  <h3>Credit</h3>
+                                </div>
+                              </div>
+                              <div>
+                                <a href="question-bank-view-test-case.html"> <button type="button" class="btn ps-4 pe-4 text-white btnDark">Add Test Cases <img class="ms-2 mb-1" src="./assets/images/Question_Bank/plus-slick1.svg" alt=""></button></a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-3 col-lg-3 col-xl-3 col-xxl-2">
+                            <div class="border-success1 fourCards1">
+                              <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                  <h6 class="mb-0">Compilers</h6>
+                                </div>
+                                <div>
+                                  <a href=""><img src="./assets/images/Question_Bank/help-que.svg" width="14" alt=""></a>
+                                </div>
+                              </div>
+                              <div class="d-flex position-relative card-green justify-content-between align-items-center">
+                                <div class="lineAfter">
+                                  <h2 class="mb-0">20</h2>
+                                  <h3>Allowed</h3>
+                                </div>
+                                <div>
+                                  <h2 class="mb-0">10</h2>
+                                  <h3>Credit</h3>
+                                </div>
+                              </div>
+                              <div>
+                                <button data-bs-toggle="modal" data-bs-target="#addCompilers" type="button" class="btn ps-4 pe-4 text-white btnDark">Add Compilers<img class="ms-2 mb-1" src="./assets/images/Question_Bank/plus-slick1.svg" alt=""></button>
+                              </div>
+
+                              <!-- pop for add compiler -->
+                              <!-- popup for programming snippet -->
+                                    <div class="modal fade" id="addCompilers" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                  <div class="modal-content">
+                                    <div class="modal-header d-flex align-items-center border-0">
+                                      <h5 class="modal-title modal-title-snippet" id="exampleModalLabel">Compilers</h5>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body ps-5 pe-5 border-0">
+                                      <div class="addCompilerChecks">
+                                        <div class="row g-4 offset-1 p-5 ps-0">
+                                          <div class="col-md-3">
+                                            <div class="form-check">
+                                              <input class="form-check-input compLanguage" type="checkbox" value="" id="compLanguage1" checked>
+                                              <label class="form-check-label compLanguage" for="compLanguage1">
+                                                C
+                                              </label>
+                                            </div>
+                                          </div>
+                                          <div class="col-md-3">
+                                            <div class="form-check">
+                                              <input class="form-check-input compLanguage" type="checkbox" value="" id="compLanguage2">
+                                              <label class="form-check-label compLanguage" for="compLanguage2">
+                                                Python
+                                              </label>
+                                            </div>
+                                          </div>
+                                          <div class="col-md-3">
+                                            <div class="form-check">
+                                              <input class="form-check-input compLanguage" type="checkbox" value="" id="compLanguage3" checked>
+                                              <label class="form-check-label compLanguage" for="compLanguage3">
+                                                JavaScript
+                                              </label>
+                                            </div>
+                                          </div>
+                                          <div class="col-md-3">
+                                            <div class="form-check">
+                                              <input class="form-check-input compLanguage" type="checkbox" value="" id="compLanguage4">
+                                              <label class="form-check-label compLanguage" for="compLanguage4">
+                                                CPP
+                                              </label>
+                                            </div>
+                                          </div>
+                                          <div class="col-md-3">
+                                            <div class="form-check">
+                                              <input class="form-check-input compLanguage" type="checkbox" value="" id="compLanguage5" checked>
+                                              <label class="form-check-label compLanguage" for="compLanguage5">
+                                                SQL
+                                              </label>
+                                            </div>
+                                          </div>
+                                          <div class="col-md-3">
+                                            <div class="form-check">
+                                              <input class="form-check-input compLanguage" type="checkbox" value="" id="compLanguage6" checked>
+                                              <label class="form-check-label compLanguage" for="compLanguage6">
+                                                COBOL
+                                              </label>
+                                            </div>
+                                          </div>
+                                          <div class="col-md-3">
+                                            <div class="form-check">
+                                              <input class="form-check-input compLanguage" type="checkbox" value="" id="compLanguage7">
+                                              <label class="form-check-label compLanguage" for="compLanguage7">
+                                                R
+                                              </label>
+                                            </div>
+                                          </div>
+                                          <div class="col-md-3">
+                                            <div class="form-check">
+                                              <input class="form-check-input compLanguage" type="checkbox" value="" id="compLanguage8" checked>
+                                              <label class="form-check-label compLanguage" for="compLanguage8">
+                                                Node.js
+                                              </label>
+                                            </div>
+                                          </div>
+                                          <div class="col-md-3">
+                                            <div class="form-check">
+                                              <input class="form-check-input compLanguage" type="checkbox" value="" id="compLanguage9" checked>
+                                              <label class="form-check-label compLanguage" for="compLanguage9">
+                                                C#
+                                              </label>
+                                            </div>
+                                          </div>
+                                          <div class="col-md-3">
+                                            <div class="form-check">
+                                              <input class="form-check-input compLanguage" type="checkbox" value="" id="compLanguage10" checked>
+                                              <label class="form-check-label compLanguage" for="compLanguage10">
+                                                Java
+                                              </label>
+                                            </div>
+                                          </div>
+
+                                        </div>
+                                        
+                                        
+                                     </div>
+                                    </div>
+                                    <div class="modal-footer ps-5 d-flex justify-content-between align-items-center border-0">
+                                      <div>
+                                        <button type="reset" class="btn f1BtnBorder">Reset to Default</button>
+                                      </div>
+                                      <div>
+                                        <button type="reset" class="btn f1BtnBorder">Select all</button>
+                                      </div>
+                                      <div>
+                                        <button type="reset" class="btn f1BtnBorder">Unselect all</button>
+                                      </div>
+                                      <div>
+                                        <button data-bs-toggle="modal" data-bs-target="#addCompilers" type="button" class="btn ps-4 pe-4 text-white btnDark">Add Compilers<img class="ms-2 mb-1" src="./assets/images/Question_Bank/plus-slick1.svg" alt=""></button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                    </div>
+                              <!-- end -->
+                             
+                            </div>
+                          </div>
+                          <div class="col-md-3 col-lg-3 col-xl-3 col-xxl-4">
+                            <div class="fourCards2">
+                              <div class="d-flex justify-content-between align-items-center">
+                                <h5 class="mb-0 title2">Provide Input</h5>
+                                <a href=""><img src="./assets/images/Question_Bank/help-que.svg" width="14" alt=""></a>                            
+                              </div>
+                              <div class="codeInput mt-2 d-flex align-items-center position-relative">                              
+                                <textarea class="form-control bg-white pt-4 border-success1" id="exampleFormControlTextarea1" rows="6" placeholder="Please Provide Input" spellcheck="false"></textarea>
+
+                                <button type="button" class="btn btnBorder">Compile and Execute <img src="./assets/images/Question_Bank/compilers.svg" class="ms-2 mb-1" width="12" alt=""></button>
+                              </div>
+                           </div>
+                          </div>
+                          <div class="col-md-3 col-lg-3 col-xl-3 col-xxl-4">
+                            <div class="fourCards2">
+                              <div class="d-flex justify-content-between align-items-center">
+                                <h5 class="mb-0 title2">Generated output</h5>
+                                <a href=""><img src="./assets/images/Question_Bank/help-que.svg" width="14" alt=""></a>                            
+                              </div>
+                              <div class="codeInput mt-2 d-flex align-items-center position-relative">                              
+                                <textarea class="form-control bg-white pt-4 border-success1" id="exampleFormControlTextarea1" rows="6" placeholder="Please Provide Input" spellcheck="false"></textarea>
+                              </div>
+                           </div>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div class="footerBtn mt-5 d-flex justify-content-between align-items-center">
+                    <div>
+                      <button type="button" class="btn btnBorder">Preview <img src="./assets/images/Question_Bank/eye.svg" class="ms-2" alt=""></button>
+                    </div>
+                    <div>
+                      <button type="button" class="btn btnDark">Save & Add More Question <img src="./assets/images/Question_Bank/plus.svg" class="ms-2" alt=""> </button>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div> 

@@ -1,0 +1,584 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Question Bank-View Test Case</title>
+    <!-- font awesome css -->
+    <link rel="stylesheet" href="assets/font-awesome/all.min.css" />
+    <link rel="stylesheet" href="assets/font-awesome/fontawesome.css" />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="assets/images/logo_logo.png" sizes="16x16" type="image/x-icon">
+    <!-- loader css -->
+    <link rel="stylesheet" href="assets/css/loader.css">
+    <!-- style css -->
+    <!-- <link rel="stylesheet" href="assets/sass/app.css" rel="stylesheet" /> -->
+    <link rel="stylesheet" href="assets/css/virtual-select.min.css">
+    <link rel="stylesheet" href="assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/phase-3.css" rel="stylesheet">
+
+  </head>
+  
+  <body>
+    <!-- loader start-->
+    <div class="loader-container">
+      <div class="loader"></div>
+    </div>
+    <!-- loader end-->
+    <!--selection section start -->
+    <div class="selection-new " id="fullselector">
+      <div class="container-fluid">
+        <div class="main_div">
+          <div class="row">
+            <div class="main_header mb-1">
+              <div class="d-flex justify-content-between navpart1">
+                <div class="logo new-logopart">
+                  <img src="assets/images/logo_logo.png" alt="mini-logo">
+                </div>
+              </div>
+              <div class="d-flex align-items-center gap-5">
+                <div class="d-flex gap-4">
+                  
+                  <div>
+                    <a href="#">
+                      <div class="home-search">
+                        <img class="nav-arrows-1" src="assets/images/home-hover.svg" alt="">
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="grid-new" id="profile-out">
+                  <div class="grid1-new" onclick="profile()">
+                    <div class="profile rounded-circle">
+                      <img src="assets/images/prof-mini.png" alt="profile">
+                    </div>
+                  </div>
+                  <div class="grid2-new d-none d-md-block" onclick="profile()">
+                    <h6>Jane Doe</h6>
+                    <p>jane_doe@wheebox.com</p>
+                  </div>
+                  <div class="profileDropdown" id="profileDropdown">
+                    <ul>
+                      <li>Admin Profile</li>
+                      <li>Change Password</li>
+                      <li>Help Center</li>
+                      <li>Log Out</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- row closed -->
+        </div>
+        <div class="d-flex mobileMenu justify-content-lg-end justify-content-between d-md-none mt-3">
+          
+          <div class="d-flex justify-content-between align-items-center"> 
+            <img src="./assets/images/Question_Bank/menu.png" onclick="sidemenu()" id="menu-icon" class="fas fa-solid icon-w fa-bars d-block d-lg-none ms-0">
+            <h3 class="mb-0">Question Bank</h3>
+          </div>
+         
+          <div class="dropdown">
+            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+              Quick links
+            </a>
+          
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+      </div>
+      </div>
+      <div class="sidebar">
+        <div class="d-flex">
+          <div class="side1" id="sidebar-menu">
+            <img src="./assets/images/Question_Bank/croxMenu.png" onclick="sidemenu()" id="menu-icon d-md-none" class="openMenuIcon fas fa-solid icon-w fa-bars d-block d-lg-none ms-0" aria-hidden="true">
+            <a href="#">
+               <div class="d-flex sideMenu mt-5"> <img class="icon-align" src="assets/images/Question_Bank/noun-dashboard-4527077.svg" alt="">
+                   <p>Dashboard</p>
+               </div>
+           </a> <a href="#">
+               <div class="d-flex sideMenu active-one"> <img class="icon-align" src="assets/images/Question_Bank/noun-question.svg" alt="">
+                  <a href="question-bank.html"> <p>Question Bank</p></a>
+               </div>
+           </a> <a href="#">
+               <div class="d-flex sideMenu"> <img class="icon-align" src="assets/images/Question_Bank/noun-setting-2193905.svg" alt="">
+                   <p>Test Management</p>
+               </div>
+           </a> <a href="#">
+               <div class="d-flex sideMenu"> <img class="icon-align" src="assets/images/Question_Bank/noun-survey-3881626.svg" alt="">
+                   <p>Evaluation</p>
+               </div>
+           </a>
+           <a href="#">
+             <div class="d-flex sideMenu"> <img class="icon-align" src="assets/images/Question_Bank/noun-clipboard-4426919.svg" alt="">
+                 <p>Roaster Managment</p>
+             </div>
+         </a>
+         <a href="#">
+           <div class="d-flex sideMenu"> <img class="icon-align" src="assets/images/Question_Bank/noun-administration-99475.svg" alt="">
+               <p>Admin Control</p>
+           </div>
+       </a>
+       <a href="#">
+        <div class="d-flex sideMenu"> <img class="icon-align" src="assets/images/Question_Bank/noun-headphone-5272179.svg" alt="">
+            <p>Tech Support</p>
+        </div>
+        </a>
+       </div>
+          <div class="inside-container-dashboard">
+            <div class="d-flex justify-content-between align-items-center ">
+              <h3 class="mb-0 d-none d-md-block">Test Cases</h3>
+            </div>
+            <!-- search component -->
+            <div class="searchInput mt-4 d-flex justify-content-between align-items-center mb-5">
+              <div class="searchAfter position-relative">
+                <input type="text" class="form-control" placeholder="Search...">
+              </div>
+              <div class="filter-container filter-container-shadow w-auto ps-3 pe-3 d-lg-flex d-flex justify-content-center align-items-center" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <p>Add New Test Case <img src="./assets/images/Question_Bank/plus-slick1.svg" class="ms-2" alt=""></p>
+              </div>
+            </div>
+            <!-- end -->
+            <!-- test case cards -->
+            <div class="testCaseCards">
+              <div class="row g-4">
+                <div class="col-md-3">
+                  <div class="testCaseCards1">
+
+                    <div class="d-flex justify-content-between align-items-center ">
+                      <h6 class="caseTitle mb-0">Test Case 1</h6>
+                      <a href="" class="dNoneImg"><img src="./assets/images/Question_Bank/delete.png" width="15" alt=""></a>
+                    </div>
+                     
+
+                    <table class="table table-borderless testCaseTable mb-0">                    
+                      <tbody>
+                        <tr>
+                          <td>Name :</td>
+                          <td>Test Case 1</td>
+                        
+                        </tr>
+                        <tr>
+                          <td>Active :</td>
+                          <td>Yes</td>
+                      
+                        </tr>
+                        <tr>
+                          <td>Visible :</td>
+                          <td>Active</td>
+                        </tr>
+
+                        <tr>
+                          <td>Input :</td>
+                          <td>200 500 A B</td>
+                        </tr>
+                        <tr>
+                          <td>Output :</td>
+                          <td>A 2OO, B 500</td>
+                        </tr>
+                        <tr>
+                          <td><button type="button" class="btn text-white btnEditCase">Edit <img class="ms-2 mb-1" src="./assets/images/Question_Bank/edit-white.png" width="12" class="mb-1" alt=""></button></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="testCaseCards1">
+
+                    <div class="d-flex justify-content-between align-items-center ">
+                      <h6 class="caseTitle mb-0">Test Case 1</h6>
+                      <a href="" class="dNoneImg"><img src="./assets/images/Question_Bank/delete.png" width="15" alt=""></a>
+                    </div>
+
+                    <table class="table table-borderless testCaseTable mb-0">                    
+                      <tbody>
+                        <tr>
+                          <td>Name :</td>
+                          <td>Test Case 1</td>
+                        
+                        </tr>
+                        <tr>
+                          <td>Active :</td>
+                          <td>Yes</td>
+                      
+                        </tr>
+                        <tr>
+                          <td>Visible :</td>
+                          <td>Active</td>
+                        </tr>
+
+                        <tr>
+                          <td>Input :</td>
+                          <td>200 500 A B</td>
+                        </tr>
+                        <tr>
+                          <td>Output :</td>
+                          <td>A 2OO, B 500</td>
+                        </tr>
+                        <tr>
+                          <td><button type="button" class="btn text-white btnEditCase">Edit <img class="ms-2 mb-1" src="./assets/images/Question_Bank/edit-white.png" width="12" class="mb-1" alt=""></button></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="testCaseCards1">
+
+                    <div class="d-flex justify-content-between align-items-center ">
+                      <h6 class="caseTitle mb-0">Test Case 1</h6>
+                      <a href="" class="dNoneImg"><img src="./assets/images/Question_Bank/delete.png" width="15" alt=""></a>
+                    </div>
+
+                    <table class="table table-borderless testCaseTable mb-0">                    
+                      <tbody>
+                        <tr>
+                          <td>Name :</td>
+                          <td>Test Case 1</td>
+                        
+                        </tr>
+                        <tr>
+                          <td>Active :</td>
+                          <td>Yes</td>
+                      
+                        </tr>
+                        <tr>
+                          <td>Visible :</td>
+                          <td>Active</td>
+                        </tr>
+
+                        <tr>
+                          <td>Input :</td>
+                          <td>200 500 A B</td>
+                        </tr>
+                        <tr>
+                          <td>Output :</td>
+                          <td>A 2OO, B 500</td>
+                        </tr>
+                        <tr>
+                          <td><button type="button" class="btn text-white btnEditCase">Edit <img class="ms-2 mb-1" src="./assets/images/Question_Bank/edit-white.png" width="12" class="mb-1" alt=""></button></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="testCaseCards1">
+
+                    <div class="d-flex justify-content-between align-items-center ">
+                      <h6 class="caseTitle mb-0">Test Case 1</h6>
+                      <a href="" class="dNoneImg"><img src="./assets/images/Question_Bank/delete.png" width="15" alt=""></a>
+                    </div>
+
+                    <table class="table table-borderless testCaseTable mb-0">                    
+                      <tbody>
+                        <tr>
+                          <td>Name :</td>
+                          <td>Test Case 1</td>
+                        
+                        </tr>
+                        <tr>
+                          <td>Active :</td>
+                          <td>Yes</td>
+                      
+                        </tr>
+                        <tr>
+                          <td>Visible :</td>
+                          <td>Active</td>
+                        </tr>
+
+                        <tr>
+                          <td>Input :</td>
+                          <td>200 500 A B</td>
+                        </tr>
+                        <tr>
+                          <td>Output :</td>
+                          <td>A 2OO, B 500</td>
+                        </tr>
+                        <tr>
+                          <td><button type="button" class="btn text-white btnEditCase">Edit <img class="ms-2 mb-1" src="./assets/images/Question_Bank/edit-white.png" width="12" class="mb-1" alt=""></button></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="testCaseCards1">
+
+                    <div class="d-flex justify-content-between align-items-center ">
+                      <h6 class="caseTitle mb-0">Test Case 1</h6>
+                      <a href="" class="dNoneImg"><img src="./assets/images/Question_Bank/delete.png" width="15" alt=""></a>
+                    </div>
+
+                    <table class="table table-borderless testCaseTable mb-0">                    
+                      <tbody>
+                        <tr>
+                          <td>Name :</td>
+                          <td>Test Case 1</td>
+                        
+                        </tr>
+                        <tr>
+                          <td>Active :</td>
+                          <td>Yes</td>
+                      
+                        </tr>
+                        <tr>
+                          <td>Visible :</td>
+                          <td>Active</td>
+                        </tr>
+
+                        <tr>
+                          <td>Input :</td>
+                          <td>200 500 A B</td>
+                        </tr>
+                        <tr>
+                          <td>Output :</td>
+                          <td>A 2OO, B 500</td>
+                        </tr>
+                        <tr>
+                          <td><button type="button" class="btn text-white btnEditCase">Edit <img class="ms-2 mb-1" src="./assets/images/Question_Bank/edit-white.png" width="12" class="mb-1" alt=""></button></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="testCaseCards1">
+
+                    <div class="d-flex justify-content-between align-items-center ">
+                      <h6 class="caseTitle mb-0">Test Case 1</h6>
+                      <a href="" class="dNoneImg"><img src="./assets/images/Question_Bank/delete.png" width="15" alt=""></a>
+                    </div>
+
+                    <table class="table table-borderless testCaseTable mb-0">                    
+                      <tbody>
+                        <tr>
+                          <td>Name :</td>
+                          <td>Test Case 1</td>
+                        
+                        </tr>
+                        <tr>
+                          <td>Active :</td>
+                          <td>Yes</td>
+                      
+                        </tr>
+                        <tr>
+                          <td>Visible :</td>
+                          <td>Active</td>
+                        </tr>
+
+                        <tr>
+                          <td>Input :</td>
+                          <td>200 500 A B</td>
+                        </tr>
+                        <tr>
+                          <td>Output :</td>
+                          <td>A 2OO, B 500</td>
+                        </tr>
+                        <tr>
+                          <td><button type="button" class="btn text-white btnEditCase">Edit <img class="ms-2 mb-1" src="./assets/images/Question_Bank/edit-white.png" width="12" class="mb-1" alt=""></button></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="testCaseCards1">
+
+                    <div class="d-flex justify-content-between align-items-center ">
+                      <h6 class="caseTitle mb-0">Test Case 1</h6>
+                      <a href="" class="dNoneImg"><img src="./assets/images/Question_Bank/delete.png" width="15" alt=""></a>
+                    </div>
+
+                    <table class="table table-borderless testCaseTable mb-0">                    
+                      <tbody>
+                        <tr>
+                          <td>Name :</td>
+                          <td>Test Case 1</td>
+                        
+                        </tr>
+                        <tr>
+                          <td>Active :</td>
+                          <td>Yes</td>
+                      
+                        </tr>
+                        <tr>
+                          <td>Visible :</td>
+                          <td>Active</td>
+                        </tr>
+
+                        <tr>
+                          <td>Input :</td>
+                          <td>200 500 A B</td>
+                        </tr>
+                        <tr>
+                          <td>Output :</td>
+                          <td>A 2OO, B 500</td>
+                        </tr>
+                        <tr>
+                          <td><button type="button" class="btn text-white btnEditCase">Edit <img class="ms-2 mb-1" src="./assets/images/Question_Bank/edit-white.png" width="12" class="mb-1" alt=""></button></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="testCaseCards1">
+
+                    <div class="d-flex justify-content-between align-items-center ">
+                      <h6 class="caseTitle mb-0">Test Case 1</h6>
+                      <a href="" class="dNoneImg"><img src="./assets/images/Question_Bank/delete.png" width="15" alt=""></a>
+                    </div>
+
+                    <table class="table table-borderless testCaseTable mb-0">                    
+                      <tbody>
+                        <tr>
+                          <td>Name :</td>
+                          <td>Test Case 1</td>
+                        
+                        </tr>
+                        <tr>
+                          <td>Active :</td>
+                          <td>Yes</td>
+                      
+                        </tr>
+                        <tr>
+                          <td>Visible :</td>
+                          <td>Active</td>
+                        </tr>
+
+                        <tr>
+                          <td>Input :</td>
+                          <td>200 500 A B</td>
+                        </tr>
+                        <tr>
+                          <td>Output :</td>
+                          <td>A 2OO, B 500</td>
+                        </tr>
+                        <tr>
+                          <td><button type="button" class="btn text-white btnEditCase">Edit <img class="ms-2 mb-1" src="./assets/images/Question_Bank/edit-white.png" width="12" class="mb-1" alt=""></button></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+
+              <div class="pagignationDiv1 d-flex justify-content-between align-items-center mt-5">
+                <div class="selectTag gap-4 d-flex justify-content-between align-items-center">
+                  <div class="position-relative">
+                    <p class="mb-0 pe-3">Showing <span>1-5</span> of <span>120</span> </p>
+                    <div class="showPage"></div>
+                  </div>
+                  <div class="selectNumRow">
+                    <select name="cars" id="cars">
+                      <option value="volvo">5</option>
+                      <option value="saab">10</option>
+                      <option value="mercedes">15</option>
+                      <option value="audi">20</option>
+                    </select>
+                  </div>
+                  <div>
+                    <p class="mb-0">records per page</p>
+                  </div>
+
+                </div>
+
+                <div class="paginationDiv">
+                  <ul class="pagination border-0 pagination-lg mb-0">
+                    <li class="page-item "><a class="page-link disable" href="#">Previous</a></li>
+                    <li class="page-item active"><a class="page-link text-white" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                    <li class="page-item"><a class="page-link" href="#">5</a></li>
+                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- main-div closed -->
+    </div>
+    <!-- container closed -->
+    </section>
+    <!--selection section end -->
+    <script src="https://kit.fontawesome.com/5817738a37.js" crossorigin="anonymous"></script>
+    <script src="assets/js/jquery-2.2.0.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/loader.js"></script>
+    <script src="assets/js/chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="assets/js/virual-select.min.js"></script>
+    <!-- Load plotly.js into the DOM -->
+	<script src='https://cdn.plot.ly/plotly-2.16.1.min.js'></script>
+
+
+
+  <script>
+    VirtualSelect.init({
+      ele: '#SearchDropdown'
+    });
+  </script>
+
+
+  <script type="text/javascript">
+    $(function() {
+      $('input[name="datefilter"]').daterangepicker({
+        autoUpdateInput: false,
+        locale: {
+          cancelLabel: 'Clear'
+        }
+      });
+      $('input[name="datefilter"]').on('apply.daterangepicker', function(ev, picker) {
+        $(this).val(picker.startDate.format('MM/DD/YYYY') + ' - ' + picker.endDate.format('MM/DD/YYYY'));
+      });
+      $('input[name="datefilter"]').on('cancel.daterangepicker', function(ev, picker) {
+        $(this).val('');
+      });
+    });
+  </script>
+
+<script>
+  function sidemenu() {
+var sidebar = document.getElementById("sidebar-menu")
+var icon = document.getElementById("menu-icon")
+var selector = document.getElementById("fullselector")
+selector.classList.toggle("mobile-menu-stopper")
+sidebar.classList.toggle("sidebar-active")
+icon.classList.toggle("icon-rotate")
+icon.classList.toggle("fa-bars")
+icon.classList.toggle("fa-xmark")
+
+}
+</script>
+
+
+
+ 
+    <script>
+      function profile() {
+        profileMenu = document.getElementById("profileDropdown")
+        profileMenu.classList.toggle("dropdownActive")
+        document.addEventListener('click', function profile(event) {
+          console.log("clicked")
+          const box4 = document.getElementById('profile-out');
+          if (!box4.contains(event.target)) {
+            profileMenu.classList.remove("dropdownActive")
+          }
+        });
+      }
+    </script>
+    
+  </body>
+</html>
