@@ -192,3 +192,8 @@ outline: 0px;
   }
   
 /* drop */
+.multisteps-form__panel.js-active {
+    height: 100% !important;
+    opacity: 1;
+    visibility: visible;
+}
