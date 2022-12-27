@@ -242,6 +242,17 @@
         right: 27px;
         top: 20px;
     }
+    .testCaseCards .pagignationDiv1{
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center !important;
+    }
+    .createTble.pb-0 .table-main-section2.table-responsive{
+        overflow: auto;
+    }
+    .createTble.pb-0 .table-main-section2.table-responsive table{
+        width: 350%;
+    }
 }
 
 .reviewQuesModal .modal-body{
