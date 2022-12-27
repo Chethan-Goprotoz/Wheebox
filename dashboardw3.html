@@ -341,7 +341,7 @@ icon.classList.toggle("fa-xmark")
         labels: labels3,
         datasets: [{
           label: 'Data',
-          data: [0, 1000, 500, 1000, 0, 1500, 1400, 2000, 500],
+          data: [0, 1000, 500, 1000, 0, 1500, 1400, 2500, 500],
           tension: 0,
           borderColor: '#FEC271',
           pointBackgroundColor: '#FFFFFF',
@@ -373,11 +373,11 @@ icon.classList.toggle("fa-xmark")
             y: {
               beginAtZero: true,
               ticks: {
-                stepSize: 20,
+                stepSize: 500,
                 min: 0,
-                max: this.max,
+                max: 2500,
                 callback: function(value) {
-                  return (value / this.max * 100).toFixed(0) + '%';
+                  return (value);
                 },
                 offset: true,
               },
