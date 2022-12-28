@@ -1180,5 +1180,9 @@ position: relative;
     border-radius: 0;
   }
 
+  .calendar-container{
+    z-index:auto;
+  }
+
 
 
