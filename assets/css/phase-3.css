@@ -166,7 +166,7 @@
     opacity: 1;
 }
 
-
+/* responsive css mobile */
 @media (max-width:600px){
     .footerbtn{
         flex-wrap: wrap;
@@ -204,6 +204,7 @@
         flex-wrap: wrap;
         gap: 16px;
     }
+    
     .tab-content .container.tab-pane{
         padding: 0px;
     }
@@ -227,21 +228,7 @@
         justify-content: space-between;
 
     }
-    .side1.sidebar-active{
-        background-color: #FFFFFF;
-        padding-top: 55px;
-        padding-left: 93px;
-    }
-    .side1.sidebar-active {
-        left: -21px;
-        border-radius: 20px;
-        top: 0;
-    }
-    .side1.sidebar-active .openMenuIcon{
-        position: absolute !important;
-        right: 27px;
-        top: 20px;
-    }
+  
     .testCaseCards .pagignationDiv1{
         flex-wrap: wrap;
         gap: 20px;
@@ -257,8 +244,150 @@
         margin-top: 15px;
         margin-bottom: 8px;
     }
+    .inputGroups input[type="text"]{
+        height: 52px;
+    }
+    .reviewQuesModal .modal-header {
+        padding: 16px 18px 16px 18px !important;
+    }
+    .reviewQuesModal .modal-footer{
+        justify-content: space-between;
+        padding: 30px 18px 20px 18px;
+    }
+    .d-flex.gap-4.Mb-center{
+        margin: auto;
+    }
+    .filter-container-shadow p{
+        font-size: 14px;
+    }
+    .selectDropdown.p-5.bg-light1{
+        padding: 16px !important;
+    }
+    .compilerTable{
+        overflow-x: auto;
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+    .compilerTable table{
+        width: 200%;
+    }
+
+    .compilerTable .table>:not(:last-child)>:last-child>*{
+        border-bottom-color:#DAEDEB;
+    }
+    .compilerTable .table tr th:first-child{
+        border-top-left-radius:10px;
+        border-bottom-left-radius: 10px;
+    }
+    .compilerTable .table tr th:last-child{
+        border-top-right-radius:10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    .compilerTable .table tr{
+        box-shadow: 0px 1px 5px #c5c5c5;
+        border-radius: 10px;
+    }
+    .compilerTable .table {
+        border-collapse: separate !important;
+        border-spacing: 0 15px !important;
+    }
+    .manageCompiler{
+        box-shadow: none !important;
+        background: none !important;
+        padding: 0px !important;
+        margin-top: 0px !important;
+    }
+    .compilerTable .table tr td{
+        background: #FFFFFF;
+        border-radius: 10px;
+    }
+    .compilerTable .table tr td:first-child{
+        border-top-left-radius:10px;
+        border-bottom-left-radius: 10px;
+    }
+    .compilerTable .table tr td:last-child{
+        border-top-left-radius:10px;
+        border-bottom-left-radius: 10px;
+    }
+    .searchInput.searchInput2 {
+        display: none !important;
+    }
+    .searchFilterTag .filterDiv{
+        flex-wrap: wrap;
+    }
+
+    .accordion.qusAnsAccordian .accordion-button{
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .accordion.qusAnsAccordian .accordion-button div.d-flex.w-100{
+        align-items: flex-start !important;
+    }
+
+    .d-flex.accHead h6:last-child{
+        width: 90%;
+        margin: auto;
+    }
+    .d-flex.accHead{
+        align-items: flex-start !important;
+    }
+    .accHead h6{
+        margin-top: 3px;
+    }
+    .text-end.pb-4.PT-btn{
+        padding-top: 1.5rem;
+    }
+    /* .qusAnsAccordian .accordion-header .accordion-button{
+        padding-top: 0px;
+    }
+
+    .d-flex.accHead h6:last-child{
+        width: 93%;
+        max-height: 20px;
+    } */
+
+    .testCaseCards{
+        background-color: #FFFFFF;
+        padding: 20px;
+        box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+    }
+    .testCaseTable tr td:first-child{
+        width: 111px !important;
+    }
+    .side1{
+        background-color: #FFFFFF;
+        padding-top: 55px;
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+    .side1.sidebar-active {
+        left: -15px;
+        border-radius: 20px;
+        top: 0;
+    }
+    .side1.sidebar-active .openMenuIcon{
+        position: absolute !important;
+        right: 27px;
+        top: 20px;
+    }
+    .side1{
+        top: 0px;
+    }
+    .btn.w-auto.addNewSubj{
+        width: 150px;
+    }
+    
 }
 
+/* responsive end */
+
+ .formArea.queStatement{
+    border-radius: 10px;
+
+
+}
 .reviewQuesModal .modal-body{
     background-color: #EDFAF4;
     border-radius: 10px;
@@ -342,12 +471,12 @@
 }
 
 .qusAnsAccordian .accordion-button:not(.collapsed)::after {
-    background-image: url('../images/Question_Bank/minus.png');
+    background-image: url('../images/Question_Bank/noun-minus-1.svg');
     transform: rotate(0deg);
 }
 
 .qusAnsAccordian  .accordion-button::after {
-    background-image: url('../images/Question_Bank/plus.png');
+    background-image: url('../images/Question_Bank/noun-plus-1052486.svg');
 }
 
 .accHead h6{

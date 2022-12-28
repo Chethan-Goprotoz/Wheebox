@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="assets/css/virtual-select.min.css">
     <link rel="stylesheet" href="assets/css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/phase-3.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/chethan.css">
+    <!-- <link rel="stylesheet" href="assets/css/chethan.css"> -->
 
   </head>
   
@@ -152,7 +152,7 @@
                  
                   <div class="d-flex flexWrap justify-content-between align-items-center mb-5 mt-4">
                     <h3 class="mb-0">Create Question</h3>
-                    <div class="d-flex gap-4">
+                    <div class="d-flex gap-4 Mb-center">
                       <div class="filter-container filter-container-shadow d-lg-flex d-flex justify-content-center align-items-center" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">
                         <p>Bulk Upload <img src="./assets/images/Question_Bank/Bulk Upload.svg" class="ms-2" alt=""></p> 
                       </div>
@@ -168,12 +168,12 @@
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                               </div>
                               <form action="" method="post">
-                              <div class="modal-body p-5 ms-5 me-5">
+                              <div class="modal-body p-4 pt-5 pb-5 p-md-5 ms-4 ms-md-5 me-ms-5 me-4">
                                 <div class="row gx-5 gy-4">
                                   <div class="col-sm-4 col-md-6 mt-0">
                                     <div class="calendar-container mt-0">
                                       <p>Select Subject</p>
-                                      <select id="SearchDropdown" name="native-select" placeholder="Select Subject Here" data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
+                                      <select id="SearchDropdown" name="subject-select" placeholder="Select Subject Here" data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
                                           <option value="5">English</option>
                                           <option value="1">Hindi</option>
                                           <option value="2">Maths</option>
@@ -183,10 +183,10 @@
                                       
                                     </div>
                                   </div>
-                                  <div class="col-sm-4 col-md-6 mt-0">
-                                    <div class="calendar-container mt-0">
+                                  <div class="col-sm-4 col-md-6">
+                                    <div class="calendar-container mt-0 mt-md-0">
                                       <p>Select Topic</p>
-                                      <select id="SearchDropdown" name="native-select" placeholder="Select Topic Here" data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
+                                      <select id="SearchDropdown" name="topic-select" placeholder="Select Topic Here" data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
                                           <option value="5">Grammer</option>
                                           <option value="1">Tense</option>
                                           <option value="2">Passage</option>
@@ -246,7 +246,7 @@
                               </div>
                               <div class="modal-footer">
                                 <button type="button" class="btn btnBorder" data-bs-dismiss="modal">Cancel</button>
-                                <button type="submit" class="btn btnDark">Submit</button>
+                               <a href="question-bank-search-que-1.html"> <button type="button" class="btn btnDark">Submit</button></a>
                               </div>
                             </form>
                             </div>
@@ -254,612 +254,10 @@
                         </div>
                       <!-- modal end  review que end-->
 
-                       <!-- Body Open upload modal -->
-                        <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
-          tabindex="-1">
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Bulk Upload</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <!-- form -->
-                <!--PEN CONTENT     -->
-                <div class="content">
-                  <!--content inner-->
-                  <div class="content__inner">
-                    <!-- <div class="container">
-    <h2 class="content__title content__title--m-sm">Pick animation type</h2>
-    <form class="pick-animation my-4">
-      <div class="form-row">
-        <div class="col-5 m-auto">
-          <select class="pick-animation__select form-control">
-            <option value="scaleIn" selected="selected">ScaleIn</option>
-            <option value="scaleOut">ScaleOut</option>
-            <option value="slideHorz">SlideHorz</option>
-            <option value="slideVert">SlideVert</option>
-            <option value="fadeIn">FadeIn</option>
-          </select>
-        </div>
-      </div>
-    </form>
-  </div> -->
-                    <div class="container overflow-hidden">
-                      <!--multisteps-form-->
-                      <div class="multisteps-form">
-                        <!--progress bar-->
-                        <div class="row" style="align-items: center; justify-content: center;">
-                          <div class="col-12 col-lg-8 ml-auto mr-auto mb-4">
-                            <div class="multisteps-form__progress">
-                              <button class="multisteps-form__progress-btn js-active" type="button"
-                                title="User Info">Download Template</button>
-                              <button class="multisteps-form__progress-btn" type="button" title="Address">Select
-                                Subject</button>
-                              <button class="multisteps-form__progress-btn" type="button" title="Order Info">Upload
-                                File</button>
-                              <button class="multisteps-form__progress-btn" type="button" title="Comments">Complete
-                                the Upload</button>
-                            </div>
-                          </div>
-                        </div>
-                        <!--form panels-->
-                        <div class="row">
-                          <div class="col-12 col-lg-8 m-auto">
-                            <form class="multisteps-form__form">
-                              <!--single form panel-->
-                              <div class="multisteps-form__panel  p-4 rounded bg-white js-active"
-                                data-animation="scaleIn">
-                                <div class="multisteps-form__content">
-                                  <div class="form-row mt-4">
-                                    <div class="col-12 text-center">
-                                      <!-- col-sm-6 was removed -->
-                                      <button class="dbtn">Download Template</button>
-                                    </div>
-
-                                  </div>
-
-                                  <div class="button-row d-flex mt-4" style="justify-content: flex-end;">
-                                    <button class="btn ml-auto js-btn-next next-btn" type="button"
-                                      title="Next">Next</button>
-                                  </div>
-                                </div>
-                              </div>
-                              <!--single form panel-->
-                              <div class="multisteps-form__panel  p-4 rounded bg-white" data-animation="scaleIn">
-
-                                <div class="multisteps-form__content">
-
-                                  <div class="form-row mt-4">
-                                    <div class="col">
-                                      <p style="font-size: 12px;line-height: 16px;">Select the subject for which you
-                                        want to upload the questions i.e.- Maths or Science. Topic(such as Geometry)
-                                        and Subtopic(such as Lines, Triangles) can be provided in the excel to be
-                                        uploaded.</p>
-                                      <!-- dropdown -->
-                                      <p style="font-size:14px">Select Subject</p>
-                                      <select id="SearchDropdown" name="native-select"
-                                        placeholder="Select Subject Here" data-search="true"
-                                        data-silent-initial-value-set="true" class="searchdropdown">
-                                        <option value="5">English</option>
-                                        <option value="1">Hindi</option>
-                                        <option value="2">Maths</option>
-                                        <option value="3">Physics</option>
-                                        <option value="4">Chemistry</option>
-                                      </select>
-                                      <!-- dropdown -->
-                                    </div>
-                                  </div>
-                                  <div class="button-row d-flex mt-4" style="justify-content: space-between;">
-                                    <button class="btn prev-btn js-btn-prev" type="button"
-                                      title="Prev">Previous</button>
-                                    <button class="btn next-btn ml-auto js-btn-next" type="button"
-                                      title="Next">Next</button>
-                                  </div>
-                                </div>
-                              </div>
-                              <!--single form panel-->
-                              <div class="multisteps-form__panel  p-4 rounded bg-white" data-animation="scaleIn">
-
-                                <div class="multisteps-form__content">
-                                  <div class="row">
-                                    <div class="col-12 mt-4">
-                                      <p style="font-size: 12px;line-height: 16px;">Select the file from your System
-                                        drive to be uploaded. If you need the sample file, you can download it by
-                                        clicking on the 'Download Template' button given below.</p>
-                                      <!-- drag -->
-                                      <div class="icons"></div>
-                                      <div class="fileupload-wrapper">
-                                        <div class="card-body">
-                                          <div class="card-mask"></div>
-                                          <div class="card-text">
-                                            <div class="txt-card">
-                                              <svg viewBox="0 0 612 612">
-                                                <g>
-                                                  <path
-                                                    d="M0,389.581C0,444.8,41.338,490.616,95.639,499.462l19.139,1.529h382.5l19.14-1.529C570.662,490.616,612,444.8,612,389.581   c0-48.516-31.936-89.798-76.527-105.098c-1.614-96.084-82.343-173.474-181.653-173.474c-71.632,0-133.583,40.253-163.181,98.755   c-13.993-15.022-34.244-24.48-56.777-24.48c-42.256,0-76.5,33.271-76.5,74.274c0,10.71,2.336,20.892,6.509,30.099   C26.038,307.851,0,345.767,0,389.581z M306,250.1l111.272,125.183h-55.998v125.182h-111.05V375.282h-55.498L306,250.1z">
-                                                  </path>
-                                                </g>
-                                              </svg>
-                                              <div>Drag and drop document here to upload</div>
-                                              <div class="or">or</div>
-                                            </div>
-                                            <input type="file" id="input-file" multiple>
-                                            <button class="browse">Browse</button>
-                                          </div>
-                                        </div>
-                                      </div>
-                                      <!-- drop -->
-                                    </div>
-
-                                  </div>
-                                  <div class="row">
-                                    <div class="button-row d-flex mt-4 col-12"
-                                      style="justify-content: space-between;">
-                                      <button class="btn prev-btn js-btn-prev" type="button"
-                                        title="Prev">Previous</button>
-                                      <button class="btn next-btn ml-auto js-btn-next" type="button"
-                                        title="Next">Next</button>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <!--single form panel-->
-                              <div class="multisteps-form__panel  p-4 rounded bg-white" data-animation="scaleIn">
-
-                                <div class="multisteps-form__content">
-                                  <div class="form-row mt-4">
-                                    <img src="assets/images/chethan/tick.png" alt=""
-                                      class="mx-auto d-block mb-5 mt-5">
-                                    <h3 class="multisteps-form__title" style="text-align: center; color: #20776E;">
-                                      Successfully uploaded</h3>
-                                  </div>
-                                  <div class="button-row d-flex mt-4" style="justify-content: space-between;">
-                                    <button class="btn prev-btn js-btn-prev" type="button" title="Prev">Go
-                                      Back</button>
-                                    <button class="btn next-btn ml-auto" type="button" title="Send">Preview</button>
-                                  </div>
-                                </div>
-                              </div>
-                            </form>
-                          </div>
-                        </div>
-                      </div>
+                     
                     </div>
                   </div>
-                </div>
-                <!-- partial -->
-                <script
-                  src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'></script>
-                <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
-                <!-- drag -->
-                <script>
-                  $(document).ready(function () {
-                    $('.browse').on('click', function () {
-                      $(this).prev().click();
-                    });
-                    $('#input-file').change(function (e) {
-                      for (var i = 0; i < e.target.files.length; i++) {
-                        $('.icons').append('<div class="icon icon--doc"><i title="' + e.target.files[i].name.split('.')[1] + '"></i></div>');
-                      }
-                    });
-                    $('.card-body').on('dragover', function (e) {
-                      $(this).css('border-color', '#333');
-                      e.preventDefault();
-                    });
-                    $('.card-body').on('dragleave', function (e) {
-                      $(this).removeAttr('style');
-                      e.preventDefault();
-                    });
-                    $('.card-body').on('drop', function (e) {
-                      for (var i = 0; i < e.originalEvent.dataTransfer.files.length; i++) {
-                        $('.icons').append('<div class="icon icon--doc"><i title="' + e.originalEvent.dataTransfer.files[i].name.split('.')[1] + '"></i></div>');
-                      }
-                      $(this).removeAttr('style');
-                      e.preventDefault();
-                    });
-                  });
-                </script>
-                <!-- drop -->
-                <style>
-                  .header__btn {
-                    transition-property: all;
-                    transition-duration: 0.2s;
-                    transition-timing-function: linear;
-                    transition-delay: 0s;
-                    padding: 10px 20px;
-                    display: inline-block;
-                    margin-right: 10px;
-                    background-color: #fff;
-                    border: 1px solid #2c2c2c;
-                    border-radius: 3px;
-                    cursor: pointer;
-                    outline: none;
-                  }
-
-                  .header__btn:last-child {
-                    margin-right: 0;
-                  }
-
-                  .header__btn:hover,
-                  .header__btn.js-active {
-                    color: #fff;
-                    background-color: #2c2c2c;
-                  }
-
-                  .header {
-                    max-width: 600px;
-                    margin: 50px auto;
-                    text-align: center;
-                  }
-
-                  .header__title {
-                    margin-bottom: 30px;
-                    font-size: 2.1rem;
-                  }
-
-                  .content {
-                    width: 95%;
-                    margin: 0 auto 50px;
-                  }
-
-                  .content__title {
-                    margin-bottom: 40px;
-                    font-size: 20px;
-                    text-align: center;
-                  }
-
-                  .content__title--m-sm {
-                    margin-bottom: 10px;
-                  }
-
-                  .multisteps-form__progress {
-                    display: grid;
-                    grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
-                    margin-top: 20px;
-                  }
-
-                  .multisteps-form__progress-btn {
-                    transition-property: all;
-                    transition-duration: 0.15s;
-                    transition-timing-function: linear;
-                    transition-delay: 0s;
-                    position: relative;
-                    padding-top: 20px;
-                    color: rgba(108, 117, 125, 0.7);
-                    text-indent: -9999px;
-                    border: none;
-                    background-color: transparent;
-                    outline: none !important;
-                    cursor: pointer;
-                    font-size: 12px;
-                    line-height: 14px;
-                  }
-
-                  @media (min-width: 500px) {
-                    .multisteps-form__progress-btn {
-                      text-indent: 0;
-                    }
-                  }
-
-                  .multisteps-form__progress-btn:before {
-                    position: absolute;
-                    top: 0;
-                    left: 50%;
-                    display: block;
-                    width: 13px;
-                    height: 13px;
-                    content: "";
-                    transform: translateX(-50%);
-                    transition: all 0.15s linear 0s, transform 0.15s cubic-bezier(0.05, 1.09, 0.16, 1.4) 0s;
-                    border: 2px solid currentColor;
-                    border-radius: 50%;
-                    background-color: #fff;
-                    box-sizing: border-box;
-                    z-index: 3;
-                  }
-
-                  .multisteps-form__progress-btn:after {
-                    position: absolute;
-                    top: 5px;
-                    left: calc(-50% - 13px / 2);
-                    transition-property: all;
-                    transition-duration: 0.15s;
-                    transition-timing-function: linear;
-                    transition-delay: 0s;
-                    display: block;
-                    width: 100%;
-                    height: 2px;
-                    content: "";
-                    background-color: currentColor;
-                    z-index: 1;
-                  }
-
-                  .multisteps-form__progress-btn:first-child:after {
-                    display: none;
-                  }
-
-                  .multisteps-form__progress-btn.js-active {
-                    color: #20776E;
-                  }
-
-                  .multisteps-form__progress-btn.js-active:before {
-                    transform: translateX(-50%) scale(1.2);
-                    background-color: currentColor;
-                  }
-
-                  .multisteps-form__form {
-                    position: relative;
-                    height: 430px !important;
-                  }
-
-                  .multisteps-form__panel {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 0;
-                    opacity: 0;
-                    visibility: hidden;
-                  }
-
-                  .multisteps-form__panel.js-active {
-                    height: auto;
-                    opacity: 1;
-                    visibility: visible;
-                  }
-
-                  .multisteps-form__panel[data-animation=scaleOut] {
-                    transform: scale(1.1);
-                  }
-
-                  .multisteps-form__panel[data-animation=scaleOut].js-active {
-                    transition-property: all;
-                    transition-duration: 0.2s;
-                    transition-timing-function: linear;
-                    transition-delay: 0s;
-                    transform: scale(1);
-                  }
-
-                  .multisteps-form__panel[data-animation=slideHorz] {
-                    left: 50px;
-                  }
-
-                  .multisteps-form__panel[data-animation=slideHorz].js-active {
-                    transition-property: all;
-                    transition-duration: 0.25s;
-                    transition-timing-function: cubic-bezier(0.2, 1.13, 0.38, 1.43);
-                    transition-delay: 0s;
-                    left: 0;
-                  }
-
-                  .multisteps-form__panel[data-animation=slideVert] {
-                    top: 30px;
-                  }
-
-                  .multisteps-form__panel[data-animation=slideVert].js-active {
-                    transition-property: all;
-                    transition-duration: 0.2s;
-                    transition-timing-function: linear;
-                    transition-delay: 0s;
-                    top: 0;
-                  }
-
-                  .multisteps-form__panel[data-animation=fadeIn].js-active {
-                    transition-property: all;
-                    transition-duration: 0.3s;
-                    transition-timing-function: linear;
-                    transition-delay: 0s;
-                  }
-
-                  .multisteps-form__panel[data-animation=scaleIn] {
-                    transform: scale(0.9);
-                  }
-
-                  .multisteps-form__panel[data-animation=scaleIn].js-active {
-                    transition-property: all;
-                    transition-duration: 0.2s;
-                    transition-timing-function: linear;
-                    transition-delay: 0s;
-                    transform: scale(1);
-                  }
-                </style>
-                <script>
-                  //DOM elements
-                  const DOMstrings = {
-                    stepsBtnClass: 'multisteps-form__progress-btn',
-                    stepsBtns: document.querySelectorAll(`.multisteps-form__progress-btn`),
-                    stepsBar: document.querySelector('.multisteps-form__progress'),
-                    stepsForm: document.querySelector('.multisteps-form__form'),
-                    stepsFormTextareas: document.querySelectorAll('.multisteps-form__textarea'),
-                    stepFormPanelClass: 'multisteps-form__panel',
-                    stepFormPanels: document.querySelectorAll('.multisteps-form__panel'),
-                    stepPrevBtnClass: 'js-btn-prev',
-                    stepNextBtnClass: 'js-btn-next'
-                  };
-
-
-                  //remove class from a set of items
-                  const removeClasses = (elemSet, className) => {
-
-                    elemSet.forEach(elem => {
-
-                      elem.classList.remove(className);
-
-                    });
-
-                  };
-
-                  //return exect parent node of the element
-                  const findParent = (elem, parentClass) => {
-
-                    let currentNode = elem;
-
-                    while (!currentNode.classList.contains(parentClass)) {
-                      currentNode = currentNode.parentNode;
-                    }
-
-                    return currentNode;
-
-                  };
-
-                  //get active button step number
-                  const getActiveStep = elem => {
-                    return Array.from(DOMstrings.stepsBtns).indexOf(elem);
-                  };
-
-                  //set all steps before clicked (and clicked too) to active
-                  const setActiveStep = activeStepNum => {
-
-                    //remove active state from all the state
-                    removeClasses(DOMstrings.stepsBtns, 'js-active');
-
-                    //set picked items to active
-                    DOMstrings.stepsBtns.forEach((elem, index) => {
-
-                      if (index <= activeStepNum) {
-                        elem.classList.add('js-active');
-                      }
-
-                    });
-                  };
-
-                  //get active panel
-                  const getActivePanel = () => {
-
-                    let activePanel;
-
-                    DOMstrings.stepFormPanels.forEach(elem => {
-
-                      if (elem.classList.contains('js-active')) {
-
-                        activePanel = elem;
-
-                      }
-
-                    });
-
-                    return activePanel;
-
-                  };
-
-                  //open active panel (and close unactive panels)
-                  const setActivePanel = activePanelNum => {
-
-                    //remove active class from all the panels
-                    removeClasses(DOMstrings.stepFormPanels, 'js-active');
-
-                    //show active panel
-                    DOMstrings.stepFormPanels.forEach((elem, index) => {
-                      if (index === activePanelNum) {
-
-                        elem.classList.add('js-active');
-
-                        setFormHeight(elem);
-
-                      }
-                    });
-
-                  };
-
-                  //set form height equal to current panel height
-                  const formHeight = activePanel => {
-
-                    const activePanelHeight = activePanel.offsetHeight;
-
-                    DOMstrings.stepsForm.style.height = `${activePanelHeight}px`;
-
-                  };
-
-                  const setFormHeight = () => {
-                    const activePanel = getActivePanel();
-
-                    formHeight(activePanel);
-                  };
-
-                  //STEPS BAR CLICK FUNCTION
-                  DOMstrings.stepsBar.addEventListener('click', e => {
-
-                    //check if click target is a step button
-                    const eventTarget = e.target;
-
-                    if (!eventTarget.classList.contains(`${DOMstrings.stepsBtnClass}`)) {
-                      return;
-                    }
-
-                    //get active button step number
-                    const activeStep = getActiveStep(eventTarget);
-
-                    //set all steps before clicked (and clicked too) to active
-                    setActiveStep(activeStep);
-
-                    //open active panel
-                    setActivePanel(activeStep);
-                  });
-
-                  //PREV/NEXT BTNS CLICK
-                  DOMstrings.stepsForm.addEventListener('click', e => {
-
-                    const eventTarget = e.target;
-
-                    //check if we clicked on `PREV` or NEXT` buttons
-                    if (!(eventTarget.classList.contains(`${DOMstrings.stepPrevBtnClass}`) || eventTarget.classList.contains(`${DOMstrings.stepNextBtnClass}`))) {
-                      return;
-                    }
-
-                    //find active panel
-                    const activePanel = findParent(eventTarget, `${DOMstrings.stepFormPanelClass}`);
-
-                    let activePanelNum = Array.from(DOMstrings.stepFormPanels).indexOf(activePanel);
-
-                    //set active step and active panel onclick
-                    if (eventTarget.classList.contains(`${DOMstrings.stepPrevBtnClass}`)) {
-                      activePanelNum--;
-
-                    } else {
-
-                      activePanelNum++;
-
-                    }
-
-                    setActiveStep(activePanelNum);
-                    setActivePanel(activePanelNum);
-
-                  });
-
-                  //SETTING PROPER FORM HEIGHT ONLOAD
-                  window.addEventListener('load', setFormHeight, false);
-
-                  //SETTING PROPER FORM HEIGHT ONRESIZE
-                  window.addEventListener('resize', setFormHeight, false);
-
-                  //changing animation via animation select !!!YOU DON'T NEED THIS CODE (if you want to change animation type, just change form panels data-attr)
-
-                  const setAnimationType = newType => {
-                    DOMstrings.stepFormPanels.forEach(elem => {
-                      elem.dataset.animation = newType;
-                    });
-                  };
-
-                  //selector onchange - changing animation
-                  const animationSelect = document.querySelector('.pick-animation__select');
-
-                  animationSelect.addEventListener('change', () => {
-                    const newAnimationType = animationSelect.value;
-
-                    setAnimationType(newAnimationType);
-                  });
-                </script>
-                <!-- FOrm -->
-              </div>
-
-            </div>
-          </div>
-                        </div>
-                      <!-- upload modal end -->
-                    </div>
-                  </div>
-                  <div class="selectDropdown p-5 bg-light1">
+                  <div class="selectDropdown p-5 bg-light1 p-4 p-md-5">
                     <div class="d-flex justify-content-end mb-4">
                       <button class="btn addNewSubj" type="button">Add New Subject</button>
                     </div>
@@ -939,7 +337,7 @@
                     </div>
                   </div>
 
-                  <div class="bg-white p-5 formArea mt-5">
+                  <div class="bg-white p-4 p-md-5 formArea mt-5">
                     <div class="formNote">
                       <div class="">
                          <div class="d-flex justify-content-between align-items-center mb-5">
@@ -1036,7 +434,7 @@
                 <div id="Programming" class="container tab-pane fade"><br>
                   <div class="d-flex flexWrap justify-content-between align-items-center mb-5 mt-4">
                     <h3 class="mb-0">Create Question</h3>
-                    <div class="d-flex gap-4">
+                    <div class="d-flex gap-4 Mb-center">
                       <div class="w-auto ps-3 pe-3 filter-container filter-container-shadow d-lg-flex d-flex justify-content-center align-items-center">
                        <a href="question-bank-manage-compilers.html"> <p>Manage Compilers <img src="./assets/images/Question_Bank/m-compilers.png" width="16" class="ms-2" alt=""></p> </a>
                       </div>
@@ -1046,7 +444,7 @@
                      
                     </div>
                   </div>
-                  <div class="selectDropdown p-5 bg-light1">
+                  <div class="selectDropdown p-5 bg-light1 p-4 p-md-5">
                     <div class="d-flex justify-content-end mb-4">
                       <button class="btn addNewSubj" type="button">Add New Subject</button>
                     </div>
@@ -1093,7 +491,7 @@
                     </div>
                   </div>
 
-                  <div class="bg-white p-5 formArea queStatement mt-5">
+                  <div class="bg-white p-4 shadow-sm p-md-5 formArea queStatement mt-5">
                     <div class="formNote">
                       <div class="row">
                         <div class="col-md-6">
@@ -1152,7 +550,7 @@
                          </div>
                         </div>
                         <div class="col-md-6">
-                          <div class="">
+                          <div class="mt-4 mt-md-0">
                             <div class="d-flex justify-content-between align-items-center mb-4">
                               <h5 class="mb-0 title1">Write Code</h5>
                               <a href=""><button class="btn w-auto addNewSubj" type="button">Programming Snippet</button></a>                            
@@ -1166,8 +564,8 @@
                       </div>
 
                       <div class="fourCards pt-5">
-                        <div class="row">
-                          <div class="col-md-3 col-lg-3 col-xl-3 col-xxl-2">
+                        <div class="row gy-4">
+                          <div class="col-6 col-md-3 col-lg-3 col-xl-3 col-xxl-2">
                             <div class="border-success1 fourCards1">
                               <div class="d-flex justify-content-between align-items-center">
                                 <div>
@@ -1192,7 +590,7 @@
                               </div>
                             </div>
                           </div>
-                          <div class="col-md-3 col-lg-3 col-xl-3 col-xxl-2">
+                          <div class="col-6 col-md-3 col-lg-3 col-xl-3 col-xxl-2">
                             <div class="border-success1 fourCards1">
                               <div class="d-flex justify-content-between align-items-center">
                                 <div>
@@ -1224,11 +622,28 @@
                                     <div class="modal-header d-flex align-items-center border-0">
                                       <h5 class="modal-title modal-title-snippet" id="exampleModalLabel">Compilers</h5>
                                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                                      
+                                    </div>
+
+                                    <div class="d-md-none">
+                                      <div class="modal-footer ps-5 pt-0 d-flex justify-content-between align-items-center border-0">
+                                       
+                                        <div>
+                                          <button type="reset" class="btn f1BtnBorder">Select all</button>
+                                        </div>
+                                        <div>
+                                          <button type="reset" class="btn f1BtnBorder">Unselect all</button>
+                                        </div>
+                                       
+                                      </div>
                                     </div>
                                     <div class="modal-body ps-5 pe-5 border-0">
+                                     
+
                                       <div class="addCompilerChecks">
-                                        <div class="row g-4 offset-1 p-5 ps-0">
-                                          <div class="col-md-3">
+                                        <div class="row g-4 offset-md-1 ps-4 p-md-5 ps-md-0">
+                                          <div class="col-6 col-md-3">
                                             <div class="form-check">
                                               <input class="form-check-input compLanguage" type="checkbox" value="" id="compLanguage1" checked>
                                               <label class="form-check-label compLanguage" for="compLanguage1">
@@ -1236,7 +651,7 @@
                                               </label>
                                             </div>
                                           </div>
-                                          <div class="col-md-3">
+                                          <div class="col-6 col-md-3">
                                             <div class="form-check">
                                               <input class="form-check-input compLanguage" type="checkbox" value="" id="compLanguage2">
                                               <label class="form-check-label compLanguage" for="compLanguage2">
@@ -1244,7 +659,7 @@
                                               </label>
                                             </div>
                                           </div>
-                                          <div class="col-md-3">
+                                          <div class="col-6 col-md-3">
                                             <div class="form-check">
                                               <input class="form-check-input compLanguage" type="checkbox" value="" id="compLanguage3" checked>
                                               <label class="form-check-label compLanguage" for="compLanguage3">
@@ -1252,7 +667,7 @@
                                               </label>
                                             </div>
                                           </div>
-                                          <div class="col-md-3">
+                                          <div class="col-6 col-md-3">
                                             <div class="form-check">
                                               <input class="form-check-input compLanguage" type="checkbox" value="" id="compLanguage4">
                                               <label class="form-check-label compLanguage" for="compLanguage4">
@@ -1260,7 +675,7 @@
                                               </label>
                                             </div>
                                           </div>
-                                          <div class="col-md-3">
+                                          <div class="col-6 col-md-3">
                                             <div class="form-check">
                                               <input class="form-check-input compLanguage" type="checkbox" value="" id="compLanguage5" checked>
                                               <label class="form-check-label compLanguage" for="compLanguage5">
@@ -1268,7 +683,7 @@
                                               </label>
                                             </div>
                                           </div>
-                                          <div class="col-md-3">
+                                          <div class="col-6 col-md-3">
                                             <div class="form-check">
                                               <input class="form-check-input compLanguage" type="checkbox" value="" id="compLanguage6" checked>
                                               <label class="form-check-label compLanguage" for="compLanguage6">
@@ -1276,7 +691,7 @@
                                               </label>
                                             </div>
                                           </div>
-                                          <div class="col-md-3">
+                                          <div class="col-6 col-md-3">
                                             <div class="form-check">
                                               <input class="form-check-input compLanguage" type="checkbox" value="" id="compLanguage7">
                                               <label class="form-check-label compLanguage" for="compLanguage7">
@@ -1284,7 +699,7 @@
                                               </label>
                                             </div>
                                           </div>
-                                          <div class="col-md-3">
+                                          <div class="col-6 col-md-3">
                                             <div class="form-check">
                                               <input class="form-check-input compLanguage" type="checkbox" value="" id="compLanguage8" checked>
                                               <label class="form-check-label compLanguage" for="compLanguage8">
@@ -1292,7 +707,7 @@
                                               </label>
                                             </div>
                                           </div>
-                                          <div class="col-md-3">
+                                          <div class="col-6 col-md-3">
                                             <div class="form-check">
                                               <input class="form-check-input compLanguage" type="checkbox" value="" id="compLanguage9" checked>
                                               <label class="form-check-label compLanguage" for="compLanguage9">
@@ -1300,7 +715,7 @@
                                               </label>
                                             </div>
                                           </div>
-                                          <div class="col-md-3">
+                                          <div class="col-6 col-md-3">
                                             <div class="form-check">
                                               <input class="form-check-input compLanguage" type="checkbox" value="" id="compLanguage10" checked>
                                               <label class="form-check-label compLanguage" for="compLanguage10">
@@ -1318,10 +733,10 @@
                                       <div>
                                         <button type="reset" class="btn f1BtnBorder">Reset to Default</button>
                                       </div>
-                                      <div>
+                                      <div class="d-none d-md-block">
                                         <button type="reset" class="btn f1BtnBorder">Select all</button>
                                       </div>
-                                      <div>
+                                      <div class="d-none d-md-block">
                                         <button type="reset" class="btn f1BtnBorder">Unselect all</button>
                                       </div>
                                       <div>
@@ -1387,14 +802,14 @@
     <!--selection section end -->
     <script src="https://kit.fontawesome.com/5817738a37.js" crossorigin="anonymous"></script>
     <script src="assets/js/jquery-2.2.0.min.js"></script>
-    <script src="assets/js/popper.min.js"></script>
+    <!-- <script src="assets/js/popper.min.js"></script> -->
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/loader.js"></script>
     <script src="assets/js/chart.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="assets/js/virual-select.min.js"></script>
     <!-- Load plotly.js into the DOM -->
-	<script src='https://cdn.plot.ly/plotly-2.16.1.min.js'></script>
+	<!-- <script src='https://cdn.plot.ly/plotly-2.16.1.min.js'></script> -->
 
 
 
@@ -1405,22 +820,7 @@
   </script>
 
 
-  <script type="text/javascript">
-    $(function() {
-      $('input[name="datefilter"]').daterangepicker({
-        autoUpdateInput: false,
-        locale: {
-          cancelLabel: 'Clear'
-        }
-      });
-      $('input[name="datefilter"]').on('apply.daterangepicker', function(ev, picker) {
-        $(this).val(picker.startDate.format('MM/DD/YYYY') + ' - ' + picker.endDate.format('MM/DD/YYYY'));
-      });
-      $('input[name="datefilter"]').on('cancel.daterangepicker', function(ev, picker) {
-        $(this).val('');
-      });
-    });
-  </script>
+ 
 
 <script>
   function sidemenu() {
@@ -1452,6 +852,9 @@ icon.classList.toggle("fa-xmark")
         });
       }
     </script>
+    
+
+    <!--  -->
     
   </body>
 </html>
