@@ -369,7 +369,8 @@
                             <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">  
                           </div>
                           <div class="w-100">    
-                            <input type="text" class="form-control" placeholder="Please type the option text in this area." required>
+                            <input type="text" class="form-control errorRed" placeholder="Please type the option text in this area." required>
+                            <p class="mb-0 errorMsg d-none">Please select the correct answer</p>
                           </div>
                           <div>
                             <a href=""><img src="./assets/images/Question_Bank/crosx.png" alt=""></a>
@@ -381,7 +382,21 @@
                             <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">  
                           </div>
                           <div class="w-100">    
-                            <input type="text" class="form-control" placeholder="Please type the option text in this area.">
+                            <input type="text" class="form-control errorRed" placeholder="Please type the option text in this area.">
+                            <p class="mb-0 errorMsg d-none">Please select the correct answer</p>
+                          </div>
+                          <div>
+                            <a href=""><img src="./assets/images/Question_Bank/crosx.png" alt=""></a>
+                          </div>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center pt-4">
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">  
+                          
+                          </div>
+                          <div class="w-100">    
+                            <input type="text" class="form-control errorRed" placeholder="Please type the option text in this area.">
+                            <p class="mb-0 errorMsg d-none">Please select the correct answer</p>
                           </div>
                           <div>
                             <a href=""><img src="./assets/images/Question_Bank/crosx.png" alt=""></a>
@@ -392,18 +407,8 @@
                             <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">  
                           </div>
                           <div class="w-100">    
-                            <input type="text" class="form-control" placeholder="Please type the option text in this area.">
-                          </div>
-                          <div>
-                            <a href=""><img src="./assets/images/Question_Bank/crosx.png" alt=""></a>
-                          </div>
-                        </div>
-                        <div class="d-flex justify-content-between align-items-center pt-4">
-                          <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">  
-                          </div>
-                          <div class="w-100">    
-                            <input type="text" class="form-control" placeholder="Please type the option text in this area.">
+                            <input type="text" class="form-control errorRed" placeholder="Please type the option text in this area.">
+                            <p class="mb-0 errorMsg d-none">Please select the correct answer</p>
                           </div>
                           <div>
                             <a href=""><img src="./assets/images/Question_Bank/crosx.png" alt=""></a>
@@ -491,8 +496,13 @@
                     </div>
                   </div>
 
+                  <div class="d-flex justify-content-between align-items-center mt-5 mb-5">
+                    <h3 class="mb-0 d-md-block">Programming Question</h3>
+                  </div>
                   <div class="bg-white p-4 shadow-sm p-md-5 formArea queStatement mt-5">
+                    
                     <div class="formNote">
+                     
                       <div class="row">
                         <div class="col-md-6">
                           <div class="">
@@ -562,17 +572,19 @@
                          </div>
                         </div>
                       </div>
-
+                      
                       <div class="fourCards pt-5">
                         <div class="row gy-4">
-                          <div class="col-6 col-md-3 col-lg-3 col-xl-3 col-xxl-2">
-                            <div class="border-success1 fourCards1">
+                          <div class="col-6 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+                            <div class="border-success1 fourCards1 fourCards11">
                               <div class="d-flex justify-content-between align-items-center">
                                 <div>
                                   <h6 class="mb-0">Test Cases</h6>
                                 </div>
-                                <div>
-                                  <a href=""><img src="./assets/images/Question_Bank/help-que.svg" width="14" alt=""></a>
+                                <div class="">
+                                  <a href="#" class="helpToolTip position-relative" ><img src="./assets/images/Question_Bank/help-que.svg" width="14" alt="">
+                                    <p class="mb-0 toolTipText">Selected Compilers will be used for compiling the program by the candidates during the test</p>
+                                  </a>
                                 </div>
                               </div>
                               <div class="d-flex position-relative card-green justify-content-between align-items-center">
@@ -590,8 +602,8 @@
                               </div>
                             </div>
                           </div>
-                          <div class="col-6 col-md-3 col-lg-3 col-xl-3 col-xxl-2">
-                            <div class="border-success1 fourCards1">
+                          <div class="col-6 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+                            <div class="border-success1 fourCards1 fourCards12">
                               <div class="d-flex justify-content-between align-items-center">
                                 <div>
                                   <h6 class="mb-0">Compilers</h6>
@@ -750,21 +762,21 @@
                              
                             </div>
                           </div>
-                          <div class="col-md-3 col-lg-3 col-xl-3 col-xxl-4">
-                            <div class="fourCards2">
+                          <div class="col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+                            <div class="fourCards2 fourCards21">
                               <div class="d-flex justify-content-between align-items-center">
-                                <h5 class="mb-0 title2">Provide Input</h5>
+                                <h5 class="mb-0 title2 errorText">Provide Input</h5>
                                 <a href=""><img src="./assets/images/Question_Bank/help-que.svg" width="14" alt=""></a>                            
                               </div>
                               <div class="codeInput mt-2 d-flex align-items-center position-relative">                              
-                                <textarea class="form-control bg-white pt-4 border-success1" id="exampleFormControlTextarea1" rows="6" placeholder="Please Provide Input" spellcheck="false"></textarea>
+                                <textarea class="form-control errorInput bg-white pt-4 border-success1" id="exampleFormControlTextarea1" rows="6" placeholder="Please Provide Input" spellcheck="false"></textarea>
 
                                 <button type="button" class="btn btnBorder">Compile and Execute <img src="./assets/images/Question_Bank/compilers.svg" class="ms-2 mb-1" width="12" alt=""></button>
                               </div>
                            </div>
                           </div>
-                          <div class="col-md-3 col-lg-3 col-xl-3 col-xxl-4">
-                            <div class="fourCards2">
+                          <div class="col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+                            <div class="fourCards2 fourCards22">
                               <div class="d-flex justify-content-between align-items-center">
                                 <h5 class="mb-0 title2">Generated output</h5>
                                 <a href=""><img src="./assets/images/Question_Bank/help-que.svg" width="14" alt=""></a>                            
@@ -802,12 +814,13 @@
     <!--selection section end -->
     <script src="https://kit.fontawesome.com/5817738a37.js" crossorigin="anonymous"></script>
     <script src="assets/js/jquery-2.2.0.min.js"></script>
-    <!-- <script src="assets/js/popper.min.js"></script> -->
+    <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/loader.js"></script>
     <script src="assets/js/chart.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="assets/js/virual-select.min.js"></script>
+    
     <!-- Load plotly.js into the DOM -->
 	<!-- <script src='https://cdn.plot.ly/plotly-2.16.1.min.js'></script> -->
 
@@ -819,7 +832,12 @@
     });
   </script>
 
-
+<script>
+  var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl)
+})
+</script>
  
 
 <script>
