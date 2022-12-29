@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/virtual-select.min.css">
+    <link rel="stylesheet" href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+    
+
+
+
+
+    <div class="d-flex justify-content-center">
+        <div class="calendar-container">
+          <p>*Select Domain:</p>
+          <select id="SearchDropdown" name="native-select" placeholder="Select" data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
+              <option value="1">IT-NXT Gent</option>
+              <option value="2">IT-Programming</option>
+              <option value="3">IT-Database</option>
+              <option value="4">ERP</option>
+              <option value="5">Testing</option>
+           
+          </select>
+          <p class="mt-5">*Select Test Name:</p>
+          <select id="SearchDropdown" name="native-select" placeholder="Select" data-search="true" data-silent-initial-value-set="true">
+            <option value="1">All</option>
+            <option value="2">3D Printing</option>
+            <option value="3">AI</option>
+            <option value="4">Block Chain</option>
+            <option value="5">Big Data</option>
+           
+          </select>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="assets/js/virual-select.min.js"></script>
+
+    <script>
+        VirtualSelect.init({
+          ele: '#SearchDropdown'
+        });
+      </script>
+
+<script>
+    function profile() {
+      profileMenu = document.getElementById("profileDropdown")
+      profileMenu.classList.toggle("dropdownActive")
+      document.addEventListener('click', function profile(event) {
+        console.log("clicked")
+        const box4 = document.getElementById('profile-out');
+        if (!box4.contains(event.target)) {
+          profileMenu.classList.remove("dropdownActive")
+        }
+      });
+    }
+  </script>
+</body>
+</html>
