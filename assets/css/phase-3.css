@@ -378,6 +378,42 @@
     .btn.w-auto.addNewSubj{
         width: 150px;
     }
+    .main_header .logo{
+        width: 56px;
+        height: 56px;
+    }
+    .profile.rounded-circle,.profile.rounded-circle img{
+        width: 56px;
+        height: 56px;
+    }
+    .grid-new .grid2-new.d-none.d-md-block{
+        display: block !important;
+        order: 1;
+    }
+    .paginationDiv .pagination .page-item.active{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 25px;
+        height: 29px;
+    }
+    .paginationDiv .pagination .page-item{
+        height: 29px;
+        width: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .paginationDiv .pagination .page-item a{
+        font-size: 16px;
+    }
+
+    .paginationDiv .pagination .page-item:first-child a,.paginationDiv .pagination .page-item:last-child a{
+        font-size: 12px;
+    }
+    .paginationDiv .pagination .page-item:first-child,.paginationDiv .pagination .page-item:last-child{
+        width: auto;
+    }
     
 }
 
@@ -817,7 +853,7 @@
 }
 
 .pagignationDiv1 .selectTag p{
-    font: normal normal normal 12px/21px Pop-normal;
+    font: normal normal normal 14px/21px Pop-normal;
     letter-spacing: 0px;
     color: #333333;
     opacity: 1;
@@ -850,10 +886,10 @@
     border: 1px solid #E4E4E4;
     border-radius: 5px;
     opacity: 1;
-    width: 50px;
+    width: 65px;
     height: 33px;
     padding: 0 5px;
-    font-size: 14px;
+    font-size: 16px;
     outline: none;
     font-family: pop-normal;
 }
@@ -920,11 +956,20 @@
 
 .btnDark.create-testBtn{
     text-align: center;
-    font: normal normal medium 14px/21px Pop-medium;
+    font-size: 14px;
+    font-family: pop-medium;
     letter-spacing: 0px;
     color: #FFFFFF;
     opacity: 1;
     padding: 0 15px;
+    width: 137px;
+    height: 40px;
+}
+
+.btnDark.create-testBtn img{
+    width: 16px;
+    height: 21px;
+    margin-left: 3px;
 }
 
 .tableManagement tr{
@@ -989,7 +1034,16 @@
     background:transparent;
 }
 .createTble.pb-0 .table-row-1.table-header td{
+    color: #000000;
     background-color: #DAEDEB;
+}
+.createTble .table-row-1 .tableSideHeading1{
+   font-size: 14px;
+   font-family: pop-normal !important;
+    letter-spacing: 0px;
+    color: #666666;
+    text-transform: capitalize;
+    opacity: 1;
 }
 
 .createTble.pb-0 .table-row-1.table-header td:last-child{
@@ -1056,22 +1110,29 @@ position: relative;
   }
   .onoffswitch .onoffswitch-inner:before {
     content: "On";
-    padding-left: 10px;
+    padding-left: 5px;
+    padding-top: 2px;
     /* background-color: hsl(203, 100%, 39.1569%); */
+    color: #20776E;
+    font: normal normal normal 14px/21px Pop-normal;
+    letter-spacing: 0px;
     color: #20776E;
   }
   .onoffswitch .onoffswitch-inner:after {
     content: "Off";
-    padding-right: 10px;
+    padding-top: 2px;
+    padding-right: 9px;
     background-color: hsl(0, 0%, 98%);
-    color: hsl(0, 0%, 24%);
+    color: #D1D1D1;
     text-align: right;
+    font: normal normal normal 14px/21px Pop-normal;
+    letter-spacing: 0px;
   }
   .onoffswitch .onoffswitch-switch {
     width: 22px;
     height: 25px;
     margin: 0;
-    background: hsl(0, 0%, 100%);
+    background: #D1D1D1 0% 0% no-repeat padding-box;
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
@@ -1088,7 +1149,7 @@ position: relative;
   .toggle-group {
     position: relative;
     /* height: 27px; */
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /* font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; */
     /* top: 50%; */
     /* left: 20px; */
     /* margin-top: -13.5px; */
@@ -1168,7 +1229,7 @@ position: relative;
     color: #0A2F2A;
     opacity: 0.8;
     padding: 12px 0px;
-    border-bottom: 1px solid #a8a8a8;
+    border-bottom: 1px solid rgba(112, 112, 112, 28%);
     font-size: 14px;
   }
   .createTableDrop li a img{
