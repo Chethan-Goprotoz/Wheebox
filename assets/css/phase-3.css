@@ -1335,6 +1335,23 @@ position: relative;
         justify-content: center;
         border-radius: 5px;
     }
+    .mobileMenu .dropdown .dropdown-menu{
+        min-width: 12.5rem;
+        padding-top:0px;
+        padding-bottom: 0px;
+    }
+    .mobileMenu .dropdown .dropdown-menu .dropdown-item{
+        height: 34px;
+        display: flex;
+        align-items: center;
+        color: #14121F;
+        font-size: 13px;
+        font-weight: 600;
+    }
+    .mobileMenu .dropdown .dropdown-menu .dropdown-item:hover{
+        background-color: #20776e57;
+      
+    }
     .mobileMenu .dropdown-toggle:focus a:hover{
         color: #FFFFFF !important;
     }
@@ -1366,6 +1383,7 @@ position: relative;
     }
     .vscomp-value{
         font-size: 16px;
+        color: #010D0A;
     }
     .formNote .controlBtn {
         display: flex;
@@ -1507,9 +1525,9 @@ position: relative;
         padding-right: 70px;
     }
     .side1.sidebar-active {
-        left: -15px;
+        left: -16px;
         border-radius: 20px;
-        top: 0;
+      
     }
     .side1.sidebar-active .openMenuIcon{
         position: absolute !important;
@@ -1517,7 +1535,7 @@ position: relative;
         top: 20px;
     }
     .side1{
-        top: 0px;
+        top: 16px;
     }
     .btn.w-auto.addNewSubj{
         width: 150px;
@@ -1558,11 +1576,75 @@ position: relative;
     .paginationDiv .pagination .page-item:first-child,.paginationDiv .pagination .page-item:last-child{
         width: auto;
     }
+    .home-search{
+        display: none;
+    }
+    .grid-new{
+        flex-direction: row-reverse;
+        gap: 10px;
+    }
+    .d-flex.sideMenu{
+        margin-top: 18px;
+    }
+
+    .d-flex.mobileMenu div:first-child{
+        margin-left: -8px;
+    }
+    .d-flex.mobileMenu div:last-child{
+        margin-right: -4px;
+    }
+    .mobileMenu .dropdown-toggle{
+        color: #ffffff !important;
+    }
+
+    .mobileMenu .dropdown-toggle .dropdown-menu{
+        width: 127px !important;
+    }
+
+    .vscomp-toggle-button{
+        border: 1px solid #AAAAAA;
+    }
+    .inside-container-dashboard h3{
+        font-size: 16px;
+    }
+    .formArea.mt-5{
+        margin-top: 20px !important;
+    }
+    /* .formNote a img{
+        width: 27px;
+        height: 27px;
+    } */
+
+    .inputGroups input[type="radio"]{
+        width: 30px;
+        height: 30px;
+    }
+    .sideMenu p{
+        font-size: 18px;
+    }
+    .side1.sidebar-active .openMenuIcon{
+        width: 16px;
+        height: 16px;
+    }
+    .footerbtn .btnBorder{
+        font-size: 14px;
+    }
+    .footerbtn .btnDark{
+        font-size: 14px;
+    }
    
     
 }
 
 /* responsive end */
+
+
+
+
+
+
+
+
 
 
 /* custom select */
