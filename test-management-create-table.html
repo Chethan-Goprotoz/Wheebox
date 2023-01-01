@@ -41,13 +41,13 @@
             <div class="d-flex align-items-center gap-5">
               <div class="d-flex gap-4">
 
-                <div>
+                <!-- <div>
                   <a href="#">
                     <div class="home-search">
                       <img class="nav-arrows-1" src="assets/images/home-hover.svg" alt="">
                     </div>
                   </a>
-                </div>
+                </div> -->
               </div>
               <div class="grid-new" id="profile-out">
                 <div class="grid1-new" onclick="profile()">
@@ -78,21 +78,11 @@
         <div class="d-flex justify-content-between align-items-center">
           <img src="./assets/images/Question_Bank/menu.png" onclick="sidemenu()" id="menu-icon"
             class="fas fa-solid icon-w fa-bars d-block d-lg-none ms-0">
-          <h3 class="mb-0">Question Bank</h3>
+          <h3 class="mb-0">Test Management</h3>
         </div>
 
-        <div class="dropdown">
-          <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-            data-bs-toggle="dropdown" aria-expanded="false">
-            Quick links
-          </a>
-
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </div>
+        <button type="button" class="btn btnDark create-testBtn">Create Test <img class=""
+          src="./assets/images/Question_Bank/create-test.svg" alt=""></button>
       </div>
     </div>
     <div class="sidebar">
@@ -146,7 +136,7 @@
           <div class="d-flex justify-content-between align-items-center ">
             <h3 class="mb-0 d-none d-md-block">Test Management</h3>
 
-            <button type="button" class="btn btnDark create-testBtn">Create Test <img class="ms-2"
+            <button type="button" class="btn d-none d-md-block btnDark create-testBtn">Create Test <img class=""
                 src="./assets/images/Question_Bank/create-test.svg" alt=""></button>
           </div>
 
@@ -304,8 +294,17 @@
                             </div>
                           </div>
                         </div>
-
-                        <a href=""><img src="./assets/images/Question_Bank/vertical-dots.svg" alt=""></a>
+                        <div>
+                          <a href="#" class="dropdown-" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false"><img src="./assets/images/Question_Bank/vertical-dots.svg" alt=""></a>
+                          <ul class="dropdown-menu createTableDrop" aria-labelledby="dropdownMenuButton2">
+                            <li><a class="dropdown-item" href="#"><img src="./assets/images/Question_Bank/edit-drop.png" class="me-2" alt=""> Edit</a></li>
+                            <li><a class="dropdown-item" href="#"><img src="./assets/images/Question_Bank/eye.svg" class="me-2" alt=""> Preview</a></li>
+                            <li><a class="dropdown-item" href="#"><img src="./assets/images/Question_Bank/label.png" class="me-2" alt=""> Labelling Customization</a></li>
+                            <li><a class="dropdown-item" href="#"><img src="./assets/images/Question_Bank/printer.png" class="me-2" alt=""> Offline Format</a></li>
+                            <li><a class="dropdown-item" href="#"><img src="./assets/images/Question_Bank/aero-circle.png" class="me-2" alt=""> Assign Test</a></li>
+                            <li><a class="dropdown-item" href="#"><img src="./assets/images/Question_Bank/delete.png" class="me-2" alt=""> Delete</a></li>
+                          </ul>
+                        </div>
                       </div>
                     </td>
 
@@ -366,7 +365,17 @@
                           </div>
                         </div>
 
-                        <a href=""><img src="./assets/images/Question_Bank/vertical-dots.svg" alt=""></a>
+                        <div>
+                          <a href="#" class="dropdown-" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false"><img src="./assets/images/Question_Bank/vertical-dots.svg" alt=""></a>
+                          <ul class="dropdown-menu createTableDrop" aria-labelledby="dropdownMenuButton3">
+                            <li><a class="dropdown-item" href="#"><img src="./assets/images/Question_Bank/edit-drop.png" class="me-2" alt=""> Edit</a></li>
+                            <li><a class="dropdown-item" href="#"><img src="./assets/images/Question_Bank/eye.svg" class="me-2" alt=""> Preview</a></li>
+                            <li><a class="dropdown-item" href="#"><img src="./assets/images/Question_Bank/label.png" class="me-2" alt=""> Labelling Customization</a></li>
+                            <li><a class="dropdown-item" href="#"><img src="./assets/images/Question_Bank/printer.png" class="me-2" alt=""> Offline Format</a></li>
+                            <li><a class="dropdown-item" href="#"><img src="./assets/images/Question_Bank/aero-circle.png" class="me-2" alt=""> Assign Test</a></li>
+                            <li><a class="dropdown-item" href="#"><img src="./assets/images/Question_Bank/delete.png" class="me-2" alt=""> Delete</a></li>
+                          </ul>
+                        </div>
                       </div>
                     </td>
 
@@ -422,8 +431,17 @@
                             </div>
                           </div>
                         </div>
-
-                        <a href=""><img src="./assets/images/Question_Bank/vertical-dots.svg" alt=""></a>
+                        <div>
+                          <a href="#" class="dropdown-" type="button" id="dropdownMenuButton4" data-bs-toggle="dropdown" aria-expanded="false"><img src="./assets/images/Question_Bank/vertical-dots.svg" alt=""></a>
+                          <ul class="dropdown-menu createTableDrop" aria-labelledby="dropdownMenuButton4">
+                            <li><a class="dropdown-item" href="#"><img src="./assets/images/Question_Bank/edit-drop.png" class="me-2" alt=""> Edit</a></li>
+                            <li><a class="dropdown-item" href="#"><img src="./assets/images/Question_Bank/eye.svg" class="me-2" alt=""> Preview</a></li>
+                            <li><a class="dropdown-item" href="#"><img src="./assets/images/Question_Bank/label.png" class="me-2" alt=""> Labelling Customization</a></li>
+                            <li><a class="dropdown-item" href="#"><img src="./assets/images/Question_Bank/printer.png" class="me-2" alt=""> Offline Format</a></li>
+                            <li><a class="dropdown-item" href="#"><img src="./assets/images/Question_Bank/aero-circle.png" class="me-2" alt=""> Assign Test</a></li>
+                            <li><a class="dropdown-item" href="#"><img src="./assets/images/Question_Bank/delete.png" class="me-2" alt=""> Delete</a></li>
+                          </ul>
+                        </div>
                       </div>
                     </td>
 
@@ -484,7 +502,17 @@
                           </div>
                         </div>
 
-                        <a href=""><img src="./assets/images/Question_Bank/vertical-dots.svg" alt=""></a>
+                        <div class="position-relative">
+                          <a href="#" class="dropdown-" type="button" id="dropdownMenuButton5" data-bs-toggle="dropdown" aria-expanded="false"><img src="./assets/images/Question_Bank/vertical-dots.svg" alt=""></a>
+                          <ul class="dropdown-menu createTableDrop" aria-labelledby="dropdownMenuButton5">
+                            <li><a class="dropdown-item" href="#"><img src="./assets/images/Question_Bank/edit-drop.png" class="me-2" alt=""> Edit</a></li>
+                            <li><a class="dropdown-item" href="#"><img src="./assets/images/Question_Bank/eye.svg" class="me-2" alt=""> Preview</a></li>
+                            <li><a class="dropdown-item" href="#"><img src="./assets/images/Question_Bank/label.png" class="me-2" alt=""> Labelling Customization</a></li>
+                            <li><a class="dropdown-item" href="#"><img src="./assets/images/Question_Bank/printer.png" class="me-2" alt=""> Offline Format</a></li>
+                            <li><a class="dropdown-item" href="#"><img src="./assets/images/Question_Bank/aero-circle.png" class="me-2" alt=""> Assign Test</a></li>
+                            <li><a class="dropdown-item" href="#"><img src="./assets/images/Question_Bank/delete.png" class="me-2" alt=""> Delete</a></li>
+                          </ul>
+                        </div>
                       </div>
                     </td>
 
@@ -544,8 +572,17 @@
                             </div>
                           </div>
                         </div>
-
-                        <a href=""><img src="./assets/images/Question_Bank/vertical-dots.svg" alt=""></a>
+                        <div class="position-relative">
+                          <a href="#" class="dropdown-" type="button" id="dropdownMenuButton6" data-bs-toggle="dropdown" aria-expanded="false"><img src="./assets/images/Question_Bank/vertical-dots.svg" alt=""></a>
+                          <ul class="dropdown-menu createTableDrop" aria-labelledby="dropdownMenuButton6">
+                            <li><a class="dropdown-item" href="#"><img src="./assets/images/Question_Bank/edit-drop.png" class="me-2" alt=""> Edit</a></li>
+                            <li><a class="dropdown-item" href="#"><img src="./assets/images/Question_Bank/eye.svg" class="me-2" alt=""> Preview</a></li>
+                            <li><a class="dropdown-item" href="#"><img src="./assets/images/Question_Bank/label.png" class="me-2" alt=""> Labelling Customization</a></li>
+                            <li><a class="dropdown-item" href="#"><img src="./assets/images/Question_Bank/printer.png" class="me-2" alt=""> Offline Format</a></li>
+                            <li><a class="dropdown-item" href="#"><img src="./assets/images/Question_Bank/aero-circle.png" class="me-2" alt=""> Assign Test</a></li>
+                            <li><a class="dropdown-item" href="#"><img src="./assets/images/Question_Bank/delete.png" class="me-2" alt=""> Delete</a></li>
+                          </ul>
+                        </div>
                       </div>
                     </td>
 
@@ -607,7 +644,17 @@
                           </div>
                         </div>
 
-                        <a href=""><img src="./assets/images/Question_Bank/vertical-dots.svg" alt=""></a>
+                        <div class="position-relative">
+                          <a href="#" class="dropdown7-" type="button" id="dropdownMenuButton7" data-bs-toggle="dropdown" aria-expanded="false"><img src="./assets/images/Question_Bank/vertical-dots.svg" alt=""></a>
+                          <ul class="dropdown-menu createTableDrop" aria-labelledby="dropdownMenuButton7">
+                            <li><a class="dropdown-item" href="#"><img src="./assets/images/Question_Bank/edit-drop.png" class="me-2" alt=""> Edit</a></li>
+                            <li><a class="dropdown-item" href="#"><img src="./assets/images/Question_Bank/eye.svg" class="me-2" alt=""> Preview</a></li>
+                            <li><a class="dropdown-item" href="#"><img src="./assets/images/Question_Bank/label.png" class="me-2" alt=""> Labelling Customization</a></li>
+                            <li><a class="dropdown-item" href="#"><img src="./assets/images/Question_Bank/printer.png" class="me-2" alt=""> Offline Format</a></li>
+                            <li><a class="dropdown-item" href="#"><img src="./assets/images/Question_Bank/aero-circle.png" class="me-2" alt=""> Assign Test</a></li>
+                            <li><a class="dropdown-item" href="#"><img src="./assets/images/Question_Bank/delete.png" class="me-2" alt=""> Delete</a></li>
+                          </ul>
+                        </div>
                       </div>
                     </td>
 
