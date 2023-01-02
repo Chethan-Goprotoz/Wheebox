@@ -261,7 +261,10 @@ outline: 0px;
 .drang_text, .browse{
   font-size: 18px !important;
 }
-
+  .multisteps-form__progress-btn:after{
+  border-color: #BDBDBD !important;
+  top: 1px;
+}
 }
 
 @media (max-width: 576px){
