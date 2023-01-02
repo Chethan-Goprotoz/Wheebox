@@ -214,3 +214,10 @@ outline: 0px;
   left: calc(-25% - 13px / 2) !important;
   width: 60% !important;
 }
+/* .testcard{
+  margin: 10px;
+} */
+.modal-title{
+  font-size: 22px !important;
+  font-weight: bold;
+}
