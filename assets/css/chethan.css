@@ -220,7 +220,14 @@ outline: 0px;
 .modal-title{
   font-size: 22px !important;
   font-weight: bold;
+  color: #2C3652 !important;
 }
 .modal-header{
   border-bottom: 0px solid #dee2e6 !important;
+}
+@media (min-width: 576px){
+.modal-dialog {
+    max-width: 1000px !important;
+    margin: 1.75rem auto;
+}
 }
