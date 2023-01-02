@@ -190,6 +190,7 @@ outline: 0px;
     width: 100px;
     outline: none;
     cursor: pointer;
+    font-size: 16px;
   }
   .card-text button:hover {
     background: #20776e;
@@ -253,6 +254,9 @@ outline: 0px;
 .success_img{
   width: 85px;
   height: 85px;
+}
+.success_mgs{
+  font-size: 22px;
 }
 
 }
