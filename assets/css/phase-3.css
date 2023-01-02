@@ -860,7 +860,7 @@ position: relative;
   .onoffswitch .onoffswitch-inner:before {
     content: "On";
     padding-left: 5px;
-    padding-top: 2px;
+    padding-top: 0.5px;
     /* background-color: hsl(203, 100%, 39.1569%); */
     color: #20776E;
     font: normal normal normal 14px/21px Pop-normal;
@@ -871,7 +871,7 @@ position: relative;
   }
   .onoffswitch .onoffswitch-inner:after {
     content: "Off";
-    padding-top: 2px;
+    padding-top: 0.5px;
     padding-right: 9px;
     background-color: hsl(0, 0%, 98%);
     color: #D1D1D1;
@@ -986,7 +986,7 @@ position: relative;
     font-size: 14px;
   }
   .createTableDrop li a img{
-    width: auto;
+    /* width: auto; */
     vertical-align: middle;
   }
 
@@ -1322,11 +1322,39 @@ position: relative;
         margin-top: 20px !important;
         margin-bottom: 20px;
     }
+    .grid2-new h6{
+        margin-bottom: 0;
+    }
   }
 
   .sideMenu img {
     width: 22px;
     height: 22px;
+  }
+
+  .createTableDrop li a{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+
+  .p-4.input-data .dropdown-item span:first-child img{
+    width:18px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+  }
+
+  /* .p-4.input-data .dropdown-item span:first-child img{
+    width: 22px;
+  } */
+  .p-4.input-data .dropdown-item span:first-child img.ms-00{
+    width: 24px !important;
+  }
+
+  .p-4.input-data .dropdown-item span.ms-11{
+    margin-left: -5px;
   }
 
 
@@ -1661,10 +1689,12 @@ position: relative;
     .grid2-new h6{
         font-size: 14px;
         text-align: right;
+        margin-bottom: 0;
     }
     .grid2-new p{
         font-size: 12px;
         text-align: right;
+        margin-bottom: 0;
     }
     .createTble.pb-0 .table-row-1.table-header td:first-child{
         height: 44px !important;
@@ -1682,11 +1712,23 @@ position: relative;
     .createTble.pb-0 .table-row-1.table-header td{
         font-weight: 500;
     }
-
+    .createTableDrop li a img.ms-00{
+        margin-right: 5px;
+      }
     .createTableDrop li a img{
-        width: 16px;
+        margin-right: 15px !important;
         vertical-align: middle;
       }
+      .mobileMenu #menu-icon{
+        width: 23px;
+        height: 23px;
+        margin-top: 0;
+      }
+      /* .createTableDrop li a span.ms-11{
+        margin-right: 8px;
+      } */
+
+      
     
 }
 
