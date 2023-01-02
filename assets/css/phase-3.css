@@ -829,7 +829,7 @@ position: relative;
     display: block;
     overflow: hidden;
     cursor: pointer;
-    border: 1px solid #20776E;
+   
     -moz-border-radius: 20px;
     -webkit-border-radius: 20px;
     border-radius: 20px;
@@ -866,6 +866,8 @@ position: relative;
     font: normal normal normal 14px/21px Pop-normal;
     letter-spacing: 0px;
     color: #20776E;
+    border-radius: 110px;
+    border: 1px solid #20776E;
   }
   .onoffswitch .onoffswitch-inner:after {
     content: "Off";
@@ -876,6 +878,8 @@ position: relative;
     text-align: right;
     font: normal normal normal 14px/21px Pop-normal;
     letter-spacing: 0px;
+    border-radius: 11px;
+    border:1px solid #D1D1D1;
   }
   .onoffswitch .onoffswitch-switch {
     width: 22px;
@@ -915,7 +919,7 @@ position: relative;
   }
   .toggle-group input[type=checkbox]:checked ~ .onoffswitch .onoffswitch-label .onoffswitch-switch {
     right: 1px;
-    top: 1;
+    top: -1;
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
     background-color: #20776E;
   }
@@ -1305,9 +1309,25 @@ position: relative;
     .earchFilterTag{
         margin-bottom: 40px;
     }
+    .createTble.pb-0 .table-row-1.table-header td:first-child{
+        height: 60px;
+    }
+    .createTble.pb-0 .table-main-section2.table-responsive .table.main-table tbody tr{
+        height: 88px;
+    }
+    .createTble.pb-0{
+        margin-top: 20px;
+    }
+    .testCaseCards .pagignationDiv1{
+        margin-top: 20px !important;
+        margin-bottom: 20px;
+    }
   }
 
-
+  .sideMenu img {
+    width: 22px;
+    height: 22px;
+  }
 
 
 /* responsive css mobile */
@@ -1510,11 +1530,11 @@ position: relative;
         max-height: 20px;
     } */
 
-    .testCaseCards{
+    /* .testCaseCards{
         background-color: #FFFFFF;
         padding: 20px;
         box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
-    }
+    } */
     .testCaseTable tr td:first-child{
         width: 111px !important;
     }
@@ -1541,10 +1561,6 @@ position: relative;
         width: 150px;
     }
     .main_header .logo{
-        width: 56px;
-        height: 56px;
-    }
-    .profile.rounded-circle,.profile.rounded-circle img{
         width: 56px;
         height: 56px;
     }
@@ -1632,7 +1648,40 @@ position: relative;
     .footerbtn .btnDark{
         font-size: 14px;
     }
-   
+    .testCaseCards .pagignationDiv1{
+        margin-top: 5px !important;
+    }
+    .btn.btnDark.create-testBtn{
+        margin-right: -6px;
+    }
+    .profile.rounded-circle, .profile.rounded-circle img{
+        width: 50px;
+        height: 50px;
+    }
+    .grid2-new h6{
+        font-size: 14px;
+        text-align: right;
+    }
+    .grid2-new p{
+        font-size: 12px;
+        text-align: right;
+    }
+    .createTble.pb-0 .table-row-1.table-header td:first-child{
+        height: 44px !important;
+        font-weight: 500;
+    }
+    .createTble.pb-0 .table-main-section2.table-responsive .table.main-table tbody tr{
+        height: 69px;
+    }
+    .table-row-1 td{
+        font-size: 12px;
+    }
+    .createTble .table-row-1 .tableSideHeading1{
+        font-size: 12px;
+    }
+    .createTble.pb-0 .table-row-1.table-header td{
+        font-weight: 500;
+    }
     
 }
 
