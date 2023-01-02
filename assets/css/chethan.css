@@ -206,7 +206,7 @@ outline: 0px;
   background-color: #fff !important;
   box-sizing: border-box;
   z-index: 3;
-  border-color: #a6a6a6 !important;
+  border-color: #BDBDBD !important;
 }
 .multisteps-form__progress-btn.js-active:before {
   transform: translateX(-50%) scale(1.2);
@@ -233,4 +233,28 @@ outline: 0px;
     max-width: 1000px !important;
     margin: 1.75rem auto;
 }
+
 }
+
+@media (max-width: 576px){
+  .modal-title{
+    font-size: 18px;
+  }
+  .modal-header .btn-close{
+    font-size: 12px;
+    color: #333333;
+  }
+  .dbtn{
+    font-size: 18px !important;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .dbtn img{
+    width: 28px;
+    height: 28px;
+  }
+  .multisteps-form__progress-btn{
+    font-size: 12px;
+  }
+  
+  }
