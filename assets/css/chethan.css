@@ -221,3 +221,6 @@ outline: 0px;
   font-size: 22px !important;
   font-weight: bold;
 }
+.modal-header{
+  border-bottom: 0px solid #dee2e6 !important;
+}
