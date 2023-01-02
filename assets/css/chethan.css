@@ -258,6 +258,9 @@ outline: 0px;
 .success_mgs{
   font-size: 22px;
 }
+.drang_text, .browse{
+  font-size: 18px !important;
+}
 
 }
 
@@ -308,6 +311,9 @@ outline: 0px;
   .multisteps-form__progress-btn:after{
     border-color: #BDBDBD !important;
     top: -1px;
+  }
+  .drang_text, .browse{
+    font-size: 16px !important;
   }
   }
   .multisteps-form__progress-btn:after {
