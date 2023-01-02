@@ -160,17 +160,17 @@
                       <!--content inner-->
                       <div class="content__inner">
                         <!-- <div class="container"><h2 class="content__title content__title--m-sm">Pick animation type</h2><form class="pick-animation my-4"><div class="form-row"><div class="col-5 m-auto"><select class="pick-animation__select form-control"><option value="scaleIn" selected="selected">ScaleIn</option><option value="scaleOut">ScaleOut</option><option value="slideHorz">SlideHorz</option><option value="slideVert">SlideVert</option><option value="fadeIn">FadeIn</option></select></div></div></form></div> -->
-                        <div class="container overflow-hidden">
+                        <div class="container ">
                           <!--multisteps-form-->
                           <div class="multisteps-form">
                             <!--progress bar-->
                             <div class="row" style="align-items: center; justify-content: center;">
                               <div class="col-12 col-lg-8 ml-auto mr-auto mb-4">
                                 <div class="multisteps-form__progress">
-                                  <button class="multisteps-form__progress-btn js-active" type="button" title="User Info">Download Template</button>
-                                  <button class="multisteps-form__progress-btn" type="button" title="Address">Select Subject</button>
-                                  <button class="multisteps-form__progress-btn" type="button" title="Order Info">Upload File</button>
-                                  <button class="multisteps-form__progress-btn" type="button" title="Comments">Complete the Upload</button>
+                                  <button class="multisteps-form__progress-btn js-active" type="button" title="User Info"><span style="color:#333333"> Download Template</span></button>
+                                  <button class="multisteps-form__progress-btn" type="button" title="Address"><span style="color:#333333"> Select Subject</span></button>
+                                  <button class="multisteps-form__progress-btn" type="button" title="Order Info"><span style="color:#333333"> Upload File</span></button>
+                                  <button class="multisteps-form__progress-btn" type="button" title="Comments"><span style="color:#333333"> Complete the Upload</span></button>
                                 </div>
                               </div>
                             </div>
@@ -181,7 +181,7 @@
                                   <!--single form panel-->
                                   <div class="multisteps-form__panel  p-4 rounded bg-white js-active" data-animation="scaleIn">
                                     <div class="multisteps-form__content">
-                                      <div class="form-row  d-flex" style="height:80%;align-items: center;">
+                                      <div class="form-row  d-flex" style="height:90%;align-items: center;">
                                         <div class="col-12 text-center">
                                           <!-- col-sm-6 was removed -->
                                           <button class="dbtn"><img src="assets/images/chethan/d-arrow.svg" alt=""  style="margin-right: 10px;">Download Template</button>
@@ -195,14 +195,15 @@
                                   <!--single form panel-->
                                   <div class="multisteps-form__panel  p-4 rounded bg-white" data-animation="scaleIn">
                                     <div class="multisteps-form__content">
-                                      <div class="form-row d-flex" style="height:80%;">
+                                      <div class="form-row d-flex" style="height:90%;">
                                         <div class="col">
-                                          <p style="font-size: 14px;line-height: 16px;text-align:center">Select the subject for which you want to upload the questions i.e.- Maths or Science. Topic(such as Geometry) and Subtopic(such as Lines, Triangles) can be provided in the excel to be uploaded.</p>
+                                          <p class="selectsub" style="font-size: 12px;line-height: 16px;text-align:center;">Select the subject for which you want to upload the questions i.e.- Maths or Science. Topic(such as Geometry) and Subtopic(such as Lines, Triangles) can be provided in the excel to be uploaded.</p>
                                           <!-- dropdown -->
                                           <div class="row">
-                                            <div class="col"></div>
-                                            <div class="col">
-                                          <p style="font-size:14px">Select Subject</p>
+                                            <div class="col-sm"></div>
+                                            <div class="col-sm">
+                                              <div >
+                                          <p style="color:#010d0A;font-size: 18px;">Select Subject</p>
                                           <select id="SearchDropdown" name="native-select" placeholder="Select Subject Here" data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
                                             <option value="5">English</option>
                                             <option value="1">Hindi</option>
@@ -211,7 +212,8 @@
                                             <option value="4">Chemistry</option>
                                           </select>
                                         </div>
-                                        <div class="col"></div>
+                                        </div>
+                                        <div class="col-sm"></div>
                                         </div>
                                           <!-- dropdown -->
                                         </div>
@@ -262,7 +264,7 @@
                                   <!--single form panel-->
                                   <div class="multisteps-form__panel  p-4 rounded bg-white" data-animation="scaleIn">
                                     <div class="multisteps-form__content">
-                                      <div class="form-row d-flex" style="height:80%;align-items: center;justify-content: center;">
+                                      <div class="form-row d-flex" style="height:90%;align-items: center;justify-content: center;">
                                         <div>
                                           <img src="assets/images/chethan/tick.png" alt="" class="mx-auto d-block mb-5 mt-5">
                                         <h3 class="multisteps-form__title" style="text-align: center; color: #20776E;"> Successfully uploaded</h3>
@@ -376,7 +378,7 @@
                         transition-delay: 0s;
                         position: relative;
                         padding-top: 20px;
-                        color: rgba(108, 117, 125, 0.7);
+                        color: #333333 !important;
                         text-indent: -9999px;
                         border: none;
                         background-color: transparent;
