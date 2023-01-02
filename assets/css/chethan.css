@@ -218,6 +218,7 @@ outline: 0px;
 .multisteps-form__progress-btn:after {
   left: calc(-25% - 13px / 2) !important;
   width: 60% !important;
+  top:1px !important;
 }
 /* .testcard{
   margin: 10px;
