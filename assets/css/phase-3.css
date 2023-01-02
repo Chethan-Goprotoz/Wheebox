@@ -986,7 +986,7 @@ position: relative;
     font-size: 14px;
   }
   .createTableDrop li a img{
-    width: 14px;
+    width: auto;
     vertical-align: middle;
   }
 
@@ -1682,6 +1682,11 @@ position: relative;
     .createTble.pb-0 .table-row-1.table-header td{
         font-weight: 500;
     }
+
+    .createTableDrop li a img{
+        width: 16px;
+        vertical-align: middle;
+      }
     
 }
 
