@@ -295,6 +295,15 @@ outline: 0px;
     color: #2c3652 !important;
     font-size: 12px;
   }
-  
+  .multisteps-form__progress-btn:before{
+    width: 20px !important;
+    height: 20px !important;
+    top: -4;
+    border-color: #BDBDBD !important;
+  }
+  .multisteps-form__progress-btn:before {
+    border: 6px solid !important;
+    border-color: #BDBDBD !important;
+  }
   }
   
