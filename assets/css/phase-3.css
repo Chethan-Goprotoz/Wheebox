@@ -1325,7 +1325,46 @@ position: relative;
     .grid2-new h6{
         margin-bottom: 0;
     }
+    .main_header{
+        padding: 0 1.3rem 0 1.3rem;
+    }
+    .vscomp-value{
+        font-family: 'Pop-normal';
+        font-size: 16px;
+    }
+    .calendar-container p{
+        font-size: 18px;
+    }
+    .modal-dialog.modal-lg.modal-xl.modal-dialog-centered.reviewQuesModal{
+        max-width: 1110px;
+    }
+    .vscomp-toggle-button{
+        width: 100%;
+    }
+    .modal-dialog.modal-lg.modal-xl.modal-dialog-centered.reviewQuesModal .row.gx-5.gy-4{
+        --bs-gutter-x: 9rem;
+    }
+    .reviewQuesModal .modal-body .vscomp-toggle-button{
+        height: 50px;
+    }
+    .controlBtn .btn img{
+        width: auto;
+    }
+    .controlBtn .btn:first-child img, .controlBtn .btn:nth-child(2) img, .controlBtn .btn:nth-child(3) img{
+        width: auto;
+    }
+    .controlBtn .btn:focus{
+        box-shadow: none;
+    }
+    .inputGroups .errorMsg{
+        left: 29px !important;
+        top: 12px !important;
+    }
   }
+  /* 1920 px resl end */
+
+
+
 
   .sideMenu img {
     width: 22px;
@@ -1356,6 +1395,28 @@ position: relative;
   .p-4.input-data .dropdown-item span.ms-11{
     margin-left: -5px;
   }
+
+.inputGroups input[type="text"].errorRed{
+    border: 0.5px solid rgb(245, 76, 76);
+}
+.inputGroups div.w-100{
+    position: relative;
+}
+.inputGroups .errorMsg{
+    color: rgb(245, 76, 76);
+    font-size: 12px;
+    font-family: pop-normal;
+    position: absolute;
+    left: 21px;
+    top: 6px;
+    background: white;
+    padding-right: 102px;
+}
+.vscomp-value{
+    font-family: 'Pop-normal';
+    color: #010D0A;
+}
+
 
 
 /* responsive css mobile */
