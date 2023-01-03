@@ -1,0 +1,424 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard</title>
+  <!-- font awesome css -->
+  <link rel="stylesheet" href="assets/font-awesome/all.min.css" />
+  <link rel="stylesheet" href="assets/font-awesome/fontawesome.css" />
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="shortcut icon" href="assets/images/logo_logo.png" sizes="16x16" type="image/x-icon">
+  <!-- loader css -->
+  <link rel="stylesheet" href="assets/css/loader.css">
+  <!-- style css -->
+  <!-- <link rel="stylesheet" href="assets/sass/app.css" rel="stylesheet" /> -->
+  <link rel="stylesheet" href="assets/css/virtual-select.min.css">
+  <link rel="stylesheet" href="assets/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/phase-3.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/chethan.css">
+
+</head>
+
+<body>
+  <!-- loader start-->
+  <div class="loader-container">
+    <div class="loader"></div>
+  </div>
+  <!-- loader end-->
+  <!--selection section start -->
+  <div class="selection-new " id="fullselector">
+    <div class="container-fluid">
+      <div class="main_div">
+        <div class="row">
+          <div class="main_header mb-1">
+            <div class="d-flex justify-content-between navpart1">
+              <div class="logo new-logopart">
+                <img src="assets/images/logo_logo.png" alt="mini-logo">
+              </div>
+            </div>
+            <div class="d-flex align-items-center gap-5">
+              <div class="d-flex gap-4">
+
+                <div>
+                  <a href="#">
+                    <div class="home-search">
+                      <img class="nav-arrows-1" src="assets/images/home-hover.svg" alt="">
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="grid-new" id="profile-out">
+                <div class="grid1-new" onclick="profile()">
+                  <div class="profile rounded-circle">
+                    <img src="assets/images/prof-mini.png" alt="profile">
+                  </div>
+                </div>
+                <div class="grid2-new d-none d-md-block" onclick="profile()">
+                  <h6>Jane Doe</h6>
+                  <p>jane_doe@wheebox.com</p>
+                </div>
+                <div class="profileDropdown" id="profileDropdown">
+                  <ul>
+                    <li>Admin Profile</li>
+                    <li>Change Password</li>
+                    <li>Help Center</li>
+                    <li>Log Out</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- row closed -->
+      </div>
+      <div class="d-flex mobileMenu justify-content-lg-end justify-content-between d-md-none mt-3">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <img src="./assets/images/Question_Bank/menu.png" onclick="sidemenu()" id="menu-icon"
+            class="fas fa-solid icon-w fa-bars d-block d-lg-none ms-0">
+          <h3 class="mb-0">Dashboard</h3>
+        </div>
+
+        <div class="dropdown">
+          <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            Quick links
+          </a>
+
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <li><a class="dropdown-item" href="#">Create Question</a></li>
+            <li><a class="dropdown-item" href="#">Review Question</a></li>
+            <li><a class="dropdown-item" href="#">Allot Assesor</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="sidebar">
+      <div class="d-flex">
+        <div class="side1" id="sidebar-menu">
+          <img src="./assets/images/Question_Bank/croxMenu.png" onclick="sidemenu()" id="menu-icon d-md-none"
+            class="openMenuIcon fas fa-solid icon-w fa-bars d-block d-lg-none ms-0" aria-hidden="true">
+          <a href="#">
+            <div class="d-flex sideMenu mt-5 active-one"> <img class="icon-align"
+                src="assets/images/Question_Bank/noun-dashboard-4527077.svg" alt="">
+              <p>Dashboard</p>
+            </div>
+          </a> <a href="#">
+            <div class="d-flex sideMenu"> <img class="icon-align" src="assets/images/Question_Bank/noun-question.svg"
+                alt="">
+              <p>Question Bank</p>
+            </div>
+          </a> <a href="#">
+            <div class="d-flex sideMenu"> <img class="icon-align"
+                src="assets/images/Question_Bank/noun-setting-2193905.svg" alt="">
+              <p>Test Management</p>
+            </div>
+          </a> <a href="#">
+            <div class="d-flex sideMenu"> <img class="icon-align"
+                src="assets/images/Question_Bank/noun-survey-3881626.svg" alt="">
+              <p>Evaluation</p>
+            </div>
+          </a>
+          <a href="#">
+            <div class="d-flex sideMenu"> <img class="icon-align"
+                src="assets/images/Question_Bank/noun-clipboard-4426919.svg" alt="">
+              <p>Roaster Managment</p>
+            </div>
+          </a>
+          <a href="#">
+            <div class="d-flex sideMenu"> <img class="icon-align"
+                src="assets/images/Question_Bank/noun-administration-99475.svg" alt="">
+              <p>Admin Control</p>
+            </div>
+          </a>
+          <a href="#">
+            <div class="d-flex sideMenu"> <img class="icon-align"
+                src="assets/images/Question_Bank/noun-headphone-5272179.svg" alt="">
+              <p>Tech Support</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="inside-container-dashboard">
+                  <div class="d-flex justify-content-between mt-3">
+
+            <div class="d-flex justify-content-between align-items-center">
+              <img src="./assets/images/Question_Bank/menu.png" onclick="sidemenu()" id="menu-icon"
+                class="fas fa-solid icon-w fa-bars d-block d-lg-none ms-0">
+              <h3 class="mb-0">Dashboard</h3>
+            </div>
+
+            <div class="dropdown">
+              <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Quick links
+              </a>
+
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Create Question</a></li>
+                <li><a class="dropdown-item" href="#">Review Question</a></li>
+                <li><a class="dropdown-item" href="#">Allot Assesor</a></li>
+              </ul>
+            </div>
+                  </div>
+
+                 <!-- Cards Opens-->
+                   <div class="row mt-5">
+            <div class="col-6 col-md-3"> <a href="#">
+                <div class="d-flex justify-content-between testcard gridBox box1 box-card">
+                  <div class="dashboard-content">
+                    <p>TOTAL NO OF QUESTIONS </p>
+                    <h3>13775</h3>
+                  </div>
+                  <div class="dashboardCard-img border-1 d-flex justify-content-center align-items-center"> <img
+                      src="./assets/images/all.png" alt=""> </div>
+                </div>
+              </a> </div>
+            <div class="col-6 col-md-3"> <a href="#">
+                <div class="d-flex justify-content-between testcard gridBox box2 box-card">
+                  <div class="dashboard-content">
+                    <p>TOTAL ACTIVE ASSESSMENTS</p>
+                    <h3>2216</h3>
+                  </div>
+                  <div class="dashboardCard-img border-2 d-flex justify-content-center align-items-center"> <img
+                      src="./assets/images/dashboard-calendar.png" alt=""> </div>
+                </div>
+              </a> </div>
+            <div class="col-6 col-md-3"> <a href="#">
+                <div class="d-flex justify-content-between testcard gridBox box3 box-card">
+                  <div class="dashboard-content">
+                    <p>TOTAL ASSESSMENTS</p>
+                    <h3>400</h3>
+                  </div>
+                  <div class="dashboardCard-img border-3 d-flex justify-content-center align-items-center"> <img
+                      src="./assets/images/calendar (1).png" alt=""> </div>
+                </div>
+              </a> </div>
+            <div class="col-6 col-md-3"> <a href="#">
+                <div class="d-flex justify-content-between testcard gridBox box4 box-card">
+                  <div class="dashboard-content">
+                    <p>TOTAL CANDIDATES</p>
+                    <h3>59318</h3>
+                  </div>
+                  <div class="dashboardCard-img border-4 d-flex justify-content-center align-items-center"> <img
+                      src="./assets/images/calendar (2).png" alt=""> </div>
+                </div>
+              </a> </div>
+                  </div>
+                 <!-- Cards Close -->
+
+                 <!-- chart container -->
+                 <div class="row g-5 mt-1">
+                  <div class="col-md-6">
+                    <div class="testcard w-100 testGraph">
+                      <div class="d-flex justify-content-between">
+                          <h3>Candidate Status</h3> <select class="form-select yeardropdown">
+                              <option disabled hidden selected>&#128197; 2022</option>
+                              <option value="1">&#128197; Weekly</option>
+                              <option value="2">&#128197; Monthly</option>
+                              <option value="3">&#128197; Yearly</option>
+                          </select>
+                      </div>
+                    <!-- partial:index.partial.html -->
+                      <div style="height:auto ;">
+                        <canvas id="ctx"></canvas>
+                     </div>
+                  </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="testcard w-100 testGraph">
+                      <div class="d-flex justify-content-between">
+                          <h3>Question Type Trend</h3> <select class="form-select yeardropdown">
+                              <option disabled hidden selected>&#128197; 2022</option>
+                              <option value="1">&#128197; Weekly</option>
+                              <option value="2">&#128197; Monthly</option>
+                              <option value="3">&#128197; Yearly</option>
+                          </select>
+                      </div>
+                      <div class="graph-container">
+                          <div class="chartResponsive-benchmark"> <canvas id="countTrend"></canvas> </div>
+                      </div>
+                  </div>
+                  </div>
+
+                 </div>
+                 <!-- chart container closed -->
+        </div>
+        <!-- end -->
+
+      </div>
+    </div>
+  </div>
+  <!-- main-div closed -->
+  </div>
+  <!-- container closed -->
+  </section>
+  <!--selection section end -->
+  <script src="https://kit.fontawesome.com/5817738a37.js" crossorigin="anonymous"></script>
+  <script src="assets/js/jquery-2.2.0.min.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/loader.js"></script>
+  <script src="assets/js/chart.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="assets/js/virual-select.min.js"></script>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js'></script>
+  <!-- Load plotly.js into the DOM -->
+  <!-- <script src='https://cdn.plot.ly/plotly-2.16.1.min.js'></script> -->
+
+
+
+  <script>
+    VirtualSelect.init({
+      ele: '#SearchDropdown'
+    });
+  </script>
+
+
+
+
+  <script>
+    function sidemenu() {
+      var sidebar = document.getElementById("sidebar-menu")
+      var icon = document.getElementById("menu-icon")
+      var selector = document.getElementById("fullselector")
+      selector.classList.toggle("mobile-menu-stopper")
+      sidebar.classList.toggle("sidebar-active")
+      icon.classList.toggle("icon-rotate")
+      icon.classList.toggle("fa-bars")
+      icon.classList.toggle("fa-xmark")
+
+    }
+  </script>
+
+
+<script>
+  const labels3 = [
+          ["MCQ"], ["Programming"], ["Psychometric"],
+          ["SCQ"], ["FIB"],["Typing"],["Comprhension"],["Subjective"],["Drag Drop"]
+        ];
+        const data3 = {
+          labels: labels3,
+          datasets: [{
+            label: 'Data',
+            data: [0, 1000, 500, 1000, 0, 1500, 1400, 2500, 500],
+            tension: 0,
+            borderColor: '#FEC271',
+            pointBackgroundColor: '#FFFFFF',
+            pointBorderColor: "#FF3A29",
+            pointBorderWidth: "4",
+            pointRadius: 5,
+          }, ]
+        };
+        const config3 = {
+          type: 'line',
+          data: data3,
+          options: {
+            maintainAspectRatio: false,
+            responsive: true,
+            plugins: {
+   legend: {
+     display: false,
+   },
+   tooltip: {
+     callbacks: {
+       title: (context) => {
+         console.log(context[0].label)
+         return context[0].label.replaceAll(',', ' ')
+       }
+     }
+   },
+            },
+            scales: {
+   y: {
+     beginAtZero: true,
+     ticks: {
+       stepSize: 500,
+       min: 0,
+       max: 2500,
+       callback: function(value) {
+         return (value);
+       },
+       offset: true,
+     },
+   },
+   x: {
+     ticks: {
+       font: {
+         family: 'pop-normal',
+       },
+     },
+   }
+            },
+          },
+        };
+        const countTrend = new Chart(document.getElementById('countTrend'), config3);
+</script> <!-- bar chart -->
+
+
+<!-- stacked bar chart -->
+    <script>
+      const CHART = document.getElementById("ctx")
+        const piechart = new Chart(CHART, {
+          type: 'bar',
+          data: {
+            labels: [["Jan"], ["Feb"], ["Mar"],
+                ["Apr"], ["May"],["Jun"],["Jul"],["Aug"],["Sep"],["Oct"],["Nov"],["Dec"]
+                    ],
+            datasets: [
+              {
+                label: "DarkRed",
+                data: [70, 40, 50, 33, 60, 60, 40, 50, 60, 78, 76, 65],
+                backgroundColor: "#FF3A29",
+                borderRadius: 5,
+                
+              },
+              {
+                label: "LightRed",
+                data: [20, 40, 50, 33, 40, 10, 57, 27, 40, 45, 38, 34],
+                backgroundColor: "#FFE5D3",
+               
+              },
+
+            ]
+          },
+          options: {
+            maintainAspectRatio: true,
+            scales: {
+              yAxes: [{
+                display: false,
+                ticks: {
+                  beginAtZero: true
+                }
+              }],
+              xAxes: [{
+                gridLines: {
+                display: false,
+                },
+                barThickness: 8,
+                borderRadius: 15,
+                display: true,
+                stacked: true
+              }],
+              
+               yAxes: [{
+                gridLines: {
+                display: true,
+                },
+                display: true,
+                stacked: true
+              }]
+            }
+          }
+        })
+    </script>
+
+ 
+
+</body>
+
+</html>

@@ -1360,6 +1360,53 @@ position: relative;
         left: 29px !important;
         top: 12px !important;
     }
+    .filter-container p{
+        font-size: 14px;
+    }
+    .btn.addNewSubj{
+        font-weight: 500;
+        font-family: 'Pop-medium';
+    }
+    .formArea.queStatement .formNote textarea{
+        font-size: 18px;
+        color: #2C3652;
+    }
+    .queStatement .num1{
+        color: #010D0A;
+        font-size: 16px;
+    }
+    .modal-title.modal-title-snippet{
+        font-size: 22px;
+        font-family: Pop-semibold;
+    }
+    .modal-footer .btn.w-auto.btnDark.ps-3.pe-3.text-white{
+        font-size: 14px;
+    }
+    .helpToolTip img{
+        width: 22px;
+        height: 22px;
+    }
+    .addCompilerChecks .form-check-input.compLanguage{
+        height: 30px;
+        width: 30px;
+    }
+    .addCompilerChecks .form-check-label.compLanguage{
+        font-size: 18px;
+        margin-top: 5px;
+    }
+    #addCompilers .modal-dialog{
+        max-width: 874px;
+    }
+    .btn.f1BtnBorder{
+        font-size: 14px;
+    }
+    .addCom1{
+        font-size: 14px;
+    }
+    .resetDE{
+        font-size: 16px;
+    }
+   
   }
   /* 1920 px resl end */
 
@@ -1789,6 +1836,54 @@ position: relative;
         margin-right: 8px;
       } */
 
+      .grid-new{
+        padding-right: 0px;
+    }
+    .grid1-new{
+        margin-right: 0px;
+    }
+    .main_header{
+        padding: 0px 18px;
+    }
+    .inside-container-dashboard h3.mb-0{
+        font-size: 18px;
+    }
+    .btn.addNewSubj{
+        margin-top: 14px;
+        font-family: pop-medium;
+        font-weight: 500;
+    }
+    .formArea.queStatement .formNote .title1{
+        font-size: 16px;
+    }
+    .border-success1.fourCards1 h6{
+        font-size: 16px;
+    }
+    .card-green h2{
+        font-size: 21px;
+    }
+    .card-green h3{
+        font-size: 12px;
+    }
+    .helpToolTip img{
+        width: 22px;
+        height: 22px;
+    }
+    .fourCards2 .title2{
+        font-size: 16px;
+    }
+    .codeInput .btnBorder{
+        font-size: 14px;
+        font-weight: 500;
+        height: 40px;
+    }
+    .inputGroups .errorMsg {
+        
+        left: 14px;
+        top: 12px;
+       
+        padding-right: 75px;
+    }
       
     
 }
@@ -1810,7 +1905,7 @@ position: relative;
     position: relative;
     font-family: 'Lato-normal';
     background: #FFFFFF;
-    border: 1px solid #EBEFF2;
+    border: 1px solid #20776E;
     border-radius: 4px;
     font-size: 14px;
     font-family: Pop-medium;
