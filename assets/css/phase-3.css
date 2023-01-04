@@ -891,7 +891,7 @@ position: relative;
     -webkit-border-radius: 50%;
     border-radius: 50%;
     position: absolute;
-    top: 0px;
+    top: -1px;
     bottom: 0;
     right: 35px;
     -webkit-transition: right 0.15s ease-in-out;
@@ -1011,12 +1011,10 @@ position: relative;
   .helpToolTip .toolTipText{
     display: none;
     position: absolute;
-    top: -1px;
-    left: -118px;
+    top: 0px;
+    left: -140px;
     font-size: 11px;
     line-height: 12px;
-    width: 113px;
-    height: 80px;
     background: #ffffff;
     padding: 3px;
     border: 0.5px solid grey;
@@ -1411,12 +1409,56 @@ position: relative;
         font-size: 16px;
         height: 52px;
     }
+    .codeInput .btnBorder{
+        font-size: 14px;
+        font-family: Pop-medium;
+    }
+
+    .mb-0.toolTipText{
+        font: normal normal normal 14px/21px Pop-normal;
+    }
+
+    .helpToolTip:hover p{
+        width: 225px !important;
+        height: 92px !important;
+    }
+    .helpToolTip .toolTipText{
+        right: 25px;
+        left: auto;
+    }
+
+    .helpToolTip .mb-0.toolTipText.ChooseComText{
+        width: 270px !important;
+        height: 52px !important;
+    }
+
+
+
    
   }
+
   /* 1920 px resl end */
 
 
 
+
+
+
+
+
+
+
+
+  .helpToolTip:hover p{
+    display: block;
+    cursor: pointer;
+    width: 140px;
+    height: 60px;
+    overflow: auto;
+  }
+  .mb-0.toolTipText{
+    color: #8D8181;
+  }
 
   .sideMenu img {
     width: 22px;
@@ -1463,7 +1505,7 @@ position: relative;
     top: 6px;
     background: white;
     padding-right: 102px;
-    padding-left: 15px;
+    padding-left: 3px;
 }
 .vscomp-value{
     font-family: 'Pop-normal';
@@ -1884,15 +1926,21 @@ position: relative;
         height: 40px;
     }
     .inputGroups .errorMsg {
-        
-        left: 14px;
+        left: 12px;
         top: 12px;
-       
         padding-right: 75px;
     }
     .quesBankTabs .nav-item .nav-link, .quesBankTabs .nav-item .nav-link.active{
         font-size: 16px !important;
         font-family: Pop-semibold;
+    }
+
+    .formArea.queStatement .formNote textarea{
+        font-size: 16px;
+        color: #2C3652;
+    }
+    .inputGroups .errorMsg{
+        font-size: 13px;
     }
       
     
