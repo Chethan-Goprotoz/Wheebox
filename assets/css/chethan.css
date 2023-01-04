@@ -328,7 +328,7 @@ outline: 0px;
     z-index: 1;
 }
 /* Create Test */
-.table>thead {
+.mytable.table>thead {
   vertical-align: middle;
   background-color: #DAEDEB;
   height: 60px;
@@ -459,11 +459,12 @@ textarea{
   font: normal normal normal 18px/27px Poppins;
   color: #010D0A;
 }
-.third_row input{
+#fname, .calendar{
   width: 100%;
   height: 50px;
   border: 0.4000000059604645px solid #AAAAAA !important;
   border-radius: 6px;
+  padding-left: 20px;
 }
 .third_row label{
   margin-bottom: 15px;
@@ -476,7 +477,6 @@ textarea{
   color: #010D0A;
   font: normal normal normal 16px/25px Poppins;
   opacity: 0.3 !important;
-  padding-left: 20px;
 }
 /* toggle */
 .btn-toggle {
@@ -487,7 +487,7 @@ textarea{
   height: 1.5rem;
   width: 3rem;
   border-radius: 1.5rem;
-  color: #6b7381;
+  color: #6b7381 !important;
   background: #bdc1c8;
 }
 
@@ -559,4 +559,57 @@ textarea{
   font-size: 18px;
   color: #010D0A;
   margin-bottom: 17px;
+}
+.table-condensed tbody tr{
+  height: auto;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 0px 0px #e4e4e400;
+  /* border-radius: 10px; */
+  vertical-align: middle;
+  border-collapse: separate;
+}
+.daterangepicker td.active, .daterangepicker td.active:hover {
+  background-color: #20776E !important;
+  border-color: transparent;
+  color: #fff;
+}
+.btn-primary {
+  color: #fff;
+  background-color: #20776E !important;
+  border-color: #20776E !important;
+}
+.calendar-container {
+  position: relative;
+  margin-top: 0px;
+  z-index: 200;
+}
+.calendar {
+  width: 100%;
+  height: 50px ;
+}
+.fa-calendar {
+  color: #b2b6b5;
+  position: absolute;
+  top: 60px;
+  right: 3%;
+}
+.passper .vscomp-toggle-button{
+  height: 50px !important;
+  width: 100%;
+  border: 0.4000000059604645px solid #AAAAAA !important;
+  border-radius: 6px;
+  padding-left: 20px;
+}
+.radio-label {
+  font-size: 16px !important;
+}
+.one-hr {
+  width: 43px;
+  height: 20px;
+  color: #DBDBDB;
+  opacity: 1;
+  vertical-align: middle;
+}
+hr:not([size]) {
+  height: 10px;
 }
