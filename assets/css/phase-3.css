@@ -891,7 +891,7 @@ position: relative;
     -webkit-border-radius: 50%;
     border-radius: 50%;
     position: absolute;
-    top: 0px;
+    top: -1px;
     bottom: 0;
     right: 35px;
     -webkit-transition: right 0.15s ease-in-out;
@@ -1416,7 +1416,16 @@ position: relative;
   /* 1920 px resl end */
 
 
-
+  .helpToolTip:hover p{
+    display: block;
+    cursor: pointer;
+    width: 115px;
+    height: 80px;
+    overflow: auto;
+  }
+  .mb-0.toolTipText{
+    color: rgb(139, 139, 139);
+  }
 
   .sideMenu img {
     width: 22px;
@@ -1893,6 +1902,11 @@ position: relative;
     .quesBankTabs .nav-item .nav-link, .quesBankTabs .nav-item .nav-link.active{
         font-size: 16px !important;
         font-family: Pop-semibold;
+    }
+
+    .formArea.queStatement .formNote textarea{
+        font-size: 16px;
+        color: #2C3652;
     }
       
     
