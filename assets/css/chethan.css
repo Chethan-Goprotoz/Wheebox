@@ -478,3 +478,85 @@ textarea{
   opacity: 0.3 !important;
   padding-left: 20px;
 }
+/* toggle */
+.btn-toggle {
+  margin: 0 4rem;
+  padding: 0;
+  position: relative;
+  border: none;
+  height: 1.5rem;
+  width: 3rem;
+  border-radius: 1.5rem;
+  color: #6b7381;
+  background: #bdc1c8;
+}
+
+.btn-toggle:before,
+.btn-toggle:after {
+  line-height: 1.5rem;  
+  text-align: center;
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: capitalize;
+  position: absolute;
+  bottom: 0;
+  transition: opacity 0.25s;
+}
+.btn-toggle:before {
+  content: 'Off';
+  left: -4rem;
+}
+.btn-toggle:after {
+  content: 'On';
+  right: -4rem;
+  opacity: 0.5;
+}
+.btn-toggle > .handle {
+  position: absolute;
+  top: 0.1875rem;
+  left: 0.1875rem;
+  width: 1.125rem;
+  height: 1.125rem;
+  border-radius: 1.125rem;
+  background: #fff;
+  transition: left 0.25s;
+}
+.btn-toggle.active {
+  transition: background-color 0.25s;
+}
+.btn-toggle.active > .handle {
+  left: 1.6875rem;
+  transition: left 0.25s;
+}
+.btn-toggle.active:before {
+  opacity: 0.5;
+}
+.btn-toggle.active:after {
+  opacity: 1;
+}
+.btn-toggle.btn-secondary.active {
+  background-color: #20776E;
+}
+.btn-check:active+.btn-secondary, .btn-check:checked+.btn-secondary, .btn-secondary.active, .btn-secondary:active, .show>.btn-secondary.dropdown-toggle {
+  color: #565e64;
+  background-color: #565e64;
+  border-color: #51585e;
+}
+.btn-secondary:hover {
+  color:  #5c636a;
+  background-color: #5c636a;
+  border-color: #ffffff;
+}
+.btn-check:active+.btn-secondary:focus, .btn-check:checked+.btn-secondary:focus, .btn-secondary.active:focus, .btn-secondary:active:focus, .show>.btn-secondary.dropdown-toggle:focus {
+  color: 5c636a;
+  box-shadow: 0 0 0 0.25rem rgb(130 138 145 / 50%);
+}
+.toggle-div{
+  margin-top: 30px;
+  margin-bottom: 53px;
+}
+.toggle-div h4{
+  font-size: 18px;
+  color: #010D0A;
+  margin-bottom: 17px;
+}

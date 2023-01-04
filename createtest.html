@@ -20,7 +20,6 @@
     <link rel="stylesheet" href="assets/css/chethan.css">
     <link rel="stylesheet" href="assets/sass/app.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
   </head>
   <body>
     <!-- loader start-->
@@ -327,15 +326,26 @@
                                   </div>
                                 </div>
                                 <!--  -->
-                                <h3>Select Marks</h3>
+                                <div class="toggle-div">
+                                <h4>Select Marks</h4>
+                                <button type="button" class="btn btn-secondary btn-toggle" data-toggle="button" aria-pressed="false" autocomplete="off">
+                                  <div class="handle"></div>
+                                </button>
+                              </div>
+                                <h3>Select Time</h3>
                                 <div class="row">
                                   <div class="col col-lg-4">
-                                    <label for="fname">Assign Marks</label>
-                                    <input type="text" id="fname" name="fname" placeholder="Assign Marks">
+                                    <label for="fname">Allocate Total Time (Min)</label>
+                                    <input type="text" id="fname" name="fname" placeholder="Allocate Total Time (Min)">
                                   </div>
                                   <div class="col col-lg-4">
-                                    <label for="fname">Assign Negative Marks</label>
-                                    <input type="text" id="fname" name="fname" placeholder="Assign Negative Marks">
+                                   
+                                    <div class="calendar-container">
+                                      <p>*Select Start Date & End Date:</p>
+                                      <input type="text" name="datefilter" class="calendar" value="" placeholder="Select"/>
+                                      <i class="fa-regular fa-calendar"></i>
+                                    </div>
+                                    
                                   </div>
                                   <div class="col col-lg-4">
                                     <label for="fname">Passing Percentage</label>
@@ -464,7 +474,7 @@
                 line-height: 14px;
               }
 
-              @media (min-width: 500px) {
+              @media (min-width: 50px) {
                 .multisteps-form__progress-btn {
                   text-indent: 0;
                 }
@@ -518,7 +528,7 @@
 
               .multisteps-form__form {
                 position: relative;
-                height: 70vh !important;
+                height: 100vh !important;
               }
 
               .multisteps-form__panel {
@@ -781,5 +791,7 @@
         });
       }
     </script>
+    <!-- toggle -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js'></script>
   </body>
 </html>
