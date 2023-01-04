@@ -1884,6 +1884,10 @@ position: relative;
        
         padding-right: 75px;
     }
+    .quesBankTabs .nav-item .nav-link, .quesBankTabs .nav-item .nav-link.active{
+        font-size: 16px !important;
+        font-family: Pop-semibold;
+    }
       
     
 }
