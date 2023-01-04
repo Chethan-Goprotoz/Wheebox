@@ -1949,7 +1949,44 @@ position: relative;
 /* responsive end */
 
 
+.tabsButton div button.active{
+    width: 84px;
+    height: 41px;
+    background: #20776E 0% 0% no-repeat padding-box;
+    border-radius: 190px;
+    opacity: 1;
+    text-align: center;
+    font: normal normal normal 12px/18px Pop-normal;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
 
+.tabsButton div button{
+    width: 99px;
+    height: 41px;
+    border: 1px solid #20776E;
+    border-radius: 190px;
+    opacity: 1;
+    text-align: center;
+    font: normal normal normal 12px/18px Poppins;
+    letter-spacing: 0px;
+    color: #20776E;
+    opacity: 1;
+}
+
+.pieChart, .gaugeChart, .doughnutChart{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 10px 16px #E4E4E4;
+    border: 1px solid #20776E4A;
+    border-radius: 16px;
+    opacity: 1;
+    height: 100%;
+}
+
+.gaugeChart [aria-labelledby="id-71-title"]{
+    display: none;
+}
 
 
 
