@@ -1472,7 +1472,7 @@ position: relative;
     top: 6px;
     background: white;
     padding-right: 102px;
-    padding-left: 15px;
+    padding-left: 3px;
 }
 .vscomp-value{
     font-family: 'Pop-normal';
@@ -1894,7 +1894,7 @@ position: relative;
     }
     .inputGroups .errorMsg {
         
-        left: 14px;
+        left: 6px;
         top: 12px;
        
         padding-right: 75px;
@@ -1907,6 +1907,9 @@ position: relative;
     .formArea.queStatement .formNote textarea{
         font-size: 16px;
         color: #2C3652;
+    }
+    .inputGroups .errorMsg{
+        font-size: 11px;
     }
       
     
