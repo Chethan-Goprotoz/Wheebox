@@ -1420,11 +1420,16 @@ position: relative;
 
     .helpToolTip:hover p{
         width: 225px !important;
-        height: 91px !important;
+        height: 92px !important;
     }
     .helpToolTip .toolTipText{
         right: 25px;
         left: auto;
+    }
+
+    .helpToolTip .mb-0.toolTipText.ChooseComText{
+        width: 270px !important;
+        height: 52px !important;
     }
 
 
@@ -1921,10 +1926,8 @@ position: relative;
         height: 40px;
     }
     .inputGroups .errorMsg {
-        
-        left: 6px;
+        left: 12px;
         top: 12px;
-       
         padding-right: 75px;
     }
     .quesBankTabs .nav-item .nav-link, .quesBankTabs .nav-item .nav-link.active{
@@ -1937,7 +1940,7 @@ position: relative;
         color: #2C3652;
     }
     .inputGroups .errorMsg{
-        font-size: 11px;
+        font-size: 13px;
     }
       
     
