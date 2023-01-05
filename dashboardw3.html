@@ -135,7 +135,7 @@
                                         <p>TOTAL ASSESSMENTS</p>
                                         <h3>400</h3>
                                     </div>
-                                    <div class="dashboardCard-img border-3 d-flex justify-content-center align-items-center"> <img src="./assets/images/chet" alt=""> </div>
+                                    <div class="dashboardCard-img border-3 d-flex justify-content-center align-items-center"> <img src="./assets/images/chethan/noun-certified-3324969.svg" alt=""> </div>
                                 </div>
                             </a> </div>
                         <div class="col-6 col-md-3"> <a href="#">
@@ -144,7 +144,7 @@
                                         <p>TOTAL CANDIDATES</p>
                                         <h3>59318</h3>
                                     </div>
-                                    <div class="dashboardCard-img border-4 d-flex justify-content-center align-items-center"> <img src="./assets/images/calendar (2).png" alt=""> </div>
+                                    <div class="dashboardCard-img border-4 d-flex justify-content-center align-items-center"> <img src="./assets/images/chethan/noun-right-candidate-4842951.svg" alt=""> </div>
                                 </div>
                             </a> </div>
                     </div> <!-- Cards Close -->
@@ -182,8 +182,31 @@
                         <!-- row2 starts -->
                         <!-- Stats 2 close-->
                     </div>
-                    <div class="row gx-5 m-1">
-                        <div class="col-4 testcard ">
+                    <div class="tabsContainer mt-5 d-flex justify-content-between align-items-center;" >
+                      <div class="tabsButton gap-3 d-flex justify-content-start align-items-center;">
+                        <div>
+                          <button class="btn text-white active" type="button">Today</button>
+                        </div>
+                        <div>
+                          <button class="btn" type="button">This Week</button>
+                        </div>
+                        <div>
+                          <button class="btn" type="button">This Month</button>
+                        </div>
+                        <div>
+                          <button class="btn" type="button">This Year</button>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="calendar-container">
+                          <input type="text" name="datefilter" class="calendar" value="" placeholder="Start Date &amp; End Date">
+                          <i class="fa-regular fa-calendar"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row g-2 mt-4" style="overflow: hidden;" >
+                        <div class="col-lg-4  ">
+                          <div class="testcard">
                             <h3 class="chart-headings">Question Bank Status</h3>
                             <div class="container"> <canvas id="myChart"></canvas> </div>
                             <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js'></script>
@@ -243,13 +266,19 @@
                                     }
                                   })
                             </script>
+                          </div>
                         </div>
-                        <div class="col-4 testcard">
+                        <div class="col-lg-4">
+                           <div class="testcard gauge_chart">
                             <h3 class="chart-headings">Assesment Status</h3> 
-                          
+                            <div class="w-100">
+                              <div id="chartdiv" style="position: relative;top: -50px;"></div>
+                            </div>
+                           </div>
                             
                         </div>
-                        <div class="col-4 testcard">
+                        <div class="col-lg-4 ">
+                          <div class="testcard">
                             <h3 class="chart-headings">Assesment QC Status</h3>
                             <div class="container"> <canvas id="donutchart"></canvas> </div>
                             <script>
@@ -302,6 +331,7 @@
                                   }
                                 })
                             </script>
+                          </div>
                         </div>
                     </div>
                     <!--Body Close  -->
@@ -321,11 +351,239 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="assets/js/virual-select.min.js"></script> <!-- Load plotly.js into the DOM -->
     <script src='https://cdn.plot.ly/plotly-2.16.1.min.js'></script>
+     <!-- gauge -->
+     <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+     <script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
+     <script src="https://cdn.amcharts.com/lib/5/radar.js"></script>
+     <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+ <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+ <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+ <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+ <script type="text/javascript">
+  $(function() {
+    $('input[name="datefilter"]').daterangepicker({
+      autoUpdateInput: false,
+      locale: {
+        cancelLabel: 'Clear'
+      }
+    });
+    $('input[name="datefilter"]').on('apply.daterangepicker', function(ev, picker) {
+      $(this).val(picker.startDate.format('MM/DD/YYYY') + ' - ' + picker.endDate.format('MM/DD/YYYY'));
+    });
+    $('input[name="datefilter"]').on('cancel.daterangepicker', function(ev, picker) {
+      $(this).val('');
+    });
+  });
+</script>
+<style>
+  .fa-calendar {
+    color: #b2b6b5;
+    position: absolute;
+    top: 18px;
+    right: 3%;
+}
+[role=graphics-symbol] {
+  opacity: 0 !important;
+  display: none !important;
+  visibility:  hidden !important;
+}
+
+
+</style>
+ <!--  -->
+ <!-- chart gauge -->
+
+<!-- Chart code -->
+<script>
+ /**
+ * ---------------------------------------
+ * This demo was created using amCharts 5.
+ * 
+ * For more information visit:
+ * https://www.amcharts.com/
+ * 
+ * Documentation is available at:
+ * https://www.amcharts.com/docs/v5/
+ * ---------------------------------------
+ */
+
+// Create root element
+// https://www.amcharts.com/docs/v5/getting-started/#Root_element
+
+var root = am5.Root.new("chartdiv");
+
+// Set themes
+// https://www.amcharts.com/docs/v5/concepts/themes/
+root.setThemes([
+  am5themes_Animated.new(root)
+]);
+
+
+// Create chart
+// https://www.amcharts.com/docs/v5/charts/radar-chart/
+
+var chart = root.container.children.push(
+  am5radar.RadarChart.new(root, {
+    panX: false,
+    panY: false,
+    startAngle: 180,
+    endAngle: 360
+  })
+);
+chart.get("colors").set("colors", [
+  am5.color(0x6ebe7d),
+  am5.color(0xe9e9e9),
+  am5.color(0x5aaa95),
+  am5.color(0x86a873),
+  am5.color(0xbb9f06)
+]);
+
+chart.getNumberFormatter().set("numberFormat", "#'%'");
+
+// Create axis and its renderer
+// https://www.amcharts.com/docs/v5/charts/radar-chart/gauge-charts/#Axes
+var axisRenderer = am5radar.AxisRendererCircular.new(root, {
+  innerRadius: -40
+});
+
+axisRenderer.grid.template.setAll({
+  stroke: root.interfaceColors.get("background"),
+  visible: true,
+  strokeOpacity:0
+});
+
+var xAxis = chart.xAxes.push(
+  am5xy.ValueAxis.new(root, {
+    maxDeviation: 0,
+    min: 0,
+    max: 100,
+    strictMinMax: true,
+    renderer: axisRenderer
+  })
+);
+
+// Add clock hand
+// https://www.amcharts.com/docs/v5/charts/radar-chart/gauge-charts/#Clock_hands
+var axisDataItem = xAxis.makeDataItem({});
+
+var clockHand = am5radar.ClockHand.new(root, {
+  pinRadius: 0,
+  radius: am5.percent(00),
+  innerRadius: 0,
+  bottomWidth: 0,
+  topWidth: 0
+});
+
+clockHand.pin.setAll({
+  fillOpacity: 0,
+  strokeOpacity: 0.5,
+  stroke: am5.color(000),
+  strokeWidth: 0,
+  strokeDasharray: [0, 0]
+});
+clockHand.hand.setAll({
+  fillOpacity: 0,
+  strokeOpacity: 0.5,
+  stroke: am5.color(0x000000),
+  strokeWidth: 0
+});
+
+var bullet = axisDataItem.set(
+  "bullet",
+  am5xy.AxisBullet.new(root, {
+    sprite: clockHand
+  })
+);
+
+xAxis.createAxisRange(axisDataItem);
+
+var label = chart.radarContainer.children.push(
+  am5.Label.new(root, {
+    centerX: am5.percent(50),
+    textAlign: "center",
+    centerY: am5.percent(90),
+    fontSize: "2.5em"
+  })
+);
+
+axisDataItem.set("value", 50);
+bullet.get("sprite").on("rotation", function () {
+  var value = axisDataItem.get("value");
+  label.set("text", Math.round(value).toString() + "%");
+});
+
+setInterval(function () {
+  var value = Math.round(Math.random() * 100);
+
+  // axisDataItem.animate({
+  //   key: "value",
+  //   to: value,
+  //   duration: 500,
+  //   easing: am5.ease.out(am5.ease.cubic)
+  // });
+
+  // axisRange0.animate({
+  //   key: "endValue",
+  //   to: value,
+  //   duration: 500,
+  //   easing: am5.ease.out(am5.ease.cubic)
+  // });
+
+//   axisRange1.animate({
+//     key: "value",
+//     to: value,
+//     duration: 500,
+//     easing: am5.ease.out(am5.ease.cubic)
+//   });
+}, 2000);
+
+chart.bulletsContainer.set("mask", undefined);
+
+var colorSet = am5.ColorSet.new(root, {});
+
+var axisRange0 = xAxis.createAxisRange(
+  xAxis.makeDataItem({
+    above: true,
+    value: 0,
+    endValue: 70
+  })
+);
+
+axisRange0.get("axisFill").setAll({
+  visible: true,
+  fill: am5.color(0x6ebe7d),
+});
+
+axisRange0.get("label").setAll({
+  forceHidden: true
+});
+
+var axisRange1 = xAxis.createAxisRange(
+  xAxis.makeDataItem({
+    above: true,
+    value: 50,
+    endValue: 100
+  })
+);
+
+axisRange1.get("axisFill").setAll({
+  visible: true,
+  fill: am5.color(0xe9e9e9)
+});
+
+axisRange1.get("label").setAll({
+  forceHidden: true
+});
+
+// Make stuff animate on load
+// chart.appear(1000, 100);
+  </script>
     <script>
         VirtualSelect.init({
           ele: '#SearchDropdown'
         });
     </script>
+
     <script type="text/javascript">
         $(function() {
           $('input[name="datefilter"]').daterangepicker({

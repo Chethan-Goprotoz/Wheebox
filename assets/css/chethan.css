@@ -321,7 +321,33 @@ outline: 0px;
   .drang_text, .browse{
     font-size: 16px !important;
   }
+  .gauge_chart{
+    height: 300px;
   }
+  .tabsContainer {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .tabsContainer .tabsButton{
+    margin: 20px;
+    flex-wrap: wrap;
+  }
+  }
+  .gaugeChart [aria-labelledby="id-71-title"]{
+    display: none;
+}
+.am5-tooltip-container div{
+  display: none !important;
+  overflow: hidden;
+  opacity: 0 !important;
+  visibility:hidden !important;
+}
+#chartdiv canvas:nth-child(2){
+  display: none;
+  width: 0px !important;
+  height: 0px !important;
+}
+
   .multisteps-form__progress-btn:after {
     
     background-color: #BDBDBD;
