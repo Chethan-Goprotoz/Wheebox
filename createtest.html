@@ -142,7 +142,7 @@
           </div>
           <div class="inside-container-dashboard">
             <div class="d-flex justify-content-between align-items-center mb-5">
-              <h3 class="mb-0 d-none d-md-block">Question Bank</h3>
+              <h3 class="mb-0 d-none d-md-block">Create Test</h3>
             </div>
             <!-- Body Open upload modal -->
             <!-- form -->
@@ -153,10 +153,84 @@
                 <div class="content__inner" >
                   <!-- <div class="container"><h2 class="content__title content__title--m-sm">Pick animation type</h2><form class="pick-animation my-4"><div class="form-row"><div class="col-5 m-auto"><select class="pick-animation__select form-control"><option value="scaleIn" selected="selected">ScaleIn</option><option value="scaleOut">ScaleOut</option><option value="slideHorz">SlideHorz</option><option value="slideVert">SlideVert</option><option value="fadeIn">FadeIn</option></select></div></div></form></div> -->
                   <div class="container-fluid ">
+
                     <!--multisteps-form-->
                     <div class="multisteps-form">
+                      <div class="tags-div">
+                        <div class="tags-list">
+                          <span>Domain Name</span>
+                          <h4>Wheebox</h4>
+                        </div>
+                        <div class="tags-list">
+                          <span>Domain Name</span>
+                          <h4>Wheebox</h4>
+                        </div>
+                      </div>
+                      <style>
+                        @media (max-width: 576px){
+                          .tags-list{
+                            width: 141px;
+                            height: 62px; 
+                          }
+                          .tags-list span{
+                            font: 14px;
+                          }
+                          .tags-list h4{
+                            font: 14px;
+                          }
+
+                          .multisteps-form__progress {
+                            
+                            width: 250%;
+                        }
+                        .menu-scroll{
+                          overflow-y: scroll;
+                        }
+                        }
+                        .tags-div{
+                          padding-top: 17px;
+                          padding-left: 40px;
+                          display: flex;
+                          align-items: center;
+                          align-content: center;
+                          flex-wrap: nowrap;
+                          flex-direction: row;
+                          justify-content: flex-start;
+                        }
+                        .tags-list {
+                              background: #E0FAFF;
+                              border-radius: 278px;
+                              display: flex;
+                              width: 153px;
+                              height: 71px;
+                              vertical-align: middle;
+                              text-align: center;
+                              margin-right: 20px;
+                              flex-direction: row;
+                              flex-wrap: wrap;
+                              justify-content: space-around;
+                              align-items: center;
+                              align-content: center
+                          }
+                          .tags-list span{
+                            text-align: center;
+                            font: normal normal normal 16px/25px Poppins;
+                            letter-spacing: 0px;
+                            color: #999999;
+                            text-transform: capitalize;
+                            opacity: 1;
+                          }
+                          .tags-list h4{
+                            text-align: center;
+                            font: normal normal 600 16px/25px Poppins;
+                            letter-spacing: 0px;
+                            color: #2C3652;
+                            opacity: 1;
+                            margin: 0;
+                          }
+                      </style>
                       <!--progress bar-->
-                      <div class="row" style="--bs-gutter-x: 0rem;align-items: center;justify-content: center;padding-left: 42px;padding-right: 42px;padding-top: 40px;padding-bottom: 20px;background-color: #fff;">
+                      <div class="row menu-scroll" style="--bs-gutter-x: 0rem;align-items: center;justify-content: center;padding-left: 42px;padding-right: 42px;padding-top: 40px;padding-bottom: 20px;background-color: #fff;">
                         <div class="col-12 col-lg-12 ml-auto mr-auto mb-4">
                           <div class="multisteps-form__progress">
                             <button class="multisteps-form__progress-btn js-active" type="button" title="User Info">Create Test</button>
@@ -176,13 +250,14 @@
                             <!--single form panel-->
                             <div class="multisteps-form__panel  js-active" data-animation="scaleIn">
                               <div class="multisteps-form__content">
-                                <div class="form-row  d-flex" style="height:auto !important;align-items: center;">
+                                <div class="form-row  d-flex create-test" style="height:auto !important;align-items: center;">
                                   <div class="col-12 text-center">
                                     <!-- col-sm-6 was removed -->
                                     <div class="row">
-                                      <div class="col-sm-6 col-lg-4">
+                                      <div class="col-sm-6 col-lg-4 passper">
                                         <!-- dropdown -->
-                                        <p style="font-size:14px;text-align: left;">Select Subject</p>
+                                        <label for="fname" >Select Subject</label>
+                                        
                                         <select id="SearchDropdown" name="native-select" placeholder="Select Subject Here" data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
                                           <option value="5">English</option>
                                           <option value="1">Hindi</option>
@@ -192,11 +267,11 @@
                                         </select>
                                         <!-- dropdown -->
                                       </div>
-                                      <div class="col-sm-6 col-lg-4">
+                                      <div class="col-sm-6 col-lg-4 passper">
                                         <!-- dropdown -->
-                                        <p style="font-size:14px;text-align: left;">Select Topic</p>
+                                        <label for="fname">Select Topic</label>
                                         <select id="SearchDropdown" name="native-select" placeholder="Select Subject Here" data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
-                                          <option value="5">English</option>
+                                          <option value="5">Grammar</option>
                                           <option value="1">Hindi</option>
                                           <option value="2">Maths</option>
                                           <option value="3">Physics</option>
@@ -204,11 +279,11 @@
                                         </select>
                                         <!-- dropdown -->
                                       </div>
-                                      <div class="col-sm-6 col-lg-4">
+                                      <div class="col-sm-6 col-lg-4 passper">
                                         <!-- dropdown -->
-                                        <p style="font-size:14px;text-align: left;">Select Sub Topic</p>
+                                        <label for="fname">Select Subtopic</label>
                                         <select id="SearchDropdown" name="native-select" placeholder="Select Subject Here" data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
-                                          <option value="5">English</option>
+                                          <option value="5">Tenses</option>
                                           <option value="1">Hindi</option>
                                           <option value="2">Maths</option>
                                           <option value="3">Physics</option>
@@ -432,22 +507,22 @@
                                   <!-- row end -->
                                   <!-- Row 1 -->
                                   <div class="row" style="margin-top: 40px;">
-                                    <div class="col-sm-6 col-lg-4 col-sm-12">
+                                    <div class="col-sm-6 col-lg-4">
                                       <label for="fname">Please Select Available Option</label>
                                     </div>
-                                    <div class="col col-lg-2 col-sm-12">
+                                    <div class=" col-lg-2 col-sm-12">
                                       <div class="radio">
                                         <input id="radio-4" name="radio-3" type="radio" checked>
                                         <label for="radio-4" class="radio-label">QR</label>
                                       </div>
                                     </div>
-                                    <div class="col col-lg-2 col-sm-12">
+                                    <div class=" col-lg-2 col-sm-12">
                                       <div class="radio">
                                         <input id="radio-5" name="radio-3" type="radio">
                                         <label for="radio-5" class="radio-label">Webcam</label>
                                       </div>
                                     </div>
-                                    <div class="col col-lg-2 col-sm-12">
+                                    <div class=" col-lg-2 col-sm-12">
                                       <div class="radio">
                                         <input id="radio-6" name="radio-3" type="radio">
                                         <label for="radio-6" class="radio-label">QR Webcam</label>
@@ -457,22 +532,22 @@
                                   <!-- Row 1 ends -->
                                    <!-- Row 2 -->
                                    <div class="row" style="margin-top: 35px;">
-                                    <div class="col col-lg-4 col-sm-12">
+                                    <div class="col-lg-4 col-sm-6">
                                       <label for="fname">Resume Test Activation</label>
                                     </div>
-                                    <div class="col-sm-6 col-lg-2 col-sm-12">
+                                    <div class="col-sm-6 col-lg-2">
                                       <div class="radio">
                                         <input id="radio-66" name="radio-4" type="radio" checked>
                                         <label for="radio-66" class="radio-label">Deactivate</label>
                                       </div>
                                     </div>
-                                    <div class="col col-lg-3 col-sm-12">
+                                    <div class=" col-lg-3 col-sm-6">
                                       <div class="radio">
                                         <input id="radio-7" name="radio-4" type="radio">
                                         <label for="radio-7" class="radio-label">Active Client Side</label>
                                       </div>
                                     </div>
-                                    <div class="col col-lg-3 col-sm-12">
+                                    <div class=" col-lg-3 col-sm-6">
                                       <div class="radio">
                                         <input id="radio-8" name="radio-4" type="radio">
                                         <label for="radio-8" class="radio-label">Active Server Side</label>
@@ -482,22 +557,22 @@
                                   <!-- Row 2 ends -->
                                   <!-- Row 3 -->
                                   <div class="row" style="margin-top: 35px;">
-                                    <div class="col col-lg-4 col-sm-12">
+                                    <div class=" col-lg-4 col-sm-6">
                                       <label for="fname">Show Section/Topic Name</label>
                                     </div>
-                                    <div class="col col-lg-2 col-sm-12">
+                                    <div class=" col-lg-2 col-sm-6">
                                       <div class="radio">
                                         <input id="radio-9" name="radio-5" type="radio" checked>
                                         <label for="radio-9" class="radio-label">Show Section Name</label>
                                       </div>
                                     </div>
-                                    <div class="col col-lg-3 col-sm-12">
+                                    <div class=" col-lg-2 col-sm-6">
                                       <div class="radio">
                                         <input id="radio-10" name="radio-5" type="radio">
                                         <label for="radio-10" class="radio-label">Show Topic Name</label>
                                       </div>
                                     </div>
-                                    <div class="col col-lg-3 col-sm-12">
+                                    <div class=" col-lg-2 col-sm-6">
                                       <div class="radio">
                                         <input id="radio-11" name="radio-5" type="radio">
                                         <label for="radio-11" class="radio-label">Show Section and Topic Name</label>
@@ -507,7 +582,7 @@
                                   <!-- Row 3 ends -->
                                   <!-- Row 4 -->
                                   <div class="row" style="margin-top: 35px;">
-                                    <div class="col col-lg-4 col-sm-12">
+                                    <div class=" col col-lg-4 col-sm-12">
                                       <label for="fname">Flag Button Option</label>
                                     </div>
                                     <div class="col col-lg-2 col-sm-12">
@@ -522,14 +597,14 @@
                                         <label for="radio-12" class="radio-label">No</label>
                                       </div>
                                     </div>
-                                    <div class="col col-lg-3 col-sm-12">
+                                    <div class=" col-lg-3 col-sm-6">
                                      
                                     </div>
                                   </div>
                                   <!-- Row 4 ends -->
                                   <!-- Row 5 -->
                                   <div class="row" style="margin-top: 35px;">
-                                    <div class="col col-lg-4 col-sm-12">
+                                    <div class="col col-lg-4 col-sm-6">
                                       <label for="fname">Auto Next</label>
                                     </div>
                                     <div class="col col-lg-2 col-sm-12">
@@ -551,7 +626,7 @@
                                   <!-- Row 5 ends -->
                                   <!-- Row 6 -->
                                   <div class="row" style="margin-top: 35px;">
-                                    <div class="col col-lg-4 col-sm-12">
+                                    <div class="col col-lg-4 col-sm-6">
                                       <label for="fname">Section Skip Option</label>
                                     </div>
                                     <div class="col col-lg-2 col-sm-12">
@@ -573,7 +648,7 @@
                                   <!-- Row 6 ends -->
                                   <!-- Row 7 -->
                                   <div class="row" style="margin-top: 35px;">
-                                    <div class="col col-lg-4 col-sm-12">
+                                    <div class="col col-lg-4 col-sm-6">
                                       <label for="fname">Previous Button Option</label>
                                     </div>
                                     <div class="col col-lg-2 col-sm-12">
@@ -595,7 +670,7 @@
                                   <!-- Row 7 ends -->
                                   <!-- Row 8 -->
                                   <div class="row" style="margin-top: 35px;">
-                                    <div class="col col-lg-4 col-sm-12">
+                                    <div class="col col-lg-4 col-sm-6">
                                       <label for="fname">Show Practice Test</label>
                                     </div>
                                     <div class="col col-lg-2 col-sm-12">
@@ -617,7 +692,7 @@
                                   <!-- Row 8 ends -->
                                   <!-- Row 9 -->
                                   <div class="row" style="margin-top: 35px;">
-                                    <div class="col col-lg-4 col-sm-12">
+                                    <div class="col col-lg-4 col-sm-6">
                                       <label for="fname">Randomize Options</label>
                                     </div>
                                     <div class="col col-lg-2 col-sm-12">
@@ -639,7 +714,7 @@
                                   <!-- Row 9 ends -->
                                   <!-- Row 10 -->
                                   <div class="row" style="margin-top: 35px;">
-                                    <div class="col col-lg-4 col-sm-12">
+                                    <div class="col col-lg-4 col-sm-6">
                                       <label for="fname">Show Practice Test</label>
                                     </div>
                                     <div class="col col-lg-2 col-sm-12">
@@ -673,7 +748,7 @@
                                   
                                   <!-- row end -->
                                   <!-- Row 1 -->
-                                  <div class="row" style="margin-top: 40px;">
+                                  <div class="row" style="margin-top: 0px;">
                                     <div class="col col-lg-4 col-sm-12">
                                       <label for="fname">Access Denied Options</label>
                                     </div>
@@ -763,7 +838,7 @@
                                     <!-- Row 5 -->
                                     <div class="row" style="margin-top: 35px;">
                                       <div class="col col-lg-4 col-sm-12">
-                                        <label for="fname">Keystroke Verification</label><br>
+                                        <label for="fname">IP Range Checking</label><br>
                                         <button type="button" class="btn btn-secondary btn-toggle" data-toggle="button" aria-pressed="false" autocomplete="off">
                                           <div class="handle"></div>
                                           </button>
@@ -782,7 +857,7 @@
                                     <!-- Row 6 -->
                                     <div class="row" style="margin-top: 35px;">
                                       <div class="col col-lg-4 col-sm-12">
-                                        <label for="fname">Image Capturing</label><br>
+                                        <label for="fname">Allow Navigation During Test</label><br>
                                         <button type="button" class="btn btn-secondary btn-toggle" data-toggle="button" aria-pressed="false" autocomplete="off">
                                           <div class="handle"></div>
                                           </button>
@@ -930,31 +1005,69 @@
                                           <label for="radio-1142" class="radio-label">Yes</label>
                                         </div>
                                       </div>
-                                      <div class="col col-lg-6 col-sm-12">
+                                      <div class="col col-lg-2 col-sm-12">
                                         <div class="radio" style="display: inline;">
                                           <input id="radio-1143" name="radio-6142" type="radio">
                                           <label for="radio-1143" class="radio-label">No</label>
                                        
                                         </div>
-                                        <div> <hr class="one-hr"></div>
+                                        
                                        
+                                      </div>
+                                      <div class="col col-lg-4 col-sm-12 d-flex" style="    flex-direction: row;flex-wrap: nowrap;align-items: center;justify-content: flex-start;"> 
+                                        <hr class="one-hr">
+                                        <hr class="two-hr">
+                                        <hr class="three-hr">
+                                        <img src="" alt="">
                                       </div>
                                       
                                     </div>
                                     <!-- Row 5 ends -->
+                                     <!-- Row 5 -->
+                                    
+                                     <div class="row" style="margin-top: 35px;">
+                                       <div class="col col-lg-4 col-sm-12">
+                                         <label for="fname">Face Tracking</label><br>
+                                         <!-- <button type="button" class="btn btn-secondary btn-toggle" data-toggle="button" aria-pressed="false" autocomplete="off">
+                                           <div class="handle"></div> -->
+                                       </div>
+                                       <div class="col col-lg-2 col-sm-12">
+                                         <div class="radio">
+                                           <input id="radio-1142" name="radio-6142" type="radio">
+                                           <label for="radio-1142" class="radio-label">Yes</label>
+                                         </div>
+                                       </div>
+                                       <div class="col col-lg-2 col-sm-12">
+                                         <div class="radio" style="display: inline;">
+                                           <input id="radio-1143" name="radio-6142" type="radio">
+                                           <label for="radio-1143" class="radio-label">No</label>
+                                        
+                                         </div>
+                                         
+                                        
+                                       </div>
+                                       <div class="col col-lg-4 col-sm-12 d-flex" style="    flex-direction: row;flex-wrap: nowrap;align-items: center;justify-content: flex-start;"> 
+                                         <hr class="one-hr">
+                                         <hr class="two-hr two-2">
+                                         <hr class="three-hr">
+                                         <img src="" alt="">
+                                       </div>
+                                       
+                                     </div>
+                                     <!-- Row 5 ends -->
                                     <!-- Row 6 -->
                                     <div class="row" style="margin-top: 35px;">
                                       <div class="col col-lg-4 col-sm-12">
-                                        <label for="fname">Allow Navigation During Test</label><br>
+                                        <label for="fname">Image Capturing</label><br>
                                         <button type="button" class="btn btn-secondary btn-toggle" data-toggle="button" aria-pressed="false" autocomplete="off">
                                           <div class="handle"></div>
                                           </button>
                                       </div>
                                       <div class="col col-lg-3 col-sm-12">
-                                        <label for="fname">Navigation Frequency</label>
+                                        <label for="fname">Select Time Span</label>
                                          <!-- dropdown -->
-                                      <select id="SearchDropdown" name="native-select" placeholder="Browse And Upload File Types Allowed" data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
-                                        <option value="5">English</option>
+                                      <select id="SearchDropdown" name="native-select" placeholder="Select Time Span" data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
+                                        <option value="5">Select Time Span</option>
                                         <option value="1">Hindi</option>
                                         <option value="2">Maths</option>
                                         <option value="3">Physics</option>
@@ -962,11 +1075,16 @@
                                       </select>
                                       <!-- dropdown -->
                                       </div>
+                                      <div class="col col-lg-4 col-sm-12 d-flex" style="    flex-direction: row;flex-wrap: nowrap;align-items: center;justify-content: flex-start;"> 
+                                        <hr class="one-hr">
+                                        <hr class="two-hr two-2">
+                                        <hr class="three-hr">
+                                        <img src="" alt="">
+                                      </div>
                                       
                                       
                                     </div>
                                     <!-- Row 6 ends -->
-                                  
                                 </div>
                                 <div class="button-row d-flex mt-4" style="justify-content: space-between;">
                                   <button class="btn prev-btn js-btn-prev" type="button" title="Prev">Previous</button>
@@ -974,6 +1092,317 @@
                                 </div>
                               </div>
                             </div>
+                            <!-- 7th -->
+                            <div class="multisteps-form__panel  third_row" data-animation="scaleIn">
+                              <div class="multisteps-form__content">
+                                <div class="form-row " style="height:auto !important;align-items: center;justify-content: center;">
+                                 
+                                  <div class="row">
+                                    <div class="col-sm-6 col-lg-4 passper">
+                                      <label for="fname">Test View Pattern</label>
+                                      <!-- dropdown -->
+                                      <select id="SearchDropdown" name="native-select" placeholder="Additional Data" data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
+                                        <option value="5">Test View Pattern</option>
+                                        <option value="1">Hindi</option>
+                                        <option value="2">Maths</option>
+                                        <option value="3">Physics</option>
+                                        <option value="4">Chemistry</option>
+                                      </select>
+                                      <!-- dropdown -->
+                                    </div>
+                                    <div class="col-sm-6 col-lg-4 passper">
+                                   
+                                        <label for="fname">Subjective Text Limit (In Characters)</label>
+                                        <input type="text" id="fname" name="fname" placeholder="Subjective Text Limit (in Characters)">
+                                     
+                                    </div>
+                                    <div class="col-sm-6 col-lg-4 passper">
+                                      <label for="fname">Allow Resume Test (In Minutes)</label>
+                                      <input type="text" id="fname" name="fname" placeholder="Allow Resume Test (in Minutes)">
+                                    </div>
+                                    <div class="col-sm-6 col-lg-4 passper">
+                                      <label for="fname">Prepared By</label>
+                                      <input type="text" id="fname" name="fname" placeholder="Prepared By">
+                                    </div>
+                                  </div>
+                                  <!-- row end -->
+                                  <!-- Row 1 -->
+                                  <div class="row" style="margin-top: 40px;">
+                                    <div class="col-sm-6 col-lg-4">
+                                      <label for="fname">Assign Feedback</label>
+                                    </div>
+                                    <div class=" col-lg-2 col-sm-12">
+                                      <div class="radio">
+                                        <input id="radio-4" name="radio-3" type="radio" checked>
+                                        <label for="radio-4" class="radio-label">End Test</label>
+                                      </div>
+                                    </div>
+                                    <div class=" col-lg-2 col-sm-12">
+                                      <div class="radio">
+                                        <input id="radio-5" name="radio-3" type="radio">
+                                        <label for="radio-5" class="radio-label">Star Test</label>
+                                      </div>
+                                    </div>
+                                    
+                                  </div>
+                                  <!-- Row 1 ends -->
+                                   <!-- Row 2 -->
+                                   <div class="row" style="margin-top: 35px;">
+                                    <div class="col-lg-4 col-sm-6">
+                                      <label for="fname">Feedback Location</label>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-2">
+                                      <div class="radio">
+                                        <input id="radio-66" name="radio-4" type="radio" checked>
+                                        <label for="radio-66" class="radio-label">Appear Before Test</label>
+                                      </div>
+                                    </div>
+                                    <div class=" col-lg-3 col-sm-6">
+                                      <div class="radio">
+                                        <input id="radio-7" name="radio-4" type="radio">
+                                        <label for="radio-7" class="radio-label">Appear After Test</label>
+                                      </div>
+                                    </div>
+                                   
+                                  </div>
+                                  <!-- Row 2 ends -->
+                                  <!-- Row 3 -->
+                                  <div class="row" style="margin-top: 35px;">
+                                    <div class=" col-lg-4 col-sm-6">
+                                      <label for="fname">Copy Paste</label>
+                                    </div>
+                                    <div class=" col-lg-2 col-sm-6">
+                                      <div class="radio">
+                                        <input id="radio-9" name="radio-5" type="radio" checked>
+                                        <label for="radio-9" class="radio-label">Yes</label>
+                                      </div>
+                                    </div>
+                                    <div class=" col-lg-2 col-sm-6">
+                                      <div class="radio">
+                                        <input id="radio-10" name="radio-5" type="radio">
+                                        <label for="radio-10" class="radio-label">No</label>
+                                      </div>
+                                    </div>
+                                    
+                                  </div>
+                                  <!-- Row 3 ends -->
+                                  <!-- Row 4 -->
+                                  <div class="row" style="margin-top: 35px;">
+                                    <div class=" col col-lg-4 col-sm-12">
+                                      <label for="fname">Show Overall Score On Submission</label>
+                                    </div>
+                                    <div class="col col-lg-2 col-sm-12">
+                                      <div class="radio">
+                                        <input id="radio-111" name="radio-6" type="radio" checked>
+                                        <label for="radio-111" class="radio-label">Yes</label>
+                                      </div>
+                                    </div>
+                                    <div class="col col-lg-3 col-sm-12">
+                                      <div class="radio">
+                                        <input id="radio-12" name="radio-6" type="radio">
+                                        <label for="radio-12" class="radio-label">No</label>
+                                      </div>
+                                    </div>
+                                    <div class=" col-lg-3 col-sm-6">
+                                     
+                                    </div>
+                                  </div>
+                                  <!-- Row 4 ends -->
+                                  <!-- Row 5 -->
+                                  <div class="row" style="margin-top: 35px;">
+                                    <div class="col col-lg-4 col-sm-6">
+                                      <label for="fname">Section Wise End Test Summary</label>
+                                    </div>
+                                    <div class="col col-lg-2 col-sm-12">
+                                      <div class="radio">
+                                        <input id="radio-13" name="radio-7" type="radio" checked>
+                                        <label for="radio-13" class="radio-label">Yes</label>
+                                      </div>
+                                    </div>
+                                    <div class="col col-lg-3 col-sm-12">
+                                      <div class="radio">
+                                        <input id="radio-14" name="radio-7" type="radio">
+                                        <label for="radio-14" class="radio-label">No</label>
+                                      </div>
+                                    </div>
+                                    
+                                  </div>
+                                  <!-- Row 5 ends -->
+                                  <!-- Row 6 -->
+                                  <div class="row" style="margin-top: 35px;">
+                                    <div class="col col-lg-4 col-sm-6">
+                                      <label for="fname">Noise Detection</label>
+                                    </div>
+                                    <div class="col col-lg-2 col-sm-12">
+                                      <div class="radio">
+                                        <input id="radio-15" name="radio-8" type="radio" checked>
+                                        <label for="radio-15" class="radio-label">Yes</label>
+                                      </div>
+                                    </div>
+                                    <div class="col col-lg-3 col-sm-12">
+                                      <div class="radio">
+                                        <input id="radio-16" name="radio-8" type="radio">
+                                        <label for="radio-16" class="radio-label">No</label>
+                                      </div>
+                                    </div>
+                                    <div class="col col-lg-3 col-sm-12">
+                                     
+                                    </div>
+                                  </div>
+                                  <!-- Row 6 ends -->
+                                  <!-- Row 7 -->
+                                  <div class="row" style="margin-top: 35px;">
+                                    <div class="col col-lg-4 col-sm-6">
+                                      <label for="fname">Test Type</label>
+                                    </div>
+                                    <div class="col col-lg-2 col-sm-12">
+                                      <div class="radio">
+                                        <input id="radio-17" name="radio-9" type="radio" checked>
+                                        <label for="radio-17" class="radio-label">Mock Test</label>
+                                      </div>
+                                    </div>
+                                    <div class="col col-lg-3 col-sm-12">
+                                      <div class="radio">
+                                        <input id="radio-18" name="radio-9" type="radio">
+                                        <label for="radio-18" class="radio-label">Actual Test</label>
+                                      </div>
+                                    </div>
+                                    
+                                  </div>
+                                  <!-- Row 7 ends -->
+                                  <!-- Row 8 -->
+                                  <div class="row" style="margin-top: 35px;">
+                                    <div class="col col-lg-4 col-sm-6">
+                                      <label for="fname">Send Mail To User</label>
+                                    </div>
+                                    <div class="col col-lg-2 col-sm-12">
+                                      <div class="radio">
+                                        <input id="radio-19" name="radio-10" type="radio" checked>
+                                        <label for="radio-19" class="radio-label">Yes</label>
+                                      </div>
+                                    </div>
+                                    <div class="col col-lg-3 col-sm-12">
+                                      <div class="radio">
+                                        <input id="radio-20" name="radio-10" type="radio">
+                                        <label for="radio-20" class="radio-label">No</label>
+                                      </div>
+                                    </div>
+                                   
+                                  </div>
+                                  <!-- Row 8 ends -->
+                                  <!-- Row 9 -->
+                                  <div class="row" style="margin-top: 35px;">
+                                    <div class="col col-lg-4 col-sm-6">
+                                      <label for="fname">Send Mail To Admin</label><br>
+                                      <button type="button" class="btn btn-secondary btn-toggle" data-toggle="button" aria-pressed="false" autocomplete="off">
+                                        <div class="handle"></div>
+                                      </button>
+                                    </div>
+                                    <div class="col col-lg-2 col-sm-12">
+                                      <label for="fname">Admin Mail Id</label>
+                                      <input type="text" id="fname" name="fname" placeholder="Admin Mail Id">
+                                    </div>
+                                   
+                                  </div>
+                                  <!-- Row 9 ends -->
+                                  <!-- Row 10 -->
+                                  <h3 style="color: #2C3652;">Proctroing Score Form</h3>
+
+                                  <div class="row" style="margin-top: 35px;">
+                                    <div class="col col-lg-4 col-sm-6">
+                                      <label for="fname">Show Practice Test</label>
+                                    </div>
+                                    <div class="col col-lg-2 col-sm-12">
+                                      <div class="radio">
+                                        <input id="radio-23" name="radio-12" type="radio" checked>
+                                        <label for="radio-23" class="radio-label">Yes</label>
+                                      </div>
+                                    </div>
+                                    <div class="col col-lg-3 col-sm-12">
+                                      <div class="radio">
+                                        <input id="radio-24" name="radio-12" type="radio">
+                                        <label for="radio-24" class="radio-label">No</label>
+                                      </div>
+                                    </div>
+                                    <div class="col col-lg-3 col-sm-12">
+                                     
+                                    </div>
+                                    <div class="row">
+                                      <div class="col-sm-6 col-lg-4 passper">
+                                        <label for="fname">Benchmark Navigation</label>
+                                        <input type="text" id="fname" name="fname" placeholder="Benchmark Navigation">
+                                      </div>
+                                      <div class="col-sm-6 col-lg-4 passper">
+                                     
+                                          <label for="fname">Benchmark Force By Admin</label>
+                                          <input type="text" id="fname" name="fname" placeholder="Benchmark Force By Admin">
+                                       
+                                      </div>
+                                      <div class="col-sm-6 col-lg-4 passper">
+                                        <label for="fname">Benchmark Screen Mirrored</label>
+                                        <input type="text" id="fname" name="fname" placeholder="Benchmark Screen Mirrored">
+                                      </div>
+                                     
+                                    </div>
+                                    <div class="row">
+                                      <div class="col-sm-6 col-lg-4 passper">
+                                        <label for="fname">Benchmark Sharing Software</label>
+                                        <input type="text" id="fname" name="fname" placeholder="Benchmark Sharing Software">
+                                      </div>
+                                      <div class="col-sm-6 col-lg-4 passper">
+                                     
+                                          <label for="fname">Benchmark Holding Phone</label>
+                                          <input type="text" id="fname" name="fname" placeholder="Benchmark Holding Phone">
+                                       
+                                      </div>
+                                      <div class="col-sm-6 col-lg-4 passper">
+                                        <label for="fname">Benchmark Resume</label>
+                                        <input type="text" id="fname" name="fname" placeholder="Benchmark Resume">
+                                      </div>
+                                      
+                                    </div>
+                                    <div class="row">
+                                      <div class="col-sm-6 col-lg-4 passper">
+                                        <label for="fname">Benchmark Tpbp</label>
+                                        <input type="text" id="fname" name="fname" placeholder="Benchmark Tpbp">
+                                      </div>
+                                      <div class="col-sm-6 col-lg-4 passper">
+                                     
+                                          <label for="fname">Benchmark Fnm</label>
+                                          <input type="text" id="fname" name="fname" placeholder="Benchmark fnm">
+                                       
+                                      </div>
+                                      <div class="col-sm-6 col-lg-4 passper">
+                                        <label for="fname">Benchmark Mtoff</label>
+                                        <input type="text" id="fname" name="fname" placeholder="Benchmark Mtoff">
+                                      </div>
+                                      
+                                    </div>
+                                    <div class="row">
+                                      <div class="col-sm-6 col-lg-4 passper">
+                                        <label for="fname">Benchmark Nfff</label>
+                                        <input type="text" id="fname" name="fname" placeholder="Benchmark Nfff">
+                                      </div>
+                                      <div class="col-sm-6 col-lg-4 passper">
+                                     
+                                          <label for="fname">Benchmark Nhff</label>
+                                          <input type="text" id="fname" name="fname" placeholder="Benchmark nhff">
+                                       
+                                      </div>
+                                     
+                                      
+                                    </div>
+
+                                  </div>
+                                  <!-- Row 10 ends -->
+                                </div>
+                                <div class="button-row d-flex mt-4" style="justify-content: space-between;">
+                                  <button class="btn prev-btn js-btn-prev" type="button" title="Prev">Previous</button>
+                                  <button class="btn next-btn ml-auto js-btn-next" type="button" title="Next">Submit</button>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- 7th -->
                           </form>
                         </div>
                       </div>
@@ -986,7 +1415,22 @@
             <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'></script> -->
             <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script> -->
             <style>
-              
+            .button-row {
+              padding-top: 34px;
+            }
+            .create-test label {
+               
+                font: normal normal normal 18px/27px Poppins;
+                color: #010D0A;
+                text-align: left;
+                float: left;
+                margin-bottom: 15px;
+            }
+            .create-test .vscomp-value {
+              font-family: 'Pop-normal';
+              color: #010D0A;
+              font-size: 16px;
+          }
               .content {
                     width: 100% !important;
                     margin: 0px !important;

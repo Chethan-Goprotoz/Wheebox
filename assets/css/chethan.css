@@ -321,7 +321,33 @@ outline: 0px;
   .drang_text, .browse{
     font-size: 16px !important;
   }
+  .gauge_chart{
+    height: 300px;
   }
+  .tabsContainer {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .tabsContainer .tabsButton{
+    margin: 20px;
+    flex-wrap: wrap;
+  }
+  }
+  .gaugeChart [aria-labelledby="id-71-title"]{
+    display: none;
+}
+.am5-tooltip-container div{
+  display: none !important;
+  overflow: hidden;
+  opacity: 0 !important;
+  visibility:hidden !important;
+}
+#chartdiv canvas:nth-child(2){
+  display: none;
+  width: 0px !important;
+  height: 0px !important;
+}
+
   .multisteps-form__progress-btn:after {
     
     background-color: #BDBDBD;
@@ -590,7 +616,7 @@ textarea{
 .fa-calendar {
   color: #b2b6b5;
   position: absolute;
-  top: 60px;
+  top: 88px;
   right: 3%;
 }
 .passper .vscomp-toggle-button{
@@ -603,13 +629,34 @@ textarea{
 .radio-label {
   font-size: 16px !important;
 }
-.one-hr {
-  width: 43px;
-  height: 20px;
+.one-hr, .two-hr, .three-hr {
+  width: 45px;
+  height: 9px;
   color: #DBDBDB;
   opacity: 1;
   vertical-align: middle;
+  margin-right: 10px;
 }
 hr:not([size]) {
-  height: 10px;
+  height: 9px;
+}
+.three-hr{
+  color: #00E937;
+}
+.two-2{
+  color: #E9AB00;
+}
+.dashboardCard-img{
+background-color: #f7f7f700;
+}
+
+#myChart, #donutchart {
+  display: block;
+  height: 187px !important;
+  width: 372px !important;
+  /* float: left; */
+  /* display: inline; */
+  position: relative;
+  left: -90px;
+  top: -20px;
 }
