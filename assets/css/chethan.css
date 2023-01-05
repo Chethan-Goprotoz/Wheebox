@@ -254,7 +254,12 @@ outline: 0px;
     font-size: 14px;
 }
 @media (min-width: 576px){
- 
+  .tags-list span {
+    font-size: 14px;
+  }
+  .tags-list h4{
+    font-size: 14px !important;
+  }
   .dash-number .gridBox {
     max-height: 120px !important;
 }
@@ -318,10 +323,32 @@ outline: 0px;
 }
 
 @media (max-width: 576px){
+  .modal-footer button{
+    margin: 10px;
+  }
+  .modal-footer{
+    border: 0px;
+  }
+  #fname{
+    margin-bottom: 20px;
+  }
+  .btn-toggle{
+    margin-bottom: 20px !important;
+  }
   .tabsContainer .tabsButton {
     margin: 0px !important;
     
     margin-bottom: 20px !important;
+}
+.tags-list {
+ font-size: 14px !important;
+}
+.multisteps-form__content{
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+}
+.passper{
+  margin-top:20px;
 }
 .calendar-container {
   position: relative;
@@ -415,6 +442,10 @@ padding: 30px;
   display: none;
   width: 0px !important;
   height: 0px !important;
+}
+textarea::placeholder {
+  color: #010D0A;
+  opacity: 0.3;
 }
 
   .multisteps-form__progress-btn:after {

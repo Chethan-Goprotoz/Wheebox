@@ -40,13 +40,7 @@
               </div>
               <div class="d-flex align-items-center gap-5">
                 <div class="d-flex gap-4">
-                  <div>
-                    <a href="#">
-                      <div class="home-search">
-                        <img class="nav-arrows-1" src="assets/images/home-hover.svg" alt="">
-                      </div>
-                    </a>
-                  </div>
+                  
                 </div>
                 <div class="grid-new" id="profile-out">
                   <div class="grid1-new" onclick="profile()">
@@ -75,22 +69,9 @@
         <div class="d-flex mobileMenu justify-content-lg-end justify-content-between d-md-none mt-3">
           <div class="d-flex justify-content-between align-items-center">
             <img src="./assets/images/Question_Bank/menu.png" onclick="sidemenu()" id="menu-icon" class="fas fa-solid icon-w fa-bars d-block d-lg-none ms-0">
-            <h3 class="mb-0">Question Bank</h3>
+            <h3 class="mb-0">Create Test</h3>
           </div>
-          <div class="dropdown">
-            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"> Quick links </a>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-              <li>
-                <a class="dropdown-item" href="#">Action</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">Another action</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </li>
-            </ul>
-          </div>
+         
         </div>
       </div>
       <div class="sidebar">
@@ -207,17 +188,17 @@
                       <!-- Modal -->
                       <style>
                         @media (max-width: 576px){
-                          
+                          .fa-calendar {
+    color: #b2b6b5;
+    position: absolute;
+    top: 53px !important;
+    right: 3%;
+}
                           .tags-list{
                             width: 141px;
                             height: 62px; 
                           }
-                          .tags-list span{
-                            font: 14px;
-                          }
-                          .tags-list h4{
-                            font: 14px;
-                          }
+                        
 
                           .multisteps-form__progress {
                             
@@ -254,7 +235,7 @@
                           }
                           .tags-list span{
                             text-align: center;
-                            font: normal normal normal 16px/25px Poppins;
+                            font-size: 16px;
                             letter-spacing: 0px;
                             color: #999999;
                             text-transform: capitalize;
@@ -262,7 +243,7 @@
                           }
                           .tags-list h4{
                             text-align: center;
-                            font: normal normal 600 16px/25px Poppins;
+                            font-size: 16px;
                             letter-spacing: 0px;
                             color: #2C3652;
                             opacity: 1;
@@ -640,90 +621,84 @@
                                   <!-- Row 3 ends -->
                                   <!-- Row 4 -->
                                   <div class="row" style="margin-top: 35px;">
-                                    <div class=" col col-lg-4 col-sm-12">
+                                    <div class=" col-sm-6 col-lg-4 ">
                                       <label for="fname">Flag Button Option</label>
                                     </div>
-                                    <div class="col col-lg-2 col-sm-12">
+                                    <div class=" col-lg-2 col-sm-6">
                                       <div class="radio">
                                         <input id="radio-111" name="radio-6" type="radio" checked>
                                         <label for="radio-111" class="radio-label">Yes</label>
                                       </div>
                                     </div>
-                                    <div class="col col-lg-3 col-sm-12">
+                                    <div class=" col-lg-3 col-sm-6">
                                       <div class="radio">
                                         <input id="radio-12" name="radio-6" type="radio">
                                         <label for="radio-12" class="radio-label">No</label>
                                       </div>
                                     </div>
-                                    <div class=" col-lg-3 col-sm-6">
-                                     
-                                    </div>
+                                    
                                   </div>
                                   <!-- Row 4 ends -->
                                   <!-- Row 5 -->
                                   <div class="row" style="margin-top: 35px;">
-                                    <div class="col col-lg-4 col-sm-6">
+                                    <div class=" col-lg-4 col-sm-6">
                                       <label for="fname">Auto Next</label>
                                     </div>
-                                    <div class="col col-lg-2 col-sm-12">
+                                    <div class=" col-lg-2 col-sm-6">
                                       <div class="radio">
                                         <input id="radio-13" name="radio-7" type="radio" checked>
                                         <label for="radio-13" class="radio-label">Yes</label>
                                       </div>
                                     </div>
-                                    <div class="col col-lg-3 col-sm-12">
+                                    <div class=" col-lg-3 col-sm-6">
                                       <div class="radio">
                                         <input id="radio-14" name="radio-7" type="radio">
                                         <label for="radio-14" class="radio-label">No</label>
                                       </div>
                                     </div>
-                                    <div class="col col-lg-3 col-sm-12">
-                                     
-                                    </div>
+                                  
                                   </div>
                                   <!-- Row 5 ends -->
                                   <!-- Row 6 -->
                                   <div class="row" style="margin-top: 35px;">
-                                    <div class="col col-lg-4 col-sm-6">
+                                    <div class=" col-lg-4 col-sm-6">
                                       <label for="fname">Section Skip Option</label>
                                     </div>
-                                    <div class="col col-lg-2 col-sm-12">
+                                    <div class=" col-lg-2 col-sm-6">
                                       <div class="radio">
                                         <input id="radio-15" name="radio-8" type="radio" checked>
                                         <label for="radio-15" class="radio-label">Yes</label>
                                       </div>
                                     </div>
-                                    <div class="col col-lg-3 col-sm-12">
+                                    <div class="col-lg-3 col-sm-6">
                                       <div class="radio">
                                         <input id="radio-16" name="radio-8" type="radio">
                                         <label for="radio-16" class="radio-label">No</label>
                                       </div>
                                     </div>
-                                    <div class="col col-lg-3 col-sm-12">
+                                    <div class="col-lg-3 col-sm-6">
                                      
                                     </div>
                                   </div>
                                   <!-- Row 6 ends -->
                                   <!-- Row 7 -->
                                   <div class="row" style="margin-top: 35px;">
-                                    <div class="col col-lg-4 col-sm-6">
+                                    <div class="col-lg-4 col-sm-6">
                                       <label for="fname">Previous Button Option</label>
                                     </div>
-                                    <div class="col col-lg-2 col-sm-12">
+                                    <div class="col-lg-2 col-sm-6">
                                       <div class="radio">
                                         <input id="radio-17" name="radio-9" type="radio" checked>
                                         <label for="radio-17" class="radio-label">Yes</label>
                                       </div>
                                     </div>
-                                    <div class="col col-lg-3 col-sm-12">
+                                    <div class="col-lg-3 col-sm-6">
                                       <div class="radio">
                                         <input id="radio-18" name="radio-9" type="radio">
                                         <label for="radio-18" class="radio-label">No</label>
                                       </div>
                                     </div>
-                                    <div class="col col-lg-3 col-sm-12">
-                                     
-                                    </div>
+                                    
                                   </div>
                                   <!-- Row 7 ends -->
                                   <!-- Row 8 -->
@@ -731,21 +706,19 @@
                                     <div class="col col-lg-4 col-sm-6">
                                       <label for="fname">Show Practice Test</label>
                                     </div>
-                                    <div class="col col-lg-2 col-sm-12">
+                                    <div class="col-lg-2 col-sm-6">
                                       <div class="radio">
                                         <input id="radio-19" name="radio-10" type="radio" checked>
                                         <label for="radio-19" class="radio-label">Yes</label>
                                       </div>
                                     </div>
-                                    <div class="col col-lg-3 col-sm-12">
+                                    <div class=" col-lg-3 col-sm-6">
                                       <div class="radio">
                                         <input id="radio-20" name="radio-10" type="radio">
                                         <label for="radio-20" class="radio-label">No</label>
                                       </div>
                                     </div>
-                                    <div class="col col-lg-3 col-sm-12">
-                                     
-                                    </div>
+                                    
                                   </div>
                                   <!-- Row 8 ends -->
                                   <!-- Row 9 -->
@@ -753,19 +726,19 @@
                                     <div class="col col-lg-4 col-sm-6">
                                       <label for="fname">Randomize Options</label>
                                     </div>
-                                    <div class="col col-lg-2 col-sm-12">
+                                    <div class=" col-lg-2 col-sm-6">
                                       <div class="radio">
                                         <input id="radio-21" name="radio-11" type="radio" checked>
                                         <label for="radio-21" class="radio-label">Yes</label>
                                       </div>
                                     </div>
-                                    <div class="col col-lg-3 col-sm-12">
+                                    <div class=" col-lg-3 col-sm-6">
                                       <div class="radio">
                                         <input id="radio-22" name="radio-11" type="radio">
                                         <label for="radio-22" class="radio-label">No</label>
                                       </div>
                                     </div>
-                                    <div class="col col-lg-3 col-sm-12">
+                                    <div class="col-lg-3 col-sm-6">
                                      
                                     </div>
                                   </div>
@@ -775,21 +748,19 @@
                                     <div class="col col-lg-4 col-sm-6">
                                       <label for="fname">Show Practice Test</label>
                                     </div>
-                                    <div class="col col-lg-2 col-sm-12">
+                                    <div class=" col-lg-2 col-sm-6">
                                       <div class="radio">
                                         <input id="radio-23" name="radio-12" type="radio" checked>
                                         <label for="radio-23" class="radio-label">Yes</label>
                                       </div>
                                     </div>
-                                    <div class="col col-lg-3 col-sm-12">
+                                    <div class=" col-lg-3 col-sm-6">
                                       <div class="radio">
                                         <input id="radio-24" name="radio-12" type="radio">
                                         <label for="radio-24" class="radio-label">No</label>
                                       </div>
                                     </div>
-                                    <div class="col col-lg-3 col-sm-12">
-                                     
-                                    </div>
+                                   
                                   </div>
                                   <!-- Row 10 ends -->
                                 </div>
@@ -807,105 +778,101 @@
                                   <!-- row end -->
                                   <!-- Row 1 -->
                                   <div class="row" style="margin-top: 0px;">
-                                    <div class="col col-lg-4 col-sm-12">
+                                    <div class=" col-lg-4 col-sm-6">
                                       <label for="fname">Access Denied Options</label>
                                     </div>
-                                    <div class="col col-lg-2 col-sm-12">
+                                    <div class=" col-lg-2 col-sm-6">
                                       <div class="radio">
                                         <input id="radio-41" name="radio-32" type="radio" checked>
                                         <label for="radio-41" class="radio-label">No</label>
                                       </div>
                                     </div>
-                                    <div class="col col-lg-2 col-sm-12">
+                                    <div class=" col-lg-2 col-sm-6">
                                       <div class="radio">
                                         <input id="radio-51" name="radio-32" type="radio">
                                         <label for="radio-51" class="radio-label">No</label>
                                       </div>
                                     </div>
-                                    <div class="col col-lg-2 col-sm-12">
-                                      
-                                    </div>
+                                   
                                   </div>
                                   <!-- Row 1 ends -->
                                    <!-- Row 2 -->
                                    <div class="row" style="margin-top: 35px;">
-                                    <div class="col col-lg-4 col-sm-12">
+                                    <div class=" col-lg-4 col-sm-6">
                                       <label for="fname">SEB</label>
                                     </div>
-                                    <div class="col col-lg-2 col-sm-12">
+                                    <div class=" col-lg-2 col-sm-6">
                                       <div class="radio">
                                         <input id="radio-61" name="radio-41" type="radio" checked>
                                         <label for="radio-61" class="radio-label">Yes</label>
                                       </div>
                                     </div>
-                                    <div class="col col-lg-3 col-sm-12">
+                                    <div class=" col-lg-3 col-sm-6">
                                       <div class="radio">
                                         <input id="radio-71" name="radio-41" type="radio">
                                         <label for="radio-71" class="radio-label">No</label>
                                       </div>
                                     </div>
-                                    <div class="col col-lg-3 col-sm-12">
+                                    <div class=" col-lg-3 col-sm-6">
                                      
                                     </div>
                                   </div>
                                   <!-- Row 2 ends -->
                                   <!-- Row 3 -->
                                   <div class="row" style="margin-top: 35px;">
-                                    <div class="col col-lg-4 col-sm-12">
+                                    <div class=" col-lg-4 col-sm-6">
                                       <label for="fname">Geo Tagging</label>
                                     </div>
-                                    <div class="col col-lg-2 col-sm-12">
+                                    <div class=" col-lg-2 col-sm-6">
                                       <div class="radio">
                                         <input id="radio-99" name="radio-56" type="radio" checked>
                                         <label for="radio-99" class="radio-label">Yes</label>
                                       </div>
                                     </div>
-                                    <div class="col col-lg-3 col-sm-12">
+                                    <div class="col-lg-3col-sm-6">
                                       <div class="radio">
                                         <input id="radio-110" name="radio-56" type="radio">
                                         <label for="radio-110" class="radio-label">No</label>
                                       </div>
                                     </div>
-                                    <div class="col col-lg-3 col-sm-12">
+                                    <div class=" col-lg-3 col-sm-6">
                                     
                                     </div>
                                   </div>
                                   <!-- Row 3 ends -->
                                   <!-- Row 4 -->
                                   <div class="row" style="margin-top: 35px;">
-                                    <div class="col col-lg-4 col-sm-12">
+                                    <div class="col-lg-4 col-sm-6">
                                       <label for="fname">Keystroke Verification</label>
                                     </div>
-                                    <div class="col col-lg-2 col-sm-12">
+                                    <div class="col-lg-2 col-sm-6">
                                       <div class="radio">
                                         <input id="radio-121" name="radio-62" type="radio" checked>
                                         <label for="radio-121" class="radio-label">Yes</label>
                                       </div>
                                     </div>
-                                    <div class="col col-lg-3 col-sm-12">
+                                    <div class="col-lg-3 col-sm-6">
                                       <div class="radio">
                                         <input id="radio-132" name="radio-62" type="radio">
                                         <label for="radio-132" class="radio-label">No</label>
                                       </div>
                                     </div>
-                                    <div class="col col-lg-3 col-sm-12">
-                                     
-                                    </div>
+                                   
                                   </div>
                                   <!-- Row 4 ends -->
                                     <!-- Row 5 -->
                                     <div class="row" style="margin-top: 35px;">
-                                      <div class="col col-lg-4 col-sm-12">
+                                      <div class="col-lg-4 col-sm-6">
                                         <label for="fname">IP Range Checking</label><br>
                                         <button type="button" class="btn btn-secondary btn-toggle" data-toggle="button" aria-pressed="false" autocomplete="off">
                                           <div class="handle"></div>
                                           </button>
                                       </div>
-                                      <div class="col col-lg-3 col-sm-12">
+                                      <div class="col-lg-3 col-sm-6">
                                         <label for="fname">Enter IP Start Range</label>
                                         <input type="text" id="fname" name="fname" placeholder="Enter IP Start Range">
                                       </div>
-                                      <div class="col col-lg-3 col-sm-12">
+                                      <div class="col-lg-3 col-sm-6">
                                         <label for="fname">Enter IP End Range</label>
                                         <input type="text" id="fname" name="fname" placeholder="Enter IP End Range">
                                       </div>
@@ -914,13 +881,13 @@
                                     <!-- Row 5 ends -->
                                     <!-- Row 6 -->
                                     <div class="row" style="margin-top: 35px;">
-                                      <div class="col col-lg-4 col-sm-12">
+                                      <div class="col-lg-4 col-sm-6">
                                         <label for="fname">Allow Navigation During Test</label><br>
                                         <button type="button" class="btn btn-secondary btn-toggle" data-toggle="button" aria-pressed="false" autocomplete="off">
                                           <div class="handle"></div>
                                           </button>
                                       </div>
-                                      <div class="col col-lg-3 col-sm-12">
+                                      <div class="col-lg-3 col-sm-6">
                                         <label for="fname">Select Time Span</label>
                                         <input type="text" id="fname" name="fname" placeholder="Navigation Frequency">
                                       </div>
@@ -941,7 +908,7 @@
                               <div class="multisteps-form__content">
                                 <div class="form-row " style="height:auto !important;align-items: center;justify-content: center;">
                                   <div class="row">
-                                    <div class="col col-lg-4 passper">
+                                    <div class="col-lg-4 col-sm-6 passper">
                                       <!-- dropdown -->
                                       <label for="fname">Approver Screen</label>
                                       <select id="SearchDropdown" name="native-select" placeholder="Approver Screen" data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
@@ -957,47 +924,47 @@
                                   <!-- row end -->
                                   <!-- Row 1 -->
                                   <div class="row" style="margin-top: 40px;">
-                                    <div class="col col-lg-4 col-sm-12">
+                                    <div class=" col-lg-4 col-sm-6">
                                       <label for="fname">Screen Capturing</label><br>
                                       <button type="button" class="btn btn-secondary btn-toggle" data-toggle="button" aria-pressed="false" autocomplete="off">
                                         <div class="handle"></div>
                                         </button>
                                     </div>
-                                    <div class="col col-lg-2 col-sm-12">
+                                    <div class=" col-lg-2 col-sm-6">
                                       <div class="radio">
                                         <input id="radio-81" name="radio-42" type="radio" checked>
                                         <label for="radio-81" class="radio-label">Chrome Extension</label>
                                       </div>
                                     </div>
-                                    <div class="col col-lg-2 col-sm-12">
+                                    <div class=" col-lg-2 col-sm-6">
                                       <div class="radio">
                                         <input id="radio-71" name="radio-42" type="radio">
                                         <label for="radio-71" class="radio-label">Full Desktop</label>
                                       </div>
                                     </div>
-                                    <div class="col col-lg-2 col-sm-12">
+                                    <div class="col-lg-2 col-sm-6">
                                       
                                     </div>
                                   </div>
                                   <!-- Row 1 ends -->
                                    <!-- Row 2 -->
                                    <div class="row" style="margin-top: 35px;">
-                                    <div class="col col-lg-4 col-sm-12">
+                                    <div class=" col-lg-4 col-sm-6">
                                       <label for="fname">Proctor Assignment Type</label>
                                     </div>
-                                    <div class="col col-lg-2 col-sm-12">
+                                    <div class=" col-lg-2col-sm-6">
                                       <div class="radio">
                                         <input id="radio-62" name="radio-45" type="radio" checked>
                                         <label for="radio-62" class="radio-label">None</label>
                                       </div>
                                     </div>
-                                    <div class="col col-lg-2 col-sm-12">
+                                    <div class=" col-lg-2 col-sm-6">
                                       <div class="radio">
                                         <input id="radio-72" name="radio-45" type="radio">
                                         <label for="radio-72" class="radio-label">Easy</label>
                                       </div>
                                     </div>
-                                    <div class="col col-lg-3 col-sm-12">
+                                    <div class=" col-lg-3 col-sm-6">
                                       <div class="radio">
                                         <input id="radio-71" name="radio-41" type="radio">
                                         <label for="radio-71" class="radio-label">Hard</label>
@@ -1007,63 +974,64 @@
                                   <!-- Row 2 ends -->
                                   <!-- Row 3 -->
                                   <div class="row" style="margin-top: 35px;">
-                                    <div class="col col-lg-4 col-sm-12">
+                                    <div class=" col-lg-4 col-sm-6">
                                       <label for="fname">Chat</label>
                                     </div>
-                                    <div class="col col-lg-2 col-sm-12">
+                                    <div class=" col-lg-2 col-sm-6">
                                       <div class="radio">
                                         <input id="radio-100" name="radio-516" type="radio" checked>
                                         <label for="radio-100" class="radio-label">Yes</label>
                                       </div>
                                     </div>
-                                    <div class="col col-lg-3 col-sm-12">
+                                    <div class=" col-lg-3 col-sm-6">
                                       <div class="radio">
                                         <input id="radio-1101" name="radio-516" type="radio">
                                         <label for="radio-1101" class="radio-label">No</label>
                                       </div>
                                     </div>
-                                    <div class="col col-lg-3 col-sm-12">
+                                    <div class=" col-lg-3 col-sm-6">
                                     
                                     </div>
                                   </div>
                                   <!-- Row 3 ends -->
                                   <!-- Row 4 -->
                                   <div class="row" style="margin-top: 35px;">
-                                    <div class="col col-lg-4 col-sm-12">
+                                    <div class=" col-lg-4 col-sm-6">
                                       <label for="fname">Video Recording</label>
                                     </div>
-                                    <div class="col col-lg-2 col-sm-12">
+                                    <div class=" col-lg-2 col-sm-6">
                                       <div class="radio">
                                         <input id="radio-1121" name="radio-612" type="radio" checked>
                                         <label for="radio-1121" class="radio-label">Yes</label>
                                       </div>
                                     </div>
-                                    <div class="col col-lg-3 col-sm-12">
+                                    <div class=" col-lg-3 col-sm-6">
                                       <div class="radio">
                                         <input id="radio-1132" name="radio-612" type="radio">
                                         <label for="radio-1132" class="radio-label">No</label>
                                       </div>
                                     </div>
-                                    <div class="col col-lg-3 col-sm-12">
+                                    <div class="col-lg-3 col-sm-6">
                                      
                                     </div>
                                   </div>
                                   <!-- Row 4 ends -->
                                     <!-- Row 5 -->
-                                    <h4 style="color: #2C3652;">Auto-Proctoring Options</h4>
+                     
                                     <div class="row" style="margin-top: 35px;">
-                                      <div class="col col-lg-4 col-sm-12">
+                                      <h3 style="color: #2C3652;" style="font-size: 18px !important">Auto-Proctoring Options</h3>
+                                      <div class="col-lg-4 col-sm-6">
                                         <label for="fname">Face Detection</label><br>
                                         <!-- <button type="button" class="btn btn-secondary btn-toggle" data-toggle="button" aria-pressed="false" autocomplete="off">
                                           <div class="handle"></div> -->
                                       </div>
-                                      <div class="col col-lg-2 col-sm-12">
+                                      <div class="col-lg-2 col-sm-6">
                                         <div class="radio">
                                           <input id="radio-1142" name="radio-6142" type="radio">
                                           <label for="radio-1142" class="radio-label">Yes</label>
                                         </div>
                                       </div>
-                                      <div class="col col-lg-2 col-sm-12">
+                                      <div class="col-lg-2 col-sm-6">
                                         <div class="radio" style="display: inline;">
                                           <input id="radio-1143" name="radio-6142" type="radio">
                                           <label for="radio-1143" class="radio-label">No</label>
@@ -1072,11 +1040,13 @@
                                         
                                        
                                       </div>
-                                      <div class="col col-lg-4 col-sm-12 d-flex" style="    flex-direction: row;flex-wrap: nowrap;align-items: center;justify-content: flex-start;"> 
+                                      <div class="col-lg-4 col-sm-6 d-flex" style="    flex-direction: row;flex-wrap: nowrap;align-items: center;justify-content: flex-start;"> 
                                         <hr class="one-hr">
                                         <hr class="two-hr">
                                         <hr class="three-hr">
-                                        <img src="" alt="">
+                                        <button type="button" class="btn" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom " >
+                                         <img src="assets/images/chethan/Screenshot 2023-01-05 200545.png" alt="" width="20px" height="20px">
+                                        </button>
                                       </div>
                                       
                                     </div>
@@ -1084,18 +1054,18 @@
                                      <!-- Row 5 -->
                                     
                                      <div class="row" style="margin-top: 35px;">
-                                       <div class="col col-lg-4 col-sm-12">
+                                       <div class=" col-lg-4 col-sm-6">
                                          <label for="fname">Face Tracking</label><br>
                                          <!-- <button type="button" class="btn btn-secondary btn-toggle" data-toggle="button" aria-pressed="false" autocomplete="off">
                                            <div class="handle"></div> -->
                                        </div>
-                                       <div class="col col-lg-2 col-sm-12">
+                                       <div class=" col-lg-2 col-sm-6">
                                          <div class="radio">
                                            <input id="radio-1142" name="radio-6142" type="radio">
                                            <label for="radio-1142" class="radio-label">Yes</label>
                                          </div>
                                        </div>
-                                       <div class="col col-lg-2 col-sm-12">
+                                       <div class="col-lg-2 col-sm-6">
                                          <div class="radio" style="display: inline;">
                                            <input id="radio-1143" name="radio-6142" type="radio">
                                            <label for="radio-1143" class="radio-label">No</label>
@@ -1104,24 +1074,26 @@
                                          
                                         
                                        </div>
-                                       <div class="col col-lg-4 col-sm-12 d-flex" style="    flex-direction: row;flex-wrap: nowrap;align-items: center;justify-content: flex-start;"> 
+                                       <div class=" col-lg-4 col-sm-6 d-flex" style="    flex-direction: row;flex-wrap: nowrap;align-items: center;justify-content: flex-start;"> 
                                          <hr class="one-hr">
                                          <hr class="two-hr two-2">
                                          <hr class="three-hr">
-                                         <img src="" alt="">
+                                         <button type="button" class="btn" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom " >
+                                          <img src="assets/images/chethan/Screenshot 2023-01-05 200545.png" alt="" width="20px" height="20px">
+                                         </button>
                                        </div>
                                        
                                      </div>
                                      <!-- Row 5 ends -->
                                     <!-- Row 6 -->
                                     <div class="row" style="margin-top: 35px;">
-                                      <div class="col col-lg-4 col-sm-12">
+                                      <div class=" col-lg-4 col-sm-6">
                                         <label for="fname">Image Capturing</label><br>
                                         <button type="button" class="btn btn-secondary btn-toggle" data-toggle="button" aria-pressed="false" autocomplete="off">
                                           <div class="handle"></div>
                                           </button>
                                       </div>
-                                      <div class="col col-lg-4 col-sm-12 passper">
+                                      <div class="col-lg-4 col-sm-6 passper">
                                         <label for="fname">Select Time Span</label>
                                          <!-- dropdown -->
                                       <select id="SearchDropdown" name="native-select" placeholder="Select Time Span" data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
@@ -1133,7 +1105,7 @@
                                       </select>
                                       <!-- dropdown -->
                                       </div>
-                                      <div class="col col-lg-4 col-sm-12 d-flex" style="    flex-direction: row;flex-wrap: nowrap;align-items: center;justify-content: flex-start;"> 
+                                      <div class=" col-lg-4 col-sm-6 d-flex" style="    flex-direction: row;flex-wrap: nowrap;align-items: center;justify-content: flex-start;"> 
                                         <hr class="one-hr">
                                         <hr class="two-hr two-2">
                                         <hr class="three-hr">
@@ -1246,38 +1218,36 @@
                                   <!-- Row 3 ends -->
                                   <!-- Row 4 -->
                                   <div class="row" style="margin-top: 35px;">
-                                    <div class=" col col-lg-4 col-sm-12">
+                                    <div class="  col-lg-4 col-sm-6">
                                       <label for="fname">Show Overall Score On Submission</label>
                                     </div>
-                                    <div class="col col-lg-2 col-sm-12">
+                                    <div class=" col-lg-2 col-sm-6">
                                       <div class="radio">
                                         <input id="radio-111" name="radio-6" type="radio" checked>
                                         <label for="radio-111" class="radio-label">Yes</label>
                                       </div>
                                     </div>
-                                    <div class="col col-lg-3 col-sm-12">
+                                    <div class=" col-lg-3 col-sm-6">
                                       <div class="radio">
                                         <input id="radio-12" name="radio-6" type="radio">
                                         <label for="radio-12" class="radio-label">No</label>
                                       </div>
                                     </div>
-                                    <div class=" col-lg-3 col-sm-6">
-                                     
-                                    </div>
+                                    
                                   </div>
                                   <!-- Row 4 ends -->
                                   <!-- Row 5 -->
                                   <div class="row" style="margin-top: 35px;">
-                                    <div class="col col-lg-4 col-sm-6">
+                                    <div class=" col-lg-4 col-sm-6">
                                       <label for="fname">Section Wise End Test Summary</label>
                                     </div>
-                                    <div class="col col-lg-2 col-sm-12">
+                                    <div class="col-lg-2 col-sm-6">
                                       <div class="radio">
                                         <input id="radio-13" name="radio-7" type="radio" checked>
                                         <label for="radio-13" class="radio-label">Yes</label>
                                       </div>
                                     </div>
-                                    <div class="col col-lg-3 col-sm-12">
+                                    <div class="col-lg-3 col-sm-6">
                                       <div class="radio">
                                         <input id="radio-14" name="radio-7" type="radio">
                                         <label for="radio-14" class="radio-label">No</label>
@@ -1288,38 +1258,36 @@
                                   <!-- Row 5 ends -->
                                   <!-- Row 6 -->
                                   <div class="row" style="margin-top: 35px;">
-                                    <div class="col col-lg-4 col-sm-6">
+                                    <div class=" col-lg-4 col-sm-6">
                                       <label for="fname">Noise Detection</label>
                                     </div>
-                                    <div class="col col-lg-2 col-sm-12">
+                                    <div class=" col-lg-2 col-sm-6">
                                       <div class="radio">
                                         <input id="radio-15" name="radio-8" type="radio" checked>
                                         <label for="radio-15" class="radio-label">Yes</label>
                                       </div>
                                     </div>
-                                    <div class="col col-lg-3 col-sm-12">
+                                    <div class=" col-lg-3 col-sm-6">
                                       <div class="radio">
                                         <input id="radio-16" name="radio-8" type="radio">
                                         <label for="radio-16" class="radio-label">No</label>
                                       </div>
                                     </div>
-                                    <div class="col col-lg-3 col-sm-12">
-                                     
-                                    </div>
+                                    
                                   </div>
                                   <!-- Row 6 ends -->
                                   <!-- Row 7 -->
                                   <div class="row" style="margin-top: 35px;">
-                                    <div class="col col-lg-4 col-sm-6">
+                                    <div class=" col-lg-4 col-sm-6">
                                       <label for="fname">Test Type</label>
                                     </div>
-                                    <div class="col col-lg-2 col-sm-12">
+                                    <div class=" col-lg-2 col-sm-6">
                                       <div class="radio">
                                         <input id="radio-17" name="radio-9" type="radio" checked>
                                         <label for="radio-17" class="radio-label">Mock Test</label>
                                       </div>
                                     </div>
-                                    <div class="col col-lg-3 col-sm-12">
+                                    <div class=" col-lg-3 col-sm-6">
                                       <div class="radio">
                                         <input id="radio-18" name="radio-9" type="radio">
                                         <label for="radio-18" class="radio-label">Actual Test</label>
@@ -1330,16 +1298,16 @@
                                   <!-- Row 7 ends -->
                                   <!-- Row 8 -->
                                   <div class="row" style="margin-top: 35px;">
-                                    <div class="col col-lg-4 col-sm-6">
+                                    <div class=" col-lg-4 col-sm-6">
                                       <label for="fname">Send Mail To User</label>
                                     </div>
-                                    <div class="col col-lg-2 col-sm-12">
+                                    <div class=" col-lg-2 col-sm-6">
                                       <div class="radio">
                                         <input id="radio-19" name="radio-10" type="radio" checked>
                                         <label for="radio-19" class="radio-label">Yes</label>
                                       </div>
                                     </div>
-                                    <div class="col col-lg-3 col-sm-12">
+                                    <div class=" col-lg-3 col-sm-6">
                                       <div class="radio">
                                         <input id="radio-20" name="radio-10" type="radio">
                                         <label for="radio-20" class="radio-label">No</label>
@@ -1350,13 +1318,13 @@
                                   <!-- Row 8 ends -->
                                   <!-- Row 9 -->
                                   <div class="row" style="margin-top: 35px;">
-                                    <div class="col col-lg-4 col-sm-6">
+                                    <div class=" col-lg-4 col-sm-6">
                                       <label for="fname">Send Mail To Admin</label><br>
                                       <button type="button" class="btn btn-secondary btn-toggle" data-toggle="button" aria-pressed="false" autocomplete="off">
                                         <div class="handle"></div>
                                       </button>
                                     </div>
-                                    <div class="col col-lg-2 col-sm-12">
+                                    <div class="col-lg-2 col-sm-6">
                                       <label for="fname">Admin Mail Id</label>
                                       <input type="text" id="fname" name="fname" placeholder="Admin Mail Id">
                                     </div>
@@ -1367,22 +1335,22 @@
                                   <h3 style="color: #2C3652;">Proctroing Score Form</h3>
 
                                   <div class="row" style="margin-top: 35px;">
-                                    <div class="col col-lg-4 col-sm-6">
+                                    <div class=" col-lg-4 col-sm-6">
                                       <label for="fname">Show Practice Test</label>
                                     </div>
-                                    <div class="col col-lg-2 col-sm-12">
+                                    <div class=" col-lg-2 col-sm-6">
                                       <div class="radio">
                                         <input id="radio-23" name="radio-12" type="radio" checked>
                                         <label for="radio-23" class="radio-label">Yes</label>
                                       </div>
                                     </div>
-                                    <div class="col col-lg-3 col-sm-12">
+                                    <div class=" col-lg-3 col-sm-6">
                                       <div class="radio">
                                         <input id="radio-24" name="radio-12" type="radio">
                                         <label for="radio-24" class="radio-label">No</label>
                                       </div>
                                     </div>
-                                    <div class="col col-lg-3 col-sm-12">
+                                    <div class=" col-lg-3 col-sm-6">
                                      
                                     </div>
                                     <div class="row" style="margin-top: 30px;">
