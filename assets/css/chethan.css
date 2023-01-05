@@ -318,6 +318,17 @@ outline: 0px;
 }
 
 @media (max-width: 576px){
+  .tabsContainer .tabsButton {
+    margin: 0px !important;
+    
+    margin-bottom: 20px !important;
+}
+.calendar-container {
+  position: relative;
+  margin-top: 0px;
+  z-index: 200;
+  width: 100% !important;
+}
   .tags-modal .modal-content{
 padding: 30px;
   }
