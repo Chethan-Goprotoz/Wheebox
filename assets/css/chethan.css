@@ -244,13 +244,26 @@ outline: 0px;
 .modal-header{
   border-bottom: 0px solid #dee2e6 !important;
 }
+.dropdown-menu{
+  
+  position: absolute;
+    inset: 0px auto auto 0px;
+    margin: 0px;
+    transform: translate(0px, 42px);
+    width: 100%;
+    font-size: 14px;
+}
 @media (min-width: 576px){
+ 
   .dash-number .gridBox {
     max-height: 120px !important;
 }
 .dash-number .dashboard-content p {
   font-size: 12px;
   min-height: 10px !important;
+}
+.dash-number .gridBox {
+  max-height: 130px !important;
 }
   .tags-modal{
     max-width: 804px !important;

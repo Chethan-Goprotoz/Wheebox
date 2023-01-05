@@ -123,7 +123,7 @@
                         <div class="col-sm-6  col-md-3 "> <a href="#">
                                 <div class="d-flex justify-content-between testcard gridBox box1 box-card">
                                     <div class="dashboard-content">
-                                        <p>TOTAL NO OF QUESTIONS </p>
+                                        <p>TOTAL NO OF <br>QUESTIONS </p>
                                         <h3>13775</h3>
                                     </div>
                                     <div class="dashboardCard-img border-1 d-flex justify-content-center align-items-center"> <img src="./assets/images/chethan/noun-question-5269588.svg" alt=""> </div>
@@ -132,7 +132,7 @@
                         <div class="col-sm-6  col-md-3 "> <a href="#">
                                 <div class="d-flex justify-content-between testcard gridBox box2 box-card">
                                     <div class="dashboard-content">
-                                        <p>TOTAL ACTIVE ASSESSMENTS</p>
+                                        <p>TOTAL ACTIVE <br>ASSESSMENTS</p>
                                         <h3>2216</h3>
                                     </div>
                                     <div class="dashboardCard-img border-2 d-flex justify-content-center align-items-center"> <img src="./assets/images/chethan/noun-assesment-4658555.svg" alt=""> </div>
@@ -141,7 +141,7 @@
                         <div class="col-sm-6 col-md-3"> <a href="#">
                                 <div class="d-flex justify-content-between testcard gridBox box3 box-card">
                                     <div class="dashboard-content">
-                                        <p>TOTAL ASSESSMENTS</p>
+                                        <p>TOTAL<br> ASSESSMENTS</p>
                                         <h3>400</h3>
                                     </div>
                                     <div class="dashboardCard-img border-3 d-flex justify-content-center align-items-center"> <img src="./assets/images/chethan/noun-certified-3324969.svg" alt=""> </div>
@@ -150,7 +150,7 @@
                         <div class="col-sm-6 col-md-3"> <a href="#">
                                 <div class="d-flex justify-content-between testcard gridBox box4 box-card">
                                     <div class="dashboard-content">
-                                        <p>TOTAL CANDIDATES</p>
+                                        <p>TOTAL <br>CANDIDATES</p>
                                         <h3>59318</h3>
                                     </div>
                                     <div class="dashboardCard-img border-4 d-flex justify-content-center align-items-center"> <img src="./assets/images/chethan/noun-right-candidate-4842951.svg" alt=""> </div>
@@ -391,14 +391,63 @@
     top: 18px;
     right: 3%;
 }
+.calendar-container {
+    position: relative;
+    margin-top: 0px;
+    z-index: 200;
+    width: 300px;
+}
 
 [role=graphics-symbol] {
   opacity: 0 !important;
   display: none !important;
   visibility:  hidden !important;
 }
-
-
+@media (max-width: 576px){
+ 
+  .inside-container-dashboard {
+    padding-top: 0px;
+    padding-bottom: 25px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.dashboard-content p {
+    font-size: 12px;
+    min-height: 0px !important;
+}
+.gridBox {
+    /* margin-bottom: 16px; */
+    height: 140px;
+    margin-left: 20px;
+    margin-right: 20px;
+    /* margin-bottom: 10px; */
+    /* padding: 10px; */
+}
+.dashboardCard-img img {
+    width: 60px;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+.testcard {
+    
+    margin-bottom: 30px;
+}
+.stats-row {
+    margin-top: 10px;
+}
+}
+.btn-secondary:hover {
+  background-color: #20776E;
+    width: 127px;
+    height: 40px;
+    font-size: 14px;
+    color: #FFFFFF !important;
+    font-family: Pop-medium;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
 </style>
  <!--  -->
  <!-- chart gauge -->
