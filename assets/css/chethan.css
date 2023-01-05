@@ -779,3 +779,6 @@ background-color: #f7f7f700;
   padding-left: 0px;
   padding-right: 0px;
 }
+.inside-container-dashboard h3{
+  font-size: 18px;
+}
