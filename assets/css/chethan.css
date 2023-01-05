@@ -254,6 +254,10 @@ outline: 0px;
     font-size: 14px;
 }
 @media (min-width: 576px){
+  .extra-margin{
+    margin-bottom: 20px;
+margin-top: 30px; 
+  }
   .fa-calendar {
     color: #b2b6b5;
     position: absolute;
