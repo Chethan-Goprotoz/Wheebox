@@ -660,3 +660,9 @@ background-color: #f7f7f700;
   left: -90px;
   top: -20px;
 }
+.inside-container-dashboard{
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 25px;
+  padding-right: 0px;
+}
