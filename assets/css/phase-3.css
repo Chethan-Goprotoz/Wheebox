@@ -1054,6 +1054,142 @@ position: relative;
   }
   /* error msg end */
 
+
+  .formArea.mt-5{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 1px 6px #00000014;
+    border-radius: 11px;
+    opacity: 1;
+  }
+  .selectDropdown.p-5.bg-light1{
+    background: #EDFAF4 0% 0% no-repeat padding-box;
+    border-radius: 10px;
+    opacity: 1;
+  }
+  .timeSpan{
+    margin-top: 20px;
+  }
+  .spaceArea{
+    height: 229px;
+  }
+  .timeSpan p{
+    text-align: left;
+    font: normal normal normal 18px/27px Pop-normal;
+    letter-spacing: 0px;
+    color: #010D0A;
+    opacity: 1;
+  }
+
+  .timeSpan .vscomp-toggle-button{
+    width: 252px;
+    height: 50px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 0.4000000059604645px solid #AAAAAA;
+    border-radius: 6px;
+    opacity: 1;
+  }
+
+  .timeSpan .vscomp-dropbox-container{
+    width: 252px;
+  }
+
+  .timeSpan .vscomp-clear-button{
+    display: block;
+  }
+  .timeSpan .vscomp-clear-icon{
+    display: block;
+  }
+
+  .ansRange .form-check label{
+    font: normal normal normal 16px/25px Pop-normal;
+    letter-spacing: 0px;
+    color: #20776E;
+    opacity: 1;
+    margin-left: 12px;
+    margin-top: 5px;
+  }
+
+  .ansRange{
+    margin-top: 30px;
+    width: 75%;
+  }
+
+  .ansRange .form-check input[type="radio"]{
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+  }
+
+  .form-check-input:checked[type=radio]{
+    background-image: url('../images/Question_Bank/radio.svg');
+  }
+
+  .selectAnsRange .selectStart select{
+    width: 111px;
+    height: 50px;
+    /* background: #FFFFFF 0% 0% no-repeat padding-box; */
+    border: 0.4000000059604645px solid #AAAAAA;
+    border-radius: 6px;
+    opacity: 1;
+    font: normal normal normal 16px/25px Pop-normal;
+    letter-spacing: 0px;
+    color: #010D0A;
+    opacity: 0.3;
+    outline: 0;
+    padding-left: 15px;
+    box-shadow: none;
+    margin-right: 60px;
+  }
+
+  .inputAns input{
+    width: 356px;
+    height: 52px;
+    border: 0.5px solid #20776E;
+    border-radius: 10px;
+    opacity: 1;
+    font: normal normal normal 16px/25px Pop-normal;
+    letter-spacing: 0px;
+    color: #BFBFBF;
+    opacity: 1;
+    box-shadow: none;
+  }
+
+  .inputAns input::placeholder{
+    font: normal normal normal 16px/25px Pop-normal;
+    letter-spacing: 0px;
+    color: #BFBFBF;
+    opacity: 1;
+  }
+
+  .qnNum{
+    font: normal normal normal 18px/27px Pop-normal;
+    letter-spacing: 0px;
+    color: #010D0A;
+    opacity: 1;
+    font-family: pop-normal !important;
+  }
+  .qnNum2{
+    width: 28px;
+    height: 28px;
+    background: #20776E 0% 0% no-repeat padding-box;
+    opacity: 1;
+    border-radius: 50px;
+    color: #ffffff !important;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+  }
+
+ 
+
+
+
+
+
+  /* resolution 1920 started */
+
   @media (min-width:1900px){
     .quesBankTabs .nav-item .nav-link, .quesBankTabs .nav-item .nav-link.active{
         font-size: 18px !important;
