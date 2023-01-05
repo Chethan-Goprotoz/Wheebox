@@ -74,6 +74,14 @@ outline: 0px;
     border: 1px solid #20776E;
     outline: 0px; 
 }
+  .form-row .vscomp-toggle-button{
+    font-size: 14px;
+  }
+  .vscomp-value {
+    font-family: 'Pop-normal';
+    color: #010D0A;
+    font-size: 14px !important;
+}
 .vscomp-toggle-button {
  
     height: 33px !important;
@@ -86,6 +94,9 @@ outline: 0px;
 
     height: 20px !important;
 
+}
+.dashboardCard-img img {
+  width: 60px;
 }
 .vscomp-options-list{
     height: auto !important;
@@ -234,7 +245,30 @@ outline: 0px;
   border-bottom: 0px solid #dee2e6 !important;
 }
 @media (min-width: 576px){
-.modal-dialog {
+  .dash-number .gridBox {
+    max-height: 120px !important;
+}
+.dash-number .dashboard-content p {
+  font-size: 12px;
+  min-height: 10px !important;
+}
+  .tags-modal{
+    max-width: 804px !important;
+    margin: 1.75rem auto;
+    padding: 30px;
+  }
+  .tags-modal .modal-content{
+    padding: 30px;
+  }
+  .tags-modal .modal-header{
+    padding: 0px;
+  }
+  .tags-modal .modal-footer{
+    border-top: 0px;
+    padding: 0px;
+  }
+
+.buldupload-modal {
     max-width: 1000px !important;
     margin: 1.75rem auto;
 }
@@ -271,6 +305,17 @@ outline: 0px;
 }
 
 @media (max-width: 576px){
+  .tags-modal .modal-content{
+padding: 30px;
+  }
+  .tags-modal .modal-footer{
+    padding: 0px;
+  }
+
+  .tags-modal .modal-header{
+    padding: 0px;
+  }
+
   .modal-title{
     font-size: 18px !important;
   }
@@ -294,7 +339,7 @@ outline: 0px;
   .prev-btn, .next-btn{
     font-size: 14px !important;
   }
-  .modal-header{
+  .buldupload .modal-header{
     padding-left: 30px !important;
     padding-right: 30px !important;
   }
@@ -352,6 +397,18 @@ outline: 0px;
     
     background-color: #BDBDBD;
     z-index: 1;
+}
+.mobileMenu .dropdown-toggle {
+  background-color: #20776E;
+  width: 127px;
+  height: 40px;
+  font-size: 14px;
+  color: #FFFFFF;
+  font-family: Pop-medium;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
 }
 /* Create Test */
 .mytable.table>thead {
@@ -481,7 +538,7 @@ textarea{
   width: 100%;
 }
 .container-fluid label{
-  margin-top: 30px;
+  /* margin-top: 30px; */
   font: normal normal normal 18px/27px Poppins;
   color: #010D0A;
 }
@@ -493,7 +550,7 @@ textarea{
   padding-left: 20px;
 }
 .third_row label{
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   color: #010D0A;
   text-transform: capitalize;
   text-align: left;
@@ -663,6 +720,6 @@ background-color: #f7f7f700;
 .inside-container-dashboard{
   padding-top: 25px;
   padding-bottom: 25px;
-  padding-left: 25px;
+  padding-left: 0px;
   padding-right: 0px;
 }

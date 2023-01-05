@@ -35,11 +35,7 @@
                             <div class="logo new-logopart"> <img src="assets/images/logo_logo.png" alt="mini-logo"> </div>
                         </div>
                         <div class="d-flex align-items-center gap-5">
-                            <div class="d-flex gap-4">
-                                <div> <a href="#">
-                                        <div class="home-search"> <img class="nav-arrows-1" src="assets/images/home-hover.svg" alt=""> </div>
-                                    </a> </div>
-                            </div>
+                            
                             <div class="grid-new" id="profile-out">
                                 <div class="grid1-new" onclick="profile()">
                                     <div class="profile rounded-circle"> <img src="assets/images/prof-mini.png" alt="profile"> </div>
@@ -63,7 +59,7 @@
             </div>
             <div class="d-flex mobileMenu justify-content-lg-end justify-content-between d-md-none mt-3">
                 <div class="d-flex justify-content-between align-items-center"> <img src="./assets/images/Question_Bank/menu.png" onclick="sidemenu()" id="menu-icon" class="fas fa-solid icon-w fa-bars d-block d-lg-none ms-0">
-                    <h3 class="mb-0">Question Bank</h3>
+                    <h3 class="mb-0">Dashboard</h3>
                 </div>
                 <div class="dropdown"> <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"> Quick links </a>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
@@ -107,11 +103,24 @@
                     </a> </div>
                 <div class="inside-container-dashboard">
                     <div class="d-flex justify-content-between align-items-center mb-5">
-                        <h3 class="mb-0 d-none d-md-block">Question Bank</h3>
-                    </div> <!-- Body Open -->
+                        <h3 class="mb-0 d-none d-md-block">Dashboard</h3>
+                        <div class="mobileMenu d-none d-lg-block ">
+                          <div class="dropdown">
+                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                              Quick links
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                              <li><a class="dropdown-item" href="#">Create Question</a></li>
+                              <li><a class="dropdown-item" href="#">Review Question</a></li>
+                              <li><a class="dropdown-item" href="#">Allot Assesor</a></li>
+                            </ul>
+                          </div>
+                                  
+                        </div>
+                           </div> <!-- Body Open -->
                     <!-- Cards Opens-->
-                    <div class="row">
-                        <div class="col-6 col-md-3"> <a href="#">
+                    <div class="row dash-number">
+                        <div class="col-sm-6  col-md-3 "> <a href="#">
                                 <div class="d-flex justify-content-between testcard gridBox box1 box-card">
                                     <div class="dashboard-content">
                                         <p>TOTAL NO OF QUESTIONS </p>
@@ -120,7 +129,7 @@
                                     <div class="dashboardCard-img border-1 d-flex justify-content-center align-items-center"> <img src="./assets/images/chethan/noun-question-5269588.svg" alt=""> </div>
                                 </div>
                             </a> </div>
-                        <div class="col-6 col-md-3"> <a href="#">
+                        <div class="col-sm-6  col-md-3 "> <a href="#">
                                 <div class="d-flex justify-content-between testcard gridBox box2 box-card">
                                     <div class="dashboard-content">
                                         <p>TOTAL ACTIVE ASSESSMENTS</p>
@@ -129,7 +138,7 @@
                                     <div class="dashboardCard-img border-2 d-flex justify-content-center align-items-center"> <img src="./assets/images/chethan/noun-assesment-4658555.svg" alt=""> </div>
                                 </div>
                             </a> </div>
-                        <div class="col-6 col-md-3"> <a href="#">
+                        <div class="col-sm-6 col-md-3"> <a href="#">
                                 <div class="d-flex justify-content-between testcard gridBox box3 box-card">
                                     <div class="dashboard-content">
                                         <p>TOTAL ASSESSMENTS</p>
@@ -138,7 +147,7 @@
                                     <div class="dashboardCard-img border-3 d-flex justify-content-center align-items-center"> <img src="./assets/images/chethan/noun-certified-3324969.svg" alt=""> </div>
                                 </div>
                             </a> </div>
-                        <div class="col-6 col-md-3"> <a href="#">
+                        <div class="col-sm-6 col-md-3"> <a href="#">
                                 <div class="d-flex justify-content-between testcard gridBox box4 box-card">
                                     <div class="dashboard-content">
                                         <p>TOTAL CANDIDATES</p>
@@ -204,7 +213,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="row g-2 mt-4" style="overflow: hidden;" >
+                    <div class="row g-4 mt-4">
                         <div class="col-lg-4  ">
                           <div class="testcard">
                             <h3 class="chart-headings">Question Bank Status</h3>
@@ -272,7 +281,7 @@
                            <div class="testcard gauge_chart">
                             <h3 class="chart-headings">Assesment Status</h3> 
                             <div class="w-100">
-                              <div id="chartdiv" style="position: relative;top: -50px;"></div>
+                              <div id="chartdiv" style="position: relative;top: -30px;height: 65%;"></div>
                             </div>
                            </div>
                             
@@ -382,6 +391,7 @@
     top: 18px;
     right: 3%;
 }
+
 [role=graphics-symbol] {
   opacity: 0 !important;
   display: none !important;
