@@ -1250,6 +1250,13 @@ position: relative;
 	}
 }
 
+.inputGroups.Psychometric input[type="text"]{
+    margin: 0;
+}
+.inputGroups.Psychometric .errorMsg{
+    left: 6px;
+}
+
 
 
 
@@ -2156,7 +2163,16 @@ position: relative;
         flex-wrap: wrap;
         gap: 20px;
     }
-      
+
+    .selectOptionMcq{
+        background-color: white;
+        border: 1px solid #AAAAAA;
+        height: 50px;
+        font: normal normal normal 16px/25px Pop-normal;
+    }
+    .inputGroups.Psychometric .errorMsg{
+        padding-right:30px;
+    }
     
 }
 
