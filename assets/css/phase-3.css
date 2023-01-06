@@ -1219,7 +1219,18 @@ position: relative;
   }
  
 
- 
+  .inv{display: none;}
+  .selectOptionMcq{
+      background-color: white;
+      border: 1px solid #20776E;
+      height: 42px;
+      border-radius: 4px;
+      box-shadow: 0px 2px 12px #20776e29;
+      font: normal normal normal 14px/25px Pop-normal;
+  }
+  .selectOptionMcq:focus{
+      box-shadow: none;
+  }
 
 
 
@@ -1603,6 +1614,15 @@ position: relative;
     .helpToolTip .mb-0.toolTipText.ChooseComText{
         width: 350px !important;
         height: 52px !important;
+    }
+
+    .selectOptionMcq{
+        background-color: white;
+        border: 1px solid #20776E;
+        height: 52px;
+        border-radius: 4px;
+        box-shadow: 0px 2px 12px #20776e29;
+        font: normal normal normal 16px/25px Pop-normal;
     }
 
 
@@ -2135,18 +2155,7 @@ position: relative;
 
 
 
-.inv{display: none;}
-.selectOptionMcq{
-    background-color: white;
-    border: 1px solid #20776E;
-    height: 42px;
-    border-radius: 4px;
-    box-shadow: 0px 2px 12px #20776e29;
-    font: normal normal normal 14px/25px Pop-normal;
-}
-.selectOptionMcq:focus{
-    box-shadow: none;
-}
+
 
 
 .tabsButton div button.active{
