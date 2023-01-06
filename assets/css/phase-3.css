@@ -2135,7 +2135,18 @@ position: relative;
 
 
 
-
+.inv{display: none;}
+.selectOptionMcq{
+    background-color: white;
+    border: 1px solid #20776E;
+    height: 42px;
+    border-radius: 4px;
+    box-shadow: 0px 2px 12px #20776e29;
+    font: normal normal normal 14px/25px Pop-normal;
+}
+.selectOptionMcq:focus{
+    box-shadow: none;
+}
 
 
 .tabsButton div button.active{
