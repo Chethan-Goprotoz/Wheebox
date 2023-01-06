@@ -1213,6 +1213,10 @@ position: relative;
   .gapOption{
     --bs-gutter-x: 15rem;
   }
+
+  .helpToolTip .toolTipText::-webkit-scrollbar{
+    display: none;
+  }
  
 
  
@@ -2097,7 +2101,7 @@ position: relative;
     .inputGroups .errorMsg {
         left: 12px;
         top: 12px;
-        padding-right: 75px;
+        padding-right: 56px;
     }
     .quesBankTabs .nav-item .nav-link, .quesBankTabs .nav-item .nav-link.active{
         font-size: 16px !important;
@@ -2111,11 +2115,27 @@ position: relative;
     .inputGroups .errorMsg{
         font-size: 13px;
     }
+    .ansRange .d-flex.mobWrap{
+        flex-wrap: wrap;
+        gap: 20px;
+    }
       
     
 }
 
+
 /* responsive end */
+
+
+
+
+
+
+
+
+
+
+
 
 
 .tabsButton div button.active{
