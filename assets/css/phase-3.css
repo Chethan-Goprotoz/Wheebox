@@ -2173,7 +2173,13 @@ position: relative;
     .inputGroups.Psychometric .errorMsg{
         padding-right:30px;
     }
-    
+
+    .manageCompiler table thead{
+        height: 44px;
+    }
+    .compilerTable .table tr td{
+        border-radius: 0;
+    }
 }
 
 
@@ -2181,13 +2187,33 @@ position: relative;
 
 
 
+.compilerTable table thead tr th{
+    color: #000000;
+}
+/* .compilerTable table tbody tr td{
+    color: #404040;
+    font-family: pop-medium;
+} */
+.compilerTable table tbody tr td{
+    font-family: pop-normal;
+}
+.compilerTable .table tr td:first-child{
+    font-family: pop-medium;
+}
+.compilerTable .table tr .form-check-input:focus{
+    box-shadow: none;
+    border: 1px solid rgb(0 0 0 / 42%);
+}
 
-
-
-
-
-
-
+.anchor-dec-ph3{
+    text-decoration: none;
+}
+.anchor-dec-ph3 h5{ 
+    font: normal normal bold 20px/28px Nunito;
+    letter-spacing: 0.24px;
+    color: #00000099;
+    opacity: 1;
+}
 
 
 
