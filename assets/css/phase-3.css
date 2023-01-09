@@ -1982,7 +1982,22 @@ position: relative;
     } */
     .testCaseTable tr td:first-child{
         width: 111px !important;
+        font-size: 16px;
     }
+    .testCaseTable tr td:last-child{
+        font-size: 16px;
+    }
+    .btnEditCase{
+        font-size: 14px;
+        margin-top: 18px;
+    }
+    .testCaseTable.mb-0{
+        margin-top: 30px;
+    }
+    .testCaseCards .row.g-4{
+        --bs-gutter-y: 30px;
+    }
+
     .side1{
         background-color: #FFFFFF;
         padding-top: 55px;
