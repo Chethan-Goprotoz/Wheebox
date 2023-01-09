@@ -2109,7 +2109,7 @@ position: relative;
         font-size: 14px;
     }
     .testCaseCards .pagignationDiv1{
-        margin-top: 5px !important;
+        margin-top: 20px !important;
     }
     .btn.btnDark.create-testBtn{
         margin-right: -6px;
@@ -2251,6 +2251,11 @@ position: relative;
     }
     .manageCompiler .searchInput input{
         background: #f1f1f1 0% 0% no-repeat padding-box;
+    }
+
+    .compilerTable .form-switch .form-check-input{
+        width: 44px;
+        height: 19px;
     }
   
 }
