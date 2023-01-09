@@ -2224,6 +2224,16 @@ position: relative;
     .compilerTable .table tr td{
         border-radius: 0;
     }
+    .searchInput input{
+        width: 329px;
+        height: 48px;
+    }
+    .caseTitle{
+        font-size: 18px;
+    }
+    .searchAfter::before{
+        top: 16px;
+    }
   
 }
 
