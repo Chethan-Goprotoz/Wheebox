@@ -1649,6 +1649,50 @@ position: relative;
         font: normal normal normal 16px/25px Pop-normal;
     }
 
+    .searchInput .searchAfter input{
+        width: 329px;
+        height: 48px;
+        color: #B3B3B3;
+        font-size: 16px;
+    }
+    .searchAfter::before{
+        top: 16px;
+        left: 12px;
+        width: 18px;
+        height: 18px;
+    }
+
+    .testCaseTable tr td:first-child{
+        font-size: 16px;
+        width: 90px;
+        padding-bottom: 9px;
+    }
+    .btnEditCase{
+        margin-top: 21px;
+        font-size: 14px;
+    }
+
+    .testCaseTable{
+        margin-top: 35px;
+    }
+    .testCaseCards1{
+        width: 346px;
+        padding: 26px;
+    }
+    .testCaseCards .row{
+        --bs-gutter-y: 35px;
+        --bs-gutter-x: 31px;
+    }
+    .testCaseTable tr td:last-child{
+        font-size: 16px;
+    }
+    .inside-container-dashboard{
+        margin-top: 25px;
+    }
+    .caseTitle{
+        font-size: 18px;
+    }
+
 
 
    
@@ -2180,6 +2224,7 @@ position: relative;
     .compilerTable .table tr td{
         border-radius: 0;
     }
+  
 }
 
 
