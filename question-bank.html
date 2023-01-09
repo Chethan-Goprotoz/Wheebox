@@ -237,6 +237,7 @@
                                     <select id="SearchDropdown" name="native-select" placeholder="Select Question type"
                                       data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
                                       <option value="5">MCQ</option>
+                                      <option value="">Fill in the Blanks</option>
                                       <option value="2">Subjective</option>
                                       <option value="3">Answer</option>
                                     </select>
@@ -274,7 +275,7 @@
                             </div>
                             <div class="modal-footer">
                               <button type="button" class="btn btnBorder" data-bs-dismiss="modal">Cancel</button>
-                              <a href="question-bank-search-que-1.html"> <button type="button"
+                              <a href="question-bank-review-que.html"> <button type="button"
                                   class="btn btnDark">Submit</button></a>
                             </div>
                           </form>
@@ -335,11 +336,16 @@
                     <div class="col-sm-4 col-md-4">
                       <div class="calendar-container mt-0">
                         <p>Select Question Type</p>
-                        <select id="SearchDropdown" name="native-select" placeholder="Select Question type"
-                          data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
-                          <option value="5">MCQ</option>
-                          <option value="2">Subjective</option>
-                          <option value="3">Answer</option>
+                        <select id="target" class="form-select selectOptionMcq" aria-label="Default select example">
+                          <option value="multiple_choice">MCQ</option>
+                          <option value="fill_in_blanks">Fill in the Blanks</option>
+                          <option value="subjective_question">Subjective</option>
+                          <option value="comparison_question">Comprehension Question</option>
+                          <option value="typting_section">Typing Question</option>
+                          <option value="single_choice">Single Choice Question</option>
+                          <option value="drag_n_drop">Drag Drop Question</option>
+                          <option value="psychometric_que">Psychometric</option>
+                          <option value="video_recording">Video Recording</option>
                         </select>
 
                       </div>
@@ -373,6 +379,7 @@
                 </div>
 
                 <!-- multiple choice -->
+                <div  id="multiple_choice" class="vis">
                 <div class="bg-white p-4 p-md-5 formArea mt-5">
                   <div class="formNote">
                     <div class="">
@@ -483,260 +490,267 @@
                     </form>
                   </div>
                 </div>
+              </div>
                 <!-- end multiple -->
 
                  <!-- Subjective Question section -->
-                 <div class="bg-white p-4 p-md-5 formArea mt-5">
-                  <div class="formNote">
-                    <div class="">
-                      <div class="d-flex justify-content-between align-items-center mb-5">
-                        <h3 class="mb-0">Subjective Question</h3>
-                        <a href=""><img src="./assets/images/Question_Bank/delete.png" alt="" width="18"></a>
-                      </div>
-                      <textarea class="form-control bg-white pt-4 ps-4 border-success1 border-bottom-0"
-                        id="exampleFormControlTextarea1" rows="6"
-                        placeholder="Please type the Question text in this area." spellcheck="false"></textarea>
-                      <div class="controlBtn border-success1 bg-white border-top-0">
-                        <button type="button" class="btn"><img src="assets/images/Question_Bank/noun-bold-3871803.svg"
-                           width="14" height="18" alt=""></button>
-                        <button type="button" class="btn"><img src="assets/images/Question_Bank/noun-italic-4926333 (1).svg"
-                            width="12" height="18" alt=""></button>
-                        <button type="button" class="btn"><img
-                           width="12" height="18" src="assets/images/Question_Bank/noun-underline-3871798.svg" alt=""></button>
-                       
-                        <button type="button" class="btn"><img
-                            src="assets/images/Question_Bank/noun-text-colour-4414429.svg" height="17" alt=""></button>
-                            <button type="button" class="btn"><img
-                              src="assets/images/Question_Bank/Line 1197.svg" width="12" height="18" alt=""></button>
+                <div id="subjective_question" class="d-none">
+                  <div class="bg-white p-4 p-md-5 formArea mt-5">
+                    <div class="formNote">
+                      <div class="">
+                        <div class="d-flex justify-content-between align-items-center mb-5">
+                          <h3 class="mb-0">Subjective Question</h3>
+                          <a href=""><img src="./assets/images/Question_Bank/delete.png" alt="" width="18"></a>
+                        </div>
+                        <textarea class="form-control bg-white pt-4 ps-4 border-success1 border-bottom-0"
+                          id="exampleFormControlTextarea1" rows="6"
+                          placeholder="Please type the Question text in this area." spellcheck="false"></textarea>
+                        <div class="controlBtn border-success1 bg-white border-top-0">
+                          <button type="button" class="btn"><img src="assets/images/Question_Bank/noun-bold-3871803.svg"
+                             width="14" height="18" alt=""></button>
+                          <button type="button" class="btn"><img src="assets/images/Question_Bank/noun-italic-4926333 (1).svg"
+                              width="12" height="18" alt=""></button>
+                          <button type="button" class="btn"><img
+                             width="12" height="18" src="assets/images/Question_Bank/noun-underline-3871798.svg" alt=""></button>
+                         
+                          <button type="button" class="btn"><img
+                              src="assets/images/Question_Bank/noun-text-colour-4414429.svg" height="17" alt=""></button>
                               <button type="button" class="btn"><img
-                                src="assets/images/Question_Bank/noun-align-center-3871867.svg" width="16" height="17" alt=""></button>
+                                src="assets/images/Question_Bank/Line 1197.svg" width="12" height="18" alt=""></button>
                                 <button type="button" class="btn"><img
-                                  src="assets/images/Question_Bank/noun-align-left-3871870.svg" width="16" height="17" alt=""></button>
+                                  src="assets/images/Question_Bank/noun-align-center-3871867.svg" width="16" height="17" alt=""></button>
                                   <button type="button" class="btn"><img
-                                    src="assets/images/Question_Bank/noun-align-right-3871865.svg" width="16" height="17" alt=""></button>
+                                    src="assets/images/Question_Bank/noun-align-left-3871870.svg" width="16" height="17" alt=""></button>
                                     <button type="button" class="btn"><img
-                                      src="assets/images/Question_Bank/Line 1197.svg" width="12" height="17" alt=""></button>
+                                      src="assets/images/Question_Bank/noun-align-right-3871865.svg" width="16" height="17" alt=""></button>
                                       <button type="button" class="btn"><img
-                                        src="assets/images/Question_Bank/noun-bullet-list-3871822.svg" width="20" height="17" alt=""></button>
+                                        src="assets/images/Question_Bank/Line 1197.svg" width="12" height="17" alt=""></button>
                                         <button type="button" class="btn"><img
-                                          src="assets/images/Question_Bank/noun-number-list-3871818.svg" width="20" height="17" alt=""></button>
-
-                                        <button type="button" class="btn"><img
-                                          src="assets/images/Question_Bank/noun-sub-bullet-3031236.svg" width="18" height="17" alt=""></button>
-
+                                          src="assets/images/Question_Bank/noun-bullet-list-3871822.svg" width="20" height="17" alt=""></button>
+                                          <button type="button" class="btn"><img
+                                            src="assets/images/Question_Bank/noun-number-list-3871818.svg" width="20" height="17" alt=""></button>
+  
+                                          <button type="button" class="btn"><img
+                                            src="assets/images/Question_Bank/noun-sub-bullet-3031236.svg" width="18" height="17" alt=""></button>
+  
+                        </div>
                       </div>
                     </div>
-                  </div>
-                 </div>
+                   </div>
+                </div>  
                   <!-- end -->
 
                  <!-- comparision question -->
-
-                <div class="bg-white p-4 p-md-5 formArea mt-5">
-                  <div class="formNote">
-                    <div class="">
-                      <div class="d-flex justify-content-between align-items-center mb-5">
-                        <h3 class="mb-0">Comprehension Question</h3>
-                        <a href=""><img src="./assets/images/Question_Bank/delete.png" alt="" width="18"></a>
-                      </div>
-                      <textarea class="form-control bg-white pt-4 ps-4 border-success1 border-bottom-0"
-                        id="exampleFormControlTextarea1" rows="6"
-                        placeholder="Please type the Question text in this area." spellcheck="false"></textarea>
-                      <div class="controlBtn border-success1 bg-white border-top-0">
-                        <button type="button" class="btn"><img src="assets/images/Question_Bank/noun-bold-3871803.svg"
-                           width="14" height="18" alt=""></button>
-                        <button type="button" class="btn"><img src="assets/images/Question_Bank/noun-italic-4926333 (1).svg"
-                            width="12" height="18" alt=""></button>
-                        <button type="button" class="btn"><img
-                           width="12" height="18" src="assets/images/Question_Bank/noun-underline-3871798.svg" alt=""></button>
-                       
-                        <button type="button" class="btn"><img
-                            src="assets/images/Question_Bank/noun-text-colour-4414429.svg" height="17" alt=""></button>
-                            <button type="button" class="btn"><img
-                              src="assets/images/Question_Bank/Line 1197.svg" width="12" height="18" alt=""></button>
+                <div id="comparison_question" class="d-none">
+                  <div class="bg-white p-4 p-md-5 formArea mt-5">
+                    <div class="formNote">
+                      <div class="">
+                        <div class="d-flex justify-content-between align-items-center mb-5">
+                          <h3 class="mb-0">Comprehension Question</h3>
+                          <a href=""><img src="./assets/images/Question_Bank/delete.png" alt="" width="18"></a>
+                        </div>
+                        <textarea class="form-control bg-white pt-4 ps-4 border-success1 border-bottom-0"
+                          id="exampleFormControlTextarea1" rows="6"
+                          placeholder="Please type the Question text in this area." spellcheck="false"></textarea>
+                        <div class="controlBtn border-success1 bg-white border-top-0">
+                          <button type="button" class="btn"><img src="assets/images/Question_Bank/noun-bold-3871803.svg"
+                             width="14" height="18" alt=""></button>
+                          <button type="button" class="btn"><img src="assets/images/Question_Bank/noun-italic-4926333 (1).svg"
+                              width="12" height="18" alt=""></button>
+                          <button type="button" class="btn"><img
+                             width="12" height="18" src="assets/images/Question_Bank/noun-underline-3871798.svg" alt=""></button>
+                         
+                          <button type="button" class="btn"><img
+                              src="assets/images/Question_Bank/noun-text-colour-4414429.svg" height="17" alt=""></button>
                               <button type="button" class="btn"><img
-                                src="assets/images/Question_Bank/noun-align-center-3871867.svg" width="16" height="17" alt=""></button>
+                                src="assets/images/Question_Bank/Line 1197.svg" width="12" height="18" alt=""></button>
                                 <button type="button" class="btn"><img
-                                  src="assets/images/Question_Bank/noun-align-left-3871870.svg" width="16" height="17" alt=""></button>
+                                  src="assets/images/Question_Bank/noun-align-center-3871867.svg" width="16" height="17" alt=""></button>
                                   <button type="button" class="btn"><img
-                                    src="assets/images/Question_Bank/noun-align-right-3871865.svg" width="16" height="17" alt=""></button>
+                                    src="assets/images/Question_Bank/noun-align-left-3871870.svg" width="16" height="17" alt=""></button>
                                     <button type="button" class="btn"><img
-                                      src="assets/images/Question_Bank/Line 1197.svg" width="12" height="17" alt=""></button>
+                                      src="assets/images/Question_Bank/noun-align-right-3871865.svg" width="16" height="17" alt=""></button>
                                       <button type="button" class="btn"><img
-                                        src="assets/images/Question_Bank/noun-bullet-list-3871822.svg" width="20" height="17" alt=""></button>
+                                        src="assets/images/Question_Bank/Line 1197.svg" width="12" height="17" alt=""></button>
                                         <button type="button" class="btn"><img
-                                          src="assets/images/Question_Bank/noun-number-list-3871818.svg" width="20" height="17" alt=""></button>
-
-                                        <button type="button" class="btn"><img
-                                          src="assets/images/Question_Bank/noun-sub-bullet-3031236.svg" width="18" height="17" alt=""></button>
-
-                                          
-                      </div>
-                    </div>
-
-                    <!--  start-->
-                    <div class="teaxtArea2 mt-5">
-                      <div class="d-flex justify-content-between align-items-center mb-5">
-                        <div class="d-flex justify-content-between align-items-center">
-                          <h3 class="mb-0 qnNum">Question Number :</h3>
-                          <h3 class="mb-0 qnNum2">1</h3>
-                          <a href="" class="ms-5 mt-1"><img src="./assets/images/Question_Bank/Add +.svg" alt=""></a>
+                                          src="assets/images/Question_Bank/noun-bullet-list-3871822.svg" width="20" height="17" alt=""></button>
+                                          <button type="button" class="btn"><img
+                                            src="assets/images/Question_Bank/noun-number-list-3871818.svg" width="20" height="17" alt=""></button>
+  
+                                          <button type="button" class="btn"><img
+                                            src="assets/images/Question_Bank/noun-sub-bullet-3031236.svg" width="18" height="17" alt=""></button>
+  
+                                            
                         </div>
-                        <a href=""><img src="./assets/images/Question_Bank/delete.png" alt="" width="18"></a>
                       </div>
-                      <textarea class="form-control bg-white pt-4 ps-4 border-success1 border-bottom-0"
-                        id="exampleFormControlTextarea1" rows="6"
-                        placeholder="Please type the Question text in this area." spellcheck="false"></textarea>
-                      <div class="controlBtn border-success1 bg-white border-top-0">
-                        <button type="button" class="btn"><img src="assets/images/Question_Bank/noun-bold-3871803.svg"
-                           width="14" height="18" alt=""></button>
-                        <button type="button" class="btn"><img src="assets/images/Question_Bank/noun-italic-4926333 (1).svg"
-                            width="12" height="18" alt=""></button>
-                        <button type="button" class="btn"><img
-                           width="12" height="18" src="assets/images/Question_Bank/noun-underline-3871798.svg" alt=""></button>
-                       
-                        <button type="button" class="btn"><img
-                            src="assets/images/Question_Bank/noun-text-colour-4414429.svg" height="17" alt=""></button>
-                            <button type="button" class="btn"><img
-                              src="assets/images/Question_Bank/Line 1197.svg" width="12" height="18" alt=""></button>
+  
+                      <!--  start-->
+                      <div class="teaxtArea2 mt-5">
+                        <div class="d-flex justify-content-between align-items-center mb-5">
+                          <div class="d-flex justify-content-between align-items-center">
+                            <h3 class="mb-0 qnNum">Question Number :</h3>
+                            <h3 class="mb-0 qnNum2">1</h3>
+                            <a href="" class="ms-5 mt-1"><img src="./assets/images/Question_Bank/Add +.svg" alt=""></a>
+                          </div>
+                          <a href=""><img src="./assets/images/Question_Bank/delete.png" alt="" width="18"></a>
+                        </div>
+                        <textarea class="form-control bg-white pt-4 ps-4 border-success1 border-bottom-0"
+                          id="exampleFormControlTextarea1" rows="6"
+                          placeholder="Please type the Question text in this area." spellcheck="false"></textarea>
+                        <div class="controlBtn border-success1 bg-white border-top-0">
+                          <button type="button" class="btn"><img src="assets/images/Question_Bank/noun-bold-3871803.svg"
+                             width="14" height="18" alt=""></button>
+                          <button type="button" class="btn"><img src="assets/images/Question_Bank/noun-italic-4926333 (1).svg"
+                              width="12" height="18" alt=""></button>
+                          <button type="button" class="btn"><img
+                             width="12" height="18" src="assets/images/Question_Bank/noun-underline-3871798.svg" alt=""></button>
+                         
+                          <button type="button" class="btn"><img
+                              src="assets/images/Question_Bank/noun-text-colour-4414429.svg" height="17" alt=""></button>
                               <button type="button" class="btn"><img
-                                src="assets/images/Question_Bank/noun-align-center-3871867.svg" width="16" height="17" alt=""></button>
+                                src="assets/images/Question_Bank/Line 1197.svg" width="12" height="18" alt=""></button>
                                 <button type="button" class="btn"><img
-                                  src="assets/images/Question_Bank/noun-align-left-3871870.svg" width="16" height="17" alt=""></button>
+                                  src="assets/images/Question_Bank/noun-align-center-3871867.svg" width="16" height="17" alt=""></button>
                                   <button type="button" class="btn"><img
-                                    src="assets/images/Question_Bank/noun-align-right-3871865.svg" width="16" height="17" alt=""></button>
+                                    src="assets/images/Question_Bank/noun-align-left-3871870.svg" width="16" height="17" alt=""></button>
                                     <button type="button" class="btn"><img
-                                      src="assets/images/Question_Bank/Line 1197.svg" width="12" height="17" alt=""></button>
+                                      src="assets/images/Question_Bank/noun-align-right-3871865.svg" width="16" height="17" alt=""></button>
                                       <button type="button" class="btn"><img
-                                        src="assets/images/Question_Bank/noun-bullet-list-3871822.svg" width="20" height="17" alt=""></button>
+                                        src="assets/images/Question_Bank/Line 1197.svg" width="12" height="17" alt=""></button>
                                         <button type="button" class="btn"><img
-                                          src="assets/images/Question_Bank/noun-number-list-3871818.svg" width="20" height="17" alt=""></button>
-
-                                        <button type="button" class="btn"><img
-                                          src="assets/images/Question_Bank/noun-sub-bullet-3031236.svg" width="18" height="17" alt=""></button>
-
-                                          
+                                          src="assets/images/Question_Bank/noun-bullet-list-3871822.svg" width="20" height="17" alt=""></button>
+                                          <button type="button" class="btn"><img
+                                            src="assets/images/Question_Bank/noun-number-list-3871818.svg" width="20" height="17" alt=""></button>
+  
+                                          <button type="button" class="btn"><img
+                                            src="assets/images/Question_Bank/noun-sub-bullet-3031236.svg" width="18" height="17" alt=""></button>
+  
+                                            
+                        </div>
                       </div>
+                      <!-- end -->
                     </div>
-                    <!-- end -->
-                  </div>
-                  <div class="inputGroups">
-                    <form action="">
-                      <div class="d-flex justify-content-between align-items-center pt-4">
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <div class="inputGroups">
+                      <form action="">
+                        <div class="d-flex justify-content-between align-items-center pt-4">
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                          </div>
+                          <div class="w-100">
+                            <input type="text" class="form-control"
+                              placeholder="Please type the option text in this area." required>
+                            <p class="mb-0 errorMsg d-none">Please select the correct answer</p>
+                          </div>
+                          <div>
+                            <a href=""><img src="./assets/images/Question_Bank/crosx.png" alt=""></a>
+                          </div>
                         </div>
-                        <div class="w-100">
-                          <input type="text" class="form-control"
-                            placeholder="Please type the option text in this area." required>
-                          <p class="mb-0 errorMsg d-none">Please select the correct answer</p>
+  
+                        <div class="d-flex justify-content-between align-items-center pt-4">
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                          </div>
+                          <div class="w-100">
+                            <input type="text" class="form-control errorRed"
+                              placeholder="Please type the option text in this area.">
+                            <p class="mb-0 errorMsg">Please select the correct answer</p>
+                          </div>
+                          <div>
+                            <a href=""><img src="./assets/images/Question_Bank/crosx.png" alt=""></a>
+                          </div>
                         </div>
-                        <div>
-                          <a href=""><img src="./assets/images/Question_Bank/crosx.png" alt=""></a>
+                        <div class="d-flex justify-content-between align-items-center pt-4">
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+  
+                          </div>
+                          <div class="w-100">
+                            <input type="text" class="form-control"
+                              placeholder="Please type the option text in this area.">
+                            <p class="mb-0 errorMsg d-none">Please select the correct answer</p>
+                          </div>
+                          <div>
+                            <a href=""><img src="./assets/images/Question_Bank/crosx.png" alt=""></a>
+                          </div>
                         </div>
-                      </div>
-
-                      <div class="d-flex justify-content-between align-items-center pt-4">
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <div class="d-flex justify-content-between align-items-center pt-4">
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                          </div>
+                          <div class="w-100">
+                            <input type="text" class="form-control"
+                              placeholder="Please type the option text in this area.">
+                            <p class="mb-0 errorMsg d-none">Please select the correct answer</p>
+                          </div>
+                          <div>
+                            <a href=""><img src="./assets/images/Question_Bank/crosx.png" alt=""></a>
+                          </div>
                         </div>
-                        <div class="w-100">
-                          <input type="text" class="form-control errorRed"
-                            placeholder="Please type the option text in this area.">
-                          <p class="mb-0 errorMsg">Please select the correct answer</p>
+  
+                        <div class="d-flex justify-content-between align-items-center pt-5 addOption">
+                          <div>
+                            <a href="">Add Hint ?</a>
+                          </div>
+                          <div>
+                            <a href=""><img src="./assets/images/Question_Bank/add-plus.png" alt="" class="me-3"> Add More
+                              Option</a>
+                          </div>
                         </div>
-                        <div>
-                          <a href=""><img src="./assets/images/Question_Bank/crosx.png" alt=""></a>
-                        </div>
-                      </div>
-                      <div class="d-flex justify-content-between align-items-center pt-4">
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-
-                        </div>
-                        <div class="w-100">
-                          <input type="text" class="form-control"
-                            placeholder="Please type the option text in this area.">
-                          <p class="mb-0 errorMsg d-none">Please select the correct answer</p>
-                        </div>
-                        <div>
-                          <a href=""><img src="./assets/images/Question_Bank/crosx.png" alt=""></a>
-                        </div>
-                      </div>
-                      <div class="d-flex justify-content-between align-items-center pt-4">
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                        </div>
-                        <div class="w-100">
-                          <input type="text" class="form-control"
-                            placeholder="Please type the option text in this area.">
-                          <p class="mb-0 errorMsg d-none">Please select the correct answer</p>
-                        </div>
-                        <div>
-                          <a href=""><img src="./assets/images/Question_Bank/crosx.png" alt=""></a>
-                        </div>
-                      </div>
-
-                      <div class="d-flex justify-content-between align-items-center pt-5 addOption">
-                        <div>
-                          <a href="">Add Hint ?</a>
-                        </div>
-                        <div>
-                          <a href=""><img src="./assets/images/Question_Bank/add-plus.png" alt="" class="me-3"> Add More
-                            Option</a>
-                        </div>
-                      </div>
-                    </form>
+                      </form>
+                    </div>
                   </div>
                 </div>
                  <!-- comparision end -->
 
                  <!-- typing section -->
-                 <div class="bg-white p-4 p-md-5 formArea mt-5">
-                  <div class="formNote">
-                    <div class="">
-                      <div class="d-flex justify-content-between align-items-center mb-5">
-                        <h3 class="mb-0">Typing Question</h3>
-                        <a href=""><img src="./assets/images/Question_Bank/delete.png" alt="" width="18"></a>
-                      </div>
-                      <textarea class="form-control bg-white pt-4 ps-4 border-success1 border-bottom-0"
-                        id="exampleFormControlTextarea1" rows="6"
-                        placeholder="Please type the Question text in this area." spellcheck="false"></textarea>
-                      <div class="controlBtn border-success1 bg-white border-top-0">
-                        <button type="button" class="btn"><img src="assets/images/Question_Bank/noun-bold-3871803.svg"
-                           width="14" height="18" alt=""></button>
-                        <button type="button" class="btn"><img src="assets/images/Question_Bank/noun-italic-4926333 (1).svg"
-                            width="12" height="18" alt=""></button>
-                        <button type="button" class="btn"><img
-                           width="12" height="18" src="assets/images/Question_Bank/noun-underline-3871798.svg" alt=""></button>
-                       
-                        <button type="button" class="btn"><img
-                            src="assets/images/Question_Bank/noun-text-colour-4414429.svg" height="17" alt=""></button>
-                            <button type="button" class="btn"><img
-                              src="assets/images/Question_Bank/Line 1197.svg" width="12" height="18" alt=""></button>
+                <div id="typting_section" class="d-none">
+                  <div class="bg-white p-4 p-md-5 formArea mt-5">
+                    <div class="formNote">
+                      <div class="">
+                        <div class="d-flex justify-content-between align-items-center mb-5">
+                          <h3 class="mb-0">Typing Question</h3>
+                          <a href=""><img src="./assets/images/Question_Bank/delete.png" alt="" width="18"></a>
+                        </div>
+                        <textarea class="form-control bg-white pt-4 ps-4 border-success1 border-bottom-0"
+                          id="exampleFormControlTextarea1" rows="6"
+                          placeholder="Please type the Question text in this area." spellcheck="false"></textarea>
+                        <div class="controlBtn border-success1 bg-white border-top-0">
+                          <button type="button" class="btn"><img src="assets/images/Question_Bank/noun-bold-3871803.svg"
+                             width="14" height="18" alt=""></button>
+                          <button type="button" class="btn"><img src="assets/images/Question_Bank/noun-italic-4926333 (1).svg"
+                              width="12" height="18" alt=""></button>
+                          <button type="button" class="btn"><img
+                             width="12" height="18" src="assets/images/Question_Bank/noun-underline-3871798.svg" alt=""></button>
+                         
+                          <button type="button" class="btn"><img
+                              src="assets/images/Question_Bank/noun-text-colour-4414429.svg" height="17" alt=""></button>
                               <button type="button" class="btn"><img
-                                src="assets/images/Question_Bank/noun-align-center-3871867.svg" width="16" height="17" alt=""></button>
+                                src="assets/images/Question_Bank/Line 1197.svg" width="12" height="18" alt=""></button>
                                 <button type="button" class="btn"><img
-                                  src="assets/images/Question_Bank/noun-align-left-3871870.svg" width="16" height="17" alt=""></button>
+                                  src="assets/images/Question_Bank/noun-align-center-3871867.svg" width="16" height="17" alt=""></button>
                                   <button type="button" class="btn"><img
-                                    src="assets/images/Question_Bank/noun-align-right-3871865.svg" width="16" height="17" alt=""></button>
+                                    src="assets/images/Question_Bank/noun-align-left-3871870.svg" width="16" height="17" alt=""></button>
                                     <button type="button" class="btn"><img
-                                      src="assets/images/Question_Bank/Line 1197.svg" width="12" height="17" alt=""></button>
+                                      src="assets/images/Question_Bank/noun-align-right-3871865.svg" width="16" height="17" alt=""></button>
                                       <button type="button" class="btn"><img
-                                        src="assets/images/Question_Bank/noun-bullet-list-3871822.svg" width="20" height="17" alt=""></button>
+                                        src="assets/images/Question_Bank/Line 1197.svg" width="12" height="17" alt=""></button>
                                         <button type="button" class="btn"><img
-                                          src="assets/images/Question_Bank/noun-number-list-3871818.svg" width="20" height="17" alt=""></button>
-
-                                        <button type="button" class="btn"><img
-                                          src="assets/images/Question_Bank/noun-sub-bullet-3031236.svg" width="18" height="17" alt=""></button>
-
+                                          src="assets/images/Question_Bank/noun-bullet-list-3871822.svg" width="20" height="17" alt=""></button>
+                                          <button type="button" class="btn"><img
+                                            src="assets/images/Question_Bank/noun-number-list-3871818.svg" width="20" height="17" alt=""></button>
+  
+                                          <button type="button" class="btn"><img
+                                            src="assets/images/Question_Bank/noun-sub-bullet-3031236.svg" width="18" height="17" alt=""></button>
+  
+                        </div>
                       </div>
                     </div>
-                  </div>
-                 </div>
+                   </div>
+                </div>
                  <!-- tyoing end -->
 
                   <!-- single choice ques -->
+                   <div id="single_choice" class="d-none">
                     <div class="bg-white p-4 p-md-5 formArea mt-5">
                       <div class="formNote">
                         <div class="">
@@ -847,9 +861,11 @@
                         </form>
                       </div>
                     </div>
+                   </div>
                   <!-- single choice end -->
 
                   <!-- video recording que -->
+                  <div id="video_recording" class="d-none">
                   <div class="bg-white p-4 p-md-5 formArea mt-5">
                     <div class="formNote">
                       <div class="">
@@ -911,9 +927,11 @@
                       </div>
                     </div>
                   </div>
+                </div>
                   <!-- video end -->
 
                   <!-- fill in the blanks Area -->
+                  <div id="fill_in_blanks" class="d-none ">
                   <div class="bg-white p-4 p-md-5 formArea mt-5">
                     <div class="formNote">
                       <div class="">
@@ -955,7 +973,7 @@
                         </div>
 
                         <div class="ansRange">
-                         <div class="d-flex justify-content-between align-items-start">
+                         <div class="d-flex mobWrap justify-content-between align-items-start">
                           <div>
                             <p class="mb-0">Assign Answer Range</p>
                             <div class="d-flex justify-content-between align-items-center">
@@ -1024,13 +1042,15 @@
                       </div>
                     </div>
                   </div>
+                </div>
 
                   <!-- fill in end -->
 
 
 
                   <!-- Psychometric Question -->
-                  <div class="bg-white p-4 p-md-5 formArea mt-5">
+                  <div id="psychometric_que" class="d-none">
+                    <div class="bg-white p-4 p-md-5 formArea mt-5">
                     <div class="formNote">
                       <div class="">
                         <div class="d-flex justify-content-between align-items-center mb-5">
@@ -1071,12 +1091,12 @@
                         </div>
                       </div>
                     </div>
-                    <div class="inputGroups">
+                    <div class="inputGroups Psychometric">
                       <form action="">
                         <div class="d-flex justify-content-between align-items-center pt-4">
-                          <div class="form-check">
+                          <!-- <div class="form-check">
                             <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                          </div>
+                          </div> -->
                           <div class="w-100 d-flex justify-content-between align-items-center">
                             <div class="w-75">
                               <input type="text" class="form-control"
@@ -1094,9 +1114,9 @@
                         </div>
   
                         <div class="d-flex justify-content-between align-items-center pt-4">
-                          <div class="form-check">
+                          <!-- <div class="form-check">
                             <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                          </div>
+                          </div> -->
                           <div class="w-100 d-flex justify-content-between align-items-center">
                             <div class="w-75">
                               <input type="text" class="form-control errorRed"
@@ -1115,10 +1135,10 @@
                           </div>
                         </div>
                         <div class="d-flex justify-content-between align-items-center pt-4">
-                          <div class="form-check">
+                          <!-- <div class="form-check">
                             <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
   
-                          </div>
+                          </div> -->
                           <div class="w-100 d-flex justify-content-between align-items-center">
                             <div class="w-75">
                               <input type="text" class="form-control"
@@ -1135,9 +1155,9 @@
                           </div>
                         </div>
                         <div class="d-flex justify-content-between align-items-center pt-4">
-                          <div class="form-check">
+                          <!-- <div class="form-check">
                             <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                          </div>
+                          </div> -->
                           <div class="w-100 d-flex justify-content-between align-items-center">
                             <div class="w-75">
                               <input type="text" class="form-control"
@@ -1165,10 +1185,12 @@
                         </div>
                       </form>
                     </div>
+                    </div>
                   </div>
                   <!--  end Psychometric Question-->
 
                   <!-- drag n drop -->
+                  <div id="drag_n_drop" class="d-none">
                   <div class="bg-white p-4 p-md-5 formArea mt-5">
                     <div class="formNote">
                       <div class="">
@@ -1251,8 +1273,8 @@
                       </form>
                     </div>
                   </div>
+                  </div>
                   <!-- end -->
-
 
                 <div class="footerBtn mt-5 d-flex justify-content-between align-items-center">
                   <div>
@@ -1278,13 +1300,119 @@
                       </a>
                     </div>
                     <div
-                      class="filter-container filter-container-shadow w-auto ps-3 pe-3 d-lg-flex d-flex justify-content-center align-items-center">
-                      <a href="question-bank-search-que-1.html">
+                      class="filter-container filter-container-shadow w-auto ps-3 pe-3 d-lg-flex d-flex justify-content-center align-items-center"  data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                      <a href="#">
                         <p>Review Questions <img src="./assets/images/Question_Bank/Review Questions.svg" class="ms-2"
                             alt=""></p>
                       </a>
                     </div>
 
+
+                      <!-- Modal review question -->
+                      <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                      aria-hidden="true">
+                      <div class="modal-dialog modal-lg modal-xl modal-dialog-centered reviewQuesModal">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Search Question</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <form action="" method="post">
+                            <div class="modal-body p-4 pt-5 pb-5 p-md-5 ms-4 ms-md-5 me-md-5 me-4">
+                              <div class="row gx-5 gy-4">
+                                <div class="col-sm-4 col-md-6 mt-0">
+                                  <div class="calendar-container mt-0">
+                                    <p>Select Subject</p>
+                                    <select id="SearchDropdown" name="subject-select" placeholder="Select Subject Here"
+                                      data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
+                                      <option value="5">English</option>
+                                      <option value="1">Hindi</option>
+                                      <option value="2">Maths</option>
+                                      <option value="3">Physics</option>
+                                      <option value="4">Chemistry</option>
+                                    </select>
+
+                                  </div>
+                                </div>
+                                <div class="col-sm-4 col-md-6 mt-md-0">
+                                  <div class="calendar-container mt-0 mt-md-0">
+                                    <p>Select Topic</p>
+                                    <select id="SearchDropdown" name="topic-select" placeholder="Select Topic Here"
+                                      data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
+                                      <option value="5">Grammer</option>
+                                      <option value="1">Tense</option>
+                                      <option value="2">Passage</option>
+                                      <option value="3">Story</option>
+                                      <option value="4">Poetry</option>
+                                    </select>
+
+                                  </div>
+                                </div>
+                                <div class="col-sm-4 col-md-6">
+                                  <div class="calendar-container mt-0">
+                                    <p>Select Subtopics</p>
+                                    <select id="SearchDropdown" name="native-select" placeholder="Select Subtopic Here"
+                                      data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
+                                      <option value="5">Tenses</option>
+                                      <option value="2">Passage</option>
+                                      <option value="3">Story</option>
+                                      <option value="4">Poetry</option>
+                                    </select>
+
+                                  </div>
+                                </div>
+                                <div class="col-sm-4 col-md-6">
+                                  <div class="calendar-container mt-0">
+                                    <p>Select Question Type</p>
+                                    <select id="SearchDropdown" name="native-select" placeholder="Select Question type"
+                                      data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
+                                      <option value="5">MCQ</option>
+                                      <option value="">Fill in the Blanks</option>
+                                      <option value="2">Subjective</option>
+                                      <option value="3">Answer</option>
+                                    </select>
+
+                                  </div>
+                                </div>
+                                <div class="col-sm-4 col-md-6">
+                                  <div class="calendar-container mt-0">
+                                    <p>Select Difficulty Level</p>
+                                    <select id="SearchDropdown" name="native-select"
+                                      placeholder="Select Difficulty Level" data-search="true"
+                                      data-silent-initial-value-set="true" class="searchdropdown">
+                                      <option value="5">Easy</option>
+                                      <option value="2">Moderate</option>
+                                      <option value="3">Hard</option>
+
+                                    </select>
+
+                                  </div>
+                                </div>
+                                <div class="col-sm-4 col-md-6">
+                                  <div class="calendar-container mt-0">
+                                    <p>Select Question Status</p>
+                                    <select id="SearchDropdown" name="native-select"
+                                      placeholder="Select Question Status" data-search="true"
+                                      data-silent-initial-value-set="true" class="searchdropdown">
+                                      <option value="5">Done</option>
+                                      <option value="2">Pending</option>
+                                      <option value="3">Working</option>
+                                    </select>
+
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btnBorder" data-bs-dismiss="modal">Cancel</button>
+                              <a href="question-bank-search-que-1.html"> <button type="button"
+                                  class="btn btnDark">Submit</button></a>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- modal end  review que end-->
                   </div>
                 </div>
                 <div class="selectDropdown p-5 bg-light1 p-4 p-md-5">
@@ -1910,6 +2038,24 @@
     then close all select boxes:*/
     document.addEventListener("click", closeAllSelect);
     </script>
+
+
+<!-- select option mcq -->
+<script>
+  document
+      .getElementById('target')
+      .addEventListener('change', function () {
+          'use strict';
+          var vis = document.querySelector('.vis'),   
+              target = document.getElementById(this.value);
+          if (vis !== null) {
+              vis.className = 'inv';
+          }
+          if (target !== null ) {
+              target.className = 'vis';
+          }
+  });
+</script>
 
 </body>
 

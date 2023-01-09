@@ -1213,10 +1213,49 @@ position: relative;
   .gapOption{
     --bs-gutter-x: 15rem;
   }
+
+  .helpToolTip .toolTipText::-webkit-scrollbar{
+    display: none;
+  }
  
 
- 
+  .inv{display: none;}
+  .selectOptionMcq{
+      background-color: white;
+      border: 1px solid #20776E;
+      height: 42px;
+      border-radius: 4px;
+      box-shadow: 0px 2px 12px #20776e29;
+      font: normal normal normal 14px/25px Pop-normal;
+  }
+  .selectOptionMcq:focus{
+      box-shadow: none;
+  }
 
+
+  .vis {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 0.7s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.inputGroups.Psychometric input[type="text"]{
+    margin: 0;
+}
+.inputGroups.Psychometric .errorMsg{
+    left: 6px;
+}
 
 
 
@@ -1601,6 +1640,59 @@ position: relative;
         height: 52px !important;
     }
 
+    .selectOptionMcq{
+        background-color: white;
+        border: 1px solid #20776E;
+        height: 52px;
+        border-radius: 4px;
+        box-shadow: 0px 2px 12px #20776e29;
+        font: normal normal normal 16px/25px Pop-normal;
+    }
+
+    .searchInput .searchAfter input{
+        width: 329px;
+        height: 48px;
+        color: #B3B3B3;
+        font-size: 16px;
+    }
+    .searchAfter::before{
+        top: 16px;
+        left: 12px;
+        width: 18px;
+        height: 18px;
+    }
+
+    .testCaseTable tr td:first-child{
+        font-size: 16px;
+        width: 90px;
+        padding-bottom: 9px;
+    }
+    .btnEditCase{
+        margin-top: 21px;
+        font-size: 14px;
+    }
+
+    .testCaseTable{
+        margin-top: 35px;
+    }
+    .testCaseCards1{
+        width: 346px;
+        padding: 26px;
+    }
+    .testCaseCards .row{
+        --bs-gutter-y: 35px;
+        --bs-gutter-x: 31px;
+    }
+    .testCaseTable tr td:last-child{
+        font-size: 16px;
+    }
+    .inside-container-dashboard{
+        margin-top: 25px;
+    }
+    .caseTitle{
+        font-size: 18px;
+    }
+
 
 
    
@@ -1845,9 +1937,9 @@ position: relative;
         border-top-left-radius:10px;
         border-bottom-left-radius: 10px;
     }
-    .searchInput.searchInput2 {
+    /* .searchInput.searchInput2 {
         display: none !important;
-    }
+    } */
     .searchFilterTag .filterDiv{
         flex-wrap: wrap;
     }
@@ -1862,7 +1954,6 @@ position: relative;
     }
 
     .d-flex.accHead h6:last-child{
-        width: 90%;
         margin: auto;
     }
     .d-flex.accHead{
@@ -1890,7 +1981,22 @@ position: relative;
     } */
     .testCaseTable tr td:first-child{
         width: 111px !important;
+        font-size: 16px;
     }
+    .testCaseTable tr td:last-child{
+        font-size: 16px;
+    }
+    .btnEditCase{
+        font-size: 14px;
+        margin-top: 18px;
+    }
+    .testCaseTable.mb-0{
+        margin-top: 30px;
+    }
+    .testCaseCards .row.g-4{
+        --bs-gutter-y: 30px;
+    }
+
     .side1{
         background-color: #FFFFFF;
         padding-top: 55px;
@@ -2002,7 +2108,7 @@ position: relative;
         font-size: 14px;
     }
     .testCaseCards .pagignationDiv1{
-        margin-top: 5px !important;
+        margin-top: 20px !important;
     }
     .btn.btnDark.create-testBtn{
         margin-right: -6px;
@@ -2097,7 +2203,7 @@ position: relative;
     .inputGroups .errorMsg {
         left: 12px;
         top: 12px;
-        padding-right: 75px;
+        padding-right: 56px;
     }
     .quesBankTabs .nav-item .nav-link, .quesBankTabs .nav-item .nav-link.active{
         font-size: 16px !important;
@@ -2111,11 +2217,126 @@ position: relative;
     .inputGroups .errorMsg{
         font-size: 13px;
     }
-      
-    
+    .ansRange .d-flex.mobWrap{
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .selectOptionMcq{
+        background-color: white;
+        border: 1px solid #AAAAAA;
+        height: 50px;
+        font: normal normal normal 16px/25px Pop-normal;
+    }
+    .inputGroups.Psychometric .errorMsg{
+        padding-right:30px;
+    }
+
+    .manageCompiler table thead{
+        height: 44px;
+    }
+    .compilerTable .table tr td{
+        border-radius: 0;
+    }
+    .searchInput input{
+        width: 329px;
+        height: 48px !important;
+    }
+    .caseTitle{
+        font-size: 18px;
+    }
+    .searchAfter::before{
+        top: 16px;
+    }
+    .manageCompiler .searchInput input{
+        background: #f1f1f1 0% 0% no-repeat padding-box;
+    }
+
+    .compilerTable .form-switch .form-check-input{
+        width: 44px;
+        height: 19px;
+    }
+
+    .filterTag h5,.filterTag h5{
+        font-size: 14px;
+    }
+    .accHead h6:last-child{
+        font-size: 16px;
+        line-height: 22px;
+        width: 88%;
+    }
+    .accHead h6:first-child{
+        font-size: 16px;
+        font-family: pop-bold;
+    }
+    .qusAnsAccordian .accordion-body ul li span{
+        font-size: 14px;
+        font-family: pop-medium;
+    }
+    .qusAnsAccordian .accordion-body ul li{
+        font-size: 14px;
+    }
+    .accordion-item .me-4.mb-0 .ms-auto img[width="12"]{
+        width: 22px;
+        height: 22px;
+    }
+    .accordion-button::after{
+        background-size: 22px;
+        width: 22px;
+        height: 22px;
+    }
+    .qusAnsAccordian .accordion-body h5{
+        font-size: 16px;
+    }
+    .qusAnsAccordian .btnBorder{
+        font-size: 14px;
+    }
+    .qusAnsAccordian .btnBorder img{ 
+        padding-left: 7px;
+    }
+  
 }
 
+
 /* responsive end */
+
+
+
+
+
+
+
+
+
+
+.compilerTable table thead tr th{
+    color: #000000;
+}
+/* .compilerTable table tbody tr td{
+    color: #404040;
+    font-family: pop-medium;
+} */
+.compilerTable table tbody tr td{
+    font-family: pop-normal;
+}
+.compilerTable .table tr td:first-child{
+    font-family: pop-medium;
+}
+.compilerTable .table tr .form-check-input:focus{
+    box-shadow: none;
+    border: 1px solid rgb(0 0 0 / 42%);
+}
+
+.anchor-dec-ph3{
+    text-decoration: none;
+}
+.anchor-dec-ph3 h5{ 
+    font: normal normal bold 20px/28px Nunito;
+    letter-spacing: 0.24px;
+    color: #00000099;
+    opacity: 1;
+}
+
 
 
 .tabsButton div button.active{
