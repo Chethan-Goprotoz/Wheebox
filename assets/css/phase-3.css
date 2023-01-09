@@ -1954,7 +1954,6 @@ position: relative;
     }
 
     .d-flex.accHead h6:last-child{
-        width: 90%;
         margin: auto;
     }
     .d-flex.accHead{
@@ -2257,11 +2256,56 @@ position: relative;
         width: 44px;
         height: 19px;
     }
+
+    .filterTag h5,.filterTag h5{
+        font-size: 14px;
+    }
+    .accHead h6:last-child{
+        font-size: 16px;
+        line-height: 22px;
+        width: 88%;
+    }
+    .accHead h6:first-child{
+        font-size: 16px;
+        font-family: pop-bold;
+    }
+    .qusAnsAccordian .accordion-body ul li span{
+        font-size: 14px;
+        font-family: pop-medium;
+    }
+    .qusAnsAccordian .accordion-body ul li{
+        font-size: 14px;
+    }
+    .accordion-item .me-4.mb-0 .ms-auto img[width="12"]{
+        width: 22px;
+        height: 22px;
+    }
+    .accordion-button::after{
+        background-size: 22px;
+        width: 22px;
+        height: 22px;
+    }
+    .qusAnsAccordian .accordion-body h5{
+        font-size: 16px;
+    }
+    .qusAnsAccordian .btnBorder{
+        font-size: 14px;
+    }
+    .qusAnsAccordian .btnBorder img{ 
+        padding-left: 7px;
+    }
   
 }
 
 
 /* responsive end */
+
+
+
+
+
+
+
 
 
 
