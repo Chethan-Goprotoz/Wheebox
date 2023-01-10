@@ -1541,6 +1541,31 @@ opacity: 1;
     opacity: 1;
 }
 
+.custom-select.testCaseSelect{
+    background: transparent;
+    border: 0.4000000059604645px solid #AAAAAA;
+    border-radius: 6px;
+    opacity: 1;
+    font: normal normal normal 16px/25px Pop-normal;
+    letter-spacing: 0px;
+    color: #010D0A !important;
+    opacity: 1;
+}
+.custom-select.testCaseSelect .select-items div, .select-selected{
+    font: normal normal normal 16px/25px Pop-normal;
+    letter-spacing: 0px;
+    color: #010D0A !important;
+    opacity: 1;
+}
+
+.modal-dialog.addNewTestModal{
+    max-width: 1110px;
+}
+
+.modal-dialog.addNewTestModal .row1{
+    width: 60%;
+
+}
 
 
 
