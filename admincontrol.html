@@ -37,6 +37,11 @@
                 <div class="logo new-logopart">
                   <img src="assets/images/logo_logo.png" alt="mini-logo">
                 </div>
+                <div class="d-flex align-items-center d-none d-md-flex justify-content-around btr-link navbar-place">
+                  <a class="anchor-dec-ph3 d-flex align-items-center" href="question-bank.html">
+                    <img src="assets/images/back-arrow.svg" class="mt-2" alt=""> <h5 class="btr-line">Back To Admin Control</h5>
+                  </a> 
+                </div>
               </div>
               <div class="d-flex align-items-center gap-5">
                 <div class="d-flex gap-4">
@@ -66,7 +71,7 @@
           </div>
           <!-- row closed -->
         </div>
-        <div class="d-flex mobileMenu justify-content-lg-end justify-content-between d-md-none mt-3">
+        <div class="d-flex mobileMenu justify-content-lg-end justify-content-between d-md-none mt-5">
           <div class="d-flex justify-content-between align-items-center">
             <img src="./assets/images/Question_Bank/menu.png" onclick="sidemenu()" id="menu-icon" class="fas fa-solid icon-w fa-bars d-block d-lg-none ms-0">
             <h3 class="mb-0">Create Custom Reg. Form</h3>
@@ -138,6 +143,27 @@
                     <!--multisteps-form-->
                     <div class="multisteps-form">
                       <style>
+                        @media (min-width: 576px){
+.fa-calendar {
+    color: #b2b6b5;
+    position: absolute;
+    top: 18px;
+    right: 3%;
+}
+                        }
+                        @media (max-width: 576px){
+
+label {
+
+    color: #010D0A;
+
+    font-size: 16px !important;
+   
+}
+.radio-label {
+    font-size: 14px !important;
+}
+                        }
                         #fname:focus {
                             border: 2px solid #20776E !important;
                           }
@@ -165,7 +191,7 @@
                           .fa-calendar {
     color: #b2b6b5;
     position: absolute;
-    top: 53px !important;
+    top: 20px !important;
     right: 3%;
 }
                           .tags-list{
@@ -176,7 +202,7 @@
 
                           .multisteps-form__progress {
                             
-                            width: 250%;
+                            width: 400%;
                         }
                         .menu-scroll{
                           overflow-y: scroll;
@@ -261,7 +287,7 @@
                                   <div class="col-12 text-center">
                                     <!-- Row Starts -->
                                     <div class="row" style="margin-top: 0px;">
-                                        <div class=" col-lg-3 col-sm-6">
+                                        <div class=" col-lg-4 col-sm-6">
                                           <label for="fname">Login Id</label>
                                         </div>
                                         <div class=" col-lg-2 col-sm-6">
@@ -280,7 +306,7 @@
                                       <!-- Row Ends -->
                                       <!-- Row Starts -->
                                     <div class="row" style="margin-top: 0px;">
-                                        <div class=" col-lg-3 col-sm-6">
+                                        <div class=" col-lg-4 col-sm-6">
                                           <label for="fname">Random Password</label>
                                         </div>
                                         <div class=" col-lg-2 col-sm-6">
@@ -299,7 +325,7 @@
                                       <!-- Row Ends -->
                                       <!-- Row Starts -->
                                     <div class="row" style="margin-top: 0px;">
-                                        <div class=" col-lg-3 col-sm-6">
+                                        <div class=" col-lg-4 col-sm-6">
                                           <label for="fname">Gender</label>
                                         </div>
                                         <div class=" col-lg-2 col-sm-6">
@@ -318,7 +344,7 @@
                                       <!-- Row Ends -->
                                       <!-- Row Starts -->
                                     <div class="row" style="margin-top: 0px;">
-                                        <div class=" col-lg-3 col-sm-6">
+                                        <div class=" col-lg-4 col-sm-6">
                                           <label for="fname">Email Id</label>
                                         </div>
                                         <div class=" col-lg-2 col-sm-6">
@@ -337,7 +363,7 @@
                                       <!-- Row Ends -->
                                       <!-- Row Starts -->
                                     <div class="row" style="margin-top: 0px;">
-                                        <div class=" col-lg-3 col-sm-6">
+                                        <div class=" col-lg-4 col-sm-6">
                                           <label for="fname">Father's Occupation</label>
                                         </div>
                                         <div class=" col-lg-2 col-sm-6">
@@ -356,7 +382,7 @@
                                       <!-- Row Ends -->
                                       <!-- Row Starts -->
                                     <div class="row" style="margin-top: 0px;">
-                                        <div class=" col-lg-3 col-sm-6">
+                                        <div class=" col-lg-4 col-sm-6">
                                           <label for="fname">Mother's Name</label>
                                         </div>
                                         <div class=" col-lg-2 col-sm-6">
@@ -375,7 +401,7 @@
                                       <!-- Row Ends -->
                                       <!-- Row Starts -->
                                     <div class="row" style="margin-top: 0px;">
-                                        <div class=" col-lg-3 col-sm-6">
+                                        <div class=" col-lg-4 col-sm-6">
                                           <label for="fname">Sibling's Name</label>
                                         </div>
                                         <div class=" col-lg-2 col-sm-6">
@@ -394,7 +420,7 @@
                                       <!-- Row Ends -->
                                       <!-- Row Starts -->
                                     <div class="row" style="margin-top: 0px;">
-                                        <div class=" col-lg-3 col-sm-6">
+                                        <div class=" col-lg-4 col-sm-6">
                                           <label for="fname">Password</label>
                                         </div>
                                         <div class=" col-lg-2 col-sm-6">
@@ -413,7 +439,7 @@
                                       <!-- Row Ends -->
                                       <!-- Row Starts -->
                                     <div class="row" style="margin-top: 0px;">
-                                        <div class=" col-lg-3 col-sm-6">
+                                        <div class=" col-lg-4 col-sm-6">
                                           <label for="fname">First Name</label>
                                         </div>
                                         <div class=" col-lg-2 col-sm-6">
@@ -432,7 +458,7 @@
                                       <!-- Row Ends -->
                                       <!-- Row Starts -->
                                     <div class="row" style="margin-top: 0px;">
-                                        <div class=" col-lg-3 col-sm-6">
+                                        <div class=" col-lg-4 col-sm-6">
                                           <label for="fname">Date Of Birth</label>
                                         </div>
                                         <div class=" col-lg-2 col-sm-6">
@@ -451,7 +477,7 @@
                                       <!-- Row Ends -->
                                       <!-- Row Starts -->
                                     <div class="row" style="margin-top: 0px;">
-                                        <div class=" col-lg-3 col-sm-6">
+                                        <div class=" col-lg-4 col-sm-6">
                                           <label for="fname">Facebook Id</label>
                                         </div>
                                         <div class=" col-lg-2 col-sm-6">
@@ -470,7 +496,7 @@
                                       <!-- Row Ends -->
                                       <!-- Row Starts -->
                                     <div class="row" style="margin-top: 0px;">
-                                        <div class=" col-lg-3 col-sm-6">
+                                        <div class=" col-lg-4 col-sm-6">
                                           <label for="fname">Father's Email ID</label>
                                         </div>
                                         <div class=" col-lg-2 col-sm-6">
@@ -489,7 +515,7 @@
                                       <!-- Row Ends -->
                                       <!-- Row Starts -->
                                     <div class="row" style="margin-top: 0px;">
-                                        <div class=" col-lg-3 col-sm-6">
+                                        <div class=" col-lg-4 col-sm-6">
                                           <label for="fname">Mother's Occupation</label>
                                         </div>
                                         <div class=" col-lg-2 col-sm-6">
@@ -508,7 +534,7 @@
                                       <!-- Row Ends -->
                                       <!-- Row Starts -->
                                     <div class="row" style="margin-top: 0px;">
-                                        <div class=" col-lg-3 col-sm-6">
+                                        <div class=" col-lg-4 col-sm-6">
                                           <label for="fname">Sibling's Date Of Birth</label>
                                         </div>
                                         <div class=" col-lg-2 col-sm-6">
@@ -527,7 +553,7 @@
                                       <!-- Row Ends -->
                                       <!-- Row Starts -->
                                     <div class="row" style="margin-top: 0px;">
-                                        <div class=" col-lg-3 col-sm-6">
+                                        <div class=" col-lg-4 col-sm-6">
                                           <label for="fname">Password Policy</label>
                                         </div>
                                         <div class=" col-lg-2 col-sm-6">
@@ -546,7 +572,7 @@
                                       <!-- Row Ends -->
                                       <!-- Row Starts -->
                                     <div class="row" style="margin-top: 0px;">
-                                        <div class=" col-lg-3 col-sm-6">
+                                        <div class=" col-lg-4 col-sm-6">
                                           <label for="fname">Last Name</label>
                                         </div>
                                         <div class=" col-lg-2 col-sm-6">
@@ -565,7 +591,7 @@
                                       <!-- Row Ends -->
                                       <!-- Row Starts -->
                                     <div class="row" style="margin-top: 0px;">
-                                        <div class=" col-lg-3 col-sm-6">
+                                        <div class=" col-lg-4 col-sm-6">
                                           <label for="fname">Contact No</label>
                                         </div>
                                         <div class=" col-lg-2 col-sm-6">
@@ -584,7 +610,7 @@
                                       <!-- Row Ends -->
                                       <!-- Row Starts -->
                                     <div class="row" style="margin-top: 0px;">
-                                        <div class=" col-lg-3 col-sm-6">
+                                        <div class=" col-lg-4 col-sm-6">
                                           <label for="fname">Father's Name</label>
                                         </div>
                                         <div class=" col-lg-2 col-sm-6">
@@ -603,7 +629,7 @@
                                       <!-- Row Ends -->
                                       <!-- Row Starts -->
                                     <div class="row" style="margin-top: 0px;">
-                                        <div class=" col-lg-3 col-sm-6">
+                                        <div class=" col-lg-4 col-sm-6">
                                           <label for="fname">Father's Contact NO</label>
                                         </div>
                                         <div class=" col-lg-2 col-sm-6">
@@ -622,7 +648,7 @@
                                       <!-- Row Ends -->
                                       <!-- Row Starts -->
                                     <div class="row" style="margin-top: 0px;">
-                                        <div class=" col-lg-3 col-sm-6">
+                                        <div class=" col-lg-4 col-sm-6">
                                           <label for="fname">Mother's Contact No</label>
                                         </div>
                                         <div class=" col-lg-2 col-sm-6">
@@ -654,7 +680,7 @@
                                   <div class="container-fluid">
                                      <!-- Row Starts -->
                                      <div class="row" style="margin-top: 0px;">
-                                        <div class=" col-lg-3 col-sm-6">
+                                        <div class=" col-lg-4 col-sm-6">
                                           <label for="fname">Country</label>
                                         </div>
                                         <div class=" col-lg-2 col-sm-6">
@@ -673,7 +699,7 @@
                                       <!-- Row Ends -->
                                       <!-- Row Starts -->
                                     <div class="row" style="margin-top: 0px;">
-                                        <div class=" col-lg-3 col-sm-6">
+                                        <div class=" col-lg-4 col-sm-6">
                                           <label for="fname">City</label>
                                         </div>
                                         <div class=" col-lg-2 col-sm-6">
@@ -692,7 +718,7 @@
                                       <!-- Row Ends -->
                                       <!-- Row Starts -->
                                     <div class="row" style="margin-top: 0px;">
-                                        <div class=" col-lg-3 col-sm-6">
+                                        <div class=" col-lg-4 col-sm-6">
                                           <label for="fname">Address</label>
                                         </div>
                                         <div class=" col-lg-2 col-sm-6">
@@ -711,7 +737,7 @@
                                       <!-- Row Ends -->
                                       <!-- Row Starts -->
                                     <div class="row" style="margin-top: 0px;">
-                                        <div class=" col-lg-3 col-sm-6">
+                                        <div class=" col-lg-4 col-sm-6">
                                           <label for="fname">State</label>
                                         </div>
                                         <div class=" col-lg-2 col-sm-6">
@@ -730,7 +756,7 @@
                                       <!-- Row Ends -->
                                       <!-- Row Starts -->
                                     <div class="row" style="margin-top: 0px;">
-                                        <div class=" col-lg-3 col-sm-6">
+                                        <div class=" col-lg-4 col-sm-6">
                                           <label for="fname">Post Office</label>
                                         </div>
                                         <div class=" col-lg-2 col-sm-6">
@@ -749,7 +775,7 @@
                                       <!-- Row Ends -->
                                       <!-- Row Starts -->
                                     <div class="row" style="margin-top: 0px;">
-                                        <div class=" col-lg-3 col-sm-6">
+                                        <div class=" col-lg-4 col-sm-6">
                                           <label for="fname">User Location</label>
                                         </div>
                                         <div class=" col-lg-2 col-sm-6">
@@ -768,7 +794,7 @@
                                       <!-- Row Ends -->
                                       <!-- Row Starts -->
                                     <div class="row" style="margin-top: 0px;">
-                                        <div class=" col-lg-3 col-sm-6">
+                                        <div class=" col-lg-4 col-sm-6">
                                           <label for="fname">District</label>
                                         </div>
                                         <div class=" col-lg-2 col-sm-6">
@@ -787,7 +813,7 @@
                                       <!-- Row Ends -->
                                       <!-- Row Starts -->
                                     <div class="row" style="margin-top: 0px;">
-                                        <div class=" col-lg-3 col-sm-6">
+                                        <div class=" col-lg-4 col-sm-6">
                                           <label for="fname">Pin Code</label>
                                         </div>
                                         <div class=" col-lg-2 col-sm-6">
@@ -818,7 +844,7 @@
                                 <div class="form-row " style="height:auto !important;align-items: center;justify-content: center;">
                                   <!-- Row Starts -->
                                   <div class="row" style="margin-top: 0px;">
-                                    <div class=" col-lg-3 col-sm-6">
+                                    <div class=" col-lg-4 col-sm-6">
                                       <label for="fname">Aadhar Card No.</label>
                                     </div>
                                     <div class=" col-lg-2 col-sm-6">
@@ -837,7 +863,7 @@
                                   <!-- Row Ends -->
                                   <!-- Row Starts -->
                                 <div class="row" style="margin-top: 0px;">
-                                    <div class=" col-lg-3 col-sm-6">
+                                    <div class=" col-lg-4 col-sm-6">
                                       <label for="fname">Voter Id.</label>
                                     </div>
                                     <div class=" col-lg-2 col-sm-6">
@@ -856,7 +882,7 @@
                                   <!-- Row Ends -->
                                   <!-- Row Starts -->
                                 <div class="row" style="margin-top: 0px;">
-                                    <div class=" col-lg-3 col-sm-6">
+                                    <div class=" col-lg-4 col-sm-6">
                                       <label for="fname">Student Remark</label>
                                     </div>
                                     <div class=" col-lg-2 col-sm-6">
@@ -875,7 +901,7 @@
                                   <!-- Row Ends -->
                                   <!-- Row Starts -->
                                 <div class="row" style="margin-top: 0px;">
-                                    <div class=" col-lg-3 col-sm-6">
+                                    <div class=" col-lg-4 col-sm-6">
                                       <label for="fname">Block</label>
                                     </div>
                                     <div class=" col-lg-2 col-sm-6">
@@ -894,7 +920,7 @@
                                   <!-- Row Ends -->
                                   <!-- Row Starts -->
                                 <div class="row" style="margin-top: 0px;">
-                                    <div class=" col-lg-3 col-sm-6">
+                                    <div class=" col-lg-4 col-sm-6">
                                       <label for="fname">Standing Arrear</label>
                                     </div>
                                     <div class=" col-lg-2 col-sm-6">
@@ -913,7 +939,7 @@
                                   <!-- Row Ends -->
                                   <!-- Row Starts -->
                                 <div class="row" style="margin-top: 0px;">
-                                    <div class=" col-lg-3 col-sm-6">
+                                    <div class=" col-lg-4 col-sm-6">
                                       <label for="fname">Roll Number</label>
                                     </div>
                                     <div class=" col-lg-2 col-sm-6">
@@ -932,7 +958,7 @@
                                   <!-- Row Ends -->
                                   <!-- Row Starts -->
                                 <div class="row" style="margin-top: 0px;">
-                                    <div class=" col-lg-3 col-sm-6">
+                                    <div class=" col-lg-4 col-sm-6">
                                       <label for="fname">Pan Card No.</label>
                                     </div>
                                     <div class=" col-lg-2 col-sm-6">
@@ -951,7 +977,7 @@
                                   <!-- Row Ends -->
                                   <!-- Row Starts -->
                                 <div class="row" style="margin-top: 0px;">
-                                    <div class=" col-lg-3 col-sm-6">
+                                    <div class=" col-lg-4 col-sm-6">
                                       <label for="fname">Family Income</label>
                                     </div>
                                     <div class=" col-lg-2 col-sm-6">
@@ -970,7 +996,7 @@
                                   <!-- Row Ends -->
                                   <!-- Row Starts -->
                                 <div class="row" style="margin-top: 0px;">
-                                    <div class=" col-lg-3 col-sm-6">
+                                    <div class=" col-lg-4 col-sm-6">
                                       <label for="fname">Internship</label>
                                     </div>
                                     <div class=" col-lg-2 col-sm-6">
@@ -989,7 +1015,7 @@
                                   <!-- Row Ends -->
                                   <!-- Row Starts -->
                                 <div class="row" style="margin-top: 0px;">
-                                    <div class=" col-lg-3 col-sm-6">
+                                    <div class=" col-lg-4 col-sm-6">
                                       <label for="fname">Gram Panchayat</label>
                                     </div>
                                     <div class=" col-lg-2 col-sm-6">
@@ -1008,7 +1034,7 @@
                                   <!-- Row Ends -->
                                   <!-- Row Starts -->
                                 <div class="row" style="margin-top: 0px;">
-                                    <div class=" col-lg-3 col-sm-6">
+                                    <div class=" col-lg-4 col-sm-6">
                                       <label for="fname">Educational Gap</label>
                                     </div>
                                     <div class=" col-lg-2 col-sm-6">
@@ -1027,7 +1053,7 @@
                                   <!-- Row Ends -->
                                   <!-- Row Starts -->
                                 <div class="row" style="margin-top: 0px;">
-                                    <div class=" col-lg-3 col-sm-6">
+                                    <div class=" col-lg-4 col-sm-6">
                                       <label for="fname">Reminder Mail Permission</label>
                                     </div>
                                     <div class=" col-lg-2 col-sm-6">
@@ -1046,7 +1072,7 @@
                                   <!-- Row Ends -->
                                   <!-- Row Starts -->
                                 <div class="row" style="margin-top: 0px;">
-                                    <div class=" col-lg-3 col-sm-6">
+                                    <div class=" col-lg-4 col-sm-6">
                                       <label for="fname">Passport No.</label>
                                     </div>
                                     <div class=" col-lg-2 col-sm-6">
@@ -1065,7 +1091,7 @@
                                   <!-- Row Ends -->
                                   <!-- Row Starts -->
                                 <div class="row" style="margin-top: 0px;">
-                                    <div class=" col-lg-3 col-sm-6">
+                                    <div class=" col-lg-4 col-sm-6">
                                       <label for="fname">English Communication</label>
                                     </div>
                                     <div class=" col-lg-2 col-sm-6">
@@ -1084,7 +1110,7 @@
                                   <!-- Row Ends -->
                                   <!-- Row Starts -->
                                 <div class="row" style="margin-top: 0px;">
-                                    <div class=" col-lg-3 col-sm-6">
+                                    <div class=" col-lg-4 col-sm-6">
                                       <label for="fname">Computer Availability</label>
                                     </div>
                                     <div class=" col-lg-2 col-sm-6">
@@ -1103,7 +1129,7 @@
                                   <!-- Row Ends -->
                                   <!-- Row Starts -->
                                 <div class="row" style="margin-top: 0px;">
-                                    <div class=" col-lg-3 col-sm-6">
+                                    <div class=" col-lg-4 col-sm-6">
                                       <label for="fname">Via Phone Mail</label>
                                     </div>
                                     <div class=" col-lg-2 col-sm-6">
@@ -1122,7 +1148,7 @@
                                   <!-- Row Ends -->
                                   <!-- Row Starts -->
                                 <div class="row" style="margin-top: 0px;">
-                                    <div class=" col-lg-3 col-sm-6">
+                                    <div class=" col-lg-4 col-sm-6">
                                       <label for="fname">Account Number</label>
                                     </div>
                                     <div class=" col-lg-2 col-sm-6">
@@ -1156,7 +1182,7 @@
                                     <div class="container-fluid">
                                         <!-- Row Starts -->
                                         <div class="row" style="margin-top: 0px;">
-                                           <div class=" col-lg-3 col-sm-6">
+                                           <div class=" col-lg-4 col-sm-6">
                                              <label for="fname">Post Graduation</label>
                                            </div>
                                            <div class=" col-lg-2 col-sm-6">
@@ -1175,7 +1201,7 @@
                                          <!-- Row Ends -->
                                          <!-- Row Starts -->
                                        <div class="row" style="margin-top: 0px;">
-                                           <div class=" col-lg-3 col-sm-6">
+                                           <div class=" col-lg-4 col-sm-6">
                                              <label for="fname">Post Graduation Marks</label>
                                            </div>
                                            <div class=" col-lg-2 col-sm-6">
@@ -1194,7 +1220,7 @@
                                          <!-- Row Ends -->
                                          <!-- Row Starts -->
                                        <div class="row" style="margin-top: 0px;">
-                                           <div class=" col-lg-3 col-sm-6">
+                                           <div class=" col-lg-4 col-sm-6">
                                              <label for="fname">Graduation</label>
                                            </div>
                                            <div class=" col-lg-2 col-sm-6">
@@ -1213,7 +1239,7 @@
                                          <!-- Row Ends -->
                                          <!-- Row Starts -->
                                        <div class="row" style="margin-top: 0px;">
-                                           <div class=" col-lg-3 col-sm-6">
+                                           <div class=" col-lg-4 col-sm-6">
                                              <label for="fname">Graduation Marks</label>
                                            </div>
                                            <div class=" col-lg-2 col-sm-6">
@@ -1232,7 +1258,7 @@
                                          <!-- Row Ends -->
                                          <!-- Row Starts -->
                                        <div class="row" style="margin-top: 0px;">
-                                           <div class=" col-lg-3 col-sm-6">
+                                           <div class=" col-lg-4 col-sm-6">
                                              <label for="fname">Diploma Name</label>
                                            </div>
                                            <div class=" col-lg-2 col-sm-6">
@@ -1251,7 +1277,7 @@
                                          <!-- Row Ends -->
                                          <!-- Row Starts -->
                                        <div class="row" style="margin-top: 0px;">
-                                           <div class=" col-lg-3 col-sm-6">
+                                           <div class=" col-lg-4 col-sm-6">
                                              <label for="fname">Diploma Marks</label>
                                            </div>
                                            <div class=" col-lg-2 col-sm-6">
@@ -1270,7 +1296,7 @@
                                          <!-- Row Ends -->
                                          <!-- Row Starts -->
                                        <div class="row" style="margin-top: 0px;">
-                                           <div class=" col-lg-3 col-sm-6">
+                                           <div class=" col-lg-4 col-sm-6">
                                              <label for="fname">Matric Marks</label>
                                            </div>
                                            <div class=" col-lg-2 col-sm-6">
@@ -1289,7 +1315,7 @@
                                          <!-- Row Ends -->
                                          <!-- Row Starts -->
                                        <div class="row" style="margin-top: 0px;">
-                                           <div class=" col-lg-3 col-sm-6">
+                                           <div class=" col-lg-4 col-sm-6">
                                              <label for="fname">Last Institute</label>
                                            </div>
                                            <div class=" col-lg-2 col-sm-6">
@@ -1308,7 +1334,7 @@
                                          <!-- Row Ends -->
                                          <!-- Row Starts -->
                                        <div class="row" style="margin-top: 0px;">
-                                        <div class=" col-lg-3 col-sm-6">
+                                        <div class=" col-lg-4 col-sm-6">
                                           <label for="fname">Post Graduation Stream</label>
                                         </div>
                                         <div class=" col-lg-2 col-sm-6">
@@ -1327,7 +1353,7 @@
                                       <!-- Row Ends -->
                                       <!-- Row Starts -->
                                       <div class="row" style="margin-top: 0px;">
-                                        <div class=" col-lg-3 col-sm-6">
+                                        <div class=" col-lg-4 col-sm-6">
                                           <label for="fname">Post Graduation Pass Year</label>
                                         </div>
                                         <div class=" col-lg-2 col-sm-6">
@@ -1346,7 +1372,7 @@
                                       <!-- Row Ends -->
                                       <!-- Row Starts -->
                                       <div class="row" style="margin-top: 0px;">
-                                        <div class=" col-lg-3 col-sm-6">
+                                        <div class=" col-lg-4 col-sm-6">
                                           <label for="fname">Graduation Stream</label>
                                         </div>
                                         <div class=" col-lg-2 col-sm-6">
@@ -1365,7 +1391,7 @@
                                       <!-- Row Ends -->
                                       <!-- Row Starts -->
                                       <div class="row" style="margin-top: 0px;">
-                                        <div class=" col-lg-3 col-sm-6">
+                                        <div class=" col-lg-4 col-sm-6">
                                           <label for="fname">Graduation Pass Year</label>
                                         </div>
                                         <div class=" col-lg-2 col-sm-6">
@@ -1384,7 +1410,7 @@
                                       <!-- Row Ends -->
                                       <!-- Row Starts -->
                                       <div class="row" style="margin-top: 0px;">
-                                        <div class=" col-lg-3 col-sm-6">
+                                        <div class=" col-lg-4 col-sm-6">
                                           <label for="fname">Diploma Stream</label>
                                         </div>
                                         <div class=" col-lg-2 col-sm-6">
@@ -1403,7 +1429,7 @@
                                       <!-- Row Ends -->
                                       <!-- Row Starts -->
                                       <div class="row" style="margin-top: 0px;">
-                                        <div class=" col-lg-3 col-sm-6">
+                                        <div class=" col-lg-4 col-sm-6">
                                           <label for="fname">Diploma University</label>
                                         </div>
                                         <div class=" col-lg-2 col-sm-6">
@@ -1422,7 +1448,7 @@
                                       <!-- Row Ends -->
                                       <!-- Row Starts -->
                                       <div class="row" style="margin-top: 0px;">
-                                        <div class=" col-lg-3 col-sm-6">
+                                        <div class=" col-lg-4 col-sm-6">
                                           <label for="fname">Certification</label>
                                         </div>
                                         <div class=" col-lg-2 col-sm-6">
@@ -1441,7 +1467,7 @@
                                       <!-- Row Ends -->
                                       <!-- Row Starts -->
                                       <div class="row" style="margin-top: 0px;">
-                                        <div class=" col-lg-3 col-sm-6">
+                                        <div class=" col-lg-4 col-sm-6">
                                           <label for="fname">Post Graduation Campus</label>
                                         </div>
                                         <div class=" col-lg-2 col-sm-6">
@@ -1460,7 +1486,7 @@
                                       <!-- Row Ends -->
                                       <!-- Row Starts -->
                                       <div class="row" style="margin-top: 0px;">
-                                        <div class=" col-lg-3 col-sm-6">
+                                        <div class=" col-lg-4 col-sm-6">
                                           <label for="fname">Post Graduation University</label>
                                         </div>
                                         <div class=" col-lg-2 col-sm-6">
@@ -1479,7 +1505,7 @@
                                       <!-- Row Ends -->
                                       <!-- Row Starts -->
                                       <div class="row" style="margin-top: 0px;">
-                                        <div class=" col-lg-3 col-sm-6">
+                                        <div class=" col-lg-4 col-sm-6">
                                           <label for="fname">Graduation Campus</label>
                                         </div>
                                         <div class=" col-lg-2 col-sm-6">
@@ -1498,7 +1524,7 @@
                                       <!-- Row Ends -->
                                       <!-- Row Starts -->
                                       <div class="row" style="margin-top: 0px;">
-                                        <div class=" col-lg-3 col-sm-6">
+                                        <div class=" col-lg-4 col-sm-6">
                                           <label for="fname">Graduation Campus</label>
                                         </div>
                                         <div class=" col-lg-2 col-sm-6">
@@ -1517,7 +1543,7 @@
                                       <!-- Row Ends -->
                                       <!-- Row Starts -->
                                       <div class="row" style="margin-top: 0px;">
-                                        <div class=" col-lg-3 col-sm-6">
+                                        <div class=" col-lg-4 col-sm-6">
                                           <label for="fname">Diploma Year</label>
                                         </div>
                                         <div class=" col-lg-2 col-sm-6">
@@ -1536,7 +1562,7 @@
                                       <!-- Row Ends -->
                                       <!-- Row Starts -->
                                       <div class="row" style="margin-top: 0px;">
-                                        <div class=" col-lg-3 col-sm-6">
+                                        <div class=" col-lg-4 col-sm-6">
                                           <label for="fname">Intermediate Marks</label>
                                         </div>
                                         <div class=" col-lg-2 col-sm-6">
@@ -1555,7 +1581,7 @@
                                       <!-- Row Ends -->
                                       <!-- Row Starts -->
                                       <div class="row" style="margin-top: 0px;">
-                                        <div class=" col-lg-3 col-sm-6">
+                                        <div class=" col-lg-4 col-sm-6">
                                           <label for="fname">Batch</label>
                                         </div>
                                         <div class=" col-lg-2 col-sm-6">
@@ -1588,7 +1614,7 @@
                                 <div class="form-row " style="height:auto !important;align-items: center;justify-content: center;">
                                     <!-- Row Starts -->
                                     <div class="row" style="margin-top: 0px;">
-                                        <div class=" col-lg-3 col-sm-6">
+                                        <div class=" col-lg-4 col-sm-6">
                                           <label for="fname">Company Name</label>
                                         </div>
                                         <div class=" col-lg-2 col-sm-6">
@@ -1607,7 +1633,7 @@
                                       <!-- Row Ends -->
                                       <!-- Row Starts -->
                                     <div class="row" style="margin-top: 0px;">
-                                        <div class=" col-lg-3 col-sm-6">
+                                        <div class=" col-lg-4 col-sm-6">
                                           <label for="fname">Employee ID</label>
                                         </div>
                                         <div class=" col-lg-2 col-sm-6">
@@ -1626,7 +1652,7 @@
                                       <!-- Row Ends -->
                                       <!-- Row Starts -->
                                     <div class="row" style="margin-top: 0px;">
-                                        <div class=" col-lg-3 col-sm-6">
+                                        <div class=" col-lg-4 col-sm-6">
                                           <label for="fname">Department</label>
                                         </div>
                                         <div class=" col-lg-2 col-sm-6">
@@ -1645,7 +1671,7 @@
                                       <!-- Row Ends -->
                                       <!-- Row Starts -->
                                     <div class="row" style="margin-top: 0px;">
-                                        <div class=" col-lg-3 col-sm-6">
+                                        <div class=" col-lg-4 col-sm-6">
                                           <label for="fname">Employer Email ID</label>
                                         </div>
                                         <div class=" col-lg-2 col-sm-6">
@@ -1664,7 +1690,7 @@
                                       <!-- Row Ends -->
                                       <!-- Row Starts -->
                                     <div class="row" style="margin-top: 0px;">
-                                        <div class=" col-lg-3 col-sm-6">
+                                        <div class=" col-lg-4 col-sm-6">
                                           <label for="fname">Experience As Interviewer</label>
                                         </div>
                                         <div class=" col-lg-2 col-sm-6">
@@ -1683,7 +1709,7 @@
                                       <!-- Row Ends -->
                                       <!-- Row Starts -->
                                     <div class="row" style="margin-top: 0px;">
-                                        <div class=" col-lg-3 col-sm-6">
+                                        <div class=" col-lg-4 col-sm-6">
                                           <label for="fname">Industry</label>
                                         </div>
                                         <div class=" col-lg-2 col-sm-6">
@@ -1702,7 +1728,7 @@
                                       <!-- Row Ends -->
                                       <!-- Row Starts -->
                                     <div class="row" style="margin-top: 0px;">
-                                        <div class=" col-lg-3 col-sm-6">
+                                        <div class=" col-lg-4 col-sm-6">
                                           <label for="fname">Designation</label>
                                         </div>
                                         <div class=" col-lg-2 col-sm-6">
@@ -1721,7 +1747,7 @@
                                       <!-- Row Ends -->
                                       <!-- Row Starts -->
                                     <div class="row" style="margin-top: 0px;">
-                                        <div class=" col-lg-3 col-sm-6">
+                                        <div class=" col-lg-4 col-sm-6">
                                           <label for="fname">Pref. Job Location</label>
                                         </div>
                                         <div class=" col-lg-2 col-sm-6">
@@ -1740,7 +1766,7 @@
                                       <!-- Row Ends -->
                                       <!-- Row Starts -->
                                     <div class="row" style="margin-top: 0px;">
-                                        <div class=" col-lg-3 col-sm-6">
+                                        <div class=" col-lg-4 col-sm-6">
                                           <label for="fname">Pref. Job Location</label>
                                         </div>
                                         <div class=" col-lg-2 col-sm-6">
@@ -1759,7 +1785,7 @@
                                       <!-- Row Ends -->
                                       <!-- Row Starts -->
                                     <div class="row" style="margin-top: 0px;">
-                                        <div class=" col-lg-3 col-sm-6">
+                                        <div class=" col-lg-4 col-sm-6">
                                           <label for="fname">Last Employer</label>
                                         </div>
                                         <div class=" col-lg-2 col-sm-6">
@@ -1778,7 +1804,7 @@
                                       <!-- Row Ends -->
                                       <!-- Row Starts -->
                                     <div class="row" style="margin-top: 0px;">
-                                        <div class=" col-lg-3 col-sm-6">
+                                        <div class=" col-lg-4 col-sm-6">
                                           <label for="fname">Work Experience</label>
                                         </div>
                                         <div class=" col-lg-2 col-sm-6">
@@ -1797,7 +1823,7 @@
                                       <!-- Row Ends -->
                                       <!-- Row Starts -->
                                     <div class="row" style="margin-top: 0px;">
-                                        <div class=" col-lg-3 col-sm-6">
+                                        <div class=" col-lg-4 col-sm-6">
                                           <label for="fname">Employee Grade</label>
                                         </div>
                                         <div class=" col-lg-2 col-sm-6">
@@ -1816,7 +1842,7 @@
                                       <!-- Row Ends -->
                                       <!-- Row Starts -->
                                     <div class="row" style="margin-top: 0px;">
-                                        <div class=" col-lg-3 col-sm-6">
+                                        <div class=" col-lg-4 col-sm-6">
                                           <label for="fname">Pref. Salary Range</label>
                                         </div>
                                         <div class=" col-lg-2 col-sm-6">
@@ -1835,7 +1861,7 @@
                                       <!-- Row Ends -->
                                       <!-- Row Starts -->
                                     <div class="row" style="margin-top: 0px;">
-                                        <div class=" col-lg-3 col-sm-6">
+                                        <div class=" col-lg-4 col-sm-6">
                                           <label for="fname">Last Company Experience</label>
                                         </div>
                                         <div class=" col-lg-2 col-sm-6">
@@ -1865,7 +1891,7 @@
                                 <div class="form-row " style="height:auto !important;align-items: center;justify-content: center;">
                                  <!-- Row Starts -->
                                  <div class="row" style="margin-top: 0px;">
-                                    <div class=" col-lg-3 col-sm-6">
+                                    <div class=" col-lg-4 col-sm-6">
                                       <label for="fname">College Country</label>
                                     </div>
                                     <div class=" col-lg-2 col-sm-6">
@@ -1884,7 +1910,7 @@
                                   <!-- Row Ends -->
                                   <!-- Row Starts -->
                                  <div class="row" style="margin-top: 0px;">
-                                    <div class=" col-lg-3 col-sm-6">
+                                    <div class=" col-lg-4 col-sm-6">
                                       <label for="fname">College State</label>
                                     </div>
                                     <div class=" col-lg-2 col-sm-6">
@@ -1903,7 +1929,7 @@
                                   <!-- Row Ends -->
                                   <!-- Row Starts -->
                                  <div class="row" style="margin-top: 0px;">
-                                    <div class=" col-lg-3 col-sm-6">
+                                    <div class=" col-lg-4 col-sm-6">
                                       <label for="fname">College City</label>
                                     </div>
                                     <div class=" col-lg-2 col-sm-6">
@@ -1922,7 +1948,7 @@
                                   <!-- Row Ends -->
                                   <!-- Row Starts -->
                                  <div class="row" style="margin-top: 0px;">
-                                    <div class=" col-lg-3 col-sm-6">
+                                    <div class=" col-lg-4 col-sm-6">
                                       <label for="fname">College City</label>
                                     </div>
                                     <div class=" col-lg-2 col-sm-6">
@@ -1952,7 +1978,7 @@
                                 <div class="form-row " style="height:auto !important;align-items: center;justify-content: center;">
                                   <!-- Row Starts -->
                                  <div class="row" style="margin-top: 0px;">
-                                    <div class=" col-lg-3 col-sm-6">
+                                    <div class=" col-lg-4 col-sm-6">
                                       <label for="fname">Test Location</label>
                                     </div>
                                     <div class=" col-lg-2 col-sm-6">
@@ -1971,7 +1997,7 @@
                                   <!-- Row Ends -->
                                   <!-- Row Starts -->
                                  <div class="row" style="margin-top: 0px;">
-                                    <div class=" col-lg-3 col-sm-6">
+                                    <div class=" col-lg-4 col-sm-6">
                                       <label for="fname">Centre State</label>
                                     </div>
                                     <div class=" col-lg-2 col-sm-6">
@@ -1990,7 +2016,7 @@
                                   <!-- Row Ends -->
                                   <!-- Row Starts -->
                                  <div class="row" style="margin-top: 0px;">
-                                    <div class=" col-lg-3 col-sm-6">
+                                    <div class=" col-lg-4 col-sm-6">
                                       <label for="fname">Centre District</label>
                                     </div>
                                     <div class=" col-lg-2 col-sm-6">
@@ -2009,7 +2035,7 @@
                                   <!-- Row Ends -->
                                   <!-- Row Starts -->
                                  <div class="row" style="margin-top: 0px;">
-                                    <div class=" col-lg-3 col-sm-6">
+                                    <div class=" col-lg-4 col-sm-6">
                                       <label for="fname">Centre City</label>
                                     </div>
                                     <div class=" col-lg-2 col-sm-6">
@@ -2040,7 +2066,7 @@
                                   <div class="form-row " style="height:auto !important;align-items: center;justify-content: center;">
                                     <!-- Row Starts -->
                                    <div class="row" style="margin-top: 0px;">
-                                      <div class=" col-lg-3 col-sm-6">
+                                      <div class=" col-lg-4 col-sm-6">
                                         <label for="fname">Link Validity</label>
                                       </div>
                                       <div class=" col-lg-2 col-sm-6">
@@ -2059,7 +2085,7 @@
                                     <!-- Row Ends -->
                                     <!-- Row Starts -->
                                    <div class="row" style="margin-top: 0px;">
-                                      <div class=" col-lg-3 col-sm-6">
+                                      <div class=" col-lg-4 col-sm-6">
                                         <label for="fname">Registration Mail</label>
                                       </div>
                                       <div class=" col-lg-2 col-sm-6">
@@ -2078,7 +2104,7 @@
                                     <!-- Row Ends -->
                                     <!-- Row Starts -->
                                    <div class="row" style="margin-top: 0px;">
-                                      <div class=" col-lg-3 col-sm-6">
+                                      <div class=" col-lg-4 col-sm-6">
                                         <label for="fname">Mandatory Field</label>
                                       </div>
                                       <div class=" col-lg-2 col-sm-6">
@@ -2097,7 +2123,7 @@
                                     <!-- Row Ends -->
                                     <!-- Row Starts -->
                                    <div class="row" style="margin-top: 0px;">
-                                      <div class=" col-lg-3 col-sm-6">
+                                      <div class=" col-lg-4 col-sm-6">
                                         <label for="fname">Allow Domain</label>
                                       </div>
                                       <div class=" col-lg-2 col-sm-6">
@@ -2116,7 +2142,7 @@
                                     <!-- Row Ends -->
                                      <!-- Row Starts -->
                                    <div class="row" style="margin-top: 0px;">
-                                    <div class=" col-lg-3 col-sm-6">
+                                    <div class=" col-lg-4 col-sm-6">
                                       <label for="fname">Bulk Registration</label>
                                     </div>
                                     <div class=" col-lg-2 col-sm-6">
@@ -2135,7 +2161,7 @@
                                   <!-- Row Ends -->
                                    <!-- Row Starts -->
                                    <div class="row" style="margin-top: 0px;">
-                                    <div class=" col-lg-3 col-sm-6">
+                                    <div class=" col-lg-4 col-sm-6">
                                       <label for="fname">Upload Photo</label>
                                     </div>
                                     <div class=" col-lg-2 col-sm-6">
@@ -2154,7 +2180,7 @@
                                   <!-- Row Ends -->
                                    <!-- Row Starts -->
                                    <div class="row" style="margin-top: 0px;">
-                                    <div class=" col-lg-3 col-sm-6">
+                                    <div class=" col-lg-4 col-sm-6">
                                       <label for="fname">Upload Docs</label>
                                     </div>
                                     <div class=" col-lg-2 col-sm-6">
@@ -2173,7 +2199,7 @@
                                   <!-- Row Ends -->
                                    <!-- Row Starts -->
                                    <div class="row" style="margin-top: 0px;">
-                                    <div class=" col-lg-3 col-sm-6">
+                                    <div class=" col-lg-4 col-sm-6">
                                       <label for="fname">DOB Start & End Range</label>
                                     </div>
                                     <div class=" col-lg-4 col-sm-6">
@@ -2297,7 +2323,7 @@
                 outline: none !important;
                 cursor: pointer;
                 font-size: 12px;
-                line-height: 14px;
+                line-height: 18px;
               }
               .multisteps-form__content{
                 background-color: #fff;
