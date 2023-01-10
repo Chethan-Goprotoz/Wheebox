@@ -1259,6 +1259,250 @@ position: relative;
 
 
 
+/* preview popup */
+
+#exampleModalToggle .modal-title,#exampleModalToggle11 .modal-title{
+    text-align: left;
+    font: normal normal 600 22px/33px Pop-normal;
+    letter-spacing: 0px;
+    color: #2C3652;
+    opacity: 1;
+}
+
+.modal-body.programmingPreview{
+
+    padding: 0 40px 40px 30px;
+
+}
+.modal-body .greenQueBg{
+    /* width: 701px;
+    height: 294px; */
+    background-image: linear-gradient(to right, #2D9D8D, #20776E);
+    border-radius: 6px;
+    opacity: 1;
+    position: relative;
+    padding: 15px 15px 22px 20px;
+}
+
+.greenQueBg .QueHeight .boldText{
+    font-family: pop-bold;
+}
+
+.greenQueBg .QueHeight{
+    text-align: left;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+    height: 135px;
+    font-size: 16px;
+    font-family: pop-normal;
+    overflow: auto;
+    padding-right: 125px;
+    padding-left: 20px;
+}
+.greenQueBg .QueHeight::-webkit-scrollbar{
+    width: 3px;
+    height: 200px;
+}
+
+/* Track */
+.greenQueBg .QueHeight::-webkit-scrollbar-track {
+    background: #196951;
+  }
+  
+  /* Handle */
+  .greenQueBg .QueHeight::-webkit-scrollbar-thumb {
+    background: #FFFFFF;
+    border-radius: 50px;
+  }
+
+
+.bgSpeakerBtn{
+    position: absolute;
+    position: absolute;
+    top: 15px;
+    right: 40px;
+}
+.ansTableTick {
+    width: 100%;
+    margin-left: 15px;
+}
+.ansTableTick tr {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    gap: 8px;
+    margin-bottom: 17px;
+}
+.ansTableTick tr td{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width: 54px;
+    height: 54px;
+    background: #F3FBF5 0% 0% no-repeat padding-box;
+    border-radius: 9px;
+    opacity: 1;
+    text-align: center;
+    font: normal normal bold 12px/18px Pop-bold;
+    letter-spacing: 0px;
+    color: #0F2046;
+    opacity: 0.45;
+    cursor: pointer;
+}
+.ansTableTick tr .answeredQue{
+    background: #20776E ;
+    box-shadow: 0px 3px 6px #5462E247;
+    border-radius: 5px;
+    opacity: 1;
+    color: #fff;
+}
+
+.popUpDivCard div p .sp1{
+    text-align: left;
+    font: normal normal bold 18px/27px Pop-bold;
+    letter-spacing: 0px;
+    color: #2C3652;
+    opacity: 1;
+}
+
+.popUpDivCard p .sp2{
+    text-align: left;
+    font: normal normal normal 16px/25px Pop-normal;
+    letter-spacing: 0px;
+    color: #2C3652;
+    opacity: 1;
+}
+.popUpDivCard .div1Card{
+    margin:30px 0 20px 0;
+    padding: 0 15px;
+    height: 73px;
+    border: 0.5px solid #20776E;
+    border-radius: 10px;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.popUpDivCard .div1Card a{
+    text-decoration: underline;
+    font-size: 14px;
+    font-family: pop-medium;
+    letter-spacing: 0px;
+    color: #20776E;
+    opacity: 1;
+}
+
+#exampleModalToggle .modal-dialog,#exampleModalToggle11 .modal-dialog{
+    max-width: 1110px;
+}
+
+#exampleModalToggle .modal-dialog.modal-sm, #exampleModalToggle11 .modal-dialog.modal-sm{
+    max-width: 600px;
+}
+
+#exampleModalToggle2 .modal-title{
+    text-align: left;
+    font: normal normal 600 22px/33px Pop-normal;
+    letter-spacing: 0px;
+    color: #2C3652;
+    opacity: 1;
+}
+
+.modal-footer .btnPrev{
+    width: 149px;
+    height: 40px;
+    box-shadow: 0px 3px 6px #5462E247;
+    border: 1px solid #20776E;
+    border-radius: 5px;
+    opacity: 1;
+    text-align: center;
+    font-size: 14px;
+    font-family: pop-medium;
+    letter-spacing: 0px;
+    color: #20776E;
+    opacity: 1;
+}
+
+.modal-footer .btnNext{
+    width: 149px;
+    height: 40px;
+    background: #20776E 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #5462E247;
+    border-radius: 5px;
+    opacity: 1;
+    text-align: center;
+    font-size: 14px;
+    font-family: pop-medium;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.textAreaDiv textarea{
+    border: 0.5px solid #20776E;
+border-radius: 10px;
+opacity: 1;
+height: 350px;
+font: normal normal normal 16px/35px Pop-normal;
+letter-spacing: 0px;
+color: #707070;
+opacity: 1;
+}
+
+.textAreaDiv textarea:focus{
+    box-shadow: none;
+}
+.modal-dialog.modal-smTestCode{
+    width: 403px;
+}
+.btn-closeTestCode{
+    width: 149px;
+    height: 40px;
+    background: #20776E 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #5462E247;
+    border-radius: 5px;
+    opacity: 1;
+    text-align: center;
+    font: normal normal normal 16px/25px Pop-normal;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.popUpDivCard .radiodiv {
+    border: 1px solid #B9C4BF;
+    border-radius: 5px;
+    height: 81px;
+}
+
+.popUpDivCard .radiodiv .form-check-input[type=radio] {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.popUpDivCard .radiodiv .form-check-label {
+    margin-top: 3px;
+    margin-left: 13px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font: normal normal normal 20px/24px Rob-norm;
+    letter-spacing: 0px;
+    color: #0F2046;
+    opacity: 1;
+}
+.popUpDivCard .radiodiv .form-check-input:checked[type=radio] {
+    background-image: url(../images/Question_Bank/radio.svg);
+    background-color: transparent;
+    width: 35px;
+    height: 35px;
+}
+
+
 
   /* resolution 1920 started */
 
