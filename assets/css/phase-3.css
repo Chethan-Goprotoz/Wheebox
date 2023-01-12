@@ -1666,6 +1666,10 @@ opacity: 1;
     margin-top: 10px;
 }
 
+#collapseExample .d-flex.sideMenu{
+    border: 2px solid #e6e6e6;
+}
+
 
 
   /* resolution 1920 started */
