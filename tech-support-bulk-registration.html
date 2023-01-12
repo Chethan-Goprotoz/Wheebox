@@ -80,10 +80,10 @@
         <div class="d-flex justify-content-between align-items-center">
           <img src="./assets/images/Question_Bank/menu.png" onclick="sidemenu()" id="menu-icon"
             class="fas fa-solid icon-w fa-bars d-block d-lg-none ms-0">
-          <h3 class="mb-0">Question Bank</h3>
+          <h3 class="mb-0">Bulk Registration</h3>
         </div>
 
-        <div class="dropdown">
+        <!-- <div class="dropdown">
           <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
             data-bs-toggle="dropdown" aria-expanded="false">
             Quick links
@@ -94,7 +94,7 @@
             <li><a class="dropdown-item" href="#">Review Question</a></li>
             <li><a class="dropdown-item" href="#">Allot Assesor</a></li>
           </ul>
-        </div>
+        </div> -->
       </div>
     </div>
     <div class="sidebar">
@@ -136,12 +136,13 @@
             </div>
           </a>
           <a href="#" class="position-relative">
-            <div class="d-flex sideMenu techSupportMenu active-one" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"> <img class="icon-align"
+            <div class="d-flex sideMenu techSupportMenu active-one" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample"> <img class="icon-align"
                 src="assets/images/Question_Bank/noun-headphone-5272179.svg" alt="">
                 <p>Tech Support</p>
             </div>
-            <div class="collapse" id="collapseExample">
-                <a href="tech-support-bulk-registration.html"> <div class="d-flex sideMenu activeTwo"> <img class="icon-align"
+            <div class="collapse" id="collapseExample2">
+                <a href="tech-support-bulk-registration.html"> 
+                  <div class="d-flex sideMenu activeTwo"> <img class="icon-align"
                   src="assets/images/Question_Bank/noun-registration-3264276.svg" alt="">
                   <p>Bulk Registration</p>
                 </div>
@@ -159,8 +160,8 @@
          
           <!-- bulk registration -->
           <div class="d-flex flexWrap justify-content-between align-items-center mb-5 mt-4">
-            <h3 class="mb-0">Bulk Registration</h3>
-            <div class="d-flex gap-4 Mb-center">
+            <h3 class="mb-0 d-none d-md-block">Bulk Registration</h3>
+            <div class="d-flex gap-4 Mb-center bulkRegis">
               <div
                 class="w-auto ps-3 pe-3 filter-container filter-container-shadow d-lg-flex d-flex justify-content-center align-items-center">
                 <a href="question-bank-manage-compilers.html">
@@ -177,111 +178,7 @@
               </div>
 
 
-                <!-- Modal review question -->
-                <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog modal-lg modal-xl modal-dialog-centered reviewQuesModal">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">Search Question</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <form action="" method="post">
-                      <div class="modal-body p-4 pt-5 pb-5 p-md-5 ms-4 ms-md-5 me-md-5 me-4">
-                        <div class="row gx-5 gy-4">
-                          <div class="col-sm-4 col-md-6 mt-0">
-                            <div class="calendar-container mt-0">
-                              <p>Select Subject</p>
-                              <select id="SearchDropdown" name="subject-select" placeholder="Select Subject Here"
-                                data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
-                                <option value="5">English</option>
-                                <option value="1">Hindi</option>
-                                <option value="2">Maths</option>
-                                <option value="3">Physics</option>
-                                <option value="4">Chemistry</option>
-                              </select>
-
-                            </div>
-                          </div>
-                          <div class="col-sm-4 col-md-6 mt-md-0">
-                            <div class="calendar-container mt-0 mt-md-0">
-                              <p>Select Topic</p>
-                              <select id="SearchDropdown" name="topic-select" placeholder="Select Topic Here"
-                                data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
-                                <option value="5">Grammer</option>
-                                <option value="1">Tense</option>
-                                <option value="2">Passage</option>
-                                <option value="3">Story</option>
-                                <option value="4">Poetry</option>
-                              </select>
-
-                            </div>
-                          </div>
-                          <div class="col-sm-4 col-md-6">
-                            <div class="calendar-container mt-0">
-                              <p>Select Subtopics</p>
-                              <select id="SearchDropdown" name="native-select" placeholder="Select Subtopic Here"
-                                data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
-                                <option value="5">Tenses</option>
-                                <option value="2">Passage</option>
-                                <option value="3">Story</option>
-                                <option value="4">Poetry</option>
-                              </select>
-
-                            </div>
-                          </div>
-                          <div class="col-sm-4 col-md-6">
-                            <div class="calendar-container mt-0">
-                              <p>Select Question Type</p>
-                              <select id="SearchDropdown" name="native-select" placeholder="Select Question type"
-                                data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
-                                <option value="5">MCQ</option>
-                                <option value="">Fill in the Blanks</option>
-                                <option value="2">Subjective</option>
-                                <option value="3">Answer</option>
-                              </select>
-
-                            </div>
-                          </div>
-                          <div class="col-sm-4 col-md-6">
-                            <div class="calendar-container mt-0">
-                              <p>Select Difficulty Level</p>
-                              <select id="SearchDropdown" name="native-select"
-                                placeholder="Select Difficulty Level" data-search="true"
-                                data-silent-initial-value-set="true" class="searchdropdown">
-                                <option value="5">Easy</option>
-                                <option value="2">Moderate</option>
-                                <option value="3">Hard</option>
-
-                              </select>
-
-                            </div>
-                          </div>
-                          <div class="col-sm-4 col-md-6">
-                            <div class="calendar-container mt-0">
-                              <p>Select Question Status</p>
-                              <select id="SearchDropdown" name="native-select"
-                                placeholder="Select Question Status" data-search="true"
-                                data-silent-initial-value-set="true" class="searchdropdown">
-                                <option value="5">Done</option>
-                                <option value="2">Pending</option>
-                                <option value="3">Working</option>
-                              </select>
-
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btnBorder" data-bs-dismiss="modal">Cancel</button>
-                        <a href="question-bank-search-que-1.html"> <button type="button"
-                            class="btn btnDark">Submit</button></a>
-                      </div>
-                    </form>
-                  </div>
-                </div>
-              </div>
-              <!-- modal end  review que end-->
+              
             </div>
           </div>
           <div class="selectDropdown p-5 bg-light1 p-4 p-md-5">
