@@ -222,20 +222,17 @@
                 </div>
               </div>
               <div class="col-sm-4 col-md-4">
-                <div class="calendar-container mt-0">
+                <div class="calendar-container InputFile mt-3">
                   <p>Select File</p>
-                  <select id="SearchDropdown" name="native-select" placeholder="Select File Here"
-                    data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
-                    <option value="5">File 1</option>
-                    <option value="2">File 1</option>
-                    <option value="3">File 1</option>
-               
-                  </select>
+                  <div class="position-relative inputFileDiv">
+                    <input type="text" class="form-control" placeholder="Select File Here">
+                    <input type="file" class="form-control">
+                  </div>
 
                 </div>
               </div>
               <div class="col-sm-4 col-md-4">
-                <div class="calendar-container mt-0 dateInputField">
+                <div class="calendar-container mt-3 dateInputField">
                     <p>Select Start Date & End Date:</p>
                     <input type="text" name="datefilter" class="calendar" value="" placeholder="Select"/>
                     <i class="fa-regular fa-calendar"></i>

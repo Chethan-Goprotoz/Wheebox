@@ -1686,12 +1686,70 @@ opacity: 1;
     cursor: pointer;
 }
 
+.calendar-container.InputFile input[type="file"]{
+    height: 42px;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+}
+
+.calendar-container.InputFile input[type="text"]{
+    height: 42px;
+    border: 1px solid #20776E;
+    box-shadow: 0px 2px 12px #20776e29;
+    font-size: 14px;
+}
+
+.calendar-container.InputFile input[type="text"]::placeholder{
+    text-align: left;
+    font: normal normal normal 14px/11px Pop-normal;
+    letter-spacing: 0px;
+    color: #010D0A;
+    opacity: 0.3;
+    padding-right: 10px;
+    margin-left: 10px;
+
+}
+
+.calendar-container.InputFile .inputFileDiv::after{
+    content: "";
+    background-image: url(../images/Question_Bank/download.svg);
+    position: absolute;
+    display: block;
+    right: 15px;
+    width: 18px;
+    height: 18px;
+    background-size: 18px;
+    z-index: 9;
+    opacity: 1;
+    top: 12px;
+}
+
 
 
 
   /* resolution 1920 started */
 
   @media (min-width:1900px){
+    .calendar-container.InputFile input[type="file"]{
+        height: 50px;
+    }
+    .calendar-container.InputFile input[type="text"]{
+        height: 50px;
+        font-size: 16px;
+    }
+    .calendar-container.InputFile input[type="text"]::placeholder{
+        font-size: 16px;
+    }
+    .calendar-container.InputFile .inputFileDiv::after{
+        top: 15px;
+        right: 18px;
+    }
+
+    .dateInputField .fa-calendar{
+        font-size: 18px;
+        height: 18px;
+    }
 
     .qusAnsAccordian .accordion-button:not(.collapsed)::before{
         width: 24px;
