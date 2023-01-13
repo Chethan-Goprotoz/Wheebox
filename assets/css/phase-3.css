@@ -2137,6 +2137,19 @@ opacity: 1;
         color: #010D0A;
     }
 
+    .filterDiv.d-flex.gap-3{
+        padding-bottom: 30px;
+    }
+
+    .accHead h6 b{
+        font-family: pop-bold;
+    }
+
+    .qusAnsAccordian .btnBorder{
+        margin-bottom: 20px;
+        margin-right: 10px;
+    }
+
 
 
 
