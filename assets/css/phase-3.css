@@ -1674,11 +1674,30 @@ opacity: 1;
     color: #c4c1c1;
 }
 
+.qusAnsAccordian .accordion-button:not(.collapsed)::before{
+    content: "";
+    display: block;
+    background-image: url(../images/Question_Bank/delete.png);
+    position: absolute;
+    background-size: cover;
+    width: 12px;
+    height: 15px;
+    right: 44px;
+    cursor: pointer;
+}
+
+
 
 
   /* resolution 1920 started */
 
   @media (min-width:1900px){
+
+    .qusAnsAccordian .accordion-button:not(.collapsed)::before{
+        width: 24px;
+        height: 30px;
+        right: 62px;
+    }
     .quesBankTabs .nav-item .nav-link, .quesBankTabs .nav-item .nav-link.active{
         font-size: 18px !important;
     }
