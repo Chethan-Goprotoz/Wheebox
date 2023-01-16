@@ -1725,6 +1725,11 @@ opacity: 1;
     top: 12px;
 }
 
+.dateInputField .fa-calendar{
+    font-size: 14px;
+    bottom: 10px;
+}
+
 
 
 
@@ -2867,6 +2872,37 @@ opacity: 1;
         padding-left: 20px !important;
         padding-right: 20px !important;
         border: 0;
+    }
+    .popUpDivCard .radiodiv .form-check-input[type=radio], .popUpDivCard .radiodiv .form-check-input:checked[type=radio]{
+        width: 35px;
+        height: 32px;
+    }
+    .popUpDivCard .radiodiv .form-check-label{
+        font-size: 18px;
+    }
+
+    .gap-4.Mb-center.bulkRegis{
+        margin-top: 20px;
+    }
+    .selectDropdown.Mb .calendar-container.mt-0{
+        margin-top: 1rem !important;
+
+    }
+    .calendar-container.InputFile input[type="file"],.calendar-container.InputFile input[type="text"]{
+        height: 50px;
+        font-size: 16px;
+        border: 1px solid #ced4da;
+    }
+    .dateInputField .calendar{
+        height: 50px;
+       border:1px solid #ced4da;
+    }
+    .calendar-container.InputFile .inputFileDiv::after{
+        top: 16px;
+        right: 11px;
+    }
+    .dateInputField .fa-calendar{
+        font-size: 16px;
     }
   
 }
