@@ -1848,7 +1848,9 @@ opacity: 1;
     line-height: 12px;
 }
 
-
+.filterTag a img{
+    margin-left: 10px;
+}
 
 
 
