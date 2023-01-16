@@ -2855,6 +2855,19 @@ opacity: 1;
     .btnDark.randomCodeBtn{
         margin-bottom: 10px;
     }
+    .modal-body.programmingPreview .row{
+        flex-direction: column-reverse;
+    }
+    .modal-body.programmingPreview{
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 0;
+    }
+    .modal-footer.justify-content-between.ps-5{
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+        border: 0;
+    }
   
 }
 
