@@ -136,7 +136,7 @@
                 <input type="text" class="form-control" placeholder="Search...">
               </div>
               <div class="filter-container filter-container-shadow w-auto ps-3 pe-3 d-lg-flex d-flex justify-content-center align-items-center d-none d-md-flex" data-bs-toggle="modal" data-bs-target="#addCompilers">
-                <p>Add New Test Case1 <img src="./assets/images/Question_Bank/plus-slick1.svg" class="ms-2" width="16" alt=""></p>
+                <p>Add New Test Case <img src="./assets/images/Question_Bank/plus-slick1.svg" class="ms-2" width="16" alt=""></p>
               </div>
 
                <!-- popup for programming snippet -->
@@ -165,7 +165,7 @@
              </div>
              <div class="modal-body ps-5 pe-5 border-0">
 
-              <div class="row1 d-flex justify-content-between align-items-center">
+              <div class="row1 w-75 d-flex justify-content-between align-items-center">
                 <div>
                   <p>Test Case</p>
                   <div class="custom-select testCaseSelect" style="width:250px;">
@@ -180,9 +180,18 @@
                   </div>
                 </div>
 
-                <div>
-                  <p>Active</p>
-                  <div class="toggle-group TestCase">
+                <div class="w-25">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <p>Active</p>
+                    <div class="">
+                      <a href="#" class="helpToolTip position-relative">
+                        <img src="./assets/images/Question_Bank/help-que.svg" width="14" alt="">
+                        <p class="mb-0 toolTipText">Selected Compilers will be used for compiling the program
+                          by the candidates during the test</p>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="toggle-group editTestCase">
                     <input type="checkbox" name="on-off-switch" id="on-off-switch2" checked="" tabindex="1">
                     <label for="on-off-switch2">
                       <span class="aural"></span>
@@ -196,9 +205,18 @@
                   </div>
                 </div>
 
-                <div>
-                  <p>Visible</p>
-                  <div class="toggle-group TestCase">
+                <div class="w-25">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <p>Visible</p>
+                    <div class="">
+                      <a href="#" class="helpToolTip position-relative">
+                        <img src="./assets/images/Question_Bank/help-que.svg" width="14" alt="">
+                        <p class="mb-0 toolTipText">Selected Compilers will be used for compiling the program
+                          by the candidates during the test</p>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="toggle-group editTestCase">
                     <input type="checkbox" name="on-off-switch" id="on-off-switch1" checked="" tabindex="1">
                     <label for="on-off-switch1">
                       <span class="aural"></span>
@@ -231,7 +249,7 @@
                   <textarea class="form-control" name="" id="" cols="30" rows="10"></textarea>
                 </div>
                 <div>
-                  <button class="btn" type="button">Compile</button>
+                  <button class="btn compileBtn text-white" type="button">Compile</button>
                 </div>
                 <div>
                 
@@ -257,7 +275,7 @@
                     </div>
                     <div class="">
                       <a href="#" class="helpToolTip position-relative">
-                        <img src="./assets/images/Question_Bank/help-que.svg" width="14" alt="">
+                        <img class="mb-2" src="./assets/images/Question_Bank/help-que.svg" width="14" alt="">
                         <p class="mb-0 toolTipText">Selected Compilers will be used for compiling the program
                           by the candidates during the test</p>
                       </a>
@@ -368,7 +386,7 @@
             
               </div>
              <div
-               class="modal-footer ps-5 d-flex justify-content-between align-items-center border-0">
+               class="modal-footer addEditTestCaseFooter ps-5 d-flex justify-content-between align-items-center border-0">
                <div>
                  <button type="reset" class="btn f1BtnBorder resetDE">Reset to Default</button>
                </div>
