@@ -1730,6 +1730,37 @@ opacity: 1;
     bottom: 10px;
 }
 
+.formNote .form-control.editTextArea{
+    border-radius: 10px 10px 0 0;
+}
+
+#editQueModalLabel2{
+    text-align: left;
+    font: normal normal 600 22px/33px Pop-normal;
+    letter-spacing: 0px;
+    color: #2C3652;
+    opacity: 1;
+    margin-bottom: 0;
+}
+
+.inputGroups .form-check-input[type="radio"]{
+    background-color: transparent;
+}
+
+.btn.btnDarkEditQues{
+    width: 149px;
+    height: 40px;
+    background: #20776E 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #5462E247;
+    border-radius: 5px;
+    letter-spacing: 0px;
+    font-family: pop-medium;
+    font-size: 14px;
+    color: #FFFFFF;
+    opacity: 1;
+    margin-left: 30px;
+}
+
 
 
 

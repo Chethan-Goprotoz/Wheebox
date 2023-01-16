@@ -84,7 +84,7 @@
             <img src="./assets/images/Question_Bank/menu.png" onclick="sidemenu()" id="menu-icon" class="fas fa-solid icon-w fa-bars d-block d-lg-none ms-0">
             <h3 class="mb-0">Review Questions</h3>
           </div>
-          <div class="filter-container filter-container-shadow w-auto ps-3 pe-3 d-lg-flex d-flex justify-content-center align-items-center" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          <div class="filter-container filter-container-shadow w-auto ps-3 pe-3 d-lg-flex d-flex justify-content-center align-items-center" data-bs-toggle="modal" data-bs-target="#editQueModal">
             <p>Search Question <img src="./assets/images/Question_Bank/search-white.svg" class="ms-2" alt=""></p>
           </div>
          
@@ -130,17 +130,17 @@
           <div class="inside-container-dashboard">
             <div class="d-flex justify-content-between align-items-center mb-5">
               <h3 class="mb-0 d-none d-md-block">Review Questions</h3>
-              <div class="filter-container filter-container-shadow w-auto ps-3 pe-3 d-lg-flex d-flex justify-content-center align-items-center d-none d-md-flex" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <div class="filter-container filter-container-shadow w-auto ps-3 pe-3 d-lg-flex d-flex justify-content-center align-items-center d-none d-md-flex" data-bs-toggle="modal" data-bs-target="#editQueModal">
                 <p>Search Question <img src="./assets/images/Question_Bank/search-white.svg" class="ms-2" alt=""></p>
               </div>
 
                <!-- Modal review question -->
-               <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+               <div class="modal fade" id="editQueModal" tabindex="-1" aria-labelledby="editQueModalLabel"
                aria-hidden="true">
                <div class="modal-dialog  modal-dialog-centered reviewQuesModal">
                  <div class="modal-content">
                    <div class="modal-header">
-                     <h5 class="modal-title" id="exampleModalLabel">Search Question</h5>
+                     <h5 class="modal-title" id="editQueModalLabel">Search Question</h5>
                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                    </div>
                    <form action="" method="post">
@@ -351,8 +351,228 @@
                     </ul>  
 
                     <div class="text-end pb-4">
-                      <button type="button" class="btn btnBorder mx-au">Edit <img src="./assets/images/Question_Bank/editBtn.png" alt=""></button>
+                      <button type="button" class="btn btnBorder mx-au" data-bs-toggle="modal" data-bs-target="#editQueModal2">Edit <img src="./assets/images/Question_Bank/editBtn.png" alt=""></button>
                     </div>
+
+                    <!-- modal edit question -->
+                      <!-- Modal -->
+                          <div class="modal fade" id="editQueModal2" tabindex="-1" aria-labelledby="editQueModalLabel2" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header align-items-center border-0">
+                                  <h5 class="modal-title" id="editQueModalLabel2">Exit Question</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                  <div class="selectDropdown rounded-0 p-5 bg-light1 p-4 p-md-5 ms-5 me-5">
+                                  
+                                    <div class="row gx-5 gy-4">
+                                      <div class="col-sm-4 col-md-4 mt-0">
+                                        <div class="calendar-container mt-0">
+                                          <p>Select Subject</p>
+                                          <select id="SearchDropdown" name="native-select" placeholder="Select Subject Here"
+                                            data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
+                                            <option value="5">English</option>
+                                            <option value="1">Hindi</option>
+                                            <option value="2">Maths</option>
+                                            <option value="3">Physics</option>
+                                            <option value="4">Chemistry</option>
+                                          </select>
+                  
+                                        </div>
+                                      </div>
+                                      <div class="col-sm-4 col-md-4 mt-0">
+                                        <div class="calendar-container mt-0">
+                                          <p>Select Topic</p>
+                                          <select id="SearchDropdown" name="native-select" placeholder="Select Topic Here"
+                                            data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
+                                            <option value="5">Grammer</option>
+                                            <option value="1">Tense</option>
+                                            <option value="2">Passage</option>
+                                            <option value="3">Story</option>
+                                            <option value="4">Poetry</option>
+                                          </select>
+                  
+                                        </div>
+                                      </div>
+                                      <div class="col-sm-4 col-md-4 mt-0">
+                                        <div class="calendar-container mt-0">
+                                          <p>Select Subtopics</p>
+                                          <select id="SearchDropdown" name="native-select" placeholder="Select Subtopic Here"
+                                            data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
+                                            <option value="5">Tenses</option>
+                                            <option value="2">Passage</option>
+                                            <option value="3">Story</option>
+                                            <option value="4">Poetry</option>
+                                          </select>
+                  
+                                        </div>
+                                      </div>
+                                      <div class="col-sm-4 col-md-4">
+                                        <div class="calendar-container mt-0">
+                                          <p>Select Question Type</p>
+                                          <select id="target" class="form-select selectOptionMcq" aria-label="Default select example">
+                                            <option value="multiple_choice">MCQ</option>
+                                            <option value="fill_in_blanks">Fill in the Blanks</option>
+                                            <option value="subjective_question">Subjective</option>
+                                            <option value="comparison_question">Comprehension Question</option>
+                                            <option value="typting_section">Typing Question</option>
+                                            <option value="single_choice">Single Choice Question</option>
+                                            <option value="drag_n_drop">Drag Drop Question</option>
+                                            <option value="psychometric_que">Psychometric</option>
+                                            <option value="video_recording">Video Recording</option>
+                                          </select>
+                  
+                                        </div>
+                                      </div>
+                                      <div class="col-sm-4 col-md-4">
+                                        <div class="calendar-container mt-0">
+                                          <p>Select Difficulty Level</p>
+                                          <select id="SearchDropdown" name="native-select" placeholder="Select Difficulty Level"
+                                            data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
+                                            <option value="5">Easy</option>
+                                            <option value="2">Moderate</option>
+                                            <option value="3">Hard</option>
+                  
+                                          </select>
+                  
+                                        </div>
+                                      </div>
+                                      <div class="col-sm-4 col-md-4">
+                                        <div class="calendar-container mt-0">
+                                          <p>Select Language</p>
+                                          <select id="SearchDropdown" name="native-select" placeholder="Select Languages Here"
+                                            data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
+                                            <option value="5">English</option>
+                                            <option value="2">Hindi</option>
+                                            <option value="3">Telugu</option>
+                                          </select>
+                  
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <div class="bg-white p-4 p-md-5 formArea">
+                                    <div class="formNote">
+                                      <div class="">
+                                        <!-- <div class="d-flex justify-content-between align-items-center mb-5">
+                                          <h3 class="mb-0">Multiple Choice Question</h3>
+                                          <a href=""><img src="./assets/images/Question_Bank/delete.png" alt="" width="18"></a>
+                                        </div> -->
+                                        <textarea class="form-control editTextArea bg-white pt-4 ps-4 border-success1 border-bottom-0"
+                                          id="exampleFormControlTextarea1" rows="6" name="pre-value"
+                                          placeholder="Please type the Question text in this area." value="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet." spellcheck="false"></textarea>
+                                        <div class="controlBtn border-success1 bg-white border-top-0">
+                                          <button type="button" class="btn"><img src="assets/images/Question_Bank/noun-bold-3871803.svg"
+                                             width="14" height="18" alt=""></button>
+                                          <button type="button" class="btn"><img src="assets/images/Question_Bank/noun-italic-4926333 (1).svg"
+                                              width="12" height="18" alt=""></button>
+                                          <button type="button" class="btn"><img
+                                             width="12" height="18" src="assets/images/Question_Bank/noun-underline-3871798.svg" alt=""></button>
+                                         
+                                          <button type="button" class="btn"><img
+                                              src="assets/images/Question_Bank/noun-text-colour-4414429.svg" height="17" alt=""></button>
+                                              <button type="button" class="btn"><img
+                                                src="assets/images/Question_Bank/Line 1197.svg" width="12" height="18" alt=""></button>
+                                                <button type="button" class="btn"><img
+                                                  src="assets/images/Question_Bank/noun-align-center-3871867.svg" width="16" height="17" alt=""></button>
+                                                  <button type="button" class="btn"><img
+                                                    src="assets/images/Question_Bank/noun-align-left-3871870.svg" width="16" height="17" alt=""></button>
+                                                    <button type="button" class="btn"><img
+                                                      src="assets/images/Question_Bank/noun-align-right-3871865.svg" width="16" height="17" alt=""></button>
+                                                      <button type="button" class="btn"><img
+                                                        src="assets/images/Question_Bank/Line 1197.svg" width="12" height="17" alt=""></button>
+                                                        <button type="button" class="btn"><img
+                                                          src="assets/images/Question_Bank/noun-bullet-list-3871822.svg" width="20" height="17" alt=""></button>
+                                                          <button type="button" class="btn"><img
+                                                            src="assets/images/Question_Bank/noun-number-list-3871818.svg" width="20" height="17" alt=""></button>
+                  
+                                                          <button type="button" class="btn"><img
+                                                            src="assets/images/Question_Bank/noun-sub-bullet-3031236.svg" width="18" height="17" alt=""></button>
+                  
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="inputGroups">
+                                      <form action="">
+                                        <div class="d-flex justify-content-between align-items-center pt-4">
+                                          <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                          </div>
+                                          <div class="w-100">
+                                            <input type="text" class="form-control"
+                                              placeholder="Please type the option text in this area." value="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et." required>
+                                            <p class="mb-0 errorMsg d-none">Please select the correct answer</p>
+                                          </div>
+                                          <div>
+                                            <a href=""><img src="./assets/images/Question_Bank/crosx.png" alt=""></a>
+                                          </div>
+                                        </div>
+                  
+                                        <div class="d-flex justify-content-between align-items-center pt-4">
+                                          <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                          </div>
+                                          <div class="w-100">
+                                            <input type="text" class="form-control " value="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et."
+                                              placeholder="Please type the option text in this area.">
+                                            <!-- <p class="mb-0 errorMsg">Please select the correct answer</p> -->
+                                          </div>
+                                          <div>
+                                            <a href=""><img src="./assets/images/Question_Bank/crosx.png" alt=""></a>
+                                          </div>
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-center pt-4">
+                                          <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                  
+                                          </div>
+                                          <div class="w-100">
+                                            <input type="text" class="form-control" value="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et."
+                                              placeholder="Please type the option text in this area.">
+                                            <p class="mb-0 errorMsg d-none">Please select the correct answer</p>
+                                          </div>
+                                          <div>
+                                            <a href=""><img src="./assets/images/Question_Bank/crosx.png" alt=""></a>
+                                          </div>
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-center pt-4">
+                                          <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                          </div>
+                                          <div class="w-100">
+                                            <input type="text" class="form-control" value="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et."
+                                              placeholder="Please type the option text in this area.">
+                                            <p class="mb-0 errorMsg d-none">Please select the correct answer</p>
+                                          </div>
+                                          <div>
+                                            <a href=""><img src="./assets/images/Question_Bank/crosx.png" alt=""></a>
+                                          </div>
+                                        </div>
+                  
+                                        <div class="d-flex justify-content-between align-items-center pt-5 addOption">
+                                          <div>
+                                            <a href="">Add Hint ?</a>
+                                          </div>
+                                          <div>
+                                            <a href=""><img src="./assets/images/Question_Bank/add-plus.png" alt="" class="me-3"> Add More
+                                              Option</a>
+                                          </div>
+                                        </div>
+                                      </form>
+                                    </div>
+                                  </div>
+                  
+                                </div>
+                                <div class="modal-footer border-0">
+                                  <button type="button" class="btn btnBorder" data-bs-dismiss="modal">Cancel</button>
+                                  <a href="question-bank-search-que-1.html"> <button type="button" class="btn btnDarkEditQues">Save</button></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    <!-- modal end -->
                   </div>
                 </div>
               </div>
