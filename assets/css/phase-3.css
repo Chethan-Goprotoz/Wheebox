@@ -1761,6 +1761,10 @@ opacity: 1;
     margin-left: 30px;
 }
 
+#editQueModal2 .modal-dialog{
+    max-width: 1110px;
+}
+
 
 
 

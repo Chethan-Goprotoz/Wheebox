@@ -325,9 +325,160 @@
                     </div>
                     
                     <div class="text-end pb-4 PT-btn">
-                      <button type="button" class="btn btnBorder me-3">Delete <img src="./assets/images/Question_Bank/editBtn.png" class="mb-1" alt=""></button>
-                      <button type="button" class="btn btnBorder ">Edit <img src="./assets/images/Question_Bank/editBtn.png"  class="mb-1" alt=""></button>
+                      <!-- <button type="button" class="btn btnBorder me-3">Delete <img src="./assets/images/Question_Bank/editBtn.png" class="mb-1" alt=""></button> -->
+                      <button type="button" class="btn btnBorder" data-bs-toggle="modal" data-bs-target="#editQueModal2">Edit <img src="./assets/images/Question_Bank/editBtn.png"  class="mb-1" alt=""></button>
                     </div>
+
+
+                      <!-- modal edit question -->
+                      <!-- Modal -->
+                      <div class="modal fade" id="editQueModal2" tabindex="-1" aria-labelledby="editQueModalLabel2" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header align-items-center border-0">
+                              <h5 class="modal-title" id="editQueModalLabel2">Exit Question</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              <div class="selectDropdown rounded-0 p-5 bg-light1 p-4 p-md-5 ms-5 me-5">
+                              
+                                <div class="row gx-5 gy-4">
+                                  <div class="col-sm-4 col-md-4 mt-0">
+                                    <div class="calendar-container mt-0">
+                                      <p>Select Subject</p>
+                                      <select id="SearchDropdown" name="native-select" placeholder="Select Subject Here"
+                                        data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
+                                        <option value="5">English</option>
+                                        <option value="1">Hindi</option>
+                                        <option value="2">Maths</option>
+                                        <option value="3">Physics</option>
+                                        <option value="4">Chemistry</option>
+                                      </select>
+              
+                                    </div>
+                                  </div>
+                                  <div class="col-sm-4 col-md-4 mt-0">
+                                    <div class="calendar-container mt-0">
+                                      <p>Select Topic</p>
+                                      <select id="SearchDropdown" name="native-select" placeholder="Select Topic Here"
+                                        data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
+                                        <option value="5">Grammer</option>
+                                        <option value="1">Tense</option>
+                                        <option value="2">Passage</option>
+                                        <option value="3">Story</option>
+                                        <option value="4">Poetry</option>
+                                      </select>
+                                    </div>
+                                  </div>
+                                
+                                  
+                                  <div class="col-sm-4 col-md-4 mt-0">
+                                    <div class="calendar-container mt-0">
+                                      <p>Select Difficulty Level</p>
+                                      <select id="SearchDropdown" name="native-select" placeholder="Select Difficulty Level"
+                                        data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
+                                        <option value="5">Easy</option>
+                                        <option value="2">Moderate</option>
+                                        <option value="3">Hard</option>
+                                      </select>              
+                                    </div>
+                                  </div>
+                                  <div class="col-sm-4 col-md-4">
+                                    <div class="calendar-container mt-0">
+                                      <p>Question Status</p>
+                                      <select id="SearchDropdown" name="native-select" placeholder="Select Question Status"
+                                        data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
+                                        <option value="5">Active</option>
+                                        <option value="2">Inactive</option>
+                                        <option value="3">Done</option>
+                                      </select>
+                                    </div>
+                                  </div>
+                                  <div class="col-sm-4 col-md-4">
+                                    <div class="calendar-container mt-0">
+                                      <p>Select Question Type</p>
+                                      <select id="SearchDropdown" name="native-select" placeholder="Select Select Question Type"
+                                        data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
+                                        <option value="5">Programming</option>
+                                        <option value="2">Tech</option>
+                                        <option value="3">Non-texh</option>
+                                      </select>
+              
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="bg-white p-4 p-md-5 pb-md-3 formArea">
+                                <div class="formNote">
+                                  <div class="">
+                                    <!-- <div class="d-flex justify-content-between align-items-center mb-5">
+                                      <h3 class="mb-0">Multiple Choice Question</h3>
+                                      <a href=""><img src="./assets/images/Question_Bank/delete.png" alt="" width="18"></a>
+                                    </div> -->
+                                    <textarea class="form-control editTextArea bg-white pt-4 ps-4 border-success1 border-bottom-0"
+                                      id="exampleFormControlTextarea1" rows="6" name="pre-value"
+                                      placeholder="Please type the Question text in this area." value="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet." spellcheck="false"></textarea>
+                                    <div class="controlBtn border-success1 bg-white border-top-0">
+                                      <button type="button" class="btn"><img src="assets/images/Question_Bank/noun-bold-3871803.svg"
+                                         width="14" height="18" alt=""></button>
+                                      <button type="button" class="btn"><img src="assets/images/Question_Bank/noun-italic-4926333 (1).svg"
+                                          width="12" height="18" alt=""></button>
+                                      <button type="button" class="btn"><img
+                                         width="12" height="18" src="assets/images/Question_Bank/noun-underline-3871798.svg" alt=""></button>
+                                     
+                                      <button type="button" class="btn"><img
+                                          src="assets/images/Question_Bank/noun-text-colour-4414429.svg" height="17" alt=""></button>
+                                          <button type="button" class="btn"><img
+                                            src="assets/images/Question_Bank/Line 1197.svg" width="12" height="18" alt=""></button>
+                                            <button type="button" class="btn"><img
+                                              src="assets/images/Question_Bank/noun-align-center-3871867.svg" width="16" height="17" alt=""></button>
+                                              <button type="button" class="btn"><img
+                                                src="assets/images/Question_Bank/noun-align-left-3871870.svg" width="16" height="17" alt=""></button>
+                                                <button type="button" class="btn"><img
+                                                  src="assets/images/Question_Bank/noun-align-right-3871865.svg" width="16" height="17" alt=""></button>
+                                                  <button type="button" class="btn"><img
+                                                    src="assets/images/Question_Bank/Line 1197.svg" width="12" height="17" alt=""></button>
+                                                    <button type="button" class="btn"><img
+                                                      src="assets/images/Question_Bank/noun-bullet-list-3871822.svg" width="20" height="17" alt=""></button>
+                                                      <button type="button" class="btn"><img
+                                                        src="assets/images/Question_Bank/noun-number-list-3871818.svg" width="20" height="17" alt=""></button>
+              
+                                                      <button type="button" class="btn"><img
+                                                        src="assets/images/Question_Bank/noun-sub-bullet-3031236.svg" width="18" height="17" alt=""></button>
+              
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="inputGroups">
+                                  <form action="">
+                                    <div class="popUpDivCard">
+                                      <div class="div1Card">
+                                        <p class="mb-0"><span class="sp1">Compilers used :</span><span class="sp2"> C, CPP, C#, Java, Python </span></p>
+                                        <a href="#">Edit <img class="ms-2" src="./assets/images/Question_Bank/edit-2.svg" width="12" alt=""></a>
+                                      </div>
+                                      <div class="div1Card">
+                                        <p class="mb-0"><span class="sp1">Test Cases :</span><span class="sp2"> 10</span></p>
+                                        <a href="#">Edit <img class="ms-2" src="./assets/images/Question_Bank/edit-2.svg" width="12" alt=""></a>
+                                      </div>
+                                      <div class="div1Card">
+                                        <p class="mb-0"><span class="sp1">Test Code :</span><span class="sp2"> Type your Test Code </span></p>
+                                        <a href="#">Edit <img class="ms-2" src="./assets/images/Question_Bank/edit-2.svg" width="12" alt=""></a>
+                                      </div>
+                                    </div>
+                                  </form>
+                                </div>
+                              </div>
+              
+                            </div>
+                            <div class="modal-footer pt-0 border-0">
+                              <button type="button" class="btn btnBorder" data-bs-dismiss="modal">Cancel</button>
+                              <a href="question-bank-search-que-1.html"> <button type="button" class="btn btnDarkEditQues">Save</button></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                <!-- modal end -->
                   </div>
                 </div>
               </div>
@@ -357,7 +508,7 @@
                     
 
                     <div class="text-end pb-4 PT-btn">
-                      <button type="button" class="btn btnBorder me-3">Delete <img src="./assets/images/Question_Bank/editBtn.png" class="mb-1" alt=""></button>
+                      <!-- <button type="button" class="btn btnBorder me-3">Delete <img src="./assets/images/Question_Bank/editBtn.png" class="mb-1" alt=""></button> -->
                       <button type="button" class="btn btnBorder ">Edit <img src="./assets/images/Question_Bank/editBtn.png"  class="mb-1" alt=""></button>
                     </div>
                   </div>
@@ -389,7 +540,7 @@
                     
 
                     <div class="text-end pb-4 PT-btn">
-                      <button type="button" class="btn btnBorder me-3">Delete <img src="./assets/images/Question_Bank/editBtn.png" class="mb-1" alt=""></button>
+                      <!-- <button type="button" class="btn btnBorder me-3">Delete <img src="./assets/images/Question_Bank/editBtn.png" class="mb-1" alt=""></button> -->
                       <button type="button" class="btn btnBorder ">Edit <img src="./assets/images/Question_Bank/editBtn.png"  class="mb-1" alt=""></button>
                     </div>
                   </div>
@@ -418,7 +569,7 @@
                       <h6 class="mb-0 ms-1 languagesType">10</h6>
                     </div>
                     <div class="text-end pb-4 PT-btn">
-                      <button type="button" class="btn btnBorder me-3">Delete <img src="./assets/images/Question_Bank/editBtn.png" class="mb-1" alt=""></button>
+                      <!-- <button type="button" class="btn btnBorder me-3">Delete <img src="./assets/images/Question_Bank/editBtn.png" class="mb-1" alt=""></button> -->
                       <button type="button" class="btn btnBorder ">Edit <img src="./assets/images/Question_Bank/editBtn.png"  class="mb-1" alt=""></button>
                     </div>
                   </div>
