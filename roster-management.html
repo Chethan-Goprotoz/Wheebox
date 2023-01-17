@@ -1,0 +1,462 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Roaster Management</title>
+  <!-- font awesome css -->
+  <link rel="stylesheet" href="assets/font-awesome/all.min.css" />
+  <link rel="stylesheet" href="assets/font-awesome/fontawesome.css" />
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="shortcut icon" href="assets/images/logo_logo.png" sizes="16x16" type="image/x-icon">
+  <!-- loader css -->
+  <link rel="stylesheet" href="assets/css/loader.css">
+  <!-- style css -->
+  <!-- <link rel="stylesheet" href="assets/sass/app.css" rel="stylesheet" /> -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+  <link rel="stylesheet" href="assets/css/virtual-select.min.css">
+  <link rel="stylesheet" href="assets/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/phase-3.css" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="assets/css/chethan.css"> -->
+
+</head>
+
+<body>
+  <!-- loader start-->
+  <div class="loader-container">
+    <div class="loader"></div>
+  </div>
+  <!-- loader end-->
+  <!--selection section start -->
+  <div class="selection-new " id="fullselector">
+    <div class="container-fluid">
+      <div class="main_div">
+        <div class="row">
+          <div class="main_header mb-1">
+            <div class="d-flex justify-content-between navpart1">
+              <div class="logo new-logopart">
+                <img src="assets/images/logo_logo.png" alt="mini-logo">
+              </div>
+            </div>
+            <div class="d-flex align-items-center gap-5">
+              <div class="d-flex gap-4">
+
+                <!-- <div>
+                  <a href="#">
+                    <div class="home-search">
+                      <img class="nav-arrows-1" src="assets/images/home-hover.svg" alt="">
+                    </div>
+                  </a>
+                </div> -->
+              </div>
+              <div class="grid-new" id="profile-out">
+                <div class="grid1-new" onclick="profile()">
+                  <div class="profile rounded-circle">
+                    <img src="assets/images/prof-mini.png" alt="profile">
+                  </div>
+                </div>
+                <div class="grid2-new d-none d-md-block" onclick="profile()">
+                  <h6>Jane Doe</h6>
+                  <p>jane_doe@wheebox.com</p>
+                </div>
+                <div class="profileDropdown" id="profileDropdown">
+                  <ul>
+                    <li>Admin Profile</li>
+                    <li>Change Password</li>
+                    <li>Help Center</li>
+                    <li>Log Out</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- row closed -->
+      </div>
+      <div class="d-flex mobileMenu justify-content-lg-end justify-content-between d-md-none mt-3">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <img src="./assets/images/Question_Bank/menu.png" onclick="sidemenu()" id="menu-icon"
+            class="fas fa-solid icon-w fa-bars d-block d-lg-none ms-0">
+          <h3 class="mb-0">Roster Management Search</h3>
+        </div>
+
+        <div class="dropdown">
+          <a class="btn btn-secondary dropdown-toggl text-white noToggle" href="#" role="button" id="dropdownMenuLink"
+            data-bs-toggle="dropdn" aria-expanded="false">
+            Configure
+          </a>
+
+          <!-- <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <li><a class="dropdown-item" href="#">Create Question</a></li>
+            <li><a class="dropdown-item" href="#">Review Question</a></li>
+            <li><a class="dropdown-item" href="#">Allot Assesor</a></li>
+          </ul> -->
+        </div>
+      </div>
+    </div>
+    <div class="sidebar">
+      <div class="d-flex">
+        <div class="side1" id="sidebar-menu">
+          <img src="./assets/images/Question_Bank/croxMenu.png" onclick="sidemenu()" id="menu-icon d-md-none"
+            class="openMenuIcon fas fa-solid icon-w fa-bars d-block d-lg-none ms-0" aria-hidden="true">
+          <a href="#">
+            <div class="d-flex sideMenu mt-5"> <img class="icon-align"
+                src="assets/images/Question_Bank/noun-dashboard-4527077.svg" alt="">
+              <p>Dashboard</p>
+            </div>
+          </a> <a href="question-bank.html">
+            <div class="d-flex sideMenu"> <img class="icon-align"
+                src="assets/images/Question_Bank/noun-question.svg" alt="">
+              <p>Question Bank</p>
+            </div>
+          </a> <a href="#">
+            <div class="d-flex sideMenu"> <img class="icon-align"
+                src="assets/images/Question_Bank/noun-setting-2193905.svg" alt="">
+              <p>Test Management</p>
+            </div>
+          </a> <a href="#">
+            <div class="d-flex sideMenu"> <img class="icon-align"
+                src="assets/images/Question_Bank/noun-survey-3881626.svg" alt="">
+              <p>Evaluation</p>
+            </div>
+          </a>
+          <a href="roster-management.html">
+            <div class="d-flex sideMenu active-one"> <img class="icon-align"
+                src="assets/images/Question_Bank/noun-clipboard-4426919.svg" alt="">
+              <p>Roaster Managment</p>
+            </div>
+          </a>
+          <a href="#">
+            <div class="d-flex sideMenu"> <img class="icon-align"
+                src="assets/images/Question_Bank/noun-administration-99475.svg" alt="">
+              <p>Admin Control</p>
+            </div>
+          </a>
+          <a href="#" class="position-relative">
+            <div class="d-flex sideMenu techSupportMenu" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"> <img class="icon-align"
+                src="assets/images/Question_Bank/noun-headphone-5272179.svg" alt="">
+                <p>Tech Support</p>
+            </div>
+            <div class="collapse" id="collapseExample">
+                <a href="tech-support-bulk-registration.html"> <div class="d-flex sideMenu "> <img class="icon-align"
+                  src="assets/images/Question_Bank/noun-registration-3264276.svg" alt="">
+                  <p>Bulk Registration</p>
+                </div>
+              </a>
+              <a href="tech-support-security-key.html">
+                <div class="d-flex sideMenu"> <img class="icon-align"
+                  src="assets/images/Question_Bank/noun-key-security-4833266.svg" alt="">
+                  <p>Security Key</p>
+                </div>
+              </a>
+            </div>
+          </a>
+        </div>
+        <div class="inside-container-dashboard">
+          <div class="d-flex justify-content-between align-items-center mb-4">
+            <h3 class="mb-0 d-none d-md-block">Roster Management</h3>
+            <button class="btn btnDark configRoster text-white" type="button">Configure Roster Management</button>
+          </div>
+          <div class="d-flex d-none d-md-flex justify-content-between align-items-center mb-5">
+            <h3 class="mb-0 d-none d-md-block">Roster Management Search</h3>
+            
+          </div>
+          <!-- tabs container -->
+          <div class="quesBankTabs mt-5">
+            <!-- Nav pills -->
+            <ul class="nav nav-pills nav-justified" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" data-bs-toggle="pill" href="#GeneralQuestion"><img
+                    src="./assets/images/Question_Bank/groups.svg" width="16" alt=""> Group</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="pill" href="#Programming"><img
+                    src="./assets/images/Question_Bank/groups.svg" width="16" alt=""> Individual<span
+                    class="d-none d-md-inline">Hands On</span></a>
+              </li>
+            </ul>
+            <!-- Tab panes -->
+            <div class="tab-content">
+              <div id="GeneralQuestion" class="container tab-pane active"><br>
+
+             
+                <div class="selectDropdown p-5 bg-light1 p-4 p-md-5">
+           
+                  <div class="row gx-5 gy-4">
+                    <div class="col-sm-4 col-md-4">
+                      <div class="calendar-container mt-0">
+                        <p>Select Centre State</p>
+                        <select id="SearchDropdown" name="native-select" placeholder="Select Centre State Here"
+                          data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
+                          <option value="5">Centre State 1</option>
+                          <option value="2">Centre State 1</option>
+                          <option value="3">Centre State 1</option>
+                        </select>
+      
+                      </div>
+                    </div>
+                    <div class="col-sm-4 col-md-4">
+                      <div class="calendar-container mt-0">
+                        <p>Select Centre District</p>
+                        <select id="SearchDropdown" name="native-select" placeholder="Select Centre District Here"
+                          data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
+                          <option value="5">Centre District 1</option>
+                          <option value="2">Centre District 1</option>
+                          <option value="3">Centre District 1</option>
+                        </select>
+      
+                      </div>
+                    </div>
+                    <div class="col-sm-4 col-md-4">
+                      <div class="calendar-container mt-0">
+                        <p>Select Centre City / Area</p>
+                        <select id="SearchDropdown" name="native-select" placeholder="Select Centre City / Area Here"
+                          data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
+                          <option value="5">Centre City / Area 1</option>
+                          <option value="2">Centre City / Area 1</option>
+                          <option value="3">Centre City / Area 1</option>
+                     
+                        </select>
+      
+                      </div>
+                    </div>
+                    <div class="col-sm-4 col-md-4">
+                      <div class="calendar-container mt-0 dateInputField">
+                          <p>Select Start Date & End Date:</p>
+                          <input type="text" name="datefilter" class="calendar" value="" placeholder="Select"/>
+                          <i class="fa-regular fa-calendar"></i>
+                      </div>
+                    </div>
+                    <div class="col-sm-4 col-md-4">
+                      <div class="calendar-container mt-0">
+                        <p>Select Domain</p>
+                        <select id="SearchDropdown" name="native-select" placeholder="Select Domain Here"
+                          data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
+                          <option value="5">Domain 1</option>
+                          <option value="2">Domain 1</option>
+                          <option value="3">Domain 1</option>
+                     
+                        </select>
+      
+                      </div>
+                    </div>
+                   
+                    <div class="col-sm-4 col-md-4">
+                      <div class="calendar-container mt-0">
+                        <p>Select Test</p>
+                        <select id="SearchDropdown" name="native-select" placeholder="Select Test Here"
+                          data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
+                          <option value="5">Test 1</option>
+                          <option value="2">Test 1</option>
+                          <option value="3">Test 1</option>
+                     
+                        </select>
+      
+                      </div>
+                    </div>
+
+
+              <div class="col-md-4">
+                <div class="form-check securityChecked d-flex align-items-center">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Frequency Settings
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-check securityChecked d-flex align-items-center">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2" checked>
+                  <label class="form-check-label" for="flexCheckDefault2">
+                    Test Validity
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-check securityChecked d-flex align-items-center">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3" checked>
+                  <label class="form-check-label" for="flexCheckDefault3">
+                    Send Mail
+                  </label>
+                </div>
+              </div>
+
+             
+      
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="text-end mt-4">
+                      <button type="button" class="btn ps-4 pe-4 text-white btnDark collapseBtn">Save</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- end -->
+              </div>
+              <div id="Programming" class="container tab-pane fade"><br>
+                <div class="selectDropdown p-5 bg-light1 p-4 p-md-5">
+           
+                  <div class="row gx-5 gy-4">
+                    <div class="col-sm-4 col-md-4">
+                      <div class="calendar-container mt-0">
+                        <p>Select Email ID</p>
+                        <select id="SearchDropdown" name="native-select" placeholder="Select Email ID Here"
+                          data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
+                          <option value="5">Email ID 1</option>
+                          <option value="2">Email ID 1</option>
+                          <option value="3">Email ID 1</option>
+                        </select>
+      
+                      </div>
+                    </div>
+                    <div class="col-sm-4 col-md-4">
+                      <div class="calendar-container mt-0">
+                        <p>Select Test</p>
+                        <select id="SearchDropdown" name="native-select" placeholder="Select Test Here"
+                          data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
+                          <option value="5">Test 1</option>
+                          <option value="2">Test 1</option>
+                          <option value="3">Test 1</option>
+                        </select>
+      
+                      </div>
+                    </div>
+
+                    <div class="col-md-12">
+                     <div class="mt-1">
+                      <a href="#" id="GeneralQuestion" class="assignedTest">View Already Assigned Test(s)</a>
+
+                     </div>
+                    </div>
+
+                      <div class="col-md-4">
+                        <div class="form-check securityChecked d-flex align-items-center">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault6" checked>
+                          <label class="form-check-label" for="flexCheckDefault6">
+                            Frequency Settings
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="form-check securityChecked d-flex align-items-center">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault4" checked>
+                          <label class="form-check-label" for="flexCheckDefault4">
+                            Test Validity
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="form-check securityChecked d-flex align-items-center">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault5" checked>
+                          <label class="form-check-label" for="flexCheckDefault5">
+                            Send Mail
+                          </label>
+                        </div>
+                      </div>
+                  
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="text-end mt-4">
+                      <button type="button" class="btn ps-4 pe-4 text-white btnDark collapseBtn">Submit</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- end -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- main-div closed -->
+  </div>
+  <!-- container closed -->
+  </section>
+  <!--selection section end -->
+  <script src="https://kit.fontawesome.com/5817738a37.js" crossorigin="anonymous"></script>
+  <script src="assets/js/jquery-2.2.0.min.js"></script>
+
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/loader.js"></script>
+  
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+  <script src="assets/js/virual-select.min.js"></script>
+
+
+  <!-- Load plotly.js into the DOM -->
+  <!-- <script src='https://cdn.plot.ly/plotly-2.16.1.min.js'></script> -->
+
+
+
+  <script>
+    VirtualSelect.init({
+      ele: '#SearchDropdown'
+    });
+  </script>
+
+<script type="text/javascript">
+  $(function() {
+    $('input[name="datefilter"]').daterangepicker({
+      autoUpdateInput: false,
+      locale: {
+        cancelLabel: 'Clear'
+      }
+    });
+    $('input[name="datefilter"]').on('apply.daterangepicker', function(ev, picker) {
+      $(this).val(picker.startDate.format('MM/DD/YYYY') + ' - ' + picker.endDate.format('MM/DD/YYYY'));
+    });
+    $('input[name="datefilter"]').on('cancel.daterangepicker', function(ev, picker) {
+      $(this).val('');
+    });
+  });
+</script>
+
+
+  <script>
+    function sidemenu() {
+      var sidebar = document.getElementById("sidebar-menu")
+      var icon = document.getElementById("menu-icon")
+      var selector = document.getElementById("fullselector")
+      selector.classList.toggle("mobile-menu-stopper")
+      sidebar.classList.toggle("sidebar-active")
+      icon.classList.toggle("icon-rotate")
+      icon.classList.toggle("fa-bars")
+      icon.classList.toggle("fa-xmark")
+
+    }
+  </script>
+
+
+
+
+  <script>
+    function profile() {
+      profileMenu = document.getElementById("profileDropdown")
+      profileMenu.classList.toggle("dropdownActive")
+      document.addEventListener('click', function profile(event) {
+        console.log("clicked")
+        const box4 = document.getElementById('profile-out');
+        if (!box4.contains(event.target)) {
+          profileMenu.classList.remove("dropdownActive")
+        }
+      });
+    }
+  </script>
+
+
+  <!--  -->
+
+
+</body>
+
+</html>

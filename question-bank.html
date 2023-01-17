@@ -134,10 +134,23 @@
               <p>Admin Control</p>
             </div>
           </a>
-          <a href="#">
-            <div class="d-flex sideMenu"> <img class="icon-align"
+          <a href="#" class="position-relative">
+            <div class="d-flex sideMenu techSupportMenu" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"> <img class="icon-align"
                 src="assets/images/Question_Bank/noun-headphone-5272179.svg" alt="">
-              <p>Tech Support</p>
+                <p>Tech Support</p>
+            </div>
+            <div class="collapse" id="collapseExample">
+                <a href="tech-support-bulk-registration.html"> <div class="d-flex sideMenu "> <img class="icon-align"
+                  src="assets/images/Question_Bank/noun-registration-3264276.svg" alt="">
+                  <p>Bulk Registration</p>
+                </div>
+              </a>
+              <a href="tech-support-security-key.html">
+                <div class="d-flex sideMenu activeTwo"> <img class="icon-align"
+                  src="assets/images/Question_Bank/noun-key-security-4833266.svg" alt="">
+                  <p>Security Key</p>
+                </div>
+              </a>
             </div>
           </a>
         </div>
@@ -275,7 +288,7 @@
                             </div>
                             <div class="modal-footer">
                               <button type="button" class="btn btnBorder" data-bs-dismiss="modal">Cancel</button>
-                              <a href="question-bank-review-que.html"> <button type="button"
+                              <a href="question-bank-mcq-review-que.html"> <button type="button"
                                   class="btn btnDark">Submit</button></a>
                             </div>
                           </form>
@@ -1278,13 +1291,105 @@
 
                 <div class="footerBtn mt-5 d-flex justify-content-between align-items-center">
                   <div>
-                    <button type="button" class="btn btnBorder">Preview <img src="./assets/images/Question_Bank/eye.svg"
+                    <button type="button" class="btn btnBorder" data-bs-toggle="modal" data-bs-target="#exampleModalToggle11">Preview<img src="./assets/images/Question_Bank/eye.svg"
                         class="ms-2" alt=""></button>
                   </div>
                   <div>
                     <button type="button" class="btn btnDark">Save & Add More Question <img
                         src="./assets/images/Question_Bank/plus.svg" class="ms-2" alt=""> </button>
                   </div>
+                     <!-- Modal mcq preview-->
+                        <div class="modal fade" id="exampleModalToggle11" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                      <div class="modal-dialog modal-lg modal-xl">
+                        <div class="modal-content">
+                          <div class="modal-header border-0">
+                            <h5 class="modal-title" id="exampleModalToggle11">Preview Question</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body programmingPreview pb-3">
+                            <div class="row">
+                              <div class="col-md-8">
+                                <div>
+                                  <div class="greenQueBg">
+                                    <p class="mb-0 QueHeight"><span class="boldText">Q. 6.</span> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit?</p>
+                                        
+                                        <div class="bgSpeakerBtn">
+                                           <a href=""> <img class="speaker" src="assets/images/questionaries/speaker.svg" width="28" alt="mute"></a>
+                                        </div>
+                                        <!-- <div class="d-md-none d-block queNum">
+                                            <h4 class="fw-bold">Questions <span class="fw-bold ms-3">12/30</span> <span>00:48</span></h4>
+                                        </div> -->
+                                  </div>
+  
+                                  <div class="popUpDivCard">
+                                    <div class="radiodiv mt-5 p-4 ps-4 d-flex align-items-center">
+                                      <div class="form-check form-check-inline d-flex align-items-center">                            
+                                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option1">
+                                          <label class="form-check-label" for="inlineRadio2">Income and expenditure statement</label>
+                                      </div>
+                                    </div>
+                                    <div class="radiodiv mt-5 p-4 ps-4 d-flex align-items-center">
+                                      <div class="form-check form-check-inline d-flex align-items-center">                            
+                                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option1">
+                                          <label class="form-check-label" for="inlineRadio3">Income and expenditure statement</label>
+                                      </div>
+                                    </div>
+                                    <div class="radiodiv mt-5 p-4 ps-4 d-flex align-items-center">
+                                      <div class="form-check form-check-inline d-flex align-items-center">                            
+                                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option1">
+                                          <label class="form-check-label" for="inlineRadio4">Income and expenditure statement</label>
+                                      </div>
+                                    </div>
+                                    <div class="radiodiv mt-5 p-4 ps-4 d-flex align-items-center">
+                                      <div class="form-check form-check-inline d-flex align-items-center">                            
+                                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                          <label class="form-check-label" for="inlineRadio1">Income and expenditure statement</label>
+                                      </div>
+                                    </div>                                    
+                                  </div>
+  
+                                  <!--view test code modal  -->
+  
+                                       
+                                </div>
+                              </div>
+                              <div class="col-md-4">
+                                <div>
+                                  <table class="ansTableTick">
+                                    <tr>
+                                      <td>1</td>
+                                      <td>2</td>
+                                      <td>3</td>
+                                      <td>4</td>
+                                    </tr>
+                                    
+                                    <tr>
+                                      <td>1</td>
+                                      <td class="answeredQue">2</td>
+                                      <td>3</td>
+                                      <td>4</td>
+                                    </tr>
+                                    <tr>
+                                      <td>1</td>
+                                      <td>2</td>
+                                      <td>3</td>
+                                      <td>4</td>
+                                    </tr>
+                                    
+                                  </table>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="modal-footer border-0 justify-content-between ps-5">
+                            <!-- <button type="button" class="btn " data-bs-dismiss="modal">Close</button> -->
+                            <button type="button" class="btn btnPrev">Previous</button>
+                            <button type="button" class="btn btnNext">Next</button>
+                          </div>
+                        </div>
+                      </div>
+                        </div>
+                    <!-- end -->
                 </div>
 
               </div>
@@ -1676,6 +1781,7 @@
                                   src="./assets/images/Question_Bank/plus-slick1.svg" alt=""></button>
                             </div>
 
+                            
                             <!-- pop for add compiler -->
                             <!-- popup for programming snippet -->
                             <div class="modal fade" id="addCompilers" tabindex="-1" aria-labelledby="exampleModalLabel"
@@ -1876,13 +1982,253 @@
                 </div>
                 <div class="footerBtn mt-5 d-flex justify-content-between align-items-center">
                   <div>
-                    <button type="button" class="btn btnBorder">Preview <img src="./assets/images/Question_Bank/eye.svg"
+                    <button type="button" class="btn btnBorder" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">Preview<img src="./assets/images/Question_Bank/eye.svg"
                         class="ms-2" alt=""></button>
+
+                      
                   </div>
                   <div>
                     <button type="button" class="btn btnDark">Save & Add More Question <img
                         src="./assets/images/Question_Bank/plus.svg" class="ms-2" alt=""> </button>
                   </div>
+
+                  <!-- ques bank programming preview -->
+                      <!-- Modal -->
+                    <!-- <div class="modal fade" id="programmingPreview" tabindex="-1" aria-labelledby="programmingPreviewLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg modal-xl">
+                          <div class="modal-content">
+                            <div class="modal-header border-0">
+                              <h5 class="modal-title" id="programmingPreview">Preview Question</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body programmingPreview">
+                              <div class="row">
+                                <div class="col-md-8">
+                                  <div>
+                                    <div class="greenQueBg">
+                                      <p class="mb-0 QueHeight"><span class="boldText">Q. 6.</span> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit?</p>
+                                          
+                                          <div class="bgSpeakerBtn">
+                                             <a href=""> <img class="speaker" src="assets/images/questionaries/speaker.svg" width="28" alt="mute"></a>
+                                          </div>
+                                         
+                                    </div>
+
+                                    <div class="popUpDivCard">
+                                      <div class="div1Card">
+                                        <p class="mb-0"><span class="sp1">Compilers used :</span><span class="sp2"> C, CPP, C#, Java, Python </span></p>
+                                      </div>
+                                      <div class="div1Card">
+                                        <p class="mb-0"><span class="sp1">Test Cases :</span><span class="sp2"> 10</span></p>
+                                        <a href="question-bank-program-preview-test-case.html">View Test Cases</a>
+                                      </div>
+                                      <div class="div1Card">
+                                        <p class="mb-0"><span class="sp1">Test Code :</span><span class="sp2"> Type your Test Code </span></p>
+                                        <a href="#" data-bs-toggle="modal" data-bs-target="#viewTestCodeModal">View Test Code</a>
+                                      </div>
+
+              
+                                    </div>
+
+                                                           
+                                          <div class="modal fade" id="viewTestCodeModal" tabindex="0" aria-labelledby="viewTestCodeModallLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-smTestCode">
+                                              <div class="modal-content">
+                                                <div class="modal-header border-0">
+                                                  <h5 class="modal-title" id="viewTestCodeModalLabel">Test Code</h5>
+
+                                                  <div class="custom-select" style="width:175px;">
+                                                    <select>
+                                                      <option value="0">Choose Compiler</option>
+                                                      <option value="0">Choose Compiler</option>
+                                                      <option value="1">C</option>
+                                                      <option value="2">C++</option>
+                                                      <option value="3">JavaScript</option>
+                                                      <option value="4">Java</option>
+                                                      <option value="5">Node.js</option>
+                                                      <option value="5">COBOL</option>
+                                                      <option value="5">R</option>
+                                                      <option value="5">Python</option>
+                    
+                                                    </select>
+                                                  
+                                                  </div>
+                                                 
+
+                                                </div>
+                                                <div class="modal-body">
+                                                 <div class="p-5 textAreaDiv">
+                                                    <textarea class="form-control" name="" id="" cols="30" rows="10"></textarea>
+                                                 </div>
+                                                </div>
+                                                <div class="modal-footer justify-content-center border-0">
+                                                  <button type="button" class="btn btn-closeTestCode text-white" data-bs-dismiss="modal">Close</button>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                  </div>
+                                </div>
+                                <div class="col-md-4">
+                                  <div>
+                                    <table class="ansTableTick">
+                                      <tr>
+                                        <td>1</td>
+                                        <td>2</td>
+                                        <td>3</td>
+                                        <td>4</td>
+                                      </tr>
+                                      
+                                      <tr>
+                                        <td>1</td>
+                                        <td class="answeredQue">2</td>
+                                        <td>3</td>
+                                        <td>4</td>
+                                      </tr>
+                                      <tr>
+                                        <td>1</td>
+                                        <td>2</td>
+                                        <td>3</td>
+                                        <td>4</td>
+                                      </tr>
+                                      
+                                    </table>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="modal-footer justify-content-between ps-5">
+                              <button type="button" class="btn btnPrev">Previous</button>
+                              <button type="button" class="btn btnNext">Next</button>
+                            </div>
+                          </div>
+                        </div>
+
+                        
+                    </div> -->
+                  <!-- end -->
+
+                  <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                    <div class="modal-dialog modal-lg modal-xl">
+                      <div class="modal-content">
+                        <div class="modal-header border-0">
+                          <h5 class="modal-title" id="exampleModalToggle">Preview Question</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body programmingPreview">
+                          <div class="row">
+                            <div class="col-md-8">
+                              <div>
+                                <div class="greenQueBg">
+                                  <p class="mb-0 QueHeight"><span class="boldText">Q. 6.</span> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit?</p>
+                                      
+                                      <div class="bgSpeakerBtn">
+                                         <a href=""> <img class="speaker" src="assets/images/questionaries/speaker.svg" width="28" alt="mute"></a>
+                                      </div>
+                                      <!-- <div class="d-md-none d-block queNum">
+                                          <h4 class="fw-bold">Questions <span class="fw-bold ms-3">12/30</span> <span>00:48</span></h4>
+                                      </div> -->
+                                </div>
+
+                                <div class="popUpDivCard">
+                                  <div class="div1Card">
+                                    <p class="mb-0"><span class="sp1">Compilers used :</span><span class="sp2"> C, CPP, C#, Java, Python </span></p>
+                                  </div>
+                                  <div class="div1Card">
+                                    <p class="mb-0"><span class="sp1">Test Cases :</span><span class="sp2"> 10</span></p>
+                                    <a href="question-bank-program-preview-test-case.html">View Test Cases</a>
+                                  </div>
+                                  <div class="div1Card">
+                                    <p class="mb-0"><span class="sp1">Test Code :</span><span class="sp2"> Type your Test Code </span></p>
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModalToggle2" data-bs-dismiss="modal">View Test Code</a>
+                                  </div>
+                                </div>
+
+                                                        <!--view test code modal  -->
+
+                                     
+                              </div>
+                            </div>
+                            <div class="col-md-4">
+                              <div>
+                                <table class="ansTableTick">
+                                  <tr>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>4</td>
+                                  </tr>
+                                  
+                                  <tr>
+                                    <td>1</td>
+                                    <td class="answeredQue">2</td>
+                                    <td>3</td>
+                                    <td>4</td>
+                                  </tr>
+                                  <tr>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>4</td>
+                                  </tr>
+                                  
+                                </table>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal-footer border-0 justify-content-between ps-5">
+                          <!-- <button type="button" class="btn " data-bs-dismiss="modal">Close</button> -->
+                          <button type="button" class="btn btnPrev">Previous</button>
+                          <button type="button" class="btn btnNext">Next</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                      <!-- Modal -->
+                     
+                        <div class="modal-dialog modal-smTestCode">
+                          <div class="modal-content">
+                            <div class="modal-header border-0 align-items-center">
+                              <h5 class="modal-title" id="exampleModalToggle2Label">Test Code</h5>
+
+                              <div class="custom-select" style="width:175px;">
+                                <select>
+                                  <option value="0">Choose Compiler</option>
+                                  <option value="0">Choose Compiler</option>
+                                  <option value="1">C</option>
+                                  <option value="2">C++</option>
+                                  <option value="3">JavaScript</option>
+                                  <option value="4">Java</option>
+                                  <option value="5">Node.js</option>
+                                  <option value="5">COBOL</option>
+                                  <option value="5">R</option>
+                                  <option value="5">Python</option>
+
+                                </select>
+                              
+                              </div>
+                              <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+
+
+                            </div>
+                            <div class="modal-body">
+                             <div class="p-5 textAreaDiv pt-4">
+                                <textarea class="form-control" name="" id="" cols="30" rows="10"></textarea>
+                             </div>
+                            </div>
+                            <div class="modal-footer justify-content-center border-0 pe-0">
+                              <button type="button" class="btn btn-closeTestCode text-white" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">Close</button>
+                              <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                            </div>
+                          </div>
+                        </div>
+                      
+                  </div>
+                  
+                  <!--  -->
+                 
                 </div>
               </div>
             </div>
