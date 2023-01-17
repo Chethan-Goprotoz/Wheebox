@@ -1807,7 +1807,7 @@ opacity: 1;
     font-family: pop-medium;
     color: #FFFFFF;
     opacity: 1;
-    margin-top: 71px;
+    margin-top: 35px;
 }
 
 .row1.d-flex p, .row2.d-flex p{
@@ -1880,9 +1880,15 @@ opacity: 1;
 }
 
 
+
   /* resolution 1920 started */
 
   @media (min-width:1900px){
+    .modal-footer.addEditTestCaseFooter .btn{
+        font-size: 16px;
+        width: 189px;
+        height: 40px;
+    }
     .filterTag a img{
         margin-left: 21px;
     }
