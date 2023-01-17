@@ -1867,6 +1867,9 @@ opacity: 1;
   /* resolution 1920 started */
 
   @media (min-width:1900px){
+    .modal-dialog.addNewTestModal{
+        min-width: 1110px;
+    }
     .calendar-container.InputFile input[type="file"]{
         height: 50px;
     }
