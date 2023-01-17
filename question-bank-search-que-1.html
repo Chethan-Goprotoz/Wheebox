@@ -139,81 +139,116 @@
           <div class="inside-container-dashboard">
             <div class="d-flex justify-content-between align-items-center mb-5">
               <h3 class="mb-0 d-none d-md-block">Review Questions</h3>
-              <div class="filter-container filter-container-shadow w-auto ps-3 pe-3 d-lg-flex d-flex justify-content-center align-items-center d-none d-md-flex" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <div class="filter-container filter-container-shadow w-auto ps-3 pe-3 d-lg-flex d-flex justify-content-center align-items-center d-none d-md-flex"  data-bs-toggle="modal" data-bs-target="#exampleModal2">
                 <p>Search Question <img src="./assets/images/Question_Bank/search-white.svg" class="ms-2" alt=""></p>
               </div>
             </div>
             
-            <!-- question container -->
-            <!-- <div class="selectDropdown p-5 bg-light1">
-             
-              <div class="row gx-5 gy-4">
-                <div class="col-sm-4 col-md-4">
-                  <div class="calendar-container mt-0">
-                    <p>Select Subject</p>
-                    <select id="SearchDropdown" name="native-select" placeholder="Select Subject Here" data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
-                        <option value="5">English</option>
-                        <option value="1">Hindi</option>
-                        <option value="2">Maths</option>
-                        <option value="3">Physics</option>
-                        <option value="4">Chemistry</option>
-                    </select>
-                    
-                  </div>
-                </div>
-                <div class="col-sm-4 col-md-4">
-                  <div class="calendar-container mt-0">
-                    <p>Select Topic</p>
-                    <select id="SearchDropdown" name="native-select" placeholder="Select Topic Here" data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
-                        <option value="5">Grammer</option>
-                        <option value="1">Tense</option>
-                        <option value="2">Passage</option>
-                        <option value="3">Story</option>
-                        <option value="4">Poetry</option>
-                    </select>
-                    
-                  </div>
-                </div>
-             
-                <div class="col-sm-4 col-md-4">
-                  <div class="calendar-container mt-0">
-                    <p>Select Difficulty Level</p>
-                    <select id="SearchDropdown" name="native-select" placeholder="Select Difficulty Level" data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
-                        <option value="5">Easy</option>
-                        <option value="2">Moderate</option>
-                        <option value="3">Hard</option>
-                    </select>
-                  </div>
-                </div> 
-                <div class="col-sm-4 col-md-4">
-                  <div class="calendar-container mt-0">
-                    <p>Select Question Status</p>
-                    <select id="SearchDropdown" name="native-select" placeholder="Select Question Status" data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
-                        <option value="5">Done</option>
-                        <option value="2">Incomplete</option>
-                        <option value="3">Pending</option>
-                    </select>
-                  </div>
-                </div>  
-                <div class="col-sm-4 col-md-4">
-                  <div class="calendar-container mt-0">
-                    <p>Select Question Type</p>
-                    <select id="SearchDropdown" name="native-select" placeholder="Select Question type" data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
-                        <option value="5">MCQ</option>
-                        <option value="2">Subjective</option>
-                        <option value="3">Answer</option>
-                    </select>
-                  </div>
-                </div>
-                               
-              </div>
+           <!-- Modal review question -->
+           <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+           aria-hidden="true">
+           <div class="modal-dialog modal-lg modal-xl modal-dialog-centered reviewQuesModal">
+             <div class="modal-content">
+               <div class="modal-header">
+                 <h5 class="modal-title" id="exampleModalLabel">Search Question</h5>
+                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+               </div>
+               <form action="" method="post">
+                 <div class="modal-body p-4 pt-5 pb-5 p-md-5 ms-4 ms-md-5 me-md-5 me-4">
+                   <div class="row gx-5 gy-4">
+                     <div class="col-sm-4 col-md-6 mt-0">
+                       <div class="calendar-container mt-0">
+                         <p>Select Subject</p>
+                         <select id="SearchDropdown" name="subject-select" placeholder="Select Subject Here"
+                           data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
+                           <option value="5">English</option>
+                           <option value="1">Hindi</option>
+                           <option value="2">Maths</option>
+                           <option value="3">Physics</option>
+                           <option value="4">Chemistry</option>
+                         </select>
 
-              <div class="d-flex justify-content-end mb-2 mt-5">
-                <button class="btn btnReset addNewSubj" type="reset">Reset</button>
-                <button class="btn btnDark addNewSubj" type="button">Submit</button>
-              </div>
-            </div> -->
-            <!-- question container closed -->
+                       </div>
+                     </div>
+                     <div class="col-sm-4 col-md-6 mt-md-0">
+                       <div class="calendar-container mt-0 mt-md-0">
+                         <p>Select Topic</p>
+                         <select id="SearchDropdown" name="topic-select" placeholder="Select Topic Here"
+                           data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
+                           <option value="5">Grammer</option>
+                           <option value="1">Tense</option>
+                           <option value="2">Passage</option>
+                           <option value="3">Story</option>
+                           <option value="4">Poetry</option>
+                         </select>
+
+                       </div>
+                     </div>
+                     <div class="col-sm-4 col-md-6">
+                       <div class="calendar-container mt-0">
+                         <p>Select Subtopics</p>
+                         <select id="SearchDropdown" name="native-select" placeholder="Select Subtopic Here"
+                           data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
+                           <option value="5">Tenses</option>
+                           <option value="2">Passage</option>
+                           <option value="3">Story</option>
+                           <option value="4">Poetry</option>
+                         </select>
+
+                       </div>
+                     </div>
+                     <div class="col-sm-4 col-md-6">
+                       <div class="calendar-container mt-0">
+                         <p>Select Question Type</p>
+                         <select id="SearchDropdown" name="native-select" placeholder="Select Question type"
+                           data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
+                           <option value="5">MCQ</option>
+                           <option value="">Fill in the Blanks</option>
+                           <option value="2">Subjective</option>
+                           <option value="3">Answer</option>
+                         </select>
+
+                       </div>
+                     </div>
+                     <div class="col-sm-4 col-md-6">
+                       <div class="calendar-container mt-0">
+                         <p>Select Difficulty Level</p>
+                         <select id="SearchDropdown" name="native-select"
+                           placeholder="Select Difficulty Level" data-search="true"
+                           data-silent-initial-value-set="true" class="searchdropdown">
+                           <option value="5">Easy</option>
+                           <option value="2">Moderate</option>
+                           <option value="3">Hard</option>
+
+                         </select>
+
+                       </div>
+                     </div>
+                     <div class="col-sm-4 col-md-6">
+                       <div class="calendar-container mt-0">
+                         <p>Select Question Status</p>
+                         <select id="SearchDropdown" name="native-select"
+                           placeholder="Select Question Status" data-search="true"
+                           data-silent-initial-value-set="true" class="searchdropdown">
+                           <option value="5">Done</option>
+                           <option value="2">Pending</option>
+                           <option value="3">Working</option>
+                         </select>
+
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+                 <div class="modal-footer">
+                   <button type="button" class="btn btnBorder" data-bs-dismiss="modal">Cancel</button>
+                   <a href="question-bank-search-que-1.html"> <button type="button"
+                       class="btn btnDark">Submit</button></a>
+                 </div>
+               </form>
+             </div>
+           </div>
+         </div>
+         <!-- modal end  review que end-->
 
             <!-- crossX filter container -->
                 <div class="searchFilterTag">
