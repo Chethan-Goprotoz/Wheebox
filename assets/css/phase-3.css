@@ -1862,6 +1862,22 @@ opacity: 1;
     width: 296px;
     height: 40px;
 }
+.rosterMange .nav-item .nav-link img:last-child{
+    display: inline-block;
+}
+.rosterMange .nav-item .nav-link img:first-child{
+    display: none;
+}
+.rosterMange .nav-item .nav-link.active img:first-child{
+    display: inline-block;
+}
+.rosterMange .nav-item .nav-link.active img:last-child{
+    display: none !important;
+}
+
+.rosterMange .nav-item .nav-link.active .grey-hide{
+    display: none !important;
+}
 
 
   /* resolution 1920 started */
@@ -3008,6 +3024,7 @@ opacity: 1;
         background-color: #20776E;
         display: flex;
         align-items: center;
+        font-family: pop-medium;
         text-align: center;
         justify-content: center;
     }
