@@ -1329,9 +1329,9 @@ position: relative;
 }
 .ansTableTick tr {
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
     align-items:center;
-    gap: 8px;
+    gap: 10px;
     margin-bottom: 17px;
 }
 .ansTableTick tr td{
@@ -1867,6 +1867,9 @@ opacity: 1;
   /* resolution 1920 started */
 
   @media (min-width:1900px){
+    .greenQueBg .QueHeight{
+        font-size: 21px;
+    }
     .modal-dialog.addNewTestModal{
         min-width: 1110px;
     }
