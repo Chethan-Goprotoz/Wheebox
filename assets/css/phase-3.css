@@ -1884,6 +1884,12 @@ opacity: 1;
   /* resolution 1920 started */
 
   @media (min-width:1900px){
+    .modal-body .greenQueBg{
+        height: 294px;
+    }
+    .greenQueBg .QueHeight{
+        height: 240px;
+    }
     .rosterMange .nav-item .nav-link img{
         width: 20px;
         height: 20px;
@@ -2484,6 +2490,19 @@ opacity: 1;
 
 /* responsive css mobile */
 @media (max-width:600px){
+    .ansTableTick tr{
+        justify-content: space-around;
+    }
+    .ansTableTick{
+        margin-left: 0;
+    }
+    .modal-body .greenQueBg{
+        height: 294px;
+    }
+    .greenQueBg .QueHeight{
+        height: 240px;
+        padding-right: 40px;
+    }
 
     .row1.d-flex,.row2.d-flex{
         flex-wrap: wrap;
