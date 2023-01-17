@@ -1852,7 +1852,16 @@ opacity: 1;
     margin-left: 10px;
 }
 
-
+.configRoster{
+    text-align: center;
+    letter-spacing: 0px;
+    font-size: 14px;
+    font-weight: pop-medium;
+    color: #FFFFFF;
+    opacity: 1;
+    width: 296px;
+    height: 40px;
+}
 
 
   /* resolution 1920 started */
