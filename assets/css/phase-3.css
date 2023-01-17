@@ -1867,6 +1867,9 @@ opacity: 1;
   /* resolution 1920 started */
 
   @media (min-width:1900px){
+    .filterTag a img{
+        margin-left: 21px;
+    }
     .greenQueBg .QueHeight{
         font-size: 21px;
     }
@@ -2358,6 +2361,7 @@ opacity: 1;
 
     .filterDiv.d-flex.gap-3{
         padding-bottom: 30px;
+        padding-top: 25px;
     }
 
     .accHead h6 b{
