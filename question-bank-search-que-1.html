@@ -83,19 +83,11 @@
           
           <div class="d-flex justify-content-between align-items-center"> 
             <img src="./assets/images/Question_Bank/menu.png" onclick="sidemenu()" id="menu-icon" class="fas fa-solid icon-w fa-bars d-block d-lg-none ms-0">
-            <h3 class="mb-0">Search Question</h3>
+            <h3 class="mb-0">Review Question</h3>
           </div>
          
-          <div class="dropdown">
-            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-              Quick links
-            </a>
-          
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
+          <div class="filter-container filter-container-shadow w-auto ps-3 pe-3 d-lg-flex d-flex justify-content-center align-items-center d-md-none"  data-bs-toggle="modal" data-bs-target="#exampleModal2">
+            <p>Search Question <img src="./assets/images/Question_Bank/search-white.svg" class="ms-2" alt=""></p>
           </div>
       </div>
       </div>
@@ -371,7 +363,7 @@
                         <div class="modal-dialog">
                           <div class="modal-content">
                             <div class="modal-header align-items-center border-0">
-                              <h5 class="modal-title" id="editQueModalLabel2">Exit Question</h5>
+                              <h5 class="modal-title" id="editQueModalLabel2">Edit Question</h5>
                               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
@@ -507,7 +499,7 @@
               
                             </div>
                             <div class="modal-footer pt-0 border-0">
-                              <button type="button" class="btn btnBorder" data-bs-dismiss="modal">Cancel</button>
+                              <button type="button" class="btn btnBorder mb-0" data-bs-dismiss="modal">Cancel</button>
                               <a href="question-bank-search-que-1.html"> <button type="button" class="btn btnDarkEditQues">Save</button></a>
                             </div>
                           </div>

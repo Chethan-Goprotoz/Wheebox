@@ -2404,7 +2404,19 @@ opacity: 1;
         margin-bottom: 20px;
         margin-right: 10px;
     }
+    #editQueModal2 .selectDropdown .row.gx-5.gy-4{
+        --bs-gutter-x: 4rem;
+        padding-top: 15px;
+    }
 
+    #editQueModal2 .formNote .form-control.editTextArea{
+        font-size: 18px;
+    }
+
+ .qusAnsAccordian .popUpDivCard a img[width="12"] {
+        width: 12px !important;
+        height: 12px !important;
+    }
 
 
 
@@ -3122,6 +3134,23 @@ opacity: 1;
     }
     .popUpDivCard .div1Card{
         margin: 18px 0 20px 0;
+    }
+    .filterTag h6{
+        font-size: 14px;
+    }
+    .accHead h6:last-child{
+        width: 80%;
+        margin-left:0 !important;
+    }
+    .qusAnsAccordian .accordion-button:not(.collapsed)::before{
+        width: 20px;
+        height: 26px;
+    }
+    .qusAnsAccordian .accordion-body h5{
+        font-size: 14px;
+    }
+    .mb-0.ms-1.languagesType{
+        font-size: 14px;
     }
   
 }
