@@ -3177,6 +3177,22 @@ opacity: 1;
         width: 140px;
         height: 40px;
     }
+    .modal-title.modal-title-snippet{
+        font-size: 18px;
+    }
+    .f1BtnBorder.addNewBtnBorder{
+        text-decoration: underline;
+    }
+    .row1.d-flex .w-25 .d-flex.justify-content-between.align-items-center{
+        align-items: flex-start !important;
+    }
+
+    .row2.d-flex .d-flex.justify-content-between.align-items-center{
+        align-items: flex-start !important;
+    }
+    .row1.d-flex p, .row2.d-flex p{
+        font-size: 16px;
+    }
   
 }
 
