@@ -3173,6 +3173,10 @@ opacity: 1;
     .mb-0.ms-1.languagesType{
         font-size: 14px;
     }
+    #editQueModal2 .btnBorder{
+        width: 140px;
+        height: 40px;
+    }
   
 }
 
