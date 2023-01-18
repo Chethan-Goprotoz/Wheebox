@@ -2516,6 +2516,9 @@ opacity: 1;
         font-size: 14px;
         padding: 0;
     }
+    .addEditTestCaseFooter{
+        margin-top: 0;
+    }
     .row2.d-flex textarea{
         height: 70px;
         width: 100%;
