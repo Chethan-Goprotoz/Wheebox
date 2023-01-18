@@ -3182,6 +3182,7 @@ opacity: 1;
     }
     .f1BtnBorder.addNewBtnBorder{
         text-decoration: underline;
+        margin-left: 9px;
     }
     .row1.d-flex .w-25 .d-flex.justify-content-between.align-items-center{
         align-items: flex-start !important;
@@ -3191,6 +3192,14 @@ opacity: 1;
         align-items: flex-start !important;
     }
     .row1.d-flex p, .row2.d-flex p{
+        font-size: 16px;
+    }
+    #editQueModalLabel2{
+        font-size: 18px;
+    }
+
+    .formNote .form-control.editTextArea{
+        font-weight: pop-medium;
         font-size: 16px;
     }
   
