@@ -3105,6 +3105,18 @@ opacity: 1;
     .dateInputField .fa-calendar{
         font-size: 16px;
     }
+
+    #exampleModalToggle .modal-title, #exampleModalToggle11 .modal-title{
+        font-size: 18px;
+    }
+
+    #exampleModalToggle .modal-header, #exampleModalToggle11 .moddal-header{
+        align-items: center;
+    }
+    .ansTableTick tr {
+        justify-content: center;
+        gap: 18px;
+    }
   
 }
 
