@@ -3117,6 +3117,12 @@ opacity: 1;
         justify-content: center;
         gap: 18px;
     }
+    .popUpDivCard div p .sp1{
+        font-size: 15px;
+    }
+    .popUpDivCard .div1Card{
+        margin: 18px 0 20px 0;
+    }
   
 }
 
