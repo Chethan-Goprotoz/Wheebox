@@ -1928,6 +1928,22 @@ opacity: 1;
     opacity: 1;
 }
 
+#deleteModal .deleteContents h6{
+    text-align: center;
+    font: normal normal 24px/39px Pop-medium;
+    letter-spacing: 0px;
+    color: #C22F2F;
+    opacity: 1;
+    margin-top: 20px;
+}
+
+#deleteModal .deleteContents p{
+    font: normal normal 16px/24px Pop-normal;
+    letter-spacing: 0px;
+    opacity: 1;
+    margin-top: 10px;
+}
+
 
 
   /* resolution 1920 started */
