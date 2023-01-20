@@ -178,7 +178,6 @@
                      <td class="p-4 input-data">
                       <div class="position-relative hover-toolTip">
                         Domain Name 1
-
                         <div class="position-absolute toolTopBox">
                           <div>
                             <p class="mb-0">Start Date</p>
@@ -245,13 +244,271 @@
                         <a href="#" class="dropdown-" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"><img src="./assets/images/Question_Bank/vertical-dots.svg" alt=""></a>
 
                         <ul class="dropdown-menu createTableDrop" aria-labelledby="dropdownMenuButton1">
-                          <li><a class="dropdown-item" href="#"><span><img src="./assets/images/Question_Bank/edit-2.svg" alt=""></span> <span>Edit</span></a></li>
+                          <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#editTagsModal"><span><img src="./assets/images/Question_Bank/edit-2.svg" alt=""></span> <span>Edit</span></a></li>
                           <li><a class="dropdown-item" href="#"> <span><img src="./assets/images/Question_Bank/eys-preview-1.svg" class="ms-00" width="21" alt=""></span> <span class="ms-11">Preview</span></a></li>
-                          <li><a class="dropdown-item" href="#"><span><img src="./assets/images/Question_Bank/label.svg" alt=""></span> <span>Labelling Customization</span></a></li>
+                          <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#labellingModal"><span><img src="./assets/images/Question_Bank/label.svg" alt=""></span> <span>Labelling Customization</span></a></li>
                           <li><a class="dropdown-item" href="#"><span><img src="./assets/images/Question_Bank/printer.png" alt=""></span> <span>Offline Format</span></a></li>
-                          <li><a class="dropdown-item" href="#"><span><img src="./assets/images/Question_Bank/noun-assign-4574720.svg" alt=""></span> <span>Assign Test</span></a></li>
-                          <li><a class="dropdown-item" href="#"><span><img src="./assets/images/Question_Bank/deletesvg.svg" alt=""></span><span>Delete</span></a></li>
+                          <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#assignTestModal"><span><img src="./assets/images/Question_Bank/noun-assign-4574720.svg" alt=""></span> <span>Assign Test</span></a></li>
+                          <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#deleteModal"><span><img src="./assets/images/Question_Bank/deletesvg.svg" alt=""></span><span>Delete</span></a></li>
                         </ul>
+
+
+                        <!--labelling Modal -->
+                      <div class="modal fade" id="labellingModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                          <div class="modal-content">
+                            <div class="modal-header border-0 pb-3">
+                              <h5 class="modal-title align-items-center" id="exampleModalLabel">Labelling Customization</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              <div class="selectDropdown p-5 bg-lig p-4 p-md-5 mt-4 mt-md-0">
+
+                                <div class="row gx-5 gy-4">
+                                  <div class="col-sm-4 col-md-4">
+                                    <div class="calendar-container mt-0">
+                                      <p>Select Page</p>
+                                      <select id="SearchDropdown" name="native-select" placeholder="Select Select Page Here"
+                                        data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
+                                        <option value="5">Select Page 1</option>
+                                        <option value="2">Select Page 2</option>
+                                        <option value="3">Select Page 3</option>
+                                      </select>
+
+                                    </div>
+                                  </div>
+                                  <div class="col-sm-4 col-md-4">
+                                    <div class="calendar-container mt-0">
+                                      <p>Project Name</p>
+                                      <select id="SearchDropdown" name="native-select" placeholder="Select Project Name Here"
+                                        data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
+                                        <option value="5">Project Name 1</option>
+                                        <option value="2">Project Name 1</option>
+                                        <option value="3">Project Name 1</option>
+                                      </select>
+
+                                    </div>
+                                  </div>
+                                  <div class="col-sm-4 col-md-4">
+                                    <div class="calendar-container input-container1 mt-0">
+                                      <p class="mb-2">Footer</p>
+                                      <input class="form-control" type="text" placeholder="Footer">
+                                    </div>
+                                  </div>
+                                  <div class="col-sm-4 col-md-4">
+                                    <div class="calendar-container InputFile mt-0">
+                                      <p>Logo Path</p>
+                                      <div class="position-relative inputFileDiv">
+                                        <input type="text" class="form-control" placeholder="Select Page">
+                                        <input type="file" class="form-control">
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-sm-4 col-md-4">
+                                    <div class="calendar-container input-container1 mt-0">
+                                      <p class="mb-2">Logo Height</p>
+                                      <input class="form-control" type="text" placeholder="Logo Height">
+                                    </div>
+                                  </div>
+                                  <div class="col-sm-4 col-md-4">
+                                    <div class="calendar-container input-container1 mt-0">
+                                      <p class="mb-2">Logo Width</p>
+                                      <input class="form-control" type="text" placeholder="Logo Width">
+                                    </div>
+                                  </div>
+
+
+                                  <div class="col-md-4">
+                                    <div class="w-100 mt-4">
+                                      <button class="btn w-100 text-start imgPreview" type="button"><img class="me-2" src="./assets/images/Question_Bank/noun-image-5328916.svg" alt=""> image preview</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- end -->
+                            </div>
+                            <div class="modal-footer border-0 pt-0">
+                              <div class=" mt-4">
+                                <button type="button" class="btn ps-4 pe-4 labellingSkip">Skip</button>
+                              </div>
+                              <div class="text-end mt-4">
+                                <button type="button" class="btn ps-4 pe-4 text-white btnDark collapseBtn">Create Now</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- end -->
+
+                      <!-- delete modal -->
+                      <!-- Modal -->
+                        <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                              <div class="modal-header border-0">
+                                <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                <div class="text-center deleteContents">
+                                  
+                                  <img class="" src="./assets/images/Question_Bank/noun-warning-5096319 (1).svg" alt="">
+                                  <h6>Delete Test Case?</h6>
+                                  <p>Are you sure you want to delete the Test Case?</p>
+                                </div>
+                              </div>
+                              <div class="modal-footer border-0 justify-content-center mb-4 pe-0">
+                                <div class=" mt-4">
+                                  <button type="button" class="btn ps-4 pe-4 labellingSkip">Cancel</button>
+                                </div>
+                                <div class="text-end mt-4">
+                                  <button type="button" class="btn ps-4 pe-4 text-white btnDark collapseBtn">Yes</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- end -->
+
+
+                         <!-- assign test modal -->
+                      <!-- Modal -->
+                      <div class="modal fade" id="assignTestModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                          <div class="modal-content">
+                            <div class="modal-header border-0">
+                              <h5 class="modal-title" id="exampleModalLabel">Assign Test</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              <div>
+                                <div class="selectDropdown p-5 bg-lig p-4 p-md-5 mt-4 mt-md-0">
+
+                                  <div class="row rowAssignTest gx-5 gy-4">
+                                    <div class="col-md-12">
+                                      <div class="calendar-container mt-0">
+                                        <p>Select Company</p>
+                                        <select id="SearchDropdown" name="native-select" placeholder="Select Company Here"
+                                          data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
+                                          <option value="5">Select Company 1</option>
+                                          <option value="2">Select Company 2</option>
+                                          <option value="3">Select Company 3</option>
+                                        </select>
+  
+                                      </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                      <div class="calendar-container mt-0">
+                                        <p>Select Domain</p>
+                                        <select id="SearchDropdown" name="native-select" placeholder="Select Domain Here"
+                                          data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
+                                          <option value="5">Select Domain 1</option>
+                                          <option value="2">Select Domain 1</option>
+                                          <option value="3">Select Domain 1</option>
+                                        </select>
+                                      </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                      <div class="calendar-container input-container1 mt-0">
+                                        <p class="mb-2">Enter Test Name</p>
+                                        <input class="form-control" type="text" placeholder="Enter Test Name">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="modal-footer border-0 justify-content-center mb-4 pe-0">
+                              <div class=" mt-4">
+                                <button type="button" class="btn ps-4 pe-4 labellingSkip">Cancel</button>
+                              </div>
+                              <div class="text-end mt-4">
+                                <button type="button" class="btn ps-4 pe-4 text-white btnDark collapseBtn">Done</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- end -->
+
+
+                      <!-- Edit Tags modal -->
+                      <!-- Modal -->
+                      <div class="modal fade" id="editTagsModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                          <div class="modal-content">
+                            <div class="modal-header border-0">
+                              <h5 class="modal-title" id="exampleModalLabel">Edit Tags</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              <div>
+                                <div class="selectDropdown p-5 bg-lig p-4 p-md-5 mt-4 mt-md-0">
+
+                                  <div class="row rowAssignTest gx-5 gy-4">
+                         
+                                    <div class="col-md-12">
+                                      <div class="calendar-container mt-0">
+                                        <p>Select Domain Name</p>
+                                        <select id="SearchDropdown" name="native-select" placeholder="Select Domain Here"
+                                          data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
+                                          <option value="5">Select Domain 1</option>
+                                          <option value="2">Select Domain 1</option>
+                                          <option value="3">Select Domain 1</option>
+                                        </select>
+                                      </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                      <div class="calendar-container input-container1 mt-0">
+                                        <p class="mb-2">Enter Test Name</p>
+                                        <input class="form-control" type="text" placeholder="Enter Test Name">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="modal-footer border-0 justify-content-center mb-4 pe-0">
+                              <div class=" mt-4">
+                                <button type="button" class="btn ps-4 pe-4 labellingSkip">Cancel</button>
+                              </div>
+                              <div class="text-end mt-4">
+                                <button type="button" class="btn ps-4 pe-4 text-white btnDark collapseBtn">Done</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- end -->
+
+
+                      <!-- edit tags management modal -->
+
+                      <!-- Modal -->
+                      <div class="modal fade" id="editTagsManageModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                          <div class="modal-content">
+                            <div class="modal-header border-0">
+                              <h5 class="modal-title" id="exampleModalLabel">Edit Test Management</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              <div>
+                               
+                              </div>
+                            </div>
+                            <div class="modal-footer border-0 justify-content-center mb-4 pe-0">
+                              <div class=" mt-4">
+                                <button type="button" class="btn ps-4 pe-4 labellingSkip">Cancel</button>
+                              </div>
+                              <div class="text-end mt-4">
+                                <button type="button" class="btn ps-4 pe-4 text-white btnDark collapseBtn">Done</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- end -->
                       </div>
                     </td>
 
