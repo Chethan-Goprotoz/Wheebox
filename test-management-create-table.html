@@ -257,12 +257,12 @@
                       <div class="modal fade" id="labellingModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered">
                           <div class="modal-content">
-                            <div class="modal-header border-0 pb-3">
+                            <div class="modal-header align-items-center border-0 pb-3">
                               <h5 class="modal-title align-items-center" id="exampleModalLabel">Labelling Customization</h5>
                               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                              <div class="selectDropdown p-5 bg-lig p-4 p-md-5 mt-4 mt-md-0">
+                              <div class="selectDropdown p-5 bg-lig p-md-5 mt-4 mt-md-0 pt-0">
 
                                 <div class="row gx-5 gy-4">
                                   <div class="col-sm-4 col-md-4">
@@ -327,17 +327,247 @@
                               </div>
                               <!-- end -->
                             </div>
-                            <div class="modal-footer border-0 pt-0">
+                            <div class="modal-footer border-0 pt-0 ps-5">
                               <div class=" mt-4">
-                                <button type="button" class="btn ps-4 pe-4 labellingSkip">Skip</button>
+                                <button type="button" data-bs-dismiss="modal" class="btn ps-4 pe-4 labellingSkip">Skip</button>
                               </div>
                               <div class="text-end mt-4">
-                                <button type="button" class="btn ps-4 pe-4 text-white btnDark collapseBtn">Create Now</button>
+                                <button type="button" data-bs-target="#labellingModal2" data-bs-toggle="modal" data-bs-dismiss="modal" class="btn ps-4 pe-4 text-white btnDark collapseBtn">Create Now</button>
+                              </div>
+                              
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- labelling cutomization form popup  -->
+                      <div class="modal fade" id="labellingModal2" tabindex="-1" aria-labelledby="labellingModal2Label" aria-hidden="true">
+                        <div class="modal-dialog ">
+                          <div class="modal-content">
+                            <div class="modal-header border-0 pb-3">
+                              <h5 class="modal-title align-items-center" id="labellingModal2Label">Labelling Customization</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              <div class="selectDropdown p-5 bg-lig p-4 p-md-5 mt-4 mt-md-0">
+
+                                <div class="row gx-5 gy-4">
+                                  <div class="col-sm-4 col-md-4">
+                                    <div class="calendar-container input-container1 mt-0">
+                                      <p class="mb-2">Help Center Instruction Text</p>
+                                      <input class="form-control" type="text" placeholder="Help Center Instruction Text">
+                                    </div>
+                                  </div>
+                                  <div class="col-sm-4 col-md-4">
+                                    <div class="calendar-container input-container1 mt-0">
+                                      <p class="mb-2">Test Load Message</p>
+                                      <input class="form-control" type="text" placeholder="Test Load Message">
+                                    </div>
+                                  </div>
+                                  <div class="col-sm-4 col-md-4">
+                                    <div class="calendar-container input-container1 mt-0">
+                                      <p class="mb-2">Start Button Text</p>
+                                      <input class="form-control" type="text" placeholder="Start Button Text">
+                                    </div>
+                                  </div>
+                            
+                                  <div class="col-sm-4 col-md-4">
+                                    <div class="calendar-container input-container1 mt-0">
+                                      <p class="mb-2">Previous Button Name</p>
+                                      <input class="form-control" type="text" placeholder="Previous Button Name">
+                                    </div>
+                                  </div>
+                                  <div class="col-sm-4 col-md-4">
+                                    <div class="calendar-container input-container1 mt-0">
+                                      <p class="mb-2">Flag Button Name</p>
+                                      <input class="form-control" type="text" placeholder="Flag Button Name">
+                                    </div>
+                                  </div>
+
+                                  <div class="col-sm-4 col-md-4">
+                                    <div class="calendar-container input-container1 mt-0">
+                                      <p class="mb-2">Endtest Button Name</p>
+                                      <input class="form-control" type="text" placeholder="Endtest Button Name">
+                                    </div>
+                                  </div>
+                                  <div class="col-sm-4 col-md-4">
+                                    <div class="calendar-container input-container1 mt-0">
+                                      <p class="mb-2">Test Submit Popup Message</p>
+                                      <input class="form-control" type="text" placeholder="Test Submit Popup Message">
+                                    </div>
+                                  </div>
+                                  <div class="col-sm-4 col-md-4">
+                                    <div class="calendar-container input-container1 mt-0">
+                                      <p class="mb-2">Display Info On Test Page</p>
+                                      <input class="form-control" type="text" placeholder="Display Info On Test Page">
+                                    </div>
+                                  </div>
+                                  <div class="col-sm-4 col-md-4">
+                                    <div class="calendar-container input-container1 mt-0">
+                                      <p class="mb-2">Test Submit Load Message</p>
+                                      <input class="form-control" type="text" placeholder="Test Submit Load Message">
+                                    </div>
+                                  </div>
+                                  <div class="col-sm-4 col-md-4">
+                                    <div class="calendar-container input-container1 mt-0">
+                                      <p class="mb-2">Resume Button Text</p>
+                                      <input class="form-control" type="text" placeholder="Resume Button Text">
+                                    </div>
+                                  </div>
+                                  <div class="col-sm-4 col-md-4">
+                                    <div class="calendar-container input-container1 mt-0">
+                                      <p class="mb-2">Next Button Name</p>
+                                      <input class="form-control" type="text" placeholder="Next Button Name">
+                                    </div>
+                                  </div>
+                                  <div class="col-sm-4 col-md-4">
+                                    <div class="calendar-container input-container1 mt-0">
+                                      <p class="mb-2">Unflag Button Name</p>
+                                      <input class="form-control" type="text" placeholder="Unflag Button Name">
+                                    </div>
+                                  </div>
+                                  <div class="col-sm-4 col-md-4">
+                                    <div class="calendar-container input-container1 mt-0">
+                                      <p class="mb-2">End Test Message</p>
+                                      <input class="form-control" type="text" placeholder="End Test Message">
+                                    </div>
+                                  </div>
+                                  <div class="col-sm-4 col-md-4">
+                                    <div class="calendar-container input-container1 mt-0">
+                                      <p class="mb-2">Test Open Page Background Link</p>
+                                      <input class="form-control" type="text" placeholder="Test Open Page Background Link">
+                                    </div>
+                                  </div>
+                                  <div class="col-sm-4 col-md-4">
+                                    <div class="calendar-container input-container1 mt-0">
+                                      <p class="mb-2">Help Center Link</p>
+                                      <input class="form-control" type="text" placeholder="Help Center Link">
+                                    </div>
+                                  </div>
+                                  <div class="col-sm-4 col-md-4">
+                                    <div class="calendar-container input-container1 mt-0">
+                                      <p class="mb-2">Disclaimer Text</p>
+                                      <input class="form-control" type="text" placeholder="Disclaimer Text">
+                                    </div>
+                                  </div>
+                                  <div class="col-sm-4 col-md-4">
+                                    <div class="calendar-container input-container1 mt-0">
+                                      <p class="mb-2">Open Test In Same Tab</p>
+                                      <div class="">
+                                        <div class="toggle-group">
+                                          <input type="checkbox" name="on-off-switch" id="on-off-switch11" checked="" tabindex="1">
+                                          <label for="on-off-switch11">
+                                            <span class="aural"></span>
+                                          </label>
+                                          <div class="onoffswitch pull-right" aria-hidden="true">
+                                            <div class="onoffswitch-label">
+                                              <div class="onoffswitch-inner"></div>
+                                              <div class="onoffswitch-switch"></div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <div class="col-sm-4 col-md-4">
+                                    <div class="calendar-container input-container1 mt-0">
+                                      <p class="mb-2">Help Center Link Visibility</p>
+                                      <div class="">
+                                        <div class="toggle-group">
+                                          <input type="checkbox" name="on-off-switch" id="on-off-switch111" tabindex="1">
+                                          <label for="on-off-switch111">
+                                            <span class="aural"></span>
+                                          </label>
+                                          <div class="onoffswitch pull-right" aria-hidden="true">
+                                            <div class="onoffswitch-label">
+                                              <div class="onoffswitch-inner"></div>
+                                              <div class="onoffswitch-switch"></div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <div class="col-sm-4 col-md-4">
+                                    <div class="calendar-container input-container1 mt-0">
+                                      <p class="mb-2">Disclaimer Visibility</p>
+                                      <div class="">
+                                        <div class="toggle-group">
+                                          <input type="checkbox" name="on-off-switch" id="on-off-switch114" tabindex="1">
+                                          <label for="on-off-switch114">
+                                            <span class="aural"></span>
+                                          </label>
+                                          <div class="onoffswitch pull-right" aria-hidden="true">
+                                            <div class="onoffswitch-label">
+                                              <div class="onoffswitch-inner"></div>
+                                              <div class="onoffswitch-switch"></div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <div class="col-sm-4 col-md-4">
+                                    <div class="calendar-container input-container1 mt-0">
+                                      <p class="mb-2">Privacy Policy Visibility</p>
+                                      <div class="">
+                                        <div class="toggle-group">
+                                          <input type="checkbox" name="on-off-switch" id="on-off-switch112" tabindex="1">
+                                          <label for="on-off-switch112">
+                                            <span class="aural"></span>
+                                          </label>
+                                          <div class="onoffswitch pull-right" aria-hidden="true">
+                                            <div class="onoffswitch-label">
+                                              <div class="onoffswitch-inner"></div>
+                                              <div class="onoffswitch-switch"></div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <div class="col-sm-4 col-md-4">
+                                    <div class="calendar-container input-container1 mt-0">
+                                      <p class="mb-2">End Test View Company Logo</p>
+                                      <div class="">
+                                        <div class="toggle-group">
+                                          <input type="checkbox" name="on-off-switch" id="on-off-switch113" tabindex="1">
+                                          <label for="on-off-switch113">
+                                            <span class="aural"></span>
+                                          </label>
+                                          <div class="onoffswitch pull-right" aria-hidden="true">
+                                            <div class="onoffswitch-label">
+                                              <div class="onoffswitch-inner"></div>
+                                              <div class="onoffswitch-switch"></div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+
+
+
+                                </div>
+                              </div>
+                              <!-- end -->
+                            </div>
+                            <div class="modal-footer border-0 pt-0">
+                              <div class=" mt-4">
+                                <button type="button" class="btn ps-4 pe-4 labellingSkip">Cancel</button>
+                              </div>
+                              <div class="text-end mt-4">
+                                <button type="button" class="btn ps-4 pe-4 text-white btnDark collapseBtn">Save</button>
                               </div>
                             </div>
                           </div>
                         </div>
                       </div>
+                      <!-- end customization-->
                       <!-- end -->
 
                       <!-- delete modal -->
@@ -354,12 +584,12 @@
                                   
                                   <img class="" src="./assets/images/Question_Bank/noun-warning-5096319 (1).svg" alt="">
                                   <h6>Delete Test Case?</h6>
-                                  <p>Are you sure you want to delete the Test Case?</p>
+                                  <p>Are you sure you want to <span>delete</span> the Test Case?</p>
                                 </div>
                               </div>
                               <div class="modal-footer border-0 justify-content-center mb-4 pe-0">
                                 <div class=" mt-4">
-                                  <button type="button" class="btn ps-4 pe-4 labellingSkip">Cancel</button>
+                                  <button type="button" class="btn ps-4 pe-4 deleteCancel">Cancel</button>
                                 </div>
                                 <div class="text-end mt-4">
                                   <button type="button" class="btn ps-4 pe-4 text-white btnDark collapseBtn">Yes</button>
@@ -585,13 +815,13 @@
                         </div>
                         <div>
                           <a href="#" class="dropdown-" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false"><img src="./assets/images/Question_Bank/vertical-dots.svg" alt=""></a>
-                          <ul class="dropdown-menu createTableDrop" aria-labelledby="dropdownMenuButton2">
-                            <li><a class="dropdown-item" href="#"><span><img src="./assets/images/Question_Bank/edit-2.svg" alt=""></span> <span>Edit</span></a></li>
+                          <ul class="dropdown-menu createTableDrop" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#editTagsModal"><span><img src="./assets/images/Question_Bank/edit-2.svg" alt=""></span> <span>Edit</span></a></li>
                             <li><a class="dropdown-item" href="#"> <span><img src="./assets/images/Question_Bank/eys-preview-1.svg" class="ms-00" width="21" alt=""></span> <span class="ms-11">Preview</span></a></li>
-                            <li><a class="dropdown-item" href="#"><span><img src="./assets/images/Question_Bank/label.svg" alt=""></span> <span>Labelling Customization</span></a></li>
-                            <li><a class="dropdown-item" href="#"><img src="./assets/images/Question_Bank/printer.png" alt=""><span>Offline Format</span></a></li>
-                            <li><a class="dropdown-item" href="#"><span><img src="./assets/images/Question_Bank/noun-assign-4574720.svg" alt=""></span> <span>Assign Test</span></a></li>
-                            <li><a class="dropdown-item" href="#"><span><img src="./assets/images/Question_Bank/deletesvg.svg" alt=""></span><span>Delete</span></a></li>
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#labellingModal"><span><img src="./assets/images/Question_Bank/label.svg" alt=""></span> <span>Labelling Customization</span></a></li>
+                            <li><a class="dropdown-item" href="#"><span><img src="./assets/images/Question_Bank/printer.png" alt=""></span> <span>Offline Format</span></a></li>
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#assignTestModal"><span><img src="./assets/images/Question_Bank/noun-assign-4574720.svg" alt=""></span> <span>Assign Test</span></a></li>
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#deleteModal"><span><img src="./assets/images/Question_Bank/deletesvg.svg" alt=""></span><span>Delete</span></a></li>
                           </ul>
                         </div>
                       </div>
@@ -672,13 +902,13 @@
 
                         <div>
                           <a href="#" class="dropdown-" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false"><img src="./assets/images/Question_Bank/vertical-dots.svg" alt=""></a>
-                          <ul class="dropdown-menu createTableDrop" aria-labelledby="dropdownMenuButton3">
-                            <li><a class="dropdown-item" href="#"><span><img src="./assets/images/Question_Bank/edit-2.svg" alt=""></span> <span>Edit</span></a></li>
+                          <ul class="dropdown-menu createTableDrop" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#editTagsModal"><span><img src="./assets/images/Question_Bank/edit-2.svg" alt=""></span> <span>Edit</span></a></li>
                             <li><a class="dropdown-item" href="#"> <span><img src="./assets/images/Question_Bank/eys-preview-1.svg" class="ms-00" width="21" alt=""></span> <span class="ms-11">Preview</span></a></li>
-                            <li><a class="dropdown-item" href="#"><span><img src="./assets/images/Question_Bank/label.svg" alt=""></span> <span>Labelling Customization</span></a></li>
-                            <li><a class="dropdown-item" href="#"><img src="./assets/images/Question_Bank/printer.png" alt=""><span>Offline Format</span></a></li>
-                            <li><a class="dropdown-item" href="#"><span><img src="./assets/images/Question_Bank/noun-assign-4574720.svg" alt=""></span> <span>Assign Test</span></a></li>
-                            <li><a class="dropdown-item" href="#"><span><img src="./assets/images/Question_Bank/deletesvg.svg" alt=""></span><span>Delete</span></a></li>
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#labellingModal"><span><img src="./assets/images/Question_Bank/label.svg" alt=""></span> <span>Labelling Customization</span></a></li>
+                            <li><a class="dropdown-item" href="#"><span><img src="./assets/images/Question_Bank/printer.png" alt=""></span> <span>Offline Format</span></a></li>
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#assignTestModal"><span><img src="./assets/images/Question_Bank/noun-assign-4574720.svg" alt=""></span> <span>Assign Test</span></a></li>
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#deleteModal"><span><img src="./assets/images/Question_Bank/deletesvg.svg" alt=""></span><span>Delete</span></a></li>
                           </ul>
                         </div>
                       </div>
@@ -757,13 +987,13 @@
                         </div>
                         <div>
                           <a href="#" class="dropdown-" type="button" id="dropdownMenuButton4" data-bs-toggle="dropdown" aria-expanded="false"><img src="./assets/images/Question_Bank/vertical-dots.svg" alt=""></a>
-                          <ul class="dropdown-menu createTableDrop" aria-labelledby="dropdownMenuButton4">
-                            <li><a class="dropdown-item" href="#"><span><img src="./assets/images/Question_Bank/edit-2.svg" alt=""></span> <span>Edit</span></a></li>
+                          <ul class="dropdown-menu createTableDrop" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#editTagsModal"><span><img src="./assets/images/Question_Bank/edit-2.svg" alt=""></span> <span>Edit</span></a></li>
                             <li><a class="dropdown-item" href="#"> <span><img src="./assets/images/Question_Bank/eys-preview-1.svg" class="ms-00" width="21" alt=""></span> <span class="ms-11">Preview</span></a></li>
-                            <li><a class="dropdown-item" href="#"><span><img src="./assets/images/Question_Bank/label.svg" alt=""></span> <span>Labelling Customization</span></a></li>
-                            <li><a class="dropdown-item" href="#"><img src="./assets/images/Question_Bank/printer.png" alt=""><span>Offline Format</span></a></li>
-                            <li><a class="dropdown-item" href="#"><span><img src="./assets/images/Question_Bank/noun-assign-4574720.svg" alt=""></span> <span>Assign Test</span></a></li>
-                            <li><a class="dropdown-item" href="#"><span><img src="./assets/images/Question_Bank/deletesvg.svg" alt=""></span><span>Delete</span></a></li>
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#labellingModal"><span><img src="./assets/images/Question_Bank/label.svg" alt=""></span> <span>Labelling Customization</span></a></li>
+                            <li><a class="dropdown-item" href="#"><span><img src="./assets/images/Question_Bank/printer.png" alt=""></span> <span>Offline Format</span></a></li>
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#assignTestModal"><span><img src="./assets/images/Question_Bank/noun-assign-4574720.svg" alt=""></span> <span>Assign Test</span></a></li>
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#deleteModal"><span><img src="./assets/images/Question_Bank/deletesvg.svg" alt=""></span><span>Delete</span></a></li>
                           </ul>
                         </div>
                       </div>
@@ -844,13 +1074,13 @@
 
                         <div class="position-relative">
                           <a href="#" class="dropdown-" type="button" id="dropdownMenuButton5" data-bs-toggle="dropdown" aria-expanded="false"><img src="./assets/images/Question_Bank/vertical-dots.svg" alt=""></a>
-                          <ul class="dropdown-menu createTableDrop" aria-labelledby="dropdownMenuButton5">
-                            <li><a class="dropdown-item" href="#"><span><img src="./assets/images/Question_Bank/edit-2.svg" alt=""></span> <span>Edit</span></a></li>
+                          <ul class="dropdown-menu createTableDrop" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#editTagsModal"><span><img src="./assets/images/Question_Bank/edit-2.svg" alt=""></span> <span>Edit</span></a></li>
                             <li><a class="dropdown-item" href="#"> <span><img src="./assets/images/Question_Bank/eys-preview-1.svg" class="ms-00" width="21" alt=""></span> <span class="ms-11">Preview</span></a></li>
-                            <li><a class="dropdown-item" href="#"><span><img src="./assets/images/Question_Bank/label.svg" alt=""></span> <span>Labelling Customization</span></a></li>
-                            <li><a class="dropdown-item" href="#"><img src="./assets/images/Question_Bank/printer.png" alt=""><span>Offline Format</span></a></li>
-                            <li><a class="dropdown-item" href="#"><span><img src="./assets/images/Question_Bank/noun-assign-4574720.svg" alt=""></span> <span>Assign Test</span></a></li>
-                            <li><a class="dropdown-item" href="#"><span><img src="./assets/images/Question_Bank/deletesvg.svg" alt=""></span><span>Delete</span></a></li>
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#labellingModal"><span><img src="./assets/images/Question_Bank/label.svg" alt=""></span> <span>Labelling Customization</span></a></li>
+                            <li><a class="dropdown-item" href="#"><span><img src="./assets/images/Question_Bank/printer.png" alt=""></span> <span>Offline Format</span></a></li>
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#assignTestModal"><span><img src="./assets/images/Question_Bank/noun-assign-4574720.svg" alt=""></span> <span>Assign Test</span></a></li>
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#deleteModal"><span><img src="./assets/images/Question_Bank/deletesvg.svg" alt=""></span><span>Delete</span></a></li>
                           </ul>
                         </div>
                       </div>
@@ -930,13 +1160,13 @@
                         </div>
                         <div class="position-relative">
                           <a href="#" class="dropdown-" type="button" id="dropdownMenuButton6" data-bs-toggle="dropdown" aria-expanded="false"><img src="./assets/images/Question_Bank/vertical-dots.svg" alt=""></a>
-                          <ul class="dropdown-menu createTableDrop" aria-labelledby="dropdownMenuButton6">
-                            <li><a class="dropdown-item" href="#"><span><img src="./assets/images/Question_Bank/edit-2.svg" alt=""></span> <span>Edit</span></a></li>
+                          <ul class="dropdown-menu createTableDrop" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#editTagsModal"><span><img src="./assets/images/Question_Bank/edit-2.svg" alt=""></span> <span>Edit</span></a></li>
                             <li><a class="dropdown-item" href="#"> <span><img src="./assets/images/Question_Bank/eys-preview-1.svg" class="ms-00" width="21" alt=""></span> <span class="ms-11">Preview</span></a></li>
-                            <li><a class="dropdown-item" href="#"><span><img src="./assets/images/Question_Bank/label.svg" alt=""></span> <span>Labelling Customization</span></a></li>
-                            <li><a class="dropdown-item" href="#"><img src="./assets/images/Question_Bank/printer.png" alt=""><span>Offline Format</span></a></li>
-                            <li><a class="dropdown-item" href="#"><span><img src="./assets/images/Question_Bank/noun-assign-4574720.svg" alt=""></span> <span>Assign Test</span></a></li>
-                            <li><a class="dropdown-item" href="#"><span><img src="./assets/images/Question_Bank/deletesvg.svg" alt=""></span><span>Delete</span></a></li>
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#labellingModal"><span><img src="./assets/images/Question_Bank/label.svg" alt=""></span> <span>Labelling Customization</span></a></li>
+                            <li><a class="dropdown-item" href="#"><span><img src="./assets/images/Question_Bank/printer.png" alt=""></span> <span>Offline Format</span></a></li>
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#assignTestModal"><span><img src="./assets/images/Question_Bank/noun-assign-4574720.svg" alt=""></span> <span>Assign Test</span></a></li>
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#deleteModal"><span><img src="./assets/images/Question_Bank/deletesvg.svg" alt=""></span><span>Delete</span></a></li>
                           </ul>
                         </div>
                       </div>
@@ -1018,13 +1248,13 @@
 
                         <div class="position-relative">
                           <a href="#" class="dropdown7-" type="button" id="dropdownMenuButton7" data-bs-toggle="dropdown" aria-expanded="false"><img src="./assets/images/Question_Bank/vertical-dots.svg" alt=""></a>
-                          <ul class="dropdown-menu createTableDrop" aria-labelledby="dropdownMenuButton7">
-                            <li><a class="dropdown-item" href="#"><span><img src="./assets/images/Question_Bank/edit-2.svg" alt=""></span> <span>Edit</span></a></li>
+                          <ul class="dropdown-menu createTableDrop" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#editTagsModal"><span><img src="./assets/images/Question_Bank/edit-2.svg" alt=""></span> <span>Edit</span></a></li>
                             <li><a class="dropdown-item" href="#"> <span><img src="./assets/images/Question_Bank/eys-preview-1.svg" class="ms-00" width="21" alt=""></span> <span class="ms-11">Preview</span></a></li>
-                            <li><a class="dropdown-item" href="#"><span><img src="./assets/images/Question_Bank/label.svg" alt=""></span> <span>Labelling Customization</span></a></li>
-                            <li><a class="dropdown-item" href="#"><img src="./assets/images/Question_Bank/printer.png" alt=""><span>Offline Format</span></a></li>
-                            <li><a class="dropdown-item" href="#"><span><img src="./assets/images/Question_Bank/noun-assign-4574720.svg" alt=""></span> <span>Assign Test</span></a></li>
-                            <li><a class="dropdown-item" href="#"><span><img src="./assets/images/Question_Bank/deletesvg.svg" alt=""></span><span>Delete</span></a></li>
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#labellingModal"><span><img src="./assets/images/Question_Bank/label.svg" alt=""></span> <span>Labelling 2Customization</span></a></li>
+                            <li><a class="dropdown-item" href="#"><span><img src="./assets/images/Question_Bank/printer.png" alt=""></span> <span>Offline Format</span></a></li>
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#assignTestModal"><span><img src="./assets/images/Question_Bank/noun-assign-4574720.svg" alt=""></span> <span>Assign Test</span></a></li>
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#deleteModal"><span><img src="./assets/images/Question_Bank/deletesvg.svg" alt=""></span><span>Delete</span></a></li>
                           </ul>
                         </div>
                       </div>

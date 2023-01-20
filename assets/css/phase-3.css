@@ -1901,7 +1901,7 @@ opacity: 1;
     padding: 22px;
 }
 
-#labellingModal .modal-dialog{
+#labellingModal .modal-dialog,#labellingModal2 .modal-dialog{
     max-width:1581px;;
 }
 
@@ -1921,7 +1921,7 @@ opacity: 1;
     margin-right: 20px;
 }
 
-#labellingModal .modal-title{
+#labellingModal .modal-title,#labellingModal2 .modal-title{
     font: normal normal 600 22px/33px Pop-normal;
     letter-spacing: 0px;
     color: #2C3652;
@@ -1936,12 +1936,33 @@ opacity: 1;
     opacity: 1;
     margin-top: 20px;
 }
+#deleteModal .deleteContents p span{
+    color: #C22F2F;
+}
 
 #deleteModal .deleteContents p{
     font: normal normal 16px/24px Pop-normal;
     letter-spacing: 0px;
     opacity: 1;
     margin-top: 10px;
+}
+
+.deleteCancel{
+    width: 149px;
+    height: 40px;
+    box-shadow: 0px 3px 6px #5462E247;
+    border: 1px solid #20776E;
+    border-radius: 5px;
+    opacity: 1;
+    text-align: center;
+    font: normal normal 14px/21px Pop-medium;
+    letter-spacing: 0px;
+    color: #20776E;
+    opacity: 1;
+    margin-right: 20px;
+}
+.deleteCancel:hover{
+    color: #20776E;
 }
 
 #assignTestModal .modal-title,#editTagsModal .modal-title{
@@ -1968,8 +1989,54 @@ opacity: 1;
     padding:0 93px;
 }
 
+.toastDelete .toastDeleteDiv .toast.fade.show{
+    width: 328px;
+    height: 60px;
+    background: #323232 0% 0% no-repeat padding-box;
+    box-shadow: 0px 4px 12px #00000057;
+    border-radius: 5px;
+    opacity: 1;
+    text-align: center;
+    font: normal normal 18px/1px Pop-normal;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-transform: capitalize;
+    opacity: 1;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.toast p{
+   
+    font: normal normal 18px/1px Pop-normal;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-transform: capitalize;
+    opacity: 1;
+}
+
+.toast.fade.show.red{
+    width: 328px;
+    height: 60px;
+    background: #FF4F4F 0% 0% no-repeat padding-box;
+    box-shadow: 0px 4px 12px #00000057;
+    border-radius: 5px;
+    opacity: 1;
+    text-align: center;
+    font: normal normal 18px/1px Pop-normal;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-transform: capitalize;
+    opacity: 1;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
+#labellingModal .calendar-container.InputFile .inputFileDiv::after{
+    display: none;
+}
 
   /* resolution 1920 started */
 
@@ -2592,6 +2659,9 @@ opacity: 1;
 
 /* responsive css mobile */
 @media (max-width:600px){
+    #labellingModal .modal-footer,#labellingModal2 .modal-footer{
+        justify-content: space-between;
+    }
     .f1BtnBorder.addNewBtnBorder{
         border: 0;
         font-size: 14px;
