@@ -2659,6 +2659,9 @@ opacity: 1;
 
 /* responsive css mobile */
 @media (max-width:600px){
+    #assignTestModal .modal-body, #editTagsModal .modal-body{
+        padding: 0;
+    }
     #labellingModal .modal-footer,#labellingModal2 .modal-footer{
         justify-content: space-between;
     }
