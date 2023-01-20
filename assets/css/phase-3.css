@@ -2038,6 +2038,23 @@ opacity: 1;
     display: none;
 }
 
+#labellingModal .calendar-container.input-container1 input::placeholder,
+#labellingModal2 .calendar-container.input-container1 input::placeholder{
+    color: #010D0A;
+    opacity: 0.3;
+    font-size: 15px;
+    font-family: pop-normal;
+
+}
+
+#labellingModal .vscomp-toggle-button , #labellingModal .input-container1 input ,#labellingModal .calendar-container.InputFile input[type="text"],
+#labellingModal2 .vscomp-toggle-button , #labellingModal2 .input-container1 input ,#labellingModal2 .calendar-container.InputFile input[type="text"]
+{
+    border: 0.4000000059604645px solid #AAAAAA;
+    box-shadow: none;
+    border-radius: 6px;
+}
+
   /* resolution 1920 started */
 
   @media (min-width:1900px){
@@ -2659,6 +2676,13 @@ opacity: 1;
 
 /* responsive css mobile */
 @media (max-width:600px){
+    .calendar-container.input-container1 input::placeholder{
+        font-size: 18px;
+
+    }
+    .rowAssignTest .input-container1 input, .rowAssignTest .vscomp-toggle-button{
+        font-size: 18px;
+    }
     #assignTestModal .modal-body, #editTagsModal .modal-body{
         padding: 0;
     }
