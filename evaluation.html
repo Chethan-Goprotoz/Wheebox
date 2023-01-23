@@ -21,6 +21,7 @@
   
   
   <link rel="stylesheet" href="assets/css/phase-3.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
 
 <!-- <link rel="stylesheet" href="assets/css/chethan.css"> -->
 </head>
@@ -133,12 +134,12 @@
             <div class="d-flex gap-4 Mb-center">
              <div class="row">
               <div
-                class="filter-container filter-container-shadow d-lg-flex d-flex justify-content-center align-items-center col-sm-6"
+                class="filter-container filter-container-shadow d-lg-flex d-flex justify-content-center align-items-center col-sm-6 m-2"
                 data-bs-target="#exampleModalToggle" data-bs-toggle="modal">
                 <p><img src="./assets/images/chethan/icon1.svg" class="ms-2" alt="" style="margin-right: 10px;">Subjective Evaluation</p>
               </div>
               <div
-                class="filter-container filter-container-shadow w-auto ps-3 pe-3 d-lg-flex d-flex justify-content-center align-items-center col-sm-6"
+                class="filter-container filter-container-shadow w-auto ps-3 pe-3 d-lg-flex d-flex justify-content-center align-items-center col-sm-6 m-2"
                 data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <p><img src="./assets/images/chethan/icon2.svg" class="ms-2"
                   alt="" style="margin-right: 10px;">Evaluation Allotment</p>
@@ -202,15 +203,9 @@
                               </div>
                               <div class="col-sm-4 col-md-4">
                                 <div class="calendar-container mt-0 passper">
-                                  <p>Select Start Date &End Date:</p>
-                                  <select id="SearchDropdown" name="native-select" placeholder="Select Subtopic Here"
-                                    data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
-                                    <option value="5">Tenses</option>
-                                    <option value="2">Passage</option>
-                                    <option value="3">Story</option>
-                                    <option value="4">Poetry</option>
-                                  </select>
-          
+                                  <label for="fname">Start Date & End Date</label>
+                                  <input type="text" name="datefilter" class="calendar" value="" placeholder="Start Date & End Date" />
+                                  <i class="fa-regular fa-calendar"></i>
                                 </div>
                               </div>
                              
@@ -228,16 +223,16 @@
             <ul class="nav nav-pills nav-justified" role="tablist">
               <li class="nav-item">
                 <a class="nav-link active" data-bs-toggle="pill" href="#GeneralQuestion"><img
-                    src="./assets/images/Question_Bank/noun-question.svg" width="16" alt="" style="margin-right: 10px;">Overall Evaluator Wise Reports</a>
+                    src="./assets/images/chethan/Group 66992.svg" width="16" alt="" style="margin-right: 10px;">Overall Evaluator Wise Reports</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" data-bs-toggle="pill" href="#Programming"><img
-                    src="./assets/images/Question_Bank/Programming Hands On.svg" width="16" alt="" style="margin-right: 10px;">Test Taker VS Assigned Reprts<span
+                    src="./assets/images/chethan/Group 66992.svg" width="16" alt="" style="margin-right: 10px;">Test Taker VS Assigned Reprts<span
                     class="d-none d-md-inline"></span></a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" data-bs-toggle="pill" href="#Reporting"><img
-                    src="./assets/images/Question_Bank/Programming Hands On.svg" width="16" alt="" style="margin-right: 10px;">Student ,Question wise Reports<span
+                    src="./assets/images/chethan/Group 66992.svg" width="16" alt="" style="margin-right: 10px;">Student ,Question wise Reports<span
                     class="d-none d-md-inline"></span></a>
               </li>
             </ul>
@@ -384,6 +379,14 @@
                   <!-- table -->
               </div>
               <div id="Programming" class="container tab-pane fade"><br>
+                <div class="searchInput mt-4 d-flex justify-content-between align-items-center mb-4 mb-md-5">
+                  <div class="searchAfter position-relative">
+                    <input type="text" class="form-control" placeholder="Search...">
+                  </div>
+                  <div class="filter-container filter-container-shadow w-auto ps-3 pe-3 d-lg-flex d-flex justify-content-center align-items-center d-none d-md-flex" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <p>Download <img src="./assets/images/chethan/download.svg" class="ms-2" width="16" alt=""></p>
+                  </div>
+                </div>
                                   <!-- table -->
                                   <div class="table-responsive table-div">
                                     <table class="table mytable">
@@ -506,6 +509,14 @@
                                   <!-- table -->
               </div>
               <div id="Reporting" class="container tab-pane fade"><br>
+                <div class="searchInput mt-4 d-flex justify-content-between align-items-center mb-4 mb-md-5">
+                  <div class="searchAfter position-relative">
+                    <input type="text" class="form-control" placeholder="Search...">
+                  </div>
+                  <div class="filter-container filter-container-shadow w-auto ps-3 pe-3 d-lg-flex d-flex justify-content-center align-items-center d-none d-md-flex" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <p>Download <img src="./assets/images/chethan/download.svg" class="ms-2" width="16" alt=""></p>
+                  </div>
+                </div>
                 <!-- table -->
                 <div class="table-responsive table-div">
                   <table class="table mytable">
@@ -661,6 +672,19 @@
   </section>
   <!--selection section end -->
   <style>
+    .calendar {
+    width: 100%;
+    height: 52px;
+    border: 1px solid #20776E;
+    border-radius: 4px;
+    box-shadow: 0px 2px 12px #20776e29;
+    padding-left: 10px;
+}
+.calendar-container label{
+    font-size: 14px;
+    color: #000;
+    margin-bottom: 10px;
+}
     @media (min-width: 767px){
       .Mb-center div.filter-container.filter-container-shadow {
     width: 256px !important;
@@ -687,6 +711,8 @@
   <script src="/assets/js/popper.min.js"></script>
   <script src="assets/js/loader.js"></script>
   <script src="assets/js/virual-select.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
 
   <!-- Load plotly.js into the DOM -->
   <!-- <script src='https://cdn.plot.ly/plotly-2.16.1.min.js'></script> -->
@@ -706,7 +732,22 @@
     })
   </script> -->
 
-
+  <script type="text/javascript">
+    $(function() {
+      $('input[name="datefilter"]').daterangepicker({
+        autoUpdateInput: false,
+        locale: {
+          cancelLabel: 'Clear'
+        }
+      });
+      $('input[name="datefilter"]').on('apply.daterangepicker', function(ev, picker) {
+        $(this).val(picker.startDate.format('MM/DD/YYYY') + ' - ' + picker.endDate.format('MM/DD/YYYY'));
+      });
+      $('input[name="datefilter"]').on('cancel.daterangepicker', function(ev, picker) {
+        $(this).val('');
+      });
+    });
+  </script>
   <script>
     function sidemenu() {
       var sidebar = document.getElementById("sidebar-menu")
