@@ -2072,7 +2072,8 @@ input{
     box-shadow: 0px 1px 6px #00000014;
     border-radius: 11px;
     opacity: 1;
-    margin: 35px;
+    margin: 31px;
+    margin-top: 0;
 }
 
 /*  */
