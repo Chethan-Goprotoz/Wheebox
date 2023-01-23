@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/phase-3.css" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/alphardex/aqua.css/dist/aqua.min.css'>
+    <link rel="stylesheet" href="assets/css/virtual-select.min.css">
+  
+    <link rel="stylesheet" href="assets/css/phase-3.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Button to Open the Modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+    Open modal
+  </button>
+  
+  <!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+  
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Assessor Allotment</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+  
+        <!-- Modal body -->
+        <div class="modal-body">
+                        <!--Table  -->
+                        <div style="overflow-x:auto;">
+                            <div class="selectDropdown p-5 bg-light1 p-4 p-md-5">
+                                <div class="row gx-5 gy-4">
+                                  <div class="col-sm-4 col-md-6 col-lg-6">
+                                    <div class="calendar-container mt-0 passper">
+                                      <p>Select Domain</p>
+                                      <select id="SearchDropdown" name="native-select" placeholder="Select Subject Here"
+                                        data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
+                                        <option value="5">English</option>
+                                        <option value="1">Hindi</option>
+                                        <option value="2">Maths</option>
+                                        <option value="3">Physics</option>
+                                        <option value="4">Chemistry</option>
+                                      </select>
+              
+                                    </div>
+                                  </div>
+                                  <div class="col-sm-4 col-md-6">
+                                    <div class="calendar-container mt-0 passper">
+                                      <p>Select Test Name</p>
+                                      <select id="SearchDropdown" name="native-select" placeholder="Select Topic Here"
+                                        data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
+                                        <option value="5">Grammer</option>
+                                        <option value="1">Tense</option>
+                                        <option value="2">Passage</option>
+                                        <option value="3">Story</option>
+                                        <option value="4">Poetry</option>
+                                      </select>
+              
+                                    </div>
+                                  </div>
+                                 
+                                 
+                                
+                                </div>
+                            </div>
+                            <table class="fold-table table-responsive">
+                                <thead>
+                                  <tr>
+                                    <th width="5%">
+                                      <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="anime" name="hobby" />
+                                        <label class="form-check-label" for="anime"></label>
+                                      </div>
+                                    </th>
+                                    <th>Candidate Details</th>
+                                   
+                                  </tr>
+                                </thead>
+                                <tbody class="table-row">
+                                  <tr class="view">
+                                    <td>
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="anime" name="hobby" />
+                                            <label class="form-check-label" for="anime"></label>
+                                          </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex accdn-holder" style="justify-content: space-between;">
+                                            <div>
+                                                1. Question reference number - <b>1134031725</b>
+                                            </div>
+                                            <div>
+                                               <img src="./assets/images/chethan/noun-plus-1052486.svg" alt="" class="toggle_img" />
+                                            </div>
+                                        </div>
+                                        
+                                    </td>
+                                  </tr>
+                                  <tr class="fold">
+                                    <td colspan="7">
+                                      <div class="fold-content">
+                                            <p>Subjective Questions Attempted -<span>04</span></p>
+                                            <p>Assessor ID -<span>assessor99@gmail.com</span></p>
+                                            <p>Candidate ID -<span>demo973@wheebox.com</span></p>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                                <tbody class="table-row">
+                                    <tr class="view">
+                                      <td>
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="anime" name="hobby" />
+                                            <label class="form-check-label" for="anime"></label>
+                                          </div>
+                                      </td>
+                                      <td>1. Question reference number - <b>1134031725</b></td>
+                                    </tr>
+                                    <tr class="fold">
+                                      <td colspan="7">
+                                        <div class="fold-content" style="margin-left: 5%;">
+                                              <p>Subjective Questions Attempted -<span>04</span></p>
+                                              <p>Assessor ID -<span>assessor99@gmail.com</span></p>
+                                              <p>Candidate ID -<span>demo973@wheebox.com</span></p>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                  <tbody class="table-row">
+                                    <tr class="view">
+                                      <td>
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="anime" name="hobby" />
+                                            <label class="form-check-label" for="anime"></label>
+                                          </div>
+                                      </td>
+                                      <td>1. Question reference number - <b>1134031725</b></td>
+                                    </tr>
+                                    <tr class="fold">
+                                      <td colspan="7">
+                                        <div class="fold-content">
+                                              <p>Subjective Questions Attempted -<span>04</span></p>
+                                              <p>Assessor ID -<span>assessor99@gmail.com</span></p>
+                                              <p>Candidate ID -<span>demo973@wheebox.com</span></p>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                
+                                
+                              </table>
+                        </div>
+                        <!--Table  -->
+                        
+        </div>
+  
+        <!-- Modal footer -->
+        <div class="modal-footer">
+            <div class="d-flex mt-5" style="justify-content: flex-end;">
+                <button class="next-btn" data-bs-dismiss="modal" >Submit</button><br>
+               </div>
+               <div class="pagignationDiv1 d-flex justify-content-between align-items-center mt-5" style="flex-wrap:wrap;gap:20px ;">
+                <div class="selectTag gap-4 d-flex justify-content-between align-items-center">
+                  <div class="position-relative">
+                    <p class="mb-0 pe-3">Showing <span>1-5</span> of <span>120</span> </p>
+                    <div class="showPage"></div>
+                  </div>
+                  <div class="selectNumRow">
+                    <select name="cars" id="cars">
+                      <option value="volvo">5</option>
+                      <option value="saab">10</option>
+                      <option value="mercedes">15</option>
+                      <option value="audi">20</option>
+                    </select>
+                  </div>
+                  <div>
+                    <p class="mb-0">records per page</p>
+                  </div>
+
+                </div>
+
+                <div class="paginationDiv">
+                  <ul class="pagination border-0 pagination-lg mb-0">
+                    <li class="page-item "><a class="page-link disable" href="#">Previous</a></li>
+                    <li class="page-item active"><a class="page-link text-white" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                    <li class="page-item"><a class="page-link" href="#">5</a></li>
+                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                  </ul>
+                </div>
+              </div>
+         
+        </div>
+
+  
+      </div>
+    </div>
+  </div>
+  <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script>
+    $(function(){
+  $(".fold-table tr.view").on("click", function(){
+    $(this).toggleClass("open").next(".fold").toggleClass("open");
+    $(this).toggleClass("open").next(".toggle_img").attr("src", "images/card-front.jpg");
+  });
+});
+  </script>
+  <style>
+    @media (min-width: 576px){
+        .modal-dialog {
+    max-width: 1100px;
+    height: 992;
+    margin: 1.75rem auto;
+}
+    }
+    .next-btn {
+    background: #20776E 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #5462e247;
+    border-radius: 5px;
+    color: #fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: 0px;
+    outline: 0px;
+}
+
+    .fold-table {
+    width: 100%;
+  }
+  .fold-table th {
+    text-align: left;
+    padding-left: 40px;
+  }
+  .fold-table td {
+  padding-left: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  }
+  .fold-table tr{
+   border-radius: 15px;
+  }
+
+  .fold-table{
+    border-collapse: separate;
+    border-spacing: 0 15px;
+  }
+  
+  table.fold-table > tbody > tr.view td, table.fold-table > tbody > tr.view th {
+    cursor: pointer;
+  }
+
+  table.fold-table > tbody > tr.fold {
+    display: none;
+  }
+  table.fold-table > tbody > tr.fold.open {
+    display: table-row;
+  }
+  
+
+  .fold-table thead{
+  background: #EDFAF4 0% 0% no-repeat padding-box;
+  box-shadow: 0px 1px 5px #E4E4E4;
+  border-radius: 10px;
+  opacity: 1;
+  height: 60px;
+  }
+  .fold-table tbody{
+  background-color: bisque;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 1px 5px #E4E4E4;
+  border-radius: 20px;
+  height: 60px;
+  }
+  /* Radio Button */
+.radio {
+  margin: 0.5rem;
+  display: inline;
+}
+.radio input[type=radio] {
+  position: absolute;
+  opacity: 0;
+}
+.radio input[type=radio] + .radio-label:before {
+  content: "";
+  background: #f4f4f4;
+  border-radius: 100%;
+  border: 1px solid #20776e;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  top: -0.2em;
+  margin-right: 1em;
+  vertical-align: top;
+  cursor: pointer;
+  text-align: center;
+  transition: all 250ms ease;
+}
+.radio input[type=radio]:checked + .radio-label:before {
+  background-color: #20776e;
+  box-shadow: inset 0 0 0 4px #f4f4f4;
+}
+.radio input[type=radio]:focus + .radio-label:before {
+  outline: none;
+  border-color: #20776e;
+}
+.radio input[type=radio]:disabled + .radio-label:before {
+  box-shadow: inset 0 0 0 4px #f4f4f4;
+  border-color: #b4b4b4;
+  background: #b4b4b4;
+}
+.radio input[type=radio] + .radio-label:empty:before {
+  margin-right: 0;
+}
+/* Radio Button */
+/* Checkbox */
+.form-check {
+    display: block;
+    min-height: 1.5rem;
+    padding-left: 0em;
+    margin-bottom: 0.125rem;
+}
+.form-check-input[type=checkbox] {
+  --checkbox-width: 30px;
+}
+.form-check-input[type=checkbox]::before{
+  display: none;
+}
+.form-check-input[type=checkbox] {
+  --checkbox-checked-bg: #20776e;
+}
+.modal-header, .modal-footer{
+    border-bottom: 0px solid #dee2e600;
+    border-top: 0px solid #dee2e600;
+}
+/* Checkbox */
+@media only screen and (max-width: 600px)  {
+  .fold-table th {
+    text-align: left;
+    padding-left: 10px;
+  }
+  .fold-table td {
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  }
+}
+  </style>
+    <script src="assets/js/jquery-2.2.0.min.js"></script>
+    <script src="assets/js/virual-select.min.js"></script>
+    <script>
+        VirtualSelect.init({
+          ele: '#SearchDropdown'
+        });
+      </script>
+    <script>
+        var x, i, j, l, ll, selElmnt, a, b, c;
+        /*look for any elements with the class "custom-select":*/
+        x = document.getElementsByClassName("custom-select");
+        l = x.length;
+        for (i = 0; i < l; i++) {
+          selElmnt = x[i].getElementsByTagName("select")[0];
+          ll = selElmnt.length;
+          /*for each element, create a new DIV that will act as the selected item:*/
+          a = document.createElement("DIV");
+          a.setAttribute("class", "select-selected");
+          a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+          x[i].appendChild(a);
+          /*for each element, create a new DIV that will contain the option list:*/
+          b = document.createElement("DIV");
+          b.setAttribute("class", "select-items select-hide");
+          for (j = 1; j < ll; j++) {
+            /*for each option in the original select element,
+            create a new DIV that will act as an option item:*/
+            c = document.createElement("DIV");
+            c.innerHTML = selElmnt.options[j].innerHTML;
+            c.addEventListener("click", function(e) {
+                /*when an item is clicked, update the original select box,
+                and the selected item:*/
+                var y, i, k, s, h, sl, yl;
+                s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+                sl = s.length;
+                h = this.parentNode.previousSibling;
+                for (i = 0; i < sl; i++) {
+                  if (s.options[i].innerHTML == this.innerHTML) {
+                    s.selectedIndex = i;
+                    h.innerHTML = this.innerHTML;
+                    y = this.parentNode.getElementsByClassName("same-as-selected");
+                    yl = y.length;
+                    for (k = 0; k < yl; k++) {
+                      y[k].removeAttribute("class");
+                    }
+                    this.setAttribute("class", "same-as-selected");
+                    break;
+                  }
+                }
+                h.click();
+            });
+            b.appendChild(c);
+          }
+          x[i].appendChild(b);
+          a.addEventListener("click", function(e) {
+              /*when the select box is clicked, close any other select boxes,
+              and open/close the current select box:*/
+              e.stopPropagation();
+              closeAllSelect(this);
+              this.nextSibling.classList.toggle("select-hide");
+              this.classList.toggle("select-arrow-active");
+            });
+        }
+        function closeAllSelect(elmnt) {
+          /*a function that will close all select boxes in the document,
+          except the current select box:*/
+          var x, y, i, xl, yl, arrNo = [];
+          x = document.getElementsByClassName("select-items");
+          y = document.getElementsByClassName("select-selected");
+          xl = x.length;
+          yl = y.length;
+          for (i = 0; i < yl; i++) {
+            if (elmnt == y[i]) {
+              arrNo.push(i)
+            } else {
+              y[i].classList.remove("select-arrow-active");
+            }
+          }
+          for (i = 0; i < xl; i++) {
+            if (arrNo.indexOf(i)) {
+              x[i].classList.add("select-hide");
+            }
+          }
+        }
+        /*if the user clicks anywhere outside the select box,
+        then close all select boxes:*/
+        document.addEventListener("click", closeAllSelect);
+        </script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>  
+
+
+</body>
+</html>
