@@ -2067,6 +2067,14 @@ input{
     text-align: center !important;
 }
 
+.content__inner .multisteps-form{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 1px 6px #00000014;
+    border-radius: 11px;
+    opacity: 1;
+    margin: 35px;
+}
+
 /*  */
 
   /* resolution 1920 started */
