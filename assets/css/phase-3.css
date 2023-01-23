@@ -40,7 +40,7 @@
   
 }
 .selectDropdown .row .calendar-container .vscomp-toggle-button{
-    height: 42px;
+    height: 42px !important;
 }
 .addNewSubj{
     border: 1px solid #20776E;
@@ -962,7 +962,7 @@ position: relative;
 
 
   .createTableDrop{
-    /* width: 320px; */
+    width: 320px;
 /* height: 374px; */
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 4px 13px #2E2E2E3D;
@@ -2058,6 +2058,13 @@ opacity: 1;
 #editTagsManageModal .modal-dialog{
     max-width: 1110px;
     height: 100%;
+}
+input{
+    text-align: start !important;
+}
+
+.multisteps-form__content .mytable td input{
+    text-align: center !important;
 }
 
 /*  */
