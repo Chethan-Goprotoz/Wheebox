@@ -2055,6 +2055,13 @@ opacity: 1;
     border-radius: 6px;
 }
 
+#editTagsManageModal .modal-dialog{
+    max-width: 1110px;
+    height: 100%;
+}
+
+/*  */
+
   /* resolution 1920 started */
 
   @media (min-width:1900px){
