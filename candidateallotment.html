@@ -188,6 +188,7 @@
   <style>
     .toggle_img{
       padding-right: 25px;
+      padding-left: 10px;
     }
     .modal-content{
       border-radius: 24px;
@@ -239,11 +240,7 @@
       margin-left: 5%;
     padding-left: 40px;
     }
-    .fold-content p{
-      color: #848484;
-      font-size: 16px;
-      margin: 0px;
-    }
+   
     .modal-title{
       font-size: 24px;
       color: #2C3652;
@@ -253,18 +250,31 @@
     .modal-footer{
       padding-bottom: 28px;
     }
-    .modal-header{
-      padding-top: 28px;
-      padding-left: 42px;
-      padding-right: 42px;
-    }
+
     @media (min-width: 576px){
         .modal-dialog {
     max-width: 1100px;
     height: 992;
     margin: 1.75rem auto;
 }
+  
+    .modal-header{
+      padding-top: 28px;
+      padding-left: 42px;
+      padding-right: 42px;
     }
+    .modal-body {
+    position: relative;
+    flex: 1 1 auto;
+    padding: 1rem;
+}
+.fold-content p{
+      color: #848484;
+      font-size: 16px;
+      margin: 0px;
+    }
+    }
+
     .next-btn {
     background: #20776E 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 6px #5462e247;
@@ -394,7 +404,36 @@
   padding-top: 10px;
   padding-bottom: 10px;
   }
+  .modal-header{
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .accdn-holder{
+      font-size: 14px;
+    }
+    .modal-body{
+      padding: 0px !important;
+      margin: 0px;
+    }
+    .modal-footer{
+      justify-content: center !important;
+    }
+    .pagination {
+      margin-top: 20px;
+    }
+    .fold-content p{
+      color: #848484;
+      font-size: 14px;
+      margin: 0px;
+    }
+    .toggle_img{
+      width: 60px;
+    }
+    .form-check-input[type=checkbox] {
+    --checkbox-width: 20px;
 }
+}
+
   </style>
      <script>
       $(function(){
