@@ -40,7 +40,7 @@
                                         <label class="form-check-label" for="anime"></label>
                                       </div>
                                     </th>
-                                    <th>Candidate Details</th>
+                                    <th style="color:#2C3652;font: normal normal medium 14px/21px Poppins;">Candidate Details</th>
                                    
                                   </tr>
                                 </thead>
@@ -52,7 +52,7 @@
                                         <label class="form-check-label" for="anime"></label>
                                       </div>
                                     </td>
-                                    <td>1. Question reference number - <b>1134031725</b></td>
+                                    <td style="color:#2C3652;font-size:18px">1. Question reference number - <b>1134031725</b></td>
                                   </tr>
                                   <tr class="fold">
                                     <td colspan="7">
@@ -72,7 +72,7 @@
                                           <label class="form-check-label" for="anime"></label>
                                         </div>
                                       </td>
-                                      <td>1. Question reference number - <b>1134031725</b></td>
+                                      <td style="color:#2C3652;font-size:18px">1. Question reference number - <b>1134031725</b></td>
                                     </tr>
                                     <tr class="fold">
                                       <td colspan="7">
@@ -92,7 +92,7 @@
                                           <label class="form-check-label" for="anime"></label>
                                         </div>
                                       </td>
-                                      <td>1. Question reference number - <b>1134031725</b></td>
+                                      <td style="color:#2C3652;font-size:18px">1. Question reference number - <b>1134031725</b></td>
                                     </tr>
                                     <tr class="fold">
                                       <td colspan="7">
@@ -113,11 +113,11 @@
         </div>
   
         <!-- Modal footer -->
-        <div class="modal-footer">
-            <div class="d-flex mt-5" style="justify-content: flex-end;">
+        <div class="modal-footer" style="justify-content: space-between;">
+            <!-- <div class="d-flex mt-5" style="justify-content: flex-end;">
                 <button class="next-btn" data-bs-dismiss="modal" >Submit</button><br>
-               </div>
-               <div class="pagignationDiv1 d-flex justify-content-between align-items-center mt-5" style="flex-wrap:wrap;gap:20px ;">
+               </div> -->
+               <!-- <div class="pagignationDiv1 d-flex justify-content-between align-items-center mt-5" style="flex-wrap:wrap;gap:20px ;"> -->
                 <div class="selectTag gap-4 d-flex justify-content-between align-items-center">
                   <div class="position-relative">
                     <p class="mb-0 pe-3">Showing <span>1-5</span> of <span>120</span> </p>
@@ -137,18 +137,18 @@
 
                 </div>
 
-                <div class="paginationDiv">
-                  <ul class="pagination border-0 pagination-lg mb-0">
-                    <li class="page-item "><a class="page-link disable" href="#">Previous</a></li>
-                    <li class="page-item active"><a class="page-link text-white" href="#">1</a></li>
-                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    <li class="page-item"><a class="page-link" href="#">4</a></li>
-                    <li class="page-item"><a class="page-link" href="#">5</a></li>
-                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
-                  </ul>
-                </div>
-              </div>
+              <!-- Page -->
+              <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                  <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                  <li class="page-item"><a class="page-link page-active" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                </ul>
+              </nav>
+              <!-- PAge -->
+              <!-- </div> -->
          
         </div>
 
@@ -165,15 +165,69 @@
 });
   </script>
   <style>
+    .modal-content{
+      border-radius: 24px;
+      border: 0px;
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+    .page-item .page-link:hover{
+    background: #20776E !important;
+    color: #fff !important;
+    border-radius: 5px;
+    margin-left: 2px;
+    margin-right: 2px;
+    box-shadow: 0px 3px 6px #5462e247;
+    }
+    .page-active{
+    background: #20776E !important;
+    color: #fff !important;
+    border-radius: 5px;
+    margin-left: 2px;
+    margin-right: 2px;
+    box-shadow: 0px 3px 6px #5462e247;
+}
+    .pagination .page-item {
+    padding: 0;
+    cursor: pointer;
+    }
+    .page-item:not(:first-child) .page-link {
+    margin-left: -1px;
+    border: 0;
+    color: #20776E;
+    }
+    .page-item:last-child .page-link {
+    font: normal normal normal 12px/18px Poppins;
+    font-size: 12px;
+    border: 0px;
+    color: #20776E;
+    }
+    .page-item:first-child .page-link {
+    color: #666666a1;
+    border: 0px;
+    font: normal normal normal 12px/18px Poppins;
+    }
+    .modal-footer .selectTag {
+      font-size: 14px;
+      color:#333333;
+    }
     .fold-content{
       margin-left: 5%;
     padding-left: 40px;
+    }
+    .fold-content p{
+      color: #848484;
+      font-size: 16px;
+      margin: 0px;
     }
     .modal-title{
       font-size: 24px;
       color: #2C3652;
     }.modal-header, .modal-footer{
       border: 0px;
+    }
+    .modal-footer{
+      padding-bottom: 28px;
     }
     .modal-header{
       padding-top: 28px;
