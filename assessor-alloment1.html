@@ -84,7 +84,7 @@
                                                 Question Text
                                             </div>
                                             <div>
-                                                
+
                                             </div>
                                         </div>
                                     </th>
@@ -306,7 +306,27 @@
     height: 992;
     margin: 1.75rem auto;
 }
-  
+.vscomp-wrapper {
+    color: #333;
+    display: inline-flex;
+    flex-wrap: wrap;
+    font-family: sans-serif;
+    font-size: 14px;
+    position: relative;
+    text-align: left;
+    width: 400px;
+}
+.modal-body, .modal-footer{
+    padding-right: 42px;
+    padding-left: 42px;
+}
+.modal-body .modal-footer{
+    padding-left: 42px;
+    padding-right: 42px;
+}
+  .modal-title{
+    font-size: 22px;
+  }
     .modal-header{
       padding-top: 28px;
       padding-left: 42px;
@@ -315,7 +335,7 @@
     .modal-body {
     position: relative;
     flex: 1 1 auto;
-    padding: 1rem;
+ 
 }
 .fold-content p{
       color: #848484;
@@ -442,6 +462,9 @@
 .form-check-input[type=checkbox] {
   --checkbox-checked-bg: #20776e;
 }
+.modal-header{
+    padding-bottom: 0px;
+}
 /* Checkbox */
 @media only screen and (max-width: 600px)  {
   .fold-table th {
@@ -456,6 +479,7 @@
   .modal-header{
       padding-left: 20px;
       padding-right: 20px;
+      
     }
     .accdn-holder{
       font-size: 14px;
@@ -480,6 +504,9 @@
     }
     .form-check-input[type=checkbox] {
     --checkbox-width: 20px;
+}
+.modal-title{
+    font-size: 18px;
 }
 }
 
