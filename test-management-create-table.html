@@ -17,7 +17,9 @@
   <!-- <link rel="stylesheet" href="assets/sass/app.css" rel="stylesheet" /> -->
   <link rel="stylesheet" href="assets/css/virtual-select.min.css">
   <link rel="stylesheet" href="assets/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/chethan.css">
   <link rel="stylesheet" href="assets/css/phase-3.css" rel="stylesheet">
+  
 
 </head>
 
@@ -136,8 +138,8 @@
           <div class="d-flex justify-content-between align-items-center ">
             <h3 class="mb-0 d-none d-md-block">Test Management</h3>
 
-            <button type="button" class="btn d-none d-md-block btnDark create-testBtn">Create Test <img class=""
-                src="./assets/images/Question_Bank/create-test.svg" alt=""></button>
+            <a href="createtest.html"> <button type="button" class="btn d-none d-md-block btnDark create-testBtn">Create Test <img class=""
+                src="./assets/images/Question_Bank/create-test.svg" alt=""></button></a>
           </div>
 
           <div class="createTble pb-0">
@@ -349,7 +351,7 @@
                               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                              <div class="selectDropdown p-5 bg-lig p-4 p-md-5 mt-4 mt-md-0">
+                              <div class="selectDropdown p-5 bg-lig p-4 p-md-5 mt-4 mt-md-0 pt-0">
 
                                 <div class="row gx-5 gy-4">
                                   <div class="col-sm-4 col-md-4">
@@ -667,13 +669,13 @@
                       <div class="modal fade" id="editTagsModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered">
                           <div class="modal-content">
-                            <div class="modal-header border-0">
+                            <div class="modal-header align-items-center border-0">
                               <h5 class="modal-title" id="exampleModalLabel">Edit Tags</h5>
                               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
                               <div>
-                                <div class="selectDropdown p-5 bg-lig p-4 p-md-5 mt-4 mt-md-0">
+                                <div class="selectDropdown p-5 bg-lig p-4 p-md-5 mt-0 mt-md-0 pt-0 pb-0">
 
                                   <div class="row rowAssignTest gx-5 gy-4">
                          
@@ -703,7 +705,7 @@
                                 <button type="button" class="btn ps-4 pe-4 labellingSkip">Cancel</button>
                               </div>
                               <div class="text-end mt-4">
-                                <button type="button" class="btn ps-4 pe-4 text-white btnDark collapseBtn">Done</button>
+                                <button type="button" class="btn ps-4 pe-4 text-white btnDark collapseBtn" data-bs-toggle="modal" data-bs-target="#editTagsManageModal" data-bs-dismiss="modal">Done</button>
                               </div>
                             </div>
                           </div>
@@ -716,7 +718,7 @@
 
                       <!-- Modal -->
                       <div class="modal fade" id="editTagsManageModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-dialog">
                           <div class="modal-content">
                             <div class="modal-header border-0">
                               <h5 class="modal-title" id="exampleModalLabel">Edit Test Management</h5>
@@ -724,17 +726,1729 @@
                             </div>
                             <div class="modal-body">
                               <div>
-                               
+                                 <!--PEN CONTENT     -->
+            <div class="main-div-container" >
+              <div class="content" >
+                <!--content inner-->
+                <div class="content__inner" >
+                  <!-- <div class="container"><h2 class="content__title content__title--m-sm">Pick animation type</h2><form class="pick-animation my-4"><div class="form-row"><div class="col-5 m-auto"><select class="pick-animation__select form-control"><option value="scaleIn" selected="selected">ScaleIn</option><option value="scaleOut">ScaleOut</option><option value="slideHorz">SlideHorz</option><option value="slideVert">SlideVert</option><option value="fadeIn">FadeIn</option></select></div></div></form></div> -->
+                  <div class="container-fluid ">
+                    <div class="button-row d-flex me-5" style="justify-content: flex-end;">
+                      <button class="btn ml-auto js-btn-next next-btn" type="button" title="Next">Random All</button>
+                    </div>
+                    <!--multisteps-form-->
+                    <div class="multisteps-form">
+                      <div class="tags-div">
+                        <div class="tags-list" data-toggle="modal" data-target="#exampleModalCenter">
+                          <span>Domain Name</span>
+                          <h4>Wheebox</h4>
+                        </div>
+                        <div class="tags-list" data-toggle="modal" data-target="#exampleModalCenter">
+                          <span>Domain Name</span>
+                          <h4>Wheebox</h4>
+                        </div>
+                      </div>
+          
+                      
+                      <!-- Modal -->
+                      <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered tags-modal" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLongTitle">Edit Tags</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body  d-flex" style="justify-content: center;align-items: center;">
+                              <div class="passper col-lg-6">
+                                <!-- dropdown -->
+                                <label for="fname" style="padding-bottom: 10px;">Select Domain Name</label>
+                                
+                                <select id="SearchDropdown" name="native-select" placeholder="Select Subject Here" data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
+                                  <option value="5">Select Domain Name</option>
+                                  <option value="1">Hindi</option>
+                                  <option value="2">Maths</option>
+                                  <option value="3">Physics</option>
+                                  <option value="4">Chemistry</option>
+                                </select>
+                                <!-- dropdown -->
+                                <label for="fname" style="padding-bottom: 10px;padding-top: 30px;">Enter Test Name</label>
+                                <input type="text" id="fname" name="fname" placeholder="Enter Test Name Here">
                               </div>
                             </div>
-                            <div class="modal-footer border-0 justify-content-center mb-4 pe-0">
+                            <div class="modal-footer" style="justify-content: center;">
+                              <div class="button-row col-lg-6 d-flex" style="justify-content: space-between;">
+                                <button class="btn prev-btn js-btn-prev" type="button" title="Prev">Cancel</button>
+                                <button class="btn next-btn ml-auto js-btn-next" type="button" title="Next">Done</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Modal -->
+                      <style>
+                        #fname:focus {
+                            border: 2px solid #20776E !important;
+                          }
+
+                        @media (max-width: 576px){
+                          .forth-div .margin-remove{
+                            margin-bottom:0px;
+                          }
+                          
+                          .inside-container-dashboard{
+                            padding-top: 0px !important;
+                          }
+                          .inside-container-dashboard h3 {
+    
+                              margin-bottom: 20px;
+                              margin-top: 20px !important;
+
+
+                          }
+                                                    .multisteps-form__progress-btn:after {
+                              left: calc(-25% - 13px / 2) !important;
+                              width: 60% !important;
+                              top: -4px !important;
+                          }
+                                                    .fa-calendar {
+                              color: #b2b6b5;
+                              position: absolute;
+                              top: 53px !important;
+                              right: 3%;
+                          }
+                          .tags-list{
+                            width: 141px;
+                            height: 62px; 
+                          }
+                        
+
+                          .multisteps-form__progress {
+                            
+                            width: 250%;
+                        }
+                        .menu-scroll{
+                          overflow-y: scroll;
+                        }
+                        }
+                        .tags-div{
+                          padding-top: 17px;
+                          padding-left: 40px;
+                          display: flex;
+                          align-items: center;
+                          align-content: center;
+                          flex-wrap: nowrap;
+                          flex-direction: row;
+                          justify-content: flex-start;
+                        }
+                        .tags-list {
+                              background: #E0FAFF;
+                              border-radius: 278px;
+                              display: flex;
+                              width: 153px;
+                              height: 71px;
+                              vertical-align: middle;
+                              text-align: center;
+                              margin-right: 20px;
+                              flex-direction: row;
+                              flex-wrap: wrap;
+                              justify-content: space-around;
+                              align-items: center;
+                              align-content: center
+                          }
+                          .tags-list span{
+                            text-align: center;
+                            font-size: 16px;
+                            letter-spacing: 0px;
+                            color: #999999;
+                            text-transform: capitalize;
+                            opacity: 1;
+                          }
+                          .tags-list h4{
+                            text-align: center;
+                            font-size: 16px;
+                            letter-spacing: 0px;
+                            color: #2C3652;
+                            opacity: 1;
+                            margin: 0;
+                          }
+                                                      .close span{
+                              position: relative !important;
+                              top:0 !important;
+                              right: 0px;
+                              font-size: 30px;
+                            }
+                            .close{
+                              border: 0px !important;
+                                background: transparent;
+
+                            }
+                      </style>
+                      <!--progress bar-->
+                      <div class="row menu-scroll" style="--bs-gutter-x: 0rem;align-items: center;justify-content: center;padding-left: 42px;padding-right: 42px;padding-top: 40px;padding-bottom: 20px;background-color: #fff;">
+                        <div class="col-12 col-lg-12 ml-auto mr-auto mb-4">
+                          <div class="multisteps-form__progress">
+                            <button class="multisteps-form__progress-btn js-active" type="button" title="User Info">Create Test</button>
+                            <button class="multisteps-form__progress-btn" type="button" title="Address">Instructions</button>
+                            <button class="multisteps-form__progress-btn" type="button" title="Order Info">Pre Test Rules</button>
+                            <button class="multisteps-form__progress-btn" type="button" title="Comments">Add ons Options</button>
+                            <button class="multisteps-form__progress-btn" type="button" title="Comments">Security Rules</button>
+                            <button class="multisteps-form__progress-btn" type="button" title="Comments">Proctoring Rules</button>
+                            <button class="multisteps-form__progress-btn" type="button" title="Comments">Post Test Rules</button>
+                          </div>
+                        </div>
+                      </div>
+                      <!--form panels-->
+                      <div class="row" style="--bs-gutter-x: 0rem !important;">
+                        <div class="col-12 col-lg-12 m-auto">
+                          <form class="multisteps-form__form">
+                            <!--single form panel-->
+                            <div class="multisteps-form__panel  js-active" data-animation="scaleIn">
+                              <div class="multisteps-form__content">
+                                <div class="form-row  d-flex create-test" style="height:auto !important;align-items: center;">
+                                  <div class="col-12 text-center">
+                                   
+                                    <!-- table -->
+                                    <div class="table-responsive table-div">
+                                      <table class="table mytable">
+                                        <thead class="">
+                                          <tr>
+                                            <th scope="col">Section</th>
+                                            <th scope="col">Pool Size</th>
+                                            <th scope="col">Display Question</th>
+                                            <th scope="col">Max Allowed</th>
+                                            <th scope="col">Section Wise Randomization</th>
+                                            <td></td>
+                                          </tr>
+                                        </thead>
+                                        <tbody class="table-body">
+                                          <tr>
+                                            <td>English</td>
+                                            <td>
+                                              30
+                                            
+                                            </td>
+                                            <td>30</td>
+                                            <td>
+                                              30
+                                            </td>
+                                            <td>
+                                              <div class="">
+                                                <div class="toggle-group">
+                                                  <input type="checkbox" name="on-off-switch" id="on-off-switchRandom1" checked="" tabindex="1">
+                                                  <label for="on-off-switchRandom1">
+                                                    <span class="aural"></span>
+                                                  </label>
+                                                  <div class="onoffswitch pull-right" aria-hidden="true">
+                                                    <div class="onoffswitch-label">
+                                                      <div class="onoffswitch-inner"></div>
+                                                      <div class="onoffswitch-switch"></div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </td>
+                                           
+                                          </tr>
+                                          <tr>
+                                            <td>Maths</td>
+                                            <td>
+                                              30
+                                            
+                                            </td>
+                                            <td>30</td>
+                                            <td>
+                                              30
+                                            </td>
+                                            <td>
+                                              <div class="">
+                                                <div class="toggle-group">
+                                                  <input type="checkbox" name="on-off-switch" id="on-off-switchRandom2" checked="" tabindex="1">
+                                                  <label for="on-off-switchRandom2">
+                                                    <span class="aural"></span>
+                                                  </label>
+                                                  <div class="onoffswitch pull-right" aria-hidden="true">
+                                                    <div class="onoffswitch-label">
+                                                      <div class="onoffswitch-inner"></div>
+                                                      <div class="onoffswitch-switch"></div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </td>
+                                           
+                                          </tr>
+
+                                          <tr>
+                                            <td>Hindi</td>
+                                            <td>
+                                              30
+                                            
+                                            </td>
+                                            <td>30</td>
+                                            <td>
+                                              30
+                                            </td>
+                                            <td>
+                                              <div class="">
+                                                <div class="toggle-group">
+                                                  <input type="checkbox" name="on-off-switch" id="on-off-switchRandom3" checked="" tabindex="1">
+                                                  <label for="on-off-switchRandom3">
+                                                    <span class="aural"></span>
+                                                  </label>
+                                                  <div class="onoffswitch pull-right" aria-hidden="true">
+                                                    <div class="onoffswitch-label">
+                                                      <div class="onoffswitch-inner"></div>
+                                                      <div class="onoffswitch-switch"></div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </td>
+                                           
+                                          </tr>
+                                         
+                                        </tbody>
+                                      </table>
+                                    </div>
+                                    <!-- table -->
+                                   
+                                  </div>
+                                </div>
+                                <div class="button-row d-flex" style="justify-content: flex-end;">
+                                  <button class="btn ml-auto js-btn-next next-btn" type="button" title="Next">Next</button>
+                                </div>
+                              </div>
+                            </div>
+                            <!--single form panel-->
+                            <div class="multisteps-form__panel  " data-animation="scaleIn">
+                              <div class="multisteps-form__content">
+                                <div class="form-row " style="height:auto !important;">
+                                  <div class="container">
+                                    <div class="radio" style="margin-right: 30px;">
+                                      <input id="radio-91" name="radio077" type="radio" checked >
+                                      <label for="radio-91" class="radio-label">English</label>
+                                    </div>
+                                    <div class="radio">
+                                      <input id="radio-009" name="radio077" type="radio">
+                                      <label for="radio-009" class="radio-label">Hindi</label>
+                                    </div>
+                                  </div>
+                                  <style>
+                                    
+.radio input[type=radio] + .radio-label:before {
+    margin-right: 10px;
+  
+}
+                                  </style>
+                                  <div class="container-fluid" style="margin-top: 33px;">
+                                    <label for="w3review">Instructions</label>
+                                    <textarea id="w3review" name="w3review" rows="4" cols="50" placeholder="Add Instructions Here" value="dd"></textarea>
+                                  </div>
+                                </div>
+                                <div class="button-row d-flex mt-4" style="justify-content: space-between;">
+                                  <button class="btn prev-btn js-btn-prev" type="button" title="Prev">Previous</button>
+                                  <button class="btn next-btn ml-auto js-btn-next" type="button" title="Next">Next</button>
+                                </div>
+                              </div>
+                            </div>
+                            <!--3 rd-->
+                            <div class="multisteps-form__panel   third_row" data-animation="scaleIn">
+                              <div class="multisteps-form__content">
+                                <div class="form-row " style="height:auto !important;align-items: center;justify-content: center;">
+                                  <h3>Select Marks</h3>
+                                  <div class="row">
+                                    <div class="col-sm-6 col-lg-4">
+                                      <label for="fname">Assign Marks</label>
+                                      <input type="text" id="fname" name="fname" placeholder="Assign Marks">
+                                    </div>
+                                    <div class="col-sm-6 col-lg-4">
+                                      <label for="fname">Assign Negative Marks</label>
+                                      <input type="text" id="fname" name="fname" placeholder="Assign Negative Marks">
+                                    </div>
+                                    <div class="col-sm-6 col-lg-4">
+                                      <label for="fname">Passing Percentage</label>
+                                      <input type="text" id="fname" name="fname" placeholder="Passing Percentage">
+                                    </div>
+                                  </div>
+                                  <!--  -->
+                                  <div class="toggle-div">
+                                    <h4>Show Max Mark</h4>
+                                    <button type="button" class="btn btn-secondary btn-toggle" data-toggle="button" aria-pressed="false" autocomplete="off">
+                                      <div class="handle"></div>
+                                    </button>
+                                  </div>
+                                  <h3>Select Time</h3>
+                                  <div class="row">
+                                    <div class="col-sm-6 col-lg-4">
+                                      <label for="fname">Allocate Total Time (Min)</label>
+                                      <input type="text" id="fname" name="fname" placeholder="Allocate Total Time (Min)">
+                                    </div>
+                                    <div class="col-sm-6 col-lg-4">
+                                      <div class="calendar-container">
+                                        <label for="fname">Start Date & End Date</label>
+                                        <input type="text" name="datefilter" class="calendar" value="" placeholder="Start Date & End Date" />
+                                        <i class="fa-regular fa-calendar"></i>
+                                      </div>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-4 passper">
+                                      <label for="fname">Time View Format</label>
+                                      <!-- dropdown -->
+                                      <select id="SearchDropdown" name="native-select" placeholder="Select Subject Here" data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
+                                        <option value="5">English</option>
+                                        <option value="1">Hindi</option>
+                                        <option value="2">Maths</option>
+                                        <option value="3">Physics</option>
+                                        <option value="4">Chemistry</option>
+                                      </select>
+                                      <!-- dropdown -->
+                                    </div>
+                                  </div>
+                                  <!--  -->
+                                  <div class="row" style="margin-top: 30px;">
+                                    <div class="col-sm-6 col-lg-4">
+                                      <label for="fname">Grace Period</label>
+                                      <input type="text" id="fname" name="fname" placeholder="Add Grace Period">
+                                    </div>
+                                    <div class="col-sm-6 col-lg-4">
+                                      <div class="calendar-container">
+                                        <label for="fname">Question Wise Time</label>
+                                        <br>
+                                        <button type="button" class="btn btn-secondary btn-toggle" data-toggle="button" aria-pressed="false" autocomplete="off">
+                                          <div class="handle"></div>
+                                        </button>
+                                      </div>
+                                    </div>
+                                    <div class="col col-lg-4 passper"></div>
+                                  </div>
+                                  <!--  -->
+                                </div>
+                                <div class="button-row d-flex mt-4" style="justify-content: space-between;">
+                                  <button class="btn prev-btn js-btn-prev" type="button" title="Prev">Previous</button>
+                                  <button class="btn next-btn ml-auto js-btn-next" type="button" title="Next">Next</button>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- 4th -->
+                            <div class="multisteps-form__panel  third_row" data-animation="scaleIn">
+                              <div class="multisteps-form__content">
+                                <div class="form-row forth-div" style="height:auto !important;align-items: center;justify-content: center;">
+                                  <h3 class="margin-remove">Other Options</h3>
+                                  <div class="row">
+                                    <div class="col-sm-6 col-lg-4 passper">
+                                      <label for="fname">Additional Data</label>
+                                      <!-- dropdown -->
+                                      <select id="SearchDropdown" name="native-select" placeholder="Additional Data" data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
+                                        <option value="5">English</option>
+                                        <option value="1">Hindi</option>
+                                        <option value="2">Maths</option>
+                                        <option value="3">Physics</option>
+                                        <option value="4">Chemistry</option>
+                                      </select>
+                                      <!-- dropdown -->
+                                    </div>
+                                    <div class="col-sm-6 col-lg-4 passper">
+                                   
+                                        <label for="fname">No. Of Attempts Per User</label>
+                                        <!-- dropdown -->
+                                      <select id="SearchDropdown" name="native-select" placeholder="No. Of Attempts Per User" data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
+                                        <option value="5">English</option>
+                                        <option value="1">Hindi</option>
+                                        <option value="2">Maths</option>
+                                        <option value="3">Physics</option>
+                                        <option value="4">Chemistry</option>
+                                      </select>
+                                      <!-- dropdown -->
+                                     
+                                    </div>
+                                    <div class="col-sm-6 col-lg-4 passper">
+                                      <label for="fname">Browse & Upload File Types Allowed</label>
+                                      <!-- dropdown -->
+                                      <select id="SearchDropdown" name="native-select" placeholder="Browse And Upload File Types Allowed" data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
+                                        <option value="5">English</option>
+                                        <option value="1">Hindi</option>
+                                        <option value="2">Maths</option>
+                                        <option value="3">Physics</option>
+                                        <option value="4">Chemistry</option>
+                                      </select>
+                                      <!-- dropdown -->
+                                    </div>
+                                  </div>
+                                  <!-- row end -->
+                                  <!-- Row 1 -->
+                                  <div class="row" style="margin-top: 40px;">
+                                    <div class="col-sm-6 col-lg-4">
+                                      <label for="fname">Please Select Available Option</label>
+                                    </div>
+                                    <div class=" col-lg-2 col-sm-12">
+                                      <div class="radio">
+                                        <input id="radio-4" name="radio-3" type="radio" checked>
+                                        <label for="radio-4" class="radio-label">QR</label>
+                                      </div>
+                                    </div>
+                                    <div class=" col-lg-3 col-sm-12">
+                                      <div class="radio">
+                                        <input id="radio-5" name="radio-3" type="radio">
+                                        <label for="radio-5" class="radio-label">Webcam</label>
+                                      </div>
+                                    </div>
+                                    <div class=" col-lg-3 col-sm-12">
+                                      <div class="radio">
+                                        <input id="radio-6" name="radio-3" type="radio">
+                                        <label for="radio-6" class="radio-label">QR Webcam</label>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <!-- Row 1 ends -->
+                                   <!-- Row 2 -->
+                                   <div class="row" style="margin-top: 35px;">
+                                    <div class="col-lg-4 col-sm-6">
+                                      <label for="fname">Resume Test Activation</label>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-2">
+                                      <div class="radio">
+                                        <input id="radio-66" name="radio-4" type="radio" checked>
+                                        <label for="radio-66" class="radio-label">Deactivate</label>
+                                      </div>
+                                    </div>
+                                    <div class=" col-lg-3 col-sm-6">
+                                      <div class="radio">
+                                        <input id="radio-7" name="radio-4" type="radio">
+                                        <label for="radio-7" class="radio-label">Active Client Side</label>
+                                      </div>
+                                    </div>
+                                    <div class=" col-lg-2 col-sm-6">
+                                      <div class="radio">
+                                        <input id="radio-8" name="radio-4" type="radio">
+                                        <label for="radio-8" class="radio-label">Active Server Side</label>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <!-- Row 2 ends -->
+                                  <!-- Row 3 -->
+                                  <div class="row" style="margin-top: 35px;">
+                                    <div class=" col-lg-4 col-sm-6">
+                                      <label for="fname">Show Section/Topic Name</label>
+                                    </div>
+                                    <div class=" col-lg-2 col-sm-6">
+                                      <div class="radio">
+                                        <input id="radio-9" name="radio-5" type="radio" checked>
+                                        <label for="radio-9" class="radio-label"> Section Name</label>
+                                      </div>
+                                    </div>
+                                    <div class=" col-lg-3 col-sm-6">
+                                      <div class="radio">
+                                        <input id="radio-10" name="radio-5" type="radio">
+                                        <label for="radio-10" class="radio-label">Show Topic Name</label>
+                                      </div>
+                                    </div>
+                                    <div class=" col-lg-2 col-sm-6">
+                                      <div class="radio">
+                                        <input id="radio-11" name="radio-5" type="radio">
+                                        <label for="radio-11" class="radio-label">Show Section and Topic Name</label>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <!-- Row 3 ends -->
+                                  <!-- Row 4 -->
+                                  <div class="row" style="margin-top: 35px;">
+                                    <div class=" col-sm-6 col-lg-4 ">
+                                      <label for="fname">Flag Button Option</label>
+                                    </div>
+                                    <div class=" col-lg-2 col-sm-6">
+                                      <div class="radio">
+                                        <input id="radio-111" name="radio-6" type="radio" checked>
+                                        <label for="radio-111" class="radio-label">Yes</label>
+                                      </div>
+                                    </div>
+                                    <div class=" col-lg-3 col-sm-6">
+                                      <div class="radio">
+                                        <input id="radio-12" name="radio-6" type="radio">
+                                        <label for="radio-12" class="radio-label">No</label>
+                                      </div>
+                                    </div>
+                                    
+                                  </div>
+                                  <!-- Row 4 ends -->
+                                  <!-- Row 5 -->
+                                  <div class="row" style="margin-top: 35px;">
+                                    <div class=" col-lg-4 col-sm-6">
+                                      <label for="fname">Auto Next</label>
+                                    </div>
+                                    <div class=" col-lg-2 col-sm-6">
+                                      <div class="radio">
+                                        <input id="radio-13" name="radio-7" type="radio" checked>
+                                        <label for="radio-13" class="radio-label">Yes</label>
+                                      </div>
+                                    </div>
+                                    <div class=" col-lg-3 col-sm-6">
+                                      <div class="radio">
+                                        <input id="radio-14" name="radio-7" type="radio">
+                                        <label for="radio-14" class="radio-label">No</label>
+                                      </div>
+                                    </div>
+                                  
+                                  </div>
+                                  <!-- Row 5 ends -->
+                                  <!-- Row 6 -->
+                                  <div class="row" style="margin-top: 35px;">
+                                    <div class=" col-lg-4 col-sm-6">
+                                      <label for="fname">Section Skip Option</label>
+                                    </div>
+                                    <div class=" col-lg-2 col-sm-6">
+                                      <div class="radio">
+                                        <input id="radio-15" name="radio-8" type="radio" checked>
+                                        <label for="radio-15" class="radio-label">Yes</label>
+                                      </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6">
+                                      <div class="radio">
+                                        <input id="radio-16" name="radio-8" type="radio">
+                                        <label for="radio-16" class="radio-label">No</label>
+                                      </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6">
+                                     
+                                    </div>
+                                  </div>
+                                  <!-- Row 6 ends -->
+                                  <!-- Row 7 -->
+                                  <div class="row" style="margin-top: 35px;">
+                                    <div class="col-lg-4 col-sm-6">
+                                      <label for="fname">Previous Button Option</label>
+                                    </div>
+                                    <div class="col-lg-2 col-sm-6">
+                                      <div class="radio">
+                                        <input id="radio-17" name="radio-9" type="radio" checked>
+                                        <label for="radio-17" class="radio-label">Yes</label>
+                                      </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6">
+                                      <div class="radio">
+                                        <input id="radio-18" name="radio-9" type="radio">
+                                        <label for="radio-18" class="radio-label">No</label>
+                                      </div>
+                                    </div>
+                                    
+                                  </div>
+                                  <!-- Row 7 ends -->
+                                  <!-- Row 8 -->
+                                  <div class="row" style="margin-top: 35px;">
+                                    <div class="col col-lg-4 col-sm-6">
+                                      <label for="fname">Show Practice Test</label>
+                                    </div>
+                                    <div class="col-lg-2 col-sm-6">
+                                      <div class="radio">
+                                        <input id="radio-19" name="radio-10" type="radio" checked>
+                                        <label for="radio-19" class="radio-label">Yes</label>
+                                      </div>
+                                    </div>
+                                    <div class=" col-lg-3 col-sm-6">
+                                      <div class="radio">
+                                        <input id="radio-20" name="radio-10" type="radio">
+                                        <label for="radio-20" class="radio-label">No</label>
+                                      </div>
+                                    </div>
+                                    
+                                  </div>
+                                  <!-- Row 8 ends -->
+                                  <!-- Row 9 -->
+                                  <div class="row" style="margin-top: 35px;">
+                                    <div class="col col-lg-4 col-sm-6">
+                                      <label for="fname">Randomize Options</label>
+                                    </div>
+                                    <div class=" col-lg-2 col-sm-6">
+                                      <div class="radio">
+                                        <input id="radio-21" name="radio-11" type="radio" checked>
+                                        <label for="radio-21" class="radio-label">Yes</label>
+                                      </div>
+                                    </div>
+                                    <div class=" col-lg-3 col-sm-6">
+                                      <div class="radio">
+                                        <input id="radio-22" name="radio-11" type="radio">
+                                        <label for="radio-22" class="radio-label">No</label>
+                                      </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6">
+                                     
+                                    </div>
+                                  </div>
+                                  <!-- Row 9 ends -->
+                                  <!-- Row 10 -->
+                                  <div class="row" style="margin-top: 35px;">
+                                    <div class="col col-lg-4 col-sm-6">
+                                      <label for="fname">Show Practice Test</label>
+                                    </div>
+                                    <div class=" col-lg-2 col-sm-6">
+                                      <div class="radio">
+                                        <input id="radio-23" name="radio-12" type="radio" checked>
+                                        <label for="radio-23" class="radio-label">Yes</label>
+                                      </div>
+                                    </div>
+                                    <div class=" col-lg-3 col-sm-6">
+                                      <div class="radio">
+                                        <input id="radio-24" name="radio-12" type="radio">
+                                        <label for="radio-24" class="radio-label">No</label>
+                                      </div>
+                                    </div>
+                                   
+                                  </div>
+                                  <!-- Row 10 ends -->
+                                </div>
+                                <div class="button-row d-flex mt-4" style="justify-content: space-between;">
+                                  <button class="btn prev-btn js-btn-prev" type="button" title="Prev">Previous</button>
+                                  <button class="btn next-btn ml-auto js-btn-next" type="button" title="Next">Next</button>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- 5th -->
+                            <div class="multisteps-form__panel  third_row" data-animation="scaleIn">
+                              <div class="multisteps-form__content">
+                                <div class="form-row " style="height:auto !important;align-items: center;justify-content: center;">
+                                  
+                                  <!-- row end -->
+                                  <!-- Row 1 -->
+                                  <div class="row" style="margin-top: 0px;">
+                                    <div class=" col-lg-4 col-sm-6">
+                                      <label for="fname">Access Denied Options</label>
+                                    </div>
+                                    <div class=" col-lg-2 col-sm-6">
+                                      <div class="radio">
+                                        <input id="radio-41" name="radio-32" type="radio" checked>
+                                        <label for="radio-41" class="radio-label">No</label>
+                                      </div>
+                                    </div>
+                                    <div class=" col-lg-2 col-sm-6">
+                                      <div class="radio">
+                                        <input id="radio-51" name="radio-32" type="radio">
+                                        <label for="radio-51" class="radio-label">No</label>
+                                      </div>
+                                    </div>
+                                   
+                                  </div>
+                                  <!-- Row 1 ends -->
+                                   <!-- Row 2 -->
+                                   <div class="row" style="margin-top: 35px;">
+                                    <div class=" col-lg-4 col-sm-6">
+                                      <label for="fname">SEB</label>
+                                    </div>
+                                    <div class=" col-lg-2 col-sm-6">
+                                      <div class="radio">
+                                        <input id="radio-61" name="radio-41" type="radio" checked>
+                                        <label for="radio-61" class="radio-label">Yes</label>
+                                      </div>
+                                    </div>
+                                    <div class=" col-lg-3 col-sm-6">
+                                      <div class="radio">
+                                        <input id="radio-71" name="radio-41" type="radio">
+                                        <label for="radio-71" class="radio-label">No</label>
+                                      </div>
+                                    </div>
+                                    <div class=" col-lg-3 col-sm-6">
+                                     
+                                    </div>
+                                  </div>
+                                  <!-- Row 2 ends -->
+                                  <!-- Row 3 -->
+                                  <div class="row" style="margin-top: 35px;">
+                                    <div class=" col-lg-4 col-sm-6">
+                                      <label for="fname">Geo Tagging</label>
+                                    </div>
+                                    <div class=" col-lg-2 col-sm-6">
+                                      <div class="radio">
+                                        <input id="radio-99" name="radio-56" type="radio" checked>
+                                        <label for="radio-99" class="radio-label">Yes</label>
+                                      </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6">
+                                      <div class="radio">
+                                        <input id="radio-110" name="radio-56" type="radio">
+                                        <label for="radio-110" class="radio-label">No</label>
+                                      </div>
+                                    </div>
+                                    <div class=" col-lg-3 col-sm-6">
+                                    
+                                    </div>
+                                  </div>
+                                  <!-- Row 3 ends -->
+                                  <!-- Row 4 -->
+                                  <div class="row" style="margin-top: 35px;">
+                                    <div class="col-lg-4 col-sm-6">
+                                      <label for="fname">Keystroke Verification</label>
+                                    </div>
+                                    <div class="col-lg-2 col-sm-6">
+                                      <div class="radio">
+                                        <input id="radio-121" name="radio-62" type="radio" checked>
+                                        <label for="radio-121" class="radio-label">Yes</label>
+                                      </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6">
+                                      <div class="radio">
+                                        <input id="radio-132" name="radio-62" type="radio">
+                                        <label for="radio-132" class="radio-label">No</label>
+                                      </div>
+                                    </div>
+                                   
+                                  </div>
+                                  <!-- Row 4 ends -->
+                                    <!-- Row 5 -->
+                                    <div class="row" style="margin-top: 35px;">
+                                      <div class="col-lg-4 col-sm-6">
+                                        <label for="fname">IP Range Checking</label><br>
+                                        <button type="button" class="btn btn-secondary btn-toggle" data-toggle="button" aria-pressed="false" autocomplete="off">
+                                          <div class="handle"></div>
+                                          </button>
+                                      </div>
+                                      <div class="col-lg-3 col-sm-6">
+                                        <label for="fname">Enter IP Start Range</label>
+                                        <input type="text" id="fname" name="fname" placeholder="Enter IP Start Range">
+                                      </div>
+                                      <div class="col-lg-3 col-sm-6">
+                                        <label for="fname">Enter IP End Range</label>
+                                        <input type="text" id="fname" name="fname" placeholder="Enter IP End Range">
+                                      </div>
+                                      
+                                    </div>
+                                    <!-- Row 5 ends -->
+                                    <!-- Row 6 -->
+                                    <div class="row" style="margin-top: 35px;">
+                                      <div class="col-lg-4 col-sm-6">
+                                        <label for="fname">Allow Navigation During Test</label><br>
+                                        <button type="button" class="btn btn-secondary btn-toggle" data-toggle="button" aria-pressed="false" autocomplete="off">
+                                          <div class="handle"></div>
+                                          </button>
+                                      </div>
+                                      <div class="col-lg-3 col-sm-6">
+                                        <label for="fname">Select Time Span</label>
+                                        <input type="text" id="fname" name="fname" placeholder="Navigation Frequency">
+                                      </div>
+                                      
+                                      
+                                    </div>
+                                    <!-- Row 6 ends -->
+                                  
+                                </div>
+                                <div class="button-row d-flex mt-4" style="justify-content: space-between;">
+                                  <button class="btn prev-btn js-btn-prev" type="button" title="Prev">Previous</button>
+                                  <button class="btn next-btn ml-auto js-btn-next" type="button" title="Next">Next</button>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- 6th -->
+                            <div class="multisteps-form__panel third_row" data-animation="scaleIn">
+                              <div class="multisteps-form__content">
+                                <div class="form-row " style="height:auto !important;align-items: center;justify-content: center;">
+                                  <div class="row">
+                                    <div class="col-lg-4 col-sm-6 passper">
+                                      <!-- dropdown -->
+                                      <label for="fname">Approver Screen</label>
+                                      <select id="SearchDropdown" name="native-select" placeholder="Approver Screen" data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
+                                        <option value="5">English</option>
+                                        <option value="1">Hindi</option>
+                                        <option value="2">Maths</option>
+                                        <option value="3">Physics</option>
+                                        <option value="4">Chemistry</option>
+                                      </select>
+                                      <!-- dropdown -->
+                                    </div>
+                                  </div>
+                                  <!-- row end -->
+                                  <!-- Row 1 -->
+                                  <div class="row" style="margin-top: 40px;">
+                                    <div class=" col-lg-4 col-sm-6">
+                                      <label for="fname">Screen Capturing</label><br>
+                                      <button type="button" class="btn btn-secondary btn-toggle" data-toggle="button" aria-pressed="false" autocomplete="off">
+                                        <div class="handle"></div>
+                                        </button>
+                                    </div>
+                                    <div class=" col-lg-2 col-sm-6">
+                                      <div class="radio">
+                                        <input id="radio-81" name="radio-42" type="radio" checked>
+                                        <label for="radio-81" class="radio-label">Chrome Extension</label>
+                                      </div>
+                                    </div>
+                                    <div class=" col-lg-2 col-sm-6">
+                                      <div class="radio">
+                                        <input id="radio-71" name="radio-42" type="radio">
+                                        <label for="radio-71" class="radio-label">Full Desktop</label>
+                                      </div>
+                                    </div>
+                                    <div class="col-lg-2 col-sm-6">
+                                      
+                                    </div>
+                                  </div>
+                                  <!-- Row 1 ends -->
+                                   <!-- Row 2 -->
+                                   <div class="row" style="margin-top: 35px;">
+                                    <div class=" col-lg-4 col-sm-6">
+                                      <label for="fname">Proctor Assignment Type</label>
+                                    </div>
+                                    <div class=" col-lg-2 col-sm-6">
+                                      <div class="radio">
+                                        <input id="radio-62" name="radio-45" type="radio" checked>
+                                        <label for="radio-62" class="radio-label">None</label>
+                                      </div>
+                                    </div>
+                                    <div class=" col-lg-2 col-sm-6">
+                                      <div class="radio">
+                                        <input id="radio-72" name="radio-45" type="radio">
+                                        <label for="radio-72" class="radio-label">Easy</label>
+                                      </div>
+                                    </div>
+                                    <div class=" col-lg-3 col-sm-6">
+                                      <div class="radio">
+                                        <input id="radio-71" name="radio-41" type="radio">
+                                        <label for="radio-71" class="radio-label">Hard</label>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <!-- Row 2 ends -->
+                                  <!-- Row 3 -->
+                                  <div class="row" style="margin-top: 35px;">
+                                    <div class=" col-lg-4 col-sm-6">
+                                      <label for="fname">Chat</label>
+                                    </div>
+                                    <div class=" col-lg-2 col-sm-6">
+                                      <div class="radio">
+                                        <input id="radio-100" name="radio-516" type="radio" checked>
+                                        <label for="radio-100" class="radio-label">Yes</label>
+                                      </div>
+                                    </div>
+                                    <div class=" col-lg-3 col-sm-6">
+                                      <div class="radio">
+                                        <input id="radio-1101" name="radio-516" type="radio">
+                                        <label for="radio-1101" class="radio-label">No</label>
+                                      </div>
+                                    </div>
+                                    <div class=" col-lg-3 col-sm-6">
+                                    
+                                    </div>
+                                  </div>
+                                  <!-- Row 3 ends -->
+                                  <!-- Row 4 -->
+                                  <div class="row" style="margin-top: 35px;">
+                                    <div class=" col-lg-4 col-sm-6">
+                                      <label for="fname">Video Recording</label>
+                                    </div>
+                                    <div class=" col-lg-2 col-sm-6">
+                                      <div class="radio">
+                                        <input id="radio-1121" name="radio-612" type="radio" checked>
+                                        <label for="radio-1121" class="radio-label">Yes</label>
+                                      </div>
+                                    </div>
+                                    <div class=" col-lg-3 col-sm-6">
+                                      <div class="radio">
+                                        <input id="radio-1132" name="radio-612" type="radio">
+                                        <label for="radio-1132" class="radio-label">No</label>
+                                      </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6">
+                                     
+                                    </div>
+                                  </div>
+                                  <!-- Row 4 ends -->
+                                    <!-- Row 5 -->
+                     
+                                    <div class="row" style="margin-top: 35px;">
+                                      <h3 style="color: #2C3652;" style="font-size: 18px !important">Auto-Proctoring Options</h3>
+                                      <div class="col-lg-4 col-sm-6">
+                                        <label for="fname">Face Detection</label><br>
+                                        <!-- <button type="button" class="btn btn-secondary btn-toggle" data-toggle="button" aria-pressed="false" autocomplete="off">
+                                          <div class="handle"></div> -->
+                                      </div>
+                                      <div class="col-lg-2 col-sm-6">
+                                        <div class="radio">
+                                          <input id="radio-1142" name="radio-6142" type="radio">
+                                          <label for="radio-1142" class="radio-label">Yes</label>
+                                        </div>
+                                      </div>
+                                      <div class="col-lg-2 col-sm-6">
+                                        <div class="radio" style="display: inline;">
+                                          <input id="radio-1143" name="radio-6142" type="radio">
+                                          <label for="radio-1143" class="radio-label">No</label>
+                                       
+                                        </div>
+                                        
+                                       
+                                      </div>
+                                      <div class="col-lg-4 col-sm-6 d-flex" style="    flex-direction: row;flex-wrap: nowrap;align-items: center;justify-content: flex-start;"> 
+                                        <hr class="one-hr">
+                                        <hr class="two-hr">
+                                        <hr class="three-hr">
+                                        <button type="button" class="btn" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom " >
+                                         <img src="assets/images/chethan/Screenshot 2023-01-05 200545.png" alt="" width="20px" height="20px">
+                                        </button>
+                                      </div>
+                                      
+                                    </div>
+                                    <!-- Row 5 ends -->
+                                     <!-- Row 5 -->
+                                    
+                                     <div class="row" style="margin-top: 35px;">
+                                       <div class=" col-lg-4 col-sm-6">
+                                         <label for="fname">Face Tracking</label><br>
+                                         <!-- <button type="button" class="btn btn-secondary btn-toggle" data-toggle="button" aria-pressed="false" autocomplete="off">
+                                           <div class="handle"></div> -->
+                                       </div>
+                                       <div class=" col-lg-2 col-sm-6">
+                                         <div class="radio">
+                                           <input id="radio-1142" name="radio-6142" type="radio">
+                                           <label for="radio-1142" class="radio-label">Yes</label>
+                                         </div>
+                                       </div>
+                                       <div class="col-lg-2 col-sm-6">
+                                         <div class="radio" style="display: inline;">
+                                           <input id="radio-1143" name="radio-6142" type="radio">
+                                           <label for="radio-1143" class="radio-label">No</label>
+                                        
+                                         </div>
+                                         
+                                        
+                                       </div>
+                                       <div class=" col-lg-4 col-sm-6 d-flex" style="    flex-direction: row;flex-wrap: nowrap;align-items: center;justify-content: flex-start;"> 
+                                         <hr class="one-hr">
+                                         <hr class="two-hr two-2">
+                                         <hr class="three-hr">
+                                         <button type="button" class="btn" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom " >
+                                          <img src="assets/images/chethan/Screenshot 2023-01-05 200545.png" alt="" width="20px" height="20px">
+                                         </button>
+                                       </div>
+                                       
+                                     </div>
+                                     <!-- Row 5 ends -->
+                                    <!-- Row 6 -->
+                                    <div class="row" style="margin-top: 35px;">
+                                      <div class=" col-lg-4 col-sm-6">
+                                        <label for="fname">Image Capturing</label><br>
+                                        <button type="button" class="btn btn-secondary btn-toggle" data-toggle="button" aria-pressed="false" autocomplete="off">
+                                          <div class="handle"></div>
+                                          </button>
+                                      </div>
+                                      <div class="col-lg-4 col-sm-6 passper">
+                                        <label for="fname">Select Time Span</label>
+                                         <!-- dropdown -->
+                                      <select id="SearchDropdown" name="native-select" placeholder="Select Time Span" data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
+                                        <option value="5">Select Time Span</option>
+                                        <option value="1">Hindi</option>
+                                        <option value="2">Maths</option>
+                                        <option value="3">Physics</option>
+                                        <option value="4">Chemistry</option>
+                                      </select>
+                                      <!-- dropdown -->
+                                      </div>
+                                      <div class=" col-lg-4 col-sm-6 d-flex" style="    flex-direction: row;flex-wrap: nowrap;align-items: center;justify-content: flex-start;"> 
+                                        <hr class="one-hr">
+                                        <hr class="two-hr two-2">
+                                        <hr class="three-hr">
+                                        <img src="" alt="">
+                                      </div>
+                                      
+                                      
+                                    </div>
+                                    <!-- Row 6 ends -->
+                                </div>
+                                <div class="button-row d-flex mt-4" style="justify-content: space-between;">
+                                  <button class="btn prev-btn js-btn-prev" type="button" title="Prev">Previous</button>
+                                  <button class="btn next-btn ml-auto js-btn-next" type="button" title="Next">Next</button>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- 7th -->
+                            <div class="multisteps-form__panel  third_row" data-animation="scaleIn">
+                              <div class="multisteps-form__content">
+                                <div class="form-row " style="height:auto !important;align-items: center;justify-content: center;">
+                                 
+                                  <div class="row">
+                                    <div class="col-sm-6 col-lg-4 passper">
+                                      <label for="fname">Test View Pattern</label>
+                                      <!-- dropdown -->
+                                      <select id="SearchDropdown" name="native-select" placeholder="Additional Data" data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
+                                        <option value="5">Test View Pattern</option>
+                                        <option value="1">Hindi</option>
+                                        <option value="2">Maths</option>
+                                        <option value="3">Physics</option>
+                                        <option value="4">Chemistry</option>
+                                      </select>
+                                      <!-- dropdown -->
+                                    </div>
+                                    <div class="col-sm-6 col-lg-4 passper">
+                                   
+                                        <label for="fname">Subjective Text Limit (In Characters)</label>
+                                        <input type="text" id="fname" name="fname" placeholder="Subjective Text Limit (in Characters)">
+                                     
+                                    </div>
+                                    <div class="col-sm-6 col-lg-4 passper">
+                                      <label for="fname">Allow Resume Test (In Minutes)</label>
+                                      <input type="text" id="fname" name="fname" placeholder="Allow Resume Test (in Minutes)">
+                                    </div>
+                                    <div class="col-sm-6 col-lg-4 passper" style="margin-top: 30px;">
+                                      <label for="fname">Prepared By</label>
+                                      <input type="text" id="fname" name="fname" placeholder="Prepared By">
+                                    </div>
+                                  </div>
+                                  <!-- row end -->
+                                  <!-- Row 1 -->
+                                  <div class="row" style="margin-top: 40px;">
+                                    <div class="col-sm-6 col-lg-4">
+                                      <label for="fname">Assign Feedback</label>
+                                    </div>
+                                    <div class=" col-lg-2 col-sm-12">
+                                      <div class="radio">
+                                        <input id="radio-4" name="radio-3" type="radio" checked>
+                                        <label for="radio-4" class="radio-label">End Test</label>
+                                      </div>
+                                    </div>
+                                    <div class=" col-lg-2 col-sm-12">
+                                      <div class="radio">
+                                        <input id="radio-5" name="radio-3" type="radio">
+                                        <label for="radio-5" class="radio-label">Star Test</label>
+                                      </div>
+                                    </div>
+                                    
+                                  </div>
+                                  <!-- Row 1 ends -->
+                                   <!-- Row 2 -->
+                                   <div class="row" style="margin-top: 35px;">
+                                    <div class="col-lg-4 col-sm-6">
+                                      <label for="fname">Feedback Location</label>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-2">
+                                      <div class="radio">
+                                        <input id="radio-66" name="radio-4" type="radio" checked>
+                                        <label for="radio-66" class="radio-label">Appear Before Test</label>
+                                      </div>
+                                    </div>
+                                    <div class=" col-lg-3 col-sm-6">
+                                      <div class="radio">
+                                        <input id="radio-7" name="radio-4" type="radio">
+                                        <label for="radio-7" class="radio-label">Appear After Test</label>
+                                      </div>
+                                    </div>
+                                   
+                                  </div>
+                                  <!-- Row 2 ends -->
+                                  <!-- Row 3 -->
+                                  <div class="row" style="margin-top: 35px;">
+                                    <div class=" col-lg-4 col-sm-6">
+                                      <label for="fname">Copy Paste</label>
+                                    </div>
+                                    <div class=" col-lg-2 col-sm-6">
+                                      <div class="radio">
+                                        <input id="radio-9" name="radio-5" type="radio" checked>
+                                        <label for="radio-9" class="radio-label">Yes</label>
+                                      </div>
+                                    </div>
+                                    <div class=" col-lg-2 col-sm-6">
+                                      <div class="radio">
+                                        <input id="radio-10" name="radio-5" type="radio">
+                                        <label for="radio-10" class="radio-label">No</label>
+                                      </div>
+                                    </div>
+                                    
+                                  </div>
+                                  <!-- Row 3 ends -->
+                                  <!-- Row 4 -->
+                                  <div class="row" style="margin-top: 35px;">
+                                    <div class="  col-lg-4 col-sm-6">
+                                      <label for="fname">Show Overall Score On Submission</label>
+                                    </div>
+                                    <div class=" col-lg-2 col-sm-6">
+                                      <div class="radio">
+                                        <input id="radio-111" name="radio-6" type="radio" checked>
+                                        <label for="radio-111" class="radio-label">Yes</label>
+                                      </div>
+                                    </div>
+                                    <div class=" col-lg-3 col-sm-6">
+                                      <div class="radio">
+                                        <input id="radio-12" name="radio-6" type="radio">
+                                        <label for="radio-12" class="radio-label">No</label>
+                                      </div>
+                                    </div>
+                                    
+                                  </div>
+                                  <!-- Row 4 ends -->
+                                  <!-- Row 5 -->
+                                  <div class="row" style="margin-top: 35px;">
+                                    <div class=" col-lg-4 col-sm-6">
+                                      <label for="fname">Section Wise End Test Summary</label>
+                                    </div>
+                                    <div class="col-lg-2 col-sm-6">
+                                      <div class="radio">
+                                        <input id="radio-13" name="radio-7" type="radio" checked>
+                                        <label for="radio-13" class="radio-label">Yes</label>
+                                      </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6">
+                                      <div class="radio">
+                                        <input id="radio-14" name="radio-7" type="radio">
+                                        <label for="radio-14" class="radio-label">No</label>
+                                      </div>
+                                    </div>
+                                    
+                                  </div>
+                                  <!-- Row 5 ends -->
+                                  <!-- Row 6 -->
+                                  <div class="row" style="margin-top: 35px;">
+                                    <div class=" col-lg-4 col-sm-6">
+                                      <label for="fname">Noise Detection</label>
+                                    </div>
+                                    <div class=" col-lg-2 col-sm-6">
+                                      <div class="radio">
+                                        <input id="radio-15" name="radio-8" type="radio" checked>
+                                        <label for="radio-15" class="radio-label">Yes</label>
+                                      </div>
+                                    </div>
+                                    <div class=" col-lg-3 col-sm-6">
+                                      <div class="radio">
+                                        <input id="radio-16" name="radio-8" type="radio">
+                                        <label for="radio-16" class="radio-label">No</label>
+                                      </div>
+                                    </div>
+                                    
+                                  </div>
+                                  <!-- Row 6 ends -->
+                                  <!-- Row 7 -->
+                                  <div class="row" style="margin-top: 35px;">
+                                    <div class=" col-lg-4 col-sm-6">
+                                      <label for="fname">Test Type</label>
+                                    </div>
+                                    <div class=" col-lg-2 col-sm-6">
+                                      <div class="radio">
+                                        <input id="radio-17" name="radio-9" type="radio" checked>
+                                        <label for="radio-17" class="radio-label">Mock Test</label>
+                                      </div>
+                                    </div>
+                                    <div class=" col-lg-3 col-sm-6">
+                                      <div class="radio">
+                                        <input id="radio-18" name="radio-9" type="radio">
+                                        <label for="radio-18" class="radio-label">Actual Test</label>
+                                      </div>
+                                    </div>
+                                    
+                                  </div>
+                                  <!-- Row 7 ends -->
+                                  <!-- Row 8 -->
+                                  <div class="row" style="margin-top: 35px;">
+                                    <div class=" col-lg-4 col-sm-6">
+                                      <label for="fname">Send Mail To User</label>
+                                    </div>
+                                    <div class=" col-lg-2 col-sm-6">
+                                      <div class="radio">
+                                        <input id="radio-19" name="radio-10" type="radio" checked>
+                                        <label for="radio-19" class="radio-label">Yes</label>
+                                      </div>
+                                    </div>
+                                    <div class=" col-lg-3 col-sm-6">
+                                      <div class="radio">
+                                        <input id="radio-20" name="radio-10" type="radio">
+                                        <label for="radio-20" class="radio-label">No</label>
+                                      </div>
+                                    </div>
+                                   
+                                  </div>
+                                  <!-- Row 8 ends -->
+                                  <!-- Row 9 -->
+                                  <div class="row" style="margin-top: 35px;">
+                                    <div class=" col-lg-4 col-sm-6">
+                                      <label for="fname">Send Mail To Admin</label><br>
+                                      <button type="button" class="btn btn-secondary btn-toggle" data-toggle="button" aria-pressed="false" autocomplete="off">
+                                        <div class="handle"></div>
+                                      </button>
+                                    </div>
+                                    <div class="col-lg-2 col-sm-6">
+                                      <label for="fname">Admin Mail Id</label>
+                                      <input type="text" id="fname" name="fname" placeholder="Admin Mail Id">
+                                    </div>
+                                   
+                                  </div>
+                                  <!-- Row 9 ends -->
+                                  <!-- Row 10 -->
+                                  <div class="extra-margin"><h3 style="color: #2C3652;" >Proctroing Score Form</h3></div>
+                                  
+
+                                  <div class="row" style="margin-top: 35px;">
+                                    <div class=" col-lg-4 col-sm-6">
+                                      <label for="fname">Show Practice Test</label>
+                                    </div>
+                                    <div class=" col-lg-2 col-sm-6">
+                                      <div class="radio">
+                                        <input id="radio-23" name="radio-12" type="radio" checked>
+                                        <label for="radio-23" class="radio-label">Yes</label>
+                                      </div>
+                                    </div>
+                                    <div class=" col-lg-3 col-sm-6">
+                                      <div class="radio">
+                                        <input id="radio-24" name="radio-12" type="radio">
+                                        <label for="radio-24" class="radio-label">No</label>
+                                      </div>
+                                    </div>
+                                    <div class=" col-lg-3 col-sm-6">
+                                     
+                                    </div>
+                                    <div class="row" style="margin-top: 30px;">
+                                      <div class="col-sm-6 col-lg-4 passper">
+                                        <label for="fname">Benchmark Navigation</label>
+                                        <input type="text" id="fname" name="fname" placeholder="Benchmark Navigation">
+                                      </div>
+                                      <div class="col-sm-6 col-lg-4 passper">
+                                     
+                                          <label for="fname">Benchmark Force By Admin</label>
+                                          <input type="text" id="fname" name="fname" placeholder="Benchmark Force By Admin">
+                                       
+                                      </div>
+                                      <div class="col-sm-6 col-lg-4 passper">
+                                        <label for="fname">Benchmark Screen Mirrored</label>
+                                        <input type="text" id="fname" name="fname" placeholder="Benchmark Screen Mirrored">
+                                      </div>
+                                     
+                                    </div>
+                                    <div class="row" style="margin-top: 30px;">
+                                      <div class="col-sm-6 col-lg-4 passper">
+                                        <label for="fname">Benchmark Sharing Software</label>
+                                        <input type="text" id="fname" name="fname" placeholder="Benchmark Sharing Software">
+                                      </div>
+                                      <div class="col-sm-6 col-lg-4 passper">
+                                     
+                                          <label for="fname">Benchmark Holding Phone</label>
+                                          <input type="text" id="fname" name="fname" placeholder="Benchmark Holding Phone">
+                                       
+                                      </div>
+                                      <div class="col-sm-6 col-lg-4 passper">
+                                        <label for="fname">Benchmark Resume</label>
+                                        <input type="text" id="fname" name="fname" placeholder="Benchmark Resume">
+                                      </div>
+                                      
+                                    </div>
+                                    <div class="row" style="margin-top: 30px;">
+                                      <div class="col-sm-6 col-lg-4 passper">
+                                        <label for="fname">Benchmark Tpbp</label>
+                                        <input type="text" id="fname" name="fname" placeholder="Benchmark Tpbp">
+                                      </div>
+                                      <div class="col-sm-6 col-lg-4 passper">
+                                     
+                                          <label for="fname">Benchmark Fnm</label>
+                                          <input type="text" id="fname" name="fname" placeholder="Benchmark fnm">
+                                       
+                                      </div>
+                                      <div class="col-sm-6 col-lg-4 passper">
+                                        <label for="fname">Benchmark Mtoff</label>
+                                        <input type="text" id="fname" name="fname" placeholder="Benchmark Mtoff">
+                                      </div>
+                                      
+                                    </div>
+                                    <div class="row" style="margin-top: 30px;">
+                                      <div class="col-sm-6 col-lg-4 passper">
+                                        <label for="fname">Benchmark Nfff</label>
+                                        <input type="text" id="fname" name="fname" placeholder="Benchmark Nfff">
+                                      </div>
+                                      <div class="col-sm-6 col-lg-4 passper">
+                                     
+                                          <label for="fname">Benchmark Nhff</label>
+                                          <input type="text" id="fname" name="fname" placeholder="Benchmark nhff">
+                                       
+                                      </div>
+                                     
+                                      
+                                    </div>
+
+                                  </div>
+                                  <!-- Row 10 ends -->
+                                </div>
+                                <div class="button-row d-flex mt-4" style="justify-content: space-between;">
+                                  <button class="btn prev-btn js-btn-prev" type="button" title="Prev">Previous</button>
+                                  <button class="btn next-btn ml-auto js-btn-next" type="button" title="Next">Submit</button>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- 7th -->
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- partial -->
+            <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'></script> -->
+            <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script> -->
+            <style>
+            .button-row {
+              padding-top: 34px;
+            }
+            .create-test label {
+               
+                font: normal normal normal 18px/27px Poppins;
+                color: #010D0A;
+                text-align: left;
+                float: left;
+                margin-bottom: 15px;
+            }
+            .create-test .vscomp-value {
+              font-family: 'Pop-normal';
+              color: #010D0A;
+              font-size: 16px;
+          }
+              .content {
+                    width: 100% !important;
+                    margin: 0px !important;
+                }
+              .header__btn {
+                transition-property: all;
+                transition-duration: 0.2s;
+                transition-timing-function: linear;
+                transition-delay: 0s;
+                padding: 10px 20px;
+                display: inline-block;
+                margin-right: 10px;
+                background-color: #fff;
+                border: 1px solid #2c2c2c;
+                border-radius: 3px;
+                cursor: pointer;
+                outline: none;
+              }
+
+              .header__btn:last-child {
+                margin-right: 0;
+              }
+
+              .header__btn:hover,
+              .header__btn.js-active {
+                color: #fff;
+                background-color: #2c2c2c;
+              }
+
+              .header {
+                max-width: 600px;
+                margin: 50px auto;
+                text-align: center;
+              }
+
+              .header__title {
+                margin-bottom: 30px;
+                font-size: 2.1rem;
+              }
+
+              .content {
+                width: 95%;
+                margin: 0 auto 50px;
+              }
+
+              .content__title {
+                margin-bottom: 40px;
+                font-size: 20px;
+                text-align: center;
+              }
+
+              .content__title--m-sm {
+                margin-bottom: 10px;
+              }
+
+              .multisteps-form__progress {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+                margin-top: 20px;
+              }
+
+              .multisteps-form__progress-btn {
+                transition-property: all;
+                transition-duration: 0.15s;
+                transition-timing-function: linear;
+                transition-delay: 0s;
+                position: relative;
+                padding-top: 20px;
+                color: #333333;
+                text-indent: -9999px;
+                border: none;
+                background-color: transparent;
+                outline: none !important;
+                cursor: pointer;
+                font-size: 12px;
+                line-height: 14px;
+              }
+              .multisteps-form__content{
+                background-color: #fff;
+               
+                padding-left: 42px;
+                padding-right: 42px;
+                padding-bottom: 42px;
+              }
+              body{
+                background-color: #f6f8fc;
+              }
+
+              @media (min-width: 50px) {
+                .multisteps-form__progress-btn {
+                  text-indent: 0;
+                }
+              }
+
+              .multisteps-form__progress-btn:before {
+                position: absolute;
+                top: -13;
+                left: 50%;
+                display: block;
+                width: 27px;
+                height: 27px;
+                content: "";
+                transform: translateX(-50%);
+                transition: all 0.15s linear 0s, transform 0.15s cubic-bezier(0.05, 1.09, 0.16, 1.4) 0s;
+                border: 2px solid currentColor;
+                border-radius: 50%;
+                background-color: #fff;
+                box-sizing: border-box;
+                z-index: 3;
+              }
+
+              .multisteps-form__progress-btn:after {
+                position: absolute;
+                top: 5px;
+                left: calc(-50% - 13px / 2);
+                transition-property: all;
+                transition-duration: 0.15s;
+                transition-timing-function: linear;
+                transition-delay: 0s;
+                display: block;
+                width: 100%;
+                height: 2px;
+                content: "";
+                
+                z-index: 1;
+              }
+
+              .multisteps-form__progress-btn:first-child:after {
+                display: none;
+              }
+
+              .multisteps-form__progress-btn.js-active {
+                color: #20776E;
+              }
+
+              .multisteps-form__progress-btn.js-active:before {
+                background-color: currentColor;
+              }
+              .multisteps-form{
+                border-radius: 15px;
+              }
+              .multisteps-form__form {
+                position: relative;
+                height: auto !important;
+                border-radius: 15px;
+              }
+              .multisteps-form__content{
+                border-radius: 15px;
+              }
+
+              .multisteps-form__panel {
+                position: relative;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 0;
+                opacity: 0;
+                visibility: hidden;
+              }
+
+              .multisteps-form__panel.js-active {
+                height: auto;
+                opacity: 1;
+                visibility: visible;
+              }
+
+              .multisteps-form__panel[data-animation=scaleOut] {
+                transform: scale(1.1);
+              }
+
+              .multisteps-form__panel[data-animation=scaleOut].js-active {
+                transition-property: all;
+                transition-duration: 0.2s;
+                transition-timing-function: linear;
+                transition-delay: 0s;
+                transform: scale(1);
+              }
+
+              .multisteps-form__panel[data-animation=slideHorz] {
+                left: 50px;
+              }
+              .multisteps-form{
+                background-color: #fff;
+              }
+
+              .multisteps-form__panel[data-animation=slideHorz].js-active {
+                transition-property: all;
+                transition-duration: 0.25s;
+                transition-timing-function: cubic-bezier(0.2, 1.13, 0.38, 1.43);
+                transition-delay: 0s;
+                left: 0;
+              }
+
+              .multisteps-form__panel[data-animation=slideVert] {
+                top: 30px;
+              }
+
+              .multisteps-form__panel[data-animation=slideVert].js-active {
+                transition-property: all;
+                transition-duration: 0.2s;
+                transition-timing-function: linear;
+                transition-delay: 0s;
+                top: 0;
+              }
+
+              .multisteps-form__panel[data-animation=fadeIn].js-active {
+                transition-property: all;
+                transition-duration: 0.3s;
+                transition-timing-function: linear;
+                transition-delay: 0s;
+              }
+
+              .multisteps-form__panel[data-animation=scaleIn] {
+                transform: scale(0.9);
+              }
+
+              .multisteps-form__panel[data-animation=scaleIn].js-active {
+                transition-property: all;
+                transition-duration: 0.2s;
+                transition-timing-function: linear;
+                transition-delay: 0s;
+                transform: scale(1);
+              }
+            </style>
+            <script>
+              //DOM elements
+              const DOMstrings = {
+                stepsBtnClass: 'multisteps-form__progress-btn',
+                stepsBtns: document.querySelectorAll(`.multisteps-form__progress-btn`),
+                stepsBar: document.querySelector('.multisteps-form__progress'),
+                stepsForm: document.querySelector('.multisteps-form__form'),
+                stepsFormTextareas: document.querySelectorAll('.multisteps-form__textarea'),
+                stepFormPanelClass: 'multisteps-form__panel',
+                stepFormPanels: document.querySelectorAll('.multisteps-form__panel'),
+                stepPrevBtnClass: 'js-btn-prev',
+                stepNextBtnClass: 'js-btn-next'
+              };
+              //remove class from a set of items
+              const removeClasses = (elemSet, className) => {
+                elemSet.forEach(elem => {
+                  elem.classList.remove(className);
+                });
+              };
+              //return exect parent node of the element
+              const findParent = (elem, parentClass) => {
+                let currentNode = elem;
+                while (!currentNode.classList.contains(parentClass)) {
+                  currentNode = currentNode.parentNode;
+                }
+                return currentNode;
+              };
+              //get active button step number
+              const getActiveStep = elem => {
+                return Array.from(DOMstrings.stepsBtns).indexOf(elem);
+              };
+              //set all steps before clicked (and clicked too) to active
+              const setActiveStep = activeStepNum => {
+                //remove active state from all the state
+                removeClasses(DOMstrings.stepsBtns, 'js-active');
+                //set picked items to active
+                DOMstrings.stepsBtns.forEach((elem, index) => {
+                  if (index <= activeStepNum) {
+                    elem.classList.add('js-active');
+                  }
+                });
+              };
+              //get active panel
+              const getActivePanel = () => {
+                let activePanel;
+                DOMstrings.stepFormPanels.forEach(elem => {
+                  if (elem.classList.contains('js-active')) {
+                    activePanel = elem;
+                  }
+                });
+                return activePanel;
+              };
+              //open active panel (and close unactive panels)
+              const setActivePanel = activePanelNum => {
+                //remove active class from all the panels
+                removeClasses(DOMstrings.stepFormPanels, 'js-active');
+                //show active panel
+                DOMstrings.stepFormPanels.forEach((elem, index) => {
+                  if (index === activePanelNum) {
+                    elem.classList.add('js-active');
+                    setFormHeight(elem);
+                  }
+                });
+              };
+              //set form height equal to current panel height
+              const formHeight = activePanel => {
+                const activePanelHeight = activePanel.offsetHeight;
+                DOMstrings.stepsForm.style.height = `${activePanelHeight}px`;
+              };
+              const setFormHeight = () => {
+                const activePanel = getActivePanel();
+                formHeight(activePanel);
+              };
+              //STEPS BAR CLICK FUNCTION
+              DOMstrings.stepsBar.addEventListener('click', e => {
+                //check if click target is a step button
+                const eventTarget = e.target;
+                if (!eventTarget.classList.contains(`${DOMstrings.stepsBtnClass}`)) {
+                  return;
+                }
+                //get active button step number
+                const activeStep = getActiveStep(eventTarget);
+                //set all steps before clicked (and clicked too) to active
+                setActiveStep(activeStep);
+                //open active panel
+                setActivePanel(activeStep);
+              });
+              //PREV/NEXT BTNS CLICK
+              DOMstrings.stepsForm.addEventListener('click', e => {
+                const eventTarget = e.target;
+                //check if we clicked on `PREV` or NEXT` buttons
+                if (!(eventTarget.classList.contains(`${DOMstrings.stepPrevBtnClass}`) || eventTarget.classList.contains(`${DOMstrings.stepNextBtnClass}`))) {
+                  return;
+                }
+                //find active panel
+                const activePanel = findParent(eventTarget, `${DOMstrings.stepFormPanelClass}`);
+                let activePanelNum = Array.from(DOMstrings.stepFormPanels).indexOf(activePanel);
+                //set active step and active panel onclick
+                if (eventTarget.classList.contains(`${DOMstrings.stepPrevBtnClass}`)) {
+                  activePanelNum--;
+                } else {
+                  activePanelNum++;
+                }
+                setActiveStep(activePanelNum);
+                setActivePanel(activePanelNum);
+              });
+              //SETTING PROPER FORM HEIGHT ONLOAD
+              window.addEventListener('load', setFormHeight, true);
+              //SETTING PROPER FORM HEIGHT ONRESIZE
+              window.addEventListener('resize', setFormHeight, true);
+              //changing animation via animation select !!!YOU DON'T NEED THIS CODE (if you want to change animation type, just change form panels data-attr)
+              const setAnimationType = newType => {
+                DOMstrings.stepFormPanels.forEach(elem => {
+                  elem.dataset.animation = newType;
+                });
+              };
+              //selector onchange - changing animation
+              const animationSelect = document.querySelector('.pick-animation__select');
+              animationSelect.addEventListener('change', () => {
+                const newAnimationType = animationSelect.value;
+                setAnimationType(newAnimationType);
+              });
+            </script>
+            <!-- FOrm -->
+          </div>
+                              </div>
+                            </div>
+                            <!-- <div class="modal-footer border-0 justify-content-center mb-4 pe-0">
                               <div class=" mt-4">
-                                <button type="button" class="btn ps-4 pe-4 labellingSkip">Cancel</button>
+                                <button type="button" class="btn ps-4 pe-4 labellingSkip" data-bs-dismiss="modal">Cancel</button>
                               </div>
                               <div class="text-end mt-4">
                                 <button type="button" class="btn ps-4 pe-4 text-white btnDark collapseBtn">Done</button>
                               </div>
-                            </div>
+                            </div> -->
                           </div>
                         </div>
                       </div>
