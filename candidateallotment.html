@@ -35,7 +35,7 @@
                                 <thead>
                                   <tr>
                                     <th width="5%">
-                                      <div class="form-check">
+                                      <div class="form-check d-flex">
                                         <input type="checkbox" class="form-check-input" id="anime" name="hobby" />
                                         <label class="form-check-label" for="anime"></label>
                                       </div>
@@ -47,10 +47,10 @@
                                 <tbody class="table-row">
                                   <tr class="view">
                                     <td>
-                                      <div class="radio" style="margin-right: 30px;">
-                                        <input id="radio-sub-91" name="radio-sub" type="radio">
-                                        <label for="radio-sub-91" class="radio-label"></label>
-                                        </div>
+                                      <div class="form-check d-flex">
+                                        <input type="checkbox" class="form-check-input" id="anime" name="hobby" />
+                                        <label class="form-check-label" for="anime"></label>
+                                      </div>
                                     </td>
                                     <td>1. Question reference number - <b>1134031725</b></td>
                                   </tr>
@@ -67,10 +67,10 @@
                                 <tbody class="table-row">
                                     <tr class="view">
                                       <td>
-                                        <div class="radio" style="margin-right: 30px;">
-                                          <input id="radio-sub-92" name="radio-sub" type="radio">
-                                          <label for="radio-sub-92" class="radio-label"></label>
-                                          </div>
+                                        <div class="form-check">
+                                          <input type="checkbox" class="form-check-input" id="anime" name="hobby" />
+                                          <label class="form-check-label" for="anime"></label>
+                                        </div>
                                       </td>
                                       <td>1. Question reference number - <b>1134031725</b></td>
                                     </tr>
@@ -87,10 +87,10 @@
                                   <tbody class="table-row">
                                     <tr class="view">
                                       <td>
-                                        <div class="radio" style="margin-right: 30px;">
-                                          <input id="radio-sub-93" name="radio-sub" type="radio">
-                                          <label for="radio-sub-93" class="radio-label"></label>
-                                          </div>
+                                        <div class="form-check d-flex">
+                                          <input type="checkbox" class="form-check-input" id="anime" name="hobby" />
+                                          <label class="form-check-label" for="anime"></label>
+                                        </div>
                                       </td>
                                       <td>1. Question reference number - <b>1134031725</b></td>
                                     </tr>
@@ -165,6 +165,21 @@
 });
   </script>
   <style>
+    .fold-content{
+      margin-left: 5%;
+    padding-left: 40px;
+    }
+    .modal-title{
+      font-size: 24px;
+      color: #2C3652;
+    }.modal-header, .modal-footer{
+      border: 0px;
+    }
+    .modal-header{
+      padding-top: 28px;
+      padding-left: 42px;
+      padding-right: 42px;
+    }
     @media (min-width: 576px){
         .modal-dialog {
     max-width: 1100px;
@@ -279,7 +294,7 @@
     display: block;
     min-height: 1.5rem;
     padding-left: 0em;
-    margin-bottom: 0.125rem;
+    margin: 0rem;
 }
 .form-check-input[type=checkbox] {
   --checkbox-width: 30px;
