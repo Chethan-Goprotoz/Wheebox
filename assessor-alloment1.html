@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/phase-3.css" rel="stylesheet">
     <link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/alphardex/aqua.css/dist/aqua.min.css'>
-
+    <link rel="stylesheet" href="assets/css/virtual-select.min.css">
 </head>
 <body>
     <!-- Button to Open the Modal -->
@@ -23,12 +23,50 @@
   
         <!-- Modal Header -->
         <div class="modal-header">
-          <h4 class="modal-title">Candidate Allotment</h4>
+          <h4 class="modal-title">Assessor Allotment</h4>
           <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
         </div>
   
         <!-- Modal body -->
         <div class="modal-body">
+            <div class="selectDropdown p-5 bg-light1 p-4 p-md-5">
+                <div class="row gx-5 gy-4">
+                  <div class="col-sm-6 col-md-6 col-lg-6">
+                    <div class="calendar-container mt-0 passper">
+                      <p>Select Domain</p>
+                      <select id="SearchDropdown" name="native-select" placeholder="Select Subject Here"
+                        data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
+                        <option value="5">English</option>
+                        <option value="1">Hindi</option>
+                        <option value="2">Maths</option>
+                        <option value="3">Physics</option>
+                        <option value="4">Chemistry</option>
+                      </select>
+
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-6 col-md-6">
+                    <div class="calendar-container mt-0 passper">
+                      <p>Select Test Name</p>
+                      <select id="SearchDropdown" name="native-select" placeholder="Select Topic Here"
+                        data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
+                        <option value="5">Grammer</option>
+                        <option value="1">Tense</option>
+                        <option value="2">Passage</option>
+                        <option value="3">Story</option>
+                        <option value="4">Poetry</option>
+                      </select>
+
+                    </div>
+                  </div>
+                 
+                 
+                
+                </div>
+                <div class="d-flex mt-5" style="justify-content: flex-end;">
+                    <button class="next-btn">Submit</button>
+                   </div>
+            </div>
                         <!--Table  -->
                         <div style="overflow-x:auto;">
                             <table class="fold-table table-responsive">
@@ -66,9 +104,8 @@
                                   <tr class="fold">
                                     <td colspan="7">
                                       <div class="fold-content">
-                                            <p>Subjective Questions Attempted -<span>04</span></p>
-                                            <p>Assessor ID -<span>assessor99@gmail.com</span></p>
-                                            <p>Candidate ID -<span>demo973@wheebox.com</span></p>
+                                            <p style="color:#2C3652">Which Indian state has the maximum Rivers ?</p>
+                                            <p>Alloted Assessor ID -<b>assessor99@gmail.com</b></p>
                                       </div>
                                     </td>
                                   </tr>
@@ -173,7 +210,7 @@
                   </ul>
                 </nav>
                 <div class="d-flex" style="justify-content: flex-end;margin-top:35px">
-                  <button class="next-btn">Submit</button>
+                  <button class="next-btn">Save</button>
                  </div>
               </div>
           
@@ -451,6 +488,94 @@
     });
   });
     </script>
+    <script src="assets/js/jquery-2.2.0.min.js"></script>
+    <script src="assets/js/virual-select.min.js"></script>
+    <script>
+        VirtualSelect.init({
+          ele: '#SearchDropdown'
+        });
+      </script>
+    <script>
+        var x, i, j, l, ll, selElmnt, a, b, c;
+        /*look for any elements with the class "custom-select":*/
+        x = document.getElementsByClassName("custom-select");
+        l = x.length;
+        for (i = 0; i < l; i++) {
+          selElmnt = x[i].getElementsByTagName("select")[0];
+          ll = selElmnt.length;
+          /*for each element, create a new DIV that will act as the selected item:*/
+          a = document.createElement("DIV");
+          a.setAttribute("class", "select-selected");
+          a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+          x[i].appendChild(a);
+          /*for each element, create a new DIV that will contain the option list:*/
+          b = document.createElement("DIV");
+          b.setAttribute("class", "select-items select-hide");
+          for (j = 1; j < ll; j++) {
+            /*for each option in the original select element,
+            create a new DIV that will act as an option item:*/
+            c = document.createElement("DIV");
+            c.innerHTML = selElmnt.options[j].innerHTML;
+            c.addEventListener("click", function(e) {
+                /*when an item is clicked, update the original select box,
+                and the selected item:*/
+                var y, i, k, s, h, sl, yl;
+                s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+                sl = s.length;
+                h = this.parentNode.previousSibling;
+                for (i = 0; i < sl; i++) {
+                  if (s.options[i].innerHTML == this.innerHTML) {
+                    s.selectedIndex = i;
+                    h.innerHTML = this.innerHTML;
+                    y = this.parentNode.getElementsByClassName("same-as-selected");
+                    yl = y.length;
+                    for (k = 0; k < yl; k++) {
+                      y[k].removeAttribute("class");
+                    }
+                    this.setAttribute("class", "same-as-selected");
+                    break;
+                  }
+                }
+                h.click();
+            });
+            b.appendChild(c);
+          }
+          x[i].appendChild(b);
+          a.addEventListener("click", function(e) {
+              /*when the select box is clicked, close any other select boxes,
+              and open/close the current select box:*/
+              e.stopPropagation();
+              closeAllSelect(this);
+              this.nextSibling.classList.toggle("select-hide");
+              this.classList.toggle("select-arrow-active");
+            });
+        }
+        function closeAllSelect(elmnt) {
+          /*a function that will close all select boxes in the document,
+          except the current select box:*/
+          var x, y, i, xl, yl, arrNo = [];
+          x = document.getElementsByClassName("select-items");
+          y = document.getElementsByClassName("select-selected");
+          xl = x.length;
+          yl = y.length;
+          for (i = 0; i < yl; i++) {
+            if (elmnt == y[i]) {
+              arrNo.push(i)
+            } else {
+              y[i].classList.remove("select-arrow-active");
+            }
+          }
+          for (i = 0; i < xl; i++) {
+            if (arrNo.indexOf(i)) {
+              x[i].classList.add("select-hide");
+            }
+          }
+        }
+        /*if the user clicks anywhere outside the select box,
+        then close all select boxes:*/
+        document.addEventListener("click", closeAllSelect);
+        </script>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>  
 </body>
 </html>
