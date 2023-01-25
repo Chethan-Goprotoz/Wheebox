@@ -94,7 +94,7 @@
               <p>Dashboard</p>
             </div>
           </a> <a href="#">
-            <div class="d-flex sideMenu active-one"> <img class="icon-align"
+            <div class="d-flex sideMenu "> <img class="icon-align"
                 src="assets/images/Question_Bank/noun-question.svg" alt="">
               <p>Question Bank</p>
             </div>
@@ -104,7 +104,7 @@
               <p>Test Management</p>
             </div>
           </a> <a href="#">
-            <div class="d-flex sideMenu"> <img class="icon-align"
+            <div class="d-flex sideMenu active-one"> <img class="icon-align"
                 src="assets/images/Question_Bank/noun-survey-3881626.svg" alt="">
               <p>Evaluation</p>
             </div>
@@ -205,7 +205,8 @@
                                 <div class="calendar-container mt-0 passper">
                                   <label for="fname">Start Date & End Date</label>
                                   <input type="text" name="datefilter" class="calendar" value="" placeholder="Start Date & End Date" />
-                                  <i class="fa-regular fa-calendar"></i>
+                                  <i class="fa-regular fa-calendar" style="font-size: 15px;position: absolute;
+                                  top: 48px;"></i>
                                 </div>
                               </div>
                              
@@ -222,23 +223,25 @@
             <!-- Nav pills -->
             <ul class="nav nav-pills nav-justified" role="tablist">
               <li class="nav-item">
-                <a class="nav-link active" data-bs-toggle="pill" href="#GeneralQuestion"><img
-                    src="./assets/images/chethan/Group 66992.svg" width="16" alt="" style="margin-right: 10px;">Overall Evaluator Wise Reports</a>
+                <a class="nav-link active" data-bs-toggle="pill" href="#GeneralQuestion">
+                  <img src="./assets/images/chethan/Group 66993.svg" width="16" alt="" style="margin-right: 10px;">Overall Evaluator Wise Reports
+                  </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="pill" href="#Programming"><img
-                    src="./assets/images/chethan/Group 66992.svg" width="16" alt="" style="margin-right: 10px;">Test Taker VS Assigned Reprts<span
+                <a class="nav-link" data-bs-toggle="pill" href="#Programming">
+                    <img src="./assets/images/chethan/Group 66992.svg" width="16" alt="" style="margin-right: 10px;" class="grey-hide">Test Taker VS Assigned Reprts<span
                     class="d-none d-md-inline"></span></a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" data-bs-toggle="pill" href="#Reporting"><img
-                    src="./assets/images/chethan/Group 66992.svg" width="16" alt="" style="margin-right: 10px;">Student ,Question wise Reports<span
+                    src="./assets/images/chethan/Group 66992.svg" width="16" alt="" style="margin-right: 10px;">Student Question wise Reports<span
                     class="d-none d-md-inline"></span></a>
               </li>
             </ul>
             <style>
                 .tab-pane{
-                    background-color: #fff;
+                    background-color: #fff0;
+
                     margin-top: 30px;
                     padding-left: 25px;
                     padding-right: 25px;
@@ -672,9 +675,12 @@
   </section>
   <!--selection section end -->
   <style>
+    .searchInput input{
+      width: 100%;
+    }
     .calendar {
     width: 100%;
-    height: 52px;
+    height: 50px;
     border: 1px solid #20776E;
     border-radius: 4px;
     box-shadow: 0px 2px 12px #20776e29;
@@ -701,7 +707,9 @@
     width: 90% !important;
   }
 }
-
+.selectDropdown .row .calendar-container .vscomp-toggle-button {
+    height: 50px !important;
+}
 
   </style>
 

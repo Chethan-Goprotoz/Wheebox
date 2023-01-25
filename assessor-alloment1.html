@@ -9,8 +9,6 @@
     <link rel="stylesheet" href="assets/css/phase-3.css" rel="stylesheet">
     <link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/alphardex/aqua.css/dist/aqua.min.css'>
     <link rel="stylesheet" href="assets/css/virtual-select.min.css">
-  
-    <link rel="stylesheet" href="assets/css/phase-3.css" rel="stylesheet">
 </head>
 <body>
     <!-- Button to Open the Modal -->
@@ -31,82 +29,92 @@
   
         <!-- Modal body -->
         <div class="modal-body">
+            <div class="selectDropdown p-5 bg-light1 p-4 p-md-5">
+                <div class="row gx-5 gy-4">
+                  <div class="col-sm-6 col-md-6 col-lg-6">
+                    <div class="calendar-container mt-0 passper">
+                      <p>Select Domain</p>
+                      <select id="SearchDropdown" name="native-select" placeholder="Select Subject Here"
+                        data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
+                        <option value="5">English</option>
+                        <option value="1">Hindi</option>
+                        <option value="2">Maths</option>
+                        <option value="3">Physics</option>
+                        <option value="4">Chemistry</option>
+                      </select>
+
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-6 col-md-6">
+                    <div class="calendar-container mt-0 passper">
+                      <p>Select Test Name</p>
+                      <select id="SearchDropdown" name="native-select" placeholder="Select Topic Here"
+                        data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
+                        <option value="5">Grammer</option>
+                        <option value="1">Tense</option>
+                        <option value="2">Passage</option>
+                        <option value="3">Story</option>
+                        <option value="4">Poetry</option>
+                      </select>
+
+                    </div>
+                  </div>
+                 
+                 
+                
+                </div>
+                <div class="d-flex mt-5" style="justify-content: flex-end;">
+                    <button class="next-btn">Submit</button>
+                   </div>
+            </div>
                         <!--Table  -->
                         <div style="overflow-x:auto;">
-                            <div class="selectDropdown p-5 bg-light1 p-4 p-md-5">
-                                <div class="row gx-5 gy-4">
-                                  <div class="col-sm-4 col-md-6 col-lg-6">
-                                    <div class="calendar-container mt-0 passper">
-                                      <p>Select Domain</p>
-                                      <select id="SearchDropdown" name="native-select" placeholder="Select Subject Here"
-                                        data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
-                                        <option value="5">English</option>
-                                        <option value="1">Hindi</option>
-                                        <option value="2">Maths</option>
-                                        <option value="3">Physics</option>
-                                        <option value="4">Chemistry</option>
-                                      </select>
-              
-                                    </div>
-                                  </div>
-                                  <div class="col-sm-4 col-md-6">
-                                    <div class="calendar-container mt-0 passper">
-                                      <p>Select Test Name</p>
-                                      <select id="SearchDropdown" name="native-select" placeholder="Select Topic Here"
-                                        data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
-                                        <option value="5">Grammer</option>
-                                        <option value="1">Tense</option>
-                                        <option value="2">Passage</option>
-                                        <option value="3">Story</option>
-                                        <option value="4">Poetry</option>
-                                      </select>
-              
-                                    </div>
-                                  </div>
-                                 
-                                 
-                                
-                                </div>
-                            </div>
                             <table class="fold-table table-responsive">
                                 <thead>
                                   <tr>
                                     <th width="5%">
-                                      <div class="form-check">
+                                      <div class="form-check d-flex">
                                         <input type="checkbox" class="form-check-input" id="anime" name="hobby" />
                                         <label class="form-check-label" for="anime"></label>
                                       </div>
                                     </th>
-                                    <th>Candidate Details</th>
+                                    <th style="color:#2C3652;font: normal normal medium 14px/21px Poppins;">
+                                        <div class="d-flex" style="justify-content: space-between;">
+                                            <div>
+                                                Question Text
+                                            </div>
+                                            <div>
+                                              <p style="color: #20776E;text-decoration: underline;margin: 0px;font: normal normal normal 18px/27px Poppins;"><img src="./assets/images/chethan/noun_Plus_3248114.svg" class="ms-2" width="16" alt="" style="margin-right: 05px;margin-top: -2px;">Download </p>
+                                            </div>
+                                        </div>
+                                    </th>
                                    
                                   </tr>
                                 </thead>
                                 <tbody class="table-row">
                                   <tr class="view">
                                     <td>
-                                        <div class="form-check">
-                                            <input type="checkbox" class="form-check-input" id="anime" name="hobby" />
-                                            <label class="form-check-label" for="anime"></label>
-                                          </div>
+                                      <div class="form-check d-flex">
+                                        <input type="checkbox" class="form-check-input" id="anime" name="hobby" />
+                                        <label class="form-check-label" for="anime"></label>
+                                      </div>
                                     </td>
-                                    <td>
-                                        <div class="d-flex accdn-holder" style="justify-content: space-between;">
-                                            <div>
-                                                1. Question reference number - <b>1134031725</b>
-                                            </div>
-                                            <div>
-                                               <img src="./assets/images/chethan/noun-plus-1052486.svg" alt="" class="toggle_img" />
-                                            </div>
+                                    <td style="color:#2C3652;font-size:18px;">
+                                      <div class="d-flex accdn-holder" style="justify-content: space-between;">
+                                        <div>
+                                            1. Question reference number - <b>1134031725</b>
                                         </div>
-                                        
+                                        <div>
+                                           <img src="./assets/images/chethan/noun-plus-1052486.svg" alt="" class="toggle_img" />
+                                        </div>
+                                    </div>
                                     </td>
                                   </tr>
-                                  <tr class="fold" id="fold-div">
+                                  <tr class="fold">
                                     <td colspan="7">
                                       <div class="fold-content">
-                                            <p>Subjective Questions Attempted -<span>04</span></p>
-                                            <p>Assessor ID -<span>assessor99@gmail.com</span></p>
-                                            <p>Candidate ID -<span>demo973@wheebox.com</span></p>
+                                            <p style="color:#2C3652">Which Indian state has the maximum Rivers ?</p>
+                                            <p>Alloted Assessor ID -<b>assessor99@gmail.com</b></p>
                                       </div>
                                     </td>
                                   </tr>
@@ -115,11 +123,11 @@
                                     <tr class="view">
                                       <td>
                                         <div class="form-check">
-                                            <input type="checkbox" class="form-check-input" id="anime" name="hobby" />
-                                            <label class="form-check-label" for="anime"></label>
-                                          </div>
+                                          <input type="checkbox" class="form-check-input" id="anime" name="hobby" />
+                                          <label class="form-check-label" for="anime"></label>
+                                        </div>
                                       </td>
-                                      <td> 
+                                      <td style="color:#2C3652;font-size:18px">
                                         <div class="d-flex accdn-holder" style="justify-content: space-between;">
                                           <div>
                                               1. Question reference number - <b>1134031725</b>
@@ -128,11 +136,11 @@
                                              <img src="./assets/images/chethan/noun-plus-1052486.svg" alt="" class="toggle_img" />
                                           </div>
                                       </div>
-                                    </td>
+                                      </td>
                                     </tr>
-                                    <tr class="fold" id="fold-div">
+                                    <tr class="fold">
                                       <td colspan="7">
-                                        <div class="fold-content" style="margin-left: 5%;">
+                                        <div class="fold-content">
                                               <p>Subjective Questions Attempted -<span>04</span></p>
                                               <p>Assessor ID -<span>assessor99@gmail.com</span></p>
                                               <p>Candidate ID -<span>demo973@wheebox.com</span></p>
@@ -143,12 +151,12 @@
                                   <tbody class="table-row">
                                     <tr class="view">
                                       <td>
-                                        <div class="form-check">
-                                            <input type="checkbox" class="form-check-input" id="anime" name="hobby" />
-                                            <label class="form-check-label" for="anime"></label>
-                                          </div>
+                                        <div class="form-check d-flex">
+                                          <input type="checkbox" class="form-check-input" id="anime" name="hobby" />
+                                          <label class="form-check-label" for="anime"></label>
+                                        </div>
                                       </td>
-                                      <td>
+                                      <td style="color:#2C3652;font-size:18px">
                                         <div class="d-flex accdn-holder" style="justify-content: space-between;">
                                           <div>
                                               1. Question reference number - <b>1134031725</b>
@@ -159,7 +167,7 @@
                                       </div>
                                       </td>
                                     </tr>
-                                    <tr class="fold" id="fold-div">
+                                    <tr class="fold">
                                       <td colspan="7">
                                         <div class="fold-content">
                                               <p>Subjective Questions Attempted -<span>04</span></p>
@@ -178,11 +186,8 @@
         </div>
   
         <!-- Modal footer -->
-        <div class="modal-footer">
-            <div class="d-flex mt-5" style="justify-content: flex-end;">
-                <button class="next-btn" data-bs-dismiss="modal" >Submit</button><br>
-               </div>
-               <div class="pagignationDiv1 d-flex justify-content-between align-items-center mt-5" style="flex-wrap:wrap;gap:20px ;">
+        <div class="modal-footer" style="justify-content: space-between;align-items: flex-start;">
+
                 <div class="selectTag gap-4 d-flex justify-content-between align-items-center">
                   <div class="position-relative">
                     <p class="mb-0 pe-3">Showing <span>1-5</span> of <span>120</span> </p>
@@ -202,39 +207,143 @@
 
                 </div>
 
-                <div class="paginationDiv">
-                  <ul class="pagination border-0 pagination-lg mb-0">
-                    <li class="page-item "><a class="page-link disable" href="#">Previous</a></li>
-                    <li class="page-item active"><a class="page-link text-white" href="#">1</a></li>
+              <!-- Page -->
+              <div>
+                <nav aria-label="Page navigation example">
+                  <ul class="pagination">
+                    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                    <li class="page-item"><a class="page-link page-active" href="#">1</a></li>
                     <li class="page-item"><a class="page-link" href="#">2</a></li>
                     <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    <li class="page-item"><a class="page-link" href="#">4</a></li>
-                    <li class="page-item"><a class="page-link" href="#">5</a></li>
                     <li class="page-item"><a class="page-link" href="#">Next</a></li>
                   </ul>
-                </div>
+                </nav>
+                <div class="d-flex" style="justify-content: flex-end;margin-top:35px">
+                  <button class="next-btn">Save</button>
+                 </div>
               </div>
-         
+          
+              <!-- PAge -->
+              <!-- </div> -->
+             
         </div>
-
+      
   
       </div>
     </div>
   </div>
   <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
- 
+
   <style>
+    .toggle_img{
+      padding-right: 25px;
+      padding-left: 10px;
+    }
+    .modal-content{
+      border-radius: 24px;
+      border: 0px;
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+    .page-item .page-link:hover{
+    background: #20776E !important;
+    color: #fff !important;
+    border-radius: 5px;
+    margin-left: 2px;
+    margin-right: 2px;
+    box-shadow: 0px 3px 6px #5462e247;
+    }
+    .page-active{
+    background: #20776E !important;
+    color: #fff !important;
+    border-radius: 5px;
+    margin-left: 2px;
+    margin-right: 2px;
+    box-shadow: 0px 3px 6px #5462e247;
+}
+    .pagination .page-item {
+    padding: 0;
+    cursor: pointer;
+    }
+    .page-item:not(:first-child) .page-link {
+    margin-left: -1px;
+    border: 0;
+    color: #20776E;
+    }
+    .page-item:last-child .page-link {
+    font: normal normal normal 12px/18px Poppins;
+    font-size: 12px;
+    border: 0px;
+    color: #20776E;
+    }
+    .page-item:first-child .page-link {
+    color: #666666a1;
+    border: 0px;
+    font: normal normal normal 12px/18px Poppins;
+    }
+    .modal-footer .selectTag {
+      font-size: 14px;
+      color:#333333;
+    }
+    .fold-content{
+      margin-left: 5%;
+    padding-left: 40px;
+    }
+   
+    .modal-title{
+      font-size: 24px;
+      color: #2C3652;
+    }.modal-header, .modal-footer{
+      border: 0px;
+    }
+    .modal-footer{
+      padding-bottom: 28px;
+    }
+
     @media (min-width: 576px){
         .modal-dialog {
     max-width: 1100px;
     height: 992;
     margin: 1.75rem auto;
 }
-.modal-header, .modal-footer, .modal-body{
-    padding-left: 40px;
-    padding-right: 40px;
+.vscomp-wrapper {
+    color: #333;
+    display: inline-flex;
+    flex-wrap: wrap;
+    font-family: sans-serif;
+    font-size: 14px;
+    position: relative;
+    text-align: left;
+    width: 400px;
+}
+.modal-body, .modal-footer{
+    padding-right: 42px;
+    padding-left: 42px;
+}
+.modal-body .modal-footer{
+    padding-left: 42px;
+    padding-right: 42px;
+}
+  .modal-title{
+    font-size: 22px;
   }
+    .modal-header{
+      padding-top: 28px;
+      padding-left: 42px;
+      padding-right: 42px;
     }
+    .modal-body {
+    position: relative;
+    flex: 1 1 auto;
+ 
+}
+.fold-content p{
+      color: #848484;
+      font-size: 16px;
+      margin: 0px;
+    }
+    }
+
     .next-btn {
     background: #20776E 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 6px #5462e247;
@@ -342,7 +451,7 @@
     display: block;
     min-height: 1.5rem;
     padding-left: 0em;
-    margin-bottom: 0.125rem;
+    margin: 0rem;
 }
 .form-check-input[type=checkbox] {
   --checkbox-width: 30px;
@@ -353,9 +462,8 @@
 .form-check-input[type=checkbox] {
   --checkbox-checked-bg: #20776e;
 }
-.modal-header, .modal-footer{
-    border-bottom: 0px solid #dee2e600;
-    border-top: 0px solid #dee2e600;
+.modal-header{
+    padding-bottom: 0px;
 }
 /* Checkbox */
 @media only screen and (max-width: 600px)  {
@@ -368,9 +476,54 @@
   padding-top: 10px;
   padding-bottom: 10px;
   }
-
+  .modal-header{
+      padding-left: 20px;
+      padding-right: 20px;
+      
+    }
+    .accdn-holder{
+      font-size: 14px;
+    }
+    .modal-body{
+      padding: 0px !important;
+      margin: 0px;
+    }
+    .modal-footer{
+      justify-content: center !important;
+    }
+    .pagination {
+      margin-top: 20px;
+    }
+    .fold-content p{
+      color: #848484;
+      font-size: 14px;
+      margin: 0px;
+    }
+    .toggle_img{
+      width: 60px;
+    }
+    .form-check-input[type=checkbox] {
+    --checkbox-width: 20px;
 }
+.modal-title{
+    font-size: 18px;
+}
+}
+
   </style>
+     <script>
+      $(function(){
+    $(".fold-table tr.view").on("click", function(){
+      $(this).toggleClass("open").next(".fold").toggleClass("open");
+      if ($(this).hasClass("open")) {
+        $('.toggle_img',this).attr('src', './assets/images/chethan/noun-minus-1225029.svg');
+      }
+      else{
+        $('.toggle_img',this).attr('src', './assets/images/chethan/noun-plus-1052486.svg');
+      }
+    });
+  });
+    </script>
     <script src="assets/js/jquery-2.2.0.min.js"></script>
     <script src="assets/js/virual-select.min.js"></script>
     <script>
@@ -459,23 +612,6 @@
         document.addEventListener("click", closeAllSelect);
         </script>
 
-   <script>
-    $(function(){
-  $(".fold-table tr.view").on("click", function(){
-    $(this).toggleClass("open").next(".fold").toggleClass("open");
-    if ($(this).hasClass("open")) {
-      $('.toggle_img',this).attr('src', './assets/images/chethan/noun-minus-1225029.svg');
-    }
-    else{
-      $('.toggle_img',this).attr('src', './assets/images/chethan/noun-plus-1052486.svg');
-    }
-  });
-});
-  </script>
- 
-
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>  
-
-
 </body>
 </html>
