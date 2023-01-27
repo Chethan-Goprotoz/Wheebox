@@ -140,63 +140,7 @@
 
           </div>
           <!-- tabs container -->
-<style>
-  #previewQuesPopup .modal-title,#TestCasesPopup .modal-title{
-    text-align: left;
-    font: normal normal 600 22px/33px Pop-semibold;
-    letter-spacing: 0px;
-    color: #2C3652;
-    opacity: 1;
-  }
-  #previewQuesPopup .modal-dialog{
-    max-width:1581px;
-  }
 
-  #TestCasesPopup .modal-dialog{
-    max-width: 1285px;
-  }
-  #TestCasesPopup .modal-content{
-    height: 600px;
-  }
-  #TestCasesPopup .noTest{
-    font: normal normal 600 24px/35px Pop-semibold;
-    letter-spacing: 0px;
-    color: #2C3652;
-    opacity: 1;
-    margin-bottom: 25px;
-  }
-
-  #TestCasesPopup .totalTestCaseP{
-    font: normal normal 18px/27px Pop-normal;
-    letter-spacing: 0px;
-    color: #010D0A;
-    opacity: 1;
-  }
-  #TestCasesPopup .createTestCase{
-    width: 330px;
-    height: 74px;
-    background: #20776E 0% 0% no-repeat padding-box;
-    box-shadow: 0px 3px 6px #5462E247;
-    border-radius: 5px;
-    opacity: 1;
-    text-align: center;
-    font: normal normal 22px/33px Pop-normal;
-    letter-spacing: 0px;
-    color: #FFFFFF;
-    margin-top: 60px;
-  }
-  #exampleModalToggle2 .updateCodeCancel{
-    width: 82px;
-    height: 40px;
-    border: 1px solid #20776E;
-    border-radius: 5px;
-    text-align: center;
-    font: normal normal 14px/21px Pop-medium;
-    letter-spacing: 0px;
-    color: #20776E;
-    opacity: 1;
-  }
-</style>
           <div class="row">
             <div class="col-md">
               <button type="button" class="btn btn-dark btn-lg btnDeletePop" data-bs-toggle="modal" data-bs-target="#deleteModal">Delete PopUps</button>
@@ -236,7 +180,7 @@
               <div class="modal fade" id="previewQuesPopup"  tabindex="-1" aria-labelledby="previewQuesPopupLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered">
                   <div class="modal-content">
-                    <div class="modal-header align-items-center border-0">
+                    <div class="modal-header align-items-center border-0 pb-4">
                       <h5 class="modal-title" id="previewQuesPopupLabel">Preview Question</h5>
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
@@ -380,9 +324,9 @@
                               <div class="modal-header border-0 align-items-center">
                                 <h5 class="modal-title" id="exampleModalToggle2Label">Edit Test Code</h5>
                               
-                                <div class="custom-select" style="width:115px;">
+                                <div class="custom-select" style="width:165px;">
                                   <select>
-                                    
+                                    <option value="0">Choose Compiler</option>
                                     <option value="1">C</option>
                                     <option value="2">C++</option>
                                     <option value="3">JavaScript</option>
@@ -431,13 +375,14 @@
                           <div class="modal-body programmingPreview pb-3">
                             <div class="row">
                               <div class="col-md-12">
-                               <div class="searchInput">
-                                <div class="searchAfter position-relative mb-4">
-                                  <input type="text" class="form-control w-100" placeholder="Search...">
+                                <div class="searchInput">
+                                 <div class="searchAfter position-relative mb-4">
+                                   <input type="text" class="form-control w-100" placeholder="Search...">
+                                 </div>
                                 </div>
                                </div>
-
-                              </div>
+                            </div>
+                            <div class="row">
                               <div class="col-md-8">
                                 <div>
                                   <div class="greenQueBg">
