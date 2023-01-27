@@ -2820,7 +2820,6 @@ input{
     }
     .calendar-container.input-container1 input::placeholder{
         font-size: 16px;
-
     }
     .rowAssignTest .input-container1 input, .rowAssignTest .vscomp-toggle-button{
         font-size: 16px;
