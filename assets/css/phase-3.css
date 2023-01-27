@@ -3524,6 +3524,7 @@ input{
     }
     .popUpDivCard .radiodiv{
         height: 55px;
+        margin-top: 20px !important;
     }
     #previewQuesPopup .modal-title, #TestCasesPopup .modal-title{
         font-size: 18px;
