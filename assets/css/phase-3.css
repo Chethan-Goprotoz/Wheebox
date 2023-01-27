@@ -2176,6 +2176,13 @@ input{
   #TestCasesPopup .modal-content{
     height: 60vh;
   }
+  .input-container1 input::placeholder{
+        font-size: 16px;
+        font-family: pop-normal;
+}
+.input-container1 input{
+    font-size: 16px;
+}
 
 /*  */
 
@@ -2812,11 +2819,11 @@ input{
         font-size: 18px;
     }
     .calendar-container.input-container1 input::placeholder{
-        font-size: 18px;
+        font-size: 16px;
 
     }
     .rowAssignTest .input-container1 input, .rowAssignTest .vscomp-toggle-button{
-        font-size: 18px;
+        font-size: 16px;
     }
     #assignTestModal .modal-body, #editTagsModal .modal-body{
         padding: 0;
@@ -3392,6 +3399,7 @@ input{
         color: #010D0A;
         padding-left: 10px;
     }
+   
     .dropdown-toggl.noToggle{
         width: 92px;
         height: 40px;
@@ -3555,6 +3563,13 @@ input{
         font: normal normal 600 18px/35px Pop-semibold;
         margin-bottom: 16px;
     }
+    .input-container1 input::placeholder{
+        font-size: 16px;
+        font-family: pop-normal;
+}
+.input-container1 input{
+    font-size: 16px;
+}
   
 }
 
