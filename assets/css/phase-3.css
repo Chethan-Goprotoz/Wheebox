@@ -3177,8 +3177,8 @@ input{
     .side1{
         background-color: #FFFFFF;
         padding-top: 55px;
-        padding-left: 70px;
-        padding-right: 70px;
+        padding-left: 55px;
+        padding-right: 40px;
     }
     .side1.sidebar-active {
         left: -16px;
