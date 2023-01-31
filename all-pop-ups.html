@@ -1,0 +1,637 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>POP-Ups:</title>
+  <!-- font awesome css -->
+  <link rel="stylesheet" href="assets/font-awesome/all.min.css" />
+  <link rel="stylesheet" href="assets/font-awesome/fontawesome.css" />
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="shortcut icon" href="assets/images/logo_logo.png" sizes="16x16" type="image/x-icon">
+  <!-- loader css -->
+  <link rel="stylesheet" href="assets/css/loader.css">
+  <!-- style css -->
+  <!-- <link rel="stylesheet" href="assets/sass/app.css" rel="stylesheet" /> -->
+  <link rel="stylesheet" href="assets/css/virtual-select.min.css">
+  <link rel="stylesheet" href="assets/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/phase-3.css" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="assets/css/chethan.css"> -->
+
+</head>
+
+<body>
+  <!-- loader start-->
+  <div class="loader-container">
+    <div class="loader"></div>
+  </div>
+  <!-- loader end-->
+  <!--selection section start -->
+  <div class="selection-new " id="fullselector">
+    <div class="container-fluid">
+      <div class="main_div">
+        <div class="row">
+          <div class="main_header mb-1">
+            <div class="d-flex justify-content-between navpart1">
+              <div class="logo new-logopart">
+                <img src="assets/images/logo_logo.png" alt="mini-logo">
+              </div>
+            </div>
+            <div class="d-flex align-items-center gap-5">
+              <div class="d-flex gap-4">
+
+                <!-- <div>
+                  <a href="#">
+                    <div class="home-search">
+                      <img class="nav-arrows-1" src="assets/images/home-hover.svg" alt="">
+                    </div>
+                  </a>
+                </div> -->
+              </div>
+              <div class="grid-new" id="profile-out">
+                <div class="grid1-new" onclick="profile()">
+                  <div class="profile rounded-circle">
+                    <img src="assets/images/prof-mini.png" alt="profile">
+                  </div>
+                </div>
+                <div class="grid2-new d-none d-md-block" onclick="profile()">
+                  <h6>Jane Doe</h6>
+                  <p>jane_doe@wheebox.com</p>
+                </div>
+                <div class="profileDropdown" id="profileDropdown">
+                  <ul>
+                    <li>Admin Profile</li>
+                    <li>Change Password</li>
+                    <li>Help Center</li>
+                    <li>Log Out</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- row closed -->
+      </div>
+      
+    </div>
+    <div class="sidebar">
+      <div class="d-flex">
+        <div class="side1" id="sidebar-menu">
+          <img src="./assets/images/Question_Bank/croxMenu.png" onclick="sidemenu()" id="menu-icon d-md-none"
+            class="openMenuIcon fas fa-solid icon-w fa-bars d-block d-lg-none ms-0" aria-hidden="true">
+          <a href="#">
+            <div class="d-flex sideMenu mt-5"> <img class="icon-align"
+                src="assets/images/Question_Bank/noun-dashboard-4527077.svg" alt="">
+              <p>Dashboard</p>
+            </div>
+          </a> <a href="#">
+            <div class="d-flex sideMenu active-one"> <img class="icon-align"
+                src="assets/images/Question_Bank/noun-question.svg" alt="">
+              <p>Question Bank</p>
+            </div>
+          </a> <a href="#">
+            <div class="d-flex sideMenu"> <img class="icon-align"
+                src="assets/images/Question_Bank/noun-setting-2193905.svg" alt="">
+              <p>Test Management</p>
+            </div>
+          </a> <a href="#">
+            <div class="d-flex sideMenu"> <img class="icon-align"
+                src="assets/images/Question_Bank/noun-survey-3881626.svg" alt="">
+              <p>Evaluation</p>
+            </div>
+          </a>
+          <a href="#">
+            <div class="d-flex sideMenu"> <img class="icon-align"
+                src="assets/images/Question_Bank/noun-clipboard-4426919.svg" alt="">
+              <p>Roaster Managment</p>
+            </div>
+          </a>
+          <a href="#">
+            <div class="d-flex sideMenu"> <img class="icon-align"
+                src="assets/images/Question_Bank/noun-administration-99475.svg" alt="">
+              <p>Admin Control</p>
+            </div>
+          </a>
+          <a href="#" class="position-relative">
+            <div class="d-flex sideMenu techSupportMenu" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"> <img class="icon-align"
+                src="assets/images/Question_Bank/noun-headphone-5272179.svg" alt="">
+                <p>Tech Support</p>
+            </div>
+            <div class="collapse" id="collapseExample">
+                <a href="tech-support-bulk-registration.html"> <div class="d-flex sideMenu "> <img class="icon-align"
+                  src="assets/images/Question_Bank/noun-registration-3264276.svg" alt="">
+                  <p>Bulk Registration</p>
+                </div>
+              </a>
+              <a href="tech-support-security-key.html">
+                <div class="d-flex sideMenu activeTwo"> <img class="icon-align"
+                  src="assets/images/Question_Bank/noun-key-security-4833266.svg" alt="">
+                  <p>Security Key</p>
+                </div>
+              </a>
+            </div>
+          </a>
+        </div>
+        <div class="inside-container-dashboard">
+          <div class="d-flex justify-content-between align-items-center mb-5">
+            <h3 class="mb-0 d-none d-md-block">POP-Ups</h3>
+
+          </div>
+          <!-- tabs container -->
+
+          <div class="row">
+            <div class="col-md">
+              <button type="button" class="btn btn-dark btn-lg btnDeletePop" data-bs-toggle="modal" data-bs-target="#deleteModal">Delete PopUps</button>
+              <!-- delete modal -->
+                      <!-- Modal -->
+                      <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                          <div class="modal-content">
+                            <div class="modal-header border-0">
+                              <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              <div class="text-center deleteContents">
+                                
+                                <img class="" src="./assets/images/Question_Bank/noun-warning-5096319 (1).svg" alt="">
+                                <h6>Delete Question?</h6>
+                                <p>Are you sure you want to <span>delete</span> the entire question?</p>
+                              </div>
+                            </div>
+                            <div class="modal-footer border-0 justify-content-center mb-4 pe-0">
+                              <div class=" mt-4">
+                                <button type="button" class="btn ps-4 pe-4 deleteCancel">Cancel</button>
+                              </div>
+                              <div class="text-end mt-4">
+                                <button type="button" class="btn ps-4 pe-4 text-white btnDark collapseBtn">Yes</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- end -->
+            </div>
+
+            <div class="col-md">
+              <button type="button" class="btn btn-dark btn-lg" data-bs-toggle="modal" data-bs-target="#previewQuesPopup">Preview Question</button>
+              <div class="modal fade" id="previewQuesPopup"  tabindex="-1" aria-labelledby="previewQuesPopupLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header align-items-center border-0 pb-4">
+                      <h5 class="modal-title" id="previewQuesPopupLabel">Preview Question</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body p-5 pt-0">
+                      <div class="createTble pb-0">
+                      
+                          <div class="table-main-section2 table-responsive">
+                            <table id="result_list_table" class="table main-table">
+                              <thead>
+                                <tr class="table-row-1 table-header">
+                                  <td class="p-4">Section</td>
+                                  <td class="p-4">
+                                    Subject
+                                  </td>
+                                  <td class="p-4">
+                                    Topic
+                                  </td>
+                                  <td class="p-4">
+                                    Subtopic
+                                  </td>
+                                  <td class="p-4">
+                                    Pool
+                                  </td>
+                                  <td class="p-4">
+                                    Display Question
+                                  </td>
+                                
+                                  <td class="p-4">
+                                    Max Attempt
+                                  </td>
+                                
+                                </tr>
+                      </thead>
+                      
+                      <tbody>
+                        <tr class="table-row-1">
+                          <td class="tableSideHeading tableSideHeading1">
+                            Multiple
+                          </td>
+                           <td class="p-4 input-data">
+                            <div class="position-relative hover-toolTip">
+                              11 July 2015
+      
+                            </div>
+                          </td>
+                          <td class="p-4 input-data">English</td>
+                          <td class="p-4 input-data">Grammar</td>
+                          <td class="p-4 input-data">
+                            02
+                          </td>
+                          <td class="p-4 input-data">
+                            02
+                          </td>
+      
+                          <td class="p-4 input-data">
+                            <div class="d-flex justify-content-between align-items-center">
+                              <div>02</div>
+      
+                             <div>
+                              <a class="" href="#" data-bs-toggle="modal" data-bs-target="#"><span><img src="./assets/images/Question_Bank/deletesvg.svg" alt=""></span></a>
+                             </div>
+                            </div>
+                          </td>
+      
+                        </tr>
+                        <tr class="table-row-1">
+                          <td class="tableSideHeading tableSideHeading1">
+                            Multiple
+                          </td>
+                           <td class="p-4 input-data">
+                            <div class="position-relative hover-toolTip">
+                              11 July 2015
+      
+                            </div>
+                          </td>
+                          <td class="p-4 input-data">English</td>
+                          <td class="p-4 input-data">Grammar</td>
+                          <td class="p-4 input-data">
+                            02
+                          </td>
+                          <td class="p-4 input-data">
+                            02
+                          </td>
+      
+                          <td class="p-4 input-data">
+                            <div class="d-flex justify-content-between align-items-center">
+                              <div>02</div>
+      
+                             <div>
+                              <a class="" href="#" data-bs-toggle="modal" data-bs-target="#"><span><img src="./assets/images/Question_Bank/deletesvg.svg" alt=""></span></a>
+                             </div>
+                            </div>
+                          </td>
+      
+                        </tr>
+                      </tbody>
+                    </table>
+                 
+      
+                  </div>
+              </div>
+              </div>
+              </div>
+            </div>
+            </div>
+
+          </div>
+
+          <div class="col-md">
+            <button type="button" class="btn btn-info btn-lg" data-bs-toggle="modal" data-bs-target="#TestCasesPopup">Test Cases</button>
+            <div class="modal fade" id="TestCasesPopup"  tabindex="-1" aria-labelledby="TestCasesLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header align-items-center border-0">
+                    <h5 class="modal-title" id="TestCasesLabel">Test Cases</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body d-flex justify-content-center align-items-center ali p-5 pt-0">
+                    <div class="text-center">
+                      <div>
+                        <h3 class="noTest">No Test Case Created</h3>
+                        <p class="mb-0 totalTestCaseP">Total Test cases Allowed : 20</p>
+                        <button type="button" class="btn createTestCase">Create Test Case</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md">
+            <button type="button" class="btn btn-dark btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModalToggle2">edit test code</button>
+
+                      <!-- edit test code popup -->
+                      <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                        <!-- Modal -->
+                      
+                          <div class="modal-dialog modal-smTestCode">
+                            <div class="modal-content">
+                              <div class="modal-header border-0 align-items-center">
+                                <h5 class="modal-title" id="exampleModalToggle2Label">Edit Test Code</h5>
+                              
+                                <div class="custom-select" style="width:165px;">
+                                  <select>
+                                    <option value="0">Choose Compiler</option>
+                                    <option value="1">C</option>
+                                    <option value="2">C++</option>
+                                    <option value="3">JavaScript</option>
+                                    <option value="4">Java</option>
+                                    <option value="5">Node.js</option>
+                                    <option value="5">COBOL</option>
+                                    <option value="5">R</option>
+                                    <option value="5">Python</option>
+                                  
+                                  </select>
+                                
+                                </div>
+                                <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                              
+                              
+                              </div>
+                              <div class="modal-body">
+                               <div class="p-5 textAreaDiv pt-4">
+                                  <textarea class="form-control" name="" id="" cols="30" rows="10"></textarea>
+                               </div>
+                              </div>
+                              <div class="modal-footer justify-content-end border-0 pe-5 ps-5">
+                              
+                                <button type="button" class="btn w-auto ps-4 pe-4 me-3 updateCodeCancel" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">Cancel</button>
+                                <button type="button" class="btn btn-closeTestCode text-white">Update Code</button>
+                              </div>
+                            </div>
+                          </div>
+                        
+                    </div>
+                      <!-- end -->
+                              </div>
+
+
+
+                              <div class="col-md">
+                                <button type="button" class="btn btn-dark btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModalToggle11">Preview Bulk Upload</button>
+                     <!-- Modal mcq preview-->
+                     <div class="modal fade" id="exampleModalToggle11" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                      <div class="modal-dialog modal-lg modal-xl">
+                        <div class="modal-content">
+                          <div class="modal-header align-items-center border-0">
+                            <h5 class="modal-title" id="exampleModalToggle11">Preview Bulk Upload</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body programmingPreview pb-3">
+                            <div class="row">
+                              <div class="col-md-12">
+                                <div class="searchInput">
+                                 <div class="searchAfter position-relative mb-4">
+                                   <input type="text" class="form-control w-100" placeholder="Search...">
+                                 </div>
+                                </div>
+                               </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-8">
+                                <div>
+                                  <div class="greenQueBg">
+                                    <p class="mb-0 QueHeight"><span class="boldText">Q. 6.</span> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit?</p>
+                                        
+                                        <div class="bgSpeakerBtn">
+                                           <a href=""> <img class="speaker" src="assets/images/questionaries/speaker.svg" width="28" alt="mute"></a>
+                                        </div>
+                                        <!-- <div class="d-md-none d-block queNum">
+                                            <h4 class="fw-bold">Questions <span class="fw-bold ms-3">12/30</span> <span>00:48</span></h4>
+                                        </div> -->
+                                  </div>  
+                                  <div class="popUpDivCard">
+                                    <div class="radiodiv mt-5 p-4 ps-4 d-flex align-items-center">
+                                      <div class="form-check form-check-inline d-flex align-items-center">                            
+                                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option1">
+                                          <label class="form-check-label" for="inlineRadio2">Income and expenditure statement</label>
+                                      </div>
+                                    </div>
+                                    <div class="radiodiv mt-5 p-4 ps-4 d-flex align-items-center">
+                                      <div class="form-check form-check-inline d-flex align-items-center">                            
+                                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option1">
+                                          <label class="form-check-label" for="inlineRadio3">Income and expenditure statement</label>
+                                      </div>
+                                    </div>
+                                    <div class="radiodiv mt-5 p-4 ps-4 d-flex align-items-center">
+                                      <div class="form-check form-check-inline d-flex align-items-center">                            
+                                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option1">
+                                          <label class="form-check-label" for="inlineRadio4">Income and expenditure statement</label>
+                                      </div>
+                                    </div>
+                                    <div class="radiodiv mt-5 p-4 ps-4 d-flex align-items-center">
+                                      <div class="form-check form-check-inline d-flex align-items-center">                            
+                                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                          <label class="form-check-label" for="inlineRadio1">Income and expenditure statement</label>
+                                      </div>
+                                    </div>                                    
+                                  </div>
+                                  <!--view test code modal  -->
+                                </div>
+                              </div>
+                              <div class="col-md-4">
+                                <div>
+                                  <table class="ansTableTick">
+                                    <tr>
+                                      <td>1</td>
+                                      <td>2</td>
+                                      <td>3</td>
+                                      <td>4</td>
+                                    </tr>
+                                    
+                                    <tr>
+                                      <td>1</td>
+                                      <td class="answeredQue">2</td>
+                                      <td>3</td>
+                                      <td>4</td>
+                                    </tr>
+                                    <tr>
+                                      <td>1</td>
+                                      <td>2</td>
+                                      <td>3</td>
+                                      <td>4</td>
+                                    </tr>
+                                    
+                                  </table>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="modal-footer border-0 justify-content-between ps-5">
+                            <!-- <button type="button" class="btn " data-bs-dismiss="modal">Close</button> -->
+                            <button type="button" class="btn btnPrev">Previous</button>
+                            <button type="button" class="btn btnNext">Next</button>
+                          </div>
+                        </div>
+                      </div>
+                        </div>
+                    <!-- end -->
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- main-div closed -->
+                      </div>
+  <!-- container closed -->
+  </section>
+  <!--selection section end -->
+  <script src="https://kit.fontawesome.com/5817738a37.js" crossorigin="anonymous"></script>
+  <script src="assets/js/jquery-2.2.0.min.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/loader.js"></script>
+  <script src="assets/js/chart.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="assets/js/virual-select.min.js"></script>
+
+  <!-- Load plotly.js into the DOM -->
+  <!-- <script src='https://cdn.plot.ly/plotly-2.16.1.min.js'></script> -->
+
+
+
+  <script>
+    VirtualSelect.init({
+      ele: '#SearchDropdown'
+    });
+  </script>
+
+  <script>
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+  </script>
+
+
+  <script>
+    function sidemenu() {
+      var sidebar = document.getElementById("sidebar-menu")
+      var icon = document.getElementById("menu-icon")
+      var selector = document.getElementById("fullselector")
+      selector.classList.toggle("mobile-menu-stopper")
+      sidebar.classList.toggle("sidebar-active")
+      icon.classList.toggle("icon-rotate")
+      icon.classList.toggle("fa-bars")
+      icon.classList.toggle("fa-xmark")
+
+    }
+  </script>
+
+
+
+
+  <script>
+    function profile() {
+      profileMenu = document.getElementById("profileDropdown")
+      profileMenu.classList.toggle("dropdownActive")
+      document.addEventListener('click', function profile(event) {
+        console.log("clicked")
+        const box4 = document.getElementById('profile-out');
+        if (!box4.contains(event.target)) {
+          profileMenu.classList.remove("dropdownActive")
+        }
+      });
+    }
+  </script>
+
+
+  <!--  -->
+
+  <script>
+    var x, i, j, l, ll, selElmnt, a, b, c;
+    /*look for any elements with the class "custom-select":*/
+    x = document.getElementsByClassName("custom-select");
+    l = x.length;
+    for (i = 0; i < l; i++) {
+      selElmnt = x[i].getElementsByTagName("select")[0];
+      ll = selElmnt.length;
+      /*for each element, create a new DIV that will act as the selected item:*/
+      a = document.createElement("DIV");
+      a.setAttribute("class", "select-selected");
+      a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+      x[i].appendChild(a);
+      /*for each element, create a new DIV that will contain the option list:*/
+      b = document.createElement("DIV");
+      b.setAttribute("class", "select-items select-hide");
+      for (j = 1; j < ll; j++) {
+        /*for each option in the original select element,
+        create a new DIV that will act as an option item:*/
+        c = document.createElement("DIV");
+        c.innerHTML = selElmnt.options[j].innerHTML;
+        c.addEventListener("click", function(e) {
+            /*when an item is clicked, update the original select box,
+            and the selected item:*/
+            var y, i, k, s, h, sl, yl;
+            s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+            sl = s.length;
+            h = this.parentNode.previousSibling;
+            for (i = 0; i < sl; i++) {
+              if (s.options[i].innerHTML == this.innerHTML) {
+                s.selectedIndex = i;
+                h.innerHTML = this.innerHTML;
+                y = this.parentNode.getElementsByClassName("same-as-selected");
+                yl = y.length;
+                for (k = 0; k < yl; k++) {
+                  y[k].removeAttribute("class");
+                }
+                this.setAttribute("class", "same-as-selected");
+                break;
+              }
+            }
+            h.click();
+        });
+        b.appendChild(c);
+      }
+      x[i].appendChild(b);
+      a.addEventListener("click", function(e) {
+          /*when the select box is clicked, close any other select boxes,
+          and open/close the current select box:*/
+          e.stopPropagation();
+          closeAllSelect(this);
+          this.nextSibling.classList.toggle("select-hide");
+          this.classList.toggle("select-arrow-active");
+        });
+    }
+    function closeAllSelect(elmnt) {
+      /*a function that will close all select boxes in the document,
+      except the current select box:*/
+      var x, y, i, xl, yl, arrNo = [];
+      x = document.getElementsByClassName("select-items");
+      y = document.getElementsByClassName("select-selected");
+      xl = x.length;
+      yl = y.length;
+      for (i = 0; i < yl; i++) {
+        if (elmnt == y[i]) {
+          arrNo.push(i)
+        } else {
+          y[i].classList.remove("select-arrow-active");
+        }
+      }
+      for (i = 0; i < xl; i++) {
+        if (arrNo.indexOf(i)) {
+          x[i].classList.add("select-hide");
+        }
+      }
+    }
+    /*if the user clicks anywhere outside the select box,
+    then close all select boxes:*/
+    document.addEventListener("click", closeAllSelect);
+    </script>
+
+
+<!-- select option mcq -->
+<script>
+  document
+      .getElementById('target')
+      .addEventListener('change', function () {
+          'use strict';
+          var vis = document.querySelector('.vis'),   
+              target = document.getElementById(this.value);
+          if (vis !== null) {
+              vis.className = 'inv';
+          }
+          if (target !== null ) {
+              target.className = 'vis';
+          }
+  });
+</script>
+
+</body>
+
+</html>

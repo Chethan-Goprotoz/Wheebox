@@ -2,6 +2,7 @@
     align-items: center;
     margin-top: 8px;
     height: 45px;
+    padding: 10px;
 }
 
 .sideMenu p{
@@ -40,7 +41,7 @@
   
 }
 .selectDropdown .row .calendar-container .vscomp-toggle-button{
-    height: 42px !important;
+    height: 42px;
 }
 .addNewSubj{
     border: 1px solid #20776E;
@@ -1325,7 +1326,7 @@ position: relative;
 }
 .ansTableTick {
     width: 100%;
-    margin-left: 15px;
+    margin-left: 0px;
 }
 .ansTableTick tr {
     display: flex;
@@ -1573,7 +1574,11 @@ opacity: 1;
 .dateInputField .calendar{
     width: 100%;
     height: 42px;
-    font-size: 16px;
+    font-size: 14px;
+}
+.dateInputField .calendar::placeholder{
+    font-family: pop-normal;
+
 }
 .dateInputField .fa-calendar{
     top: 48px;
@@ -2007,7 +2012,6 @@ opacity: 1;
     align-items: center;
 }
 .toast p{
-   
     font: normal normal 18px/1px Pop-normal;
     letter-spacing: 0px;
     color: #FFFFFF;
@@ -2076,11 +2080,128 @@ input{
     margin-top: 0;
 }
 
+.form-select.allowFrequency{
+    width: 66px;
+    height: 40px;
+    box-shadow: 0px 3px 6px #5462E247;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    opacity: 1;
+    text-align: center;
+    font: normal normal 14px/21px Pop-medium;
+    letter-spacing: 0px;
+    color: #000000;
+}
+.table-main-section2.table-responsive.rosterManageTable{
+    overflow-x: auto;
+}
+.table-main-section2.table-responsive.rosterManageTable::-webkit-scrollbar{
+   display: none;
+}
+.table-main-section2.table-responsive.rosterManageTable table{
+    table-layout: auto;
+    width: 135%;
+    margin-bottom: 0;
+}
+.table-main-section2.table-responsive.rosterManageTable tr td,a{
+    color: #000000;
+}
+
+.NoFrequency{
+    width: 138px;
+    height: 40px;
+    border: 1px solid #20776E;
+    border-radius: 5px;
+    font: normal normal 14px/21px Pop-normal;
+    letter-spacing: 0px;
+    color: #20776E;
+    opacity: 1;
+}
+
+#previewQuesPopup .modal-title,#TestCasesPopup .modal-title{
+    text-align: left;
+    font: normal normal 600 22px/33px Pop-semibold;
+    letter-spacing: 0px;
+    color: #2C3652;
+    opacity: 1;
+  }
+  #previewQuesPopup .modal-dialog{
+    max-width:81%;
+  }
+
+  /* #TestCasesPopup .modal-dialog{
+    max-width: 1285px;
+  } */
+ 
+  #TestCasesPopup .noTest{
+    font: normal normal 600 24px/35px Pop-semibold;
+    letter-spacing: 0px;
+    color: #2C3652;
+    opacity: 1;
+    margin-bottom: 25px;
+  }
+
+  #TestCasesPopup .totalTestCaseP{
+    font: normal normal 18px/27px Pop-normal;
+    letter-spacing: 0px;
+    color: #010D0A;
+    opacity: 1;
+  }
+  #TestCasesPopup .createTestCase{
+    width: 330px;
+    height: 74px;
+    background: #20776E 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #5462E247;
+    border-radius: 5px;
+    opacity: 1;
+    text-align: center;
+    font: normal normal 22px/33px Pop-normal;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    margin-top: 60px;
+  }
+  #exampleModalToggle2 .updateCodeCancel{
+    width: 82px;
+    height: 40px;
+    border: 1px solid #20776E;
+    border-radius: 5px;
+    text-align: center;
+    font: normal normal 14px/21px Pop-medium;
+    letter-spacing: 0px;
+    color: #20776E;
+    opacity: 1;
+  }
+  #exampleModalToggle2 .btn.btn-closeTestCode.text-white{
+    font-size: 14px;
+  }
+  #TestCasesPopup .modal-dialog{
+    max-width: 66%;
+  }
+  #TestCasesPopup .modal-content{
+    height: 60vh;
+  }
+  .input-container1 input::placeholder{
+        font-size: 16px;
+        font-family: pop-normal;
+}
+.input-container1 input{
+    font-size: 16px;
+}
+
+.filterDiv {
+    flex-wrap: wrap;
+}
+
 /*  */
 
   /* resolution 1920 started */
 
   @media (min-width:1900px){
+    .table-main-section2.table-responsive.rosterManageTable table{
+        table-layout: auto;
+        width: 100%;
+        margin-bottom: 0;
+    }
     .modal-body .greenQueBg{
         height: 294px;
     }
@@ -2141,7 +2262,7 @@ input{
         width: 135px;
     }
     .selectDropdown .row .calendar-container .vscomp-toggle-button{
-        height: 50px;
+        height: 50px !important;
     }
     .vscomp-toggle-button .vscomp-value{
         font-size: 16px;
@@ -2706,11 +2827,10 @@ input{
         font-size: 18px;
     }
     .calendar-container.input-container1 input::placeholder{
-        font-size: 18px;
-
+        font-size: 16px;
     }
     .rowAssignTest .input-container1 input, .rowAssignTest .vscomp-toggle-button{
-        font-size: 18px;
+        font-size: 16px;
     }
     #assignTestModal .modal-body, #editTagsModal .modal-body{
         padding: 0;
@@ -3280,12 +3400,13 @@ input{
     }
 
     .input-container1 input{
-        height: 50px;
+        height: 42px;
         border: 1px solid #AAAAAA;
         font-size: 16px;
         color: #010D0A;
         padding-left: 10px;
     }
+   
     .dropdown-toggl.noToggle{
         width: 92px;
         height: 40px;
@@ -3409,6 +3530,53 @@ input{
         font-weight: pop-medium;
         font-size: 16px;
     }
+    .popUpDivCard .radiodiv .form-check-input[type=radio], .popUpDivCard .radiodiv .form-check-input:checked[type=radio] {
+        width: 25px;
+        height: 25px;
+    }
+    .popUpDivCard .radiodiv .form-check-label {
+        font-size: 14px;
+    }
+    .popUpDivCard .radiodiv{
+        height: 55px;
+        margin-top: 20px !important;
+    }
+    #previewQuesPopup .modal-title, #TestCasesPopup .modal-title{
+        font-size: 18px;
+    }
+    #exampleModalToggle2 .modal-title{
+        font-size: 18px;
+    }
+    #TestCasesPopup .modal-dialog{
+        max-width: 100%;
+      }
+      #TestCasesPopup .modal-content{
+        height: 100%;
+      }
+      #TestCasesPopup .createTestCase {
+        width: 225px;
+        height: 55px;
+        background: #20776E 0% 0% no-repeat padding-box;
+        box-shadow: 0px 3px 6px #5462e247;
+        border-radius: 5px;
+        opacity: 1;
+        text-align: center;
+        font: normal normal 16px/33px Pop-normal;
+        letter-spacing: 0px;
+        color: #FFFFFF;
+        margin-top: 40px;
+    }
+    #TestCasesPopup .noTest {
+        font: normal normal 600 18px/35px Pop-semibold;
+        margin-bottom: 16px;
+    }
+    .input-container1 input::placeholder{
+        font-size: 16px;
+        font-family: pop-normal;
+}
+.input-container1 input{
+    font-size: 16px;
+}
   
 }
 

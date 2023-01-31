@@ -158,12 +158,12 @@
         <div class="inside-container-dashboard">
           <div class="d-flex justify-content-between align-items-center mb-4">
             <h3 class="mb-0 d-none d-md-block">Roster Management</h3>
-            <button class="btn btnDark configRoster d-none d-md-block text-white" type="button">Configure Roster Management</button>
+            <!-- <button class="btn btnDark configRoster d-none d-md-block text-white" type="button">Configure Roster Management</button> -->
           </div>
-          <div class="d-flex d-none d-md-flex justify-content-between align-items-center mb-5">
+          <!-- <div class="d-flex d-none d-md-flex justify-content-between align-items-center mb-5">
             <h3 class="mb-0 d-none d-md-block">Roster Management Search</h3>
             
-          </div>
+          </div> -->
           <!-- tabs container -->
           <div class="quesBankTabs mt-5">
             <!-- Nav pills -->
@@ -182,8 +182,13 @@
             </ul>
             <!-- Tab panes -->
             <div class="tab-content">
-              <div id="GeneralQuestion" class="container tab-pane active"><br>
-
+              <div id="GeneralQuestion" class="container tab-pane active">
+              
+                  <div class="d-flex justify-content-between align-items-center mb-5 mt-5">
+                    <h3 class="mb-0 d-none d-md-block">Roster Management Search</h3>
+                    <button class="btn btnDark configRoster d-none d-md-block text-white" type="button">Configure Roster Management</button>
+                  </div>
+             
              
                 <div class="selectDropdown p-5 bg-light1 p-4 p-md-5">
            
@@ -291,16 +296,218 @@
                   </div>
                 </div>
 
-                <div class="row">
-                  <div class="col-md-12">
-                    <div class="text-end mt-4">
-                      <button type="button" class="btn ps-4 pe-4 text-white btnDark collapseBtn">Submit</button>
+                <div class="row mt-5">
+                  <div class="col-md-6">
+                    <div class="searchInput w-75 collapse" id="tableRoster">
+                      <div class="searchAfter position-relative mb-4">
+                        <input type="text" class="form-control" placeholder="Search...">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="d-flex justify-content-end">
+                      <div class="text-end me-4 collapse" id="tableRoster">
+                        <select class="form-select NoFrequency" aria-label="Default select example">
+                          <option selected="">No . of Entries</option>
+                          <option value="1">5</option>
+                          <option value="2">10</option>
+                          <option value="3">15</option>
+                        </select>
+                      </div>
+                      <div class="text-end">
+                        <button type="button" class="btn ps-4 pe-4 text-white btnDark collapseBtn" data-bs-toggle="collapse" data-bs-target="#tableRoster" aria-expanded="false" aria-controls="tableRoster">Submit</button>
+                      </div>
                     </div>
                   </div>
                 </div>
                 <!-- end -->
+                <!-- table -->
+                <div class="collapse" id="tableRoster">
+                  <div class="createTble pb-0">
+                      
+                    <div class="table-main-section2 table-responsive rosterManageTable">
+                      <table id="result_list_table" class="table main-table">
+                        <thead>
+                          <tr class="table-row-1 table-header">
+                            <td class="p-4">
+                              <div class="form-check securityChecked d-flex align-items-center">
+                                <input class="form-check-input mt-0" type="checkbox" value="" id="flexCheckDefault" checked="">
+                                <span class="ms-3"> Test Allowed</span>
+                              </div> 
+                             
+                            </td>
+                            <td class="p-4">
+                              Email ID
+                            </td>
+                            <td class="p-4">
+                              Domain Name
+                            </td>
+                            <td class="p-4">
+                              Test Name
+                            </td>
+                            <td class="p-4">
+                              Allowed Frequency
+                            </td>
+                            <td class="p-4">
+                              Validity Start Date
+                            </td>
+                          
+                            <td class="p-4">
+                              Validity End Date
+                            </td>
+                            <td class="p-4">
+                              Additional Info
+                            </td>
+                          
+                          </tr>
+                        </thead>
+                
+                <tbody>
+                  <tr class="table-row-1">
+                    <td class="tableSideHeading tableSideHeading1">
+                      <div class="form-check securityChecked d-flex align-items-center">
+                        <input class="form-check-input mt-0" type="checkbox" value="" id="flexCheckDefault" checked="">
+                      </div> 
+                    </td>
+                     <td class="p-4 input-data">
+                      loremipsium@gmail.Com
+                    </td>
+                    <td class="p-4 input-data">0419</td>
+                    <td class="p-4 input-data">Probability</td>
+                    <td class="p-4 input-data">
+                      <select class="form-select allowFrequency" aria-label="Default select example">
+                        <option selected>5</option>
+                        <option value="1">5</option>
+                        <option value="2">10</option>
+                        <option value="3">15</option>
+                      </select>
+                    </td>
+                    <td class="p-4 input-data">
+                      2022-12-05 <span>15:15</span>
+                    </td>
+                    <td class="p-4 input-data">
+                      2022-12-05 <span>15:15</span>
+                    </td>
+                    <td class="p-4 input-data">
+                      <a href="#" class="text-decoration-underline text-inherit">View</a>
+                    </td>
+                  </tr>
+                  <tr class="table-row-1">
+                    <td class="tableSideHeading tableSideHeading1">
+                      <div class="form-check securityChecked d-flex align-items-center">
+                        <input class="form-check-input mt-0" type="checkbox" value="" id="flexCheckDefault" checked="">
+                      </div> 
+                    </td>
+                     <td class="p-4 input-data">
+                      loremipsium@gmail.Com
+                    </td>
+                    <td class="p-4 input-data">0419</td>
+                    <td class="p-4 input-data">Probability</td>
+                    <td class="p-4 input-data">
+                      <select class="form-select allowFrequency" aria-label="Default select example">
+                        <option selected>5</option>
+                        <option value="1">5</option>
+                        <option value="2">10</option>
+                        <option value="3">15</option>
+                      </select>
+                    </td>
+                    <td class="p-4 input-data">
+                      2022-12-05 <span>15:15</span>
+                    </td>
+                    <td class="p-4 input-data">
+                      2022-12-05 <span>15:15</span>
+                    </td>
+                    <td class="p-4 input-data">
+                      <a href="#" class="text-decoration-underline text-inherit">View</a>
+                    </td>
+                  </tr>
+                  <tr class="table-row-1">
+                    <td class="tableSideHeading tableSideHeading1">
+                      <div class="form-check securityChecked d-flex align-items-center">
+                        <input class="form-check-input mt-0" type="checkbox" value="" id="flexCheckDefault" checked="">
+                      </div> 
+                    </td>
+                     <td class="p-4 input-data">
+                      <p class="mb-0">loremipsium@gmail.Com</p>
+                      <p class="mb-0">Name: <span>lorem Ipsum</span></p>
+                      <p class="mb-0">Gender: <span>Male</span></p>
+                      <p class="mb-0">Location: Bangalore</p>
+                    </td>
+                    <td class="p-4 input-data">0419</td>
+                    <td class="p-4 input-data">Probability</td>
+                    <td class="p-4 input-data">
+                      <select class="form-select allowFrequency" aria-label="Default select example">
+                        <option selected>5</option>
+                        <option value="1">5</option>
+                        <option value="2">10</option>
+                        <option value="3">15</option>
+                      </select>
+                    </td>
+                    <td class="p-4 input-data">
+                      2022-12-05 <span>15:15</span>
+                    </td>
+                    <td class="p-4 input-data">
+                      2022-12-05 <span>15:15</span>
+                    </td>
+                    <td class="p-4 input-data">
+                      <a href="#" class="text-decoration-underline text-inherit">View</a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+           
+
+            </div>
+                  </div>
+
+                    <!-- pagination -->
+                <div class="testCaseCards">
+                  <div class="pagignationDiv1 d-flex justify-content-between align-items-center mt-5">
+                    <div class="selectTag gap-4 d-flex justify-content-between align-items-center">
+                      <div class="position-relative">
+                        <p class="mb-0 pe-3">Showing <span>1-5</span> of <span>120</span> </p>
+                        <div class="showPage"></div>
+                      </div>
+                      <div class="selectNumRow">
+                        <select name="cars" id="cars">
+                          <option value="volvo">5</option>
+                          <option value="saab">10</option>
+                          <option value="mercedes">15</option>
+                          <option value="audi">20</option>
+                        </select>
+                      </div>
+                      <div>
+                        <p class="mb-0">records per page</p>
+                      </div>
+      
+                    </div>
+      
+                    <div class="paginationDiv">
+                      <ul class="pagination border-0 pagination-lg mb-0">
+                        <li class="page-item "><a class="page-link disable" href="#">Previous</a></li>
+                        <li class="page-item active"><a class="page-link text-white" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">4</a></li>
+                        <li class="page-item"><a class="page-link" href="#">5</a></li>
+                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <!-- end -->
+                </div>
+                <!-- end -->
+
+              
               </div>
-              <div id="Programming" class="container tab-pane fade"><br>
+              <div id="Programming" class="container tab-pane fade">
+            
+                  <div class="d-flex justify-content-between align-items-center mb-5 mt-5">
+                    <h3 class="mb-0 d-none d-md-block">Roster Management Search</h3>
+                    <button class="btn btnDark configRoster d-none d-md-block text-white" type="button">Configure Roster Management</button>
+                  </div>
+              
                 <div class="selectDropdown p-5 bg-light1 p-4 p-md-5">
            
                   <div class="row gx-5 gy-4">
@@ -364,13 +571,210 @@
                   </div>
                 </div>
 
-                <div class="row">
-                  <div class="col-md-12">
-                    <div class="text-end mt-4">
-                      <button type="button" class="btn ps-4 pe-4 text-white btnDark collapseBtn">Submit</button>
+                <div class="row mt-5">
+                  <div class="col-md-6">
+                    <div class="searchInput w-75 collapse" id="tableRoster">
+                      <div class="searchAfter position-relative mb-4">
+                        <input type="text" class="form-control" placeholder="Search...">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="d-flex justify-content-end">
+                      <div class="text-end me-4 collapse" id="tableRoster">
+                        <select class="form-select NoFrequency" aria-label="Default select example">
+                          <option selected="">No . of Entries</option>
+                          <option value="1">5</option>
+                          <option value="2">10</option>
+                          <option value="3">15</option>
+                        </select>
+                      </div>
+                      <div class="text-end">
+                        <button type="button" class="btn ps-4 pe-4 text-white btnDark collapseBtn"  data-bs-toggle="collapse" data-bs-target="#tableRoster" aria-expanded="false" aria-controls="tableRoster">Submit</button>
+                      </div>
                     </div>
                   </div>
                 </div>
+                <!-- end -->
+                <!-- table -->
+                <div  class="collapse" id="tableRoster">
+                  <div class="createTble pb-0">
+                      
+                    <div class="table-main-section2 table-responsive rosterManageTable">
+                      <table id="result_list_table" class="table main-table">
+                        <thead>
+                          <tr class="table-row-1 table-header">
+                            <td class="p-4">
+                              <div class="form-check securityChecked d-flex align-items-center">
+                                <input class="form-check-input mt-0" type="checkbox" value="" id="flexCheckDefault" checked="">
+                                <span class="ms-3"> Test Allowed</span>
+                              </div> 
+                             
+                            </td>
+                            <td class="p-4">
+                              Email ID
+                            </td>
+                            <td class="p-4">
+                              Domain Name
+                            </td>
+                            <td class="p-4">
+                              Test Name
+                            </td>
+                            <td class="p-4">
+                              Allowed Frequency
+                            </td>
+                            <td class="p-4">
+                              Validity Start Date
+                            </td>
+                          
+                            <td class="p-4">
+                              Validity End Date
+                            </td>
+                            <td class="p-4">
+                              Additional Info
+                            </td>
+                          
+                          </tr>
+                        </thead>
+                
+                <tbody>
+                  <tr class="table-row-1">
+                    <td class="tableSideHeading tableSideHeading1">
+                      <div class="form-check securityChecked d-flex align-items-center">
+                        <input class="form-check-input mt-0" type="checkbox" value="" id="flexCheckDefault" checked="">
+                      </div> 
+                    </td>
+                     <td class="p-4 input-data">
+                      loremipsium@gmail.Com
+                    </td>
+                    <td class="p-4 input-data">0419</td>
+                    <td class="p-4 input-data">Probability</td>
+                    <td class="p-4 input-data">
+                      <select class="form-select allowFrequency" aria-label="Default select example">
+                        <option selected>5</option>
+                        <option value="1">5</option>
+                        <option value="2">10</option>
+                        <option value="3">15</option>
+                      </select>
+                    </td>
+                    <td class="p-4 input-data">
+                      2022-12-05 <span>15:15</span>
+                    </td>
+                    <td class="p-4 input-data">
+                      2022-12-05 <span>15:15</span>
+                    </td>
+                    <td class="p-4 input-data">
+                      <a href="#" class="text-decoration-underline text-inherit">View</a>
+                    </td>
+                  </tr>
+                  <tr class="table-row-1">
+                    <td class="tableSideHeading tableSideHeading1">
+                      <div class="form-check securityChecked d-flex align-items-center">
+                        <input class="form-check-input mt-0" type="checkbox" value="" id="flexCheckDefault" checked="">
+                      </div> 
+                    </td>
+                     <td class="p-4 input-data">
+                      loremipsium@gmail.Com
+                    </td>
+                    <td class="p-4 input-data">0419</td>
+                    <td class="p-4 input-data">Probability</td>
+                    <td class="p-4 input-data">
+                      <select class="form-select allowFrequency" aria-label="Default select example">
+                        <option selected>5</option>
+                        <option value="1">5</option>
+                        <option value="2">10</option>
+                        <option value="3">15</option>
+                      </select>
+                    </td>
+                    <td class="p-4 input-data">
+                      2022-12-05 <span>15:15</span>
+                    </td>
+                    <td class="p-4 input-data">
+                      2022-12-05 <span>15:15</span>
+                    </td>
+                    <td class="p-4 input-data">
+                      <a href="#" class="text-decoration-underline text-inherit">View</a>
+                    </td>
+                  </tr>
+                  <tr class="table-row-1">
+                    <td class="tableSideHeading tableSideHeading1">
+                      <div class="form-check securityChecked d-flex align-items-center">
+                        <input class="form-check-input mt-0" type="checkbox" value="" id="flexCheckDefault" checked="">
+                      </div> 
+                    </td>
+                     <td class="p-4 input-data">
+                      <p class="mb-0">loremipsium@gmail.Com</p>
+                      <p class="mb-0">Name: <span>lorem Ipsum</span></p>
+                      <p class="mb-0">Gender: <span>Male</span></p>
+                      <p class="mb-0">Location: Bangalore</p>
+                    </td>
+                    <td class="p-4 input-data">0419</td>
+                    <td class="p-4 input-data">Probability</td>
+                    <td class="p-4 input-data">
+                      <select class="form-select allowFrequency" aria-label="Default select example">
+                        <option selected>5</option>
+                        <option value="1">5</option>
+                        <option value="2">10</option>
+                        <option value="3">15</option>
+                      </select>
+                    </td>
+                    <td class="p-4 input-data">
+                      2022-12-05 <span>15:15</span>
+                    </td>
+                    <td class="p-4 input-data">
+                      2022-12-05 <span>15:15</span>
+                    </td>
+                    <td class="p-4 input-data">
+                      <a href="#" class="text-decoration-underline text-inherit">View</a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+           
+
+            </div>
+                  </div>
+
+                   <!-- pagination -->
+                <div class="testCaseCards">
+                  <div class="pagignationDiv1 d-flex justify-content-between align-items-center mt-5">
+                    <div class="selectTag gap-4 d-flex justify-content-between align-items-center">
+                      <div class="position-relative">
+                        <p class="mb-0 pe-3">Showing <span>1-5</span> of <span>120</span> </p>
+                        <div class="showPage"></div>
+                      </div>
+                      <div class="selectNumRow">
+                        <select name="cars" id="cars">
+                          <option value="volvo">5</option>
+                          <option value="saab">10</option>
+                          <option value="mercedes">15</option>
+                          <option value="audi">20</option>
+                        </select>
+                      </div>
+                      <div>
+                        <p class="mb-0">records per page</p>
+                      </div>
+      
+                    </div>
+      
+                    <div class="paginationDiv">
+                      <ul class="pagination border-0 pagination-lg mb-0">
+                        <li class="page-item "><a class="page-link disable" href="#">Previous</a></li>
+                        <li class="page-item active"><a class="page-link text-white" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">4</a></li>
+                        <li class="page-item"><a class="page-link" href="#">5</a></li>
+                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <!-- end -->
+                </div>
+                <!-- end -->
+
+               
                 <!-- end -->
               </div>
             </div>
