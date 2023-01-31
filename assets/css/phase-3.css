@@ -2,6 +2,7 @@
     align-items: center;
     margin-top: 8px;
     height: 45px;
+    padding: 10px;
 }
 
 .sideMenu p{
@@ -2011,7 +2012,6 @@ opacity: 1;
     align-items: center;
 }
 .toast p{
-   
     font: normal normal 18px/1px Pop-normal;
     letter-spacing: 0px;
     color: #FFFFFF;
@@ -2188,6 +2188,10 @@ input{
     font-size: 16px;
 }
 
+.filterDiv {
+    flex-wrap: wrap;
+}
+
 /*  */
 
   /* resolution 1920 started */
@@ -2258,7 +2262,7 @@ input{
         width: 135px;
     }
     .selectDropdown .row .calendar-container .vscomp-toggle-button{
-        height: 50px;
+        height: 50px !important;
     }
     .vscomp-toggle-button .vscomp-value{
         font-size: 16px;
