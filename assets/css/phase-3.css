@@ -2192,6 +2192,83 @@ input{
     flex-wrap: wrap;
 }
 
+.dropChild{
+    display: none;
+    background-color: #fff;
+    padding: 10px;
+    position: absolute;
+    right: -270px;
+    width: 100%;
+    top: -4px;
+    box-shadow: 0px 1px 6px #00000014;
+    z-index: 9;
+  }
+  .dropChild2{
+    display: none;
+    background-color: #fff;
+    padding: 10px;
+    position: absolute;
+    right: -290px;
+    width: 100%;
+    top: -4px;
+    box-shadow: 0px 1px 6px #00000014;
+    z-index: 9;
+  }
+  .dropParent:hover .dropChild,.dropParent2:hover .dropChild2{
+    display: block;
+  }
+  .chevronIcon::after{
+    content: "";
+    position: absolute;
+    right: 15;
+    display: block;
+    background-image: url(../images/Question_Bank/Icon\ ionic-ios-arrow-back.svg);
+    width: 25px;
+    height: 9px;
+    background-size: 12px;
+    background-repeat: no-repeat;
+    transform: rotate(90deg);
+    top: 13px;
+    float: right;
+    margin-left: auto;
+    margin-top: 12px;
+  }
+  .childChevronIcon::after{
+    content: "";
+    position: absolute;
+    right: 0px;
+    display: block;
+    background-image: url(../images/Question_Bank/Icon\ ionic-ios-arrow-back.svg);
+    width: 25px;
+    height: 9px;
+    background-size: 12px;
+    background-repeat: no-repeat;
+    transform: rotate(90deg);
+    top:24px;
+  }
+  .dropChild.w-auto .sideMenu p{
+   margin-right: 20px;
+  }
+  .sideMenu.grey1{
+    border: 2px solid #e6e6e6;
+  }
+  .sideMenu.grey1:hover{
+    color:#20776E;
+    border: 2px solid transparent;
+  }
+  .sideMenu.grey1:hover p{
+    color:#20776E;
+  }
+  .dropChild .sideMenu.grey1 img.icon-align.icon2{
+    display: none;
+  }
+  .sideMenu.grey1:hover img.icon-align{ 
+    display: none;
+  }
+  .sideMenu.grey1:hover img.icon-align.icon2{ 
+    display: block;
+  }
+
 /*  */
 
   /* resolution 1920 started */
@@ -3577,7 +3654,31 @@ input{
 .input-container1 input{
     font-size: 16px;
 }
-  
+
+.dropChild {
+    display: none;
+    background-color: #fff;
+    padding: 10px;
+    position: absolute;
+    right: 0px;
+    width: 100%;
+    top: 46px;
+}
+.dropChild.w-auto .sideMenu p{
+    font-size: 12px;
+}
+.dropChild.w-auto .sideMenu img{
+    margin-right: 14px;
+}
+.childChevronIcon::after{
+    top: 26px;
+}
+.dropChild2{
+    right: -30px;
+    width: 100%;
+    top: -273px;
+
+}
 }
 
 
