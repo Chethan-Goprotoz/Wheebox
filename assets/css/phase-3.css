@@ -1707,13 +1707,12 @@ opacity: 1;
 
 .calendar-container.InputFile input[type="text"]::placeholder{
     text-align: left;
-    font: normal normal normal 14px/11px Pop-normal;
+    font: normal normal 14px/11px Pop-normal;
     letter-spacing: 0px;
     color: #010D0A;
     opacity: 0.3;
     padding-right: 10px;
     margin-left: 10px;
-
 }
 
 .calendar-container.InputFile .inputFileDiv::after{
@@ -2269,6 +2268,10 @@ input{
     display: block;
   }
 
+  .dateInputField .calendar::placeholder{
+    font: normal normal 14px/11px Pop-normal;
+}
+
 /*  */
 
   /* resolution 1920 started */
@@ -2312,6 +2315,7 @@ input{
     }
     .calendar-container.InputFile input[type="text"]::placeholder{
         font-size: 16px;
+        font-family: pop-normal;
     }
     .calendar-container.InputFile .inputFileDiv::after{
         top: 15px;
@@ -2321,6 +2325,10 @@ input{
     .dateInputField .fa-calendar{
         font-size: 18px;
         height: 18px;
+    }
+    .dateInputField .calendar::placeholder{
+        font: normal normal 14px/11px Pop-normal;
+        color: #010D0A;
     }
 
     .qusAnsAccordian .accordion-button:not(.collapsed)::before{
