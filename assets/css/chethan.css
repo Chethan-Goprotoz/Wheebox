@@ -84,7 +84,7 @@ outline: 0px;
 }
 .vscomp-toggle-button {
  
-    height: 33px !important;
+    height: 33px;
     font-size: 12px !important;
 }
 .vscomp-option-text {

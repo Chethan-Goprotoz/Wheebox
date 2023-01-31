@@ -18,7 +18,7 @@
   <!-- <link rel="stylesheet" href="assets/sass/app.css" rel="stylesheet" /> -->
   <link rel="stylesheet" href="assets/css/virtual-select.min.css">
   <link rel="stylesheet" href="assets/css/style.css" rel="stylesheet">
-  
+  <link rel="stylesheet" href="assets/css/candidate-popup.css" rel="stylesheet">
   
   <link rel="stylesheet" href="assets/css/phase-3.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
@@ -141,7 +141,7 @@
               </div>
               <div
                 class="filter-container filter-container-shadow w-auto ps-3 pe-3 d-lg-flex d-flex justify-content-center align-items-center col-sm-6 m-2"
-                data-bs-toggle="modal" data-bs-target="#exampleModal">
+                data-bs-toggle="modal" data-bs-target="#myModal">
                 <p><img src="./assets/images/chethan/icon2.svg" class="ms-2"
                   alt="" style="margin-right: 10px;">Evaluation Allotment</p>
                 </div> 
@@ -675,6 +675,366 @@
   <!-- container closed -->
   </section>
   <!--selection section end -->
+
+  <!-- evaluation allotment popup -->
+  <div class="selection-new " id="fullselector">
+    <div class="sidebar">
+  <!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+  
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Evaluation Allotment</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+  
+        <!-- Modal body -->
+        <div class="modal-body">
+            <div class="quesBankTabs">
+                <!-- Nav pills -->
+                <ul class="nav nav-pills nav-justified" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" data-bs-toggle="pill" href="#first_tab"><img
+                        src="./assets/images/chethan/icon2.svg" width="16" alt="" style="margin-right: 10px;">Assessor Allotment</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="pill" href="#second_tab"><img
+                        src="./assets/images/chethan/icon2.svg" width="16" alt="" style="margin-right: 10px;">Candidate Allotment<span
+                        class="d-none d-md-inline"></span></a>
+                  </li>
+                </ul>
+                <style>
+                    .tab-pane{
+                        background-color: #fff;
+                        /* padding-top: 30px; */
+                        padding-left: 25px;
+                        padding-right: 25px;
+                        padding-bottom: 30px;
+                    }
+                </style>
+                <!-- Tab panes -->
+                <div class="tab-content">
+                  <div id="first_tab" class="container tab-pane active"><br>
+                    <div class="selectDropdown p-5 bg-light1 p-4 p-md-5">
+                        <div class="row gx-5 gy-4">
+                          <div class="col-sm-4 col-md-6">
+                            <div class="calendar-container mt-0 passper">
+                              <p>Select Domain</p>
+                              <select id="SearchDropdown" name="native-select" placeholder="Select Subject Here"
+                                data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
+                                <option value="5">English</option>
+                                <option value="1">Hindi</option>
+                                <option value="2">Maths</option>
+                                <option value="3">Physics</option>
+                                <option value="4">Chemistry</option>
+                              </select>
+      
+                            </div>
+                          </div>
+                          <div class="col-sm-4 col-md-6">
+                            <div class="calendar-container mt-0 passper">
+                              <p>Select Test Name</p>
+                              <select id="SearchDropdown" name="native-select" placeholder="Select Topic Here"
+                                data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
+                                <option value="5">Grammer</option>
+                                <option value="1">Tense</option>
+                                <option value="2">Passage</option>
+                                <option value="3">Story</option>
+                                <option value="4">Poetry</option>
+                              </select>
+      
+                            </div>
+                          </div>
+                         
+                         
+                        
+                        </div>
+                        <div class="d-flex mt-5" style="justify-content: flex-end;">
+                            <button class="next-btn">Submit</button>
+                           </div>
+                      </div>
+                  </div>
+    
+    
+                  <div id="second_tab" class="container tab-pane fade"><br>
+                      <div class="selectDropdown p-5 bg-light1 p-4 p-md-5">
+                        <div class="row gx-5 gy-4">
+                          <div class="col-sm-6 col-md-6">
+                            <div class="calendar-container mt-0 passper">
+                              <p>Select Domain</p>
+                              <select id="SearchDropdown" name="native-select" placeholder="Select Subject Here"
+                                data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
+                                <option value="5">English</option>
+                                <option value="1">Hindi</option>
+                                <option value="2">Maths</option>
+                                <option value="3">Physics</option>
+                                <option value="4">Chemistry</option>
+                              </select>
+      
+                            </div>
+                          </div>
+                          <div class="col-sm-6 col-md-6">
+                            <div class="calendar-container mt-0 passper">
+                              <p>Select Test Name</p>
+                              <select id="SearchDropdown" name="native-select" placeholder="Select Topic Here"
+                                data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
+                                <option value="5">Grammer</option>
+                                <option value="1">Tense</option>
+                                <option value="2">Passage</option>
+                                <option value="3">Story</option>
+                                <option value="4">Poetry</option>
+                              </select>
+      
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row gx-5 gy-4 mt-3">
+                            <div class="col-sm-6 col-md-6">
+                              <div class="calendar-container mt-0 passper">
+                                <p>Input User Limit</p>
+                                <select id="SearchDropdown" name="native-select" placeholder="Select Subject Here"
+                                  data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
+                                  <option value="5">English</option>
+                                  <option value="1">Hindi</option>
+                                  <option value="2">Maths</option>
+                                  <option value="3">Physics</option>
+                                  <option value="4">Chemistry</option>
+                                </select>
+        
+                              </div>
+                            </div>
+                            <div class="col-sm-6 col-md-6">
+                                <div class="calendar-container mt-0 passper">
+                                    <label for="fname">Start Date & End Date</label>
+                                    <input type="text" name="datefilter" class="calendar" value="" placeholder="Start Date & End Date" />
+                                    <i class="fa-regular fa-calendar" style="font-size: 15px;position: absolute;
+                                    top: 48px;"></i>
+                                  </div>
+                            </div>
+                          </div>
+                          <div class="row gx-5 gy-4 mt-3">
+                            <div class="col-sm-6 col-md-6">
+                              <div class="calendar-container mt-0 passper">
+                                <p>Select Assessors</p>
+                                <select id="SearchDropdown" name="native-select" placeholder="Select Subject Here"
+                                  data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
+                                  <option value="5">English</option>
+                                  <option value="1">Hindi</option>
+                                  <option value="2">Maths</option>
+                                  <option value="3">Physics</option>
+                                  <option value="4">Chemistry</option>
+                                </select>
+        
+                              </div>
+                            </div>
+                     
+                          </div>
+                          <div class="d-flex mt-5" style="justify-content: flex-end;">
+                            <button class="next-btn" data-bs-toggle="modal" data-bs-target="#Candidate-allotment">Submit</button>
+                           </div>
+                      </div>         
+                  </div>
+    
+                </div>
+    
+              </div>
+        </div>
+        <div class="modal-footer">
+            
+          </div>
+  
+      </div>
+    </div>
+  </div>
+  
+ <!-- Modal -->
+
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- evaluation allotment popup -->
+
+
+
+  <!-- Candidate Allotment -->
+  <div class="modal" id="Candidate-allotment">
+    <div class="modal-dialog">
+      <div class="modal-content">
+  
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Candidate Allotment</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+  
+        <!-- Modal body -->
+        <div class="modal-body">
+                        <!--Table  -->
+                        <div style="overflow-x:auto;">
+                            <table class="fold-table table-responsive">
+                                <thead>
+                                  <tr>
+                                    <th width="5%">
+                                      <div class="form-check d-flex">
+                                        <input type="checkbox" class="form-check-input" id="anime" name="hobby" />
+                                        <label class="form-check-label" for="anime"></label>
+                                      </div>
+                                    </th>
+                                    <th style="color:#2C3652;font: normal normal medium 14px/21px Poppins;">Candidate Details</th>
+                                   
+                                  </tr>
+                                </thead>
+                                <tbody class="table-row">
+                                  <tr class="view">
+                                    <td>
+                                      <div class="form-check d-flex">
+                                        <input type="checkbox" class="form-check-input" id="anime" name="hobby" />
+                                        <label class="form-check-label" for="anime"></label>
+                                      </div>
+                                    </td>
+                                    <td style="color:#2C3652;font-size:18px;">
+                                      <div class="d-flex accdn-holder" style="justify-content: space-between;">
+                                        <div>
+                                            1. Question reference number - <b>1134031725</b>
+                                        </div>
+                                        <div>
+                                           <img src="./assets/images/chethan/noun-plus-1052486.svg" alt="" class="toggle_img" />
+                                        </div>
+                                    </div>
+                                    </td>
+                                  </tr>
+                                  <tr class="fold">
+                                    <td colspan="7">
+                                      <div class="fold-content">
+                                            <p>Subjective Questions Attempted -<b>04</b></p>
+                                            <p>Assessor ID -<b>assessor99@gmail.com</b></p>
+                                            <p>Candidate ID -<b>demo973@wheebox.com</b></p>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                                <tbody class="table-row">
+                                    <tr class="view">
+                                      <td>
+                                        <div class="form-check">
+                                          <input type="checkbox" class="form-check-input" id="anime" name="hobby" />
+                                          <label class="form-check-label" for="anime"></label>
+                                        </div>
+                                      </td>
+                                      <td style="color:#2C3652;font-size:18px">
+                                        <div class="d-flex accdn-holder" style="justify-content: space-between;">
+                                          <div>
+                                              1. Question reference number - <b>1134031725</b>
+                                          </div>
+                                          <div>
+                                             <img src="./assets/images/chethan/noun-plus-1052486.svg" alt="" class="toggle_img" />
+                                          </div>
+                                      </div>
+                                      </td>
+                                    </tr>
+                                    <tr class="fold">
+                                      <td colspan="7">
+                                        <div class="fold-content">
+                                              <p> <span style="width: 70%;">Subjective Questions Attempted -</span><b>04</b></p>
+                                              <p>  <span style="width: 70%;">Assessor ID -</span><b>assessor99@gmail.com</b></p>
+                                              <p>  <span style="width: 70%;">Candidate ID -</span><b>demo973@wheebox.com</b></p>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                  <tbody class="table-row">
+                                    <tr class="view">
+                                      <td>
+                                        <div class="form-check d-flex">
+                                          <input type="checkbox" class="form-check-input" id="anime" name="hobby" />
+                                          <label class="form-check-label" for="anime"></label>
+                                        </div>
+                                      </td>
+                                      <td style="color:#2C3652;font-size:18px">
+                                        <div class="d-flex accdn-holder" style="justify-content: space-between;">
+                                          <div>
+                                              1. Question reference number - <b>1134031725</b>
+                                          </div>
+                                          <div>
+                                             <img src="./assets/images/chethan/noun-plus-1052486.svg" alt="" class="toggle_img" />
+                                          </div>
+                                      </div>
+                                      </td>
+                                    </tr>
+                                    <tr class="fold">
+                                      <td colspan="7">
+                                        <div class="fold-content">
+                                              <p >Subjective Questions Attempted -<b>04</b></p>
+                                              <p>Assessor ID -<b>assessor99@gmail.com</b></p>
+                                              <p>Candidate ID -<b>demo973@wheebox.com</b></p>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                
+                                
+                              </table>
+                        </div>
+                        <!--Table  -->
+                        
+        </div>
+  
+        <!-- Modal footer -->
+        <div class="modal-footer" style="justify-content: space-between;align-items: flex-start;">
+
+                <div class="selectTag gap-4 d-flex justify-content-between align-items-center">
+                  <div class="position-relative">
+                    <p class="mb-0 pe-3">Showing <span>1-5</span> of <span>120</span> </p>
+                    <div class="showPage"></div>
+                  </div>
+                  <div class="selectNumRow">
+                    <select name="cars" id="cars">
+                      <option value="volvo">5</option>
+                      <option value="saab">10</option>
+                      <option value="mercedes">15</option>
+                      <option value="audi">20</option>
+                    </select>
+                  </div>
+                  <div>
+                    <p class="mb-0">records per page</p>
+                  </div>
+
+                </div>
+
+              <!-- Page -->
+              <div>
+                <nav aria-label="Page navigation example">
+                  <ul class="pagination">
+                    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                    <li class="page-item"><a class="page-link page-active" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                  </ul>
+                </nav>
+               
+              </div>
+              
+              <!-- PAge -->
+              <!-- </div> -->
+             
+        </div>
+        <div class="d-flex" style="justify-content: flex-end;margin-bottom:35px">
+        <button class="next-btn">Save</button>
+       </div>
+  
+      </div>
+    </div>
+  </div>
+  <!-- Candidate Allotment -->
+
+
+
   <style>
     .searchInput input{
       width: 100%;
@@ -686,6 +1046,9 @@
     border-radius: 4px;
     box-shadow: 0px 2px 12px #20776e29;
     padding-left: 10px;
+}
+.modal-footer{
+    border: 0px;
 }
 .calendar-container label{
     font-size: 14px;
