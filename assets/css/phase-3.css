@@ -1574,10 +1574,11 @@ opacity: 1;
 .dateInputField .calendar{
     width: 100%;
     height: 42px;
-    font-size: 14px;
+    font-size: 16px;
 }
 .dateInputField .calendar::placeholder{
     font-family: pop-normal;
+    font-size: 16px;
 
 }
 .dateInputField .fa-calendar{
@@ -1702,18 +1703,17 @@ opacity: 1;
     height: 42px;
     border: 1px solid #20776E;
     box-shadow: 0px 2px 12px #20776e29;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .calendar-container.InputFile input[type="text"]::placeholder{
     text-align: left;
-    font: normal normal normal 14px/11px Pop-normal;
+    font: normal normal 16px/11px Pop-normal;
     letter-spacing: 0px;
     color: #010D0A;
     opacity: 0.3;
     padding-right: 10px;
     margin-left: 10px;
-
 }
 
 .calendar-container.InputFile .inputFileDiv::after{
@@ -2048,7 +2048,6 @@ opacity: 1;
     opacity: 0.3;
     font-size: 15px;
     font-family: pop-normal;
-
 }
 
 #labellingModal .vscomp-toggle-button , #labellingModal .input-container1 input ,#labellingModal .calendar-container.InputFile input[type="text"],
@@ -2183,6 +2182,8 @@ input{
   .input-container1 input::placeholder{
         font-size: 16px;
         font-family: pop-normal;
+        opacity: 0.3;
+        color: #010D0A;
 }
 .input-container1 input{
     font-size: 16px;
@@ -2190,6 +2191,93 @@ input{
 
 .filterDiv {
     flex-wrap: wrap;
+}
+
+.dropChild{
+    display: none;
+    background-color: #fff;
+    padding: 10px;
+    position: absolute;
+    right: -270px;
+    width: 100%;
+    top: -4px;
+    box-shadow: 0px 1px 6px #00000014;
+    z-index: 9;
+  }
+  .dropChild2{
+    display: none;
+    background-color: #fff;
+    padding: 10px;
+    position: absolute;
+    right: -290px;
+    width: 100%;
+    top: -4px;
+    box-shadow: 0px 1px 6px #00000014;
+    z-index: 9;
+  }
+  .dropParent:hover .dropChild,.dropParent2:hover .dropChild2{
+    display: block;
+  }
+  .chevronIcon::after{
+    content: "";
+    position: absolute;
+    right: 15;
+    display: block;
+    background-image: url(../images/Question_Bank/Icon\ ionic-ios-arrow-back.svg);
+    width: 25px;
+    height: 9px;
+    background-size: 12px;
+    background-repeat: no-repeat;
+    transform: rotate(90deg);
+    top: 13px;
+    float: right;
+    margin-left: auto;
+    margin-top: 12px;
+  }
+  .childChevronIcon::after{
+    content: "";
+    position: absolute;
+    right: 0px;
+    display: block;
+    background-image: url(../images/Question_Bank/Icon\ ionic-ios-arrow-back.svg);
+    width: 25px;
+    height: 9px;
+    background-size: 12px;
+    background-repeat: no-repeat;
+    transform: rotate(90deg);
+    top:24px;
+  }
+  .dropChild.w-auto .sideMenu p{
+   margin-right: 20px;
+  }
+  .sideMenu.grey1{
+    border: 2px solid #e6e6e6;
+  }
+  .sideMenu.grey1:hover{
+    color:#20776E;
+    border: 2px solid transparent;
+  }
+  .sideMenu.grey1:hover p{
+    color:#20776E;
+  }
+  .dropChild .sideMenu.grey1 img.icon-align.icon2{
+    display: none;
+  }
+  .sideMenu.grey1:hover img.icon-align{ 
+    display: none;
+  }
+  .sideMenu.grey1:hover img.icon-align.icon2{ 
+    display: block;
+  }
+
+  .dateInputField .calendar::placeholder{
+    font: normal normal 16px/11px Pop-normal;
+    color: #010D0A;
+    opacity: 0.3;
+    
+}
+.calendar-container.InputFile input[type="file"]{
+    font-size: 16px;
 }
 
 /*  */
@@ -2235,6 +2323,7 @@ input{
     }
     .calendar-container.InputFile input[type="text"]::placeholder{
         font-size: 16px;
+        font-family: pop-normal;
     }
     .calendar-container.InputFile .inputFileDiv::after{
         top: 15px;
@@ -2244,6 +2333,11 @@ input{
     .dateInputField .fa-calendar{
         font-size: 18px;
         height: 18px;
+    }
+    .dateInputField .calendar::placeholder{
+        font: normal normal 16px/11px Pop-normal;
+        color: #010D0A;
+        opacity: 0.3;
     }
 
     .qusAnsAccordian .accordion-button:not(.collapsed)::before{
@@ -2828,6 +2922,8 @@ input{
     }
     .calendar-container.input-container1 input::placeholder{
         font-size: 16px;
+        opacity: 0.3;
+        color: #010D0A;
     }
     .rowAssignTest .input-container1 input, .rowAssignTest .vscomp-toggle-button{
         font-size: 16px;
@@ -3100,8 +3196,8 @@ input{
     .side1{
         background-color: #FFFFFF;
         padding-top: 55px;
-        padding-left: 70px;
-        padding-right: 70px;
+        padding-left: 55px;
+        padding-right: 40px;
     }
     .side1.sidebar-active {
         left: -16px;
@@ -3573,11 +3669,36 @@ input{
     .input-container1 input::placeholder{
         font-size: 16px;
         font-family: pop-normal;
+        opacity: 0.3;
 }
 .input-container1 input{
     font-size: 16px;
 }
-  
+
+.dropChild {
+    display: none;
+    background-color: #fff;
+    padding: 10px;
+    position: absolute;
+    right: 0px;
+    width: 100%;
+    top: 46px;
+}
+.dropChild.w-auto .sideMenu p{
+    font-size: 12px;
+}
+.dropChild.w-auto .sideMenu img{
+    margin-right: 14px;
+}
+.childChevronIcon::after{
+    top: 26px;
+}
+.dropChild2{
+    right: -30px;
+    width: 100%;
+    top: -273px;
+
+}
 }
 
 
