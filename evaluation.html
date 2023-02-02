@@ -1,266 +1,250 @@
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Evaluation</title>
+    <!-- font awesome css -->
+    <link rel="stylesheet" href="assets/font-awesome/all.min.css" />
+    <link rel="stylesheet" href="assets/font-awesome/fontawesome.css" />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="assets/images/logo_logo.png" sizes="16x16" type="image/x-icon">
+    <!-- loader css -->
+    <link rel="stylesheet" href="assets/css/loader.css">
+    <!-- style css -->
+    <!-- <link rel="stylesheet" href="assets/css/chethan.css"> -->
+    <link rel="stylesheet" href="assets/css/virtual-select.min.css">
+    <link rel="stylesheet" href="assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/phase-3.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Evaluation</title>
-  <!-- font awesome css -->
-  <link rel="stylesheet" href="assets/font-awesome/all.min.css" />
-  <link rel="stylesheet" href="assets/font-awesome/fontawesome.css" />
-  <!-- bootstrap css -->
-  <link rel="stylesheet" href="assets/css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="shortcut icon" href="assets/images/logo_logo.png" sizes="16x16" type="image/x-icon">
-  <!-- loader css -->
-  <link rel="stylesheet" href="assets/css/loader.css">
-  <!-- style css -->
-  <link rel="stylesheet" href="assets/css/chethan.css">
-  <!-- <link rel="stylesheet" href="assets/sass/app.css" rel="stylesheet" /> -->
-  <link rel="stylesheet" href="assets/css/virtual-select.min.css">
-  <link rel="stylesheet" href="assets/css/style.css" rel="stylesheet">
-  
-  
-  <link rel="stylesheet" href="assets/css/phase-3.css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
-
-<!-- <link rel="stylesheet" href="assets/css/chethan.css"> -->
-</head>
-
-<body>
-  <!-- loader start-->
-  <div class="loader-container">
-    <div class="loader"></div>
-  </div>
-  <!-- loader end-->
-  <!--selection section start -->
-  <div class="selection-new " id="fullselector">
-    <div class="container-fluid">
-      <div class="main_div">
-        <div class="row">
-          <div class="main_header mb-1">
-            <div class="d-flex justify-content-between navpart1">
-              <div class="logo new-logopart">
-                <img src="assets/images/logo_logo.png" alt="mini-logo">
+  </head>
+  <body>
+    <!-- loader start-->
+    <div class="loader-container">
+      <div class="loader"></div>
+    </div>
+    <!-- loader end-->
+    <!--selection section start -->
+    <div class="selection-new " id="fullselector">
+      <div class="container-fluid">
+        <div class="main_div">
+          <div class="row">
+            <div class="main_header mb-1">
+              <div class="d-flex justify-content-between navpart1">
+                <div class="logo new-logopart">
+                  <img src="assets/images/logo_logo.png" alt="mini-logo">
+                </div>
               </div>
-            </div>
-            <div class="d-flex align-items-center gap-5">
-              <div class="d-flex gap-4">
-
-                <!-- <div>
-                  <a href="#">
-                    <div class="home-search">
-                      <img class="nav-arrows-1" src="assets/images/home-hover.svg" alt="">
+              <div class="d-flex align-items-center gap-5">
+                <div class="d-flex gap-4">
+                  <!-- <div><a href="#"><div class="home-search"><img class="nav-arrows-1" src="assets/images/home-hover.svg" alt=""></div></a></div> -->
+                </div>
+                <div class="grid-new" id="profile-out">
+                  <div class="grid1-new" onclick="profile()">
+                    <div class="profile rounded-circle">
+                      <img src="assets/images/prof-mini.png" alt="profile">
                     </div>
-                  </a>
-                </div> -->
-              </div>
-              <div class="grid-new" id="profile-out">
-                <div class="grid1-new" onclick="profile()">
-                  <div class="profile rounded-circle">
-                    <img src="assets/images/prof-mini.png" alt="profile">
+                  </div>
+                  <div class="grid2-new d-none d-md-block" onclick="profile()">
+                    <h6>Jane Doe</h6>
+                    <p>jane_doe@wheebox.com</p>
+                  </div>
+                  <div class="profileDropdown" id="profileDropdown">
+                    <ul>
+                      <li>Admin Profile</li>
+                      <li>Change Password</li>
+                      <li>Help Center</li>
+                      <li>Log Out</li>
+                    </ul>
                   </div>
                 </div>
-                <div class="grid2-new d-none d-md-block" onclick="profile()">
-                  <h6>Jane Doe</h6>
-                  <p>jane_doe@wheebox.com</p>
-                </div>
-                <div class="profileDropdown" id="profileDropdown">
-                  <ul>
-                    <li>Admin Profile</li>
-                    <li>Change Password</li>
-                    <li>Help Center</li>
-                    <li>Log Out</li>
-                  </ul>
-                </div>
               </div>
             </div>
           </div>
+          <!-- row closed -->
         </div>
-        <!-- row closed -->
+        <div class="d-flex mobileMenu justify-content-lg-end justify-content-between d-md-none mt-3"></div>
       </div>
-      <div class="d-flex mobileMenu justify-content-lg-end justify-content-between d-md-none mt-3">
-
-       
-      </div>
-    </div>
-    <div class="sidebar">
-      <div class="d-flex">
-        <div class="side1" id="sidebar-menu">
-          <img src="./assets/images/Question_Bank/croxMenu.png" onclick="sidemenu()" id="menu-icon d-md-none"
-            class="openMenuIcon fas fa-solid icon-w fa-bars d-block d-lg-none ms-0" aria-hidden="true">
-          <a href="#">
-            <div class="d-flex sideMenu mt-5"> <img class="icon-align"
-                src="assets/images/Question_Bank/noun-dashboard-4527077.svg" alt="">
-              <p>Dashboard</p>
-            </div>
-          </a> <a href="#">
-            <div class="d-flex sideMenu "> <img class="icon-align"
-                src="assets/images/Question_Bank/noun-question.svg" alt="">
-              <p>Question Bank</p>
-            </div>
-          </a> <a href="#">
-            <div class="d-flex sideMenu"> <img class="icon-align"
-                src="assets/images/Question_Bank/noun-setting-2193905.svg" alt="">
-              <p>Test Management</p>
-            </div>
-          </a> <a href="#">
-            <div class="d-flex sideMenu active-one"> <img class="icon-align"
-                src="assets/images/Question_Bank/noun-survey-3881626.svg" alt="">
-              <p>Evaluation</p>
-            </div>
-          </a>
-          <a href="#">
-            <div class="d-flex sideMenu"> <img class="icon-align"
-                src="assets/images/Question_Bank/noun-clipboard-4426919.svg" alt="">
-              <p>Roaster Managment</p>
-            </div>
-          </a>
-          <a href="#">
-            <div class="d-flex sideMenu"> <img class="icon-align"
-                src="assets/images/Question_Bank/noun-administration-99475.svg" alt="">
-              <p>Admin Control</p>
-            </div>
-          </a>
-          <a href="#">
-            <div class="d-flex sideMenu"> <img class="icon-align"
-                src="assets/images/Question_Bank/noun-headphone-5272179.svg" alt="">
-              <p>Tech Support</p>
-            </div>
-          </a>
-        </div>
-        <div class="inside-container-dashboard">
-          <div class="d-flex flexWrap justify-content-between align-items-center mb-5 mt-4">
-            <h3 class="mb-0">Evaluation</h3>
-            <div class="d-flex gap-4 Mb-center">
-             <div class="row">
-              <div
-                class="filter-container filter-container-shadow d-lg-flex d-flex justify-content-center align-items-center col-sm-6 m-2"
-                data-bs-target="#exampleModalToggle" data-bs-toggle="modal"><a href="./subjectevaluation.html">
-                  <p><img src="./assets/images/chethan/icon1.svg" class="ms-2" alt="" style="margin-right: 10px;">Subjective Evaluation</p>
-                </a>
+      <div class="sidebar">
+        <div class="d-flex">
+          <div class="side1" id="sidebar-menu">
+            <img src="./assets/images/Question_Bank/croxMenu.png" onclick="sidemenu()" id="menu-icon d-md-none" class="openMenuIcon fas fa-solid icon-w fa-bars d-block d-lg-none ms-0" aria-hidden="true">
+            <a href="#">
+              <div class="d-flex sideMenu mt-5">
+                <img class="icon-align" src="assets/images/Question_Bank/noun-dashboard-4527077.svg" alt="">
+                <p>Dashboard</p>
               </div>
-              <div
-                class="filter-container filter-container-shadow w-auto ps-3 pe-3 d-lg-flex d-flex justify-content-center align-items-center col-sm-6 m-2"
-                data-bs-toggle="modal" data-bs-target="#exampleModal">
-                <p><img src="./assets/images/chethan/icon2.svg" class="ms-2"
-                  alt="" style="margin-right: 10px;">Evaluation Allotment</p>
-                </div> 
+            </a>
+            <a href="#">
+              <div class="d-flex sideMenu ">
+                <img class="icon-align" src="assets/images/Question_Bank/noun-question.svg" alt="">
+                <p>Question Bank</p>
               </div>
-               
-            </div>
+            </a>
+            <a href="#">
+              <div class="d-flex sideMenu">
+                <img class="icon-align" src="assets/images/Question_Bank/noun-setting-2193905.svg" alt="">
+                <p>Test Management</p>
+              </div>
+            </a>
+            <a href="#">
+              <div class="d-flex sideMenu active-one">
+                <img class="icon-align" src="assets/images/Question_Bank/noun-survey-3881626.svg" alt="">
+                <p>Evaluation</p>
+              </div>
+            </a>
+            <a href="#">
+              <div class="d-flex sideMenu">
+                <img class="icon-align" src="assets/images/Question_Bank/noun-clipboard-4426919.svg" alt="">
+                <p>Roaster Managment</p>
+              </div>
+            </a>
+            <a href="#">
+              <div class="d-flex sideMenu">
+                <img class="icon-align" src="assets/images/Question_Bank/noun-administration-99475.svg" alt="">
+                <p>Admin Control</p>
+              </div>
+            </a>
+            <a href="#">
+              <div class="d-flex sideMenu">
+                <img class="icon-align" src="assets/images/Question_Bank/noun-headphone-5272179.svg" alt="">
+                <p>Tech Support</p>
+              </div>
+            </a>
           </div>
-          <!-- Modal start -->
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
-                    <!-- Modal end -->
-                          <!-- Main Box -->
-                          <div class="selectDropdown p-5 bg-light1 p-4 p-md-5">
-                            <div class="row gx-5 gy-4">
-                              <div class="col-sm-4 col-md-4">
-                                <div class="calendar-container mt-0 passper">
-                                  <p>Select Domain</p>
-                                  <select id="SearchDropdown" name="native-select" placeholder="Select Subject Here"
-                                    data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
-                                    <option value="5">English</option>
-                                    <option value="1">Hindi</option>
-                                    <option value="2">Maths</option>
-                                    <option value="3">Physics</option>
-                                    <option value="4">Chemistry</option>
-                                  </select>
-          
-                                </div>
-                              </div>
-                              <div class="col-sm-4 col-md-4">
-                                <div class="calendar-container mt-0 passper">
-                                  <p>Select Test Name</p>
-                                  <select id="SearchDropdown" name="native-select" placeholder="Select Topic Here"
-                                    data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
-                                    <option value="5">Grammer</option>
-                                    <option value="1">Tense</option>
-                                    <option value="2">Passage</option>
-                                    <option value="3">Story</option>
-                                    <option value="4">Poetry</option>
-                                  </select>
-          
-                                </div>
-                              </div>
-                              <div class="col-sm-4 col-md-4">
-                                <div class="calendar-container mt-0 passper">
-                                  <label for="fname">Start Date & End Date</label>
-                                  <input type="text" name="datefilter" class="calendar" value="" placeholder="Start Date & End Date" />
-                                  <i class="fa-regular fa-calendar" style="font-size: 15px;position: absolute;
+          <div class="inside-container-dashboard">
+            <div class="d-flex flexWrap justify-content-between align-items-center mb-5 mt-4">
+              <h3 class="mb-0">Evaluation</h3>
+              <div class="d-flex gap-4 Mb-center">
+                <div class="row">
+                  <div class="filter-container filter-container-shadow d-lg-flex d-flex justify-content-center align-items-center col-sm-6 m-2" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">
+                    <a href="./subjectevaluation.html">
+                      <p>
+                        <img src="./assets/images/chethan/icon1.svg" class="ms-2" alt="" style="margin-right: 10px;">Subjective Evaluation
+                      </p>
+                    </a>
+                  </div>
+                  <div class="filter-container filter-container-shadow w-auto ps-3 pe-3 d-lg-flex d-flex justify-content-center align-items-center col-sm-6 m-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <p>
+                      <img src="./assets/images/chethan/icon2.svg" class="ms-2" alt="" style="margin-right: 10px;">Evaluation Allotment
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Modal start -->
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body"> ... </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Modal end -->
+            <!-- Main Box -->
+            <div class="selectDropdown p-5 bg-light1 p-4 p-md-5">
+              <div class="row gx-5 gy-4">
+                <div class="col-sm-4 col-md-4">
+                  <div class="calendar-container mt-0 passper">
+                    <p>Select Domain</p>
+                    <select id="SearchDropdown" name="native-select" placeholder="Select Subject Here" data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
+                      <option value="5">English</option>
+                      <option value="1">Hindi</option>
+                      <option value="2">Maths</option>
+                      <option value="3">Physics</option>
+                      <option value="4">Chemistry</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-sm-4 col-md-4">
+                  <div class="calendar-container mt-0 passper">
+                    <p>Select Test Name</p>
+                    <select id="SearchDropdown" name="native-select" placeholder="Select Topic Here" data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
+                      <option value="5">Grammer</option>
+                      <option value="1">Tense</option>
+                      <option value="2">Passage</option>
+                      <option value="3">Story</option>
+                      <option value="4">Poetry</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-sm-4 col-md-4">
+                  <div class="calendar-container mt-0 passper">
+                    <label for="fname">Start Date & End Date</label>
+                    <input type="text" name="datefilter" class="calendar" value="" placeholder="Start Date & End Date" />
+                    <i class="fa-regular fa-calendar" style="font-size: 15px;position: absolute;
                                   top: 48px;"></i>
-                                </div>
-                              </div>
-                             
-                             
-                            
-                            </div>
-                           <div class="d-flex mt-5" style="justify-content: flex-end;">
-                            <button class="next-btn">Submit</button>
-                           </div>
-                          </div>
-                          <!-- Close Main Box -->
-          <!-- tabs container -->
-          <div class="quesBankTabs">
-            <!-- Nav pills -->
-            <ul class="nav nav-pills nav-justified" role="tablist">
-              <li class="nav-item">
-                <a class="nav-link active" data-bs-toggle="pill" href="#GeneralQuestion">
-                  <img src="./assets/images/chethan/Group 66993.svg" width="16" alt="" style="margin-right: 10px;">Overall Evaluator Wise Reports
-                  </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="pill" href="#Programming">
-                    <img src="./assets/images/chethan/Group 66992.svg" width="16" alt="" style="margin-right: 10px;" class="grey-hide">Test Taker VS Assigned Reprts<span
-                    class="d-none d-md-inline"></span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="pill" href="#Reporting"><img
-                    src="./assets/images/chethan/Group 66992.svg" width="16" alt="" style="margin-right: 10px;">Student Question wise Reports<span
-                    class="d-none d-md-inline"></span></a>
-              </li>
-            </ul>
-            <style>
-                .tab-pane{
-                    background-color: #fff0;
-
-                    margin-top: 30px;
-                    padding-left: 25px;
-                    padding-right: 25px;
-                }
-            </style>
-            <!-- Tab panes -->
-            <div class="tab-content">
-              <div id="GeneralQuestion" class="container tab-pane active"><br>
-                 <!-- search component -->
-            <div class="searchInput mt-4 d-flex justify-content-between align-items-center mb-4 mb-md-5">
-                <div class="searchAfter position-relative">
-                  <input type="text" class="form-control" placeholder="Search...">
-                </div>
-                <div class="filter-container filter-container-shadow w-auto ps-3 pe-3 d-lg-flex d-flex justify-content-center align-items-center d-none d-md-flex" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                  <p>Download <img src="./assets/images/chethan/download.svg" class="ms-2" width="16" alt=""></p>
+                  </div>
                 </div>
               </div>
-              <!-- end -->
+              <div class="d-flex mt-5" style="justify-content: flex-end;">
+                <button class="next-btn">Submit</button>
+              </div>
+            </div>
+            <!-- Close Main Box -->
+            <!-- tabs container -->
+            <div class="quesBankTabs">
+              <!-- Nav pills -->
+              <div class="pill-div">
+                <ul class="nav nav-pills nav-justified" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" data-bs-toggle="pill" href="#GeneralQuestion">
+                      <img src="./assets/images/chethan/Group 66992.svg" width="16" alt="" style="margin-right: 10px;">Overall Evaluator Wise Reports </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="pill" href="#Programming">
+                      <img src="./assets/images/chethan/Group 66992.svg" width="16" alt="" style="margin-right: 10px;" class="grey-hide">Test Taker VS Assigned Reprts <span class="d-none d-md-inline"></span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="pill" href="#Reporting">
+                      <img src="./assets/images/chethan/Group 66992.svg" width="16" alt="" style="margin-right: 10px;">Student Question wise Reports <span class="d-none d-md-inline"></span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <style>
+                .active img{
+                  content: url("./assets/images/chethan/Group 66993.svg");
+                }
+                .nav-link:hover img{
+                  content: url("./assets/images/chethan/Group 66993.svg");
+                }
+                .tab-pane {
+                  background-color: #fff0;
+                  margin-top: 30px;
+                  padding-left: 25px;
+                  padding-right: 25px;
+                }
+              </style>
+              <!-- Tab panes -->
+              <div class="tab-content">
+                <div id="GeneralQuestion" class="container tab-pane active">
+                  <br>
+                  <!-- search component -->
+                  <div class="searchInput mt-4 d-flex justify-content-between align-items-center mb-4 mb-md-5">
+                    <div class="searchAfter position-relative">
+                      <input type="text" class="form-control" placeholder="Search...">
+                    </div>
+                    <div class="filter-container filter-container-shadow w-auto ps-3 pe-3 d-lg-flex d-flex justify-content-center align-items-center d-none d-md-flex" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      <p>Download <img src="./assets/images/chethan/download.svg" class="ms-2" width="16" alt="">
+                      </p>
+                    </div>
+                  </div>
+                  <!-- end -->
                   <!-- table -->
                   <div class="table-responsive table-div">
                     <table class="table mytable">
@@ -290,353 +274,348 @@
                           <td>01</td>
                         </tr>
                         <tr>
-                            <td>Lorem Ipsium</td>
-                            <td>Lorem Ipsium</td>
-                            <td>Lorem Ipsium</td>
-                            <td>6 June 2022</td>
-                            <td>15</td>
-                            <td>Lorem Ipsium</td>
-                            <td>Lorem Ipsium</td>
-                            <td>Lorem Ipsium</td>
-                            <td>01</td>
-                          </tr>
-                          <tr>
-                            <td>Lorem Ipsium</td>
-                            <td>Lorem Ipsium</td>
-                            <td>Lorem Ipsium</td>
-                            <td>6 June 2022</td>
-                            <td>15</td>
-                            <td>Lorem Ipsium</td>
-                            <td>Lorem Ipsium</td>
-                            <td>Lorem Ipsium</td>
-                            <td>01</td>
-                          </tr>
-                          <tr>
-                            <td>Lorem Ipsium</td>
-                            <td>Lorem Ipsium</td>
-                            <td>Lorem Ipsium</td>
-                            <td>6 June 2022</td>
-                            <td>15</td>
-                            <td>Lorem Ipsium</td>
-                            <td>Lorem Ipsium</td>
-                            <td>Lorem Ipsium</td>
-                            <td>01</td>
-                          </tr>
-                          <tr>
-                            <td>Lorem Ipsium</td>
-                            <td>Lorem Ipsium</td>
-                            <td>Lorem Ipsium</td>
-                            <td>6 June 2022</td>
-                            <td>15</td>
-                            <td>Lorem Ipsium</td>
-                            <td>Lorem Ipsium</td>
-                            <td>Lorem Ipsium</td>
-                            <td>01</td>
-                          </tr>
-                          <tr>
-                            <td>Lorem Ipsium</td>
-                            <td>Lorem Ipsium</td>
-                            <td>Lorem Ipsium</td>
-                            <td>6 June 2022</td>
-                            <td>15</td>
-                            <td>Lorem Ipsium</td>
-                            <td>Lorem Ipsium</td>
-                            <td>Lorem Ipsium</td>
-                            <td>01</td>
-                          </tr>
-                          <tr>
-                            <td>Lorem Ipsium</td>
-                            <td>Lorem Ipsium</td>
-                            <td>Lorem Ipsium</td>
-                            <td>6 June 2022</td>
-                            <td>15</td>
-                            <td>Lorem Ipsium</td>
-                            <td>Lorem Ipsium</td>
-                            <td>Lorem Ipsium</td>
-                            <td>01</td>
-                          </tr>
-                          <tr>
-                            <td>Lorem Ipsium</td>
-                            <td>Lorem Ipsium</td>
-                            <td>Lorem Ipsium</td>
-                            <td>6 June 2022</td>
-                            <td>15</td>
-                            <td>Lorem Ipsium</td>
-                            <td>Lorem Ipsium</td>
-                            <td>Lorem Ipsium</td>
-                            <td>01</td>
-                          </tr>
-                          <tr>
-                            <td>Lorem Ipsium</td>
-                            <td>Lorem Ipsium</td>
-                            <td>Lorem Ipsium</td>
-                            <td>6 June 2022</td>
-                            <td>15</td>
-                            <td>Lorem Ipsium</td>
-                            <td>Lorem Ipsium</td>
-                            <td>Lorem Ipsium</td>
-                            <td>01</td>
-                          </tr>
+                          <td>Lorem Ipsium</td>
+                          <td>Lorem Ipsium</td>
+                          <td>Lorem Ipsium</td>
+                          <td>6 June 2022</td>
+                          <td>15</td>
+                          <td>Lorem Ipsium</td>
+                          <td>Lorem Ipsium</td>
+                          <td>Lorem Ipsium</td>
+                          <td>01</td>
+                        </tr>
+                        <tr>
+                          <td>Lorem Ipsium</td>
+                          <td>Lorem Ipsium</td>
+                          <td>Lorem Ipsium</td>
+                          <td>6 June 2022</td>
+                          <td>15</td>
+                          <td>Lorem Ipsium</td>
+                          <td>Lorem Ipsium</td>
+                          <td>Lorem Ipsium</td>
+                          <td>01</td>
+                        </tr>
+                        <tr>
+                          <td>Lorem Ipsium</td>
+                          <td>Lorem Ipsium</td>
+                          <td>Lorem Ipsium</td>
+                          <td>6 June 2022</td>
+                          <td>15</td>
+                          <td>Lorem Ipsium</td>
+                          <td>Lorem Ipsium</td>
+                          <td>Lorem Ipsium</td>
+                          <td>01</td>
+                        </tr>
+                        <tr>
+                          <td>Lorem Ipsium</td>
+                          <td>Lorem Ipsium</td>
+                          <td>Lorem Ipsium</td>
+                          <td>6 June 2022</td>
+                          <td>15</td>
+                          <td>Lorem Ipsium</td>
+                          <td>Lorem Ipsium</td>
+                          <td>Lorem Ipsium</td>
+                          <td>01</td>
+                        </tr>
+                        <tr>
+                          <td>Lorem Ipsium</td>
+                          <td>Lorem Ipsium</td>
+                          <td>Lorem Ipsium</td>
+                          <td>6 June 2022</td>
+                          <td>15</td>
+                          <td>Lorem Ipsium</td>
+                          <td>Lorem Ipsium</td>
+                          <td>Lorem Ipsium</td>
+                          <td>01</td>
+                        </tr>
+                        <tr>
+                          <td>Lorem Ipsium</td>
+                          <td>Lorem Ipsium</td>
+                          <td>Lorem Ipsium</td>
+                          <td>6 June 2022</td>
+                          <td>15</td>
+                          <td>Lorem Ipsium</td>
+                          <td>Lorem Ipsium</td>
+                          <td>Lorem Ipsium</td>
+                          <td>01</td>
+                        </tr>
+                        <tr>
+                          <td>Lorem Ipsium</td>
+                          <td>Lorem Ipsium</td>
+                          <td>Lorem Ipsium</td>
+                          <td>6 June 2022</td>
+                          <td>15</td>
+                          <td>Lorem Ipsium</td>
+                          <td>Lorem Ipsium</td>
+                          <td>Lorem Ipsium</td>
+                          <td>01</td>
+                        </tr>
+                        <tr>
+                          <td>Lorem Ipsium</td>
+                          <td>Lorem Ipsium</td>
+                          <td>Lorem Ipsium</td>
+                          <td>6 June 2022</td>
+                          <td>15</td>
+                          <td>Lorem Ipsium</td>
+                          <td>Lorem Ipsium</td>
+                          <td>Lorem Ipsium</td>
+                          <td>01</td>
+                        </tr>
                       </tbody>
                     </table>
                   </div>
                   <!-- table -->
+                </div>
+                <div id="Programming" class="container tab-pane fade">
+                  <br>
+                  <div class="searchInput mt-4 d-flex justify-content-between align-items-center mb-4 mb-md-5">
+                    <div class="searchAfter position-relative">
+                      <input type="text" class="form-control" placeholder="Search...">
+                    </div>
+                    <div class="filter-container filter-container-shadow w-auto ps-3 pe-3 d-lg-flex d-flex justify-content-center align-items-center d-none d-md-flex" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      <p>Download <img src="./assets/images/chethan/download.svg" class="ms-2" width="16" alt="">
+                      </p>
+                    </div>
+                  </div>
+                  <!-- table -->
+                  <div class="table-responsive table-div">
+                    <table class="table mytable">
+                      <thead class="">
+                        <tr>
+                          <th scope="col">Test ID</th>
+                          <th scope="col">Test Name</th>
+                          <th scope="col">Test Type</th>
+                          <th scope="col">Test Date</th>
+                          <th scope="col">Total Questions in Test</th>
+                          <th scope="col">Assessor Wheelbox ID</th>
+                          <th scope="col">Assessor Login ID</th>
+                          <th scope="col">Assessor Name</th>
+                          <th scope="col">Assessor Name</th>
+                        </tr>
+                      </thead>
+                      <tbody class="table-body">
+                        <tr>
+                          <td>Lorem Ipsium</td>
+                          <td>Lorem Ipsium</td>
+                          <td>Lorem Ipsium</td>
+                          <td>6 June 2022</td>
+                          <td>15</td>
+                          <td>Lorem Ipsium</td>
+                          <td>Lorem Ipsium</td>
+                          <td>Lorem Ipsium</td>
+                          <td>01</td>
+                        </tr>
+                        <tr>
+                          <td>Lorem Ipsium</td>
+                          <td>Lorem Ipsium</td>
+                          <td>Lorem Ipsium</td>
+                          <td>6 June 2022</td>
+                          <td>15</td>
+                          <td>Lorem Ipsium</td>
+                          <td>Lorem Ipsium</td>
+                          <td>Lorem Ipsium</td>
+                          <td>01</td>
+                        </tr>
+                        <tr>
+                          <td>Lorem Ipsium</td>
+                          <td>Lorem Ipsium</td>
+                          <td>Lorem Ipsium</td>
+                          <td>6 June 2022</td>
+                          <td>15</td>
+                          <td>Lorem Ipsium</td>
+                          <td>Lorem Ipsium</td>
+                          <td>Lorem Ipsium</td>
+                          <td>01</td>
+                        </tr>
+                        <tr>
+                          <td>Lorem Ipsium</td>
+                          <td>Lorem Ipsium</td>
+                          <td>Lorem Ipsium</td>
+                          <td>6 June 2022</td>
+                          <td>15</td>
+                          <td>Lorem Ipsium</td>
+                          <td>Lorem Ipsium</td>
+                          <td>Lorem Ipsium</td>
+                          <td>01</td>
+                        </tr>
+                        <tr>
+                          <td>Lorem Ipsium</td>
+                          <td>Lorem Ipsium</td>
+                          <td>Lorem Ipsium</td>
+                          <td>6 June 2022</td>
+                          <td>15</td>
+                          <td>Lorem Ipsium</td>
+                          <td>Lorem Ipsium</td>
+                          <td>Lorem Ipsium</td>
+                          <td>01</td>
+                        </tr>
+                        <tr>
+                          <td>Lorem Ipsium</td>
+                          <td>Lorem Ipsium</td>
+                          <td>Lorem Ipsium</td>
+                          <td>6 June 2022</td>
+                          <td>15</td>
+                          <td>Lorem Ipsium</td>
+                          <td>Lorem Ipsium</td>
+                          <td>Lorem Ipsium</td>
+                          <td>01</td>
+                        </tr>
+                        <tr>
+                          <td>Lorem Ipsium</td>
+                          <td>Lorem Ipsium</td>
+                          <td>Lorem Ipsium</td>
+                          <td>6 June 2022</td>
+                          <td>15</td>
+                          <td>Lorem Ipsium</td>
+                          <td>Lorem Ipsium</td>
+                          <td>Lorem Ipsium</td>
+                          <td>01</td>
+                        </tr>
+                        <tr>
+                          <td>Lorem Ipsium</td>
+                          <td>Lorem Ipsium</td>
+                          <td>Lorem Ipsium</td>
+                          <td>6 June 2022</td>
+                          <td>15</td>
+                          <td>Lorem Ipsium</td>
+                          <td>Lorem Ipsium</td>
+                          <td>Lorem Ipsium</td>
+                          <td>01</td>
+                        </tr>
+                        <tr>
+                          <td>Lorem Ipsium</td>
+                          <td>Lorem Ipsium</td>
+                          <td>Lorem Ipsium</td>
+                          <td>6 June 2022</td>
+                          <td>15</td>
+                          <td>Lorem Ipsium</td>
+                          <td>Lorem Ipsium</td>
+                          <td>Lorem Ipsium</td>
+                          <td>01</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <!-- table -->
+                </div>
+                <div id="Reporting" class="container tab-pane fade">
+                  <br>
+                  <div class="searchInput mt-4 d-flex justify-content-between align-items-center mb-4 mb-md-5">
+                    <div class="searchAfter position-relative">
+                      <input type="text" class="form-control" placeholder="Search...">
+                    </div>
+                    <div class="filter-container filter-container-shadow w-auto ps-3 pe-3 d-lg-flex d-flex justify-content-center align-items-center d-none d-md-flex" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      <p>Download <img src="./assets/images/chethan/download.svg" class="ms-2" width="16" alt="">
+                      </p>
+                    </div>
+                  </div>
+                  <!-- table -->
+                  <div class="table-responsive table-div">
+                    <table class="table mytable">
+                      <thead class="">
+                        <tr>
+                          <th scope="col">Course ID</th>
+                          <th scope="col">Course Name</th>
+                          <th scope="col">Course Type</th>
+                          <th scope="col">Question WBREF NO</th>
+                          <th scope="col">Maximum Marks</th>
+                          <th scope="col">Marks Obtained</th>
+                          <th scope="col">Status</th>
+                          <th scope="col">Total Questions</th>
+                        </tr>
+                      </thead>
+                      <tbody class="table-body">
+                        <tr>
+                          <td>Lorem Ipsium</td>
+                          <td>Lorem Ipsium</td>
+                          <td>Lorem Ipsium</td>
+                          <td>6 June 2022</td>
+                          <td>15</td>
+                          <td>Lorem Ipsium</td>
+                          <td>Lorem Ipsium</td>
+                          <td>01</td>
+                        </tr>
+                        <tr>
+                          <td>Lorem Ipsium</td>
+                          <td>Lorem Ipsium</td>
+                          <td>Lorem Ipsium</td>
+                          <td>6 June 2022</td>
+                          <td>15</td>
+                          <td>Lorem Ipsium</td>
+                          <td>Lorem Ipsium</td>
+                          <td>01</td>
+                        </tr>
+                        <tr>
+                          <td>Lorem Ipsium</td>
+                          <td>Lorem Ipsium</td>
+                          <td>Lorem Ipsium</td>
+                          <td>6 June 2022</td>
+                          <td>15</td>
+                          <td>Lorem Ipsium</td>
+                          <td>Lorem Ipsium</td>
+                          <td>01</td>
+                        </tr>
+                        <tr>
+                          <td>Lorem Ipsium</td>
+                          <td>Lorem Ipsium</td>
+                          <td>Lorem Ipsium</td>
+                          <td>6 June 2022</td>
+                          <td>15</td>
+                          <td>Lorem Ipsium</td>
+                          <td>Lorem Ipsium</td>
+                          <td>01</td>
+                        </tr>
+                        <tr>
+                          <td>Lorem Ipsium</td>
+                          <td>Lorem Ipsium</td>
+                          <td>Lorem Ipsium</td>
+                          <td>6 June 2022</td>
+                          <td>15</td>
+                          <td>Lorem Ipsium</td>
+                          <td>Lorem Ipsium</td>
+                          <td>01</td>
+                        </tr>
+                        <tr>
+                          <td>Lorem Ipsium</td>
+                          <td>Lorem Ipsium</td>
+                          <td>Lorem Ipsium</td>
+                          <td>6 June 2022</td>
+                          <td>15</td>
+                          <td>Lorem Ipsium</td>
+                          <td>Lorem Ipsium</td>
+                          <td>01</td>
+                        </tr>
+                        <tr>
+                          <td>Lorem Ipsium</td>
+                          <td>Lorem Ipsium</td>
+                          <td>Lorem Ipsium</td>
+                          <td>6 June 2022</td>
+                          <td>15</td>
+                          <td>Lorem Ipsium</td>
+                          <td>Lorem Ipsium</td>
+                          <td>01</td>
+                        </tr>
+                        <tr>
+                          <td>Lorem Ipsium</td>
+                          <td>Lorem Ipsium</td>
+                          <td>Lorem Ipsium</td>
+                          <td>6 June 2022</td>
+                          <td>15</td>
+                          <td>Lorem Ipsium</td>
+                          <td>Lorem Ipsium</td>
+                          <td>01</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <!-- table -->
+                </div>
               </div>
-              <div id="Programming" class="container tab-pane fade"><br>
-                <div class="searchInput mt-4 d-flex justify-content-between align-items-center mb-4 mb-md-5">
-                  <div class="searchAfter position-relative">
-                    <input type="text" class="form-control" placeholder="Search...">
-                  </div>
-                  <div class="filter-container filter-container-shadow w-auto ps-3 pe-3 d-lg-flex d-flex justify-content-center align-items-center d-none d-md-flex" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    <p>Download <img src="./assets/images/chethan/download.svg" class="ms-2" width="16" alt=""></p>
-                  </div>
-                </div>
-                                  <!-- table -->
-                                  <div class="table-responsive table-div">
-                                    <table class="table mytable">
-                                      <thead class="">
-                                        <tr>
-                                          <th scope="col">Test ID</th>
-                                          <th scope="col">Test Name</th>
-                                          <th scope="col">Test Type</th>
-                                          <th scope="col">Test Date</th>
-                                          <th scope="col">Total Questions in Test</th>
-                                          <th scope="col">Assessor Wheelbox ID</th>
-                                          <th scope="col">Assessor Login ID</th>
-                                          <th scope="col">Assessor Name</th>
-                                          <th scope="col">Assessor Name</th>
-                                        </tr>
-                                      </thead>
-                                      <tbody class="table-body">
-                                        <tr>
-                                          <td>Lorem Ipsium</td>
-                                          <td>Lorem Ipsium</td>
-                                          <td>Lorem Ipsium</td>
-                                          <td>6 June 2022</td>
-                                          <td>15</td>
-                                          <td>Lorem Ipsium</td>
-                                          <td>Lorem Ipsium</td>
-                                          <td>Lorem Ipsium</td>
-                                          <td>01</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Lorem Ipsium</td>
-                                            <td>Lorem Ipsium</td>
-                                            <td>Lorem Ipsium</td>
-                                            <td>6 June 2022</td>
-                                            <td>15</td>
-                                            <td>Lorem Ipsium</td>
-                                            <td>Lorem Ipsium</td>
-                                            <td>Lorem Ipsium</td>
-                                            <td>01</td>
-                                          </tr>
-                                          <tr>
-                                            <td>Lorem Ipsium</td>
-                                            <td>Lorem Ipsium</td>
-                                            <td>Lorem Ipsium</td>
-                                            <td>6 June 2022</td>
-                                            <td>15</td>
-                                            <td>Lorem Ipsium</td>
-                                            <td>Lorem Ipsium</td>
-                                            <td>Lorem Ipsium</td>
-                                            <td>01</td>
-                                          </tr>
-                                          <tr>
-                                            <td>Lorem Ipsium</td>
-                                            <td>Lorem Ipsium</td>
-                                            <td>Lorem Ipsium</td>
-                                            <td>6 June 2022</td>
-                                            <td>15</td>
-                                            <td>Lorem Ipsium</td>
-                                            <td>Lorem Ipsium</td>
-                                            <td>Lorem Ipsium</td>
-                                            <td>01</td>
-                                          </tr>
-                                          <tr>
-                                            <td>Lorem Ipsium</td>
-                                            <td>Lorem Ipsium</td>
-                                            <td>Lorem Ipsium</td>
-                                            <td>6 June 2022</td>
-                                            <td>15</td>
-                                            <td>Lorem Ipsium</td>
-                                            <td>Lorem Ipsium</td>
-                                            <td>Lorem Ipsium</td>
-                                            <td>01</td>
-                                          </tr>
-                                          <tr>
-                                            <td>Lorem Ipsium</td>
-                                            <td>Lorem Ipsium</td>
-                                            <td>Lorem Ipsium</td>
-                                            <td>6 June 2022</td>
-                                            <td>15</td>
-                                            <td>Lorem Ipsium</td>
-                                            <td>Lorem Ipsium</td>
-                                            <td>Lorem Ipsium</td>
-                                            <td>01</td>
-                                          </tr>
-                                          <tr>
-                                            <td>Lorem Ipsium</td>
-                                            <td>Lorem Ipsium</td>
-                                            <td>Lorem Ipsium</td>
-                                            <td>6 June 2022</td>
-                                            <td>15</td>
-                                            <td>Lorem Ipsium</td>
-                                            <td>Lorem Ipsium</td>
-                                            <td>Lorem Ipsium</td>
-                                            <td>01</td>
-                                          </tr>
-                                          <tr>
-                                            <td>Lorem Ipsium</td>
-                                            <td>Lorem Ipsium</td>
-                                            <td>Lorem Ipsium</td>
-                                            <td>6 June 2022</td>
-                                            <td>15</td>
-                                            <td>Lorem Ipsium</td>
-                                            <td>Lorem Ipsium</td>
-                                            <td>Lorem Ipsium</td>
-                                            <td>01</td>
-                                          </tr>
-                                          <tr>
-                                            <td>Lorem Ipsium</td>
-                                            <td>Lorem Ipsium</td>
-                                            <td>Lorem Ipsium</td>
-                                            <td>6 June 2022</td>
-                                            <td>15</td>
-                                            <td>Lorem Ipsium</td>
-                                            <td>Lorem Ipsium</td>
-                                            <td>Lorem Ipsium</td>
-                                            <td>01</td>
-                                          </tr>
-                                      </tbody>
-                                    </table>
-                                  </div>
-                                  <!-- table -->
-              </div>
-              <div id="Reporting" class="container tab-pane fade"><br>
-                <div class="searchInput mt-4 d-flex justify-content-between align-items-center mb-4 mb-md-5">
-                  <div class="searchAfter position-relative">
-                    <input type="text" class="form-control" placeholder="Search...">
-                  </div>
-                  <div class="filter-container filter-container-shadow w-auto ps-3 pe-3 d-lg-flex d-flex justify-content-center align-items-center d-none d-md-flex" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    <p>Download <img src="./assets/images/chethan/download.svg" class="ms-2" width="16" alt=""></p>
-                  </div>
-                </div>
-                <!-- table -->
-                <div class="table-responsive table-div">
-                  <table class="table mytable">
-                    <thead class="">
-                      <tr>
-                        <th scope="col">Course ID</th>
-                        <th scope="col">Course Name</th>
-                        <th scope="col">Course Type</th>
-                        <th scope="col">Question WBREF NO</th>
-                        <th scope="col">Maximum Marks</th>
-                        <th scope="col">Marks Obtained</th>
-                        <th scope="col">Status</th>
-                        <th scope="col">Total Questions</th>
-                      </tr>
-                    </thead>
-                    <tbody class="table-body">
-                      <tr>
-                        <td>Lorem Ipsium</td>
-                        <td>Lorem Ipsium</td>
-                        <td>Lorem Ipsium</td>
-                        <td>6 June 2022</td>
-                        <td>15</td>
-                        <td>Lorem Ipsium</td>
-                        
-                        <td>Lorem Ipsium</td>
-                        <td>01</td>
-                      </tr>
-                      <tr>
-                          <td>Lorem Ipsium</td>
-                          <td>Lorem Ipsium</td>
-                          <td>Lorem Ipsium</td>
-                          <td>6 June 2022</td>
-                          <td>15</td>
-                          
-                          <td>Lorem Ipsium</td>
-                          <td>Lorem Ipsium</td>
-                          <td>01</td>
-                        </tr>
-                 
-                        <tr>
-                          <td>Lorem Ipsium</td>
-                          <td>Lorem Ipsium</td>
-                          <td>Lorem Ipsium</td>
-                          <td>6 June 2022</td>
-                          <td>15</td>
-                          <td>Lorem Ipsium</td>
-                          
-                          <td>Lorem Ipsium</td>
-                          <td>01</td>
-                        </tr>
-                        <tr>
-                          <td>Lorem Ipsium</td>
-                          <td>Lorem Ipsium</td>
-                          <td>Lorem Ipsium</td>
-                          <td>6 June 2022</td>
-                          <td>15</td>
-                          <td>Lorem Ipsium</td>
-                          
-                          <td>Lorem Ipsium</td>
-                          <td>01</td>
-                        </tr>
-                        <tr>
-                          <td>Lorem Ipsium</td>
-                          <td>Lorem Ipsium</td>
-                          <td>Lorem Ipsium</td>
-                          <td>6 June 2022</td>
-                          <td>15</td>
-                          <td>Lorem Ipsium</td>
-                          
-                          <td>Lorem Ipsium</td>
-                          <td>01</td>
-                        </tr>
-                        <tr>
-                          <td>Lorem Ipsium</td>
-                          <td>Lorem Ipsium</td>
-                          <td>Lorem Ipsium</td>
-                          <td>6 June 2022</td>
-                          <td>15</td>
-                          <td>Lorem Ipsium</td>
-                          
-                          <td>Lorem Ipsium</td>
-                          <td>01</td>
-                        </tr>
-                        <tr>
-                          <td>Lorem Ipsium</td>
-                          <td>Lorem Ipsium</td>
-                          <td>Lorem Ipsium</td>
-                          <td>6 June 2022</td>
-                          <td>15</td>
-                          <td>Lorem Ipsium</td>
-                         
-                          <td>Lorem Ipsium</td>
-                          <td>01</td>
-                        </tr>
-                        <tr>
-                          <td>Lorem Ipsium</td>
-                          <td>Lorem Ipsium</td>
-                          <td>Lorem Ipsium</td>
-                          <td>6 June 2022</td>
-                          <td>15</td>
-                          <td>Lorem Ipsium</td>
-                          <td>Lorem Ipsium</td>
-                          
-                          <td>01</td>
-                        </tr>
-                    </tbody>
-                  </table>
-                </div>
-                <!-- table -->
-</div>
-            </div>
-            
-            <div class="pagignationDiv1 d-flex justify-content-between align-items-center mt-5" style="flex-wrap:wrap;gap:20px ;">
+              <div class="pagignationDiv1 d-flex justify-content-between align-items-center mt-5" style="flex-wrap:wrap;gap:20px ;">
                 <div class="selectTag gap-4 d-flex justify-content-between align-items-center">
                   <div class="position-relative">
-                    <p class="mb-0 pe-3">Showing <span>1-5</span> of <span>120</span> </p>
+                    <p class="mb-0 pe-3">Showing <span>1-5</span> of <span>120</span>
+                    </p>
                     <div class="showPage"></div>
                   </div>
                   <div class="selectNumRow">
@@ -650,169 +629,171 @@
                   <div>
                     <p class="mb-0">records per page</p>
                   </div>
-
                 </div>
-
                 <div class="paginationDiv">
                   <ul class="pagination border-0 pagination-lg mb-0">
-                    <li class="page-item "><a class="page-link disable" href="#">Previous</a></li>
-                    <li class="page-item active"><a class="page-link text-white" href="#">1</a></li>
-                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    <li class="page-item"><a class="page-link" href="#">4</a></li>
-                    <li class="page-item"><a class="page-link" href="#">5</a></li>
-                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                    <li class="page-item ">
+                      <a class="page-link disable" href="#">Previous</a>
+                    </li>
+                    <li class="page-item active">
+                      <a class="page-link text-white" href="#">1</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">2</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">3</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">4</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">5</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">Next</a>
+                    </li>
                   </ul>
                 </div>
               </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- main-div closed -->
-  </div>
-  <!-- container closed -->
-  </section>
-  <!--selection section end -->
-  <style>
-    .searchInput input{
-      width: 100%;
-    }
-    .calendar {
-    width: 100%;
-    height: 50px;
-    border: 1px solid #20776E;
-    border-radius: 4px;
-    box-shadow: 0px 2px 12px #20776e29;
-    padding-left: 10px;
-}
-.calendar-container label{
-    font-size: 14px;
-    color: #000;
-    margin-bottom: 10px;
-}
-    @media (min-width: 767px){
-      .Mb-center div.filter-container.filter-container-shadow {
-    width: 256px !important;
-    }
-    }
+    <!-- main-div closed -->
+    </div>
+    <!-- container closed -->
+    </section>
+    <!--selection section end -->
+    <style>
+      .searchInput input {
+        width: 100%;
+      }
 
-    @media (max-width: 767px){
-    .filter-container {
-    margin-right: 5px;
-    width: 90%;
-    margin: 10px;
-    }
-  .filter-container-shadow.w-auto {
-    width: 90% !important;
-  }
-}
-.selectDropdown .row .calendar-container .vscomp-toggle-button {
-    height: 50px !important;
-}
+      .calendar {
+        width: 100%;
+        height: 50px;
+        border: 1px solid #20776E;
+        border-radius: 4px;
+        box-shadow: 0px 2px 12px #20776e29;
+        padding-left: 10px;
+      }
 
-  </style>
+      .calendar-container label {
+        font-size: 14px;
+        color: #000;
+        margin-bottom: 10px;
+      }
 
-  <script src="https://kit.fontawesome.com/5817738a37.js" crossorigin="anonymous"></script>
-  <script src="assets/js/jquery-2.2.0.min.js"></script>
-  <script src="/assets/js/bootstrap.bundle.min.js"></script>
-  <script src="/assets/js/popper.min.js"></script>
-  <script src="assets/js/loader.js"></script>
-  <script src="assets/js/virual-select.min.js"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
-
-  <!-- Load plotly.js into the DOM -->
-  <!-- <script src='https://cdn.plot.ly/plotly-2.16.1.min.js'></script> -->
-
-
-
-  <script>
-    VirtualSelect.init({
-      ele: '#SearchDropdown'
-    });
-  </script>
-
-  <!-- <script>
-    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-      return new bootstrap.Tooltip(tooltipTriggerEl)
-    })
-  </script> -->
-
-  <script type="text/javascript">
-    $(function() {
-      $('input[name="datefilter"]').daterangepicker({
-        autoUpdateInput: false,
-        locale: {
-          cancelLabel: 'Clear'
+      @media (min-width: 767px) {
+        .Mb-center div.filter-container.filter-container-shadow {
+          width: 256px !important;
         }
-      });
-      $('input[name="datefilter"]').on('apply.daterangepicker', function(ev, picker) {
-        $(this).val(picker.startDate.format('MM/DD/YYYY') + ' - ' + picker.endDate.format('MM/DD/YYYY'));
-      });
-      $('input[name="datefilter"]').on('cancel.daterangepicker', function(ev, picker) {
-        $(this).val('');
-      });
-    });
-  </script>
-  <script>
-    function sidemenu() {
-      var sidebar = document.getElementById("sidebar-menu")
-      var icon = document.getElementById("menu-icon")
-      var selector = document.getElementById("fullselector")
-      selector.classList.toggle("mobile-menu-stopper")
-      sidebar.classList.toggle("sidebar-active")
-      icon.classList.toggle("icon-rotate")
-      icon.classList.toggle("fa-bars")
-      icon.classList.toggle("fa-xmark")
+      }
 
-    }
-  </script>
-
-
-
-
-  <script>
-    function profile() {
-      profileMenu = document.getElementById("profileDropdown")
-      profileMenu.classList.toggle("dropdownActive")
-      document.addEventListener('click', function profile(event) {
-        console.log("clicked")
-        const box4 = document.getElementById('profile-out');
-        if (!box4.contains(event.target)) {
-          profileMenu.classList.remove("dropdownActive")
+      @media (max-width: 767px) {
+        .filter-container {
+          margin-right: 5px;
+          width: 90%;
+          margin: 10px;
         }
+
+        .filter-container-shadow.w-auto {
+          width: 90% !important;
+        }
+      }
+
+      @media (max-width:500px) {
+        .pill-div{
+          overflow: scroll;
+        }
+        .nav-pills{
+          width: 200%;
+        }
+      }
+
+      .selectDropdown .row .calendar-container .vscomp-toggle-button {
+        height: 50px !important;
+      }
+    </style>
+    <script src="https://kit.fontawesome.com/5817738a37.js" crossorigin="anonymous"></script>
+    <script src="assets/js/jquery-2.2.0.min.js"></script>
+    <script src="/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/popper.min.js"></script>
+    <script src="assets/js/loader.js"></script>
+    <script src="assets/js/virual-select.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <script>
+      VirtualSelect.init({
+        ele: '#SearchDropdown'
       });
-    }
-  </script>
-
-
-  <!--  -->
-
-  <script>
-    var x, i, j, l, ll, selElmnt, a, b, c;
-    /*look for any elements with the class "custom-select":*/
-    x = document.getElementsByClassName("custom-select");
-    l = x.length;
-    for (i = 0; i < l; i++) {
-      selElmnt = x[i].getElementsByTagName("select")[0];
-      ll = selElmnt.length;
-      /*for each element, create a new DIV that will act as the selected item:*/
-      a = document.createElement("DIV");
-      a.setAttribute("class", "select-selected");
-      a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
-      x[i].appendChild(a);
-      /*for each element, create a new DIV that will contain the option list:*/
-      b = document.createElement("DIV");
-      b.setAttribute("class", "select-items select-hide");
-      for (j = 1; j < ll; j++) {
-        /*for each option in the original select element,
-        create a new DIV that will act as an option item:*/
-        c = document.createElement("DIV");
-        c.innerHTML = selElmnt.options[j].innerHTML;
-        c.addEventListener("click", function(e) {
+    </script>
+    <script type="text/javascript">
+      $(function() {
+        $('input[name="datefilter"]').daterangepicker({
+          autoUpdateInput: false,
+          locale: {
+            cancelLabel: 'Clear'
+          }
+        });
+        $('input[name="datefilter"]').on('apply.daterangepicker', function(ev, picker) {
+          $(this).val(picker.startDate.format('MM/DD/YYYY') + ' - ' + picker.endDate.format('MM/DD/YYYY'));
+        });
+        $('input[name="datefilter"]').on('cancel.daterangepicker', function(ev, picker) {
+          $(this).val('');
+        });
+      });
+    </script>
+    <script>
+      function sidemenu() {
+        var sidebar = document.getElementById("sidebar-menu")
+        var icon = document.getElementById("menu-icon")
+        var selector = document.getElementById("fullselector")
+        selector.classList.toggle("mobile-menu-stopper")
+        sidebar.classList.toggle("sidebar-active")
+        icon.classList.toggle("icon-rotate")
+        icon.classList.toggle("fa-bars")
+        icon.classList.toggle("fa-xmark")
+      }
+    </script>
+    <script>
+      function profile() {
+        profileMenu = document.getElementById("profileDropdown")
+        profileMenu.classList.toggle("dropdownActive")
+        document.addEventListener('click', function profile(event) {
+          console.log("clicked")
+          const box4 = document.getElementById('profile-out');
+          if (!box4.contains(event.target)) {
+            profileMenu.classList.remove("dropdownActive")
+          }
+        });
+      }
+    </script>
+    <!--  -->
+    <script>
+      var x, i, j, l, ll, selElmnt, a, b, c;
+      /*look for any elements with the class "custom-select":*/
+      x = document.getElementsByClassName("custom-select");
+      l = x.length;
+      for (i = 0; i < l; i++) {
+        selElmnt = x[i].getElementsByTagName("select")[0];
+        ll = selElmnt.length;
+        /*for each element, create a new DIV that will act as the selected item:*/
+        a = document.createElement("DIV");
+        a.setAttribute("class", "select-selected");
+        a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+        x[i].appendChild(a);
+        /*for each element, create a new DIV that will contain the option list:*/
+        b = document.createElement("DIV");
+        b.setAttribute("class", "select-items select-hide");
+        for (j = 1; j < ll; j++) {
+          /*for each option in the original select element,
+          create a new DIV that will act as an option item:*/
+          c = document.createElement("DIV");
+          c.innerHTML = selElmnt.options[j].innerHTML;
+          c.addEventListener("click", function(e) {
             /*when an item is clicked, update the original select box,
             and the selected item:*/
             var y, i, k, s, h, sl, yl;
@@ -833,11 +814,11 @@
               }
             }
             h.click();
-        });
-        b.appendChild(c);
-      }
-      x[i].appendChild(b);
-      a.addEventListener("click", function(e) {
+          });
+          b.appendChild(c);
+        }
+        x[i].appendChild(b);
+        a.addEventListener("click", function(e) {
           /*when the select box is clicked, close any other select boxes,
           and open/close the current select box:*/
           e.stopPropagation();
@@ -845,51 +826,30 @@
           this.nextSibling.classList.toggle("select-hide");
           this.classList.toggle("select-arrow-active");
         });
-    }
-    function closeAllSelect(elmnt) {
-      /*a function that will close all select boxes in the document,
-      except the current select box:*/
-      var x, y, i, xl, yl, arrNo = [];
-      x = document.getElementsByClassName("select-items");
-      y = document.getElementsByClassName("select-selected");
-      xl = x.length;
-      yl = y.length;
-      for (i = 0; i < yl; i++) {
-        if (elmnt == y[i]) {
-          arrNo.push(i)
-        } else {
-          y[i].classList.remove("select-arrow-active");
+      }
+
+      function closeAllSelect(elmnt) {
+        /*a function that will close all select boxes in the document,
+        except the current select box:*/
+        var x, y, i, xl, yl, arrNo = [];
+        x = document.getElementsByClassName("select-items");
+        y = document.getElementsByClassName("select-selected");
+        xl = x.length;
+        yl = y.length;
+        for (i = 0; i < yl; i++) {
+          if (elmnt == y[i]) {
+            arrNo.push(i)
+          } else {
+            y[i].classList.remove("select-arrow-active");
+          }
+        }
+        for (i = 0; i < xl; i++) {
+          if (arrNo.indexOf(i)) {
+            x[i].classList.add("select-hide");
+          }
         }
       }
-      for (i = 0; i < xl; i++) {
-        if (arrNo.indexOf(i)) {
-          x[i].classList.add("select-hide");
-        }
-      }
-    }
-    /*if the user clicks anywhere outside the select box,
-    then close all select boxes:*/
-    document.addEventListener("click", closeAllSelect);
+      document.addEventListener("click", closeAllSelect);
     </script>
-
-
-<!-- select option mcq -->
-<!-- <script>
-  document
-      .getElementById('target')
-      .addEventListener('change', function () {
-          'use strict';
-          var vis = document.querySelector('.vis'),   
-              target = document.getElementById(this.value);
-          if (vis !== null) {
-              vis.className = 'inv';
-          }
-          if (target !== null ) {
-              target.className = 'vis';
-          }
-  });
-</script> -->
-
-</body>
-
+  </body>
 </html>
