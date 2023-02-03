@@ -77,7 +77,7 @@ outline: 0px;
   .form-row .vscomp-toggle-button{
     font-size: 14px;
   }
-  .vscomp-value {
+  /* .vscomp-value {
     font-family: 'Pop-normal';
     color: #010D0A;
     font-size: 14px !important;
@@ -100,7 +100,7 @@ outline: 0px;
 }
 .vscomp-options-list{
     height: auto !important;
-}
+} */
 /* drag */
 .icons {
     font-size: 0;
