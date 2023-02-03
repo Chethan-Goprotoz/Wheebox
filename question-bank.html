@@ -382,15 +382,25 @@
                   <div class="row gx-5 gy-4">
                     <div class="col-sm-4 col-md-4">
                       <div class="calendar-container mt-0">
-                        <p>Select Subject</p>
+                        <p>Select Subject11</p>
                         <select id="SearchDropdown" name="native-select" placeholder="Select Subject Here"
-                          data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
+                          data-search="true" data-silent-initial-value-set="false" class="searchdropdown">
                           <option value="5">English</option>
                           <option value="1">Hindi</option>
                           <option value="2">Maths</option>
                           <option value="3">Physics</option>
                           <option value="4">Chemistry</option>
                         </select>
+
+                        <!-- <div id="sample-select" placeholder="Select country" data-search="true">
+                         
+                          <option value="5">English</option>
+                          <option value="1">Hindi</option>
+                          <option value="2">Maths</option>
+                          <option value="3">Physics</option>
+                          <option value="4">Chemistry</option>
+     
+                        </div> -->
 
                       </div>
                     </div>
@@ -2382,8 +2392,26 @@
 
   <script>
     VirtualSelect.init({
-      ele: '#SearchDropdown'
+      ele: '#SearchDropdown',
+      options: [
+    { label: 'Options 1', value: '1' },
+    { label: 'Options 2', value: '2' },
+    { label: 'Options 3', value: '3' },
+  ],
     });
+  </script>
+  <script>
+    VirtualSelect.init({
+  ele: '#sample-select',
+  search: true,
+  allowNewOption: true,
+  options: [
+    { label: 'Options 1', value: '1' },
+    { label: 'Options 2', value: '2' },
+    { label: 'Options 3', value: '3' },
+  ],
+});
+
   </script>
 
   <script>
