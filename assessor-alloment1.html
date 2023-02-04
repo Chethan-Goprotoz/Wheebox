@@ -84,7 +84,7 @@
                                                 Question Text
                                             </div>
                                             <div>
-                                              <p style="color: #20776E;text-decoration: underline;margin: 0px;font: normal normal normal 18px/27px Poppins;"><img src="./assets/images/chethan/noun_Plus_3248114.svg" class="ms-2" width="16" alt="" style="margin-right: 05px;margin-top: -2px;">Allot Assessor </p>
+                                              <p style="color: #20776E;text-decoration: underline;margin: 0px;font: normal normal normal 18px/27px Poppins;padding-right:20px;"><img src="./assets/images/chethan/noun_Plus_3248114.svg" class="ms-2" width="16" alt="" style="margin-right: 05px;margin-top: -2px;">Allot Assessor </p>
                                             </div>
                                         </div>
                                     </th>
@@ -188,45 +188,46 @@
         <!-- Modal footer -->
         <div class="modal-footer" style="justify-content: space-between;align-items: flex-start;">
 
-                <div class="selectTag gap-4 d-flex justify-content-between align-items-center">
-                  <div class="position-relative">
-                    <p class="mb-0 pe-3">Showing <span>1-5</span> of <span>120</span> </p>
-                    <div class="showPage"></div>
-                  </div>
-                  <div class="selectNumRow">
-                    <select name="cars" id="cars">
-                      <option value="volvo">5</option>
-                      <option value="saab">10</option>
-                      <option value="mercedes">15</option>
-                      <option value="audi">20</option>
-                    </select>
-                  </div>
-                  <div>
-                    <p class="mb-0">records per page</p>
-                  </div>
+          <div class="selectTag gap-4 d-flex justify-content-between align-items-center">
+            <div class="position-relative">
+              <p class="mb-0 pe-3">Showing <span>1-5</span> of <span>120</span> </p>
+              <div class="showPage"></div>
+            </div>
+            <div class="selectNumRow">
+              <select name="cars" id="cars">
+                <option value="volvo">5</option>
+                <option value="saab">10</option>
+                <option value="mercedes">15</option>
+                <option value="audi">20</option>
+              </select>
+            </div>
+            <div>
+              <p class="mb-0">records per page</p>
+            </div>
 
-                </div>
+          </div>
 
-              <!-- Page -->
-              <div>
-                <nav aria-label="Page navigation example">
-                  <ul class="pagination">
-                    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-                    <li class="page-item"><a class="page-link page-active" href="#">1</a></li>
-                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
-                  </ul>
-                </nav>
-                <div class="d-flex" style="justify-content: flex-end;margin-top:35px">
-                  <button class="next-btn">Save</button>
-                 </div>
-              </div>
-          
-              <!-- PAge -->
-              <!-- </div> -->
-             
+        <!-- Page -->
+        <div>
+          <nav aria-label="Page navigation example">
+            <ul class="pagination">
+              <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+              <li class="page-item"><a class="page-link page-active" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+          </nav>
+         
         </div>
+        
+        <!-- PAge -->
+        <!-- </div> -->
+       
+  </div>
+  <div class="d-flex" style="justify-content: flex-end;margin-bottom:35px">
+  <button class="next-btn">Save</button>
+ </div>
       
   
       </div>
@@ -465,6 +466,10 @@
 .modal-header{
     padding-bottom: 0px;
 }
+[data-tooltip]:hover::after, [data-tooltip]:hover::before {
+    opacity: 1;
+    visibility: hidden;
+}
 /* Checkbox */
 @media only screen and (max-width: 600px)  {
   .fold-table th {
@@ -527,11 +532,7 @@
     </script>
     <script src="assets/js/jquery-2.2.0.min.js"></script>
     <script src="assets/js/virual-select.min.js"></script>
-    <script>
-        VirtualSelect.init({
-          ele: '#SearchDropdown'
-        });
-      </script>
+
     <script>
         var x, i, j, l, ll, selElmnt, a, b, c;
         /*look for any elements with the class "custom-select":*/
@@ -612,7 +613,12 @@
         then close all select boxes:*/
         document.addEventListener("click", closeAllSelect);
         </script>
-
+<script>
+  VirtualSelect.init({
+    ele: '#SearchDropdown',
+    valueKey: 'id',
+  });
+</script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>  
 </body>
 </html>
