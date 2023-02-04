@@ -382,16 +382,15 @@
                   <div class="row gx-5 gy-4">
                     <div class="col-sm-4 col-md-4">
                       <div class="calendar-container mt-0">
-                        <p>Select Subject</p>
+                        <p>Select Subject11</p>
                         <select id="SearchDropdown" name="native-select" placeholder="Select Subject Here"
-                          data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
+                          data-search="true"  class="searchdropdown">
                           <option value="5">English</option>
                           <option value="1">Hindi</option>
                           <option value="2">Maths</option>
                           <option value="3">Physics</option>
                           <option value="4">Chemistry</option>
                         </select>
-
                       </div>
                     </div>
                     <div class="col-sm-4 col-md-4">
@@ -2382,9 +2381,14 @@
 
   <script>
     VirtualSelect.init({
-      ele: '#SearchDropdown'
+      ele: '#SearchDropdown',
+      valueKey: 'id',
     });
   </script>
+
+  
+
+
 
   <script>
     var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))

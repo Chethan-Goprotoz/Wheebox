@@ -1475,12 +1475,13 @@ opacity: 1;
 .popUpDivCard .radiodiv {
     border: 1px solid #B9C4BF;
     border-radius: 5px;
-    height: 81px;
+    height: 65px;
+    margin-top: 20px !important;
 }
 
 .popUpDivCard .radiodiv .form-check-input[type=radio] {
-    width: 35px;
-    height: 35px;
+    width: 25px;
+    height: 25px;
     border-radius: 50%;
     cursor: pointer;
 }
@@ -1499,8 +1500,8 @@ opacity: 1;
 .popUpDivCard .radiodiv .form-check-input:checked[type=radio] {
     background-image: url(../images/Question_Bank/radio.svg);
     background-color: transparent;
-    width: 35px;
-    height: 35px;
+    width: 25px;
+    height: 25px;
 }
 
 .toolTopBox{
@@ -1579,7 +1580,6 @@ opacity: 1;
 .dateInputField .calendar::placeholder{
     font-family: pop-normal;
     font-size: 16px;
-
 }
 .dateInputField .fa-calendar{
     top: 48px;
@@ -1933,7 +1933,7 @@ opacity: 1;
     opacity: 1;
 }
 
-#deleteModal .deleteContents h6{
+#deleteModal .deleteContents h6,#deleteModal2 .deleteContents h6{
     text-align: center;
     font: normal normal 24px/39px Pop-medium;
     letter-spacing: 0px;
@@ -1941,11 +1941,11 @@ opacity: 1;
     opacity: 1;
     margin-top: 20px;
 }
-#deleteModal .deleteContents p span{
+#deleteModal .deleteContents p span,#deleteModal2 .deleteContents p span{
     color: #C22F2F;
 }
 
-#deleteModal .deleteContents p{
+#deleteModal .deleteContents p,#deleteModal2 .deleteContents p{
     font: normal normal 16px/24px Pop-normal;
     letter-spacing: 0px;
     opacity: 1;
@@ -2279,8 +2279,67 @@ input{
 .calendar-container.InputFile input[type="file"]{
     font-size: 16px;
 }
+.helpToolTip:hover p{
+    height: auto !important;
+}
 
 /*  */
+@media (max-width:1500px){
+#editQueModal2 .modal-dialog{
+    max-width: 900px;  
+}
+
+.popUpDivCard .div1Card {
+    margin: 15px 0px;
+    padding: 0px 15px;
+    height: 55px;
+}
+.formNote textarea:focus{
+    font-size: 16px;
+}
+/* .formNote textarea{
+    font-size: 16px;
+    height: 110px;
+} */
+.popUpDivCard div p .sp1{
+    font-size: 16px;
+}
+.popUpDivCard p .sp2{
+    font-size: 14px;
+}
+#exampleModalToggle .modal-dialog, #exampleModalToggle11 .modal-dialog{
+    max-width: 900px;
+}
+.popUpDivCard .radiodiv {
+    border: 1px solid #B9C4BF;
+    border-radius: 5px;
+    height: 55px;
+    margin-top: 15px !important;
+}
+.popUpDivCard .radiodiv .form-check-label{
+    font-size: 16px;
+}
+.addEditTestCaseFooter{
+    margin-top: 50px;
+}
+#labellingModal .modal-dialog, #labellingModal2 .modal-dialog{
+    max-width: 81%;
+}
+.vscomp-option{
+    height: 40px !important;
+}
+#TestCasesPopup .modal-dialog{
+    max-width: 60%;
+}
+#TestCasesPopup .createTestCase {
+    width: 225px;
+    height: 55px;
+    font-size: 18px;
+}
+#TestCasesPopup .modal-content{
+    height: auto;
+}
+}
 
   /* resolution 1920 started */
 
