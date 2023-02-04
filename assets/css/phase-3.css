@@ -1201,7 +1201,7 @@ position: relative;
     border-radius: 10px !important;
     opacity: 1;
     margin: 0 !important;
-    margin-bottom: 16px !important;
+    /* margin-bottom: 16px !important; */
     width: 100% !important;
   }
   .enterOptionDiv h5{
