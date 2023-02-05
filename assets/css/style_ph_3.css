@@ -47,7 +47,7 @@
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: #010D0A;
     margin-left: 20px;
-
+    padding-left: 10px;
     opacity: 0.3; /* Firefox */
   }
   
