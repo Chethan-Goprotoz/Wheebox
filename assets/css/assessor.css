@@ -1,0 +1,187 @@
+
+.toggle_img{
+  padding-right: 25px;
+  padding-left: 10px;
+}
+
+.page-item .page-link:hover{
+background: #20776E !important;
+color: #fff !important;
+border-radius: 5px;
+margin-left: 2px;
+margin-right: 2px;
+box-shadow: 0px 3px 6px #5462e247;
+}
+.page-active{
+background: #20776E !important;
+color: #fff !important;
+border-radius: 5px;
+margin-left: 2px;
+margin-right: 2px;
+box-shadow: 0px 3px 6px #5462e247;
+}
+.pagination .page-item {
+padding: 0;
+cursor: pointer;
+}
+.page-item:not(:first-child) .page-link {
+margin-left: -1px;
+border: 0;
+color: #20776E;
+}
+.page-item:last-child .page-link {
+font: normal normal normal 12px/18px Poppins;
+font-size: 12px;
+border: 0px;
+color: #20776E;
+}
+.page-item:first-child .page-link {
+color: #666666a1;
+border: 0px;
+font: normal normal normal 12px/18px Poppins;
+}
+
+.fold-content{
+  margin-left: 5%;
+padding-left: 40px;
+}
+
+
+@media (min-width: 576px){
+    .modal-dialog {
+max-width: 1100px;
+height: 992;
+margin: 1.75rem auto;
+}
+
+.modal-body, .modal-footer{
+padding-right: 42px;
+padding-left: 42px;
+}
+
+
+.modal-body {
+position: relative;
+flex: 1 1 auto;
+
+}
+.fold-content p{
+  color: #848484;
+  font-size: 16px;
+  margin: 0px;
+}
+}
+
+.fold-table {
+width: 100%;
+}
+.fold-table th {
+text-align: left;
+padding-left: 40px;
+}
+.fold-table td {
+padding-left: 40px;
+padding-top: 10px;
+padding-bottom: 10px;
+}
+.fold-table tr{
+border-radius: 15px;
+}
+
+.fold-table{
+border-collapse: separate;
+border-spacing: 0 15px;
+}
+
+table.fold-table > tbody > tr.view td, table.fold-table > tbody > tr.view th {
+cursor: pointer;
+}
+
+table.fold-table > tbody > tr.fold {
+display: none;
+}
+table.fold-table > tbody > tr.fold.open {
+display: table-row;
+}
+
+
+.fold-table thead{
+background: #EDFAF4 0% 0% no-repeat padding-box;
+box-shadow: 0px 1px 5px #E4E4E4;
+border-radius: 10px;
+opacity: 1;
+height: 60px;
+}
+.fold-table tbody{
+background-color: bisque;
+background: #FFFFFF 0% 0% no-repeat padding-box;
+box-shadow: 0px 1px 5px #E4E4E4;
+border-radius: 20px;
+height: 60px;
+}
+
+/* Checkbox */
+.form-check {
+display: block;
+min-height: 1.5rem;
+padding-left: 0em;
+margin: 0rem;
+}
+.form-check-input[type=checkbox] {
+--checkbox-width: 30px;
+}
+.form-check-input[type=checkbox]::before{
+display: none;
+}
+.form-check-input[type=checkbox] {
+--checkbox-checked-bg: #20776e;
+}
+.modal-header{
+padding-bottom: 0px;
+}
+[data-tooltip]:hover::after, [data-tooltip]:hover::before {
+opacity: 1;
+visibility: hidden;
+}
+.quesBankTabs .nav-item .nav-link, .quesBankTabs .nav-item .nav-link.active{
+    font-size: 16px !important;
+}
+/* Checkbox */
+@media only screen and (max-width: 600px)  {
+.fold-table th {
+text-align: left;
+padding-left: 10px;
+}
+.fold-table td {
+padding-left: 10px;
+padding-top: 10px;
+padding-bottom: 10px;
+}
+
+.accdn-holder{
+  font-size: 14px;
+}
+
+.modal-footer{
+  justify-content: center !important;
+}
+.pagination {
+  margin-top: 20px;
+}
+.fold-content p{
+  color: #848484;
+  font-size: 14px;
+  margin: 0px;
+}
+.toggle_img{
+  width: 60px;
+}
+.form-check-input[type=checkbox] {
+--checkbox-width: 20px;
+}
+.modal-title{
+font-size: 18px;
+}
+
+}
+
