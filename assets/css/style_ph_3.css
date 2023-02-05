@@ -397,6 +397,20 @@
         justify-content: space-around;
         align-items: center;
         align-content: center;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .tags-list p{
+      font: normal normal normal 16px/25px Poppins;
+      color: #999999;
+    }
+    .tags-list h3{
+      font: normal normal 600 16px/25px Poppins;
+      letter-spacing: 0px;
+      color: #2C3652;
+    }
+    .tags-div{
+      display: flex;
     }
   
 
