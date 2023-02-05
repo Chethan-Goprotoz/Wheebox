@@ -2282,6 +2282,18 @@ input{
 .helpToolTip:hover p{
     height: auto !important;
 }
+.genQues .nav-link.active img{
+    content: url("./assets/images/Question_Bank/noun-question.svg");
+  }
+  .genQues .nav-link:hover img{
+    content: url("./assets/images/Question_Bank/noun-question.svg");
+  }
+  .tabProg .nav-link.active img{
+    content: url("./assets/images/Question_Bank/noun-programming-2648077.svg");
+  }
+  .tabProg .nav-link:hover img{
+    content: url("./assets/images/Question_Bank/noun-programming-2648077.svg");
+  }
 
 /*  */
 @media (max-width:1500px){
