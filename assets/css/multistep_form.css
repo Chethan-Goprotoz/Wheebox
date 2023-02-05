@@ -146,14 +146,14 @@
     margin-top: 12px;
   }
   .multisteps-form__progress button{
-    font-size: 18px;
+    font-size: 14px;
     padding-top: 20px;
   }
   /* Responsive */
   @media (max-width: 576px)
     {
         .multisteps-form__progress button{
-            font-size: 16px;
+            font-size: 14px;
             padding-top: 25px;
         }
         .content__inner .multisteps-form{
