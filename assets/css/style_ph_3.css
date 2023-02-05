@@ -385,9 +385,9 @@
     .tags-list {
         background: #E0FAFF;
         border-radius: 278px;
-        display: flex;
+        /* display: flex; */
         width: auto;
-        height: 71px;
+        /* height: 71px; */
         vertical-align: middle;
         text-align: center;
         margin-right: 20px;
@@ -657,5 +657,10 @@
       .assessor_allotment_div .nav-pills{
         width: auto;
         text-align: center;
+      }
+      .tags-div{
+        flex-wrap: wrap;
+        display: flex;
+        gap: 20px;
       }
 }
