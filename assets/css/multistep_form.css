@@ -1,0 +1,163 @@
+/* Multistep Css Code Starts*/
+.content {
+    width: 100%;
+  }
+  
+  .content__title {
+    margin-bottom: 40px;
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  .content__title--m-sm {
+    margin-bottom: 10px;
+  }
+  
+  .multisteps-form__progress {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+  }
+  
+  .multisteps-form__progress-btn {
+    transition-property: all;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+    transition-delay: 0s;
+    position: relative;
+    padding-top: 20px;
+    color: rgba(108, 117, 125, 0.7);
+    text-indent: -9999px;
+    border: none;
+    background-color: transparent;
+    outline: none !important;
+    cursor: pointer;
+  }
+  @media (min-width: 50px) {
+    .multisteps-form__progress-btn {
+      text-indent: 0;
+    }
+  }
+  .multisteps-form__progress-btn:before {
+    position: absolute;
+    top: -9px;
+    left: 50%;
+    display: block;
+    width: 27px;
+    height: 27px;
+    content: "";
+    border: 8px solid #BDBDBD;
+    border-radius: 50%;
+    background-color: #fff;
+    box-sizing: border-box;
+    z-index: 3;
+  }
+  .multisteps-form__progress-btn:after {
+    position: absolute;
+    top: 5px;
+    left: calc(-19.5% - 13px / 2);
+    width: 60%;
+    transition-property: all;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+    transition-delay: 0s;
+    display: block;
+    height: 2px;
+    content: "";
+    background-color: currentColor;
+    z-index: 1;
+  }
+  .multisteps-form__progress-btn:first-child:after {
+    display: none;
+  }
+  .multisteps-form__progress-btn.js-active {
+    color: #20776E
+  }
+  .multisteps-form__progress-btn.js-active:before {
+    border-color: #20776E
+  }
+  
+  .multisteps-form__form {
+    position: relative;
+  }
+  
+  .multisteps-form__panel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .multisteps-form__panel.js-active {
+    height: auto;
+    opacity: 1;
+    visibility: visible;
+  }
+  .multisteps-form__panel[data-animation=scaleOut] {
+    transform: scale(1.1);
+  }
+  .multisteps-form__panel[data-animation=scaleOut].js-active {
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+    transition-delay: 0s;
+    transform: scale(1);
+  }
+  .multisteps-form__panel[data-animation=slideHorz] {
+    left: 50px;
+  }
+  .multisteps-form__panel[data-animation=slideHorz].js-active {
+    transition-property: all;
+    transition-duration: 0.25s;
+    transition-timing-function: cubic-bezier(0.2, 1.13, 0.38, 1.43);
+    transition-delay: 0s;
+    left: 0;
+  }
+  .multisteps-form__panel[data-animation=slideVert] {
+    top: 30px;
+  }
+  .multisteps-form__panel[data-animation=slideVert].js-active {
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+    transition-delay: 0s;
+    top: 0;
+  }
+  .multisteps-form__panel[data-animation=fadeIn].js-active {
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+    transition-delay: 0s;
+  }
+  .multisteps-form__panel[data-animation=scaleIn] {
+    transform: scale(0.9);
+  }
+  .multisteps-form__panel[data-animation=scaleIn].js-active {
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+    transition-delay: 0s;
+    transform: scale(1);
+  }
+  /* remove shadow */
+  .content__inner .multisteps-form{
+    box-shadow: 0px 1px 6px #00000000;
+    margin-top: 12px;
+  }
+  .multisteps-form__progress button{
+    font-size: 14px;
+    padding-top: 20px;
+  }
+  /* Responsive */
+  @media (max-width: 576px)
+    {
+        .multisteps-form__progress button{
+            font-size: 14px;
+            padding-top: 25px;
+        }
+        .content__inner .multisteps-form{
+            margin: 10px;
+        }
+    }
+  /* Multistep Css Code Ends*/
