@@ -1,0 +1,1360 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Question Bank</title>
+    <!-- font awesome css -->
+    <link rel="stylesheet" href="assets/font-awesome/all.min.css" />
+    <link rel="stylesheet" href="assets/font-awesome/fontawesome.css" />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="assets/images/logo_logo.png" sizes="16x16" type="image/x-icon">
+    <!-- loader css -->
+    <link rel="stylesheet" href="assets/css/loader.css">
+    <!-- style css -->
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/alphardex/aqua.css/dist/aqua.min.css'>
+    <!-- <link rel="stylesheet" href="assets/sass/app.css" rel="stylesheet" /> -->
+    <link rel="stylesheet" href="assets/css/virtual-select.min.css">
+    <link rel="stylesheet" href="assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/phase-3.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="assets/css/chethan.css"> -->
+  
+    <link rel="stylesheet" href="assets/sass/app.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <link rel="stylesheet" href="./assets/css/multistep_form.css">
+  
+    <link rel="stylesheet" href="./assets/css/assessor.css">
+    <link rel="stylesheet" href="./assets/css/style_ph_3.css">
+  </head>
+  <body>
+    <!-- loader start-->
+    <div class="loader-container">
+      <div class="loader"></div>
+    </div>
+    <!-- loader end-->
+    <!--selection section start -->
+    <div class="selection-new " id="fullselector">
+      <div class="container-fluid">
+        <div class="main_div">
+          <div class="row">
+            <div class="main_header mb-1">
+              <div class="d-flex justify-content-between navpart1">
+                <div class="logo new-logopart">
+                  <img src="assets/images/logo_logo.png" alt="mini-logo">
+                </div>
+              </div>
+              <div class="d-flex align-items-center gap-5">
+                <div class="d-flex gap-4">
+                  
+                </div>
+                <div class="grid-new" id="profile-out">
+                  <div class="grid1-new" onclick="profile()">
+                    <div class="profile rounded-circle">
+                      <img src="assets/images/prof-mini.png" alt="profile">
+                    </div>
+                  </div>
+                  <div class="grid2-new d-none d-md-block" onclick="profile()">
+                    <h6>Jane Doe</h6>
+                    <p>jane_doe@wheebox.com</p>
+                  </div>
+                  <div class="profileDropdown" id="profileDropdown">
+                    <ul>
+                      <li>Admin Profile</li>
+                      <li>Change Password</li>
+                      <li>Help Center</li>
+                      <li>Log Out</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- row closed -->
+        </div>
+        <div class="d-flex mobileMenu justify-content-lg-end justify-content-between d-md-none mt-3">
+          <div class="d-flex justify-content-between align-items-center">
+            <img src="./assets/images/Question_Bank/menu.png" onclick="sidemenu()" id="menu-icon" class="fas fa-solid icon-w fa-bars d-block d-lg-none ms-0">
+            <h3 class="mb-0">Create Test</h3>
+          </div>
+         
+        </div>
+      </div>
+      <div class="sidebar">
+        <div class="d-flex">
+          <div class="side1" id="sidebar-menu">
+            <img src="./assets/images/Question_Bank/croxMenu.png" onclick="sidemenu()" id="menu-icon d-md-none" class="openMenuIcon fas fa-solid icon-w fa-bars d-block d-lg-none ms-0" aria-hidden="true">
+            <a href="#">
+              <div class="d-flex sideMenu mt-5">
+                <img class="icon-align" src="assets/images/Question_Bank/noun-dashboard-4527077.svg" alt="">
+                <p>Dashboard</p>
+              </div>
+            </a>
+            <a href="#">
+              <div class="d-flex sideMenu">
+                <img class="icon-align" src="assets/images/Question_Bank/noun-question.svg" alt="">
+                <p>Question Bank</p>
+              </div>
+            </a>
+            <a href="#">
+              <div class="d-flex sideMenu active-one">
+                <img class="icon-align" src="assets/images/Question_Bank/noun-setting-2193905.svg" alt="">
+                <p>Test Management</p>
+              </div>
+            </a>
+            <a href="#">
+              <div class="d-flex sideMenu">
+                <img class="icon-align" src="assets/images/Question_Bank/noun-survey-3881626.svg" alt="">
+                <p>Evaluation</p>
+              </div>
+            </a>
+            <a href="#">
+              <div class="d-flex sideMenu">
+                <img class="icon-align" src="assets/images/Question_Bank/noun-clipboard-4426919.svg" alt="">
+                <p>Roaster Managment</p>
+              </div>
+            </a>
+            <a href="#">
+              <div class="d-flex sideMenu">
+                <img class="icon-align" src="assets/images/Question_Bank/noun-administration-99475.svg" alt="">
+                <p>Admin Control</p>
+              </div>
+            </a>
+            <a href="#">
+              <div class="d-flex sideMenu">
+                <img class="icon-align" src="assets/images/Question_Bank/noun-headphone-5272179.svg" alt="">
+                <p>Tech Support</p>
+              </div>
+            </a>
+          </div>
+          <div class="inside-container-dashboard">
+            <div class="d-flex flexWrap justify-content-between align-items-center mb-5 mt-4">
+                <h3 class="mb-0">Evaluation</h3>
+                <div class="d-flex gap-4 Mb-center">
+                  <div class="row" style="justify-content: space-evenly;">
+                    <div class="filter-container filter-container-shadow d-lg-flex d-flex justify-content-center align-items-center col-sm-6 m-2">
+                      <a href="./subjectevaluation.html">
+                        <p>
+                          <img src="./assets/images/chethan/icon1.svg" class="ms-2" alt="" style="margin-right: 10px;">Subjective Evaluation
+                        </p>
+                      </a>
+                    </div>
+                    <div class="filter-container filter-container-shadow w-auto ps-3 pe-3 d-lg-flex d-flex justify-content-center align-items-center col-sm-6 m-2"  data-bs-toggle="modal" data-bs-target="#evaluationallotment">
+                      <p>
+                        <img src="./assets/images/chethan/icon2.svg" class="ms-2" alt="" style="margin-right: 10px;">Evaluation Allotment
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <!-- Body Open upload modal -->
+            <!-- form -->
+            <!--PEN CONTENT     -->
+            <div class="main-div-container create_test_page admin_control create_test_table" >
+              <div class="content" >
+                <!--content inner-->
+                <div class="content__inner" >
+                  <!-- <div class="container"><h2 class="content__title content__title--m-sm">Pick animation type</h2><form class="pick-animation my-4"><div class="form-row"><div class="col-5 m-auto"><select class="pick-animation__select form-control"><option value="scaleIn" selected="selected">ScaleIn</option><option value="scaleOut">ScaleOut</option><option value="slideHorz">SlideHorz</option><option value="slideVert">SlideVert</option><option value="fadeIn">FadeIn</option></select></div></div></form></div> -->
+                  <div class="container-fluid ">
+                    <!-- top -->
+                    <div class="selectDropdown p-5 bg-light1 p-4 p-md-5">
+                        <div class="row gx-5 gy-4">
+                          <div class="col-sm-4 col-md-4">
+                            <div class="calendar-container mt-0 passper">
+                              <p>Select Domain</p>
+                              <select id="SearchDropdown" name="native-select" placeholder="Select Subject Here" data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
+                                <option value="5">English</option>
+                                <option value="1">Hindi</option>
+                                <option value="2">Maths</option>
+                                <option value="3">Physics</option>
+                                <option value="4">Chemistry</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-sm-4 col-md-4">
+                            <div class="calendar-container mt-0 passper">
+                              <p>Select Test Name</p>
+                              <select id="SearchDropdown" name="native-select" placeholder="Select Topic Here" data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
+                                <option value="5">Grammer</option>
+                                <option value="1">Tense</option>
+                                <option value="2">Passage</option>
+                                <option value="3">Story</option>
+                                <option value="4">Poetry</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-sm-4 col-md-4">
+                            <div class="calendar-container mt-0 passper">
+                              <label for="fname">Start Date & End Date</label>
+                              <input type="text" name="datefilter" class="calendar" value="" placeholder="Start Date & End Date" />
+                              <i class="fa-regular fa-calendar" style="font-size: 15px;position: absolute;
+                                            top: 48px;"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="d-flex mt-5" style="justify-content: flex-end;">
+                          <button class="next-btn">Submit</button>
+                        </div>
+                      </div>
+                    <!-- top -->
+                    <!-- tabs -->
+                    <div class="quesBankTabs">
+                        <!-- Nav pills -->
+                        <div class="pill-div">
+                          <ul class="nav nav-pills nav-justified" role="tablist">
+                            <li class="nav-item">
+                              <a class="nav-link active" data-bs-toggle="pill" href="#GeneralQuestion">
+                                <img src="./assets/images/chethan/Group 66992.svg" width="16" alt="" style="margin-right: 10px;">Overall Evaluator Wise Reports </a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" data-bs-toggle="pill" href="#Programming">
+                                <img src="./assets/images/chethan/Group 66992.svg" width="16" alt="" style="margin-right: 10px;" class="grey-hide">Test Taker VS Assigned Reprts <span class="d-none d-md-inline"></span>
+                              </a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" data-bs-toggle="pill" href="#Reporting">
+                                <img src="./assets/images/chethan/Group 66992.svg" width="16" alt="" style="margin-right: 10px;">Student Question wise Reports <span class="d-none d-md-inline"></span>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                    
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                          <div id="GeneralQuestion" class="container tab-pane active">
+                            <br>
+                            <!-- search component -->
+                            <div class="searchInput mt-4 d-flex justify-content-between align-items-center mb-4 mb-md-5">
+                              <div class="searchAfter position-relative">
+                                <input type="text" class="form-control" placeholder="Search...">
+                              </div>
+                              <div class="filter-container filter-container-shadow w-auto ps-3 pe-3 d-lg-flex d-flex justify-content-center align-items-center d-none d-md-flex">
+                                <p>Download 
+                                </p>
+                              </div>
+                            </div>
+                            <!-- end -->
+                            <!-- table -->
+                            <div class="table-responsive table-div">
+                              <table class="table mytable">
+                                <thead class="">
+                                  <tr>
+                                    <th scope="col">Test ID</th>
+                                    <th scope="col">Test Name</th>
+                                    <th scope="col">Test Type</th>
+                                    <th scope="col">Test Date</th>
+                                    <th scope="col">Total Questions in Test</th>
+                                    <th scope="col">Assessor Wheelbox ID</th>
+                                    <th scope="col">Assessor Login ID</th>
+                                    <th scope="col">Assessor Name</th>
+                                    <th scope="col">Assessor Name</th>
+                                  </tr>
+                                </thead>
+                                <tbody class="table-body">
+                                  <tr>
+                                    <td>Lorem Ipsium</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>6 June 2022</td>
+                                    <td>15</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>01</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Lorem Ipsium</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>6 June 2022</td>
+                                    <td>15</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>01</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Lorem Ipsium</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>6 June 2022</td>
+                                    <td>15</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>01</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Lorem Ipsium</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>6 June 2022</td>
+                                    <td>15</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>01</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Lorem Ipsium</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>6 June 2022</td>
+                                    <td>15</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>01</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Lorem Ipsium</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>6 June 2022</td>
+                                    <td>15</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>01</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Lorem Ipsium</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>6 June 2022</td>
+                                    <td>15</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>01</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Lorem Ipsium</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>6 June 2022</td>
+                                    <td>15</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>01</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Lorem Ipsium</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>6 June 2022</td>
+                                    <td>15</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>01</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                            <!-- table -->
+                          </div>
+                          <div id="Programming" class="container tab-pane fade">
+                            <br>
+                            <div class="searchInput mt-4 d-flex justify-content-between align-items-center mb-4 mb-md-5">
+                              <div class="searchAfter position-relative">
+                                <input type="text" class="form-control" placeholder="Search...">
+                              </div>
+                              <div class="filter-container filter-container-shadow w-auto ps-3 pe-3 d-lg-flex d-flex justify-content-center align-items-center d-none d-md-flex" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                <p>Download 
+                                </p>
+                              </div>
+                            </div>
+                            <!-- table -->
+                            <div class="table-responsive table-div">
+                              <table class="table mytable">
+                                <thead class="">
+                                  <tr>
+                                    <th scope="col">Test ID</th>
+                                    <th scope="col">Test Name</th>
+                                    <th scope="col">Test Type</th>
+                                    <th scope="col">Test Date</th>
+                                    <th scope="col">Total Questions in Test</th>
+                                    <th scope="col">Assessor Wheelbox ID</th>
+                                    <th scope="col">Assessor Login ID</th>
+                                    <th scope="col">Assessor Name</th>
+                                    <th scope="col">Assessor Name</th>
+                                  </tr>
+                                </thead>
+                                <tbody class="table-body">
+                                  <tr>
+                                    <td>Lorem Ipsium</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>6 June 2022</td>
+                                    <td>15</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>01</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Lorem Ipsium</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>6 June 2022</td>
+                                    <td>15</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>01</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Lorem Ipsium</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>6 June 2022</td>
+                                    <td>15</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>01</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Lorem Ipsium</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>6 June 2022</td>
+                                    <td>15</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>01</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Lorem Ipsium</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>6 June 2022</td>
+                                    <td>15</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>01</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Lorem Ipsium</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>6 June 2022</td>
+                                    <td>15</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>01</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Lorem Ipsium</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>6 June 2022</td>
+                                    <td>15</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>01</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Lorem Ipsium</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>6 June 2022</td>
+                                    <td>15</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>01</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Lorem Ipsium</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>6 June 2022</td>
+                                    <td>15</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>01</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                            <!-- table -->
+                          </div>
+                          <div id="Reporting" class="container tab-pane fade">
+                            <br>
+                            <div class="searchInput mt-4 d-flex justify-content-between align-items-center mb-4 mb-md-5">
+                              <div class="searchAfter position-relative">
+                                <input type="text" class="form-control" placeholder="Search...">
+                              </div>
+                              <div class="filter-container filter-container-shadow w-auto ps-3 pe-3 d-lg-flex d-flex justify-content-center align-items-center d-none d-md-flex" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                <p>Download 
+                                </p>
+                              </div>
+                            </div>
+                            <!-- table -->
+                            <div class="table-responsive table-div">
+                              <table class="table mytable">
+                                <thead class="">
+                                  <tr>
+                                    <th scope="col">Course ID</th>
+                                    <th scope="col">Course Name</th>
+                                    <th scope="col">Course Type</th>
+                                    <th scope="col">Question WBREF NO</th>
+                                    <th scope="col">Maximum Marks</th>
+                                    <th scope="col">Marks Obtained</th>
+                                    <th scope="col">Status</th>
+                                    <th scope="col">Total Questions</th>
+                                  </tr>
+                                </thead>
+                                <tbody class="table-body">
+                                  <tr>
+                                    <td>Lorem Ipsium</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>6 June 2022</td>
+                                    <td>15</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>01</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Lorem Ipsium</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>6 June 2022</td>
+                                    <td>15</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>01</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Lorem Ipsium</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>6 June 2022</td>
+                                    <td>15</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>01</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Lorem Ipsium</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>6 June 2022</td>
+                                    <td>15</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>01</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Lorem Ipsium</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>6 June 2022</td>
+                                    <td>15</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>01</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Lorem Ipsium</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>6 June 2022</td>
+                                    <td>15</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>01</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Lorem Ipsium</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>6 June 2022</td>
+                                    <td>15</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>01</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Lorem Ipsium</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>6 June 2022</td>
+                                    <td>15</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>Lorem Ipsium</td>
+                                    <td>01</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                            <!-- table -->
+                          </div>
+                        </div>
+                        <div class="pagignationDiv1 d-flex justify-content-between align-items-center mt-5" style="flex-wrap:wrap;gap:20px ;">
+                          <div class="selectTag gap-4 d-flex justify-content-between align-items-center">
+                            <div class="position-relative">
+                              <p class="mb-0 pe-3">Showing <span>1-5</span> of <span>120</span>
+                              </p>
+                              <div class="showPage"></div>
+                            </div>
+                            <div class="selectNumRow">
+                              <select name="cars" id="cars">
+                                <option value="volvo">5</option>
+                                <option value="saab">10</option>
+                                <option value="mercedes">15</option>
+                                <option value="audi">20</option>
+                              </select>
+                            </div>
+                            <div>
+                              <p class="mb-0">records per page</p>
+                            </div>
+                          </div>
+                          <div class="paginationDiv">
+                            <ul class="pagination border-0 pagination-lg mb-0">
+                              <li class="page-item ">
+                                <a class="page-link disable" href="#">Previous</a>
+                              </li>
+                              <li class="page-item active">
+                                <a class="page-link text-white" href="#">1</a>
+                              </li>
+                              <li class="page-item">
+                                <a class="page-link" href="#">2</a>
+                              </li>
+                              <li class="page-item">
+                                <a class="page-link" href="#">3</a>
+                              </li>
+                              <li class="page-item">
+                                <a class="page-link" href="#">4</a>
+                              </li>
+                              <li class="page-item">
+                                <a class="page-link" href="#">5</a>
+                              </li>
+                              <li class="page-item">
+                                <a class="page-link" href="#">Next</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    <!-- tabs -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- partial -->
+            <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'></script> -->
+            <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script> -->
+            <!-- FOrm -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- main-div closed -->
+    </div>
+    <!-- container closed -->
+    </section>
+    <!--selection section end -->
+
+    <!-- Popup -->
+      
+  <!-- The Modal -->
+  <div class="modal pop_up" id="evaluationallotment">
+    <div class="modal-dialog">
+      <div class="modal-content">
+  
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Evaluation Allotment</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+  
+        <!-- Modal body -->
+        <div class="modal-body">
+            <div class="quesBankTabs assessor_allotment_div">
+                <!-- Nav pills -->
+                <ul class="nav nav-pills nav-justified" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" data-bs-toggle="pill" href="#assessorallotment"><img
+                        src="./assets/images/chethan/icon2.svg" width="16" alt="" style="margin-right: 10px;">Assessor Allotment</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="pill" href="#candidateallotment"><img
+                        src="./assets/images/chethan/icon2.svg" width="16" alt="" style="margin-right: 10px;">Candidate Allotment<span
+                        class="d-none d-md-inline"></span></a>
+                  </li>
+                </ul>
+                <style>
+                    /* .tab-pane{
+                        background-color: #fff;
+                        padding-top: 30px;
+                        padding-left: 25px;
+                        padding-right: 25px;
+                        padding-bottom: 30px;
+                    } */
+                </style>
+                <!-- Tab panes -->
+                <div class="tab-content">
+                  <div id="assessorallotment" class="container tab-pane active"><br>
+                    <div class="selectDropdown p-5 bg-light1 p-4 p-md-5">
+                        <div class="row gx-5 gy-4">
+                          <div class="col-sm-4 col-md-6">
+                            <div class="calendar-container mt-0 passper">
+                              <p>Select Domain</p>
+                              <select id="SearchDropdown" name="native-select" placeholder="Select Subject Here"
+                                data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
+                                <option value="5">English</option>
+                                <option value="1">Hindi</option>
+                                <option value="2">Maths</option>
+                                <option value="3">Physics</option>
+                                <option value="4">Chemistry</option>
+                              </select>
+      
+                            </div>
+                          </div>
+                          <div class="col-sm-4 col-md-6">
+                            <div class="calendar-container mt-0 passper">
+                              <p>Select Test Name</p>
+                              <select id="SearchDropdown" name="native-select" placeholder="Select Topic Here"
+                                data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
+                                <option value="5">Grammer</option>
+                                <option value="1">Tense</option>
+                                <option value="2">Passage</option>
+                                <option value="3">Story</option>
+                                <option value="4">Poetry</option>
+                              </select>
+      
+                            </div>
+                          </div>
+                         
+                         
+                        
+                        </div>
+                        <div class="d-flex mt-5" style="justify-content: flex-end;">
+                            <button class="next-btn" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#assessor_allotment_popup" >Submit</button>
+                          </div>
+                      </div>
+                      
+                  </div>
+    
+    
+                  <div id="candidateallotment" class="container tab-pane fade"><br>
+                      <div class="selectDropdown p-5 bg-light1 p-4 p-md-5">
+                        <div class="row gx-5 gy-4">
+                          <div class="col-sm-6 col-md-6">
+                            <div class="calendar-container mt-0 passper">
+                              <p>Select Domain</p>
+                              <select id="SearchDropdown" name="native-select" placeholder="Select Subject Here"
+                                data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
+                                <option value="5">English</option>
+                                <option value="1">Hindi</option>
+                                <option value="2">Maths</option>
+                                <option value="3">Physics</option>
+                                <option value="4">Chemistry</option>
+                              </select>
+      
+                            </div>
+                          </div>
+                          <div class="col-sm-6 col-md-6">
+                            <div class="calendar-container mt-0 passper">
+                              <p>Select Test Name</p>
+                              <select id="SearchDropdown" name="native-select" placeholder="Select Topic Here"
+                                data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
+                                <option value="5">Grammer</option>
+                                <option value="1">Tense</option>
+                                <option value="2">Passage</option>
+                                <option value="3">Story</option>
+                                <option value="4">Poetry</option>
+                              </select>
+      
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row gx-5 gy-4 mt-3">
+                            <div class="col-sm-6 col-md-6">
+                              <div class="calendar-container mt-0 passper">
+                                <p>Select Domain</p>
+                                <select id="SearchDropdown" name="native-select" placeholder="Select Subject Here"
+                                  data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
+                                  <option value="5">English</option>
+                                  <option value="1">Hindi</option>
+                                  <option value="2">Maths</option>
+                                  <option value="3">Physics</option>
+                                  <option value="4">Chemistry</option>
+                                </select>
+        
+                              </div>
+                            </div>
+                            <div class="col-sm-6 col-md-6">
+                              <div class="calendar-container mt-0 passper">
+                                <p>Select Test Name</p>
+                                <select id="SearchDropdown" name="native-select" placeholder="Select Topic Here"
+                                  data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
+                                  <option value="5">Grammer</option>
+                                  <option value="1">Tense</option>
+                                  <option value="2">Passage</option>
+                                  <option value="3">Story</option>
+                                  <option value="4">Poetry</option>
+                                </select>
+        
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row gx-5 gy-4 mt-3">
+                            <div class="col-sm-6 col-md-6">
+                              <div class="calendar-container mt-0 passper">
+                                <p>Select Domain</p>
+                                <select id="SearchDropdown" name="native-select" placeholder="Select Subject Here"
+                                  data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
+                                  <option value="5">English</option>
+                                  <option value="1">Hindi</option>
+                                  <option value="2">Maths</option>
+                                  <option value="3">Physics</option>
+                                  <option value="4">Chemistry</option>
+                                </select>
+        
+                              </div>
+                            </div>
+                     
+                          </div>
+                          <div class="d-flex mt-5" style="justify-content: flex-end;">
+                            <button class="next-btn" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#candidateallotment_popup">Submit</button>
+                          </div>  
+                      </div>  
+                           
+                  </div>
+    
+                </div>
+    
+              </div>
+        </div>
+        <div class="modal-footer">
+            
+          </div>
+  
+      </div>
+    </div>
+  </div>
+  
+ <!-- Modal -->
+
+
+ <!-- Assessor Allotment -->
+ <div class="modal pop_up" id="assessor_allotment_popup">
+    <div class="modal-dialog">
+      <div class="modal-content">
+  
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Assessor Allotment</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+  
+        <!-- Modal body -->
+        <div class="modal-body">
+            <div class="selectDropdown p-5 bg-light1 p-4 p-md-5">
+                <div class="row gx-5 gy-4">
+                  <div class="col-sm-6 col-md-6 col-lg-6">
+                    <div class="calendar-container mt-0 passper">
+                      <p>Select Domain</p>
+                      <select id="SearchDropdown" name="native-select" placeholder="Select Subject Here"
+                        data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
+                        <option value="5">English</option>
+                        <option value="1">Hindi</option>
+                        <option value="2">Maths</option>
+                        <option value="3">Physics</option>
+                        <option value="4">Chemistry</option>
+                      </select>
+
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-6 col-md-6">
+                    <div class="calendar-container mt-0 passper">
+                      <p>Select Test Name</p>
+                      <select id="SearchDropdown" name="native-select" placeholder="Select Topic Here"
+                        data-search="true" data-silent-initial-value-set="true" class="searchdropdown">
+                        <option value="5">Grammer</option>
+                        <option value="1">Tense</option>
+                        <option value="2">Passage</option>
+                        <option value="3">Story</option>
+                        <option value="4">Poetry</option>
+                      </select>
+
+                    </div>
+                  </div>
+                 
+                 
+                
+                </div>
+                <div class="d-flex mt-5" style="justify-content: flex-end;">
+                    <button class="next-btn">Submit</button>
+                   </div>
+            </div>
+                        <!--Table  -->
+                        <div style="overflow-x:auto;">
+                            <table class="fold-table table-responsive">
+                                <thead>
+                                  <tr>
+                                    <th width="5%">
+                                      <div class="form-check d-flex">
+                                        <input type="checkbox" class="form-check-input" id="anime" name="hobby" />
+                                        <label class="form-check-label" for="anime"></label>
+                                      </div>
+                                    </th>
+                                    <th style="color:#2C3652;font: normal normal medium 14px/21px Poppins;">
+                                        <div class="d-flex" style="justify-content: space-between;">
+                                            <div>
+                                                Question Text
+                                            </div>
+                                            <div>
+                                             
+                                              <p data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#assesor_popup"  style="color: #20776E;text-decoration: underline;margin: 0px;font: normal normal normal 18px/27px Poppins;padding-right:20px;"  ><img src="./assets/images/chethan/noun_Plus_3248114.svg" class="ms-2" width="16" alt="" style="margin-right: 05px;margin-top: -2px;">Allot Assessor </p>
+                                            </div>
+                                        </div>
+                                    </th>
+                                   
+                                  </tr>
+                                </thead>
+                                <tbody class="table-row">
+                                  <tr class="view">
+                                    <td>
+                                      <div class="form-check d-flex">
+                                        <input type="checkbox" class="form-check-input" id="anime" name="hobby" />
+                                        <label class="form-check-label" for="anime"></label>
+                                      </div>
+                                    </td>
+                                    <td style="color:#2C3652;font-size:18px;">
+                                      <div class="d-flex accdn-holder" style="justify-content: space-between;">
+                                        <div>
+                                            1. Question reference number - <b>1134031725</b>
+                                        </div>
+                                        <div>
+                                           <img src="./assets/images/chethan/noun-plus-1052486.svg" alt="" class="toggle_img" />
+                                        </div>
+                                    </div>
+                                    </td>
+                                  </tr>
+                                  <tr class="fold">
+                                    <td colspan="7">
+                                      <div class="fold-content">
+                                            <p style="color:#2C3652">Which Indian state has the maximum Rivers ?</p>
+                                            <p>Alloted Assessor ID -<b>assessor99@gmail.com</b></p>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                                <tbody class="table-row">
+                                    <tr class="view">
+                                      <td>
+                                        <div class="form-check">
+                                          <input type="checkbox" class="form-check-input" id="anime" name="hobby" />
+                                          <label class="form-check-label" for="anime"></label>
+                                        </div>
+                                      </td>
+                                      <td style="color:#2C3652;font-size:18px">
+                                        <div class="d-flex accdn-holder" style="justify-content: space-between;">
+                                          <div>
+                                              1. Question reference number - <b>1134031725</b>
+                                          </div>
+                                          <div>
+                                             <img src="./assets/images/chethan/noun-plus-1052486.svg" alt="" class="toggle_img" />
+                                          </div>
+                                      </div>
+                                      </td>
+                                    </tr>
+                                    <tr class="fold">
+                                      <td colspan="7">
+                                        <div class="fold-content">
+                                              <p>Subjective Questions Attempted -<span>04</span></p>
+                                              <p>Assessor ID -<span>assessor99@gmail.com</span></p>
+                                              <p>Candidate ID -<span>demo973@wheebox.com</span></p>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                  <tbody class="table-row">
+                                    <tr class="view">
+                                      <td>
+                                        <div class="form-check d-flex">
+                                          <input type="checkbox" class="form-check-input" id="anime" name="hobby" />
+                                          <label class="form-check-label" for="anime"></label>
+                                        </div>
+                                      </td>
+                                      <td style="color:#2C3652;font-size:18px">
+                                        <div class="d-flex accdn-holder" style="justify-content: space-between;">
+                                          <div>
+                                              1. Question reference number - <b>1134031725</b>
+                                          </div>
+                                          <div>
+                                             <img src="./assets/images/chethan/noun-plus-1052486.svg" alt="" class="toggle_img" />
+                                          </div>
+                                      </div>
+                                      </td>
+                                    </tr>
+                                    <tr class="fold">
+                                      <td colspan="7">
+                                        <div class="fold-content">
+                                              <p>Subjective Questions Attempted -<span>04</span></p>
+                                              <p>Assessor ID -<span>assessor99@gmail.com</span></p>
+                                              <p>Candidate ID -<span>demo973@wheebox.com</span></p>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                
+                                
+                              </table>
+                        </div>
+                        <!--Table  -->
+                        
+        </div>
+  
+        <!-- Modal footer -->
+        <div class="modal-footer" style="justify-content: space-between;align-items: flex-start;">
+
+          <div class="selectTag gap-4 d-flex justify-content-between align-items-center">
+            <div class="position-relative">
+              <p class="mb-0 pe-3">Showing <span>1-5</span> of <span>120</span> </p>
+              <div class="showPage"></div>
+            </div>
+            <div class="selectNumRow">
+              <select name="cars" id="cars">
+                <option value="volvo">5</option>
+                <option value="saab">10</option>
+                <option value="mercedes">15</option>
+                <option value="audi">20</option>
+              </select>
+            </div>
+            <div>
+              <p class="mb-0">records per page</p>
+            </div>
+
+          </div>
+
+        <!-- Page -->
+        <div>
+          <nav aria-label="Page navigation example">
+            <ul class="pagination">
+              <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+              <li class="page-item"><a class="page-link page-active" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+          </nav>
+         
+        </div>
+        
+        <!-- PAge -->
+        <!-- </div> -->
+       
+  </div>
+  <div class="d-flex" style="justify-content: flex-end;margin-bottom:35px">
+  <button class="next-btn">Save</button>
+ </div>
+      
+  
+      </div>
+    </div>
+  </div>
+ <!-- Assessor Allotment -->
+
+<!-- Candidate Allotment -->
+<div class="modal" id="candidateallotment_popup">
+    <div class="modal-dialog">
+      <div class="modal-content">
+  
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Candidate Allotment</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+  
+        <!-- Modal body -->
+        <div class="modal-body">
+                        <!--Table  -->
+                        <div style="overflow-x:auto;">
+                            <table class="fold-table table-responsive">
+                                <thead>
+                                  <tr>
+                                    <th width="5%">
+                                      <div class="form-check d-flex">
+                                        <input type="checkbox" class="form-check-input" id="anime" name="hobby" />
+                                        <label class="form-check-label" for="anime"></label>
+                                      </div>
+                                    </th>
+                                    <th style="color:#2C3652;font: normal normal medium 14px/21px Poppins;">Candidate Details</th>
+                                   
+                                  </tr>
+                                </thead>
+                                <tbody class="table-row">
+                                  <tr class="view">
+                                    <td>
+                                      <div class="form-check d-flex">
+                                        <input type="checkbox" class="form-check-input" id="anime" name="hobby" />
+                                        <label class="form-check-label" for="anime"></label>
+                                      </div>
+                                    </td>
+                                    <td style="color:#2C3652;font-size:18px;">
+                                      <div class="d-flex accdn-holder" style="justify-content: space-between;">
+                                        <div>
+                                            1. Question reference number - <b>1134031725</b>
+                                        </div>
+                                        <div>
+                                           <img src="./assets/images/chethan/noun-plus-1052486.svg" alt="" class="toggle_img" />
+                                        </div>
+                                    </div>
+                                    </td>
+                                  </tr>
+                                  <tr class="fold">
+                                    <td colspan="7">
+                                      <div class="fold-content">
+                                            <p>Subjective Questions Attempted -<b>04</b></p>
+                                            <p>Assessor ID -<b>assessor99@gmail.com</b></p>
+                                            <p>Candidate ID -<b>demo973@wheebox.com</b></p>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                                <tbody class="table-row">
+                                    <tr class="view">
+                                      <td>
+                                        <div class="form-check">
+                                          <input type="checkbox" class="form-check-input" id="anime" name="hobby" />
+                                          <label class="form-check-label" for="anime"></label>
+                                        </div>
+                                      </td>
+                                      <td style="color:#2C3652;font-size:18px">
+                                        <div class="d-flex accdn-holder" style="justify-content: space-between;">
+                                          <div>
+                                              1. Question reference number - <b>1134031725</b>
+                                          </div>
+                                          <div>
+                                             <img src="./assets/images/chethan/noun-plus-1052486.svg" alt="" class="toggle_img" />
+                                          </div>
+                                      </div>
+                                      </td>
+                                    </tr>
+                                    <tr class="fold">
+                                      <td colspan="7">
+                                        <div class="fold-content">
+                                              <p> <span style="width: 70%;">Subjective Questions Attempted -</span><b>04</b></p>
+                                              <p>  <span style="width: 70%;">Assessor ID -</span><b>assessor99@gmail.com</b></p>
+                                              <p>  <span style="width: 70%;">Candidate ID -</span><b>demo973@wheebox.com</b></p>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                  <tbody class="table-row">
+                                    <tr class="view">
+                                      <td>
+                                        <div class="form-check d-flex">
+                                          <input type="checkbox" class="form-check-input" id="anime" name="hobby" />
+                                          <label class="form-check-label" for="anime"></label>
+                                        </div>
+                                      </td>
+                                      <td style="color:#2C3652;font-size:18px">
+                                        <div class="d-flex accdn-holder" style="justify-content: space-between;">
+                                          <div>
+                                              1. Question reference number - <b>1134031725</b>
+                                          </div>
+                                          <div>
+                                             <img src="./assets/images/chethan/noun-plus-1052486.svg" alt="" class="toggle_img" />
+                                          </div>
+                                      </div>
+                                      </td>
+                                    </tr>
+                                    <tr class="fold">
+                                      <td colspan="7">
+                                        <div class="fold-content">
+                                              <p >Subjective Questions Attempted -<b>04</b></p>
+                                              <p>Assessor ID -<b>assessor99@gmail.com</b></p>
+                                              <p>Candidate ID -<b>demo973@wheebox.com</b></p>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                
+                                
+                              </table>
+                        </div>
+                        <!--Table  -->
+                        
+        </div>
+  
+        <!-- Modal footer -->
+        <div class="modal-footer" style="justify-content: space-between;align-items: flex-start;">
+
+                <div class="selectTag gap-4 d-flex justify-content-between align-items-center">
+                  <div class="position-relative">
+                    <p class="mb-0 pe-3">Showing <span>1-5</span> of <span>120</span> </p>
+                    <div class="showPage"></div>
+                  </div>
+                  <div class="selectNumRow">
+                    <select name="cars" id="cars">
+                      <option value="volvo">5</option>
+                      <option value="saab">10</option>
+                      <option value="mercedes">15</option>
+                      <option value="audi">20</option>
+                    </select>
+                  </div>
+                  <div>
+                    <p class="mb-0">records per page</p>
+                  </div>
+
+                </div>
+
+              <!-- Page -->
+              <div>
+                <nav aria-label="Page navigation example">
+                  <ul class="pagination">
+                    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                    <li class="page-item"><a class="page-link page-active" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                  </ul>
+                </nav>
+               
+              </div>
+              
+              <!-- PAge -->
+              <!-- </div> -->
+             
+        </div>
+        <div class="d-flex" style="justify-content: flex-end;margin-bottom:35px">
+        <button class="next-btn">Save</button>
+       </div>
+  
+      </div>
+    </div>
+  </div>
+<!-- Candidate Allotment -->
+
+<!-- Assesor -->
+<div class="modal pop_up assesor_popup_modal" id="assesor_popup">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+  
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Assesors</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+  
+        <!-- Modal body -->
+        <div class="modal-body" style="align-content: center; justify-content: center; align-items: center;    flex-direction: column;">
+              <!-- search component -->
+              <div class="searchInput ">
+                <div class="searchAfter position-relative">
+                  <input type="text" class="form-control" placeholder="Search...">
+                </div>
+                <div style="margin-top: 20px;">
+                  <h3 style="display:inline; color: #20776E;font: normal normal normal 15px/27px Poppins;background: #DAEDEB 0% 0% no-repeat padding-box;border-radius: 22px;text-align: center;padding: 10px;
+                  ">loremipsium@gmail.com <button type="button" class="btn-close" style="width: 2px;
+    height: 2px;position: relative;top: -3px;"></button></h3>
+                </div>
+              </div>
+              <!-- end -->
+           
+            <div style="margin-top: 30px;text-align: end;">
+                <button style="background: #20776E 0% 0% no-repeat padding-box;border-radius: 5px;width: 149px;font: normal normal medium 14px/21px Poppins;letter-spacing: 0px;
+color: #FFFFFF;border: 1px solid #20776E;margin-left: 10px;height: 40px;">Add Assessor</button>
+            </div>
+        </div>
+  
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          
+        </div>
+  
+      </div>
+    </div>
+  </div>
+    <!-- Popup -->
+
+    <!-- multistep form -->
+    <script src="./assets/js/multistep_form.js"></script>
+    <script src="https://kit.fontawesome.com/5817738a37.js" crossorigin="anonymous"></script>
+    <script src="assets/js/jquery-2.2.0.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/loader.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <script src="assets/js/virual-select.min.js"></script>
+    <!-- Load plotly.js into the DOM -->
+    <script src='https://cdn.plot.ly/plotly-2.16.1.min.js'></script>
+    <script>
+        $(function(){
+      $(".fold-table tr.view").on("click", function(){
+        $(this).toggleClass("open").next(".fold").toggleClass("open");
+        if ($(this).hasClass("open")) {
+          $('.toggle_img',this).attr('src', './assets/images/chethan/noun-minus-1225029.svg');
+        }
+        else{
+          $('.toggle_img',this).attr('src', './assets/images/chethan/noun-plus-1052486.svg');
+        }
+      });
+    });
+      </script>
+    <script>
+      VirtualSelect.init({
+        ele: '#SearchDropdown',
+        valueKey: 'id',
+      });
+    </script>
+    <script type="text/javascript">
+      $(function() {
+        $('input[name="datefilter"]').daterangepicker({
+          autoUpdateInput: false,
+          locale: {
+            cancelLabel: 'Clear'
+          }
+        });
+        $('input[name="datefilter"]').on('apply.daterangepicker', function(ev, picker) {
+          $(this).val(picker.startDate.format('MM/DD/YYYY') + ' - ' + picker.endDate.format('MM/DD/YYYY'));
+        });
+        $('input[name="datefilter"]').on('cancel.daterangepicker', function(ev, picker) {
+          $(this).val('');
+        });
+      });
+    </script>
+    <script>
+      function sidemenu() {
+        var sidebar = document.getElementById("sidebar-menu")
+        var icon = document.getElementById("menu-icon")
+        var selector = document.getElementById("fullselector")
+        selector.classList.toggle("mobile-menu-stopper")
+        sidebar.classList.toggle("sidebar-active")
+        icon.classList.toggle("icon-rotate")
+        icon.classList.toggle("fa-bars")
+        icon.classList.toggle("fa-xmark")
+      }
+    </script>
+    <script>
+      function profile() {
+        profileMenu = document.getElementById("profileDropdown")
+        profileMenu.classList.toggle("dropdownActive")
+        document.addEventListener('click', function profile(event) {
+          console.log("clicked")
+          const box4 = document.getElementById('profile-out');
+          if (!box4.contains(event.target)) {
+            profileMenu.classList.remove("dropdownActive")
+          }
+        });
+      }
+    </script>
+    <!-- toggle -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js'></script>
+  </body>
+</html>
