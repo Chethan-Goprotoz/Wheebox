@@ -759,8 +759,8 @@
       .pill-div{
         overflow: scroll;
       }
-      .nav-pills{
-        width: 200%;
+      .quesBankTabs .nav-pills{
+        width: 300%;
       }
       .assessor_allotment_div .nav-pills{
         width: auto;
@@ -793,4 +793,11 @@
   color: #010D0A;
   opacity: 0.3;
   
+}
+.searchInput .searchAfter input {
+  width: 329px;
+  height: 48px;
+  color: rgb(179, 179, 179);
+  font-size: 16px;
+  padding-left: 43px;
 }
