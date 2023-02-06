@@ -1,8 +1,4 @@
 
-.toggle_img{
-  padding-right: 25px;
-  padding-left: 10px;
-}
 
 /* .page-item .page-link:hover{
 background: #20776E !important;
@@ -69,6 +65,11 @@ flex: 1 1 auto;
   color: #848484;
   font-size: 16px;
   margin: 0px;
+}
+
+.toggle_img{
+  padding-right: 25px;
+  padding-left: 10px;
 }
 }
 
@@ -182,6 +183,7 @@ padding-bottom: 10px;
 .modal-title{
 font-size: 18px;
 }
+
 
 }
 
