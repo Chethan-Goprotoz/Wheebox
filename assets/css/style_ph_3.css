@@ -490,6 +490,14 @@
       vertical-align: middle;
       margin-right: 10px;
     }
+    .red-hr{
+      width: 45px;
+      height: 9px;
+      color: red;
+      opacity: 1;
+      vertical-align: middle;
+      margin-right: 10px;
+    }
     hr:not([size]) {
       height: 9px;
     }
@@ -814,8 +822,18 @@
       .sub_eve .searchInput input {
         width: 308px !important;
 }
+.view_question{
+  width: 700px;
+}
+.view_question_tag{
+  flex-wrap: wrap;
+  gap: 15px;
 }
 
+}
+.view_q_btn{
+  height: 48px;
+}
 .fold-table{
   font-size: 14px;
 }
@@ -838,3 +856,4 @@
 .pop_up .modal-header .btn-close{
   margin-top: 10px;
 }
+

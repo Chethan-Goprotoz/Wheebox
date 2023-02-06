@@ -49,18 +49,35 @@
                 <!-- Modal body -->
                 <div class="modal-body">
                         <!--Table  -->
-                        <div style="overflow-x:auto;">
+                        <div class="d-flex justify-content-between align-items-center view_question_tag">
+                            <!-- tag -->
                             <div class="tags-div">
-                                <div class="tags-list" data-toggle="modal" data-target="#exampleModalCenter">
-                                  <p style="margin-bottom: 0px;">Stream</p>
-                                  <h4>Commerce</h4>
-                                </div>
-                                <div class="tags-list" data-toggle="modal" data-target="#exampleModalCenter">
-                                  <p style="margin-bottom: 0px;">Stream</p>
-                                  <h4>Grammar</h4>
-                                </div>
-                              </div>
-                            <table class="fold-table table-responsive">
+                               <div class="tags-list" data-toggle="modal" data-target="#exampleModalCenter">
+                                 <p style="margin-bottom: 0px;">Stream</p>
+                                 <h4>Commerce</h4>
+                               </div>
+                               <div class="tags-list" data-toggle="modal" data-target="#exampleModalCenter">
+                                 <p style="margin-bottom: 0px;">Stream</p>
+                                 <h4>Grammar</h4>
+                               </div>
+                             </div>
+                             <!-- Tags -->
+                             <div class="d-flex justify-content-between align-items-center">
+                               <!-- Search -->
+                               <div class="searchInput w-auto collapse show" id="tableRoster" style="">
+                                   <div class="searchAfter position-relative me-3">
+                                     <input type="text" class="form-control w-auto" placeholder="Search...">
+                                   </div>
+                                 </div>
+                                 <!-- buuton -->
+                                 <div class="text-end">
+                                   <button type="button" class="btn ps-4 pe-4 text-white btnDark collapseBtn view_q_btn" data-bs-toggle="collapse" data-bs-target="#tableRoster" aria-expanded="true" aria-controls="tableRoster" style="height: 48px;">Select All</button>
+                                 </div>
+                             </div>
+                          </div>
+                        <div style="overflow-x:auto;">
+                          
+                            <table class="fold-table table-responsive view_question">
                                 <thead>
                                   <tr>
                                     <th width="5%">
