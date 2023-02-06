@@ -597,12 +597,9 @@
     text-align: left;
     float: left;
     padding-left: 10px;
-    font-size: 18px;
   }
 
-  .create_test_page label{
-  font-size: 18px;
-  }
+
 
   #fname{
     border: 0.4000000059604645px solid #AAAAAA !important;
@@ -700,7 +697,15 @@
 .create_test_page .calendar{
   height: 48px;
 }
-
+.create_test_page input, .create_test_page .searchdropdown {
+  margin-bottom: 20px !important;
+}
+.create_test_page .btn-toggle{
+  margin-bottom: 20px;
+}
+.view_question_tag .view_q_btn{
+  width: auto;
+}
 /* Evaluvation */
 /* Responsive */
 @media (min-width: 577px){
@@ -712,6 +717,12 @@
   .multisteps-form__progress-btn:after{
     left: calc(-19.5% - 13px / 2);
   }
+  .create_test_page label{
+    font-size: 18px;
+    }
+    .create_test_page input{
+      font-size: 18px;
+    }
   .multisteps-form__progress button{
     font-size: var(--font_size_18);
   }
@@ -720,6 +731,12 @@
   .multisteps-form__progress-btn:after{
     left: calc(-19.5% - 13px / 2);
   }
+  .create_test_page label{
+    font-size: 14px;
+    }
+    .create_test_page input{
+      font-size: 14px;
+    }
 }
 @media (max-width: 1200px){
   .create_test_page .menu-scroll {
@@ -837,6 +854,21 @@
 .view_question_tag_pop .modal-header .btn-close {
   margin-top: -2px !important;
 }
+.create_test_page label{
+  font-size: 14px;
+  }
+  .create_test_page input, .create_test_page .searchdropdown {
+    margin-bottom: 20px;
+  }
+  .create_test_page .btn-toggle{
+    margin-bottom: 20px;
+  }
+  .extra-margin{
+    margin-top: 20px;
+  }
+  .inside-container-dashboard h3{
+    margin-bottom: 0px;
+  }
 
 }
 .view_q_btn{
