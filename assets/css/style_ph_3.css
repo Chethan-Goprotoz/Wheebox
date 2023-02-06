@@ -816,7 +816,9 @@
 }
 }
 
-
+.fold-table{
+  font-size: 14px;
+}
 .dateInputField .calendar::placeholder{
   font: normal normal 16px/11px Pop-normal;
   color: #010D0A;
