@@ -786,6 +786,12 @@
         padding-right: 15px;
         padding-bottom: 25px;
       }
+      .tab-pane{
+        margin-top: 0px;
+      }
+      .create_test_page .calendar{
+        height: 50px;
+      }
 }
 
 
