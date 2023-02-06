@@ -419,7 +419,7 @@
         /* Create Test */
 .create_test_table .mytable.table>thead {
     vertical-align: middle;
-    background-color: #DAEDEB;
+    background-color: #edfaf4;
     height: 60px;
     font-size: 14px;
     color: #000000;
@@ -635,8 +635,14 @@
  .pill-div .nav-link:hover img{
     content: url("../images/chethan/Group 66993.svg");
   }
+  .assessor_allotment_div .active img{
+    content: url("../images/icon88.png");
+  }
+  .assessor_allotment_div .nav-link:hover:hover  img{
+    content: url("../images/icon88.png");
+  }
   .tab-pane {
-    background-color: #fff0;
+    background-color: rgb(255, 255, 255);
     margin-top: 30px;
     padding-left: 25px;
     padding-right: 25px;
@@ -801,9 +807,18 @@
       .download_p::after{
         content:" ";
       }
+      .sub_padding{
+        padding-top: 15px;
+        padding-bottom: 15px;
+      }
+      .sub_eve .searchInput input {
+        width: 308px !important;
+}
 }
 
-
+.fold-table{
+  font-size: 14px;
+}
 .dateInputField .calendar::placeholder{
   font: normal normal 16px/11px Pop-normal;
   color: #010D0A;
@@ -819,4 +834,7 @@
 }
 .quesBankTabs .tab-pane{
   margin-top: 0;
+}
+.pop_up .modal-header .btn-close{
+  margin-top: 10px;
 }

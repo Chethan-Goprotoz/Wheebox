@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="assets/css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/phase-3.css" rel="stylesheet">
     <link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/alphardex/aqua.css/dist/aqua.min.css'>
+    <link rel="stylesheet" href="./assets/css/style_ph_3.css">
   </head>
   <body>
     <!-- loader start-->
@@ -66,9 +67,10 @@
         <div class="d-flex mobileMenu justify-content-lg-end justify-content-between d-md-none mt-3">
           <div class="d-flex justify-content-between align-items-center">
             <img src="./assets/images/Question_Bank/menu.png" onclick="sidemenu()" id="menu-icon" class="fas fa-solid icon-w fa-bars d-block d-lg-none ms-0">
-            <h3 class="mb-0">Question Bank</h3>
+            <h3 class="mb-0">Subjective Evaluation</h3>
           </div>
-          <div class="dropdown">
+          
+          <!-- <div class="dropdown">
             <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"> Quick links </a>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
               <li>
@@ -81,9 +83,10 @@
                 <a class="dropdown-item" href="#">Allot Assesor</a>
               </li>
             </ul>
-          </div>
+          </div> -->
         </div>
       </div>
+      <h3 class="pt-5 d-block d-md-none" style="font-size: 16px;">Assigned Test List</h3>
       <div class="sidebar">
         <div class="d-flex">
           <div class="side1" id="sidebar-menu">
@@ -133,7 +136,7 @@
           </div>
           <div class="inside-container-dashboard">
             <div class="d-flex flexWrap justify-content-between align-items-center mb-5 mt-4">
-              <h3 class="mb-0">Subjective Evaluation<br><br>Assigned Test List</h3>
+              <h3 class="mb-0 d-none d-md-block">Subjective Evaluation<br><br><span style="font-size: 16px;">Assigned Test List</span></h3>
           
               <div class="d-flex gap-4 Mb-center"></div>
             </div>
@@ -162,7 +165,7 @@
               <div id="GeneralQuestion" class="container tab-pane active">
                 <br>
                 <!-- search component -->
-                <div class="row mt-5">
+                <div class="row mt-5 sub_eve">
                   <div class="col-md-6">
                     <div class="searchInput w-75 collapse show" id="tableRoster" style="">
                       <div class="searchAfter position-relative mb-4">
@@ -170,7 +173,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-6">
+                  <div class="col-md-6 sub_padding">
                     <div class="d-flex justify-content-end">
                       <div class="text-end me-4 collapse show" id="tableRoster" style="">
                         <select class="form-select NoFrequency" aria-label="Default select example">
@@ -387,7 +390,7 @@
                 }
                 .tab-pane {
                   background-color: #fff;
-                  margin-top: 30px;
+                  margin-top: 0px;
                   padding-left: 25px;
                   padding-right: 25px;
                 }
