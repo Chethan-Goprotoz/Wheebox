@@ -133,7 +133,8 @@
           </div>
           <div class="inside-container-dashboard">
             <div class="d-flex flexWrap justify-content-between align-items-center mb-5 mt-4">
-              <h3 class="mb-0">Evaluation</h3>
+              <h3 class="mb-0">Subjective Evaluation<br><br>Assigned Test List</h3>
+          
               <div class="d-flex gap-4 Mb-center"></div>
             </div>
             <!-- Modal start -->
@@ -161,13 +162,28 @@
               <div id="GeneralQuestion" class="container tab-pane active">
                 <br>
                 <!-- search component -->
-                <div class="searchInput mt-4 d-flex justify-content-between align-items-center mb-4 mb-md-5">
-                  <div class="searchAfter position-relative">
-                    <input type="text" class="form-control" placeholder="Search...">
+                <div class="row mt-5">
+                  <div class="col-md-6">
+                    <div class="searchInput w-75 collapse show" id="tableRoster" style="">
+                      <div class="searchAfter position-relative mb-4">
+                        <input type="text" class="form-control" placeholder="Search...">
+                      </div>
+                    </div>
                   </div>
-                  <div class="filter-container filter-container-shadow w-auto ps-3 pe-3 d-lg-flex d-flex justify-content-center align-items-center d-none d-md-flex" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    <p>Download <img src="./assets/images/chethan/download.svg" class="ms-2" width="16" alt="">
-                    </p>
+                  <div class="col-md-6">
+                    <div class="d-flex justify-content-end">
+                      <div class="text-end me-4 collapse show" id="tableRoster" style="">
+                        <select class="form-select NoFrequency" aria-label="Default select example">
+                          <option selected="">No . of Entries</option>
+                          <option value="1">5</option>
+                          <option value="2">10</option>
+                          <option value="3">15</option>
+                        </select>
+                      </div>
+                      <div class="text-end">
+                        <button type="button" class="btn ps-4 pe-4 text-white btnDark collapseBtn" data-bs-toggle="collapse" data-bs-target="#tableRoster" aria-expanded="true" aria-controls="tableRoster">Help</button>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <!-- end -->
@@ -360,6 +376,12 @@
                 <!--Table  -->
               </div>
               <style>
+                  .fold-table th {
+    text-align: center;
+    padding-left: 0px;
+    padding-right: 25px;
+    padding-left: 25px;
+}
                 .table{
                   text-align: center;
                 }
@@ -376,14 +398,18 @@
                 }
 
                 .fold-table th {
+                  text-align: center;
+                  padding-left: 0px;
+                }
+                .fold-content p{
                   text-align: left;
-                  padding-left: 40px;
                 }
 
                 .fold-table td {
-                  padding-left: 40px;
+                  padding-left: 0px;
                   padding-top: 10px;
                   padding-bottom: 10px;
+                  text-align: center;
                 }
 
                 .fold-table tr {
@@ -471,8 +497,8 @@
 .form-check {
     display: block;
     min-height: 1.5rem;
-    padding-left: 0em;
-    margin-bottom: 0.125rem;
+    padding-left: 12px;
+    margin-bottom: 12px;
 }
 .form-check-input[type=checkbox] {
   --checkbox-width: 30px;
