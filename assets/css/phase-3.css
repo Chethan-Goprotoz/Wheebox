@@ -2202,11 +2202,12 @@ input{
     background-color: #fff;
     padding: 10px;
     position: absolute;
-    right: -270px;
+    right: -315px;
     width: 100%;
     top: -4px;
     box-shadow: 0px 1px 6px #00000014;
     z-index: 9;
+    transition: all  0.5s;
   }
   .dropChild2{
     display: none;
@@ -2215,14 +2216,24 @@ input{
     position: absolute;
     right: -290px;
     width: 100%;
-    top: -4px;
+    /* top: -4px; */
+    bottom: -10px;
     box-shadow: 0px 1px 6px #00000014;
     z-index: 9;
+    transition: all  0.5s;
   }
   .dropParent:hover .dropChild,.dropParent2:hover .dropChild2{
     display: block;
+    transition: all  0.5s;
   }
-  .chevronIcon::after{
+
+  .chevronIcon{
+    margin-left: auto !important;
+    transform: rotate(90deg);
+    width: 14px !important;
+    height: 14px !important;
+  }
+  /* .chevronIcon::after{
     content: "";
     position: absolute;
     right: 15;
@@ -2233,12 +2244,10 @@ input{
     background-size: 12px;
     background-repeat: no-repeat;
     transform: rotate(90deg);
-    top: 13px;
-    float: right;
-    margin-left: auto;
-    margin-top: 12px;
-  }
-  .childChevronIcon::after{
+    top: 50%;
+ 
+  } */
+  /* .childChevronIcon::after{
     content: "";
     position: absolute;
     right: 0px;
@@ -2250,7 +2259,7 @@ input{
     background-repeat: no-repeat;
     transform: rotate(90deg);
     top:24px;
-  }
+  } */
   .dropChild.w-auto .sideMenu p{
    margin-right: 20px;
   }
@@ -2361,6 +2370,12 @@ input{
   /* resolution 1920 started */
 
   @media (min-width:1900px){
+    .dropChild{
+        right: -355px;
+    }
+    .dropChild2{
+        right: -340px;
+    }
     .table-main-section2.table-responsive.rosterManageTable table{
         table-layout: auto;
         width: 100%;
