@@ -681,6 +681,9 @@
   .pop_up .searchInput input {
     width: 100%;
 }
+.create_test_page .calendar{
+  height: 48px;
+}
 
 /* Evaluvation */
 /* Responsive */
@@ -792,6 +795,12 @@
       .create_test_page .calendar{
         height: 50px;
       }
+      .searchInput .searchAfter input{
+        width: 180px !important;
+      }
+      .download_p::after{
+        content:" ";
+      }
 }
 
 
@@ -804,7 +813,7 @@
 .searchInput .searchAfter input {
   width: 329px;
   height: 48px;
-  color: rgb(179, 179, 179);
+  color: rgb(0, 0, 0);
   font-size: 16px;
   padding-left: 43px;
 }
