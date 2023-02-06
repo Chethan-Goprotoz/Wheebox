@@ -351,10 +351,10 @@
 
   <script>
     VirtualSelect.init({
-      ele: '#SearchDropdown'
+      ele: '#SearchDropdown',
+      valueKey: 'id',
     });
   </script>
-
   <script>
     var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
     var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
