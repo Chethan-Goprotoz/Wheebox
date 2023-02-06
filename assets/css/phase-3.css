@@ -1579,7 +1579,11 @@ opacity: 1;
 }
 .dateInputField .calendar::placeholder{
     font-family: pop-normal;
-    font-size: 16px;
+    font-size: 14px;
+}
+.dateInputField .calendar{
+    font-family: pop-normal;
+    font-size: 14px;
 }
 .dateInputField .fa-calendar{
     top: 48px;
