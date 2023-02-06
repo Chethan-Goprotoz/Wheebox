@@ -681,6 +681,8 @@
   }
   .pop_up .modal-title{
     padding-bottom: 20px;
+    font-size: var(--font_size_22);
+    font-weight: 600;
   }
   .pop_up .modal-body{
     padding-left: 30px;
