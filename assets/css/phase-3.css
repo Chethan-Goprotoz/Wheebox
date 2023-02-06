@@ -1579,7 +1579,11 @@ opacity: 1;
 }
 .dateInputField .calendar::placeholder{
     font-family: pop-normal;
-    font-size: 16px;
+    font-size: 14px;
+}
+.dateInputField .calendar{
+    font-family: pop-normal;
+    font-size: 14px;
 }
 .dateInputField .fa-calendar{
     top: 48px;
@@ -2283,16 +2287,17 @@ input{
     height: auto !important;
 }
 .genQues .nav-link.active img{
-    content: url("./assets/images/Question_Bank/noun-question.svg");
+    /* content: url("./assets/images/Question_Bank/noun-question.svg"); */
+    content: url("../images/Question_Bank/noun-question.svg");
   }
   .genQues .nav-link:hover img{
-    content: url("./assets/images/Question_Bank/noun-question.svg");
+    content: url("../images/Question_Bank/noun-question.svg");
   }
   .tabProg .nav-link.active img{
-    content: url("./assets/images/Question_Bank/noun-programming-2648077.svg");
+    content: url("../images/Question_Bank/noun-programming-2648077.svg");
   }
   .tabProg .nav-link:hover img{
-    content: url("./assets/images/Question_Bank/noun-programming-2648077.svg");
+    content: url("../images/Question_Bank/noun-programming-2648077.svg");
   }
 
 /*  */
