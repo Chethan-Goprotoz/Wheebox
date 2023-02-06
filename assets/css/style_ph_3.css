@@ -817,3 +817,6 @@
   font-size: 16px;
   padding-left: 43px;
 }
+.quesBankTabs .tab-pane{
+  margin-top: 0;
+}
