@@ -635,6 +635,12 @@
  .pill-div .nav-link:hover img{
     content: url("../images/chethan/Group 66993.svg");
   }
+  .assessor_allotment_div .active img{
+    content: url("../images/icon88.png");
+  }
+  .assessor_allotment_div .nav-link:hover:hover  img{
+    content: url("../images/icon88.png");
+  }
   .tab-pane {
     background-color: #fff0;
     margin-top: 30px;
