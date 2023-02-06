@@ -831,6 +831,12 @@
   flex-wrap: wrap;
   gap: 15px;
 }
+.view_question_tag .pop_up .btnDark.collapseBtn{
+  width: auto;
+}
+.view_question_tag_pop .modal-header .btn-close {
+  margin-top: -2px !important;
+}
 
 }
 .view_q_btn{
