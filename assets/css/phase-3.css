@@ -3990,3 +3990,32 @@ input{
   }
   
   /* end */
+
+
+  @media (min-width:800px)and (max-width:1024px){
+    .inside-container-dashboard{
+        margin-left: 0;
+        padding: 15px;
+    }
+    .side1{
+        width: 24%;
+    }
+    .addNewSubj{
+        font-size: 13px;
+    }
+    .fourCards.pt-5 .row.g-5{
+        --bs-gutter-x:1rem;
+    }
+    .codeInput .btnBorder{
+        left: 7px;
+    }
+    .btnDark{
+        font-size: 8px;
+    }
+    .modal-body.programmingPreview{
+        padding: 0 40px 0px 30px;
+    }
+    .inputGroups .errorMsg{
+        left: 15px;
+    }
+  }
