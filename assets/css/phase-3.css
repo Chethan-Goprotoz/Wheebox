@@ -3029,6 +3029,9 @@ input::placeholder{
 
 /* responsive css mobile */
 @media (max-width:600px){
+    #labellingModal .modal-dialog, #labellingModal2 .modal-dialog{
+        max-width: 100%;
+    }
     #assignTestModal .modal-title, #editTagsModal .modal-title{
         font-size: 18px;
     }
@@ -3611,11 +3614,14 @@ input::placeholder{
     }
 
     .input-container1 input{
-        height: 42px;
+        height: 50px;
         border: 1px solid #AAAAAA;
         font-size: 16px;
         color: #010D0A;
         padding-left: 10px;
+    }
+    .input-container1 input::placeholder{
+        font-size: 16px !important;
     }
    
     .dropdown-toggl.noToggle{
@@ -3665,6 +3671,9 @@ input::placeholder{
         height: 50px;
         font-size: 16px;
         border: 1px solid #ced4da;
+    }
+    .calendar-container.InputFile input[type="text"]::placeholder{
+        font-size: 16px;
     }
     .dateInputField .calendar{
         height: 50px;
@@ -4103,5 +4112,8 @@ input::placeholder{
     }
     .anchor-dec-ph3 h5{
         font-size: 16px;
+    }
+    .ansRange{
+        width:95%;
     }
   }
