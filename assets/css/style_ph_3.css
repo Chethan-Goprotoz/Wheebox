@@ -748,7 +748,10 @@
 /* Evaluvation */
 /* Responsive */
 
-
+.main_bulk_upload .multisteps-form__progress{
+  
+  margin-top: 20px;
+}
 @media (min-width: 577px){
   .multisteps-form__progress-btn:after{
     left: calc(-10.5% - 13px / 2);
@@ -807,6 +810,10 @@
   width: 200%;
 }
 }
+.main_bulk_upload .modal-body{
+  padding-bottom: 20px;
+}
+
 
 @media (max-width: 576px)
 /* Bulk Upload */
@@ -961,7 +968,7 @@
     width: 200%;
     margin-top: 20px;
   }
-
+ 
 }
 .bulk_upload_select{
   margin-bottom: 60px;
