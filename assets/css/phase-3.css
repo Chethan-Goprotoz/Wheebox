@@ -909,6 +909,9 @@ position: relative;
     /* margin-top: -13.5px; */
      /* min-height: 48px; */
   }
+  /* .multisteps-form__content .onoffswitch .onoffswitch-inner:before{
+    text-align: left;
+  } */
 
   .toggle-group input[type=checkbox] {
     position: absolute;
@@ -2309,9 +2312,14 @@ input{
     content: url("../images/Question_Bank/noun-programming-2648077.svg");
   }
 
-  .table-responsive.table-div.create_test_table .onoffswitch .onoffswitch-inner:before, .onoffswitch .onoffswitch-inner:after{
+  /* .table-responsive.table-div.create_test_table .onoffswitch .onoffswitch-inner:before, .onoffswitch .onoffswitch-inner:after{
     text-align: left;
+  } */
+
+  .create_test_table .onoffswitch .onoffswitch-inner:before{
+    padding-right: 25px;
   }
+ 
 
 /*  */
 @media (max-width:1500px){
