@@ -4050,3 +4050,29 @@ input{
         display: none ;
     }
   }
+
+  @media (min-width:350px) and (max-width:425px){
+
+    .quesBankTabs .nav-item .nav-link, .quesBankTabs .nav-item .nav-link.active{
+        font-size: 14px !important;
+    }
+    .filter-container-shadow p{
+        font-size: 11px;
+    }
+    .inputGroups .errorMsg{
+        font-size: 11px;
+    }
+    .w-auto.addNewSubj {
+        width: 150px;
+        font-size: 11px;
+    }
+    .fourCards.pt-5 .row.g-5{
+        --bs-gutter-x: 0.5rem;
+    }
+    .btnDark{
+        font-size: 8px;
+    }
+    .sideMenu p {
+        font-size: 14px;
+    }
+  }
