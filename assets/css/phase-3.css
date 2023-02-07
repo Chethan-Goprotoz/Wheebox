@@ -183,7 +183,7 @@
     height: 45px;
 }
 
-.reviewQuesModal .modal-title{
+.reviewQuesModal .modal-title,#editTagsManageModal .modal-title{
     font-size: 18px;
     letter-spacing: 0px;
     color: #2C3652;
@@ -2307,6 +2307,10 @@ input{
   }
   .tabProg .nav-link:hover img{
     content: url("../images/Question_Bank/noun-programming-2648077.svg");
+  }
+
+  .table-responsive.table-div.create_test_table .onoffswitch .onoffswitch-inner:before, .onoffswitch .onoffswitch-inner:after{
+    text-align: left;
   }
 
 /*  */
