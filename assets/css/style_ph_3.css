@@ -820,7 +820,22 @@
     }   */
     .main_bulk_upload .modal-body .download_btn{
         font-size: var(--font_size_16);
-        margin: 30px 05px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-top: 30px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 40px;
+    }
+    
+    .main_bulk_upload .multisteps-form__title{
+      font-size: var(--font_size_18) !important;
+      text-align: center;
+    }
+    .main_bulk_upload .vscomp-toggle-button{
+      width: 100%;
     }
     .create_test_page .container-fluid {
       padding: 0px;  
@@ -938,6 +953,13 @@
   }
   .edit_tag_pop_up .vscomp-ele, .edit_tag_pop_up #fname{
     max-width: 300px;
+  }
+  .main_bulk_upload .multistep_header{
+    overflow: scroll;
+  }
+  .main_bulk_upload .multisteps-form__progress{
+    width: 200%;
+    margin-top: 20px;
   }
 
 }
