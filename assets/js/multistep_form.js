@@ -106,7 +106,7 @@ const DOMstrings = {
   const setFormHeight = () => {
     const activePanel = getActivePanel();
   
-    formHeight(activePanel);
+    formHeight("200px");
   };
   
   //STEPS BAR CLICK FUNCTION
@@ -161,7 +161,7 @@ const DOMstrings = {
   });
   
   //SETTING PROPER FORM HEIGHT ONLOAD
-  window.addEventListener('load', setFormHeight, false);
+  window.addEventListener('load', setFormHeight, true);
   
   //SETTING PROPER FORM HEIGHT ONRESIZE
   window.addEventListener('resize', setFormHeight, false);
