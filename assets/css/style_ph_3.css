@@ -1,16 +1,60 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@font-face {
+  font-family: Rob-norm;
+  src: url(../fonts/Roboto/Roboto-Regular.ttf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Rob-med;
+  src: url(../fonts/Roboto/Roboto-Medium.ttf);
+}
+
+@font-face {
+  font-family: Rob-bold;
+  src: url(../fonts/Roboto/Roboto-Bold.ttf);
+}
+
+@font-face {
+  font-family: Pop-extralight;
+  src: url(../fonts/Poppins/Poppins-ExtraLight.ttf);
+}
+
+@font-face {
+  font-family: Pop-light;
+  src: url(../fonts/Poppins/Poppins-Light.ttf);
+}
+
+@font-face {
+  font-family: Pop-normal;
+  src: url(../fonts/Poppins/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: Pop-medium;
+  src: url(../fonts/Poppins/Poppins-Medium.ttf);
+}
+
+@font-face {
+  font-family: Pop-semibold;
+  src: url(../fonts/Poppins/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: Pop-bold;
+  src: url(../fonts/Poppins/Poppins-Bold.ttf);
+}
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins";
+    font-family: "Pop-normal";
   }
   body{
-    font-family: "Poppins";
+    font-family: "Pop-normal";
   }
   ::placeholder{
-    font-family: "Poppins";
+    font-family: "Pop-normal";
   }
 
 :root {
@@ -700,9 +744,7 @@
   .pop_up .searchInput input {
     width: 100%;
 }
-.create_test_page .calendar{
-  height: 48px;
-}
+
 .create_test_page input, .create_test_page .searchdropdown {
   margin-bottom: 20px !important;
 }
@@ -714,9 +756,14 @@
 }
 /* Evaluvation */
 /* Responsive */
+
+
 @media (min-width: 577px){
   .multisteps-form__progress-btn:after{
     left: calc(-10.5% - 13px / 2);
+  }
+  .create_test_page .calendar{
+    height: 42px;
   }
 }
 @media (min-width: 1500px){
@@ -731,6 +778,11 @@
     }
   .multisteps-form__progress button{
     font-size: var(--font_size_18);
+  }
+}
+@media (min-width:1920px){
+  .create_test_page .calendar{
+    height: 50px !important;
   }
 }
 @media (min-width: 577px){
