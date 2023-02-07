@@ -941,6 +941,9 @@
   }
 
 }
+.bulk_upload_select{
+  margin-bottom: 60px;
+}
 .view_q_btn{
   height: 48px;
 }
