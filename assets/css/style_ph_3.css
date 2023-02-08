@@ -985,8 +985,12 @@
 /* font and text box */
 @media (max-width: 599px){
   
-  input{
+  input[type="text"]{
     font-size: 16px !important;
+    height: 50px !important;
+  }
+  .vscomp-toggle-button{
+    font-size: 14px !important;
     height: 50px !important;
   }
   label{
@@ -1008,7 +1012,7 @@
 /* desktop */
 
 @media (min-width:601px) and (max-width:1919px){
-  input{
+  input[type="text"]{
     font-size: 14px !important;
     height: 42px !important;
   }
@@ -1033,7 +1037,7 @@
 }
 /* large screen */
 @media (min-width: 1920px){
-  input{
+  input[type="text"]{
     font-size: 16px !important;
     height: 50px !important;
   }
