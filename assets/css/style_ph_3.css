@@ -659,7 +659,6 @@
   .admin_control .multisteps-form__panel .calendar-container .fa-regular, .far {
     font-weight: 400;
     position: absolute;
-    top: 18px;
 }
 .admin_control .multisteps-form__panel .calender_div{
    margin-top: 20px;
@@ -1001,6 +1000,9 @@
   .multisteps-form__content .form-row h3{
     font-size: 22px;
   }
+  .admin_control .multisteps-form__panel .calendar-container .fa-regular, .far{
+    top: 18px;
+  }
 }
 
 /* desktop */
@@ -1022,8 +1024,11 @@
     font-family: "Pop-normal";
     opacity: 0.3;
   }
-  .fa-calendar{
+  .create_test_page .fa-calendar{
     top: 45px;
+  }
+  .admin_control .multisteps-form__panel .calendar-container .fa-regular, .far{
+    top: 15px;
   }
 }
 /* large screen */
@@ -1048,7 +1053,10 @@
     font-family: "Pop-normal";
     opacity: 0.3;
   }
-  .fa-calendar{
+  .create_test_page .fa-calendar{
     top: 51px;
+  }
+  .admin_control .multisteps-form__panel .calendar-container .fa-regular, .far{
+    top: 18px;
   }
 }
