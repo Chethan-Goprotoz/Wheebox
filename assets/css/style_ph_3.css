@@ -991,7 +991,9 @@ textarea::placeholder { /* Modern browsers */
 .pop_up .modal-header .btn-close{
   margin-top: 10px;
 }
-
+.selection-new .filter-container-shadow{
+  width: fit-content;
+}
 /* font and text box */
 @media (max-width: 599px){
   
