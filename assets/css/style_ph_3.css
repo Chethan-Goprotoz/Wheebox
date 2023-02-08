@@ -998,6 +998,9 @@
     font-family: "Pop-normal";
     opacity: 0.3;
   }
+  .multisteps-form__content .form-row h3{
+    font-size: 22px;
+  }
 }
 
 /* desktop */
