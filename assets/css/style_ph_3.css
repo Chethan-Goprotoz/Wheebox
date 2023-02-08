@@ -682,13 +682,13 @@
   .assessor_allotment_div .nav-link:hover:hover  img{
     content: url("../images/icon88.png");
   }
-  .tab-pane {
+  .evaluation_page .tab-pane {
     background-color: rgb(255, 255, 255);
     margin-top: 30px;
     padding-left: 25px;
     padding-right: 25px;
   }
-  .Mb-center div.filter-container.filter-container-shadow {
+  .evaluation_page .Mb-center div.filter-container.filter-container-shadow {
     width: 256px !important;
 }
   .passper label{
@@ -865,7 +865,7 @@
       .pill-div{
         overflow: scroll;
       }
-      .quesBankTabs .nav-pills{
+      .evaluation_page .quesBankTabs .nav-pills{
         width: 300%;
       }
       .assessor_allotment_div .nav-pills{
