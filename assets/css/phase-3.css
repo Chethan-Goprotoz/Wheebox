@@ -3029,6 +3029,9 @@ input::placeholder{
 
 /* responsive css mobile */
 @media (max-width:600px){
+    #height11{
+        min-height: 710px !important;
+    }
     #labellingModal .modal-dialog, #labellingModal2 .modal-dialog{
         max-width: 100%;
     }
