@@ -731,7 +731,7 @@
 }
 
 .create_test_page input, .create_test_page .searchdropdown {
-  margin-bottom: 20px !important;
+  margin-bottom: 0px !important;
 }
 .create_test_page .btn-toggle{
   margin-bottom: 20px;
