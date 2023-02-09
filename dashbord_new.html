@@ -116,231 +116,12 @@
                                   
                         </div>
                            </div> <!-- Body Open -->
-                    <!-- Cards Opens-->
-                    <div class="row dash-number">
-                        <div class="col-sm-6  col-md-3 "> <a href="#">
-                                <div class="d-flex justify-content-between testcard gridBox box1 box-card">
-                                    <div class="dashboard-content">
-                                        <p>TOTAL NO OF <br>QUESTIONS </p>
-                                        <h3>13775</h3>
-                                    </div>
-                                    <div class="dashboardCard-img border-1 d-flex justify-content-center align-items-center"> <img src="./assets/images/chethan/noun-question-5269588.svg" alt=""> </div>
-                                </div>
-                            </a> </div>
-                        <div class="col-sm-6  col-md-3 "> <a href="#">
-                                <div class="d-flex justify-content-between testcard gridBox box2 box-card">
-                                    <div class="dashboard-content">
-                                        <p>TOTAL ACTIVE <br>ASSESSMENTS</p>
-                                        <h3>2216</h3>
-                                    </div>
-                                    <div class="dashboardCard-img border-2 d-flex justify-content-center align-items-center"> <img src="./assets/images/chethan/noun-assesment-4658555.svg" alt=""> </div>
-                                </div>
-                            </a> </div>
-                        <div class="col-sm-6 col-md-3"> <a href="#">
-                                <div class="d-flex justify-content-between testcard gridBox box3 box-card">
-                                    <div class="dashboard-content">
-                                        <p>TOTAL<br> ASSESSMENTS</p>
-                                        <h3>400</h3>
-                                    </div>
-                                    <div class="dashboardCard-img border-3 d-flex justify-content-center align-items-center"> <img src="./assets/images/chethan/noun-certified-3324969.svg" alt=""> </div>
-                                </div>
-                            </a> </div>
-                        <div class="col-sm-6 col-md-3"> <a href="#">
-                                <div class="d-flex justify-content-between testcard gridBox box4 box-card">
-                                    <div class="dashboard-content">
-                                        <p>TOTAL <br>CANDIDATES</p>
-                                        <h3>59318</h3>
-                                    </div>
-                                    <div class="dashboardCard-img border-4 d-flex justify-content-center align-items-center"> <img src="./assets/images/chethan/noun-right-candidate-4842951.svg" alt=""> </div>
-                                </div>
-                            </a> </div>
-                    </div> <!-- Cards Close -->
-                    <div class="row stats-row">
-                        <div class="col">
-                            <div class="testcard testGraph">
-                                <div class="d-flex justify-content-between">
-                                    <h3>Candidate Status</h3> <select class="form-select yeardropdown">
-                                        <option disabled hidden selected>&#128197; 2022</option>
-                                        <option value="1">&#128197; Weekly</option>
-                                        <option value="2">&#128197; Monthly</option>
-                                        <option value="3">&#128197; Yearly</option>
-                                    </select>
-                                </div>
-                                <!--  -->
-                                <!--  -->
-                            </div>
-                        </div> <!-- Stats 2 -->
-                        <div class="col">
-                            <div class="testcard testGraph">
-                                <div class="d-flex justify-content-between">
-                                    <h3>Question Type Trend</h3> <select class="form-select yeardropdown">
-                                        <option disabled hidden selected>&#128197; 2022</option>
-                                        <option value="1">&#128197; Weekly</option>
-                                        <option value="2">&#128197; Monthly</option>
-                                        <option value="3">&#128197; Yearly</option>
-                                    </select>
-                                </div>
-                                <div class="graph-container">
-                                    <div class="chartResponsive-benchmark"> <canvas id="countTrend"></canvas> </div>
-                                </div>
-                            </div>
-                        </div> <!-- row1 end-->
-                        <!-- row2 starts -->
-                        <!-- Stats 2 close-->
-                    </div>
-                    <div class="tabsContainer mt-5 d-flex justify-content-between align-items-center;" >
-                      <div class="tabsButton gap-3 d-flex justify-content-start align-items-center;">
-                        <div>
-                          <button class="btn text-white active" type="button">Today</button>
+                           <div id="chart">
                         </div>
-                        <div>
-                          <button class="btn" type="button">This Week</button>
-                        </div>
-                        <div>
-                          <button class="btn" type="button">This Month</button>
-                        </div>
-                        <div>
-                          <button class="btn" type="button">This Year</button>
-                        </div>
-                      </div>
-                      <div>
-                        <div class="calendar-container">
-                          <input type="text" name="datefilter" class="calendar" value="" placeholder="Start Date &amp; End Date">
-                          <i class="fa-regular fa-calendar"></i>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row g-4 mt-4">
-                        <div class="col-lg-4  ">
-                          <div class="testcard">
-                            <h3 class="chart-headings">Question Bank Status</h3>
-                            <div class="container"> <canvas id="myChart"></canvas> </div>
-                            <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js'></script>
-                            <script>
-                                let myChart = document.getElementById('myChart').getContext('2d');
-                                  
-                                  // GLOBAL
-                                  Chart.defaults.global.defaultFontFamily='Lato';
-                                  Chart.defaults.global.defaultFontSize= 12;
-                                  Chart.defaults.global.defaultFontColor= '#777';
-                                  
-                                  let massPopChart = new Chart(myChart, {
-                                    type: 'pie', // pie, horizontalBar, line, radar, polarArea, doughnut
-                                    data: {
-                                       labels: ['General', 'Programming' ],
-                                      datasets: [ {
-                                        label: 'question',
-                                        data: [
-                                          30,70
-                                        ],
-                                        // backgroundColor: 'green'
-                                        backgroundColor: [
-                                          '#67a9ed',
-                                          '#fec271'
-                                        ],
-                                        borderWidth: 0,
-                                        borderColor: '#777',
-                                        hoverBorderWidth: 0.1,
-                                        hoverBorderColor: '#000'
-                                      }]
-                                    },
-                                    options: {
-                                      title: {
-                                        display: false,
-                                      },
-                                      legend: {
-                                        display: true,
-                                        position: 'right',
-                                        labels: {
-                                          fontColor: 'black',
-                                          fontSize: 12,
-                                          usePointStyle: true,
-                                          boxWidth: 6
-                                        }
-                                      },
-                                      layout : {
-                                        padding: {
-                                          left: 80,
-                                          right: 0,
-                                          bottom: 0,
-                                          top: 0
-                                        }
-                                      },
-                                      tooltips: {
-                                        enabled: true
-                                      }
-                                    }
-                                  })
-                            </script>
-                          </div>
-                        </div>
-                        <div class="col-lg-4">
-                           <div class="testcard gauge_chart">
-                            <h3 class="chart-headings">Assesment Status</h3> 
-                            <div class="w-100">
-                              <div id="chartdiv" style="position: relative;top: -30px;height: 65%;"></div>
-                            </div>
-                           </div>
-                            
-                        </div>
-                        <div class="col-lg-4 ">
-                          <div class="testcard">
-                            <h3 class="chart-headings">Assesment QC Status</h3>
-                            <div class="container"> <canvas id="donutchart"></canvas> </div>
-                            <script>
-                                let donutchart = document.getElementById('donutchart').getContext('2d');
-                                let massPopChart1 = new Chart(donutchart, {
-                                  type: 'doughnut', // pie, horizontalBar, line, radar, polarArea, doughnut
-                                  data: {
-                                     labels: ['Completed', 'Pending' ],
-                                    datasets: [ {
-                                      label: 'assesment',
-                                      data: [
-                                        70,30
-                                      ],
-                                      // backgroundColor: 'green'
-                                      backgroundColor: [
-                                        '#2cd9c5',
-                                        '#ffc300'
-                                      ],
-                                      borderWidth: 0,
-                                      borderColor: '#777',
-                                      hoverBorderWidth: 0.1,
-                                      hoverBorderColor: '#000'
-                                    }]
-                                  },
-                                  options: {
-                                    title: {
-                                      display: false,
-                                    },
-                                    legend: {
-                                      display: true,
-                                      position: 'right',
-                                      labels: {
-                                        fontColor: 'black',
-                                        fontSize: 12,
-                                        usePointStyle: true,
-                                        boxWidth: 6
-                                      }
-                                    },
-                                    layout : {
-                                      padding: {
-                                        left: 100,
-                                        right: 0,
-                                        bottom: 0,
-                                        top: 0
-                                      }
-                                    },
-                                    tooltips: {
-                                      enabled: true
-                                    }
-                                  }
-                                })
-                            </script>
-                          </div>
-                        </div>
-                    </div>
-                    <!--Body Close  -->
+                                        
+                
+
+                                <!--Body Close  -->
                 </div>
             </div>
         </div>
@@ -348,6 +129,7 @@
     </div> <!-- container closed -->
     </section>
     <!--selection section end -->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <script src="https://kit.fontawesome.com/5817738a37.js" crossorigin="anonymous"></script>
     <script src="assets/js/jquery-2.2.0.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
@@ -357,14 +139,87 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="assets/js/virual-select.min.js"></script> <!-- Load plotly.js into the DOM -->
     <script src='https://cdn.plot.ly/plotly-2.16.1.min.js'></script>
-     <!-- gauge -->
-     <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
-     <script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
-     <script src="https://cdn.amcharts.com/lib/5/radar.js"></script>
-     <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+
  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
  <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    
+ <script>
+           var options = {
+          series: [{
+          name: 'Servings',
+          data: [44, 55, 41, 67, 22, 43, 21, 33, 45, 31, 87, 65, 35]
+        }],
+          annotations: {
+          points: [{
+            x: 'Bananas',
+            seriesIndex: 0,
+            label: {
+              borderColor: '#775DD0',
+              offsetY: 0,
+              style: {
+                color: '#fff',
+                background: '#775DD0',
+              },
+              text: 'Bananas are good',
+            }
+          }]
+        },
+        chart: {
+          height: 350,
+          type: 'bar',
+        },
+        plotOptions: {
+          bar: {
+            borderRadius: 10,
+            columnWidth: '50%',
+          }
+        },
+        dataLabels: {
+          enabled: false
+        },
+        stroke: {
+          width: 2
+        },
+        
+        grid: {
+          row: {
+            colors: ['#fff', '#f2f2f2']
+          }
+        },
+        xaxis: {
+          labels: {
+            rotate: -45
+          },
+          categories: ['Apples', 'Oranges', 'Strawberries', 'Pineapples', 'Mangoes', 'Bananas',
+            'Blackberries', 'Pears', 'Watermelons', 'Cherries', 'Pomegranates', 'Tangerines', 'Papayas'
+          ],
+          tickPlacement: 'on'
+        },
+        yaxis: {
+          title: {
+            text: 'Servings',
+          },
+        },
+        fill: {
+          type: 'gradient',
+          gradient: {
+            shade: 'light',
+            type: "horizontal",
+            shadeIntensity: 0.25,
+            gradientToColors: undefined,
+            inverseColors: true,
+            opacityFrom: 0.85,
+            opacityTo: 0.85,
+            stops: [50, 0, 100]
+          },
+        }
+        };
+
+        var chart = new ApexCharts(document.querySelector("#chart"), options);
+        chart.render();
+ </script>
+ 
  <script type="text/javascript">
   $(function() {
     $('input[name="datefilter"]').daterangepicker({
