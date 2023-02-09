@@ -688,9 +688,7 @@
     padding-left: 25px;
     padding-right: 25px;
   }
-  .evaluation_page .Mb-center div.filter-container.filter-container-shadow {
-    width: 256px !important;
-}
+
   .passper label{
     color: #000;
   }
@@ -1075,4 +1073,7 @@ textarea::placeholder { /* Modern browsers */
   .admin_control .multisteps-form__panel .calendar-container .fa-regular, .far{
     top: 18px;
   }
+  .Mb-center div.filter-container.filter-container-shadow {
+    width: fit-content !important;
+}
 }
