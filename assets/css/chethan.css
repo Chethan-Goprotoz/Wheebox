@@ -34,6 +34,9 @@
 .stats-row .testGraph{
     width: 100%;
 }
+.calendar{
+  width: 100% !important;
+}
 /* Bulk uplooad */
 .dbtn{
 background: #20776E 0% 0% no-repeat padding-box;
@@ -734,7 +737,7 @@ textarea{
   z-index: 200;
 }
 .calendar {
-  width: 100%;
+  width: 100% !important;
   height: 50px ;
 }
 

@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="assets/css/phase-3.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/sass/app.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <link rel="stylesheet" href="assets/css/style_ph_3.css">
 
 </head>
 
@@ -116,8 +117,100 @@
                                   
                         </div>
                            </div> <!-- Body Open -->
-                           <div id="chart">
+                           <!-- cards -->
+                           <div class="row dash-number mb-3">
+                            <div class="col-sm-6  col-md-3 "> <a href="#">
+                                    <div class="d-flex justify-content-between testcard gridBox box1 box-card">
+                                        <div class="dashboard-content">
+                                            <p>TOTAL NO OF <br>QUESTIONS </p>
+                                            <h3>13775</h3>
+                                        </div>
+                                        <div class="dashboardCard-img border-1 d-flex justify-content-center align-items-center"> <img src="./assets/images/chethan/noun-question-5269588.svg" alt=""> </div>
+                                    </div>
+                                </a> </div>
+                            <div class="col-sm-6  col-md-3 "> <a href="#">
+                                    <div class="d-flex justify-content-between testcard gridBox box2 box-card">
+                                        <div class="dashboard-content">
+                                            <p>TOTAL ACTIVE <br>ASSESSMENTS</p>
+                                            <h3>2216</h3>
+                                        </div>
+                                        <div class="dashboardCard-img border-2 d-flex justify-content-center align-items-center"> <img src="./assets/images/chethan/noun-assesment-4658555.svg" alt=""> </div>
+                                    </div>
+                                </a> </div>
+                            <div class="col-sm-6 col-md-3"> <a href="#">
+                                    <div class="d-flex justify-content-between testcard gridBox box3 box-card">
+                                        <div class="dashboard-content">
+                                            <p>TOTAL<br> ASSESSMENTS</p>
+                                            <h3>400</h3>
+                                        </div>
+                                        <div class="dashboardCard-img border-3 d-flex justify-content-center align-items-center"> <img src="./assets/images/chethan/noun-certified-3324969.svg" alt=""> </div>
+                                    </div>
+                                </a> </div>
+                            <div class="col-sm-6 col-md-3"> <a href="#">
+                                    <div class="d-flex justify-content-between testcard gridBox box4 box-card">
+                                        <div class="dashboard-content">
+                                            <p>TOTAL <br>CANDIDATES</p>
+                                            <h3>59318</h3>
+                                        </div>
+                                        <div class="dashboardCard-img border-4 d-flex justify-content-center align-items-center"> <img src="./assets/images/chethan/noun-right-candidate-4842951.svg" alt=""> </div>
+                                    </div>
+                                </a> </div>
                         </div>
+                           <!-- Cards -->
+                            <!-- Dashborad -->
+
+                             <div class="dashboard_new">
+                              <div class="row dashboard_row mb-3">
+                                <div class="col-lg-6 char_backfround">
+                                    <div id="chart">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 char_backfround">
+                                   <div id="linechart">
+                                    </div>
+                                </div>
+                                </div>
+                                <!-- row -->
+                                <div class="tabsContainer mt-5 d-flex justify-content-between align-items-center;">
+                                  <div class="tabsButton gap-3 d-flex justify-content-start align-items-center;">
+                                    <div>
+                                      <button class="btn text-white active" type="button">Today</button>
+                                    </div>
+                                    <div>
+                                      <button class="btn" type="button">This Week</button>
+                                    </div>
+                                    <div>
+                                      <button class="btn" type="button">This Month</button>
+                                    </div>
+                                    <div>
+                                      <button class="btn" type="button">This Year</button>
+                                    </div>
+                                  </div>
+                                  <div>
+                                    <div class="calendar-container">
+                                      <input type="text" name="datefilter" class="calendar" value="" placeholder="Start Date &amp; End Date">
+                                      <i class="fa-regular fa-calendar"></i>
+                                    </div>
+                                  </div>
+                                </div>
+                                <!-- roe -->
+  
+                                <div class="row dashboard_row">
+                                    <div class="col-lg-4 char_backfround d-flex">
+                                      <div id="piechart">
+                                      </div>
+                                    </div>
+                                    <div class="col-lg-4 char_backfround d-flex">
+                                      <div id="halfdonutchart">
+                                      </div>
+                                    </div>
+                                    <div class="col-lg-4 char_backfround d-flex">
+                                      <div id="donut">
+                                      </div>
+                                    </div>
+                                </div>
+                                
+                             </div>
                                         
                 
 
@@ -146,77 +239,238 @@
     
  <script>
            var options = {
+ 
           series: [{
-          name: 'Servings',
-          data: [44, 55, 41, 67, 22, 43, 21, 33, 45, 31, 87, 65, 35]
+          name: 'Dashboard',
+          data: [1500, 2500, 500, 100, 2200, 2500, 2100, 1000, 1045, 1031, 1087, 1065, 2500]
         }],
           annotations: {
           points: [{
             x: 'Bananas',
             seriesIndex: 0,
-            label: {
-              borderColor: '#775DD0',
-              offsetY: 0,
-              style: {
-                color: '#fff',
-                background: '#775DD0',
-              },
-              text: 'Bananas are good',
-            }
+            // label: {
+            //   borderColor: '#FF3A29',
+            //   offsetY: 0,
+            //   style: {
+            //     color: '#fff',
+            //     background: '#FF857B',
+            //   },
+            // }
           }]
         },
         chart: {
           height: 350,
           type: 'bar',
+          toolbar:{
+      show:false
+    }
         },
         plotOptions: {
           bar: {
-            borderRadius: 10,
-            columnWidth: '50%',
+            borderRadius: 4,
+            columnWidth: '25%',
           }
         },
         dataLabels: {
           enabled: false
         },
         stroke: {
-          width: 2
+          width: 2,
+          colors: ['#FF3A29']
         },
         
         grid: {
           row: {
-            colors: ['#fff', '#f2f2f2']
+            colors: ['#fff']
           }
         },
         xaxis: {
           labels: {
             rotate: -45
           },
-          categories: ['Apples', 'Oranges', 'Strawberries', 'Pineapples', 'Mangoes', 'Bananas',
-            'Blackberries', 'Pears', 'Watermelons', 'Cherries', 'Pomegranates', 'Tangerines', 'Papayas'
-          ],
-          tickPlacement: 'on'
+          categories: ['Jan', 'Feb' ,'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+          tickPlacement: 'off'
         },
-        yaxis: {
-          title: {
-            text: 'Servings',
-          },
+      yaxis: {
+          min:0,
+          max: 2500,
+           tickAmount: 5,
         },
         fill: {
           type: 'gradient',
+          colors: ['#FF857B', '#FF3A29'],
           gradient: {
-            shade: 'light',
+            shade: 'dark',
             type: "horizontal",
-            shadeIntensity: 0.25,
+            shadeIntensity: 0.35,
             gradientToColors: undefined,
-            inverseColors: true,
-            opacityFrom: 0.85,
-            opacityTo: 0.85,
-            stops: [50, 0, 100]
+            inverseColors: false,
+            opacityFrom: 1,
+            opacityTo: 1,
+            stops: [60, 0, 70]
           },
         }
         };
 
         var chart = new ApexCharts(document.querySelector("#chart"), options);
+        chart.render();
+ </script>
+ <script>
+       var options = {
+        
+          series: [
+          {
+            name: "Low - 2013",
+            data: [1200, 1100, 1400, 1800, 1700, 1300, 1300, 2500, 1300]
+          }
+        ],
+          chart: {
+          height: 350,
+          type: 'line',
+          dropShadow: {
+            enabled: true,
+            color: '#000',
+            top: 18,
+            left: 7,
+            blur: 10,
+            opacity: 0.2
+          },
+          toolbar: {
+            show: false
+          }
+        },
+        colors: ['#FEC271', '#FF3A29'],
+        dataLabels: {
+          enabled: true,
+        },
+        stroke: {
+          curve: 'smooth'
+        },
+        row: {
+            colors: ['#fff']
+          },
+        markers: {
+          size: 1
+        },
+        xaxis: {
+          categories: ['MCQ', 'Programming' ,'Psychometric', 'SCQ', 'FIB', 'Typing', 'Comprhension', 'Subjective', 'Subjective'],
+   
+        },
+        yaxis: {
+          min:0,
+          max: 2500,
+           tickAmount: 5,
+        },
+        legend: {
+          position: 'top',
+          horizontalAlign: 'right',
+          floating: true,
+          offsetY: -25,
+          offsetX: -5
+        }
+        };
+
+        var chart = new ApexCharts(document.querySelector("#linechart"), options);
+        chart.render();
+ </script>
+ <script>
+         var options = {
+          colors: ["#67a9ed", "#fec271"],
+          series: [30, 70],
+          chart: {
+          // width: 300,
+          type: 'pie',
+        },
+        dataLabels: {
+    enabled: true,
+
+    offset: -50
+  },
+        labels: ['General', 'Programming'],
+        responsive: [{
+          breakpoint: 480,
+          options: {
+            chart: {
+              // width: 200
+            },
+            legend: {
+              position: 'bottom'
+            }
+          }
+        }],
+        plotOptions: {
+  pie: {
+    dataLabels: {
+      offset: -20,
+    }, 
+  }
+}
+        };
+
+        var chart = new ApexCharts(document.querySelector("#piechart"), options);
+        chart.render();
+ </script>
+ <script>   
+        var options = {
+          colors: ["#6ebe7d", "#fec271"],
+          series: [45, 55],
+          chart: {
+          type: 'donut',
+        },
+        plotOptions: {
+          pie: {
+            startAngle: -90,
+            endAngle: 90,
+            offsetY: 10
+          }
+        },
+        labels: ['General', 'Programming'],
+        legend: {
+              show: false,
+            },
+        grid: {
+          padding: {
+            bottom: -80
+          }
+        },
+        responsive: [{
+          breakpoint: 480,
+          options: {
+            chart: {
+              // width: 200
+            },
+            legend: {
+              show: false,
+            }
+          }
+        }]
+        };
+
+        var chart = new ApexCharts(document.querySelector("#halfdonutchart"), options);
+        chart.render();
+ </script>
+ <script>
+          var options = {
+            colors: ["#2CD9C5", "#FFC300"],
+          series: [45, 55],
+          chart: {
+          type: 'donut',
+        },
+        responsive: [{
+          breakpoint: 480,
+          options: {
+            chart: {
+              // width: 200
+            },
+            
+            legend: {
+              position: 'bottom'
+            }
+          }
+        }]
+        };
+
+        var chart = new ApexCharts(document.querySelector("#donut"), options);
         chart.render();
  </script>
  
@@ -247,7 +501,7 @@
     position: relative;
     margin-top: 0px;
     z-index: 200;
-    width: 300px;
+    width: 100%;
 }
 
 [role=graphics-symbol] {
@@ -301,194 +555,6 @@
     border-radius: 5px;
 }
 </style>
- <!--  -->
- <!-- chart gauge -->
-
-<!-- Chart code -->
-<script>
- /**
- * ---------------------------------------
- * This demo was created using amCharts 5.
- * 
- * For more information visit:
- * https://www.amcharts.com/
- * 
- * Documentation is available at:
- * https://www.amcharts.com/docs/v5/
- * ---------------------------------------
- */
-
-// Create root element
-// https://www.amcharts.com/docs/v5/getting-started/#Root_element
-
-var root = am5.Root.new("chartdiv");
-
-// Set themes
-// https://www.amcharts.com/docs/v5/concepts/themes/
-root.setThemes([
-  am5themes_Animated.new(root)
-]);
-
-
-// Create chart
-// https://www.amcharts.com/docs/v5/charts/radar-chart/
-
-var chart = root.container.children.push(
-  am5radar.RadarChart.new(root, {
-    panX: false,
-    panY: false,
-    startAngle: 180,
-    endAngle: 360
-  })
-);
-chart.get("colors").set("colors", [
-  am5.color(0x6ebe7d),
-  am5.color(0xe9e9e9),
-  am5.color(0x5aaa95),
-  am5.color(0x86a873),
-  am5.color(0xbb9f06)
-]);
-
-chart.getNumberFormatter().set("numberFormat", "#'%'");
-
-// Create axis and its renderer
-// https://www.amcharts.com/docs/v5/charts/radar-chart/gauge-charts/#Axes
-var axisRenderer = am5radar.AxisRendererCircular.new(root, {
-  innerRadius: -40
-});
-
-axisRenderer.grid.template.setAll({
-  stroke: root.interfaceColors.get("background"),
-  visible: true,
-  strokeOpacity:0
-});
-
-var xAxis = chart.xAxes.push(
-  am5xy.ValueAxis.new(root, {
-    maxDeviation: 0,
-    min: 0,
-    max: 100,
-    strictMinMax: true,
-    renderer: axisRenderer
-  })
-);
-
-// Add clock hand
-// https://www.amcharts.com/docs/v5/charts/radar-chart/gauge-charts/#Clock_hands
-var axisDataItem = xAxis.makeDataItem({});
-
-var clockHand = am5radar.ClockHand.new(root, {
-  pinRadius: 0,
-  radius: am5.percent(00),
-  innerRadius: 0,
-  bottomWidth: 0,
-  topWidth: 0
-});
-
-clockHand.pin.setAll({
-  fillOpacity: 0,
-  strokeOpacity: 0.5,
-  stroke: am5.color(000),
-  strokeWidth: 0,
-  strokeDasharray: [0, 0]
-});
-clockHand.hand.setAll({
-  fillOpacity: 0,
-  strokeOpacity: 0.5,
-  stroke: am5.color(0x000000),
-  strokeWidth: 0
-});
-
-var bullet = axisDataItem.set(
-  "bullet",
-  am5xy.AxisBullet.new(root, {
-    sprite: clockHand
-  })
-);
-
-xAxis.createAxisRange(axisDataItem);
-
-var label = chart.radarContainer.children.push(
-  am5.Label.new(root, {
-    centerX: am5.percent(50),
-    textAlign: "center",
-    centerY: am5.percent(90),
-    fontSize: "2.5em"
-  })
-);
-
-axisDataItem.set("value", 50);
-bullet.get("sprite").on("rotation", function () {
-  var value = axisDataItem.get("value");
-  label.set("text", Math.round(value).toString() + "%");
-});
-
-setInterval(function () {
-  var value = Math.round(Math.random() * 100);
-
-  // axisDataItem.animate({
-  //   key: "value",
-  //   to: value,
-  //   duration: 500,
-  //   easing: am5.ease.out(am5.ease.cubic)
-  // });
-
-  // axisRange0.animate({
-  //   key: "endValue",
-  //   to: value,
-  //   duration: 500,
-  //   easing: am5.ease.out(am5.ease.cubic)
-  // });
-
-//   axisRange1.animate({
-//     key: "value",
-//     to: value,
-//     duration: 500,
-//     easing: am5.ease.out(am5.ease.cubic)
-//   });
-}, 2000);
-
-chart.bulletsContainer.set("mask", undefined);
-
-var colorSet = am5.ColorSet.new(root, {});
-
-var axisRange0 = xAxis.createAxisRange(
-  xAxis.makeDataItem({
-    above: true,
-    value: 0,
-    endValue: 70
-  })
-);
-
-axisRange0.get("axisFill").setAll({
-  visible: true,
-  fill: am5.color(0x6ebe7d),
-});
-
-axisRange0.get("label").setAll({
-  forceHidden: true
-});
-
-var axisRange1 = xAxis.createAxisRange(
-  xAxis.makeDataItem({
-    above: true,
-    value: 50,
-    endValue: 100
-  })
-);
-
-axisRange1.get("axisFill").setAll({
-  visible: true,
-  fill: am5.color(0xe9e9e9)
-});
-
-axisRange1.get("label").setAll({
-  forceHidden: true
-});
-
-// Make stuff animate on load
-// chart.appear(1000, 100);
-  </script>
     <script>
         VirtualSelect.init({
           ele: '#SearchDropdown'
@@ -537,143 +603,7 @@ axisRange1.get("label").setAll({
           });
         }
     </script>
-    <script>
-        const labels3 = [
-                ["MCQ"], ["Programming"], ["Psychometric"],
-                ["SCQ"], ["FIB"],["Typing"],["Comprhension"],["Subjective"],["Drag Drop"]
-              ];
-              const data3 = {
-                labels: labels3,
-                datasets: [{
-                  label: 'Data',
-                  data: [0, 1000, 500, 1000, 0, 1500, 1400, 2500, 500],
-                  tension: 0,
-                  borderColor: '#FEC271',
-                  pointBackgroundColor: '#FFFFFF',
-                  pointBorderColor: "#FF3A29",
-                  pointBorderWidth: "4",
-                  pointRadius: 5,
-                }, ]
-              };
-              const config3 = {
-                type: 'line',
-                data: data3,
-                options: {
-                  maintainAspectRatio: false,
-                  responsive: true,
-                  plugins: {
-         legend: {
-           display: false,
-         },
-         tooltip: {
-           callbacks: {
-             title: (context) => {
-               console.log(context[0].label)
-               return context[0].label.replaceAll(',', ' ')
-             }
-           }
-         },
-                  },
-                  scales: {
-         y: {
-           beginAtZero: true,
-           ticks: {
-             stepSize: 500,
-             min: 0,
-             max: 2500,
-             callback: function(value) {
-               return (value);
-             },
-             offset: true,
-           },
-         },
-         x: {
-           ticks: {
-             font: {
-               family: 'pop-normal',
-             },
-           },
-         }
-                  },
-                },
-              };
-              const countTrend = new Chart(document.getElementById('countTrend'), config3);
-    </script> <!-- bar chart -->
-    <script>
-        const labels4 = [
-        ["Jan"], ["Feb"], ["Mar"],
-        ["Apr"], ["May"],["Jun"],["Jul"],["Aug"],["Sep"],["Oct"],["Nov"],["Dec"]
-        ];
-        const data4 = {
-        labels: labels4,
-        datasets: [{
-         label: 'Data',
-         data: [500, 1000, 500, 1000, 2000, 1500, 1400, 2500, 500, 2000, 1400, 2000],
-         tension: 0,
-         borderColor: '#FF3A29',
-         backgroundColor:'#FF3A29',
-         maxBarThickness: 7
-        
-        }, ]
-        };
-        const config4 = {
-        type: 'bar',
-        data: data4,
-        options: {
-         maintainAspectRatio: false,
-         responsive: true,
-     
-         plugins: {
-         legend: {
-           display: false,
-           scales:{
-            y:{
-              stacked: true
-            }
-           }
-         },
-        
-         tooltip: {
-           callbacks: {
-             title: (context) => {
-               console.log(context[0].label)
-               return context[0].label.replaceAll(',', ' ')
-             }
-           }
-         },
-         },
-         scales: {
-         y: {
-           beginAtZero: true,
-           ticks: {
-             stepSize: 500,
-             min: 0,
-             max: 2500,
-             callback: function(value) {
-               return (value);
-             },
-             offset: true,
-           },
-         },
-         x: {
-          xAxis: {
-        stacked: true,
-      },
-      yAxis: {
-        stacked: true
-      },
-           ticks: {
-             font: {
-               family: 'pop-normal',
-             },
-           },
-           
-         }
-         },
-        },
-        };
-        const countTrend1 = new Chart(document.getElementById('countTrend1'), config4);
-    </script>
+
 </body>
 
 </html>
