@@ -1078,6 +1078,9 @@ textarea::placeholder { /* Modern browsers */
   .admin_control .multisteps-form__panel .calendar-container .fa-regular, .far{
     top: 18px;
   }
+  textarea{
+    font-size: 16px !important;
+  }
 }
 
 /* desktop */
@@ -1105,6 +1108,9 @@ textarea::placeholder { /* Modern browsers */
   }
   .admin_control .multisteps-form__panel .calendar-container .fa-regular, .far{
     top: 15px;
+  }
+  textarea{
+    font-size: 14px !important;
   }
 }
 /* large screen */
@@ -1140,6 +1146,9 @@ textarea::placeholder { /* Modern browsers */
     width: fit-content !important;
     padding-left: 20px;
     padding-right: 20px;
+}
+textarea{
+  font-size: 16px !important;
 }
 }
 @media (max-width: 1000px){
