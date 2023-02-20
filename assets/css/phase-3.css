@@ -2334,11 +2334,11 @@ input::placeholder{
 }
 
 
-.sideParent1{
+.side1{
     width: 20%;
     position: fixed;
     padding-right: 10px;
-    padding-bottom: 12rem;
+    padding-bottom: 15rem;
     overflow-y: scroll;
     height: 100vh;
     margin-top: 3rem;
@@ -2348,21 +2348,21 @@ input::placeholder{
     padding-bottom: 12rem;
     overflow-y: scroll;
     height: 100vh; */
-    width: 100%;
-    padding-bottom: 3rem;
+    width: 20%;
+    /* padding-bottom: 5rem; */
 }
 
 /* width */
-.sideParent1::-webkit-scrollbar {
+.side1::-webkit-scrollbar {
     opacity: 0;
     width: 5px;
 }
-.sideParent1:hover::-webkit-scrollbar {
+.side1:hover::-webkit-scrollbar {
     width: 5px;
     overflow: auto;
     /* background: #DAEDEB; */
     opacity: 1;
-  }
+}
  
 /* Track */
 /* .side1::-webkit-scrollbar-track {
@@ -2371,14 +2371,14 @@ input::placeholder{
   
   
   /* Handle */
-.sideParent1::-webkit-scrollbar-thumb {
+.side1::-webkit-scrollbar-thumb {
     /* background: #20776E; */
     border-radius: 50px;
     opacity: 0;
     width: 5px;
 }  
 
-.sideParent1:hover::-webkit-scrollbar-thumb {
+.side1:hover::-webkit-scrollbar-thumb {
     background: #20776E;
     border-radius: 50px;
     opacity: 1;
@@ -2405,7 +2405,7 @@ input::placeholder{
     left: 0;
     padding-top: 20px;
     top: 0px;
-    padding: 20px 20px 0 20px;
+    padding: 20px 26px 0 26px;
     z-index: 99;
 }
 
