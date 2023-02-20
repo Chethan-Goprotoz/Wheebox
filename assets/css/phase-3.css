@@ -3925,6 +3925,10 @@ input::placeholder{
 .d-flex.mobileMenu{
     margin-top: 10rem !important;
 }
+.side1 {
+    width: 100%;
+    margin-top: 0;
+}
 }
 
 /* responsive end */
