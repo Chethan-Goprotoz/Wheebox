@@ -2272,7 +2272,7 @@ input{
   .sideMenu.grey1{
     border: 2px solid #e6e6e6;
   }
-  .sideMenu.grey1:hover{
+  /* .sideMenu.grey1:hover{
     color:#20776E;
     border: 2px solid transparent;
   }
@@ -2287,7 +2287,7 @@ input{
   }
   .sideMenu.grey1:hover img.icon-align.icon2{ 
     display: block;
-  }
+  } */
 
   .dateInputField .calendar::placeholder{
     font: normal normal 14px/11px Pop-normal;
@@ -2331,6 +2331,94 @@ input::placeholder{
 }
 .anchor-dec-ph3 h5.btr-line{
     font-size: 18px;
+}
+
+
+.side1{
+    width: 20%;
+    position: fixed;
+    padding-right: 10px;
+    padding-bottom: 15rem;
+    overflow-y: scroll;
+    height: 100vh;
+    margin-top: 3rem;
+}
+.side1{
+    /* position: fixed;
+    padding-bottom: 12rem;
+    overflow-y: scroll;
+    height: 100vh; */
+    width: 20%;
+    /* padding-bottom: 5rem; */
+}
+
+/* width */
+.side1::-webkit-scrollbar {
+    opacity: 0;
+    width: 5px;
+}
+.side1:hover::-webkit-scrollbar {
+    width: 5px;
+    overflow: auto;
+    /* background: #DAEDEB; */
+    opacity: 1;
+}
+ 
+/* Track */
+/* .side1::-webkit-scrollbar-track {
+    background: #DAEDEB;
+  } */
+  
+  
+  /* Handle */
+.side1::-webkit-scrollbar-thumb {
+    /* background: #20776E; */
+    border-radius: 50px;
+    opacity: 0;
+    width: 5px;
+}  
+
+.side1:hover::-webkit-scrollbar-thumb {
+    background: #20776E;
+    border-radius: 50px;
+    opacity: 1;
+    width: 5px;
+} 
+
+
+.sidebar{
+    margin-top: 9rem;
+}
+
+/* #sidebar-menu .side1::-webkit-scrollbar{
+    opacity: 0;
+}  */
+
+.inside-container-dashboard{
+    margin-left: 22%;
+}
+
+.main_div{
+    background: #F6F8FC;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    padding-top: 20px;
+    top: 0px;
+    padding: 20px 26px 0 26px;
+    z-index: 99;
+}
+.side1 .accordion-button{
+    background-color: #DAEDEB;
+    box-shadow: none;
+    border-radius: 5px !important;
+}
+.side1 .accordion-button::after {
+    margin-right: 10px;
+}
+.side1 .accordion-item{
+    border: 0;
+    background-color: transparent;
 }
 
 /*  */
@@ -3829,8 +3917,31 @@ input::placeholder{
     top: -273px;
 
 }
+.sideParent1{
+    z-index: 992;
 }
-
+.sideParent1 .side1{
+    overflow-y: scroll;
+    padding-bottom: 3rem;
+}
+.inside-container-dashboard{
+    margin-left: 0px;
+}
+/* .main_header {
+    position: fixed;
+    width: 91.5%;
+} */
+.sidebar{
+    margin-top: 0;
+}
+.d-flex.mobileMenu{
+    margin-top: 10rem !important;
+}
+.side1 {
+    width: 100%;
+    margin-top: 0;
+}
+}
 
 /* responsive end */
 
