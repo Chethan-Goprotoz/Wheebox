@@ -1684,7 +1684,7 @@ opacity: 1;
 } */
 
 .d-flex.sideMenu.grey1 p{
-    color: #c4c1c1;
+    color: #707070;
 }
 
 .qusAnsAccordian .accordion-button:not(.collapsed)::before{
@@ -2274,7 +2274,7 @@ input{
   }
   .sideMenu.grey1:hover{
     color:#20776E;
-    background-color: #DAEDEB;
+    background-color: #EBEBEB;
     border: 2px solid transparent;
   }
   .sideMenu.grey1:hover p{
@@ -2439,6 +2439,9 @@ input::placeholder{
 }
 .side1 .accordion-button::after {
     margin-right: 10px;
+}
+.side1 .accordion-button::after svg path{
+    fill: red;
 }
 .side1 .accordion-item{
     border: 0;
