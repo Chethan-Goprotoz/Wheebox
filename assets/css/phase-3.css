@@ -2488,6 +2488,15 @@ input::placeholder{
   /* resolution 1920 started */
 
   @media (min-width:1900px){
+    .side1 .accordion-button::after {
+        margin-right: 25px;
+    }
+    .side1{
+        width: 19%;
+    }
+    .inside-container-dashboard {
+        margin-left: 20%;
+    }
     .dropChild{
         right: -355px;
     }
