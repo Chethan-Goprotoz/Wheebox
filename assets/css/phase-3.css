@@ -2427,6 +2427,7 @@ input::placeholder{
     background-color: transparent;
 }
 
+
 /*  */
 @media (max-width:1500px){
 #editQueModal2 .modal-dialog{
@@ -2488,6 +2489,11 @@ input::placeholder{
   /* resolution 1920 started */
 
   @media (min-width:1900px){
+    .side1 .accordion-item .accordion-button::after {
+        width: 1.5rem;
+        height: 1.5rem;
+        background-size: 1.50rem;
+    }
     .side1 .accordion-button::after {
         margin-right: 25px;
     }
