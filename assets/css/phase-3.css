@@ -1679,9 +1679,9 @@ opacity: 1;
     margin-top: 10px;
 }
 
-#collapseExample2 .d-flex.sideMenu{
-    border: 2px solid #e6e6e6;
-}
+/* #collapseExample2 .d-flex.sideMenu{
+    border: 2px solid transparent;
+} */
 
 .d-flex.sideMenu.grey1 p{
     color: #c4c1c1;
@@ -2270,7 +2270,7 @@ input{
    margin-right: 20px;
   }
   .sideMenu.grey1{
-    border: 2px solid #e6e6e6;
+    border: 2px solid transparent;
   }
   .sideMenu.grey1:hover{
     color:#20776E;
