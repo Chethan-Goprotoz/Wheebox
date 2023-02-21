@@ -10,9 +10,9 @@
     font-size: 14px;
 }
 
-.d-flex.sideMenu:hover{
+/* .d-flex.sideMenu:hover{
     background-color: #DAEDEB;
-}
+} */
 
 .quesBankTabs .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
     height: auto !important;
@@ -2409,9 +2409,15 @@ input::placeholder{
     z-index: 99;
 }
 .side1 .accordion-button{
-    background-color: #DAEDEB;
+    background-color: transparent;
     box-shadow: none;
     border-radius: 5px !important;
+}
+.side1 .accordion-button.active-one{
+    background-color: #DAEDEB;
+}
+.side1 .accordion-button:hover{
+    background-color: #DAEDEB;
 }
 .side1 .accordion-button::after {
     margin-right: 10px;
