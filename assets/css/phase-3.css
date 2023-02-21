@@ -2272,6 +2272,24 @@ input{
   .sideMenu.grey1{
     border: 2px solid #e6e6e6;
   }
+  .sideMenu.grey1:hover{
+    color:#20776E;
+    background-color: #DAEDEB;
+    border: 2px solid transparent;
+  }
+  .sideMenu.grey1:hover p{
+    color:#20776E;
+  }
+    .sideMenu.grey1 img.icon-align.icon2{
+    display: none;
+  }
+  .sideMenu.grey1:hover img.icon-align{ 
+    display: none;
+  }
+  .sideMenu.grey1:hover img.icon-align.icon2{ 
+    display: block;
+  }
+
   /* .sideMenu.grey1:hover{
     color:#20776E;
     border: 2px solid transparent;
