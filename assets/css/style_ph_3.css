@@ -1031,6 +1031,12 @@ textarea::placeholder {
 .selection-new .filter-container-shadow {
   width: fit-content;
 }
+.vscomp-ele {
+  margin-bottom: 20px;
+}
+.pop-comp-wrapper {
+  z-index: 5 !important;
+}
 /* font and text box */
 @media (max-width: 599px) {
   input[type="text"] {
