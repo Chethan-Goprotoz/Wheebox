@@ -84,11 +84,10 @@
         <div class="d-flex justify-content-between align-items-center">
           <img src="./assets/images/Question_Bank/menu.png" onclick="sidemenu()" id="menu-icon"
             class="fas fa-solid icon-w fa-bars d-block d-lg-none ms-0">
-          <h3 class="mb-0">Test Management</h3>
+         
         </div>
 
-        <button type="button" class="btn btnDark create-testBtn">Create Test <img class=""
-          src="./assets/images/Question_Bank/create-test.svg" alt=""></button>
+   
       </div>
     </div>
     <div class="sidebar">
@@ -383,7 +382,7 @@
                                         <!--single form panel-->
                                         <div class="multisteps-form__panel  " data-animation="scaleIn">
                                           <div class="multisteps-form__content">
-                                            <div class="form-row " style="height:auto !important;">
+                                            <div class="form-row add-more-lang" style="height:auto !important;" id="duplicater">
                                               <div class="container">
                                                 <div class="radio d-flex align-items-center" style="margin-right: 30px;">
                                                   <input id="radio-91" name="radio077" type="radio" checked >
@@ -394,15 +393,14 @@
                                                   <label for="radio-009" class="radio-label">Hindi</label>
                                                 </div>
                                               </div>
-                                              <style>
-                                                
-            
-                                              </style>
+                                         
                                               <div class="container-fluid" style="margin-top: 33px;">
                                                 <label for="w3review">Instructions</label>
                                                 <textarea id="w3review" name="w3review" rows="4" cols="50" placeholder="Add Instructions Here" value="dd"></textarea>
                                               </div>
                                             </div>
+                                            
+                                            <button class="btn border_btn" type="button" title="" onclick="duplicate()">Add More</button>
                                             <div class="button-row d-flex mt-4" style="justify-content: space-between;">
                                               <button class="btn border_btn js-btn-prev" type="button" title="Prev">Previous</button>
                                               <button class="btn soild_btn ml-auto js-btn-next" type="button" title="Next">Next</button>
@@ -1545,6 +1543,17 @@
   </script>
  <!-- toggle -->
  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js'></script>
+ <script>
+  var i = 0;
+var original = document.getElementById('duplicater');
+
+function duplicate() {
+var clone = original.cloneNode(true); // "deep" clone
+clone.id = "duplicater" + ++i;
+// or clone.id = ""; if the divs don't need an ID
+original.parentNode.appendChild(clone);
+}
+</script>
 </body>
 
 </html>
