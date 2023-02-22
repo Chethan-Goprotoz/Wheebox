@@ -4199,7 +4199,10 @@ input::placeholder{
         padding: 15px;
     }
     .side1{
-        width: 24%;
+        width: 22%;
+    }
+    .sideMenu p{
+        font-size: 12px;
     }
     .addNewSubj{
         font-size: 13px;
@@ -4284,4 +4287,59 @@ input::placeholder{
     .ansRange{
         width:95%;
     }
+  }
+
+@media (min-width:600px) and (max-width: 992px){
+  .inside-container-dashboard {
+    margin-left: 0%;
+}
+.sidebar {
+    margin-top: 0rem;
+}
+.d-flex.mobileMenu {
+    margin-top: 12rem !important;
+}
+.side1 {
+    border-radius: 0 10px 10px 0;
+    width: 45%;
+    background: white;
+    top: 111px;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+}
+.openMenuIcon{
+    float: right;
+    padding-bottom: 10px;
+}
+.mobileMenu .dropdown-toggle{
+    background-color: #20776E;
+    width: 127px;
+    height: 40px;
+    font-size: 14px;
+    color: #FFFFFF;
+    font-family: Pop-medium;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+.mobileMenu .dropdown .dropdown-menu{
+    min-width: 12.5rem;
+    padding-top:0px;
+    padding-bottom: 0px;
+}
+.mobileMenu .dropdown .dropdown-menu .dropdown-item{
+    height: 34px;
+    display: flex;
+    align-items: center;
+    color: #14121F;
+    font-size: 13px;
+    font-weight: 600;
+}
+.mobileMenu .dropdown .dropdown-menu .dropdown-item:hover{
+    background-color: #20776e57;
+  
+}
+.mobileMenu .dropdown-toggle:focus a:hover{
+    color: #FFFFFF !important;
+}
   }
