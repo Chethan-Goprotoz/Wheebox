@@ -2447,7 +2447,13 @@ input::placeholder{
     border: 0;
     background-color: transparent;
 }
+.vscomp-toggle-button{
+    width: 100% !important;
+}
 
+.selectDropdown.securityKey{
+    padding: 3rem 15rem !important;
+}
 
 /*  */
 @media (max-width:1500px){
@@ -2510,6 +2516,9 @@ input::placeholder{
   /* resolution 1920 started */
 
   @media (min-width:1900px){
+    .selectDropdown.securityKey{
+        padding: 3rem 30rem !important;
+    }
     .side1 .accordion-item .accordion-button::after {
         width: 1.5rem;
         height: 1.5rem;
@@ -4186,7 +4195,7 @@ input::placeholder{
 
   @media (min-width:800px)and (max-width:1200px){
     .inside-container-dashboard{
-        margin-left: 0;
+        margin-left: 24rem;
         padding: 15px;
     }
     .side1{

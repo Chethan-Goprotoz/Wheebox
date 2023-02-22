@@ -161,10 +161,10 @@
           <div class="d-flex d-none d-md-flex flexWrap justify-content-between align-items-center mb-5">
             <h3 class="mb-0 ">Security Key</h3>
           </div>
-          <div class="selectDropdown p-5 bg-light1 p-4 p-md-5 mt-4 mt-md-0">
+          <div class="selectDropdown securityKey p-5 bg-light1 p-4 p-md-5 mt-4 mt-md-0">
            
             <div class="row gx-5 gy-4">
-              <div class="col-sm-4 col-md-4">
+              <div class="col-md-6">
                 <div class="calendar-container mt-0">
                   <p>Registration For</p>
                   <select id="SearchDropdown" name="native-select" placeholder="Select Registration User Here"
@@ -176,7 +176,7 @@
 
                 </div>
               </div>
-              <div class="col-sm-4 col-md-4">
+              <div class="col-md-6">
                 <div class="calendar-container mt-0">
                   <p>Login ID Type</p>
                   <select id="SearchDropdown" name="native-select" placeholder="Select Login ID Type Here"
@@ -188,47 +188,69 @@
 
                 </div>
               </div>
-              <div class="col-sm-4 col-md-4">
+              <div class="col-md-12">
+                <div class="calendar-container w-100 mt-0">
+                  <p>Registration Verification Page</p>
+                  <select id="SearchDropdown" name="native-select" placeholder="Registration Verification"
+                    data-search="true" data-silent-initial-value-set="true" class="searchdropdown w-100">
+                    <option  value="multiple_choice">Active</option>
+                    <option value="2">Deactive</option>
+                  </select>
+                </div>
+              </div>
+              
+                  <div class="col-md-6">
+                    <div class="calendar-container input-container1 mt-0">
+                      <p class="mb-2">Registration Verification Code</p>
+                      <input class="form-control" type="text" placeholder="Enter Verification Code">
+                    
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="calendar-container input-container1 mt-0">
+                      <p class="">Generate Random Code</p>
+                      <button type="button" class="btn mt-0 w-100 ps-4 pe-4 text-white btnDark randomCodeBtn">Random Value</button>
+                    </div>
+                  </div>
+              
+
+              <div class="col-md-12">
+                <div class="calendar-container w-100 mt-0">
+                  <p>Login Verification Page</p>
+                  <select id="SearchDropdown" name="native-select" placeholder="Login Verification"
+                    data-search="true" data-silent-initial-value-set="true" class="searchdropdown w-100">
+                    <option value="5">Active</option>
+                    <option value="2">Deactive</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-6">
                 <div class="calendar-container input-container1 mt-0">
-                  <p class="mb-2">Registration Verification Code</p>
+                  <p class="mb-2">Login Verification Code</p>
                   <input class="form-control" type="text" placeholder="Enter Verification Code">
-
                 </div>
               </div>
-              <div class="col-md-12 mt-0">
-                <div class="text-center">
-                  <button type="button" class="btn ps-4 pe-4 text-white btnDark randomCodeBtn">Generate Random Code</button>
-                </div>
-              </div>
-
-              <div class="col-md-4">
-                <div class="form-check securityChecked d-flex align-items-center">
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
-                  <label class="form-check-label" for="flexCheckDefault">
-                    Registration Verification Page
-                  </label>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="form-check securityChecked d-flex align-items-center">
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2" checked>
-                  <label class="form-check-label" for="flexCheckDefault2">
-                    Login Verification Page
-                  </label>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="form-check securityChecked d-flex align-items-center">
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3" checked>
-                  <label class="form-check-label" for="flexCheckDefault3">
-                    Check Test Access
-                  </label>
+              <div class="col-md-6">
+                <div class="calendar-container input-container1 mt-0">
+                  <p class="">Generate Random Code</p>
+                  <button type="button" class="btn mt-0 w-100 ps-4 pe-4 text-white btnDark randomCodeBtn">Random Value</button>
                 </div>
               </div>
 
               <div class="col-md-12">
-                <div class="text-end mt-4">
-                  <button type="button" class="btn ps-4 pe-4 text-white btnDark collapseBtn">Save</button>
+                <div class="calendar-container w-100 mt-0">
+                  <p>Check Test Access</p>
+                  <select id="SearchDropdown" name="native-select" placeholder="Check Test Access"
+                    data-search="true" data-silent-initial-value-set="true" class="searchdropdown w-100">
+                    <option value="5">Active</option>
+                    <option value="2">Deactive</option>
+                  </select>
+                </div>
+              </div>
+              <!--  -->
+              <div class="col-md-12">
+                <div class="text-start mt-4">
+                  <button type="button" class="btn ps-4 pe-4 text-white btnDark collapseBtn">Submit</button>
                 </div>
               </div>
             </div>
@@ -259,7 +281,22 @@
   <!-- <script src='https://cdn.plot.ly/plotly-2.16.1.min.js'></script> -->
 
 
-
+<!-- select option mcq -->
+  <!-- <script>
+    document
+        .getElementById('SearchDropdown')
+        .addEventListener('change', function () {
+            'use strict';
+            var vis = document.querySelector('.vis'),   
+                target = document.getElementById(this.value);
+            if (vis !== null) {
+                vis.className = 'inv';
+            }
+            if (target !== null ) {
+                target.className = 'vis';
+            }
+    });
+  </script> -->
   <script>
     VirtualSelect.init({
       ele: '#SearchDropdown',
@@ -408,21 +445,7 @@
 
 
 <!-- select option mcq -->
-<script>
-  document
-      .getElementById('target')
-      .addEventListener('change', function () {
-          'use strict';
-          var vis = document.querySelector('.vis'),   
-              target = document.getElementById(this.value);
-          if (vis !== null) {
-              vis.className = 'inv';
-          }
-          if (target !== null ) {
-              target.className = 'vis';
-          }
-  });
-</script>
+
 
 </body>
 
