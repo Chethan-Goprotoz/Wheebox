@@ -382,28 +382,40 @@
                                         <!--single form panel-->
                                         <div class="multisteps-form__panel  " data-animation="scaleIn">
                                           <div class="multisteps-form__content">
-                                            <div class="form-row add-more-lang" style="height:auto !important;" id="duplicater">
-                                              <div class="container">
-                                                <div class="radio d-flex align-items-center" style="margin-right: 30px;">
-                                                  <input id="radio-91" name="radio077" type="radio" checked >
-                                                  <label for="radio-91" class="radio-label">English</label>
+                                            <div class="add-more-lang dup-container">
+                                              <div class="form-row add-more-lang fix-height-div" style="height:auto !important;" id="duplicater">
+                                                <!-- <div class="container d-flex">
+                                                  <div class="radio d-flex align-items-center" style="margin-right: 30px;">
+                                                    <input id="radio-91" name="radio077" type="radio" checked class="radio-class-name">
+                                                    <label for="radio-91" class="radio-label">English</label>
+                                                  </div>
+                                                  <div class="radio d-flex align-items-center">
+                                                    <input id="radio-009" name="radio077" type="radio" class="radio-class-name">
+                                                    <label for="radio-009" class="radio-label">Hindi</label>
+                                                  </div>
+                                                </div> -->
+                                                <div class="container d-flex m-0">
+                                                  <label class="radio d-flex align-items-center" style="margin-right: 30px;">
+                                                    <input id="radio-91" name="radio077" type="radio" checked class="radio-class-name">
+                                                    English
+                                                  </label>
+                                                  <label class="radio d-flex align-items-center">
+                                                    <input id="radio-009" name="radio077" type="radio" class="radio-class-name">
+                                                    Hindi
+                                                  </label>
                                                 </div>
-                                                <div class="radio d-flex align-items-center">
-                                                  <input id="radio-009" name="radio077" type="radio">
-                                                  <label for="radio-009" class="radio-label">Hindi</label>
+                                           
+                                                <div class="container-fluid" style="margin-top: 33px;margin-bottom: 30px;">
+                                                  <label for="w3review">Instructions</label>
+                                                  <textarea id="w3review" name="w3review" rows="4" cols="50" placeholder="Add Instructions Here" value="dd"></textarea>
                                                 </div>
-                                              </div>
-                                         
-                                              <div class="container-fluid" style="margin-top: 33px;">
-                                                <label for="w3review">Instructions</label>
-                                                <textarea id="w3review" name="w3review" rows="4" cols="50" placeholder="Add Instructions Here" value="dd"></textarea>
                                               </div>
                                             </div>
                                             
                                             <button class="btn border_btn" type="button" title="" onclick="duplicate()">Add More</button>
                                             <div class="button-row d-flex mt-4" style="justify-content: space-between;">
                                               <button class="btn border_btn js-btn-prev" type="button" title="Prev">Previous</button>
-                                              <button class="btn soild_btn ml-auto js-btn-next" type="button" title="Next">Next</button>
+                                              <button class="btn soild_btn ml-auto js-btn-next" type="button" title="Next" onclick="setformheight()">Next</button>
                                             </div>
                                           </div>
                                         </div>
@@ -1543,17 +1555,62 @@
   </script>
  <!-- toggle -->
  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js'></script>
- <script>
-  var i = 0;
-var original = document.getElementById('duplicater');
-
+ 
+<script>
+  // Get the original form element
+const originalForm = document.querySelector('.add-more-lang');
+// Get the container element to insert the duplicated form
+const container = document.querySelector('.dup-container');
+// Counter to keep track of the number of duplicated forms
+let counter = 0;
+// Function to duplicate the form
 function duplicate() {
-var clone = original.cloneNode(true); // "deep" clone
-clone.id = "duplicater" + ++i;
-// or clone.id = ""; if the divs don't need an ID
-original.parentNode.appendChild(clone);
+  let divheightfix = document.querySelectorAll(".fix-height-div");
+  console.log({divheightfix});
+  var maindivHeight = document.getElementsByClassName('multisteps-form')[0].clientHeight;
+  var subdivHeight = document.getElementById('duplicater').clientHeight + 30;
+  document.getElementsByClassName('multisteps-form')[0].style.minHeight  = maindivHeight + subdivHeight * divheightfix.length +"px";
+  // Clone the original form element
+  const clonedForm = originalForm.cloneNode(true);
+  // Increment the counter for the new form
+  counter++;
+  // Get the radio button groups in the new form
+  const radioGroups = clonedForm.querySelectorAll('[name^="radio"]');
+  // Assign unique names to the radio button groups
+  radioGroups.forEach((group) => {
+    group.name = `radio${counter}${group.name}`;
+  });
+  // Append the new form to the container
+  container.appendChild(clonedForm);
+  // Add event listeners to the radio buttons and labels
+  const radios = clonedForm.querySelectorAll('.radio-class-name');
+  const labels = clonedForm.querySelectorAll('.radio-label');
+  radios.forEach((radio) => {
+    radio.addEventListener('click', (event) => {
+      // Deselect all other radio buttons in the group
+      const groupName = event.target.name;
+      const groupRadios = clonedForm.querySelectorAll(`[name="${groupName}"]`);
+      groupRadios.forEach((groupRadio) => {
+        if (groupRadio !== event.target) {
+          groupRadio.checked = false;
+        }
+      });
+    });
+  });
+  labels.forEach((label) => {
+    label.addEventListener('click', (event) => {
+      // Check the associated radio button
+      const radio = event.target.previousElementSibling;
+      if (radio) {
+        radio.checked = true;
+        radio.dispatchEvent(new Event('click')); // Trigger click event on radio button
+      }
+    });
+  });
+ 
 }
 </script>
+
 </body>
 
 </html>
