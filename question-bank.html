@@ -657,10 +657,14 @@
                           <a href=""><img src="./assets/images/Question_Bank/crosx.png" alt=""></a>
                         </div>
                       </div>
-
+                      <div class="collapse mt-5" id="collapseAddHint">
+                        <div class="">
+                          <textarea class="form-control border-success1" name="" id="" cols="30" rows="3"></textarea>
+                        </div>
+                      </div>
                       <div class="d-flex justify-content-between align-items-center pt-5 addOption">
-                        <div>
-                          <a href="">Add Hint ?</a>
+                        <div class="">
+                          <a data-bs-toggle="collapse" href="#collapseAddHint" role="button" aria-expanded="false" aria-controls="collapseAddHint">Add Hint ?</a>
                         </div>
                         <div>
                           <a href=""><img src="./assets/images/Question_Bank/add-plus.png" alt="" class="me-3"> Add More
@@ -867,9 +871,14 @@
                           </div>
                         </div>
   
+                        <div class="collapse mt-5" id="collapseAddHint1">
+                          <div class="">
+                            <textarea class="form-control border-success1" name="" id="" cols="30" rows="3"></textarea>
+                          </div>
+                        </div>
                         <div class="d-flex justify-content-between align-items-center pt-5 addOption">
-                          <div>
-                            <a href="">Add Hint ?</a>
+                          <div class="">
+                            <a data-bs-toggle="collapse" href="#collapseAddHint1" role="button" aria-expanded="false" aria-controls="collapseAddHint1">Add Hint ?</a>
                           </div>
                           <div>
                             <a href=""><img src="./assets/images/Question_Bank/add-plus.png" alt="" class="me-3"> Add More
@@ -1029,9 +1038,14 @@
                             </div>
                           </div>
     
+                          <div class="collapse mt-5" id="collapseAddHint2">
+                            <div class="">
+                              <textarea class="form-control border-success1" name="" id="" cols="30" rows="3"></textarea>
+                            </div>
+                          </div>
                           <div class="d-flex justify-content-between align-items-center pt-5 addOption">
-                            <div>
-                              <a href="">Add Hint ?</a>
+                            <div class="">
+                              <a data-bs-toggle="collapse" href="#collapseAddHint2" role="button" aria-expanded="false" aria-controls="collapseAddHint2">Add Hint ?</a>
                             </div>
                             <div>
                               <a href=""><img src="./assets/images/Question_Bank/add-plus.png" alt="" class="me-3"> Add More
@@ -1087,7 +1101,7 @@
                         </div>
 
                         <div>
-                          <div class="calendar-container timeSpan">
+                          <div class="calendar-container timeSpan w-25">
                             <p>Select Time Span</p>
                             <select id="SearchDropdown" name="native-select" placeholder="Select Time Span"
                               data-search="false" data-silent-initial-value-set="false" class="searchdropdown">
@@ -1212,11 +1226,16 @@
                           </div>
                          </div>
 
-                         <div class="d-flex justify-content-between align-items-center pt-5 addOption">
-                          <div>
-                            <a href="">Add Hint ?</a>
+                         <div class="collapse mt-5" id="collapseAddHint4">
+                          <div class="">
+                            <textarea class="form-control border-success1" name="" id="" cols="30" rows="3"></textarea>
                           </div>
-                          
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center pt-5 addOption">
+                          <div class="">
+                            <a data-bs-toggle="collapse" href="#collapseAddHint4" role="button" aria-expanded="false" aria-controls="collapseAddHint4">Add Hint ?</a>
+                          </div>
+                         
                         </div>
                         </div>
                       </div>
@@ -1354,9 +1373,14 @@
                           </div>
                         </div>
   
+                        <div class="collapse mt-5" id="collapseAddHint5">
+                          <div class="">
+                            <textarea class="form-control border-success1" name="" id="" cols="30" rows="3"></textarea>
+                          </div>
+                        </div>
                         <div class="d-flex justify-content-between align-items-center pt-5 addOption">
-                          <div>
-                            <a href="">Add Hint ?</a>
+                          <div class="">
+                            <a data-bs-toggle="collapse" href="#collapseAddHint5" role="button" aria-expanded="false" aria-controls="collapseAddHint5">Add Hint ?</a>
                           </div>
                           <div>
                             <a href=""><img src="./assets/images/Question_Bank/add-plus.png" alt="" class="me-3"> Add More
@@ -1497,9 +1521,14 @@
                           </div>
                         </div>
   
+                        <div class="collapse mt-5" id="collapseAddHint6">
+                          <div class="">
+                            <textarea class="form-control border-success1" name="" id="" cols="30" rows="3"></textarea>
+                          </div>
+                        </div>
                         <div class="d-flex justify-content-between align-items-center pt-5 addOption">
-                          <div>
-                            <a href="">Add Hint ?</a>
+                          <div class="">
+                            <a data-bs-toggle="collapse" href="#collapseAddHint6" role="button" aria-expanded="false" aria-controls="collapseAddHint6">Add Hint ?</a>
                           </div>
                           <div>
                             <a href=""><img src="./assets/images/Question_Bank/add-plus.png" alt="" class="me-3"> Add More
@@ -2749,6 +2778,8 @@
     VirtualSelect.init({
       ele: '#SearchDropdown',
       valueKey: 'id',
+      hideClearButton: true,
+      multiple: false,
     });
   </script>
 

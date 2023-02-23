@@ -1094,7 +1094,7 @@ position: relative;
   }
 
   .timeSpan .vscomp-dropbox-container{
-    width: 252px;
+    width: 100%;
   }
 
   .timeSpan .vscomp-clear-button{
@@ -1102,6 +1102,8 @@ position: relative;
   }
   .timeSpan .vscomp-clear-icon{
     display: block;
+    top: 6px;
+    left: 5px;
   }
 
   .ansRange .form-check label{
@@ -2453,6 +2455,9 @@ input::placeholder{
 
 .selectDropdown.securityKey{
     padding: 3rem 15rem !important;
+}
+.border-success1 {
+    border: 0.5px solid #20776E;
 }
 
 /*  */
