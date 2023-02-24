@@ -803,6 +803,12 @@ font-size: 13px;
   margin-bottom: 20px ;
   margin-top: 20px;
 }
+/* Accordon fix */
+.side1 .accordion-item a {
+  padding: inherit;
+  display: block;
+  border: 0;
+}
 @media (min-width: 577px) {
   .apexcharts-legend {
     justify-content: center !important;
