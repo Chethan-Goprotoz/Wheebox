@@ -113,7 +113,6 @@ body {
   line-height: 1.5rem;
   text-align: center;
   font-weight: 600;
-  font-size: 18px;
   text-transform: capitalize;
   position: absolute;
   bottom: 0;
@@ -432,11 +431,13 @@ body {
   padding-right: 30px;
 }
 .tags-list p {
-  font: normal normal normal 16px/25px Poppins;
+  font-family: 'Pop-normal';
+  font-size: 16px;
   color: #999999;
 }
 .tags-list h3 {
-  font: normal normal 600 16px/25px Poppins;
+  font-family: 'Pop-normal';
+  font-size: 16px;
   letter-spacing: 0px;
   color: #2c3652;
 }
@@ -571,6 +572,7 @@ hr:not([size]) {
   color: var(--white_color);
   display: block; /* or block */
   text-align: center;
+  display: inline-block;
 }
 .number-highlight span {
   height: 70px;
@@ -587,6 +589,8 @@ hr:not([size]) {
   border-radius: 5px;
   text-align: center;
   font-size: var(--font_size_14);
+  display: inline-block;
+  float: none;
 }
 .passper input {
   padding-left: 20px;
@@ -605,6 +609,9 @@ hr:not([size]) {
   height: 30px;
   margin-bottom: 10px;
   margin-right: 10px;
+}
+ input[type="checkbox"] {
+  accent-color: var(--brand_color);
 }
 .radio .radio-label {
   width: 70%;
@@ -737,6 +744,10 @@ textarea::placeholder {
   color: rgb(0, 0, 0);
   opacity: 0.3;
 }
+.create_test_page .fa-calendar {
+font-size: 13px;
+
+}
 
 /* dashboard */
 .dashboard_new .char_backfround {
@@ -788,7 +799,10 @@ textarea::placeholder {
   letter-spacing: 2.67px;
   line-height: 18px;
 }
-
+.inside-container-dashboard .med-heading {
+  margin-bottom: 20px ;
+  margin-top: 20px;
+}
 @media (min-width: 577px) {
   .apexcharts-legend {
     justify-content: center !important;
@@ -801,18 +815,18 @@ textarea::placeholder {
   .create_test_page .calendar {
     height: 42px;
   }
-  .toggle-div {
+  /* .toggle-div {
     margin-top: 30px;
     margin-bottom: 53px;
-  }
+  } */
   .toggle-div h4 {
     font-size: 18px;
     color: #010d0a;
     margin-bottom: 17px;
   }
-  .toggle-div {
+  /* .toggle-div {
     margin-top: 30px;
-  }
+  } */
 }
 @media (min-width: 1500px) {
   .multisteps-form__progress-btn:after {
@@ -980,9 +994,7 @@ textarea::placeholder {
   .extra-margin {
     margin-top: 20px;
   }
-  .inside-container-dashboard h3 {
-    margin-bottom: 0px;
-  }
+ 
   .form-row h3 {
     margin-bottom: 20px;
   }
@@ -1037,6 +1049,10 @@ textarea::placeholder {
 .pop-comp-wrapper {
   z-index: 5 !important;
 }
+.anchor-dec-ph3 h5.btr-line {
+  font-size: 18px;
+  font-family: 'Pop-semibold';
+}
 /* font and text box */
 @media (max-width: 599px) {
   input[type="text"] {
@@ -1044,6 +1060,10 @@ textarea::placeholder {
     height: 50px !important;
     margin-bottom: 20px;
   }
+  .btn-toggle:before,
+.btn-toggle:after{
+  font-size: 16px !important;
+}
   .vscomp-search-container input {
     margin-bottom: 0px;
   }
@@ -1079,6 +1099,10 @@ textarea::placeholder {
     height: 42px !important;
     margin-bottom: 20px;
   }
+  .btn-toggle:before,
+  .btn-toggle:after{
+    font-size: 14px !important;
+  }
   .vscomp-search-container input {
     margin-bottom: 0px;
   }
@@ -1112,6 +1136,10 @@ textarea::placeholder {
     height: 50px !important;
     margin-bottom: 20px;
   }
+  .btn-toggle:before,
+  .btn-toggle:after{
+    font-size: 16px !important;
+  }
   .vscomp-search-container input {
     margin-bottom: 0px;
   }
@@ -1132,7 +1160,7 @@ textarea::placeholder {
     opacity: 0.3;
   }
   .create_test_page .fa-calendar {
-    top: 51px;
+    top: 52px;
   }
   .admin_control .multisteps-form__panel .calendar-container .fa-regular,
   .far {

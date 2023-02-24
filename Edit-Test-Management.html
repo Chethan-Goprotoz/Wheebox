@@ -37,23 +37,22 @@
   <div class="selection-new " id="fullselector">
     <div class="container-fluid">
       <div class="main_div">
-        <div class="row align-items-center">
+        <div class="row">
           <div class="main_header mb-1">
             <div class="d-flex justify-content-between navpart1">
               <div class="logo new-logopart">
                 <img src="assets/images/logo_logo.png" alt="mini-logo">
               </div>
+
+              <div class="d-flex align-items-center d-none d-md-flex justify-content-around btr-link navbar-place">
+                <a class="anchor-dec-ph3 d-flex align-items-center" href="question-bank.html">
+                  <img src="assets/images/back-arrow.svg" class="mt-2" alt=""> <h5 class="btr-line">Back To Test Management</h5>
+                </a> 
+              </div>
             </div>
             <div class="d-flex align-items-center gap-5">
               <div class="d-flex gap-4">
-
-                <!-- <div>
-                  <a href="#">
-                    <div class="home-search">
-                      <img class="nav-arrows-1" src="assets/images/home-hover.svg" alt="">
-                    </div>
-                  </a>
-                </div> -->
+                
               </div>
               <div class="grid-new" id="profile-out">
                 <div class="grid1-new" onclick="profile()">
@@ -142,7 +141,7 @@
             <!-- Create Test -->
            
                     <div >
-                      <h2 class="mb-4">Edit Test Management</h2>
+                      <h2 class="mb-4" style="font-weight: 600;  font-family: 'Pop-normal';">Edit Test Management</h2>
                      
                     </div>
                     <div >
@@ -153,6 +152,8 @@
                             <div class="content__inner" >
                               <!-- <div class="container"><h2 class="content__title content__title--m-sm">Pick animation type</h2><form class="pick-animation my-4"><div class="form-row"><div class="col-5 m-auto"><select class="pick-animation__select form-control"><option value="scaleIn" selected="selected">ScaleIn</option><option value="scaleOut">ScaleOut</option><option value="slideHorz">SlideHorz</option><option value="slideVert">SlideVert</option><option value="fadeIn">FadeIn</option></select></div></div></form></div> -->
                               <div class="container-fluid ">
+
+                               
 
                                 <!--multisteps-form-->
                                 <div class="multisteps-form pt-5">
@@ -421,8 +422,8 @@
                                                 </div>
                                               </div>
                                             </div> -->
-                                            <div class="form-row add-more-lang fix-height-div mt-2" style="height:auto !important;" id="duplicater">
-                                              <div class="container d-flex" style="margin-left: 0;margin-top: 10px;">
+                                            <div class="form-row add-more-lang fix-height-div pb-5" style="height:auto !important;" id="duplicater">
+                                              <div class="container d-flex" style="margin-left: 0;">
                                                   <div class="radio d-flex align-items-center" style="margin-right: 30px;">
                                                       <input id="radio-0-0" name="radio0" type="radio" checked class="radio-class-name">
                                                       <label for="radio-0-0" class="radio-label">English</label>
@@ -432,10 +433,11 @@
                                                       <label for="radio-0-1" class="radio-label">Hindi</label>
                                                   </div>
                                               </div>
-                                              <div class="container-fluid" style="margin-top: 10px;margin-bottom: 10px;">
+                                              <div class="container-fluid" style="margin-top: 0px;margin-bottom: 10px;">
                                                   <label for="w3review">Instructions</label>
                                                   <textarea id="w3review" name="w3review" rows="4" cols="50" placeholder="Add Instructions Here" value=""></textarea>
                                               </div>
+                                           
                                           </div>
                                             
                                             <button class="btn border_btn" type="button" title="" onclick="duplicate()">Add More</button>
@@ -449,7 +451,7 @@
                                         <div class="multisteps-form__panel   third_row" data-animation="scaleIn">
                                           <div class="multisteps-form__content">
                                             <div class="form-row " style="height:auto !important;align-items: center;justify-content: center;">
-                                              <h3>Select Marks</h3>
+                                              <h3 class="med-heading">Select Marks</h3>
                                               <div class="row align-items-center">
                                                 <div class="col-sm-6 col-lg-4">
                                                   <label for="fname">Assign Marks</label>
@@ -466,12 +468,13 @@
                                               </div>
                                               <!--  -->
                                               <div class="toggle-div">
-                                                <h4>Show Max Mark</h4>
+                                               
+                                                <label for="fname">Show Max Mark</label><br>
                                                 <button type="button" class="btn btn-secondary btn-toggle" data-toggle="button" aria-pressed="false" autocomplete="off">
                                                   <div class="handle"></div>
                                                 </button>
                                               </div>
-                                              <h3>Select Time</h3>
+                                              <h3 class="med-heading">Select Time</h3>
                                               <div class="row align-items-center">
                                                 <div class="col-sm-6 col-lg-4">
                                                   <label for="fname">Allocate Total Time (Min)</label>
@@ -498,7 +501,7 @@
                                                 </div>
                                               </div>
                                               <!--  -->
-                                              <div class="row align-items-center">
+                                              <div class="row">
                                                 <div class="col-sm-6 col-lg-4">
                                                   <label for="fname">Grace Period</label>
                                                   <input type="text" id="fname" name="fname" placeholder="Add Grace Period">
@@ -526,7 +529,7 @@
                                         <div class="multisteps-form__panel  third_row" data-animation="scaleIn">
                                           <div class="multisteps-form__content">
                                             <div class="form-row forth-div" style="height:auto !important;align-items: center;justify-content: center;">
-                                              <h3 class="margin-remove">Other Options</h3>
+                                              <h3 class="med-heading">Other Options</h3>
                                               <div class="row align-items-center">
                                                 <div class="col-sm-6 col-lg-4 passper">
                                                   <label for="fname">Additional Data</label>
@@ -886,7 +889,7 @@
                                               </div>
                                               <!-- Row 4 ends -->
                                                 <!-- Row 5 -->
-                                                <div class="row align-items-center" style="margin-top: 35px;">
+                                                <div class="row " style="margin-top: 35px;">
                                                   <div class="col-lg-4 col-sm-6">
                                                     <label for="fname">IP Range Checking</label><br>
                                                     <button type="button" class="btn btn-secondary btn-toggle" data-toggle="button" aria-pressed="false" autocomplete="off">
@@ -905,7 +908,7 @@
                                                 </div>
                                                 <!-- Row 5 ends -->
                                                 <!-- Row 6 -->
-                                                <div class="row align-items-center" style="margin-top: 35px;">
+                                                <div class="row " style="margin-top: 35px;">
                                                   <div class="col-lg-4 col-sm-6">
                                                     <label for="fname">Allow Navigation During Test</label><br>
                                                     <button type="button" class="btn btn-secondary btn-toggle" data-toggle="button" aria-pressed="false" autocomplete="off">
@@ -1117,7 +1120,7 @@
                                                  </div>
                                                  <!-- Row 5 ends -->
                                                 <!-- Row 6 -->
-                                                <div class="row align-items-center" style="margin-top: 35px;">
+                                                <div class="row" style="margin-top: 35px;">
                                                   <div class=" col-lg-4 col-sm-6">
                                                     <label for="fname">Image Capturing</label><br>
                                                     <button type="button" class="btn btn-secondary btn-toggle" data-toggle="button" aria-pressed="false" autocomplete="off">
@@ -1353,7 +1356,7 @@
                                               </div>
                                               <!-- Row 8 ends -->
                                               <!-- Row 9 -->
-                                              <div class="row align-items-center" style="margin-top: 35px;">
+                                              <div class="row" style="margin-top: 35px;">
                                                 <div class=" col-lg-4 col-sm-6">
                                                   <label for="fname">Send Mail To Admin</label><br>
                                                   <button type="button" class="btn btn-secondary btn-toggle" data-toggle="button" aria-pressed="false" autocomplete="off">
@@ -1368,29 +1371,18 @@
                                               </div>
                                               <!-- Row 9 ends -->
                                               <!-- Row 10 -->
-                                              <div class="extra-margin"><h3 style="color: #2C3652;" >Proctroing Score Form</h3></div>
-                                              
-            
-                                              <div class="row align-items-center" style="margin-top: 35px;">
-                                                <div class=" col-lg-4 col-sm-6">
-                                                  <label for="fname">Show Practice Test</label>
-                                                </div>
-                                                <div class=" col-lg-2 col-sm-6">
-                                                  <div class="radio d-flex align-items-center">
-                                                    <input id="radio-20003" name="radio-10002" type="radio" checked>
-                                                    <label for="radio-20003" class="radio-label">Yes</label>
-                                                  </div>
-                                                </div>
-                                                <div class=" col-lg-3 col-sm-6">
-                                                  <div class="radio d-flex align-items-center">
-                                                    <input id="radio-20004" name="radio-10002" type="radio">
-                                                    <label for="radio-20004" class="radio-label">No</label>
-                                                  </div>
-                                                </div>
-                                                <div class=" col-lg-3 col-sm-6">
+                                              <div class="extra-margin"><h3 class="med-heading" style="color: #2C3652;" >Proctroing Score Form</h3></div>
+                                              <div class=" col-lg-4 col-sm-6">
                                                  
+                                                <div class="d-flex mb-4">
+                                                  <input type="checkbox" name="ckbx" value="yes" style="width: auto;margin-right: 10px;" id="fname" class="proctroing_score_chk" onclick="chkdisablediv()">
+                                                <label for="fname" style="padding: 0;">Use Default Score</label>
+
                                                 </div>
-                                                <div class="row align-items-center">
+                                              </div>
+            
+                                              <div class="row align-items-center proctroing_score_div" style="margin-top: 35px;">
+                                               <div class="row align-items-center">
                                                   <div class="col-sm-6 col-lg-4 passper">
                                                     <label for="fname">Benchmark Navigation</label>
                                                     <input type="text" id="fname" name="fname" placeholder="Benchmark Navigation">
@@ -1665,6 +1657,18 @@ function duplicate() {
     original.parentNode.insertBefore(clone, original.nextSibling);
 }
 
+</script>
+<script>
+ function chkdisablediv(){
+  var checkBox = document.getElementsByClassName("proctroing_score_chk")[0];
+  var checkdiv = document.getElementsByClassName("proctroing_score_div")[0];
+  if (checkBox.checked == true){
+
+  } 
+  else {
+   
+  }
+ }
 </script>
 </body>
 
