@@ -382,18 +382,9 @@
                                         <!--single form panel-->
                                         <div class="multisteps-form__panel  " data-animation="scaleIn">
                                           <div class="multisteps-form__content">
-                                            <div class="add-more-lang dup-container">
-                                              <div class="form-row add-more-lang fix-height-div" style="height:auto !important;" id="duplicater">
-                                                <!-- <div class="container d-flex">
-                                                  <div class="radio d-flex align-items-center" style="margin-right: 30px;">
-                                                    <input id="radio-91" name="radio077" type="radio" checked class="radio-class-name">
-                                                    <label for="radio-91" class="radio-label">English</label>
-                                                  </div>
-                                                  <div class="radio d-flex align-items-center">
-                                                    <input id="radio-009" name="radio077" type="radio" class="radio-class-name">
-                                                    <label for="radio-009" class="radio-label">Hindi</label>
-                                                  </div>
-                                                </div> -->
+                                            <!-- <div class="add-more-lang dup-container">
+                                              <div class="form-row add-more-lang-inner fix-height-div" style="height:auto !important;" id="duplicater">
+                                                
                                                 <div class="container d-flex m-0">
                                                   <label class="radio d-flex align-items-center" style="margin-right: 30px;">
                                                     <input id="radio-91" name="radio077" type="radio" checked class="radio-class-name">
@@ -410,7 +401,42 @@
                                                   <textarea id="w3review" name="w3review" rows="4" cols="50" placeholder="Add Instructions Here" value="dd"></textarea>
                                                 </div>
                                               </div>
-                                            </div>
+                                            </div> -->
+
+                                            <!-- <div id="more-langs">
+                                              <div class="form-row add-more-lang fix-height-div" style="height:auto !important;" id="duplicater">
+                                                <div class="container d-flex">
+                                                  <div class="radio d-flex align-items-center" style="margin-right: 30px;">
+                                                    <input id="radio-91" name="radio077" type="radio" checked class="radio-class-name">
+                                                    <label for="radio-91" class="radio-label">English</label>
+                                                  </div>
+                                                  <div class="radio d-flex align-items-center">
+                                                    <input id="radio-009" name="radio077" type="radio" class="radio-class-name">
+                                                    <label for="radio-009" class="radio-label">Hindi</label>
+                                                  </div>
+                                                </div>
+                                                <div class="container-fluid" style="margin-top: 33px;margin-bottom: 30px;">
+                                                  <label for="w3review">Instructions</label>
+                                                  <textarea id="w3review" name="w3review" rows="4" cols="50" placeholder="Add Instructions Here"></textarea>
+                                                </div>
+                                              </div>
+                                            </div> -->
+                                            <div class="form-row add-more-lang fix-height-div" style="height:auto !important;" id="duplicater">
+                                              <div class="container d-flex">
+                                                  <div class="radio d-flex align-items-center" style="margin-right: 30px;">
+                                                      <input id="radio-0-0" name="radio0" type="radio" checked class="radio-class-name">
+                                                      <label for="radio-0-0" class="radio-label">English</label>
+                                                  </div>
+                                                  <div class="radio d-flex align-items-center">
+                                                      <input id="radio-0-1" name="radio0" type="radio" class="radio-class-name">
+                                                      <label for="radio-0-1" class="radio-label">Hindi</label>
+                                                  </div>
+                                              </div>
+                                              <div class="container-fluid" style="margin-top: 33px;margin-bottom: 30px;">
+                                                  <label for="w3review">Instructions</label>
+                                                  <textarea id="w3review" name="w3review" rows="4" cols="50" placeholder="Add Instructions Here" value=""></textarea>
+                                              </div>
+                                          </div>
                                             
                                             <button class="btn border_btn" type="button" title="" onclick="duplicate()">Add More</button>
                                             <div class="button-row d-flex mt-4" style="justify-content: space-between;">
@@ -1558,20 +1584,23 @@
  
 <script>
   // Get the original form element
-const originalForm = document.querySelector('.add-more-lang');
+const originalForm = document.getElementsByClassName('add-more-lang')[0];
 // Get the container element to insert the duplicated form
-const container = document.querySelector('.dup-container');
+const container = document.getElementsByClassName('add-more-lang-inner')[0];
+
+
 // Counter to keep track of the number of duplicated forms
 let counter = 0;
 // Function to duplicate the form
 function duplicate() {
   let divheightfix = document.querySelectorAll(".fix-height-div");
-  console.log({divheightfix});
   var maindivHeight = document.getElementsByClassName('multisteps-form')[0].clientHeight;
   var subdivHeight = document.getElementById('duplicater').clientHeight + 30;
   document.getElementsByClassName('multisteps-form')[0].style.minHeight  = maindivHeight + subdivHeight * divheightfix.length +"px";
   // Clone the original form element
-  const clonedForm = originalForm.cloneNode(true);
+  console.log({container});
+  alert(container[0]);
+  const clonedForm = container.cloneNode(true);
   // Increment the counter for the new form
   counter++;
   // Get the radio button groups in the new form
@@ -1610,7 +1639,33 @@ function duplicate() {
  
 }
 </script>
+<script>
+let cloneCount = 0;
+function duplicate() {
+  let divheightfix = document.querySelectorAll(".fix-height-div");
+  var maindivHeight = document.getElementsByClassName('multisteps-form')[0].clientHeight;
+  var subdivHeight = document.getElementById('duplicater').clientHeight + 30;
+  document.getElementsByClassName('multisteps-form')[0].style.minHeight  = maindivHeight + subdivHeight +"px";
+    const original = document.getElementById('duplicater');
+    const clone = original.cloneNode(true);
+    cloneCount++;
+    // update ids of radio buttons
+    const radios = clone.querySelectorAll('input[type="radio"]');
+    radios.forEach((radio, index) => {
+        radio.setAttribute('id', `radio-${cloneCount}-${index}`);
+        radio.setAttribute('name', `radio${cloneCount}`);
+        radio.checked = false; // uncheck radio buttons on cloned node
+    });
+    // update for attributes of labels
+    const labels = clone.querySelectorAll('label');
+    labels.forEach((label, index) => {
+        const forAttr = `radio-${cloneCount}-${index}`;
+        label.setAttribute('for', forAttr);
+    });
+    original.parentNode.insertBefore(clone, original.nextSibling);
+}
 
+</script>
 </body>
 
 </html>
