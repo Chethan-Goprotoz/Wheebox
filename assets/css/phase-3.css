@@ -40,6 +40,10 @@
     opacity: 1;
   
 }
+.vscomp-toggle-button{
+    box-shadow: none;
+    border: 0.4000000059604645px solid #aaaaaa;
+}
 .selectDropdown .row .calendar-container .vscomp-toggle-button{
     height: 42px;
 }
@@ -1098,7 +1102,7 @@ position: relative;
   }
 
   .timeSpan .vscomp-clear-button{
-    display: block;
+    display: none;
   }
   .timeSpan .vscomp-clear-icon{
     display: block;
@@ -4035,7 +4039,7 @@ input::placeholder{
     text-decoration: none;
 }
 .anchor-dec-ph3 h5{ 
-    font: normal normal bold 20px/28px Nunito;
+    font: normal normal 20px/28px pop-semibold;
     letter-spacing: 0.24px;
     color: #00000099;
     opacity: 1;
