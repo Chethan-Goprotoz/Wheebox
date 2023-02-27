@@ -3000,7 +3000,7 @@ input::placeholder{
     .searchInput .searchAfter input{
         width: 329px;
         height: 48px;
-        color: #B3B3B3;
+        color: #000000;
         font-size: 16px;
     }
     .searchAfter::before{
