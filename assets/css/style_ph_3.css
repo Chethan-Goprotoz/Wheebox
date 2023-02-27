@@ -877,7 +877,9 @@ font-size: 13px;
     } 
       */
 
-
+    .calendar-container .dash-calendar{
+      width: 100%;
+    }
 
       .create-btn .soild_btn {
         padding: 10px 15px 10px 15px;
