@@ -171,7 +171,7 @@
                                 </div>
                                 </div>
                                 <!-- row -->
-                                <div class="tabsContainer mt-5 d-flex justify-content-between align-items-center;">
+                                <div class="tabsContainer mt-5 d-flex justify-content-between align-items-center; flex-column flex-sm-row">
                                   <div class="tabsButton gap-3 d-flex justify-content-start align-items-center;">
                                     <div>
                                       <button class="btn text-white active" type="button">Today</button>
@@ -188,7 +188,7 @@
                                   </div>
                                   <div>
                                     <div class="calendar-container">
-                                      <input type="text" name="datefilter" class="calendar" value="" placeholder="Start Date &amp; End Date">
+                                      <input type="text" name="datefilter" class="calendar dash-calendar" value="" placeholder="Start Date &amp; End Date">
                                       <i class="fa-regular fa-calendar"></i>
                                     </div>
                                   </div>
@@ -357,6 +357,7 @@
    
         },
         yaxis: {
+     
           min:0,
           max: 2500,
            tickAmount: 5,
@@ -373,88 +374,104 @@
         var chart = new ApexCharts(document.querySelector("#linechart"), options);
         chart.render();
  </script>
- <script>
-         var options = {
-          colors: ["#67a9ed", "#fec271"],
-          series: [30, 70],
-          chart: {
-          // width: 300,
-          type: 'pie',
-        },
-        dataLabels: {
-    enabled: true,
-
-    offset: -50
-  },
-        labels: ['General', 'Programming'],
-        responsive: [{
-          breakpoint: 480,
-          options: {
-            chart: {
-              // width: 200
-            },
-            legend: {
-              position: 'bottom'
-            }
-          }
-        }],
-        plotOptions: {
-  pie: {
+<script>
+  var options = {
+    colors: ["#67a9ed", "#fec271"],
+    series: [30, 70],
+    chart: {
+      // width: 300,
+      type: 'pie',
+    },
     dataLabels: {
-      offset: -20,
-    }, 
-  }
-}
-        };
-
-        var chart = new ApexCharts(document.querySelector("#piechart"), options);
-        chart.render();
- </script>
- <script>   
-        var options = {
-          colors: ["#6ebe7d", "#fec271"],
-          series: [45, 55],
-          chart: {
-          type: 'donut',
+      enabled: true,
+      formatter: function (val, opts) {
+        return Math.round(val) + '%';
+      },
+      offset: -50
+    },
+    labels: ['General', 'Programming'],
+    responsive: [{
+      breakpoint: 480,
+      options: {
+        chart: {
+          // width: 200
         },
-        plotOptions: {
-          pie: {
-            startAngle: -90,
-            endAngle: 90,
-            offsetY: 10
-          }
-        },
-        labels: ['General', 'Programming'],
         legend: {
-              show: false,
-            },
-        grid: {
-          padding: {
-            bottom: -80
-          }
+          position: 'bottom'
+        }
+      }
+    }],
+    plotOptions: {
+      pie: {
+        dataLabels: {
+          offset: -20,
         },
-        responsive: [{
-          breakpoint: 480,
-          options: {
-            chart: {
-              // width: 200
-            },
-            legend: {
-              show: false,
-            }
-          }
-        }]
-        };
+      }
+    }
+  };
 
-        var chart = new ApexCharts(document.querySelector("#halfdonutchart"), options);
-        chart.render();
- </script>
+  var chart = new ApexCharts(document.querySelector("#piechart"), options);
+  chart.render();
+</script>
+
+
+
+<script>   
+  var options = {
+    colors: ["#6ebe7d", "#fec271"],
+    series: [45, 55],
+    chart: {
+      type: 'donut',
+    },
+    plotOptions: {
+      pie: {
+        startAngle: -90,
+        endAngle: 90,
+        offsetY: 10
+      }
+    },
+    labels: ['General', 'Programming'],
+    legend: {
+      show: false,
+    },
+    grid: {
+      padding: {
+        bottom: -80
+      }
+    },
+    responsive: [{
+      breakpoint: 480,
+      options: {
+        chart: {
+          // width: 200
+        },
+        legend: {
+          show: false,
+        }
+      }
+    }],
+    dataLabels: {
+      formatter: function (val, opts) {
+        return Math.round(val) + '%'; // Add percentage symbol
+      }
+    }
+  };
+
+  var chart = new ApexCharts(document.querySelector("#halfdonutchart"), options);
+  chart.render();
+</script>
  <script>
           var options = {
             colors: ["#2CD9C5", "#FFC300"],
           series: [45, 55],
           chart: {
           type: 'donut',
+        },
+        dataLabels: {
+      enabled: true,
+      formatter: function (val, opts) {
+        return Math.round(val) + '%';
+      },
         },
         responsive: [{
           breakpoint: 480,
