@@ -2459,6 +2459,9 @@ input::placeholder{
 .border-success1 {
     border: 0.5px solid #20776E;
 }
+.inputGroups textarea{
+    border-radius: 10px;
+}
 
 /*  */
 @media (max-width:1500px){
@@ -2672,7 +2675,7 @@ input::placeholder{
         left: 28px;
         top: 12px;
         background: white;
-        padding-right: 102px;
+        padding-right: 50px;
         padding-left: 15px;
     }
     .calendar-container p{
@@ -2905,7 +2908,7 @@ input::placeholder{
         box-shadow: none;
     }
     .inputGroups .errorMsg{
-        left: 29px !important;
+        /* left: 29px !important; */
         top: 12px !important;
     }
     .filter-container p{
@@ -3161,7 +3164,7 @@ input::placeholder{
     left: 21px;
     top: 6px;
     background: white;
-    padding-right: 102px;
+    padding-right: 50px;
     padding-left: 3px;
 }
 .vscomp-value{
@@ -3664,7 +3667,7 @@ input::placeholder{
     .inputGroups .errorMsg {
         left: 12px;
         top: 12px;
-        padding-right: 56px;
+        padding-right: 20px;
     }
     .quesBankTabs .nav-item .nav-link, .quesBankTabs .nav-item .nav-link.active{
         font-size: 16px !important;
@@ -3676,7 +3679,7 @@ input::placeholder{
         color: #2C3652;
     }
     .inputGroups .errorMsg{
-        font-size: 13px;
+        font-size: 16px;
     }
     .ansRange .d-flex.mobWrap{
         flex-wrap: wrap;
@@ -4265,7 +4268,7 @@ input::placeholder{
         font-size: 11px;
     }
     .inputGroups .errorMsg{
-        font-size: 11px;
+        font-size: 14px;
     }
     .w-auto.addNewSubj {
         width: 150px;
