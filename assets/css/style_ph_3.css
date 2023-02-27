@@ -874,7 +874,23 @@ font-size: 13px;
     .main_bulk_upload .multistep_header .multisteps-form__progress{
         width: 200%;
         margin-top: 10px;
-    }   */
+    } 
+      */
+
+
+
+      .create-btn .soild_btn {
+        padding: 10px 15px 10px 15px;
+      margin: 10;
+
+    }
+    
+    .create-btn .border_btn {
+      padding: 10px 15px 10px 15px;
+      margin: 10;
+  }
+    
+    
   .tabsContainer .tabsButton {
     flex-wrap: wrap;
   }
@@ -1088,7 +1104,10 @@ font-size: 13px;
     opacity: 0.3;
   }
   .multisteps-form__content .form-row h3 {
-    font-size: 22px;
+    font-size: 18px;
+  }
+  .proctroing_score_chk{
+    margin-bottom: 0;
   }
   .admin_control .multisteps-form__panel .calendar-container .fa-regular,
   .far {
